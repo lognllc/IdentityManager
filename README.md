@@ -3,7 +3,7 @@ IdentityManager
 
 IdentityManager maintains multiple accounts on each oauth platform, bundled with facebook, twitter, linkedin support. But you can register as many OAuth 1.0a services as you can.
 
-This project was inspired by the following project:
+This project was inspired by the following projects:
 
 * AFOAuth1Client
 * TWiOS5ReverseAuthExample
