@@ -33,7 +33,7 @@ To fully work with Facebook, you need to add `FacebookAppID` and proper `URL Typ
 [identityManager registerSocialSessionsClass:[FacebookSessions class]];
 ```
 
-For Twitter and LinkedIn, you need to add `TwitterAppID` or `LinkedInAppID` using `app_key` and `tw[app_key]` or `li[app_key]` as `URL Types`, and register it using
+For Twitter and LinkedIn, you need to add `TwitterAppID` and `LinkedInAppID` using the `app_key` they give you and add `tw[app_key]` and `li[app_key]` as `URL Types`, and register it using
 
 ```objective-c
 // you probably want to add these to your prefix.pch file.
@@ -42,4 +42,12 @@ For Twitter and LinkedIn, you need to add `TwitterAppID` or `LinkedInAppID` usin
 
 [identityManager registerSocialSessionsClass:[TwitterSessions class]];    
 [identityManager registerSocialSessionsClass:[LinkedInSessions class]];
+```
+                          
+Finally start registration like this:
+
+```objective-c
+[identityManager authenticateIdentityWithServiceIdentifier:[TwitterSessions socialIdentifier] completion:^(BOOL success) {
+	NSLog(@"done!");
+}];
 ```
