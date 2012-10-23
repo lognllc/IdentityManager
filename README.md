@@ -15,7 +15,7 @@ Requirement
 
 IdentityManager requires [FacebookSDK.framework(v3.1.1)](https://github.com/b051/FacebookSDK.framework) and [AFNetworking](https://github.com/AFNetworking/AFNetworking).
 
-Also you'd best using LLVM4.0 and xCode4.5 to compile. If you are having trouble with lower edition, try adding my submodule [ObjectiveCLiterals][https://github.com/b051/ObjectiveCLiterals].
+Also you'd best using LLVM4.0 and xCode4.5 to compile. If you are having trouble with lower edition, try adding my submodule [ObjectiveCLiterals](https://github.com/b051/ObjectiveCLiterals)
 
 Getting Start
 =============
