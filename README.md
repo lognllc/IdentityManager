@@ -15,10 +15,10 @@ Requirement
 
 IdentityManager requires [FacebookSDK.framework(v3.1.1)](https://github.com/b051/FacebookSDK.framework) and [AFNetworking](https://github.com/AFNetworking/AFNetworking).
 
-Also it requires LLVM4.0 and xCode4.5 to compile. If you are having troubles with lower edition, try add my submodule [ObjectiveCLiterals][https://github.com/b051/ObjectiveCLiterals]
+Also you'd best using LLVM4.0 and xCode4.5 to compile. If you are having trouble with lower edition, try adding my submodule [ObjectiveCLiterals][https://github.com/b051/ObjectiveCLiterals].
 
-Usage
-=====
+Getting Start
+=============
 
 You can specify a namespace and maximum slots when creating `IdentityManager`
 
@@ -41,9 +41,9 @@ To fully work with Facebook, you need to add `FacebookAppID` and proper `URL Typ
   [identityManager registerSocialSessionsClass:[FacebookSessions class]];
 ```
 
-`FaceboookSessions` will start a new request and get id and name for you, but you can stop the request from being sent by using `_SOCIALSESSIONS_FACEBOOK_TOKEN_ONLY_`.
+`FaceboookSessions` will start a new request and get `id` and `name` for you, but you can stop the request from being sent by using `_SOCIALSESSIONS_FACEBOOK_TOKEN_ONLY_`.
 
-For Twitter and LinkedIn, you need to add `TwitterAppID` and `LinkedInAppID` using the `app_key` they give you and add `tw[app_key]` and `li[app_key]` as `URL Types`, and register it using
+For Twitter and LinkedIn, you need to add `TwitterAppID` and `LinkedInAppID` using the `app_key` they give you and add `tw[app_key]` and `li[app_key]` as `URL Types`, and register them using:
 
 ```objective-c
 // you probably want to add these to your prefix.pch file.
