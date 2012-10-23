@@ -8,9 +8,6 @@
 #import "IdentityManager.h"
 #import "OAuth1Client.h"
 #import "SocialSessions.h"
-#import "FacebookSessions.h"
-#import "TwitterSessions.h"
-#import "LinkedInSessions.h"
 
 @interface IdentityManager ()
 
@@ -34,9 +31,6 @@
 		slots = _slots;
 		registeredSocialSessions = [NSMutableArray arrayWithCapacity:3];
 		sessionsObjects = [NSMutableDictionary dictionaryWithCapacity:3];
-		[self registerSocialSessionsClass:[FacebookSessions class]];
-		[self registerSocialSessionsClass:[TwitterSessions class]];
-		[self registerSocialSessionsClass:[LinkedInSessions class]];
 	}
 	return self;
 }
