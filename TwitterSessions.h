@@ -7,10 +7,6 @@
 
 #import "SocialSessions.h"
 
-@class OAuth1Client;
-
 @interface TwitterSessions : SocialSessions <SocialSessionsTrait>
-
-@property (nonatomic, strong, readonly) OAuth1Client *client;
 
 @end

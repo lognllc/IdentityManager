@@ -1,27 +1,26 @@
 //
 //  OAuth1Client.h
 //
-//  Created by Rex Sheng on 10/16/12.
+//  Created by Rex Sheng on 10/24/12.
 //  Copyright (c) 2012 Log(n) LLC. All rights reserved.
 //
 
 #import "AFHTTPClient.h"
 
-typedef void (^success_block_t) (NSDictionary *);
-typedef void (^failure_block_t) (NSError *);
-
 @interface OAuth1Client : AFHTTPClient
 
 - (id)initWithBaseURL:(NSURL *)url
                   key:(NSString *)clientID
-               secret:(NSString *)_secret
-	 requestTokenPath:(NSString *)_requestTokenPath
-		authorizePath:(NSString *)_authorizePath
-	  accessTokenPath:(NSString *)_accessTokenPath
-		  callbackURL:(NSURL *)callbackURL;
+               secret:(NSString *)_secret;
 
-- (void)authorizeSuccess:(success_block_t)success failure:(failure_block_t)failure;
+@property (nonatomic, copy) NSString *userToken;
+@property (nonatomic, copy) NSString *userTokenSecret;
 
-- (BOOL)handleOpenURL:(NSURL *)url;
+@end
+
+
+@interface NSURL (OAuthAdditions)
+
++ (NSDictionary *)ab_parseURLQueryString:(NSString *)query;
 
 @end

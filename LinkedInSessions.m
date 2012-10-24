@@ -7,25 +7,38 @@
 
 #import "LinkedInSessions.h"
 #import "SocialSessionsSubclass.h"
-#import "OAuth1Client.h"
-#import "OAuth1.h"
+#import "AFJSONRequestOperation.h"
+#import "OAuth1Gateway.h"
+
+@interface LinkedInSessions ()
+@property (nonatomic, strong, readonly) OAuth1Gateway *oauth;
+@end
 
 @implementation LinkedInSessions
-
-@synthesize client;
+{
+	OAuth1Client *client;
+}
+@synthesize oauth, client;
 
 - (id)initWithPrefix:(NSString *)_prefix maximumUserSlots:(int)_maximumUserSlots
 {
 	if (self = [super initWithPrefix:_prefix maximumUserSlots:_maximumUserSlots]) {
 		NSString *linkedInAppID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"LinkedInAppID"];
 		NSURL *callbackURL = [NSURL URLWithString:[NSString stringWithFormat:@"li%@://success", linkedInAppID]];
-		client = [[OAuth1Client alloc] initWithBaseURL:[NSURL URLWithString:@"https://api.linkedin.com/uas/oauth/"]
+		oauth = [[OAuth1Gateway alloc] initWithBaseURL:[NSURL URLWithString:@"https://api.linkedin.com/uas/oauth/"]
 												   key:linkedInAppID
 												secret:LINKEDIN_SECRET
 									  requestTokenPath:@"requestToken"
 										 authorizePath:@"authenticate"
 									   accessTokenPath:@"accessToken"
 										   callbackURL:callbackURL];
+#ifndef _SOCIALSESSIONS_LINKEDIN_TOKEN_ONLY_
+		client = [[OAuth1Client alloc] initWithBaseURL:[NSURL URLWithString:@"http://api.linkedin.com/v1/"]
+												   key:linkedInAppID
+												secret:LINKEDIN_SECRET];
+		[client setDefaultHeader:@"Accept" value:@"application/json"];
+		[client registerHTTPOperationClass:[AFJSONRequestOperation class]];
+#endif
 	}
 	return self;
 }
@@ -37,7 +50,7 @@
 
 - (void)handleOpenURL:(NSURL *)URL
 {
-	[client handleOpenURL:URL];
+	[oauth handleOpenURL:URL];
 }
 
 - (void)updateUser:(NSDictionary *)user inSlot:(int)slot
@@ -46,6 +59,7 @@
 	[self validateSlotNumber:slot];
 	
 	NSString *tokenKey = [self tokenKeyForSlot:slot];
+	NSString *nameKey = [self nameKeyForSlot:slot];
 	NSString *tokenSecretKey = [self tokenSecretKeyForSlot:slot];
 	
 	NSString *oauth_token = user[@"oauth_token"];
@@ -56,11 +70,15 @@
 		}
 	}
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	NSLog(@"updating slot %d: linkedin expires in %@ token: %@", slot, user[@"oauth_expires_in"], oauth_token);
 	[defaults setObject:oauth_token forKey:tokenKey];
 	[defaults setObject:[user objectForKey:@"oauth_token_secret"] forKey:tokenSecretKey];
+	NSString *name = user[@"username"];
+	if (name) {
+		[defaults setObject:name forKey:nameKey];
+	}
 	[defaults synchronize];
-	
+	NSLog(@"updating slot %d: linkedin '%@' expires in %@", slot, name ?: oauth_token, user[@"oauth_expires_in"]);
+
 	[self sendNotification];
 }
 
@@ -76,13 +94,32 @@
 	
 	[self sendNotification];
 	
-	[client authorizeSuccess:^(NSDictionary *data) {
+	[oauth authorizeSuccess:^(NSDictionary *data) {
 		self.pendingLoginForSlot = -1;
+		
+#ifdef _SOCIALSESSIONS_LINKEDIN_TOKEN_ONLY_
 		[self updateUser:data inSlot:slot];
 		if (completion) completion(YES);
+#else
+		client.userToken = oauth.userToken;
+		client.userTokenSecret = oauth.userTokenSecret;
+		[client getPath:@"people/~" parameters:@{@"format": @"json"} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+			NSMutableDictionary *mdata = [data mutableCopy];
+			NSMutableString *name = [NSMutableString stringWithString:responseObject[@"firstName"]];
+			NSString *lastName = responseObject[@"lastName"];
+			if (name.length && lastName.length) [name appendString:@" "];
+			[name appendString:lastName];
+			mdata[@"username"] = name;
+			[self updateUser:mdata inSlot:slot];
+			if (completion) completion(YES);
+		} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+			[self updateUser:data inSlot:slot];
+			if (completion) completion(YES);
+		}];
+#endif
 	} failure:^(NSError *error) {
 		self.pendingLoginForSlot = -1;
-		NSDictionary *suggestion = ParametersFromQueryString(error.localizedRecoverySuggestion);
+		NSDictionary *suggestion = [NSURL ab_parseURLQueryString:error.localizedRecoverySuggestion];
 		NSLog(@"suggestion: %@", suggestion);
 		if (completion) completion(NO);
 	}];
