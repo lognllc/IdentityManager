@@ -123,6 +123,13 @@ static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 	return [defaults objectForKey:[self tokenKeyForSlot:slot]];
 }
 
+- (NSString *)userTokenSecretInSlot:(int)slot
+{
+	[self validateSlotNumber:slot];
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	return [defaults objectForKey:[self tokenSecretKeyForSlot:slot]];
+}
+
 - (void)removeUserInSlot:(int)slot
 {
 	NSString *idKey = [self idKeyForSlot:slot];

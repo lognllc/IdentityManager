@@ -77,15 +77,6 @@
 	return -1;
 }
 
-- (NSUInteger)identitiesCountWithServiceIdentifier:(NSString *)identifier
-{
-	SocialSessions<SocialSessionsTrait> *sessions = [sessionsObjects objectForKey:identifier];
-	if (sessions) {
-		return [sessions usedSlotCount];
-	}
-	return NSNotFound;
-}
-
 - (BOOL)handleOpenURL:(NSURL *)url
 {
 	__block BOOL handled = NO;
@@ -97,6 +88,11 @@
 		}
 	}];
 	return handled;
+}
+
+- (id<SocialSessionsTrait>)registeredSocialSessionsWithServiceIdentifier:(NSString *)identifier
+{
+	return [sessionsObjects objectForKey:identifier];
 }
 
 @end

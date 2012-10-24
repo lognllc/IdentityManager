@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SocialSessions.h"
 
 @interface IdentityManager : NSObject
 
@@ -15,6 +16,8 @@
 
 - (BOOL)registerSocialSessionsClass:(Class)sessionClass;
 - (void)unregisterSocialSessionsClass:(Class)sessionClass;
+
+- (id<SocialSessionsTrait>)registeredSocialSessionsWithServiceIdentifier:(NSString *)identifier;
 
 - (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier completion:(void(^)(BOOL success))completion;
 
