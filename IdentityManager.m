@@ -61,9 +61,9 @@
 
 - (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier completion:(void(^)(BOOL))completion
 {
-	SocialSessions<SocialSessionsTrait> *sessions = [sessionsObjects objectForKey:identifier];
+	id<SocialSessionsTrait> sessions = [self registeredSocialSessionsWithServiceIdentifier:identifier];
 	if (sessions) {
-		int maxCount = sessions.maximumUserSlots;
+		int maxCount = [sessions maximumUserSlots];
 		for (int i = 0; i < maxCount; i++) {
 			if ([sessions isSlotEmpty:i]) {
 				[sessions loginSlot:i completion:completion];
