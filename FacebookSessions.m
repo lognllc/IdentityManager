@@ -88,7 +88,7 @@
 - (FBSession *)switchToUserInSlot:(int)slot
 {
 	[self validateSlotNumber:slot];
-	NSLog(@"switching to slot %d", slot);
+	NSLog(@"switching to slot %d %@", slot, [self userIDInSlot:slot]);
 	FBSession *session = [self sessionForSlot:slot];
 	currentSession = session;
 	[self sendNotification];

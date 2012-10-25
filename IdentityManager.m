@@ -61,9 +61,9 @@
 
 - (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier completion:(void(^)(BOOL))completion
 {
-	SocialSessions<SocialSessionsTrait> *sessions = [sessionsObjects objectForKey:identifier];
+	id<SocialSessionsTrait> sessions = [self registeredSocialSessionsWithServiceIdentifier:identifier];
 	if (sessions) {
-		int maxCount = sessions.maximumUserSlots;
+		int maxCount = [sessions maximumUserSlots];
 		for (int i = 0; i < maxCount; i++) {
 			if ([sessions isSlotEmpty:i]) {
 				[sessions loginSlot:i completion:completion];
@@ -77,15 +77,6 @@
 	return -1;
 }
 
-- (NSUInteger)identitiesCountWithServiceIdentifier:(NSString *)identifier
-{
-	SocialSessions<SocialSessionsTrait> *sessions = [sessionsObjects objectForKey:identifier];
-	if (sessions) {
-		return [sessions usedSlotCount];
-	}
-	return NSNotFound;
-}
-
 - (BOOL)handleOpenURL:(NSURL *)url
 {
 	__block BOOL handled = NO;
@@ -97,6 +88,11 @@
 		}
 	}];
 	return handled;
+}
+
+- (id<SocialSessionsTrait>)registeredSocialSessionsWithServiceIdentifier:(NSString *)identifier
+{
+	return [sessionsObjects objectForKey:identifier];
 }
 
 @end

@@ -13,7 +13,10 @@ extern NSString *const SUInvalidSlotNumber;
 
 + (NSString *)socialIdentifier;
 - (void)handleOpenURL:(NSURL *)URL;
-- (void)loginSlot:(int)slot completion:(void(^)(BOOL))completion;
+- (NSUInteger)usedSlotCount;
+- (void)loginSlot:(int)slot completion:(void(^)(BOOL success))completion;
+- (int)maximumUserSlots;
+- (BOOL)isSlotEmpty:(int)slot;
 
 @end
 
@@ -29,6 +32,7 @@ extern NSString *const SUInvalidSlotNumber;
 - (NSString *)userIDInSlot:(int)slot;
 - (NSString *)userNameInSlot:(int)slot;
 - (NSString *)userTokenInSlot:(int)slot;
+- (NSString *)userTokenSecretInSlot:(int)slot;
 
 - (BOOL)isSlotEmpty:(int)slot;
 - (NSUInteger)usedSlotCount;
