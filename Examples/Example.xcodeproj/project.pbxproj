@@ -133,10 +133,10 @@
 		CF2961A41638FF43007DE03C /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				CFD9C5741638FF9F00C350A0 /* FacebookSessions.h */,
-				CFD9C5751638FF9F00C350A0 /* FacebookSessions.m */,
 				CFD9C5761638FF9F00C350A0 /* IdentityManager.h */,
 				CFD9C5771638FF9F00C350A0 /* IdentityManager.m */,
+				CFD9C5741638FF9F00C350A0 /* FacebookSessions.h */,
+				CFD9C5751638FF9F00C350A0 /* FacebookSessions.m */,
 				CFD9C5781638FF9F00C350A0 /* LinkedInSessions.h */,
 				CFD9C5791638FF9F00C350A0 /* LinkedInSessions.m */,
 				CFD9C57A1638FF9F00C350A0 /* OAuth1Client.h */,
