@@ -7,16 +7,34 @@
 //
 
 #import "AppDelegate.h"
+#import "FacebookSessions.h"
+#import "IdentityManager.h"
+#import "FacebookSessions.h"
+#import "TwitterSessions.h"
+#import "LinkedInSessions.h"
 
 @implementation AppDelegate
+{
+	IdentityManager *identityManager;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+	identityManager = [[IdentityManager alloc] initWithPrefix:@"Demo" maximumUserSlots:7];
+	[identityManager registerSocialSessionsClass:[FacebookSessions class]];
+	[identityManager registerSocialSessionsClass:[TwitterSessions class]];
+	[identityManager registerSocialSessionsClass:[LinkedInSessions class]];
+	
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+	return [identityManager handleOpenURL:url];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

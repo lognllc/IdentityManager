@@ -9,6 +9,13 @@
 #endif
 
 #ifdef __OBJC__
-	#import <UIKit/UIKit.h>
-	#import <Foundation/Foundation.h>
+
+#define TWITTER_SECRET @""
+#define LINKEDIN_SECRET @""
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+
 #endif

@@ -14,6 +14,7 @@ static NSString *const SUUserNameKeyFormat = @"%@UserName%d";
 static NSString *const SUTokenKeyFormat = @"%@Token%d";
 static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 
+
 @implementation SocialSessions
 
 @synthesize maximumUserSlots, prefix;

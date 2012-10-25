@@ -16,21 +16,24 @@
 		CF29619A1638FF38007DE03C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2961991638FF38007DE03C /* Default.png */; };
 		CF29619C1638FF38007DE03C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF29619B1638FF38007DE03C /* Default@2x.png */; };
 		CF29619E1638FF38007DE03C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF29619D1638FF38007DE03C /* Default-568h@2x.png */; };
-		CFD9C5841638FF9F00C350A0 /* FacebookSessions.h in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5741638FF9F00C350A0 /* FacebookSessions.h */; };
 		CFD9C5851638FF9F00C350A0 /* FacebookSessions.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5751638FF9F00C350A0 /* FacebookSessions.m */; };
-		CFD9C5861638FF9F00C350A0 /* IdentityManager.h in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5761638FF9F00C350A0 /* IdentityManager.h */; };
 		CFD9C5871638FF9F00C350A0 /* IdentityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5771638FF9F00C350A0 /* IdentityManager.m */; };
-		CFD9C5881638FF9F00C350A0 /* LinkedInSessions.h in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5781638FF9F00C350A0 /* LinkedInSessions.h */; };
 		CFD9C5891638FF9F00C350A0 /* LinkedInSessions.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5791638FF9F00C350A0 /* LinkedInSessions.m */; };
-		CFD9C58A1638FF9F00C350A0 /* OAuth1Client.h in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C57A1638FF9F00C350A0 /* OAuth1Client.h */; };
 		CFD9C58B1638FF9F00C350A0 /* OAuth1Client.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C57B1638FF9F00C350A0 /* OAuth1Client.m */; };
-		CFD9C58C1638FF9F00C350A0 /* OAuth1Gateway.h in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C57C1638FF9F00C350A0 /* OAuth1Gateway.h */; };
 		CFD9C58D1638FF9F00C350A0 /* OAuth1Gateway.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C57D1638FF9F00C350A0 /* OAuth1Gateway.m */; };
-		CFD9C58F1638FF9F00C350A0 /* SocialSessions.h in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C57F1638FF9F00C350A0 /* SocialSessions.h */; };
 		CFD9C5901638FF9F00C350A0 /* SocialSessions.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5801638FF9F00C350A0 /* SocialSessions.m */; };
-		CFD9C5911638FF9F00C350A0 /* SocialSessionsSubclass.h in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5811638FF9F00C350A0 /* SocialSessionsSubclass.h */; };
-		CFD9C5921638FF9F00C350A0 /* TwitterSessions.h in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5821638FF9F00C350A0 /* TwitterSessions.h */; };
 		CFD9C5931638FF9F00C350A0 /* TwitterSessions.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5831638FF9F00C350A0 /* TwitterSessions.m */; };
+		CFD9C59A16390E6200C350A0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD9C59916390E6200C350A0 /* FacebookSDK.framework */; };
+		CFD9C59D16390E6D00C350A0 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD9C59C16390E6D00C350A0 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CFD9C5A216390E9E00C350A0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD9C59E16390E9E00C350A0 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CFD9C5A316390E9E00C350A0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD9C59F16390E9E00C350A0 /* MobileCoreServices.framework */; };
+		CFD9C5A416390E9E00C350A0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD9C5A016390E9E00C350A0 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CFD9C5A516390E9E00C350A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD9C5A116390E9E00C350A0 /* SystemConfiguration.framework */; };
+		CFD9C5BB16390FB700C350A0 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5A816390FB700C350A0 /* AFHTTPClient.m */; };
+		CFD9C5BD16390FB700C350A0 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5AA16390FB700C350A0 /* AFHTTPRequestOperation.m */; };
+		CFD9C5C116390FB700C350A0 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5AE16390FB700C350A0 /* AFJSONRequestOperation.m */; };
+		CFD9C5C316390FB700C350A0 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5B016390FB700C350A0 /* AFNetworkActivityIndicatorManager.m */; };
+		CFD9C5C816390FB700C350A0 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C5B516390FB700C350A0 /* AFURLConnectionOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,23 @@
 		CFD9C5811638FF9F00C350A0 /* SocialSessionsSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; name = SocialSessionsSubclass.h; path = ../../SocialSessionsSubclass.h; sourceTree = "<group>"; };
 		CFD9C5821638FF9F00C350A0 /* TwitterSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; name = TwitterSessions.h; path = ../../TwitterSessions.h; sourceTree = "<group>"; };
 		CFD9C5831638FF9F00C350A0 /* TwitterSessions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwitterSessions.m; path = ../../TwitterSessions.m; sourceTree = "<group>"; };
+		CFD9C59916390E6200C350A0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		CFD9C59C16390E6D00C350A0 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		CFD9C59E16390E9E00C350A0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		CFD9C59F16390E9E00C350A0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CFD9C5A016390E9E00C350A0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		CFD9C5A116390E9E00C350A0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CFD9C5A716390FB700C350A0 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		CFD9C5A816390FB700C350A0 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		CFD9C5A916390FB700C350A0 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		CFD9C5AA16390FB700C350A0 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		CFD9C5AD16390FB700C350A0 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		CFD9C5AE16390FB700C350A0 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		CFD9C5AF16390FB700C350A0 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		CFD9C5B016390FB700C350A0 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		CFD9C5B116390FB700C350A0 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		CFD9C5B416390FB700C350A0 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		CFD9C5B516390FB700C350A0 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +89,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFD9C5A216390E9E00C350A0 /* AdSupport.framework in Frameworks */,
+				CFD9C5A316390E9E00C350A0 /* MobileCoreServices.framework in Frameworks */,
+				CFD9C5A416390E9E00C350A0 /* Social.framework in Frameworks */,
+				CFD9C5A516390E9E00C350A0 /* SystemConfiguration.framework in Frameworks */,
+				CFD9C59D16390E6D00C350A0 /* Accounts.framework in Frameworks */,
 				CF2961881638FF37007DE03C /* UIKit.framework in Frameworks */,
 				CF29618A1638FF37007DE03C /* Foundation.framework in Frameworks */,
 				CF29618C1638FF37007DE03C /* CoreGraphics.framework in Frameworks */,
+				CFD9C59A16390E6200C350A0 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +125,12 @@
 		CF2961861638FF37007DE03C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFD9C59E16390E9E00C350A0 /* AdSupport.framework */,
+				CFD9C59F16390E9E00C350A0 /* MobileCoreServices.framework */,
+				CFD9C5A016390E9E00C350A0 /* Social.framework */,
+				CFD9C5A116390E9E00C350A0 /* SystemConfiguration.framework */,
+				CFD9C59C16390E6D00C350A0 /* Accounts.framework */,
+				CFD9C59916390E6200C350A0 /* FacebookSDK.framework */,
 				CF2961871638FF37007DE03C /* UIKit.framework */,
 				CF2961891638FF37007DE03C /* Foundation.framework */,
 				CF29618B1638FF37007DE03C /* CoreGraphics.framework */,
@@ -133,6 +165,7 @@
 		CF2961A41638FF43007DE03C /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				CFD9C5A616390FB700C350A0 /* AFNetworking */,
 				CFD9C5761638FF9F00C350A0 /* IdentityManager.h */,
 				CFD9C5771638FF9F00C350A0 /* IdentityManager.m */,
 				CFD9C5741638FF9F00C350A0 /* FacebookSessions.h */,
@@ -152,6 +185,25 @@
 			name = Vendor;
 			path = Example;
 			sourceTree = "<group>";
+		};
+		CFD9C5A616390FB700C350A0 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CFD9C5A716390FB700C350A0 /* AFHTTPClient.h */,
+				CFD9C5A816390FB700C350A0 /* AFHTTPClient.m */,
+				CFD9C5A916390FB700C350A0 /* AFHTTPRequestOperation.h */,
+				CFD9C5AA16390FB700C350A0 /* AFHTTPRequestOperation.m */,
+				CFD9C5AD16390FB700C350A0 /* AFJSONRequestOperation.h */,
+				CFD9C5AE16390FB700C350A0 /* AFJSONRequestOperation.m */,
+				CFD9C5AF16390FB700C350A0 /* AFNetworkActivityIndicatorManager.h */,
+				CFD9C5B016390FB700C350A0 /* AFNetworkActivityIndicatorManager.m */,
+				CFD9C5B116390FB700C350A0 /* AFNetworking.h */,
+				CFD9C5B416390FB700C350A0 /* AFURLConnectionOperation.h */,
+				CFD9C5B516390FB700C350A0 /* AFURLConnectionOperation.m */,
+			);
+			name = AFNetworking;
+			path = AFNetworking/AFNetworking;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -220,21 +272,18 @@
 			files = (
 				CF2961941638FF37007DE03C /* main.m in Sources */,
 				CF2961981638FF37007DE03C /* AppDelegate.m in Sources */,
-				CFD9C5841638FF9F00C350A0 /* FacebookSessions.h in Sources */,
 				CFD9C5851638FF9F00C350A0 /* FacebookSessions.m in Sources */,
-				CFD9C5861638FF9F00C350A0 /* IdentityManager.h in Sources */,
 				CFD9C5871638FF9F00C350A0 /* IdentityManager.m in Sources */,
-				CFD9C5881638FF9F00C350A0 /* LinkedInSessions.h in Sources */,
 				CFD9C5891638FF9F00C350A0 /* LinkedInSessions.m in Sources */,
-				CFD9C58A1638FF9F00C350A0 /* OAuth1Client.h in Sources */,
 				CFD9C58B1638FF9F00C350A0 /* OAuth1Client.m in Sources */,
-				CFD9C58C1638FF9F00C350A0 /* OAuth1Gateway.h in Sources */,
 				CFD9C58D1638FF9F00C350A0 /* OAuth1Gateway.m in Sources */,
-				CFD9C58F1638FF9F00C350A0 /* SocialSessions.h in Sources */,
 				CFD9C5901638FF9F00C350A0 /* SocialSessions.m in Sources */,
-				CFD9C5911638FF9F00C350A0 /* SocialSessionsSubclass.h in Sources */,
-				CFD9C5921638FF9F00C350A0 /* TwitterSessions.h in Sources */,
 				CFD9C5931638FF9F00C350A0 /* TwitterSessions.m in Sources */,
+				CFD9C5BB16390FB700C350A0 /* AFHTTPClient.m in Sources */,
+				CFD9C5BD16390FB700C350A0 /* AFHTTPRequestOperation.m in Sources */,
+				CFD9C5C116390FB700C350A0 /* AFJSONRequestOperation.m in Sources */,
+				CFD9C5C316390FB700C350A0 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				CFD9C5C816390FB700C350A0 /* AFURLConnectionOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,9 +355,14 @@
 		CF2961A21638FF38007DE03C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = "Example/Example-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -317,9 +371,14 @@
 		CF2961A31638FF38007DE03C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = "Example/Example-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
