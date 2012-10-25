@@ -1,0 +1,3 @@
+[submodule "Examples/FacebookSDK.framework"]
+	path = Examples/FacebookSDK.framework
+	url = git://github.com/b051/FacebookSDK.framework.git
