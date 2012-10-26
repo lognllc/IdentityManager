@@ -12,6 +12,7 @@
 
 @property (nonatomic, copy) NSString *id;
 @property (nonatomic, copy) NSString *email;
+@property (nonatomic, copy) NSString *password;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *accessToken;
 @property (nonatomic, copy) NSString *accessTokenSecret;

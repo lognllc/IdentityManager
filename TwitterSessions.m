@@ -24,7 +24,7 @@
 {
 	if (self = [super initWithPrefix:_prefix maximumUserSlots:_maximumUserSlots]) {
 		NSString *twitterAppID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"TwitterAppID"];
-		NSURL *callbackURL = [NSURL URLWithString:[NSString stringWithFormat:@"tw%@://success", twitterAppID]];
+		NSURL *callbackURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@://success", [[self class] socialIdentifier], twitterAppID]];
 		client = [[OAuth1Gateway alloc] initWithBaseURL:[NSURL URLWithString:@"https://api.twitter.com/oauth/"]
 												   key:twitterAppID
 												secret:TWITTER_SECRET

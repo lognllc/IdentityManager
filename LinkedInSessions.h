@@ -8,9 +8,10 @@
 #import "SocialSessions.h"
 
 #ifndef LINKEDIN_SECRET
-#warning "undefine LINKEDIN_SECRET"
-#define LINKEDIN_SECRET
+#warning "to use LinkedInSessions you should define LINKEDIN_SECRET"
+#define LINKEDIN_SECRET @""
 #endif
+
 @class AFHTTPClient;
 
 @interface LinkedInSessions : SocialSessions <SocialSessionsTrait>

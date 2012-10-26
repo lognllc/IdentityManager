@@ -25,43 +25,42 @@
 	BOOL animationPlayed;
 }
 
-@synthesize emailField, passwordField, identityManager;
+@synthesize emailField, passwordField, identityManager, delegate;
+@synthesize loginButton, signUpButton, facebookLoginButton, twitterLoginButton;
+@synthesize logoHeight, logoScale, logoYFactor;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+		logoScale = 1;
+		logoYFactor = .618f;
+	}
+	return self;
+}
 
 #pragma mark - Action
 - (void)signIn
 {
 	[loginSection endEditing:YES];
 	NSString *password = [passwordField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-	if (emailField.text.length == 0) {
-		return [self displayHUDError:@"Login" message:@"please enter your email"];
+	NSString *email = [emailField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	NSString *errorMessage;
+	NSPredicate *predicate = [self.delegate signInViewController:self predicateForField:emailField errorMessage:&errorMessage];
+	if (predicate) {
+		if (![predicate evaluateWithObject:email]) {
+			return [self displayHUDError:@"Login" message:errorMessage];
+		}
 	}
-	if (password.length < 6) {
-		return [self displayHUDError:@"Login" message:@"please enter password in 6 or more characters. Leading or trailing spaces will be ignored."];
+	predicate = [self.delegate signInViewController:self predicateForField:passwordField errorMessage:&errorMessage];
+	if (predicate) {
+		if (![predicate evaluateWithObject:password]) {
+			return [self displayHUDError:@"Login" message:errorMessage];
+		}
 	}
-	[self signIn];
-}
-
-- (void)signUp
-{
-}
-
-- (void)forgotPassword
-{
-}
-
-- (void)keyboardWillShow:(CGRect)newRect
-{
-	[UIView animateWithDuration:.25f animations:^{
-		CGRect f = loginSection.frame;
-		f.origin.y = MIN(LOGIN_SECTION_Y_ORIGIN, newRect.origin.y - f.size.height - 5);
-		loginSection.frame = f;
-		
-		CGPoint p = logoView.center;
-		p.y = MIN(LOGO_CENTER_Y_ORIGIN, f.origin.y * LOGO_CENTER_Y_FACTOR);
-		logoView.center = p;
-		CGFloat scale = f.origin.y / LOGIN_SECTION_Y_ORIGIN;
-		logoView.transform = CGAffineTransformMakeScale(scale, scale);
-	}];
+	LNUser *user = [LNUser new];
+	user.email = email;
+	user.password = password;
+	[self.delegate signInViewController:self signIn:user];
 }
 
 - (void)facebookLogin:(id)sender
@@ -69,10 +68,7 @@
 	FacebookSessions *sessions = [identityManager registeredSocialSessionsWithServiceIdentifier:[FacebookSessions socialIdentifier]];
 	[sessions loginSlot:0 completion:^(BOOL success) {
 		if (success) {
-			NSString *token = [sessions userTokenInSlot:0];
-			NSLog(@"success got facebook token %@", token);
-			[self displayHUD:@"Logging in..."];
-			
+			[self.delegate signInViewController:self signInFacebook:[sessions userInSlot:0]];
 		} else {
 			[self displayError:@"Facebook Login" message:@"You have canceled facebook login."];
 		}
@@ -94,34 +90,32 @@
 
 - (void)twitterLogin:(id)sender
 {
-	IdentityManager *identityManager = [GetAppDelegate() identityManager];
 	TwitterSessions *sessions = [identityManager registeredSocialSessionsWithServiceIdentifier:[TwitterSessions socialIdentifier]];
 	[sessions loginSlot:0 completion:^(BOOL success) {
 		if (success) {
-			NSString *token = [sessions userTokenInSlot:0];
-			NSString *tokenSecret = [sessions userTokenSecretInSlot:0];
-			NSLog(@"success got twitter token %@ / %@", token, tokenSecret);
-			[self displayHUD:@"Logging in..."];
-			[Magento.service twitterLoginToken:token tokenSecret:tokenSecret completion:^(id responseObject, NSError *error) {
-				if (error) {
-					[self displayHUDError:@"try again" message:error.localizedDescription];
-				} else {
-					NSLog(@"response %@", responseObject);
-					if (![responseObject isKindOfClass:[NSDictionary class]]) {
-						[self displayHUDError:@"try again" message:@"name and password mismatch"];
-					} else {
-						NSDictionary *customer = responseObject;
-						[self hideHUD:YES];
-						NSString *customerName = [NSString stringWithFormat:@"%@ %@", [customer objectForKey:@"firstname"], [customer objectForKey:@"lastname"]];
-						Magento.service.customerID = [customer objectForKey:@"customer_id"];
-						Magento.service.customerName = customerName;
-						[GetAppDelegate() showMainScreen];
-					}
-				}
-			}];
+			LNUser *user = [sessions userInSlot:0];
+			[self.delegate signInViewController:self signInTwitter:user];
 		} else {
 			[self displayError:@"Twitter Login" message:@"You have canceled twitter login."];
 		}
+	}];
+}
+
+- (void)signUp
+{
+}
+
+- (void)keyboardWillShow:(CGRect)newRect
+{
+	[UIView animateWithDuration:.25f animations:^{
+		CGRect f = loginSection.frame;
+		f.origin.y = MIN(logoHeight, newRect.origin.y - f.size.height - 5);
+		loginSection.frame = f;
+		CGPoint p = logoView.center;
+		p.y = MIN(logoHeight, f.origin.y) * logoYFactor;
+		logoView.center = p;
+		CGFloat scale = f.origin.y / logoHeight;
+		logoView.transform = CGAffineTransformMakeScale(scale, scale);
 	}];
 }
 
@@ -129,12 +123,6 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-	//background
-	UIImageView *background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Splash_Background.jpg"]];
-	background.contentMode = UIViewContentModeScaleAspectFill;
-	background.frame = self.view.bounds;
-	background.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-	[self.view addSubview:background];
 	
 	UIImage *logo = [UIImage imageNamed:@"splash_logo"];
 	logoSize = logo.size;
@@ -143,46 +131,36 @@
 	[self.view addSubview:logoView];
 	
 	CGSize fullSize = self.view.bounds.size;
-	CGFloat width = fullSize.width - MARGIN_LR - MARGIN_LR;
-	loginSection = [[UIView alloc] initWithFrame:CGRectMake(MARGIN_LR, LOGIN_SECTION_Y_ORIGIN, width, 0)];
+	loginSection = [[UIView alloc] initWithFrame:CGRectMake(0, logoHeight, fullSize.width, 0)];
  	
 	[self.view addSubview:loginSection];
-	emailField = [[HDTextField alloc] initWithFrame:CGRectMake(0, 0, width, HEIGHT_FOR_CELL)];
-	emailField.placeholder = @"EMAIL ADDRESS";
+	emailField = [[LNTextField alloc] initWithFrame:CGRectMake(0, 0, fullSize.width, 40)];
+	emailField.placeholder = NSLocalizedString(@"Email", nil);
 	emailField.keyboardType = UIKeyboardTypeEmailAddress;
 	emailField.autocapitalizationType = UITextAutocapitalizationTypeNone;
 	emailField.autocorrectionType = UITextAutocorrectionTypeNo;
-	emailField.backgroundColor = [UIColor colorWithWhite:1 alpha:.2f];
 	emailField.returnKeyType = UIReturnKeyNext;
 	emailField.delegate = self;
 	[loginSection addSubview:emailField];
 	
-	passwordField = [[HDTextField alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(emailField.frame) + 1, width, HEIGHT_FOR_CELL)];
-	passwordField.backgroundColor = [UIColor colorWithWhite:1 alpha:.2f];
-	passwordField.placeholder = @"PASSWORD";
+	passwordField = [[LNTextField alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(emailField.frame) + 1, fullSize.width, 40)];
+	passwordField.placeholder = NSLocalizedString(@"Password", nil);
 	passwordField.secureTextEntry = YES;
 	passwordField.returnKeyType = UIReturnKeyGo;
 	passwordField.delegate = self;
 	[loginSection addSubview:passwordField];
 	
-	UIFont *font = [UIFont semiBoldDinFontOfSize:IS_IPAD ? 27 : 17];
-	UIButton *loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	loginButton.backgroundColor = [UIColor colorWithWhite:0 alpha:.7f];
-	loginButton.frame = CGRectMake(0, CGRectGetMaxY(passwordField.frame) + (IS_IPAD ? 0 : 5.5f), width, HEIGHT_FOR_BUTTON);
-	loginButton.titleLabel.font = font;
-	[loginButton setTitle:@"LOG IN" forState:UIControlStateNormal];
+	loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+	loginButton.frame = CGRectMake(0, CGRectGetMaxY(passwordField.frame), fullSize.width, 40);
+	[loginButton setTitle:NSLocalizedString(@"Log In", nil) forState:UIControlStateNormal];
 	[loginButton addTarget:self action:@selector(signIn) forControlEvents:UIControlEventTouchUpInside];
 	[loginSection addSubview:loginButton];
-	CGRect frame = loginSection.frame;
-	frame.size.height = CGRectGetMaxY(loginButton.frame);
-	loginSection.frame = frame;
 	
-	UIButton *signUpButton = [UIButton buttonWithType:UIButtonTypeCustom];
+	signUpButton = [UIButton buttonWithType:UIButtonTypeCustom];
 	signUpButton.backgroundColor = [UIColor colorWithWhite:0 alpha:.6f];
-	signUpButton.frame = CGRectMake(MARGIN_LR, fullSize.height - HEIGHT_FOR_BUTTON - (IS_IPAD ? 102 : 22), width, HEIGHT_FOR_BUTTON);
-	signUpButton.titleLabel.font = font;
+	signUpButton.frame = CGRectMake(0, fullSize.height - 64, fullSize.width, 40);
 	signUpButton.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-	[signUpButton setTitle:@"CREATE AN ACCOUNT" forState:UIControlStateNormal];
+	[signUpButton setTitle:NSLocalizedString(@"Create An Account", nil) forState:UIControlStateNormal];
 	[signUpButton addTarget:self action:@selector(signUp) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:signUpButton];
 	
@@ -190,41 +168,23 @@
 	tap.delegate = self;
 	[self.view addGestureRecognizer:tap];
 	
-	font = [UIFont semiBoldDinFontOfSize:FONT_SIZE_NORMAL];
-	UIButton *facebookLoginButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	facebookLoginButton.frame = CGRectMake(MARGIN_LR, CGRectGetMaxY(loginSection.frame) + (IS_IPAD ? 33.5f : 26), width, IS_IPAD ? 42.5f : 20);
-	facebookLoginButton.titleLabel.font = font;
-	facebookLoginButton.titleEdgeInsets = UIEdgeInsetsMake(0, 8, 0, 0);
-	[facebookLoginButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
-	[facebookLoginButton setImage:[UIImage imageNamed:@"icon_facebook"] forState:UIControlStateNormal];
-	[facebookLoginButton setTitle:@"LOGIN WITH FACEBOOK" forState:UIControlStateNormal];
-	[facebookLoginButton addTarget:self action:@selector(facebookLogin:) forControlEvents:UIControlEventTouchUpInside];
+	if ([self.delegate respondsToSelector:@selector(signInViewController:signInFacebook:)]) {
+		facebookLoginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+		facebookLoginButton.titleEdgeInsets = UIEdgeInsetsMake(0, 8, 0, 0);
+		[facebookLoginButton setImage:[UIImage imageNamed:@"icon_facebook"] forState:UIControlStateNormal];
+		[facebookLoginButton setTitle:NSLocalizedString(@"Login with Facebook", nil) forState:UIControlStateNormal];
+		[facebookLoginButton addTarget:self action:@selector(facebookLogin:) forControlEvents:UIControlEventTouchUpInside];
+		[self.view addSubview:facebookLoginButton];
+	}
 	
-	[self.view addSubview:facebookLoginButton];
-	
-	UIButton *twitterLoginButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	twitterLoginButton.frame = CGRectOffset(facebookLoginButton.frame, 0, facebookLoginButton.frame.size.height + MARGIN_LR / 2);
-	twitterLoginButton.titleLabel.font = font;
-	twitterLoginButton.titleEdgeInsets = UIEdgeInsetsMake(0, 8, 0, 0);
-	[twitterLoginButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
-	[twitterLoginButton setImage:[UIImage imageNamed:@"icon_twitter"] forState:UIControlStateNormal];
-	[twitterLoginButton setTitle:@"LOGIN WITH TWITTER" forState:UIControlStateNormal];
-	[twitterLoginButton addTarget:self action:@selector(twitterLogin:) forControlEvents:UIControlEventTouchUpInside];
-	[self.view addSubview:twitterLoginButton];
-	
-	UIButton *forgotButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	font = [UIFont boldDinFontOfSize:IS_IPAD ? 22 : 11];
-	NSString *text = @"FORGOT YOUR PASSWORD?";
-	forgotButton.frame = CGRectMake(MARGIN_LR, CGRectGetMaxY(twitterLoginButton.frame) + (IS_IPAD ? 26 : 19), width, font.lineHeight + 2);
-	[forgotButton setTitle:text forState:UIControlStateNormal];
-	forgotButton.titleLabel.font = font;
-	[forgotButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-	CGSize textSize = [text sizeWithFont:font];
-	UIView *line = [[UIView alloc] initWithFrame:CGRectMake((width - textSize.width) / 2 - .5f, font.lineHeight - 1, textSize.width, 1)];
-	line.backgroundColor = [UIColor blackColor];
-	[forgotButton addSubview:line];
-	[forgotButton addTarget:self action:@selector(forgotPassword) forControlEvents:UIControlEventTouchUpInside];
-	[self.view addSubview:forgotButton];
+	if ([self.delegate respondsToSelector:@selector(signInViewController:signInTwitter:)]) {
+		twitterLoginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+		twitterLoginButton.titleEdgeInsets = UIEdgeInsetsMake(0, 8, 0, 0);
+		[twitterLoginButton setImage:[UIImage imageNamed:@"icon_twitter"] forState:UIControlStateNormal];
+		[twitterLoginButton setTitle:NSLocalizedString(@"Login with Twitter", nil) forState:UIControlStateNormal];
+		[twitterLoginButton addTarget:self action:@selector(twitterLogin:) forControlEvents:UIControlEventTouchUpInside];
+		[self.view addSubview:twitterLoginButton];
+	}
 }
 
 - (void)viewDidUnload
@@ -240,6 +200,19 @@
 {
 	[super viewWillAppear:animated];
 	self.navigationController.navigationBarHidden = YES;
+
+	CGRect frame = loginSection.frame;
+	frame.size.height = CGRectGetMaxY(self.loginButton.frame);
+	loginSection.frame = frame;
+	
+	if ([self.delegate respondsToSelector:@selector(frameForFacebookButtonInSignInViewController:)]) {
+		CGRect frame = [self.delegate frameForFacebookButtonInSignInViewController:self];
+		facebookLoginButton.frame = frame;
+	}
+	if ([self.delegate respondsToSelector:@selector(frameForTwitterButtonInSignInViewController:)]) {
+		CGRect frame = [self.delegate frameForTwitterButtonInSignInViewController:self];
+		twitterLoginButton.frame = frame;
+	}
 	
 	if (!animationPlayed) {
 		CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
@@ -248,11 +221,12 @@
 		logoFrame.origin.x = (fullSize.width - logoSize.width) / 2;
 		logoFrame.origin.y = (fullSize.height - logoSize.height) / 2 - statusBarHeight;
 		logoView.frame = logoFrame;
-		logoView.transform = CGAffineTransformMakeScale(.886f, .886f);
+		if (logoScale != 1)
+			logoView.transform = CGAffineTransformMakeScale(logoScale, logoScale);
 		loginSection.alpha = 0;
 		[UIView animateWithDuration:.3 animations:^{
 			CGPoint p = logoView.center;
-			p.y = LOGO_CENTER_Y_ORIGIN;
+			p.y = logoHeight * logoYFactor;
 			logoView.center = p;
 			logoView.transform = CGAffineTransformIdentity;
 		} completion:^(BOOL finished) {
@@ -262,6 +236,20 @@
 			}];
 		}];
 	}
+}
+
+- (void)_keyboardWillShow:(NSNotification *)notification
+{
+	NSValue *value = [[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey];
+	CGRect frame = [self.view convertRect:[value CGRectValue] fromView:nil];
+	[self keyboardWillShow:frame];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_keyboardWillShow:) name:UIKeyboardWillChangeFrameNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

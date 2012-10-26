@@ -7,6 +7,11 @@
 
 #import "SocialSessions.h"
 
+#ifndef TWITTER_SECRET
+#warning "to use TwitterSessions you should define TWITTER_SECRET"
+#define TWITTER_SECRET @""
+#endif
+
 @interface TwitterSessions : SocialSessions <SocialSessionsTrait>
 
 @end

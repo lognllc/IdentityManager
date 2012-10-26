@@ -10,6 +10,6 @@
 
 @implementation LNUser
 
-@synthesize slot, id, email, name, accessToken, accessTokenSecret;
+@synthesize slot, id, email, password, name, accessToken, accessTokenSecret;
 
 @end
