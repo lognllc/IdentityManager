@@ -7,6 +7,10 @@
 
 #import "SocialSessions.h"
 
+#ifndef LINKEDIN_SECRET
+#warning "undefine LINKEDIN_SECRET"
+#define LINKEDIN_SECRET
+#endif
 @class OAuth1Client;
 
 @interface LinkedInSessions : SocialSessions <SocialSessionsTrait>

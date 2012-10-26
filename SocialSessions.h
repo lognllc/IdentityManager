@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LNUser.h"
 
 extern NSString *const SUInvalidSlotNumber;
 
@@ -29,10 +30,7 @@ extern NSString *const SUInvalidSlotNumber;
 - (id)initWithPrefix:(NSString *)prefix;
 - (id)initWithPrefix:(NSString *)_prefix maximumUserSlots:(int)_maximumUserSlots;
 
-- (NSString *)userIDInSlot:(int)slot;
-- (NSString *)userNameInSlot:(int)slot;
-- (NSString *)userTokenInSlot:(int)slot;
-- (NSString *)userTokenSecretInSlot:(int)slot;
+- (LNUser *)userInSlot:(int)slot;
 
 - (BOOL)isSlotEmpty:(int)slot;
 - (NSUInteger)usedSlotCount;

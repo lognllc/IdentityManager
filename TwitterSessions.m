@@ -39,35 +39,6 @@
 	[client handleOpenURL:URL];
 }
 
-- (void)updateUser:(NSDictionary *)user inSlot:(int)slot
-{
-	if (!user) return [self removeUserInSlot:slot];
-	[self validateSlotNumber:slot];
-	
-	NSString *idKey = [self idKeyForSlot:slot];
-	NSString *nameKey = [self nameKeyForSlot:slot];
-	NSString *tokenKey = [self tokenKeyForSlot:slot];
-	NSString *tokenSecretKey = [self tokenSecretKeyForSlot:slot];
-	
-	NSString *userId = user[@"user_id"];
-	int numSlots = [self maximumUserSlots];
-	for (int i = 0; i < numSlots; i++) {
-		if (i != slot && [[self userIDInSlot:i] isEqualToString:userId]) {
-			[self removeUserInSlot:i];
-		}
-	}
-	
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	NSLog(@"updating slot %d: tw_id = %@, name = %@", slot, userId, user[@"screen_name"]);
-	[defaults setObject:userId forKey:idKey];
-	[defaults setObject:user[@"screen_name"] forKey:nameKey];
-	[defaults setObject:user[@"oauth_token"] forKey:tokenKey];
-	[defaults setObject:user[@"oauth_token_secret"] forKey:tokenSecretKey];
-	[defaults synchronize];
-	
-	[self sendNotification];
-}
-
 - (void)loginSlot:(int)slot completion:(void(^)(BOOL))completion
 {
 	if (slot < 0 || slot >= self.maximumUserSlots) {
@@ -82,7 +53,14 @@
 	
 	[client authorizeSuccess:^(NSDictionary *data) {
 		self.pendingLoginForSlot = -1;
-		[self updateUser:data inSlot:slot];
+				
+		LNUser *user = [LNUser new];
+		user.id = data[@"user_id"];
+		user.name = data[@"screen_name"];
+		user.accessToken = data[@"oauth_token"];
+		user.accessTokenSecret = data[@"oauth_token_secret"];
+		[self updateUser:user inSlot:slot];
+		
 		if (completion) completion(YES);
 	} failure:^(NSError *error) {
 		self.pendingLoginForSlot = -1;

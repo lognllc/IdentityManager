@@ -9,6 +9,7 @@
 #import "SocialSessionsSubclass.h"
 #import <FacebookSDK/FBSessionTokenCachingStrategy.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import "LNUser.h"
 
 @interface FBSession ()
 
@@ -45,50 +46,19 @@
 	return session.accessToken;
 }
 
-- (void)removeUserInSlot:(int)slot
+- (void)setUserToken:(NSString *)token InSlot:(int)slot
 {
-	[self validateSlotNumber:slot];
-	NSString *idKey = [self idKeyForSlot:slot];
-	NSString *nameKey = [self nameKeyForSlot:slot];
-	
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	
-	NSLog(@"clearing slot %d", slot);
-	// Can't be current user anymore
-	
-	FBSessionTokenCachingStrategy *tokenCachingStrategy = [self createCachingStrategyForSlot:slot];
-	[tokenCachingStrategy clearToken];
-	
-	[defaults removeObjectForKey:idKey];
-	[defaults removeObjectForKey:nameKey];
-	[defaults synchronize];
-	[self sendNotification];
 }
 
-- (void)updateUser:(NSDictionary *)user inSlot:(int)slot
+- (void)removeUserTokenInSlot:(int)slot
 {
-	if (!user) return [self removeUserInSlot:slot];
-	[self validateSlotNumber:slot];
-	
-	NSString *idKey = [self idKeyForSlot:slot];
-	NSString *nameKey = [self nameKeyForSlot:slot];
-	NSString *userId = user[@"id"];
-
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	
-	NSLog(@"updating slot %d: fbid = %@, name = %@", slot, userId, user[@"name"]);
-	[defaults setObject:userId forKey:idKey];
-	[defaults setObject:user[@"name"] forKey:nameKey];
-	
-	[defaults synchronize];
-	
-	[self sendNotification];
+	FBSessionTokenCachingStrategy *tokenCachingStrategy = [self createCachingStrategyForSlot:slot];
+	[tokenCachingStrategy clearToken];
 }
 
 - (FBSession *)switchToUserInSlot:(int)slot
 {
 	[self validateSlotNumber:slot];
-	NSLog(@"switching to slot %d %@", slot, [self userIDInSlot:slot]);
 	FBSession *session = [self sessionForSlot:slot];
 	currentSession = session;
 	[self sendNotification];
@@ -139,14 +109,9 @@
 	if (session.isOpen) {
 #ifdef _SOCIALSESSIONS_FACEBOOK_TOKEN_ONLY_
 		self.pendingLoginForSlot = -1;
-		int numSlots = [self maximumUserSlots];
-		NSString *token = session.accessToken;
-		for (int i = 0; i < numSlots; i++) {
-			if (i != slot && [[self userTokenInSlot:i] isEqualToString:token]) {
-				[self removeUserInSlot:i];
-			}
-		}
-		[self sendNotification];
+		LNUser *user = [LNUser new];
+		user.accessToken = session.accessToken;
+		[self updateUser:user inSlot:slot];
 		if (completion) completion(YES);
 #else
 		// fetch profile info such as name, id, etc. for the open session
@@ -166,7 +131,6 @@
 				return;
 			}
 			
-			pendingRequest = nil;
 			self.pendingLoginForSlot = -1;
 			
 			// we interpret an error in the initial fetch as a reason to
@@ -177,7 +141,11 @@
 				NSLog(@"Couldn't switch user: %@", error.localizedDescription);
 				return;
 			}
-			[self updateUser:result inSlot:slot];
+			LNUser *user = [LNUser new];;
+			user.id = result.id;
+			user.name = result.name;
+			pendingRequest = nil;
+			[self updateUser:user inSlot:slot];
 			if (completion) completion(YES);
 		}];
 #endif
