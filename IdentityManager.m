@@ -6,7 +6,7 @@
 //
 
 #import "IdentityManager.h"
-#import "OAuth1Client.h"
+#import "OAuth1Gateway.h"
 #import "SocialSessions.h"
 
 @interface IdentityManager ()

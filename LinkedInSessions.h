@@ -11,10 +11,10 @@
 #warning "undefine LINKEDIN_SECRET"
 #define LINKEDIN_SECRET
 #endif
-@class OAuth1Client;
+@class AFHTTPClient;
 
 @interface LinkedInSessions : SocialSessions <SocialSessionsTrait>
 
-@property (nonatomic, strong, readonly) OAuth1Client *client;
+@property (nonatomic, strong, readonly) AFHTTPClient *client;
 
 @end

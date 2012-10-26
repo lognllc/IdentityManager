@@ -6,8 +6,15 @@
 //
 
 #import "TwitterSessions.h"
-#import "OAuth1Client.h"
+#import "OAuth1Gateway.h"
 #import "SocialSessionsSubclass.h"
+
+@interface TwitterSessions ()
+
+@property (nonatomic, strong, readonly) OAuth1Gateway *client;
+
+@end
+
 
 @implementation TwitterSessions
 
@@ -18,7 +25,7 @@
 	if (self = [super initWithPrefix:_prefix maximumUserSlots:_maximumUserSlots]) {
 		NSString *twitterAppID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"TwitterAppID"];
 		NSURL *callbackURL = [NSURL URLWithString:[NSString stringWithFormat:@"tw%@://success", twitterAppID]];
-		client = [[OAuth1Client alloc] initWithBaseURL:[NSURL URLWithString:@"https://api.twitter.com/oauth/"]
+		client = [[OAuth1Gateway alloc] initWithBaseURL:[NSURL URLWithString:@"https://api.twitter.com/oauth/"]
 												   key:twitterAppID
 												secret:TWITTER_SECRET
 									  requestTokenPath:@"request_token"
