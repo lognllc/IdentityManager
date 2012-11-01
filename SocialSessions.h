@@ -30,13 +30,15 @@ extern NSString *const SUInvalidSlotNumber;
 - (id)initWithPrefix:(NSString *)prefix;
 - (id)initWithPrefix:(NSString *)_prefix maximumUserSlots:(int)_maximumUserSlots;
 
-- (LNUser *)userInSlot:(int)slot;
+
 
 - (BOOL)isSlotEmpty:(int)slot;
 - (NSUInteger)usedSlotCount;
 - (BOOL)areAllSlotsEmpty;
 
+- (LNUser *)userInSlot:(int)slot;
 - (void)removeUserInSlot:(int)slot;
+- (void)updateUser:(LNUser *)user inSlot:(int)slot;
 
 - (void)validateSlotNumber:(int)slot;
 - (void)sendNotification;
