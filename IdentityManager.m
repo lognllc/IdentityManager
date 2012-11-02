@@ -11,26 +11,22 @@
 
 @interface IdentityManager ()
 
-@property (readwrite, nonatomic) NSMutableArray *registeredSocialSessions;
+@property (strong, nonatomic) NSMutableArray *registeredSocialSessions;
+@property (strong, nonatomic) NSMutableDictionary *sessionsObjects;
+@property (strong, nonatomic) NSString *prefix;
+@property (nonatomic) int slots;
 
 @end
 
 @implementation IdentityManager
-{
-	NSString *prefix;
-	int slots;
-	NSMutableDictionary *sessionsObjects;
-}
 
-@synthesize registeredSocialSessions;
-
-- (id)initWithPrefix:(NSString *)_prefix maximumUserSlots:(int)_slots
+- (id)initWithPrefix:(NSString *)prefix maximumUserSlots:(int)slots
 {
 	if (self = [super init]) {
-		prefix = _prefix;
-		slots = _slots;
-		registeredSocialSessions = [NSMutableArray arrayWithCapacity:3];
-		sessionsObjects = [NSMutableDictionary dictionaryWithCapacity:3];
+		_prefix = prefix;
+		_slots = slots;
+		_registeredSocialSessions = [NSMutableArray arrayWithCapacity:3];
+		_sessionsObjects = [NSMutableDictionary dictionaryWithCapacity:3];
 	}
 	return self;
 }
@@ -42,10 +38,10 @@
 	}
 	NSString *identifier = [sessionClass socialIdentifier];
 	
-	id sessions = [[sessionClass alloc] initWithPrefix:prefix maximumUserSlots:slots];
-	sessionsObjects[identifier] = sessions;
-	[self.registeredSocialSessions removeObject:identifier];
-	[self.registeredSocialSessions insertObject:identifier atIndex:0];
+	id sessions = [[sessionClass alloc] initWithPrefix:_prefix maximumUserSlots:_slots];
+	_sessionsObjects[identifier] = sessions;
+	[_registeredSocialSessions removeObject:identifier];
+	[_registeredSocialSessions insertObject:identifier atIndex:0];
     return YES;
 }
 
@@ -55,8 +51,8 @@
 		return;
 	}
 	NSString *identifier = [sessionClass socialIdentifier];
-	[sessionsObjects removeObjectForKey:identifier];
-    [self.registeredSocialSessions removeObject:identifier];
+	[_sessionsObjects removeObjectForKey:identifier];
+    [_registeredSocialSessions removeObject:identifier];
 }
 
 - (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier completion:(void(^)(BOOL))completion
@@ -80,7 +76,7 @@
 - (BOOL)handleOpenURL:(NSURL *)url
 {
 	__block BOOL handled = NO;
-	[[sessionsObjects allValues] enumerateObjectsUsingBlock:^(id<SocialSessionsTrait> obj, NSUInteger idx, BOOL *stop) {
+	[[_sessionsObjects allValues] enumerateObjectsUsingBlock:^(id<SocialSessionsTrait> obj, NSUInteger idx, BOOL *stop) {
 		if ([[obj class] canHandleURL:url]) {
 			[obj handleOpenURL:url];
 			handled = YES;
@@ -92,7 +88,7 @@
 
 - (id<SocialSessionsTrait>)registeredSocialSessionsWithServiceIdentifier:(NSString *)identifier
 {
-	return sessionsObjects[identifier];
+	return _sessionsObjects[identifier];
 }
 
 @end

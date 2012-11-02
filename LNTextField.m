@@ -9,15 +9,11 @@
 
 @implementation LNTextField
 
-@synthesize edgeInsetX;
-@synthesize clearImage;
-@synthesize placeholderAlpha;
-
 - (id)initWithFrame:(CGRect)frame
 {
 	if (self = [super initWithFrame:frame]) {
-		edgeInsetX = 8;
-		placeholderAlpha = 1;
+		_edgeInsetX = 8;
+		_placeholderAlpha = 1;
 		self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		self.keyboardType = UIKeyboardTypeDefault;
 		self.returnKeyType = UIReturnKeySearch;
@@ -27,10 +23,10 @@
 	return self;
 }
 
-- (void)setClearImage:(UIImage *)_clearImage
+- (void)setClearImage:(UIImage *)clearImage
 {
+	_clearImage = clearImage;
 	UIButton *clearButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	clearImage = _clearImage;
 	[clearButton setImage:clearImage forState:UIControlStateNormal];
 	[clearButton addTarget:self action:@selector(cleanUp) forControlEvents:UIControlEventTouchUpInside];
 	clearButton.frame = (CGRect) {.size = clearImage.size};
@@ -53,7 +49,7 @@
 - (CGRect)placeholderRectForBounds:(CGRect)bounds
 {
 	CGFloat offset = (bounds.size.height - self.rightView.bounds.size.height) / 2;
-	return UIEdgeInsetsInsetRect(bounds, UIEdgeInsetsMake((bounds.size.height - self.font.lineHeight) / 2, edgeInsetX, 0, self.rightView.bounds.size.width + offset));
+	return UIEdgeInsetsInsetRect(bounds, UIEdgeInsetsMake((bounds.size.height - self.font.lineHeight) / 2, _edgeInsetX, 0, self.rightView.bounds.size.width + offset));
 }
 
 - (CGRect)editingRectForBounds:(CGRect)bounds
@@ -69,7 +65,7 @@
 
 - (CGRect)textRectForBounds:(CGRect)bounds
 {
-	return UIEdgeInsetsInsetRect(bounds, UIEdgeInsetsMake((bounds.size.height - self.font.lineHeight) / 2, edgeInsetX, 0, edgeInsetX));
+	return UIEdgeInsetsInsetRect(bounds, UIEdgeInsetsMake((bounds.size.height - self.font.lineHeight) / 2, _edgeInsetX, 0, _edgeInsetX));
 }
 
 - (CGRect)leftViewRectForBounds:(CGRect)bounds
@@ -80,7 +76,7 @@
 
 - (void)drawPlaceholderInRect:(CGRect)rect
 {
-	[[self.textColor colorWithAlphaComponent:placeholderAlpha] set];
+	[[self.textColor colorWithAlphaComponent:_placeholderAlpha] set];
 	[self.placeholder drawAtPoint:CGPointMake(0, 0) withFont:self.font];
 }
 

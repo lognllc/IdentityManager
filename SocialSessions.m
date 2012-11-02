@@ -16,21 +16,18 @@ static NSString *const SUUserEmailKeyFormat = @"%@UserEmail%d";
 static NSString *const SUTokenKeyFormat = @"%@Token%d";
 static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 
-
 @implementation SocialSessions
 
-@synthesize maximumUserSlots, prefix;
-
-- (id)initWithPrefix:(NSString *)_prefix
+- (id)initWithPrefix:(NSString *)prefix
 {
-	return [self initWithPrefix:_prefix maximumUserSlots:7];
+	return [self initWithPrefix:prefix maximumUserSlots:7];
 }
 
-- (id)initWithPrefix:(NSString *)_prefix maximumUserSlots:(int)_maximumUserSlots
+- (id)initWithPrefix:(NSString *)prefix maximumUserSlots:(int)maximumUserSlots
 {
 	if (self = [super init]) {
-		maximumUserSlots = _maximumUserSlots;
-		prefix = [NSString stringWithFormat:@"%@%@", _prefix, NSStringFromClass(self.class)];
+		_maximumUserSlots = maximumUserSlots;
+		_prefix = [NSString stringWithFormat:@"%@%@", prefix, NSStringFromClass(self.class)];
 	}
 	return self;
 }
@@ -44,7 +41,7 @@ static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 
 - (void)sendNotification
 {
-	[[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"%@ValueChanged", prefix] object:nil];
+	[[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"%@ValueChanged", _prefix] object:nil];
 }
 
 - (void)validateSlotNumber:(int)slot
@@ -87,27 +84,27 @@ static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 
 - (NSString *)idKeyForSlot:(int)slot
 {
-	return [NSString stringWithFormat:SUUserIDKeyFormat, prefix, slot];
+	return [NSString stringWithFormat:SUUserIDKeyFormat, _prefix, slot];
 }
 
 - (NSString *)nameKeyForSlot:(int)slot
 {
-	return [NSString stringWithFormat:SUUserNameKeyFormat, prefix, slot];
+	return [NSString stringWithFormat:SUUserNameKeyFormat, _prefix, slot];
 }
 
 - (NSString *)emailKeyForSlot:(int)slot
 {
-	return [NSString stringWithFormat:SUUserEmailKeyFormat, prefix, slot];
+	return [NSString stringWithFormat:SUUserEmailKeyFormat, _prefix, slot];
 }
 
 - (NSString *)tokenKeyForSlot:(int)slot
 {
-	return [NSString stringWithFormat:SUTokenKeyFormat, prefix, slot];
+	return [NSString stringWithFormat:SUTokenKeyFormat, _prefix, slot];
 }
 
 - (NSString *)tokenSecretKeyForSlot:(int)slot
 {
-	return [NSString stringWithFormat:SUTokenSecretKeyFormat, prefix, slot];
+	return [NSString stringWithFormat:SUTokenSecretKeyFormat, _prefix, slot];
 }
 
 - (LNUser *)userInSlot:(int)slot
