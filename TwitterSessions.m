@@ -10,28 +10,23 @@
 #import "SocialSessionsSubclass.h"
 
 @interface TwitterSessions ()
-
-@property (nonatomic, strong, readonly) OAuth1Gateway *client;
-
+@property (nonatomic, strong, readonly) OAuth1Gateway *oauth;
 @end
 
-
 @implementation TwitterSessions
-
-@synthesize client;
 
 - (id)initWithPrefix:(NSString *)_prefix maximumUserSlots:(int)_maximumUserSlots
 {
 	if (self = [super initWithPrefix:_prefix maximumUserSlots:_maximumUserSlots]) {
 		NSString *twitterAppID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"TwitterAppID"];
 		NSURL *callbackURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@://success", [[self class] socialIdentifier], twitterAppID]];
-		client = [[OAuth1Gateway alloc] initWithBaseURL:[NSURL URLWithString:@"https://api.twitter.com/oauth/"]
-												   key:twitterAppID
-												secret:TWITTER_SECRET
-									  requestTokenPath:@"request_token"
-										 authorizePath:@"authorize"
-									   accessTokenPath:@"access_token"
-										   callbackURL:callbackURL];
+		_oauth = [[OAuth1Gateway alloc] initWithBaseURL:[NSURL URLWithString:@"https://api.twitter.com/oauth/"]
+													key:twitterAppID
+												 secret:TWITTER_SECRET
+									   requestTokenPath:@"request_token"
+										  authorizePath:@"authorize"
+										accessTokenPath:@"access_token"
+											callbackURL:callbackURL];
 	}
 	return self;
 }
@@ -43,7 +38,7 @@
 
 - (void)handleOpenURL:(NSURL *)URL
 {
-	[client handleOpenURL:URL];
+	[_oauth handleOpenURL:URL];
 }
 
 - (void)loginSlot:(int)slot completion:(void(^)(BOOL))completion
@@ -58,9 +53,9 @@
 	
 	[self sendNotification];
 	
-	[client authorizeSuccess:^(NSDictionary *data) {
+	[_oauth authorizeSuccess:^(NSDictionary *data) {
 		self.pendingLoginForSlot = -1;
-				
+		
 		LNUser *user = [LNUser new];
 		user.id = data[@"user_id"];
 		user.name = data[@"screen_name"];

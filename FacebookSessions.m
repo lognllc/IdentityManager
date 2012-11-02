@@ -20,9 +20,6 @@
 
 @implementation FacebookSessions
 
-@synthesize currentSession;
-@synthesize pendingRequest;
-
 - (FBSessionTokenCachingStrategy *)createCachingStrategyForSlot:(int)slot
 {
 	return [[FBSessionTokenCachingStrategy alloc] initWithUserDefaultTokenInformationKeyName:[self tokenKeyForSlot:slot]];
@@ -60,7 +57,7 @@
 {
 	[self validateSlotNumber:slot];
 	FBSession *session = [self sessionForSlot:slot];
-	currentSession = session;
+	_currentSession = session;
 	[self sendNotification];
 	return session;
 }
@@ -100,7 +97,7 @@
 
 - (void)handleOpenURL:(NSURL *)URL
 {
-	[currentSession handleOpenURL:URL];
+	[_currentSession handleOpenURL:URL];
 }
 
 - (void)updateForSessionChangeForSlot:(int)slot completion:(void (^)(BOOL))completion
@@ -118,7 +115,7 @@
 		FBRequest *me = [[FBRequest alloc] initWithSession:session
 												 graphPath:@"me"];
 		
-		pendingRequest = me;
+		_pendingRequest = me;
 		
 		[me startWithCompletionHandler:^(FBRequestConnection *connection,
 										 NSDictionary<FBGraphUser> *result,
@@ -126,7 +123,7 @@
 			// because we have a cached copy of the connection, we can check
 			// to see if this is the connection we care about; a prematurely
 			// cancelled connection will short-circuit here
-			if (me != pendingRequest) {
+			if (me != _pendingRequest) {
 				if (completion) completion(NO);
 				return;
 			}
@@ -145,7 +142,7 @@
 			user.id = result.id;
 			user.name = result.name;
 			if (result[@"email"]) user.email = result[@"email"];
-			pendingRequest = nil;
+			_pendingRequest = nil;
 			[self updateUser:user inSlot:slot];
 			if (completion) completion(YES);
 		}];

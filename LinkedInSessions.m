@@ -19,14 +19,14 @@
 	OAuth1Client *client;
 }
 
-@synthesize oauth, client;
+@synthesize client;
 
 - (id)initWithPrefix:(NSString *)_prefix maximumUserSlots:(int)_maximumUserSlots
 {
 	if (self = [super initWithPrefix:_prefix maximumUserSlots:_maximumUserSlots]) {
 		NSString *linkedInAppID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"LinkedInAppID"];
 		NSURL *callbackURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@://success", [[self class] socialIdentifier], linkedInAppID]];
-		oauth = [[OAuth1Gateway alloc] initWithBaseURL:[NSURL URLWithString:@"https://api.linkedin.com/uas/oauth/"]
+		_oauth = [[OAuth1Gateway alloc] initWithBaseURL:[NSURL URLWithString:@"https://api.linkedin.com/uas/oauth/"]
 												   key:linkedInAppID
 												secret:LINKEDIN_SECRET
 									  requestTokenPath:@"requestToken"
@@ -51,7 +51,7 @@
 
 - (void)handleOpenURL:(NSURL *)URL
 {
-	[oauth handleOpenURL:URL];
+	[_oauth handleOpenURL:URL];
 }
 
 - (void)loginSlot:(int)slot completion:(void(^)(BOOL))completion
@@ -66,7 +66,7 @@
 	
 	[self sendNotification];
 	
-	[oauth authorizeSuccess:^(NSDictionary *data) {
+	[_oauth authorizeSuccess:^(NSDictionary *data) {
 		LNUser *user = [LNUser new];
 		user.accessToken = data[@"oauth_token"];
 		user.accessTokenSecret = data[@"oauth_token_secret"];
@@ -76,8 +76,8 @@
 		[self updateUser:user inSlot:slot];
 		if (completion) completion(YES);
 #else
-		client.userToken = oauth.userToken;
-		client.userTokenSecret = oauth.userTokenSecret;
+		client.userToken = _oauth.userToken;
+		client.userTokenSecret = _oauth.userTokenSecret;
 		[client getPath:@"people/~" parameters:@{@"format": @"json"} success:^(AFHTTPRequestOperation *operation, id responseObject) {
 			NSMutableString *name = [NSMutableString stringWithString:responseObject[@"firstName"]];
 			NSString *lastName = responseObject[@"lastName"];

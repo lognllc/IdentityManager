@@ -194,8 +194,6 @@ NSString *OAuthorizationHeader(NSURL *url, NSString *method, NSData *body, NSStr
 	NSString *secret;
 }
 
-@synthesize userToken, userTokenSecret=userSecret;
-
 - (id)initWithBaseURL:(NSURL *)url
                   key:(NSString *)clientID
                secret:(NSString *)_secret
@@ -203,14 +201,14 @@ NSString *OAuthorizationHeader(NSURL *url, NSString *method, NSData *body, NSStr
     if (self = [super initWithBaseURL:url]) {
 		key = clientID;
 		secret = _secret;
-		userSecret = @"";
+		_userTokenSecret = @"";
 	}
 	return self;
 }
 
 - (AFHTTPRequestOperation *)HTTPRequestOperationWithRequest:(NSMutableURLRequest *)request success:(void (^)(AFHTTPRequestOperation *, id))success failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure
 {
-	NSString *oauthString = OAuthorizationHeader(request.URL, request.HTTPMethod, request.HTTPBody, key, secret, userToken, userSecret);
+	NSString *oauthString = OAuthorizationHeader(request.URL, request.HTTPMethod, request.HTTPBody, key, secret, _userToken, _userTokenSecret);
 	[request setHTTPShouldHandleCookies:NO];
 	[request setValue:oauthString forHTTPHeaderField:@"Authorization"];
 	return [super HTTPRequestOperationWithRequest:request success:success failure:failure];
