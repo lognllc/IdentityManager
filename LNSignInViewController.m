@@ -66,7 +66,9 @@
 - (void)facebookLogin:(id)sender
 {
 	FacebookSessions *sessions = [identityManager registeredSocialSessionsWithServiceIdentifier:[FacebookSessions socialIdentifier]];
+	if (sessions) [self displayHUD:@"Authenticating..."];
 	[sessions loginSlot:0 completion:^(BOOL success) {
+		[self hideHUD:NO];
 		if (success) {
 			[self.delegate signInViewController:self signInFacebook:[sessions userInSlot:0]];
 		} else {
@@ -91,7 +93,9 @@
 - (void)twitterLogin:(id)sender
 {
 	TwitterSessions *sessions = [identityManager registeredSocialSessionsWithServiceIdentifier:[TwitterSessions socialIdentifier]];
+	if (sessions) [self displayHUD:@"Authenticating..."];
 	[sessions loginSlot:0 completion:^(BOOL success) {
+		[self hideHUD:NO];
 		if (success) {
 			LNUser *user = [sessions userInSlot:0];
 			[self.delegate signInViewController:self signInTwitter:user];

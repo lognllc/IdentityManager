@@ -141,9 +141,10 @@
 				NSLog(@"Couldn't switch user: %@", error.localizedDescription);
 				return;
 			}
-			LNUser *user = [LNUser new];;
+			LNUser *user = [LNUser new];
 			user.id = result.id;
 			user.name = result.name;
+			if (result[@"email"]) user.email = result[@"email"];
 			pendingRequest = nil;
 			[self updateUser:user inSlot:slot];
 			if (completion) completion(YES);
