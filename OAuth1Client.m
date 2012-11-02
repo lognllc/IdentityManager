@@ -60,11 +60,9 @@
 + (NSString *)ab_GUID
 {
 	CFUUIDRef uuidRef = CFUUIDCreate(NULL);
-	CFStringRef uuidStringRef = CFUUIDCreateString(NULL, uuidRef);
+	NSString *uuid = CFBridgingRelease(CFUUIDCreateString(NULL, uuidRef));
 	CFRelease(uuidRef);
-	NSString *ident = [NSString stringWithString:(__bridge NSString *)uuidStringRef];
-	CFRelease(uuidStringRef);
-	return ident;
+	return uuid;
 }
 
 @end
