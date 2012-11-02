@@ -240,7 +240,7 @@
 
 - (void)_keyboardWillShow:(NSNotification *)notification
 {
-	NSValue *value = [[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey];
+	NSValue *value = [notification userInfo][UIKeyboardFrameEndUserInfoKey];
 	CGRect frame = [self.view convertRect:[value CGRectValue] fromView:nil];
 	[self keyboardWillShow:frame];
 }

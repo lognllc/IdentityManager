@@ -43,7 +43,7 @@
 	NSString *identifier = [sessionClass socialIdentifier];
 	
 	id sessions = [[sessionClass alloc] initWithPrefix:prefix maximumUserSlots:slots];
-	[sessionsObjects setObject:sessions forKey:identifier];
+	sessionsObjects[identifier] = sessions;
 	[self.registeredSocialSessions removeObject:identifier];
 	[self.registeredSocialSessions insertObject:identifier atIndex:0];
     return YES;
@@ -92,7 +92,7 @@
 
 - (id<SocialSessionsTrait>)registeredSocialSessionsWithServiceIdentifier:(NSString *)identifier
 {
-	return [sessionsObjects objectForKey:identifier];
+	return sessionsObjects[identifier];
 }
 
 @end
