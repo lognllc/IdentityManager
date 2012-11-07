@@ -7,10 +7,9 @@
 //
 
 #import "LNSignInViewController.h"
+#import "UIViewController+HUD.h"
 #import "LNTextField.h"
 #import "IdentityManager.h"
-#import "FacebookSessions.h"
-#import "TwitterSessions.h"
 #import "MBProgressHUD.h"
 
 @interface LNSignInViewController () <UITextFieldDelegate, UIGestureRecognizerDelegate>
@@ -61,7 +60,7 @@
 
 - (void)facebookLogin:(id)sender
 {
-	FacebookSessions *sessions = [_identityManager registeredSocialSessionsWithServiceIdentifier:[FacebookSessions socialIdentifier]];
+	id<SocialSessionsTrait> sessions = [_identityManager registeredSocialSessionsWithServiceIdentifier:@"fb"];
 	if (sessions) [self displayHUD:@"Authenticating..."];
 	[sessions loginSlot:0 completion:^(BOOL success) {
 		[self hideHUD:NO];
@@ -88,7 +87,7 @@
 
 - (void)twitterLogin:(id)sender
 {
-	TwitterSessions *sessions = [_identityManager registeredSocialSessionsWithServiceIdentifier:[TwitterSessions socialIdentifier]];
+	id<SocialSessionsTrait> sessions = [_identityManager registeredSocialSessionsWithServiceIdentifier:@"tw"];
 	if (sessions) [self displayHUD:@"Authenticating..."];
 	[sessions loginSlot:0 completion:^(BOOL success) {
 		[self hideHUD:NO];
@@ -99,10 +98,6 @@
 			[self displayError:@"Twitter Login" message:@"You have canceled twitter login."];
 		}
 	}];
-}
-
-- (void)signUp
-{
 }
 
 - (void)keyboardWillShow:(CGRect)newRect
@@ -156,14 +151,15 @@
 	[_loginButton addTarget:self action:@selector(signIn) forControlEvents:UIControlEventTouchUpInside];
 	[loginSection addSubview:_loginButton];
 	
-	_signUpButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	_signUpButton.backgroundColor = [UIColor colorWithWhite:0 alpha:.6f];
-	_signUpButton.frame = CGRectMake(0, fullSize.height - 64, fullSize.width, 40);
-	_signUpButton.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-	[_signUpButton setTitle:NSLocalizedString(@"Create An Account", nil) forState:UIControlStateNormal];
-	[_signUpButton addTarget:self action:@selector(signUp) forControlEvents:UIControlEventTouchUpInside];
-	[self.view addSubview:_signUpButton];
-	
+	if ([self.delegate respondsToSelector:@selector(signUp)]) {
+		_signUpButton = [UIButton buttonWithType:UIButtonTypeCustom];
+		_signUpButton.backgroundColor = [UIColor colorWithWhite:0 alpha:.6f];
+		_signUpButton.frame = CGRectMake(0, fullSize.height - 64, fullSize.width, 40);
+		_signUpButton.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+		[_signUpButton setTitle:NSLocalizedString(@"Create An Account", nil) forState:UIControlStateNormal];
+		[_signUpButton addTarget:self action:@selector(signUp) forControlEvents:UIControlEventTouchUpInside];
+		[self.view addSubview:_signUpButton];
+	}
 	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:loginSection action:@selector(endEditing:)];
 	tap.delegate = self;
 	[self.view addGestureRecognizer:tap];
@@ -200,7 +196,7 @@
 {
 	[super viewWillAppear:animated];
 	self.navigationController.navigationBarHidden = YES;
-
+	
 	CGRect frame = loginSection.frame;
 	frame.size.height = CGRectGetMaxY(self.loginButton.frame);
 	loginSection.frame = frame;

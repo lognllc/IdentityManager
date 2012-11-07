@@ -19,6 +19,7 @@
 - (NSPredicate *)signInViewController:(LNSignInViewController *)controller predicateForField:(LNTextField *)field errorMessage:(NSString **)errorMessage;
 
 @optional
+- (void)signUp;
 - (void)signInViewController:(LNSignInViewController *)controller signInFacebook:(LNUser *)user;
 - (CGRect)frameForFacebookButtonInSignInViewController:(LNSignInViewController *)controller;
 - (void)signInViewController:(LNSignInViewController *)controller signInTwitter:(LNUser *)user;
@@ -42,7 +43,5 @@
 @property (nonatomic, assign) CGFloat logoYFactor;
 
 @property (nonatomic, weak) id<LNSignInViewControllerDelegate> delegate;
-
-- (void)signUp;
 
 @end
