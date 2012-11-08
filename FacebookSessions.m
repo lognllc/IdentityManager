@@ -11,13 +11,6 @@
 #import <FacebookSDK/FacebookSDK.h>
 #import "LNUser.h"
 
-@interface FBSession ()
-
-- (void)sendNotification;
-- (void)validateSlotNumber:(int)slot;
-
-@end
-
 @implementation FacebookSessions
 
 - (FBSessionTokenCachingStrategy *)createCachingStrategyForSlot:(int)slot
@@ -62,19 +55,12 @@
 	return session;
 }
 
-- (void)loginSlot:(int)slot completion:(void (^)(BOOL))completion
+- (void)loginSlot:(int)slot behavior:(FBSessionLoginBehavior)behavior completion:(void (^)(LNUser *))completion
 {
 	if (slot < 0 || slot >= self.maximumUserSlots) {
-		if (completion) completion(NO);
+		if (completion) completion(nil);
 		return;
 	}
-	// If we can't log in as new user, we don't want to still be logged in as previous user,
-	// particularly if it might not be obvious to the user that the login failed.
-	self.pendingLoginForSlot = slot;
-	
-	FBSessionLoginBehavior behavior = (slot == 0) ?
-	FBSessionLoginBehaviorWithFallbackToWebView :
-	FBSessionLoginBehaviorForcingWebView;
 	
 	FBSession *session = [self switchToUserInSlot:slot];
 	
@@ -90,6 +76,19 @@
 			}];
 }
 
+- (void)loginSlot:(int)slot completion:(void (^)(LNUser *))completion
+{
+	FBSessionLoginBehavior behavior = (slot == 0) ?
+	FBSessionLoginBehaviorWithFallbackToWebView :
+	FBSessionLoginBehaviorForcingWebView;
+	
+#ifdef _SOCIALSESSIONS_FACEBOOK_LOGIN_BEHAVIOR_
+	behavior = _SOCIALSESSIONS_FACEBOOK_LOGIN_BEHAVIOR_;
+#endif
+	
+	[self loginSlot:slot behavior:behavior completion:completion];
+}
+
 + (NSString *)socialIdentifier
 {
 	return @"fb";
@@ -100,16 +99,15 @@
 	[_currentSession handleOpenURL:URL];
 }
 
-- (void)updateForSessionChangeForSlot:(int)slot completion:(void (^)(BOOL))completion
+- (void)updateForSessionChangeForSlot:(int)slot completion:(void (^)(LNUser *))completion
 {
 	FBSession *session = self.currentSession;
 	if (session.isOpen) {
 #ifdef _SOCIALSESSIONS_FACEBOOK_TOKEN_ONLY_
-		self.pendingLoginForSlot = -1;
 		LNUser *user = [LNUser new];
 		user.accessToken = session.accessToken;
 		[self updateUser:user inSlot:slot];
-		if (completion) completion(YES);
+		if (completion) completion([self userInSlot:slot]);
 #else
 		// fetch profile info such as name, id, etc. for the open session
 		FBRequest *me = [[FBRequest alloc] initWithSession:session
@@ -124,17 +122,15 @@
 			// to see if this is the connection we care about; a prematurely
 			// cancelled connection will short-circuit here
 			if (me != _pendingRequest) {
-				if (completion) completion(NO);
+				if (completion) completion(nil);
 				return;
 			}
-			
-			self.pendingLoginForSlot = -1;
 			
 			// we interpret an error in the initial fetch as a reason to
 			// fail the user switch, and leave the application without an
 			// active user (similar to initial state)
 			if (error) {
-				if (completion) completion(NO);
+				if (completion) completion(nil);
 				NSLog(@"Couldn't switch user: %@", error.localizedDescription);
 				return;
 			}
@@ -144,7 +140,7 @@
 			if (result[@"email"]) user.email = result[@"email"];
 			_pendingRequest = nil;
 			[self updateUser:user inSlot:slot];
-			if (completion) completion(YES);
+			if (completion) completion([self userInSlot:slot]);
 		}];
 #endif
 	} else {

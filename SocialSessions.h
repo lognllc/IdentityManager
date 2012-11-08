@@ -16,7 +16,7 @@ extern NSString *const SUInvalidSlotNumber;
 - (void)handleOpenURL:(NSURL *)URL;
 - (NSUInteger)usedSlotCount;
 - (LNUser *)userInSlot:(int)slot;
-- (void)loginSlot:(int)slot completion:(void(^)(BOOL success))completion;
+- (void)loginSlot:(int)slot completion:(void (^)(LNUser *))completion;
 - (int)maximumUserSlots;
 - (BOOL)isSlotEmpty:(int)slot;
 
@@ -26,12 +26,9 @@ extern NSString *const SUInvalidSlotNumber;
 
 @property (readonly) int maximumUserSlots;
 @property (nonatomic, readonly) NSString *prefix;
-@property (nonatomic) int pendingLoginForSlot;
 
 - (id)initWithPrefix:(NSString *)prefix;
 - (id)initWithPrefix:(NSString *)_prefix maximumUserSlots:(int)_maximumUserSlots;
-
-
 
 - (BOOL)isSlotEmpty:(int)slot;
 - (NSUInteger)usedSlotCount;

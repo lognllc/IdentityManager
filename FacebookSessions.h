@@ -13,5 +13,6 @@
 
 @property (nonatomic, strong, readonly) FBSession *currentSession;
 @property (nonatomic, strong, readonly) FBRequest *pendingRequest;
+- (FBSession *)sessionForSlot:(int)slot;
 
 @end

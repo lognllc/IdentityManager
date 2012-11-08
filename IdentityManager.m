@@ -55,20 +55,25 @@
     [_registeredSocialSessions removeObject:identifier];
 }
 
-- (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier completion:(void(^)(BOOL))completion
+- (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier completion:(void(^)(LNUser *))completion
 {
 	id<SocialSessionsTrait> sessions = [self registeredSocialSessionsWithServiceIdentifier:identifier];
 	if (sessions) {
 		int maxCount = [sessions maximumUserSlots];
-		for (int i = 0; i < maxCount; i++) {
+		int i = 0;
+		for (; i < maxCount; i++) {
 			if ([sessions isSlotEmpty:i]) {
 				[sessions loginSlot:i completion:completion];
 				return i;
 			}
 		}
-		NSLog(@"no slot is empty");
+		i = 0;
+		NSLog(@"no slot is empty reusing first one");
+		[sessions loginSlot:i completion:completion];
+		return i;
 	} else {
 		NSLog(@"identifier '%@' does not match any registered socialsessions", identifier);
+		if (completion) completion(nil);
 	}
 	return -1;
 }

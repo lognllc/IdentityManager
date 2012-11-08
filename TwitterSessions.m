@@ -41,20 +41,15 @@
 	[_oauth handleOpenURL:URL];
 }
 
-- (void)loginSlot:(int)slot completion:(void(^)(BOOL))completion
+- (void)loginSlot:(int)slot completion:(void(^)(LNUser *))completion
 {
 	if (slot < 0 || slot >= self.maximumUserSlots) {
-		if (completion) completion(NO);
+		if (completion) completion(nil);
 		return;
 	}
-	// If we can't log in as new user, we don't want to still be logged in as previous user,
-	// particularly if it might not be obvious to the user that the login failed.
-	self.pendingLoginForSlot = slot;
-	
 	[self sendNotification];
 	
 	[_oauth authorizeSuccess:^(NSDictionary *data) {
-		self.pendingLoginForSlot = -1;
 		
 		LNUser *user = [LNUser new];
 		user.id = data[@"user_id"];
@@ -62,12 +57,10 @@
 		user.accessToken = data[@"oauth_token"];
 		user.accessTokenSecret = data[@"oauth_token_secret"];
 		[self updateUser:user inSlot:slot];
-		
-		if (completion) completion(YES);
+		if (completion) completion(user);
 	} failure:^(NSError *error) {
-		self.pendingLoginForSlot = -1;
 		NSLog(@"error %@", error);
-		if (completion) completion(NO);
+		if (completion) completion(nil);
 	}];
 }
 

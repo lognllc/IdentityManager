@@ -60,12 +60,11 @@
 
 - (void)facebookLogin:(id)sender
 {
-	id<SocialSessionsTrait> sessions = [_identityManager registeredSocialSessionsWithServiceIdentifier:@"fb"];
-	if (sessions) [self displayHUD:@"Authenticating..."];
-	[sessions loginSlot:0 completion:^(BOOL success) {
+	[self displayHUD:@"Authenticating..."];
+	[_identityManager authenticateIdentityWithServiceIdentifier:@"fb" completion:^(LNUser *user) {
 		[self hideHUD:NO];
-		if (success) {
-			[self.delegate signInViewController:self signInFacebook:[sessions userInSlot:0]];
+		if (user) {
+			[self.delegate signInViewController:self signInFacebook:user];
 		} else {
 			[self displayError:@"Facebook Login" message:@"You have canceled facebook login."];
 		}
@@ -87,12 +86,10 @@
 
 - (void)twitterLogin:(id)sender
 {
-	id<SocialSessionsTrait> sessions = [_identityManager registeredSocialSessionsWithServiceIdentifier:@"tw"];
-	if (sessions) [self displayHUD:@"Authenticating..."];
-	[sessions loginSlot:0 completion:^(BOOL success) {
+	[self displayHUD:@"Authenticating..."];
+	[_identityManager authenticateIdentityWithServiceIdentifier:@"fb" completion:^(LNUser *user) {
 		[self hideHUD:NO];
-		if (success) {
-			LNUser *user = [sessions userInSlot:0];
+		if (user) {
 			[self.delegate signInViewController:self signInTwitter:user];
 		} else {
 			[self displayError:@"Twitter Login" message:@"You have canceled twitter login."];

@@ -19,6 +19,6 @@
 
 - (id<SocialSessionsTrait>)registeredSocialSessionsWithServiceIdentifier:(NSString *)identifier;
 
-- (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier completion:(void(^)(BOOL success))completion;
+- (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier completion:(void(^)(LNUser *))completion;
 
 @end

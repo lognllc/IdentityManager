@@ -54,15 +54,12 @@
 	[_oauth handleOpenURL:URL];
 }
 
-- (void)loginSlot:(int)slot completion:(void(^)(BOOL))completion
+- (void)loginSlot:(int)slot completion:(void (^)(LNUser *))completion
 {
 	if (slot < 0 || slot >= self.maximumUserSlots) {
-		if (completion) completion(NO);
+		if (completion) completion(nil);
 		return;
 	}
-	// If we can't log in as new user, we don't want to still be logged in as previous user,
-	// particularly if it might not be obvious to the user that the login failed.
-	self.pendingLoginForSlot = slot;
 	
 	[self sendNotification];
 	
@@ -72,9 +69,8 @@
 		user.accessTokenSecret = data[@"oauth_token_secret"];
 		
 #ifdef _SOCIALSESSIONS_LINKEDIN_TOKEN_ONLY_
-		self.pendingLoginForSlot = -1;
 		[self updateUser:user inSlot:slot];
-		if (completion) completion(YES);
+		if (completion) completion([self userInSlot:slot]);
 #else
 		client.userToken = _oauth.userToken;
 		client.userTokenSecret = _oauth.userTokenSecret;
@@ -85,19 +81,16 @@
 			[name appendString:lastName];
 			user.name = name;
 			[self updateUser:user inSlot:slot];
-			self.pendingLoginForSlot = -1;
-			if (completion) completion(YES);
+			if (completion) completion(user);
 		} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 			[self updateUser:user inSlot:slot];
-			self.pendingLoginForSlot = -1;
-			if (completion) completion(YES);
+			if (completion) completion(user);
 		}];
 #endif
 	} failure:^(NSError *error) {
-		self.pendingLoginForSlot = -1;
 		NSDictionary *suggestion = [NSURL ab_parseURLQueryString:error.localizedRecoverySuggestion];
 		NSLog(@"suggestion: %@", suggestion);
-		if (completion) completion(NO);
+		if (completion) completion(nil);
 	}];
 }
 
