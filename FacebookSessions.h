@@ -12,7 +12,9 @@
 @interface FacebookSessions : SocialSessions <SocialSessionsTrait>
 
 @property (nonatomic, strong, readonly) FBSession *currentSession;
+@property (nonatomic, readonly) int currentSlot;
 @property (nonatomic, strong, readonly) FBRequest *pendingRequest;
-- (FBSession *)sessionForSlot:(int)slot;
+
+- (FBSession *)switchToUserInSlot:(int)slot;
 
 @end

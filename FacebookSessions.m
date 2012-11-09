@@ -13,6 +13,14 @@
 
 @implementation FacebookSessions
 
+- (id)initWithPrefix:(NSString *)_prefix maximumUserSlots:(int)_maximumUserSlots
+{
+	if (self = [super initWithPrefix:_prefix maximumUserSlots:_maximumUserSlots]) {
+		_currentSlot = NSNotFound;
+	}
+	return self;
+}
+
 - (FBSessionTokenCachingStrategy *)createCachingStrategyForSlot:(int)slot
 {
 	return [[FBSessionTokenCachingStrategy alloc] initWithUserDefaultTokenInformationKeyName:[self tokenKeyForSlot:slot]];
@@ -49,8 +57,12 @@
 - (FBSession *)switchToUserInSlot:(int)slot
 {
 	[self validateSlotNumber:slot];
+	if (_currentSlot == slot) {
+		if (_currentSession) return _currentSession;
+	}
 	FBSession *session = [self sessionForSlot:slot];
 	_currentSession = session;
+	_currentSlot = slot;
 	[self sendNotification];
 	return session;
 }
@@ -61,9 +73,10 @@
 		if (completion) completion(nil);
 		return;
 	}
-	
 	FBSession *session = [self switchToUserInSlot:slot];
-	
+	if (session.isOpen) {
+		return [self updateForSessionChangeForSlot:slot completion:completion];
+	}
 	// we pass the correct behavior here to indicate the login workflow to use (Facebook Login, fallback, etc.)
 	[session openWithBehavior:behavior
 			completionHandler:^(FBSession *session,
@@ -103,46 +116,43 @@
 {
 	FBSession *session = self.currentSession;
 	if (session.isOpen) {
-#ifdef _SOCIALSESSIONS_FACEBOOK_TOKEN_ONLY_
-		LNUser *user = [LNUser new];
-		user.accessToken = session.accessToken;
-		[self updateUser:user inSlot:slot];
-		if (completion) completion([self userInSlot:slot]);
-#else
-		// fetch profile info such as name, id, etc. for the open session
-		FBRequest *me = [[FBRequest alloc] initWithSession:session
-												 graphPath:@"me"];
-		
-		_pendingRequest = me;
-		
-		[me startWithCompletionHandler:^(FBRequestConnection *connection,
-										 NSDictionary<FBGraphUser> *result,
-										 NSError *error) {
-			// because we have a cached copy of the connection, we can check
-			// to see if this is the connection we care about; a prematurely
-			// cancelled connection will short-circuit here
-			if (me != _pendingRequest) {
-				if (completion) completion(nil);
-				return;
-			}
+		__block LNUser *user = [self userInSlot:slot];
+#ifndef _SOCIALSESSIONS_FACEBOOK_TOKEN_ONLY_
+		if (!user.id && !user.name) {
+			// fetch profile info such as name, id, etc. for the open session
+			FBRequest *me = [[FBRequest alloc] initWithSession:session
+													 graphPath:@"me"];
+			_pendingRequest = me;
 			
-			// we interpret an error in the initial fetch as a reason to
-			// fail the user switch, and leave the application without an
-			// active user (similar to initial state)
-			if (error) {
-				if (completion) completion(nil);
-				NSLog(@"Couldn't switch user: %@", error.localizedDescription);
-				return;
-			}
-			LNUser *user = [LNUser new];
-			user.id = result.id;
-			user.name = result.name;
-			if (result[@"email"]) user.email = result[@"email"];
-			_pendingRequest = nil;
-			[self updateUser:user inSlot:slot];
-			if (completion) completion([self userInSlot:slot]);
-		}];
+			[me startWithCompletionHandler:^(FBRequestConnection *connection,
+											 NSDictionary<FBGraphUser> *result,
+											 NSError *error) {
+				// because we have a cached copy of the connection, we can check
+				// to see if this is the connection we care about; a prematurely
+				// cancelled connection will short-circuit here
+				if (me != _pendingRequest) {
+					if (completion) completion(user);
+					return;
+				}
+				
+				// we interpret an error in the initial fetch as a reason to
+				// fail the user switch, and leave the application without an
+				// active user (similar to initial state)
+				if (error) {
+					if (completion) completion(nil);
+					NSLog(@"Couldn't switch user: %@", error.localizedDescription);
+					return;
+				}
+				user.id = result.id;
+				user.name = result.name;
+				if (result[@"email"]) user.email = result[@"email"];
+				_pendingRequest = nil;
+				[self updateUser:user inSlot:slot];
+				if (completion) completion(user);
+			}];
+		} else
 #endif
+			if (completion) completion(user);
 	} else {
 		// in the closed case, we check to see if we picked up a cached token that we
 		// expect to be valid and ready for use; if so then we open the session on the spot
