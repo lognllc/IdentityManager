@@ -18,6 +18,7 @@ extern NSString *const SUInvalidSlotNumber;
 - (LNUser *)userInSlot:(int)slot;
 - (void)loginSlot:(int)slot completion:(void (^)(LNUser *))completion;
 - (int)maximumUserSlots;
+- (void)removeUserInSlot:(int)slot;
 - (BOOL)isSlotEmpty:(int)slot;
 
 @end

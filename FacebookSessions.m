@@ -52,6 +52,10 @@
 {
 	FBSessionTokenCachingStrategy *tokenCachingStrategy = [self createCachingStrategyForSlot:slot];
 	[tokenCachingStrategy clearToken];
+	if (_currentSlot == slot) {
+		[_currentSession closeAndClearTokenInformation];
+		_currentSession = nil;
+	}
 }
 
 - (FBSession *)switchToUserInSlot:(int)slot
