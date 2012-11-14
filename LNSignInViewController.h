@@ -14,11 +14,9 @@
 
 @protocol LNSignInViewControllerDelegate <NSObject>
 
-- (void)signInViewController:(LNSignInViewController *)controller signIn:(LNUser *)user;
-
-- (NSPredicate *)signInViewController:(LNSignInViewController *)controller predicateForField:(LNTextField *)field errorMessage:(NSString **)errorMessage;
-
 @optional
+- (void)signInViewController:(LNSignInViewController *)controller signIn:(LNUser *)user;
+- (NSPredicate *)signInViewController:(LNSignInViewController *)controller predicateForField:(LNTextField *)field errorMessage:(NSString **)errorMessage;
 - (void)signUp;
 - (void)signInViewController:(LNSignInViewController *)controller signInFacebook:(LNUser *)user;
 - (CGRect)frameForFacebookButtonInSignInViewController:(LNSignInViewController *)controller;

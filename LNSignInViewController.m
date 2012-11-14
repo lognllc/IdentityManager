@@ -121,33 +121,33 @@
 	logoView = [[UIImageView alloc] initWithImage:logo];
 	logoView.contentMode = UIViewContentModeScaleAspectFit;
 	[self.view addSubview:logoView];
-	
 	CGSize fullSize = self.view.bounds.size;
 	loginSection = [[UIView alloc] initWithFrame:CGRectMake(0, _logoHeight, fullSize.width, 0)];
- 	
-	[self.view addSubview:loginSection];
-	_emailField = [[LNTextField alloc] initWithFrame:CGRectMake(0, 0, fullSize.width, 40)];
-	_emailField.placeholder = NSLocalizedString(@"Email", nil);
-	_emailField.keyboardType = UIKeyboardTypeEmailAddress;
-	_emailField.autocapitalizationType = UITextAutocapitalizationTypeNone;
-	_emailField.autocorrectionType = UITextAutocorrectionTypeNo;
-	_emailField.returnKeyType = UIReturnKeyNext;
-	_emailField.delegate = self;
-	[loginSection addSubview:_emailField];
-	
-	_passwordField = [[LNTextField alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_emailField.frame) + 1, fullSize.width, 40)];
-	_passwordField.placeholder = NSLocalizedString(@"Password", nil);
-	_passwordField.secureTextEntry = YES;
-	_passwordField.returnKeyType = UIReturnKeyGo;
-	_passwordField.delegate = self;
-	[loginSection addSubview:_passwordField];
-	
-	_loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	_loginButton.frame = CGRectMake(0, CGRectGetMaxY(_passwordField.frame), fullSize.width, 40);
-	[_loginButton setTitle:NSLocalizedString(@"Log In", nil) forState:UIControlStateNormal];
-	[_loginButton addTarget:self action:@selector(signIn) forControlEvents:UIControlEventTouchUpInside];
-	[loginSection addSubview:_loginButton];
-	
+
+	if ([self.delegate respondsToSelector:@selector(signInViewController:signIn:)]) {
+		[self.view addSubview:loginSection];
+		_emailField = [[LNTextField alloc] initWithFrame:CGRectMake(0, 0, fullSize.width, 40)];
+		_emailField.placeholder = NSLocalizedString(@"Email", nil);
+		_emailField.keyboardType = UIKeyboardTypeEmailAddress;
+		_emailField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+		_emailField.autocorrectionType = UITextAutocorrectionTypeNo;
+		_emailField.returnKeyType = UIReturnKeyNext;
+		_emailField.delegate = self;
+		[loginSection addSubview:_emailField];
+		
+		_passwordField = [[LNTextField alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_emailField.frame) + 1, fullSize.width, 40)];
+		_passwordField.placeholder = NSLocalizedString(@"Password", nil);
+		_passwordField.secureTextEntry = YES;
+		_passwordField.returnKeyType = UIReturnKeyGo;
+		_passwordField.delegate = self;
+		[loginSection addSubview:_passwordField];
+		
+		_loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+		_loginButton.frame = CGRectMake(0, CGRectGetMaxY(_passwordField.frame), fullSize.width, 40);
+		[_loginButton setTitle:NSLocalizedString(@"Log In", nil) forState:UIControlStateNormal];
+		[_loginButton addTarget:self action:@selector(signIn) forControlEvents:UIControlEventTouchUpInside];
+		[loginSection addSubview:_loginButton];
+	}
 	if ([self.delegate respondsToSelector:@selector(signUp)]) {
 		_signUpButton = [UIButton buttonWithType:UIButtonTypeCustom];
 		_signUpButton.backgroundColor = [UIColor colorWithWhite:0 alpha:.6f];
