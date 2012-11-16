@@ -95,7 +95,7 @@
 - (void)twitterLogin:(id)sender
 {
 	[self displayHUD:@"Authenticating..."];
-	[_identityManager authenticateIdentityWithServiceIdentifier:@"fb" completion:^(LNUser *user) {
+	[_identityManager authenticateIdentityWithServiceIdentifier:@"tw" completion:^(LNUser *user) {
 		[self hideHUD:NO];
 		if (user) {
 			[self.delegate signInViewController:self signInTwitter:user];
