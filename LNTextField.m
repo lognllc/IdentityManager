@@ -19,8 +19,37 @@
 		self.returnKeyType = UIReturnKeySearch;
 		self.autocapitalizationType = UITextAutocapitalizationTypeNone;
 		self.clipsToBounds = YES;
+		_validateType = LNTextValidateNone;
 	}
 	return self;
+}
+
+- (BOOL)isValid:(NSString *)text
+{
+	if (_validateType == LNTextValidateNone) return YES;
+	if (_validateType == LNTextValidateCustom) {
+		return [_validatePredicate evaluateWithObject:text];
+	}
+	NSString *reg = nil;
+	if (_validateType == LNTextValidateEmail) {
+		reg = @"(?:[a-z0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[a-z0-9!#$%\\&'*+/=?\\^_`{|}"
+		@"~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\"
+		@"x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-"
+		@"z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5"
+		@"]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-"
+		@"9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21"
+		@"-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])";
+	}
+	if (_validateType == LNTextValidateRequired) {
+		reg = @"^\\S.*?\\S$";
+	}
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", reg];
+	return [predicate evaluateWithObject:text];
+}
+
+- (BOOL)isValid
+{
+	return [self isValid:self.text];
 }
 
 - (void)setClearImage:(UIImage *)clearImage

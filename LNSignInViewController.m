@@ -40,6 +40,14 @@
 	NSString *password = [_passwordField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 	NSString *email = [_emailField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	NSString *errorMessage;
+	if (!_passwordField.isValid) {
+		errorMessage = _passwordField.failedValidateText;
+	} else if (!_emailField.isValid) {
+		errorMessage = _emailField.failedValidateText;
+	}
+	if (errorMessage) {
+		return [self displayError:@"Login" message:errorMessage];
+	}
 	NSPredicate *predicate = [self.delegate signInViewController:self predicateForField:_emailField errorMessage:&errorMessage];
 	if (predicate) {
 		if (![predicate evaluateWithObject:email]) {
@@ -133,6 +141,8 @@
 		_emailField.autocorrectionType = UITextAutocorrectionTypeNo;
 		_emailField.returnKeyType = UIReturnKeyNext;
 		_emailField.delegate = self;
+		_emailField.validateType = LNTextValidateEmail;
+		_emailField.failedValidateText = @"wrong email format";
 		[loginSection addSubview:_emailField];
 		
 		_passwordField = [[LNTextField alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_emailField.frame) + 1, fullSize.width, 40)];
@@ -140,6 +150,8 @@
 		_passwordField.secureTextEntry = YES;
 		_passwordField.returnKeyType = UIReturnKeyGo;
 		_passwordField.delegate = self;
+		_passwordField.validateType = LNTextValidateRequired;
+		_passwordField.failedValidateText = @"you should enter your password";
 		[loginSection addSubview:_passwordField];
 		
 		_loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
