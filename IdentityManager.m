@@ -78,6 +78,16 @@
 	return -1;
 }
 
+- (void)logoutAll
+{
+	for (id<SocialSessionsTrait> sessions in _sessionsObjects) {
+		int maxCount = [sessions maximumUserSlots];
+		for (int i = 0; i < maxCount; i++) {
+			[sessions removeUserInSlot:i];
+		}
+	}
+}
+
 - (BOOL)handleOpenURL:(NSURL *)url
 {
 	__block BOOL handled = NO;

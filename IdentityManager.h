@@ -18,7 +18,7 @@
 - (void)unregisterSocialSessionsClass:(Class)sessionClass;
 
 - (id<SocialSessionsTrait>)registeredSocialSessionsWithServiceIdentifier:(NSString *)identifier;
-
+- (void)logoutAll;
 - (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier completion:(void(^)(LNUser *))completion;
 
 @end
