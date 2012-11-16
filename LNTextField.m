@@ -41,7 +41,7 @@
 		@"-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])";
 	}
 	if (_validateType == LNTextValidateRequired) {
-		reg = @"^\\S.*?\\S$";
+		reg = @"^\\S(?:.*?\\S)?$";
 	}
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", reg];
 	return [predicate evaluateWithObject:text];
