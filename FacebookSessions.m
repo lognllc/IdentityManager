@@ -31,7 +31,7 @@
 	FBSessionTokenCachingStrategy *tokenCachingStrategy = [self createCachingStrategyForSlot:slot];
 	
 	FBSession *session = [[FBSession alloc] initWithAppID:nil
-											  permissions:nil
+											  permissions:@[@"email"]
 										  urlSchemeSuffix:nil
 									   tokenCacheStrategy:tokenCachingStrategy];
 	return session;
@@ -122,7 +122,7 @@
 	if (session.isOpen) {
 		__block LNUser *user = [self userInSlot:slot];
 #ifndef _SOCIALSESSIONS_FACEBOOK_TOKEN_ONLY_
-		if (!user.id && !user.name) {
+		if (!user.id || !user.name || !user.email) {
 			// fetch profile info such as name, id, etc. for the open session
 			FBRequest *me = [[FBRequest alloc] initWithSession:session
 													 graphPath:@"me"];
