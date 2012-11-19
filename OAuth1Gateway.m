@@ -41,7 +41,7 @@
     [self acquireOAuthRequestTokenSuccess:^(NSDictionary *_) {
 		NSLog(@"leaving app...");
         [[UIApplication sharedApplication] openURL:[[self requestWithMethod:@"GET" path:authorizePath parameters:@{@"oauth_token": self.userToken}] URL]];
-    } failure:nil];
+    } failure:failure];
 }
 
 - (BOOL)handleOpenURL:(NSURL *)url
