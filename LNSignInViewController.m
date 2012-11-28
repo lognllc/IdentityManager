@@ -48,16 +48,18 @@
 	if (errorMessage) {
 		return [self displayError:@"Login" message:errorMessage];
 	}
-	NSPredicate *predicate = [self.delegate signInViewController:self predicateForField:_emailField errorMessage:&errorMessage];
-	if (predicate) {
-		if (![predicate evaluateWithObject:email]) {
-			return [self displayHUDError:@"Login" message:errorMessage];
+	if ([self.delegate respondsToSelector:@selector(signInViewController:predicateForField:errorMessage:)]) {
+		NSPredicate *predicate = [self.delegate signInViewController:self predicateForField:_emailField errorMessage:&errorMessage];
+		if (predicate) {
+			if (![predicate evaluateWithObject:email]) {
+				return [self displayHUDError:@"Login" message:errorMessage];
+			}
 		}
-	}
-	predicate = [self.delegate signInViewController:self predicateForField:_passwordField errorMessage:&errorMessage];
-	if (predicate) {
-		if (![predicate evaluateWithObject:password]) {
-			return [self displayHUDError:@"Login" message:errorMessage];
+		predicate = [self.delegate signInViewController:self predicateForField:_passwordField errorMessage:&errorMessage];
+		if (predicate) {
+			if (![predicate evaluateWithObject:password]) {
+				return [self displayHUDError:@"Login" message:errorMessage];
+			}
 		}
 	}
 	LNUser *user = [LNUser new];
@@ -131,7 +133,7 @@
 	[self.view addSubview:logoView];
 	CGSize fullSize = self.view.bounds.size;
 	loginSection = [[UIView alloc] initWithFrame:CGRectMake(0, _logoHeight, fullSize.width, 0)];
-
+	
 	if ([self.delegate respondsToSelector:@selector(signInViewController:signIn:)]) {
 		[self.view addSubview:loginSection];
 		_emailField = [[LNTextField alloc] initWithFrame:CGRectMake(0, 0, fullSize.width, 40)];
