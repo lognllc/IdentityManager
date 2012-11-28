@@ -7,13 +7,14 @@
 //
 
 #import "UIViewController+HUD.h"
-#import "MBProgressHUD.h"
-#import <objc/runtime.h>
+#import "MBProgressHUD+Appearance.h"
 
 @implementation MBProgressHUD (Plist)
 
 + (NSDictionary *)configuration
 {
+	NSDictionary *attributes = [[self appearance] HUDAttributes];
+	if (attributes) return attributes;
 	static NSDictionary *conf;
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
@@ -32,16 +33,17 @@
 	if (text) {
 		MBProgressHUD *hud = [self HUD];
 		NSDictionary *conf = [[hud class] configuration];
-		NSNumber *square = conf[@"square"];
+		NSNumber *square = conf[HUDAttributeSquare];
 		if (square) hud.square = [square boolValue];
-		BOOL uppercase = [conf[@"uppercase"] boolValue];
+		BOOL uppercase = [conf[HUDAttributeUppercase] boolValue];
 		text = NSLocalizedString(text, nil);
 		if (uppercase) hud.labelText = text.uppercaseString;
 		else hud.labelText = text;
-		NSString *image = conf[@"custom.image"];
+		id image = conf[HUDAttributeCustomImage];
 		if (image) {
 			hud.mode = MBProgressHUDModeCustomView;
-			hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:image]];
+			if ([image isKindOfClass:[NSString class]]) image = [UIImage imageNamed:image];
+			hud.customView = [[UIImageView alloc] initWithImage:image];
 		} else {
 			hud.mode = MBProgressHUDModeIndeterminate;
 		}
@@ -60,23 +62,31 @@
 		hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 		hud.removeFromSuperViewOnHide = YES;
 		NSDictionary *conf = [[hud class] configuration];
-		NSString *fontName = conf[@"labelFont.name"];
-		BOOL iPad  = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
-		
+		id fontName = conf[HUDArrributeLabelFont];
 		if (fontName) {
-			CGFloat size = 0;
-			if (iPad) size = [conf[@"labelFont.size_iPad"] floatValue];
-			if (!size) size = [conf[@"labelFont.size"] floatValue];
-			hud.labelFont = [UIFont fontWithName:fontName size:size];
+			if ([fontName isKindOfClass:[UIFont class]]) {
+				hud.labelFont = fontName;
+			} else {
+				BOOL iPad  = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
+				CGFloat size = 0;
+				if (iPad) size = [conf[@"labelFont.size_iPad"] floatValue];
+				if (!size) size = [conf[@"labelFont.size"] floatValue];
+				hud.labelFont = [UIFont fontWithName:fontName size:size];
+			}
 		}
-		fontName = conf[@"detailsLabelFont.name"];
-		if (fontName) {
-			CGFloat size = 0;
-			if (iPad) size = [conf[@"detailsLabelFont.size_iPad"] floatValue];
-			if (!size) size = [conf[@"detailsLabelFont.size"] floatValue];
-			hud.detailsLabelFont = [UIFont fontWithName:fontName size:size];
+		id detailFontName = conf[HUDArrributeDetailsLabelFont];
+		if (detailFontName) {
+			if ([detailFontName isKindOfClass:[UIFont class]]) {
+				hud.detailsLabelFont = detailFontName;
+			} else {
+				BOOL iPad  = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
+				CGFloat size = 0;
+				if (iPad) size = [conf[@"detailsLabelFont.size_iPad"] floatValue];
+				if (!size) size = [conf[@"detailsLabelFont.size"] floatValue];
+				hud.detailsLabelFont = [UIFont fontWithName:fontName size:size];
+			}
 		}
-		NSNumber *margin = conf[@"margin"];
+		NSNumber *margin = conf[HUDArrributeMargin];
 		if (margin) hud.margin = [margin floatValue];
 	}
 	return hud;
@@ -89,7 +99,8 @@
 	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideHUD:)];
 	[hud addGestureRecognizer:tap];
 	hud.mode = MBProgressHUDModeText;
-	BOOL uppercase = [[MBProgressHUD  configuration][@"uppercase"] boolValue];
+	NSDictionary *conf = [[hud class] configuration];
+	BOOL uppercase = [conf[HUDAttributeUppercase] boolValue];
 	if (uppercase) {
 		hud.labelText = NSLocalizedString(title, nil).uppercaseString;
 		hud.detailsLabelText = NSLocalizedString(message, nil).uppercaseString;
