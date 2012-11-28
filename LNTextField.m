@@ -24,6 +24,25 @@
 	return self;
 }
 
+- (void)setTextAttributes:(NSDictionary *)textAttributes
+{
+	_textAttributes = textAttributes;
+	UIFont *font = textAttributes[UITextAttributeFont];
+	if (font) self.font = font;
+	UIColor *textColor = textAttributes[UITextAttributeTextColor];
+	if (textColor) self.textColor = textColor;
+}
+
+- (void)setBackgroundImage:(UIImage *)backgroundImage
+{
+	self.background = backgroundImage;
+}
+
+- (UIImage *)backgroundImage
+{
+	return self.background;
+}
+
 - (BOOL)isValid:(NSString *)text
 {
 	if (_validateType == LNTextValidateNone) return YES;
