@@ -14,6 +14,7 @@
 @property (nonatomic, copy) NSString *email;
 @property (nonatomic, copy) NSString *password;
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, strong) NSURL *avatarURL;
 @property (nonatomic, copy) NSString *accessToken;
 @property (nonatomic, copy) NSString *accessTokenSecret;
 @property (nonatomic, assign) int slot;
