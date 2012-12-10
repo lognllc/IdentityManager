@@ -12,9 +12,9 @@
 NSString * const HUDAttributeSquare = @"square";
 NSString * const HUDAttributeUppercase = @"uppercase";
 NSString * const HUDAttributeCustomImage = @"custom.image";
-NSString * const HUDArrributeLabelFont = @"labelFont.name";
-NSString * const HUDArrributeDetailsLabelFont = @"detailsLabelFont.name";
-NSString * const HUDArrributeMargin = @"margin";
+NSString * const HUDAttributeLabelFont = @"labelFont.name";
+NSString * const HUDAttributeDetailsLabelFont = @"detailsLabelFont.name";
+NSString * const HUDAttributeMargin = @"margin";
 
 @implementation MBProgressHUD (Appearance)
 
