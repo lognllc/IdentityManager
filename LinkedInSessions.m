@@ -27,12 +27,12 @@
 		NSString *linkedInAppID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"LinkedInAppID"];
 		NSURL *callbackURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@://success", [[self class] socialIdentifier], linkedInAppID]];
 		_oauth = [[OAuth1Gateway alloc] initWithBaseURL:[NSURL URLWithString:@"https://api.linkedin.com/uas/oauth/"]
-												   key:linkedInAppID
-												secret:LINKEDIN_SECRET
-									  requestTokenPath:@"requestToken"
-										 authorizePath:@"authenticate"
-									   accessTokenPath:@"accessToken"
-										   callbackURL:callbackURL];
+													key:linkedInAppID
+												 secret:LINKEDIN_SECRET
+									   requestTokenPath:@"requestToken"
+										  authorizePath:@"authenticate"
+										accessTokenPath:@"accessToken"
+											callbackURL:callbackURL];
 #ifndef _SOCIALSESSIONS_LINKEDIN_TOKEN_ONLY_
 		client = [[OAuth1Client alloc] initWithBaseURL:[NSURL URLWithString:@"http://api.linkedin.com/v1/"]
 												   key:linkedInAppID
