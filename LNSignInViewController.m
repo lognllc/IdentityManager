@@ -204,8 +204,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
+
 	self.navigationController.navigationBarHidden = YES;
-	
 	CGRect frame = loginSection.frame;
 	frame.size.height = CGRectGetMaxY(self.loginButton.frame);
 	loginSection.frame = frame;
@@ -229,6 +229,9 @@
 		if (_logoScale != 1)
 			logoView.transform = CGAffineTransformMakeScale(_logoScale, _logoScale);
 		loginSection.alpha = 0;
+		_facebookLoginButton.alpha = 0;
+		_twitterLoginButton.alpha = 0;
+		_signUpButton.alpha = 0;
 		[UIView animateWithDuration:.3 animations:^{
 			CGPoint p = logoView.center;
 			p.y = _logoHeight * _logoYFactor;
@@ -237,6 +240,9 @@
 		} completion:^(BOOL finished) {
 			[UIView animateWithDuration:.25f animations:^{
 				loginSection.alpha = 1;
+				_facebookLoginButton.alpha = 1;
+				_twitterLoginButton.alpha = 1;
+				_signUpButton.alpha = 1;
 				animationPlayed = YES;
 			}];
 		}];
