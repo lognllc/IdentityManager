@@ -11,9 +11,9 @@
 extern NSString * const HUDAttributeSquare;
 extern NSString * const HUDAttributeUppercase;
 extern NSString * const HUDAttributeCustomImage;
-extern NSString * const HUDArrributeLabelFont;
-extern NSString * const HUDArrributeDetailsLabelFont;
-extern NSString * const HUDArrributeMargin;
+extern NSString * const HUDAttributeLabelFont;
+extern NSString * const HUDAttributeDetailsLabelFont;
+extern NSString * const HUDAttributeMargin;
 
 @interface MBProgressHUD (Appearance)
 

@@ -62,7 +62,7 @@
 		hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 		hud.removeFromSuperViewOnHide = YES;
 		NSDictionary *conf = [[hud class] configuration];
-		id fontName = conf[HUDArrributeLabelFont];
+		id fontName = conf[HUDAttributeLabelFont];
 		if (fontName) {
 			if ([fontName isKindOfClass:[UIFont class]]) {
 				hud.labelFont = fontName;
@@ -74,7 +74,7 @@
 				hud.labelFont = [UIFont fontWithName:fontName size:size];
 			}
 		}
-		id detailFontName = conf[HUDArrributeDetailsLabelFont];
+		id detailFontName = conf[HUDAttributeDetailsLabelFont];
 		if (detailFontName) {
 			if ([detailFontName isKindOfClass:[UIFont class]]) {
 				hud.detailsLabelFont = detailFontName;
@@ -86,7 +86,7 @@
 				hud.detailsLabelFont = [UIFont fontWithName:fontName size:size];
 			}
 		}
-		NSNumber *margin = conf[HUDArrributeMargin];
+		NSNumber *margin = conf[HUDAttributeMargin];
 		if (margin) hud.margin = [margin floatValue];
 	}
 	return hud;
