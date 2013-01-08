@@ -31,7 +31,11 @@
 	FBSessionTokenCachingStrategy *tokenCachingStrategy = [self createCachingStrategyForSlot:slot];
 	
 	FBSession *session = [[FBSession alloc] initWithAppID:nil
+#ifdef FACEBOOK_PERMISSIONS
+											  permissions:[FACEBOOK_PERMISSIONS componentsSeparatedByString:@" "]
+#else
 											  permissions:@[@"email"]
+#endif
 										  urlSchemeSuffix:nil
 									   tokenCacheStrategy:tokenCachingStrategy];
 	return session;
