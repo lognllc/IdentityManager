@@ -57,6 +57,8 @@
 		user.accessToken = data[@"oauth_token"];
 		user.accessTokenSecret = data[@"oauth_token_secret"];
 		[self updateUser:user inSlot:slot];
+		_oauth.userToken = nil;
+		_oauth.userTokenSecret = @"";
 		if (completion) completion(user);
 	} failure:^(NSError *error) {
 		NSLog(@"error %@", error);
