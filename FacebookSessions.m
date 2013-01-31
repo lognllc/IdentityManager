@@ -93,7 +93,12 @@
 				// this handler is called back whether the login succeeds or fails; in the
 				// success case it will also be called back upon each state transition between
 				// session-open and session-close
-				[self updateForSessionChangeForSlot:slot completion:completion];
+				if (error) {
+					if (completion) completion (nil);
+				} else {
+					[self updateForSessionChangeForSlot:slot completion:completion];
+				}
+
 			}];
 }
 
