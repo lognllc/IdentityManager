@@ -1,6 +1,5 @@
 //
 //  MBProgressHUD+Appearance.h
-//  viralheat
 //
 //  Created by Rex Sheng on 11/28/12.
 //  Copyright (c) 2012 Log(n) LLC. All rights reserved.
