@@ -98,18 +98,20 @@
 				} else {
 					[self updateForSessionChangeForSlot:slot completion:completion];
 				}
-
+				
 			}];
 }
 
 - (void)loginSlot:(int)slot completion:(void (^)(LNUser *))completion
 {
-	FBSessionLoginBehavior behavior = (slot == 0) ?
-	FBSessionLoginBehaviorWithFallbackToWebView :
-	FBSessionLoginBehaviorForcingWebView;
+	FBSessionLoginBehavior behavior;
 	
 #ifdef _SOCIALSESSIONS_FACEBOOK_LOGIN_BEHAVIOR_
 	behavior = _SOCIALSESSIONS_FACEBOOK_LOGIN_BEHAVIOR_;
+#else
+	behavior = (slot == 0) ?
+	FBSessionLoginBehaviorWithFallbackToWebView :
+	FBSessionLoginBehaviorForcingWebView;
 #endif
 	
 	[self loginSlot:slot behavior:behavior completion:completion];
