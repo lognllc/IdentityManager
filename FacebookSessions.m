@@ -66,7 +66,7 @@
 {
 	[self validateSlotNumber:slot];
 	if (_currentSlot == slot) {
-		if (_currentSession) return _currentSession;
+		if (!FB_ISSESSIONSTATETERMINAL(_currentSession.state)) return _currentSession;
 	}
 	FBSession *session = [self sessionForSlot:slot];
 	_currentSession = session;
@@ -82,24 +82,25 @@
 		return;
 	}
 	FBSession *session = [self switchToUserInSlot:slot];
+	
 	if (session.isOpen) {
 		return [self updateForSessionChangeForSlot:slot completion:completion];
 	}
 	// we pass the correct behavior here to indicate the login workflow to use (Facebook Login, fallback, etc.)
-	[session openWithBehavior:behavior
-			completionHandler:^(FBSession *session,
-								FBSessionState status,
-								NSError *error) {
-				// this handler is called back whether the login succeeds or fails; in the
-				// success case it will also be called back upon each state transition between
-				// session-open and session-close
-				if (error) {
-					if (completion) completion (nil);
-				} else {
-					[self updateForSessionChangeForSlot:slot completion:completion];
-				}
-				
-			}];
+	[session openWithBehavior:behavior completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+		// this handler is called back whether the login succeeds or fails; in the
+		// success case it will also be called back upon each state transition between
+		// session-open and session-close
+		if (error) {
+			if (behavior == FBSessionLoginBehaviorUseSystemAccountIfPresent) {
+				[self loginSlot:slot behavior:FBSessionLoginBehaviorWithFallbackToWebView completion:completion];
+			} else {
+				if (completion) completion(nil);
+			}
+		} else {
+			[self updateForSessionChangeForSlot:slot completion:completion];
+		}
+	}];
 }
 
 - (void)loginSlot:(int)slot completion:(void (^)(LNUser *))completion

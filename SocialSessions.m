@@ -163,7 +163,9 @@ static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	
+#if DEBUG
 	NSLog(@"%d) id: %@, name: %@ token: %@", slot, user.id, user.name, user.accessToken);
+#endif
 	if (user.id) [defaults setObject:user.id forKey:idKey];
 	if (user.name) [defaults setObject:user.name forKey:nameKey];
 	if (user.email) [defaults setObject:user.email forKey:emailKey];

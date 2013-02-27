@@ -68,11 +68,13 @@
 			}
 		}
 		i = 0;
+#if DEBUG
 		NSLog(@"no slot is empty reusing first one");
+#endif
 		[sessions loginSlot:i completion:completion];
 		return i;
 	} else {
-		NSLog(@"identifier '%@' does not match any registered socialsessions", identifier);
+		NSLog(@"Error: identifier '%@' does not match any registered socialsessions", identifier);
 		if (completion) completion(nil);
 	}
 	return -1;
