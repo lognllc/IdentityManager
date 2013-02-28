@@ -66,7 +66,7 @@
 {
 	[self validateSlotNumber:slot];
 	if (_currentSlot == slot) {
-		if (!FB_ISSESSIONSTATETERMINAL(_currentSession.state)) return _currentSession;
+		if (_currentSession && !FB_ISSESSIONSTATETERMINAL(_currentSession.state)) return _currentSession;
 	}
 	FBSession *session = [self sessionForSlot:slot];
 	_currentSession = session;
