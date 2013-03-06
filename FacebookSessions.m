@@ -77,10 +77,7 @@
 
 - (void)loginSlot:(int)slot behavior:(FBSessionLoginBehavior)behavior completion:(void (^)(LNUser *))completion
 {
-	if (slot < 0 || slot >= self.maximumUserSlots) {
-		if (completion) completion(nil);
-		return;
-	}
+	[self validateSlotNumber:slot];
 	FBSession *session = [self switchToUserInSlot:slot];
 	
 	if (session.isOpen) {
