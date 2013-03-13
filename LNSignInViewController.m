@@ -144,7 +144,7 @@
 		_emailField.returnKeyType = UIReturnKeyNext;
 		_emailField.delegate = self;
 		_emailField.validateType = LNTextValidateEmail;
-		_emailField.failedValidateText = @"wrong email format";
+		_emailField.failedValidateText = @"The email you provided is not a valid email address";
 		[loginSection addSubview:_emailField];
 		
 		_passwordField = [[LNTextField alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_emailField.frame) + 1, fullSize.width, 40)];
@@ -153,7 +153,7 @@
 		_passwordField.returnKeyType = UIReturnKeyGo;
 		_passwordField.delegate = self;
 		_passwordField.validateType = LNTextValidateRequired;
-		_passwordField.failedValidateText = @"you should enter your password";
+		_passwordField.failedValidateText = @"Missing password";
 		[loginSection addSubview:_passwordField];
 		
 		_loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
