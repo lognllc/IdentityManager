@@ -55,7 +55,7 @@
     [_registeredSocialSessions removeObject:identifier];
 }
 
-- (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier completion:(void(^)(LNUser *))completion
+- (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier reuseIdentifier:(BOOL)reuse completion:(void(^)(LNUser *))completion
 {
 	id<SocialSessionsTrait> sessions = [self registeredSocialSessionsWithServiceIdentifier:identifier];
 	if (sessions) {
@@ -67,12 +67,14 @@
 				return i;
 			}
 		}
-		i = 0;
+		if (reuse) {
+			i = 0;
 #if DEBUG
-		NSLog(@"no slot is empty reusing first one");
+			NSLog(@"no slot is empty reusing first one");
 #endif
-		[sessions loginSlot:i completion:completion];
-		return i;
+			[sessions loginSlot:i completion:completion];
+			return i;
+		}
 	} else {
 		NSLog(@"Error: identifier '%@' does not match any registered socialsessions", identifier);
 		if (completion) completion(nil);
