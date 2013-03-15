@@ -21,6 +21,6 @@
 
 - (id<SocialSessionsTrait>)registeredSocialSessionsWithServiceIdentifier:(NSString *)identifier;
 - (void)logoutAll;
-- (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier reuseIdentifier:(BOOL)reuse completion:(void(^)(LNUser *))completion;
+- (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier reuseSlot:(BOOL)reuse completion:(void(^)(LNUser *))completion;
 
 @end

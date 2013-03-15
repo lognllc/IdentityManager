@@ -54,7 +54,7 @@
     [_registeredSocialSessions removeObject:identifier];
 }
 
-- (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier reuseIdentifier:(BOOL)reuse completion:(void(^)(LNUser *))completion
+- (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier reuseSlot:(BOOL)reuse completion:(void(^)(LNUser *))completion
 {
 	BOOL avaiable = reuse;
 	if (!avaiable) {
