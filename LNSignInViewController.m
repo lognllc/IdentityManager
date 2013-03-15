@@ -71,7 +71,7 @@
 - (void)facebookLogin:(id)sender
 {
 	[self displayHUD:@"Authenticating..."];
-	[_identityManager authenticateIdentityWithServiceIdentifier:@"fb" reuseIdentifier:NO completion:^(LNUser *user) {
+	[_identityManager authenticateIdentityWithServiceIdentifier:@"fb" reuseSlot:NO completion:^(LNUser *user) {
 		[self hideHUD:NO];
 		if (user) {
 			[self.delegate signInViewController:self signInFacebook:user];
@@ -97,7 +97,7 @@
 - (void)twitterLogin:(id)sender
 {
 	[self displayHUD:@"Authenticating..."];
-	[_identityManager authenticateIdentityWithServiceIdentifier:@"tw" reuseIdentifier:NO completion:^(LNUser *user) {
+	[_identityManager authenticateIdentityWithServiceIdentifier:@"tw" reuseSlot:NO completion:^(LNUser *user) {
 		[self hideHUD:NO];
 		if (user) {
 			[self.delegate signInViewController:self signInTwitter:user];

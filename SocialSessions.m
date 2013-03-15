@@ -56,7 +56,8 @@ static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 
 - (BOOL)isSlotEmpty:(int)slot
 {
-	return [self userTokenInSlot:slot] == nil;
+	NSString *token = [self userTokenInSlot:slot];
+	return  token == nil;
 }
 
 - (NSUInteger)usedSlotCount
@@ -180,8 +181,7 @@ static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 - (NSString *)userTokenInSlot:(int)slot
 {
 	[self validateSlotNumber:slot];
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	return [defaults objectForKey:[self tokenKeyForSlot:slot]];
+	return [[NSUserDefaults standardUserDefaults] objectForKey:[self tokenKeyForSlot:slot]];
 }
 
 - (void)setUserToken:(NSString *)token InSlot:(int)slot
