@@ -54,15 +54,20 @@
     [_registeredSocialSessions removeObject:identifier];
 }
 
+- (int)usedSlots
+{
+	int usedSlotsCount = 0;
+	for (id<SocialSessionsTrait> sessions in [_sessionsObjects allValues]) {
+		usedSlotsCount += [sessions usedSlotCount];
+	}
+	return usedSlotsCount;
+}
+
 - (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier reuseSlot:(BOOL)reuse completion:(void(^)(LNUser *))completion
 {
 	BOOL avaiable = reuse;
 	if (!avaiable) {
-		int usedSlotsCount = 0;
-		for (id<SocialSessionsTrait> sessions in [_sessionsObjects allValues]) {
-			usedSlotsCount += [sessions usedSlotCount];
-		}
-		avaiable = usedSlotsCount < _slots;
+		avaiable = [self usedSlots] < _slots;
 	}
 	if (avaiable) {
 		id<SocialSessionsTrait> sessions = [self registeredSocialSessionsWithServiceIdentifier:identifier];
