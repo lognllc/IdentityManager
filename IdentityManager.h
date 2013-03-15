@@ -10,6 +10,8 @@
 
 @interface IdentityManager : NSObject
 
+@property (nonatomic, readonly) int slots;
+
 - (id)initWithPrefix:(NSString *)prefix maximumUserSlots:(int)slots;
 
 - (BOOL)handleOpenURL:(NSURL *)url;

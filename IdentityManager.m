@@ -14,7 +14,6 @@
 @property (strong, nonatomic) NSMutableArray *registeredSocialSessions;
 @property (strong, nonatomic) NSMutableDictionary *sessionsObjects;
 @property (strong, nonatomic) NSString *prefix;
-@property (nonatomic) int slots;
 
 @end
 
@@ -57,27 +56,37 @@
 
 - (int)authenticateIdentityWithServiceIdentifier:(NSString *)identifier reuseIdentifier:(BOOL)reuse completion:(void(^)(LNUser *))completion
 {
-	id<SocialSessionsTrait> sessions = [self registeredSocialSessionsWithServiceIdentifier:identifier];
-	if (sessions) {
-		int maxCount = [sessions maximumUserSlots];
-		int i = 0;
-		for (; i < maxCount; i++) {
-			if ([sessions isSlotEmpty:i]) {
+	BOOL avaiable = reuse;
+	if (!avaiable) {
+		int usedSlotsCount = 0;
+		for (id<SocialSessionsTrait> sessions in [_sessionsObjects allValues]) {
+			usedSlotsCount += [sessions usedSlotCount];
+		}
+		avaiable = usedSlotsCount < _slots;
+	}
+	if (avaiable) {
+		id<SocialSessionsTrait> sessions = [self registeredSocialSessionsWithServiceIdentifier:identifier];
+		if (sessions) {
+			int maxCount = [sessions maximumUserSlots];
+			int i = 0;
+			for (; i < maxCount; i++) {
+				if ([sessions isSlotEmpty:i]) {
+					[sessions loginSlot:i completion:completion];
+					return i;
+				}
+			}
+			if (reuse) {
+				i = 0;
+#if DEBUG
+				NSLog(@"no slot is empty reusing first one");
+#endif
 				[sessions loginSlot:i completion:completion];
 				return i;
 			}
+		} else {
+			NSLog(@"Error: identifier '%@' does not match any registered socialsessions", identifier);
+			if (completion) completion(nil);
 		}
-		if (reuse) {
-			i = 0;
-#if DEBUG
-			NSLog(@"no slot is empty reusing first one");
-#endif
-			[sessions loginSlot:i completion:completion];
-			return i;
-		}
-	} else {
-		NSLog(@"Error: identifier '%@' does not match any registered socialsessions", identifier);
-		if (completion) completion(nil);
 	}
 	return -1;
 }
