@@ -220,7 +220,7 @@ static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	
-	NSLog(@"clearing slot %d", slot);
+	NSLog(@"clearing %@ slot %d", _prefix, slot);
 	[defaults removeObjectForKey:idKey];
 	[defaults removeObjectForKey:nameKey];
 	[defaults removeObjectForKey:emailKey];
