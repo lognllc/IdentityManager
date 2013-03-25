@@ -43,33 +43,43 @@
 	return self.background;
 }
 
+//This is special. "isValid:" method returns YES if ANY ONE of flag's predicate is true. ATTENTION!
 - (BOOL)isValid:(NSString *)text
 {
-	if (_validateType == LNTextValidateNone) return YES;
-	if (_validateType == LNTextValidateCustom) {
-		return [_validatePredicate evaluateWithObject:text];
-	}
-	NSString *reg = nil;
-	if (_validateType == LNTextValidateEmail) {
-		reg = @"(?:[a-z0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[a-z0-9!#$%\\&'*+/=?\\^_`{|}"
+	if (_validateType & LNTextValidateNone) return YES;
+    BOOL isValid = NO;
+    NSString *reg = nil;
+    NSPredicate *predicate = nil;
+	if (_validateType & LNTextValidateEmail) {
+        reg = @"(?:[a-z0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[a-z0-9!#$%\\&'*+/=?\\^_`{|}"
 		@"~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\"
 		@"x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-"
 		@"z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5"
 		@"]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-"
 		@"9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21"
 		@"-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])";
-        
-        //For Skypets, employee account is not a email address
-        BOOL matches = [[NSPredicate predicateWithFormat:@"self matches %@", @"^en[0-9]+$"] evaluateWithObject:text];
-        if (matches) {
-            return YES;
-        }
+        predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", reg];
+        isValid |= [predicate evaluateWithObject:text];
 	}
-	if (_validateType == LNTextValidateRequired) {
+    if (_validateType & LNTextValidateFlyFrontierEmployeeAccount) {
+        reg = @"^en[0-9]+$";
+        predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", reg];
+        isValid |= [predicate evaluateWithObject:text];
+    }
+    if (_validateType & LNTextValidateEarlyReturnsID) {
+        reg = @"^[0-9]*$";
+        predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", reg];
+        isValid |= [predicate evaluateWithObject:text];
+    }
+	if (_validateType & LNTextValidateRequired) {
 		reg = @"^\\S(?:.*?\\S)?$";
+        predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", reg];
+        isValid |= [predicate evaluateWithObject:text];
 	}
-	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", reg];
-	return [predicate evaluateWithObject:text];
+	if (_validateType & LNTextValidateCustom) {
+        isValid |= [_validatePredicate evaluateWithObject:text];
+	}
+    return isValid;
 }
 
 - (BOOL)isValid
