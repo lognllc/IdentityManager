@@ -46,7 +46,7 @@
 //This is special. "isValid:" method returns YES if ANY ONE of flag's predicate is true. ATTENTION!
 - (BOOL)isValid:(NSString *)text
 {
-	if (_validateType & LNTextValidateNone) return YES;
+	if (_validateType == LNTextValidateNone) return YES;
     BOOL isValid = NO;
     NSString *reg = nil;
     NSPredicate *predicate = nil;
