@@ -13,10 +13,16 @@
 
 @implementation FacebookSessions
 
+- (NSString *)lastUsedSlotKey
+{
+	return [NSString stringWithFormat:@"%@FBLastUsedSlot", self.prefix];
+}
+
 - (id)initWithPrefix:(NSString *)_prefix maximumUserSlots:(int)_maximumUserSlots
 {
 	if (self = [super initWithPrefix:_prefix maximumUserSlots:_maximumUserSlots]) {
-		_currentSlot = NSNotFound;
+		[self switchToUserInSlot:[[NSUserDefaults standardUserDefaults] integerForKey:[self lastUsedSlotKey]]];
+		[self openLastUsedSession:nil failure:nil];
 	}
 	return self;
 }
@@ -52,6 +58,28 @@
 {
 }
 
+- (void)openLastUsedSession:(dispatch_block_t)success failure:(dispatch_block_t)failure
+{
+	FBSession *session = _currentSession;
+
+	if (session.isOpen) {
+		if (success) success();
+		return;
+	}
+	
+	if (session && !session.isOpen && session.state == FBSessionStateCreatedTokenLoaded) {
+        [session openWithCompletionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+            if (status == FBSessionStateOpen) {
+				if (success) success();
+            } else {
+				if (failure) failure();
+			}
+        }];
+    } else {
+		if (failure) failure();
+	}
+}
+
 - (void)removeUserTokenInSlot:(int)slot
 {
 	FBSessionTokenCachingStrategy *tokenCachingStrategy = [self createCachingStrategyForSlot:slot];
@@ -71,6 +99,8 @@
 	FBSession *session = [self sessionForSlot:slot];
 	_currentSession = session;
 	_currentSlot = slot;
+	[[NSUserDefaults standardUserDefaults] setInteger:_currentSlot forKey:[self lastUsedSlotKey]];
+	[[NSUserDefaults standardUserDefaults] synchronize];
 	[self sendNotification];
 	return session;
 }
