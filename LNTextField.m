@@ -62,7 +62,7 @@
         isValid |= [predicate evaluateWithObject:text];
 	}
     if (_validateType & LNTextValidateFlyFrontierEmployeeAccount) {
-        reg = @"^en[0-9]+$";
+        reg = EMPLOYEE_PATTERN;
         predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", reg];
         isValid |= [predicate evaluateWithObject:text];
     }
