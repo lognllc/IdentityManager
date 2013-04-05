@@ -8,12 +8,19 @@
 #import "TwitterSessions.h"
 #import "OAuth1Gateway.h"
 #import "SocialSessionsSubclass.h"
+#import "AFHTTPClient.h"
+#import "AFJSONRequestOperation.h"
+
+#import "OAuth1Client.h"
 
 @interface TwitterSessions ()
 @property (nonatomic, strong, readonly) OAuth1Gateway *oauth;
 @end
 
 @implementation TwitterSessions
+{
+	OAuth1Client *_client;
+}
 
 - (id)initWithPrefix:(NSString *)_prefix maximumUserSlots:(int)_maximumUserSlots
 {
@@ -27,6 +34,12 @@
 										  authorizePath:@"authorize"
 										accessTokenPath:@"access_token"
 											callbackURL:callbackURL];
+		
+		_client = [[OAuth1Client alloc] initWithBaseURL:[NSURL URLWithString:@"http://api.twitter.com/1/"]
+													key:twitterAppID
+												 secret:TWITTER_SECRET];
+		[_client setDefaultHeader:@"Accept" value:@"application/json"];
+		[_client registerHTTPOperationClass:[AFJSONRequestOperation class]];
 	}
 	return self;
 }
@@ -56,10 +69,20 @@
 		user.name = data[@"screen_name"];
 		user.accessToken = data[@"oauth_token"];
 		user.accessTokenSecret = data[@"oauth_token_secret"];
-		[self updateUser:user inSlot:slot];
-		_oauth.userToken = nil;
-		_oauth.userTokenSecret = @"";
-		if (completion) completion(user);
+#ifdef _SOCIALSESSIONS_TWITTER_REQUEST_NAME_
+		_client.userToken = _oauth.userToken;
+		_client.userTokenSecret = _oauth.userTokenSecret;
+		[_client getPath:@"users/lookup.json" parameters:@{@"user_id": user.id} success:^(AFHTTPRequestOperation *operation, id responseObject) {
+			user.name = responseObject[@"name"];
+#endif
+			[self updateUser:user inSlot:slot];
+			if (completion) completion(user);
+#ifdef _SOCIALSESSIONS_TWITTER_REQUEST_NAME_
+		} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+			[self updateUser:user inSlot:slot];
+			if (completion) completion(user);
+		}];
+#endif
 	} failure:^(NSError *error) {
 		NSLog(@"error %@", error);
 		if (completion) completion(nil);
