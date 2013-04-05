@@ -61,16 +61,6 @@
         predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", reg];
         isValid |= [predicate evaluateWithObject:text];
 	}
-    if (_validateType & LNTextValidateFlyFrontierEmployeeAccount) {
-        reg = EMPLOYEE_PATTERN;
-        predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", reg];
-        isValid |= [predicate evaluateWithObject:text];
-    }
-    if (_validateType & LNTextValidateEarlyReturnsID) {
-        reg = @"^[0-9]*$";
-        predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", reg];
-        isValid |= [predicate evaluateWithObject:text];
-    }
 	if (_validateType & LNTextValidateRequired) {
 		reg = @"^\\S(?:.*?\\S)?$";
         predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", reg];
