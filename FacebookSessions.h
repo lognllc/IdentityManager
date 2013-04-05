@@ -16,5 +16,6 @@
 @property (nonatomic, strong, readonly) FBRequest *pendingRequest;
 
 - (FBSession *)switchToUserInSlot:(int)slot;
+- (void)openLastUsedSession:(dispatch_block_t)success failure:(dispatch_block_t)failure;
 
 @end
