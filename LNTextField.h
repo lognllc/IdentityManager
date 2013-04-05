@@ -7,16 +7,12 @@
 
 #import <UIKit/UIKit.h>
 
-#define EMPLOYEE_PATTERN @"^\\S+@flyfrontier.com"
-
 //This is special. "isValid:" method returns YES if ANY ONE of flag's predicate is true. ATTENTION!
 typedef NS_ENUM(NSUInteger, LNTextValidateType) {
 	LNTextValidateNone = 0,
 	LNTextValidateEmail = 1 << 0,
 	LNTextValidateRequired = 1 << 1,
-    LNTextValidateFlyFrontierEmployeeAccount = 1 << 2,
-    LNTextValidateEarlyReturnsID = 1 << 3,
-	LNTextValidateCustom = 1 << 4
+	LNTextValidateCustom = 1 << 2
 };
 
 @interface LNTextField : UITextField
