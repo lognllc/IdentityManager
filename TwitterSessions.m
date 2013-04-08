@@ -72,8 +72,10 @@
 #ifdef _SOCIALSESSIONS_TWITTER_REQUEST_NAME_
 		_client.userToken = _oauth.userToken;
 		_client.userTokenSecret = _oauth.userTokenSecret;
-		[_client getPath:@"users/lookup.json" parameters:@{@"user_id": user.id} success:^(AFHTTPRequestOperation *operation, id responseObject) {
-			user.name = responseObject[@"name"];
+		[_client getPath:@"users/lookup.json" parameters:@{@"user_id": user.id} success:^(AFHTTPRequestOperation *operation, NSArray *matches) {
+			if (matches.count) {
+				user.name = matches[0][@"name"];
+			}
 #endif
 			[self updateUser:user inSlot:slot];
 			if (completion) completion(user);
