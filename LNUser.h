@@ -17,6 +17,7 @@
 @property (nonatomic, strong) NSURL *avatarURL;
 @property (nonatomic, copy) NSString *accessToken;
 @property (nonatomic, copy) NSString *accessTokenSecret;
+@property (nonatomic, copy) NSDate *accessTokenExpirationDate;
 @property (nonatomic, assign) int slot;
 
 @end
