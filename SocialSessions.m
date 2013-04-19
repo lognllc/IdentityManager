@@ -15,6 +15,7 @@ static NSString *const SUUserNameKeyFormat = @"%@UserName%d";
 static NSString *const SUUserEmailKeyFormat = @"%@UserEmail%d";
 static NSString *const SUTokenKeyFormat = @"%@Token%d";
 static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
+static NSString *const SUTokenExpirationDateKeyFormat = @"%@TokenExpirationDate%d";
 
 @implementation SocialSessions
 
@@ -108,6 +109,11 @@ static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 	return [NSString stringWithFormat:SUTokenSecretKeyFormat, _prefix, slot];
 }
 
+- (NSString *)tokenExpirationDateKeyForSlot:(int)slot
+{
+	return [NSString stringWithFormat:SUTokenExpirationDateKeyFormat, _prefix, slot];
+}
+
 - (LNUser *)userInSlot:(int)slot
 {
 	NSString *token = [self userTokenInSlot:slot];
@@ -121,6 +127,7 @@ static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 		user.slot = slot;
 		user.accessToken = token;
 		user.accessTokenSecret = [self userTokenSecretInSlot:slot];
+        user.accessTokenExpirationDate = [self userTokenExpirationDateInSlot:slot];
 		user.id = [defaults objectForKey:idKey];
 		user.name = [defaults objectForKey:nameKey];
 		user.email = [defaults objectForKey:emailKey];
@@ -161,6 +168,7 @@ static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 	NSString *nameKey = [self nameKeyForSlot:slot];
 	NSString *emailKey = [self emailKeyForSlot:slot];
 	NSString *tokenSecretKey = [self tokenSecretKeyForSlot:slot];
+    NSString *tokenExpirationDateKey = [self tokenExpirationDateKeyForSlot:slot];
 	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	
@@ -172,6 +180,7 @@ static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 	if (user.email) [defaults setObject:user.email forKey:emailKey];
 	if (user.accessTokenSecret) [defaults setObject:user.accessTokenSecret forKey:tokenSecretKey];
 	if (user.accessToken) [self setUserToken:user.accessToken InSlot:slot];
+    if (user.accessTokenExpirationDate) [self setUserTokenExpirationDate:user.accessTokenExpirationDate InSlot:slot];
 	
 	[defaults synchronize];
 	
@@ -196,11 +205,30 @@ static NSString *const SUTokenSecretKeyFormat = @"%@TokenSecret%d";
 	[defaults synchronize];
 }
 
+- (void)setUserTokenExpirationDate:(NSDate *)expirationDate InSlot:(int)slot
+{
+    NSString *tokenExpirationKey = [self tokenExpirationDateKeyForSlot:slot];
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	if (tokenExpirationKey) {
+		[defaults setObject:tokenExpirationKey forKey:tokenExpirationKey];
+	} else {
+		[defaults removeObjectForKey:tokenExpirationKey];
+	}
+	[defaults synchronize];
+}
+
 - (NSString *)userTokenSecretInSlot:(int)slot
 {
 	[self validateSlotNumber:slot];
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	return [defaults objectForKey:[self tokenSecretKeyForSlot:slot]];
+}
+
+- (NSDate *)userTokenExpirationDateInSlot:(int)slot
+{
+    [self validateSlotNumber:slot];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	return [defaults objectForKey:[self tokenExpirationDateKeyForSlot:slot]];
 }
 
 - (void)removeUserTokenInSlot:(int)slot
