@@ -36,7 +36,7 @@
 {
 	FBSessionTokenCachingStrategy *tokenCachingStrategy = [self createCachingStrategyForSlot:slot];
 	
-	FBSession *session = [[FBSession alloc] initWithAppID:nil
+	FBSession *session = [[FBSession alloc] initWithAppID:FACEBOOK_APP_ID
 #ifdef FACEBOOK_PERMISSIONS
 											  permissions:[FACEBOOK_PERMISSIONS componentsSeparatedByString:@" "]
 #else
@@ -51,7 +51,14 @@
 {
 	[self validateSlotNumber:slot];
 	FBSession *session = [self sessionForSlot:slot];
-	return session.accessToken;
+	return session.accessTokenData.accessToken;
+}
+
+- (NSDate *)userTokenExpirationDateInSlot:(int)slot
+{
+    [self validateSlotNumber:slot];
+    FBSession *session = [self sessionForSlot:slot];
+    return session.accessTokenData.expirationDate;
 }
 
 - (void)setUserToken:(NSString *)token InSlot:(int)slot
@@ -133,7 +140,6 @@
 - (void)loginSlot:(int)slot completion:(void (^)(LNUser *))completion
 {
 	FBSessionLoginBehavior behavior;
-	
 #ifdef _SOCIALSESSIONS_FACEBOOK_LOGIN_BEHAVIOR_
 	behavior = _SOCIALSESSIONS_FACEBOOK_LOGIN_BEHAVIOR_;
 #else
