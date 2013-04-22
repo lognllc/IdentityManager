@@ -168,7 +168,6 @@ static NSString *const SUTokenExpirationDateKeyFormat = @"%@TokenExpirationDate%
 	NSString *nameKey = [self nameKeyForSlot:slot];
 	NSString *emailKey = [self emailKeyForSlot:slot];
 	NSString *tokenSecretKey = [self tokenSecretKeyForSlot:slot];
-    NSString *tokenExpirationDateKey = [self tokenExpirationDateKeyForSlot:slot];
 	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	
