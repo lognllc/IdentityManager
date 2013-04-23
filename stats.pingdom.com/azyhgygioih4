@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="title" content="Pingdom Public Reports Overview" />
+    <title>Pingdom Public Reports Overview</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+    <!--[if lt IE 7]>
+    <link rel="stylesheet" type="text/css" media="all" href="/css/ie6.css" />
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+</head>
+<body>
+    <noscript class="js-warning-top">
+        <div>Pingdom Public Reports works best with JavaScript enabled</div>
+    </noscript>
+
+    <div id="wrapper">
+        <style type="text/css">
+.color {
+    background-color: #ffffff;
+    color: #000000;
+}
+.custom_bgcol {
+    background-color: #ffffff;
+}
+.custom_fgcol {
+    color: #000000;
+}
+</style>
+
+<!--HEADER-->
+<div id="header" class="color">
+    <div class="leftTopRounded"></div>
+    <div class="leftBottomRounded"></div>
+    <div class="rightTopRounded"></div>
+    <div class="rightBottomRounded"></div>
+    <!--LOGO-->
+    <a href="http://stats.pingdom.com/azyhgygioih4" title="Public Reports Overview"><img src="https://my.pingdom.com/uploads/azyhgygioih4.png" id="logo" /></a>
+    <!--DATE-->
+    <div id="date">
+                <h3>04/23/2013 02:52:36PM <span class="timezone">(GMT -8:00)</span></h3>
+        <p id="client_timezone_offset"></p>
+    </div>
+</div>
+
+        
+
+<h1 class="largeTitle" style="margin-top: 40px">Overview</h1>
+
+<!--CHECKS-->
+<div id="checks" class="clear overview">
+    <table id="checks-overview" class="dt custom_bgcol" style="display: none" width="960">
+    <col width="40" />
+    <col width="325" />
+
+    <thead class="custom_fgcol">
+        <tr>
+            <th><span class="triangle"></span></th>
+            <th>Name<span class="triangle"></span></th>
+                            <th class="check-day">Apr 17<span class="triangle"></span></th>
+                            <th class="check-day">Apr 18<span class="triangle"></span></th>
+                            <th class="check-day">Apr 19<span class="triangle"></span></th>
+                            <th class="check-day">Apr 20<span class="triangle"></span></th>
+                            <th class="check-day">Apr 21<span class="triangle"></span></th>
+                            <th class="check-day">Apr 22<span class="triangle"></span></th>
+                            <th class="check-day">Apr 23<span class="triangle"></span></th>
+                    </tr>
+    </thead>
+    <tbody>
+            </tbody>
+</table>
+    <noscript>
+        <iframe src="/azyhgygioih4/noscript" noresize="noresize" frameborder="0" width="100%" height="700">Your browser doesn't support Javascript or iframes, sorry.</iframe>
+    </noscript>
+
+    
+<!--ICON LEGEND-->
+<ul id="iconLegend">
+    <li title="99.90% uptime or better (less than 2m of downtime)"><span class="iconSmall green"></span>Service is operating normally</li>
+    <li title="99.89&ndash;98.00% uptime (between 2m and 29m of downtime)"><span class="iconSmall yellow"></span>Service disruption</li>
+    <li title="Less than 98.00% uptime (more than 29 minutes of downtime)"><span class="iconSmall red"></span>Service outage</li>
+    <li title="Unmonitored"><span class="iconSmall grey"></span>No data available</li>
+</ul>
+
+</div>
+
+
+        <!--FOOTER-->
+        <div id="footer" class="color">
+            <div class="leftTopRounded"></div>
+            <div class="leftBottomRounded"></div>
+            <div class="rightTopRounded"></div>
+            <div class="rightBottomRounded"></div>
+
+            <p style="float: left;">Uptime monitoring provided by <a href="http://www.pingdom.com" title="Be the first to know when your website is down" class="color" style="background:none">Pingdom</a></p>
+            <p style="float: right; margin-right: 20px;">
+                <a href="http://www.pingdom.com/free" class="color" style="background:none">Get your own account</a> and monitor your uptime
+            </p>
+        </div>
+        <div id="spacer"></div>
+
+    </div> <!-- END OF WRAPPER -->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript">
+    if (typeof jQuery === 'undefined')
+    {
+        // fall back to local jQuery in case CDN is unavailable
+        document.write('\x3Cscript type="text/javascript" src="/js/jquery.min.js">\x3C/script>');
+    }
+    </script>
+
+    <script type="text/javascript" src="/js/jquery.tooltip.min.js"></script>
+<script type="text/javascript" src="/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/js/jquery.dataTables.ext.js"></script>
+    <script type="text/javascript">
+function humantzdiff(mins)
+{
+    var sign = Math.abs(mins) / mins;
+
+    mins = Math.abs(mins);
+    var hrs = Math.floor(mins / 60);
+    mins -= hrs * 60;
+
+    var text = '';
+    if (hrs)
+    {
+        text += hrs;
+        if (mins)
+        {
+            text += ':' + mins + ' hours';
+        }
+        else
+        {
+            if (hrs == 1)
+            {
+                text += ' hour';
+            }
+            else
+            {
+                text += ' hours';
+            }
+        }
+    }
+    else
+    {
+        text += mins + ' minutes';
+    }
+
+    if (sign > 0)
+    {
+        text += ' ahead of';
+    }
+    else
+    {
+        text += ' behind';
+    }
+
+    return text;
+}
+
+$(function(){
+    var client_offset = -420 + new Date().getTimezoneOffset();
+
+    if (client_offset == 0)
+    {
+        $('#client_timezone_offset').text('The shown time zone is the same as yours');
+    }
+    else
+    {
+        $('#client_timezone_offset').text('The shown time zone is ' + humantzdiff(client_offset) + ' yours');
+    }
+});
+</script>
+<script type="text/javascript">
+$(function(){
+    $('#iconLegend li').each(function (index, element) {
+        /* Had to do this to position the tooltip right above the icon */
+        $(element).tooltip({ position: 'top right', offset: [0, -$(element).outerWidth()] });
+    });
+});
+</script>
+<script type="text/javascript">
+function setTooltips()
+{
+    $('table .icon').tooltip();
+    $('table .status').tooltip();
+}
+
+$(function(){
+    dataTableOptions['sAjaxSource'] = '/azyhgygioih4/checks';
+    dataTableOptions['aaSorting'] = [[1, 'asc']];
+    dataTableOptions['oLanguage']['sZeroRecords'] = 'No matching checks found';
+    dataTableOptions['oLanguage']['sSearch'] = '';
+    dataTableOptions['aoColumns'] = [
+        { 'sName': 'status', 'sClass': 'check-status', 'bSearchable': false, 'asSorting': ['desc', 'asc'] },
+        { 'sName': 'name', 'sClass': 'check-name' },
+        { 'sName': 'day1', 'sClass': 'check-day', 'asSorting': ['desc', 'asc'] },
+        { 'sName': 'day2', 'sClass': 'check-day', 'asSorting': ['desc', 'asc'] },
+        { 'sName': 'day3', 'sClass': 'check-day', 'asSorting': ['desc', 'asc'] },
+        { 'sName': 'day4', 'sClass': 'check-day', 'asSorting': ['desc', 'asc'] },
+        { 'sName': 'day5', 'sClass': 'check-day', 'asSorting': ['desc', 'asc'] },
+        { 'sName': 'day6', 'sClass': 'check-day', 'asSorting': ['desc', 'asc'] },
+        { 'sName': 'day7', 'sClass': 'check-day', 'asSorting': ['desc', 'asc'] }
+    ];
+
+    // Show table that was hidden by css (for non-javascript visitors)
+    $('#checks-overview').show();
+
+    // Disable multi-column sorting by ignoring the shift key
+    $('#checks-overview th').click(function(event) { event.shiftKey = false; });
+
+    $('#checks-overview').dataTable(dataTableOptions).fnSetFilteringDelay(400);
+
+    // Suppress clicks on pagination buttons (since we don't want
+    // users with Javascript to go to another URL, but instead
+    // update directly via AJAX)
+    $('a.paginate_button').live('click', function () { return false; });
+
+    $(window).bind('datatable-draw', function() {
+        setTooltips();
+    });
+});
+</script>
+
+        <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-787382-11']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    </body>
+</html>

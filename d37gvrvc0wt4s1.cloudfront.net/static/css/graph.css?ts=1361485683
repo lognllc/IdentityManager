@@ -1,0 +1,35 @@
+svg {
+  font-size: 11px;
+}
+
+rect.bar {
+  fill: steelblue;
+  stroke: #fff;
+}
+
+rect.deploy {
+  fill: #fc6;
+  stroke: #fff;
+  fill-opacity: 0.5;
+}
+
+.axis line, .grid line {
+  stroke-width: .5px;
+  shape-rendering: crispEdges;
+}
+
+.grid line {
+  stroke: #ccc;
+}
+
+.grid line.minor {
+  stroke-opacity: .5;
+}
+
+.axis line {
+  stroke: #ccc;
+}
+
+.grid path, .axis path {
+  display: none;
+}

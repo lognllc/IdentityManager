@@ -1,0 +1,2005 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>demo - Items - Rollbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    
+  <meta name="description" content="Rollbar collects errors that happen in your application, notifies you, and analyzes them so you can debug and fix them. Ruby, Python, PHP, Node.js, Javascript, and Flash libraries available."/>
+  <meta name="keywords" content="error tracking, error reporting, exception tracking, log analysis, log monitoring, log aggregation, crash reporting, splunk alternative, airbrake alternative"/>
+
+  <meta property="og:title" content="Rollbar"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://rollbar.com"/>
+  <meta property="og:site_name" content="Rollbar"/>
+  <meta property="og:description" content="Rollbar collects errors that happen in your application, notifies you, and analyzes them so you can debug and fix them. Ruby, Python, PHP, Node.js, Javascript, and Flash libraries available."/>
+
+
+    <meta name="google-site-verification" content="nPf9fY-s7QK8Xvf_yEQn7EKKkp7lYEDuVwRie_9dGTg" />
+    
+    <link rel="icon" type="image/ico" href="//d37gvrvc0wt4s1.cloudfront.net/static/img/favicon.ico?ts=1361907905"/>
+
+    <link href="//d37gvrvc0wt4s1.cloudfront.net/static/css/bootstrap.min.css?ts=1365115328" rel="stylesheet">
+    <link href="//d37gvrvc0wt4s1.cloudfront.net/static/css/datepicker.min.css?ts=1363379434" rel="stylesheet">
+
+    
+  
+  <script>
+  var _rollbarParams = {
+    "server.environment": "production", 
+    "server.host": "web9",
+    "endpoint": "https://api.rollbar.com/api/1/",
+    "context": "project/item_list"
+      , person: {
+        id: 1479,
+        username: 'sys:guest',
+        email: 'demo@rollbar.com'
+      }
+  };
+  _rollbarParams["notifier.snippet_version"] = "2"; var _rollbar=["893916d7644bd3b0743da13e784105b7", _rollbarParams]; var _ratchet=_rollbar;
+  (function(w,d){w.onerror=function(e,u,l){_rollbar.push({_t:'uncaught',e:e,u:u,l:l});};var i=function(){var s=d.createElement("script");var 
+  f=d.getElementsByTagName("script")[0];s.src="//d37gvrvc0wt4s1.cloudfront.net/js/6/rollbar.min.js";s.async=!0;
+  f.parentNode.insertBefore(s,f);};if(w.addEventListener){w.addEventListener("load",i,!1);}else{w.attachEvent("onload",i);}})(window,document);
+  </script>
+
+    
+
+    <script type="text/javascript" src="//d37gvrvc0wt4s1.cloudfront.net/static/js/jquery-1.7.1.min.js?ts=1361907905"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+    _gaq.push(['_setAccount', 'UA-38870420-1']);
+    _gaq.push(['_setDomainName', 'rollbar.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+
+    
+  <!-- start Mixpanel --><script type="text/javascript">(function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.1.min.js';d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f? g=a[f]=[]:f="mixpanel";g.people=g.people||[];h="disable track track_pageview track_links track_forms register register_once unregister identify name_tag set_config people.identify people.set people.increment".split(" ");for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.1})(document,window.mixpanel||[]);
+
+    mixpanel.init("00a701b73e44aa932686f370607c338e");
+
+    mixpanel.name_tag('sys:guest');
+    mixpanel.register({user_id: 1479});
+    mixpanel.people.identify(1479);
+    mixpanel.people.set({
+      "$email": 'demo@rollbar.com',
+      "$created": new Date(1362037485 * 1000),
+      "$username": 'sys:guest'
+    });
+    mixpanel.track("pageview-project/item_list", {"matchdict": {"traverse": ["1300"], "id": "1300"}});
+  </script><!-- end Mixpanel -->
+
+    
+  
+    <script id="IntercomSettingsScriptTag">
+      var intercomSettings = {
+        app_id: 'rlisg82q',
+          email: 'demo@rollbar.com',
+        created_at: 1362037485,
+        user_id: '1479',
+        user_hash: '6d4dac29082a8b0e1727aeee83d3ee5e0d0b20cf'
+      };
+    </script>
+    <script>
+      (function() {
+        var i=function(){i.c(arguments)};i.q=[];
+        i.c=function(args){i.q.push(args)};window.Intercom=i;
+        function async_load() {
+          var s = document.createElement('script');
+          s.type = 'text/javascript'; s.async = true;
+          s.src = 'https://api.intercom.io/api/js/library.js';
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+        if (window.attachEvent) {
+          window.attachEvent('onload', async_load);
+        } else {
+          window.addEventListener('load', async_load, false);
+        }
+      })();
+    </script>
+
+  </head>
+
+  <body>
+    <div id="body-container">
+      <div class="body-content">
+        
+  <div class="main-content main-wide">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/"><img alt="Rollbar" src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/white-logo.png?ts=1361907905" width="128" height="25"></a>
+          <div class="nav-collapse">
+              
+  
+  <ul class="nav">
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">demo
+      <b class="caret"></b>
+      </a>
+      <ul class="dropdown-menu">
+        
+  
+    
+    <li class="nav-header">
+      rollbar
+    </li>
+    
+    <li class="active">
+      <a href="/project/1300/">
+        demo
+      </a>
+    </li>
+
+      </ul>
+    </li>
+
+      
+  
+  <li class="  "><a href="/project/1300/">Dashboard</a></li>
+
+      
+  
+  <li class=" active "><a href="/project/1300/item_list/">Items</a></li>
+
+      
+  
+  <li class="  "><a href="/project/1300/deploys/">Deploys</a></li>
+
+        
+  
+  <li class="  "><a href="/project/1300/people/">People</a></li>
+
+      
+  
+  <li class="  "><a href="/settings/project/1300/">Settings</a></li>
+
+  </ul>
+  <ul class="nav pull-right">
+    
+      
+  
+  <li class="  "><a href="/docs/project/1300/index/">Docs</a></li>
+
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-top:16px;padding-bottom:16px;">
+        <img src="https://secure.gravatar.com/avatar/70904bee5b04ba97e872b23e07d31f14?size=30" class="navavatar" alt="demo@rollbar.com">
+        Guest
+        <b class="caret" style="margin-top:14px;"></b>
+      </a>
+      <ul class="dropdown-menu">
+          <li><a href="/logout/"><i class="icon-check"></i>Sign Up</a></li>
+        <li><a href="https://rollbar.com/logout/"><i class="icon-off"></i>Log Out</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div id="main-stage" class="container">
+        
+    
+      
+      
+
+<div id="alerts">
+  
+  
+    
+    
+  <div class="alert alert-block alert-info fade in">
+    <h4 class="title alert-heading"></h4>
+    <p class="body">You're using the Rollbar demo project. It's monitoring errors on <strong><a href='http://rollbar-rails-demo.herokuapp.com/'>this demo app</a></strong>. The source is on <strong><a href='https://github.com/rollbar/rollbar-rails-demo'>Github</a></strong>.</p>
+  </div>
+
+      
+  <div class="alert alert-block alert-info fade in">
+    <h4 class="title alert-heading"></h4>
+    <p class="body">This is the Items view. It shows items matching the current search, ordered by most recent occurrence. Come here to see what's happening <i>right now</i> in your app.</p>
+  </div>
+
+  
+    
+
+  
+
+  
+  <div class="alert alert-block template hidden fade in">
+      <button class="close" data-dismiss="alert">&times;</button>
+    <h4 class="title alert-heading"></h4>
+    <p class="body"></p>
+  </div>
+
+
+
+</div>
+
+
+  <div>
+      <div class="search-controls">
+        <div class="row item-list-filters">
+          <div class="span9">
+            
+  <form class="ajax-load search-form ajax-load-replace-url" method="GET" action="/project/1300/item_list/" id="search-form">
+    <div>
+      
+  <div id="date-chooser" class="modal hide small-modal">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3>Date range</h3>
+    </div>
+    <div class="modal-body">
+      <p>Restrict search to items that occurred at least once within the range:</p>
+      <div class="pull-left">
+        <h4>From</h4>
+        <input id="date_from" name="date_from" class="span2" type="text" data-date-format="mm-dd-yyyy" value="" placeholder="Any date">
+      </div>
+      <div class="pull-right">
+        <h4>To</h4>
+        <input id="date_to" name="date_to" class="span2" type="text" data-date-format="mm-dd-yyyy" value="" placeholder="Any date">
+      </div>
+      <div class="clearfix"></div>
+      <div style="margin-top:3px;">
+        Date boundaries are with respect to this project's timezone, US/Pacific
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a id="set-range-btn" data-dismiss="modal" href="#" class="btn btn-primary">Set Range</a>
+    </div>
+  </div>
+  
+  <div style="margin-bottom:4px;">
+    <strong>Date range:</strong> <a id="date-link" data-toggle="modal" href="#date-chooser"></a>
+  </div>
+  
+  <script>
+    var dateFrom;
+    var dateTo;
+    
+    function updateDateLink() {
+      dateFrom = $('#date_from').val();
+      dateTo = $('#date_to').val();
+      
+      $("#date-link").text(dateLinkText(dateFrom, dateTo));
+    }
+
+    function dateLinkText(dateFrom, dateTo) {
+      
+      if (!dateFrom && !dateTo) {
+        return "all dates";
+      } else if (dateFrom == dateTo) {
+        return dateFrom;
+      } 
+      
+      var text = "";
+      if (dateFrom) {
+        if (dateTo) {
+          text += "between ";
+        } else {
+          text += "after ";
+        }
+        text += dateFrom;
+        
+        if (dateTo) {
+          text += " and ";
+        }
+      } else {
+        text = "before ";
+      }
+      
+      text += dateTo;
+
+      return text;
+    }
+
+    $(document).ready(function() {
+      $('#date_from').datepicker();
+      $('#date_to').datepicker();
+      
+      $('#set-range-btn').click(function() {
+        $(this).submit();
+        updateDateLink();
+      });
+      
+      $('#date_from').on('changeDate', function(ev) {
+        if (ev.viewMode === "days") {
+          $(this).datepicker('hide');
+          $(this).blur();
+        }
+      });
+      $('#date_to').on('changeDate', function(ev) {
+        if (ev.viewMode === "days") {
+          $(this).datepicker('hide');
+          $(this).blur();
+        }
+      });
+      
+      $('#date-chooser').on('hidden', function() {
+        $('#date_from').val(dateFrom);
+        $('#date_to').val(dateTo);
+      });
+      
+      updateDateLink();
+    });
+  </script>
+
+    </div>
+      
+  <div class="pull-left">
+    <ul class="nav nav-pills" style="margin-right:10px;">
+        <li class="activate active">
+        <a href="#" class="hidden-select">
+          <input class="hidden" type="checkbox" name="level" value="critical" checked=&#34;checked&#34;>
+          Critical
+        </a>
+        </li>
+        <li class="activate active">
+        <a href="#" class="hidden-select">
+          <input class="hidden" type="checkbox" name="level" value="error" checked=&#34;checked&#34;>
+          Error
+        </a>
+        </li>
+        <li class="activate active">
+        <a href="#" class="hidden-select">
+          <input class="hidden" type="checkbox" name="level" value="warning" checked=&#34;checked&#34;>
+          Warning
+        </a>
+        </li>
+        <li class="activate active">
+        <a href="#" class="hidden-select">
+          <input class="hidden" type="checkbox" name="level" value="info" checked=&#34;checked&#34;>
+          Info
+        </a>
+        </li>
+        <li class="activate active">
+        <a href="#" class="hidden-select">
+          <input class="hidden" type="checkbox" name="level" value="debug" checked=&#34;checked&#34;>
+          Debug
+        </a>
+        </li>
+    </ul>
+  </div>
+
+
+      <div class="pull-left">
+        <div class="btn-toolbar" style="margin-right:10px;margin-top:2px; display: inline">
+            
+  <div class="btn-group dropdown-select">
+    <button class="btn dropdown-toggle" data-toggle="dropdown">
+      <span class="selector-label" >Status:</span>
+      <span class="last-selected">
+          Active
+      </span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li>
+          <a href="#" class="hidden-select">
+            <input class="hidden" type="radio" name="status" value="active" checked="checked">
+            Active
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hidden-select">
+            <input class="hidden" type="radio" name="status" value="resolved" >
+            Resolved
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hidden-select">
+            <input class="hidden" type="radio" name="status" value="muted" >
+            Muted
+          </a>
+        </li>
+      <li class="divider"></li>
+      <li>
+        <a href="#" class="hidden-select">
+          <input class="hidden" type="radio" name="status" value="" >
+          Any Status
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+            
+  <div class="btn-group dropdown-select">
+    <button class="btn dropdown-toggle" data-toggle="dropdown">
+      <span class="selector-label" style="display:none;">Environment:</span>
+      <span class="last-selected">
+          Any Environment
+      </span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li>
+          <a href="#" class="hidden-select">
+            <input class="hidden" type="radio" name="environment" value="production" >
+            Production
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hidden-select">
+            <input class="hidden" type="radio" name="environment" value="development" >
+            Development
+          </a>
+        </li>
+      <li class="divider"></li>
+      <li>
+        <a href="#" class="hidden-select">
+          <input class="hidden" type="radio" name="environment" value="" checked="checked">
+          Any Environment
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+        </div>
+      </div>
+
+        
+  <div class="pull-left">
+    <div class="input-append" style="margin-top:2px;">
+      <input name="query" type="text" class="span2" value=""/>
+      <button name="search" type="submit" class="btn">Search</button>
+      <i class="icon-question-sign" id="search-help-icon"></i>
+    </div>
+  </div>
+  <div id="search-help-icon-content" style="display:none;">
+    <p style="margin-bottom:12px;"><code>hello world</code> finds items whose title contains both "hello" and "world" (infix search)</p>
+    <p style="margin-bottom:12px;"><code>host:web</code> finds items that occurred at least once on a host whose name starts with "web" (prefix search)</p>
+    <p style="margin-bottom:12px;"><code>file:index.php</code> finds items with stack traces with filenames matching "index.php" (infix search)</p>
+    <p style="margin-bottom:12px;"><code>context:home#index</code> finds items with context matching "home#index" (prefix search)</p>
+    <p style="margin-bottom:12px;"><code>ip:101.102.103.104</code> finds items that were seen by the ip address "101.102.103.104" (exact match)</p>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('#search-help-icon').popover({
+        title: 'Search Syntax',
+        content: $('#search-help-icon-content').html(),
+        placement: 'bottom',
+        delay: 200
+      });
+    });
+  </script>
+
+  </form>
+
+          </div>
+            <div class="span3">
+              
+  <div class="btn-toolbar pull-right multiselect-controls" style="margin-right:10px;margin-top:2px;display:none;">
+    
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="Set Level" data-itemlevel-refreshsearch="1" data-itemlevel-clearonselect="1">
+    <select class="hidden level-ids" id="multiselectLevel">
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">Set Level</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    
+  <div class="btn-group item-status-container" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-current="Set Status" data-itemstatus-refreshsearch="1" data-itemstatus-clearonselect="1">
+    <select class="hidden status-ids" id="multiselectStatus">
+    </select>
+    <button class="btn dropdown-toggle btn_small" data-toggle="dropdown"><span class="item-status-current-name">Set Status</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-status" data-itemstatus-name="active" href="#">Active</a></li>
+          <li><a class="btn-item-status" data-itemstatus-name="resolved" href="#">Resolved</a></li>
+          <li><a class="btn-item-status" data-itemstatus-name="muted" href="#">Muted</a></li>
+    </ul>
+  </div>
+
+  </div>
+
+            </div>
+        </div>
+      </div>
+  </div>
+
+<div id="partial" class="content">
+  
+
+
+
+
+
+
+
+
+
+
+    
+    <table class="table table-condensed item-table" data-itemtable-projectid="1300" data-itemtable-rowurl="https://rollbar.com/item/row/">
+      <tr class="item-table-headers">
+          <th>
+            <input type="checkbox" id="multiselect" data-multiselect-targets="multiselectLevel,multiselectStatus">
+          </th>
+        <th style="width:72px;">24hr Trend</th>
+        <th style="width:30px;">Total</th>
+        <th style="width:10px;"><i class="icon-user" title="Unique IPs affected"></i></th>
+        <th><span style="padding-left:30px;">Title</span></th>
+        <th>&nbsp;</th>
+        <th style="width:80px;">Last</th>
+        <th style="width:80px;">Environment</th>
+        <th style="width:70px;">Level</th>
+        <th style="width:65px;">&nbsp;</th>
+      </tr>
+          
+  
+  
+  <tr class="item-details" data-itemid="145389927">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="145389927">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="145389927" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge badge-warning item-count">44</span>
+    </td>
+    <td style="text-align:center;">
+      <span>11</span>
+    </td>
+    <td>
+      
+      <span class="error icon ellipsis dashboard-item-title" title="Error">
+        <a title="ActionController::RoutingError: No route matches [GET] &#34;/cause_404&#34;"  href="/item/145389927/" data-ajaxload-usemodal="true">
+          #21 ActionController::RoutingError: No route matches [GET] &#34;/cause_404&#34;
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Rails">
+      <span class="framework ruby_transparent"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1366735767"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="error" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="145389927" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">error</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="145389927" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="127040409">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="127040409">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="127040409" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge badge-warning item-count">18</span>
+    </td>
+    <td style="text-align:center;">
+      <span>-</span>
+    </td>
+    <td>
+      
+      <span class="warning icon ellipsis dashboard-item-title" title="Warning">
+        <a title="Hull breach!"  href="/item/127040409/" data-ajaxload-usemodal="true">
+          #3 Hull breach!
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Rails">
+      <span class="framework ruby_transparent"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1366732721"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="warning" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="127040409" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">warning</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="127040409" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="127040743">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="127040743">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="127040743" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge  item-count">8</span>
+    </td>
+    <td style="text-align:center;">
+      <span>8</span>
+    </td>
+    <td>
+      
+      <span class="info icon ellipsis dashboard-item-title" title="Info">
+        <a title="some log message"  href="/item/127040743/" data-ajaxload-usemodal="true">
+          #6 some log message
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Javascript">
+      <span class="framework HTML5_2"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1366732705"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="info" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="127040743" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">info</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="127040743" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="145379608">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="145379608">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="145379608" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge badge-warning item-count">38</span>
+    </td>
+    <td style="text-align:center;">
+      <span>13</span>
+    </td>
+    <td>
+      
+      <span class="error icon ellipsis dashboard-item-title" title="Error">
+        <a title="NameError: undefined local variable or method `this_variable_has_not_been_set&#39; for #&lt;HomeController:0x00000007a5a3a0&gt;"  href="/item/145379608/" data-ajaxload-usemodal="true">
+          #17 NameError: undefined local variable or method `this_variable_has_not_been_set&#39; for #&lt;HomeController:0x00000007a5a3a0&gt;
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Rails">
+      <span class="framework ruby_transparent"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1366732700"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="error" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="145379608" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">error</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="145379608" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="145389285">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="145389285">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="145389285" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge badge-warning item-count">28</span>
+    </td>
+    <td style="text-align:center;">
+      <span>6</span>
+    </td>
+    <td>
+      
+      <span class="critical icon ellipsis dashboard-item-title" title="Critical">
+        <a title="NoMethodError: undefined method `[]&#39; for nil:NilClass"  href="/item/145389285/" data-ajaxload-usemodal="true">
+          #20 NoMethodError: undefined method `[]&#39; for nil:NilClass
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Rails">
+      <span class="framework ruby_transparent"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1366732696"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="critical" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="145389285" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">critical</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level active" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="145389285" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="176919640">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="176919640">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="176919640" values="0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge  item-count">7</span>
+    </td>
+    <td style="text-align:center;">
+      <span>1</span>
+    </td>
+    <td>
+      
+      <span class="warning icon ellipsis dashboard-item-title" title="Warning">
+        <a title="Request time"  href="/item/176919640/" data-ajaxload-usemodal="true">
+          #34 Request time
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Javascript">
+      <span class="framework HTML5_2"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1366712334"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="warning" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="176919640" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">warning</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="176919640" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="176918808">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="176918808">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="176918808" values="0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge  item-count">1</span>
+    </td>
+    <td style="text-align:center;">
+      <span>1</span>
+    </td>
+    <td>
+      
+      <span class="warning icon ellipsis dashboard-item-title" title="Warning">
+        <a title="Some warning message"  href="/item/176918808/" data-ajaxload-usemodal="true">
+          #33 Some warning message
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Javascript">
+      <span class="framework HTML5_2"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1366711207"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="warning" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="176918808" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">warning</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="176918808" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="176917389">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="176917389">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="176917389" values="0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge  item-count">4</span>
+    </td>
+    <td style="text-align:center;">
+      <span>1</span>
+    </td>
+    <td>
+      
+      <span class="debug icon ellipsis dashboard-item-title" title="Debug">
+        <a title="Request time: 1s"  href="/item/176917389/" data-ajaxload-usemodal="true">
+          #31 Request time: 1s
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Javascript">
+      <span class="framework HTML5_2"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1366710960"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="debug" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="176917389" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">debug</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="176917389" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="176917454">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="176917454">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="176917454" values="0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge  item-count">1</span>
+    </td>
+    <td style="text-align:center;">
+      <span>1</span>
+    </td>
+    <td>
+      
+      <span class="debug icon ellipsis dashboard-item-title" title="Debug">
+        <a title="Request time:3s"  href="/item/176917454/" data-ajaxload-usemodal="true">
+          #32 Request time:3s
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Javascript">
+      <span class="framework HTML5_2"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1366710949"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="debug" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="176917454" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">debug</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="176917454" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="144994693">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="144994693">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="144994693" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge  item-count">3</span>
+    </td>
+    <td style="text-align:center;">
+      <span>3</span>
+    </td>
+    <td>
+      
+      <span class="warning icon ellipsis dashboard-item-title" title="Warning">
+        <a title="(unknown): Script error."  href="/item/144994693/" data-ajaxload-usemodal="true">
+          #14 (unknown): Script error.
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Javascript">
+      <span class="framework HTML5_2"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1366580731"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="warning" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="144994693" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">warning</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="144994693" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="173217930">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="173217930">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="173217930" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge  item-count">5</span>
+    </td>
+    <td style="text-align:center;">
+      <span>1</span>
+    </td>
+    <td>
+      
+      <span class="info icon ellipsis dashboard-item-title" title="Info">
+        <a title="This is an Info message"  href="/item/173217930/" data-ajaxload-usemodal="true">
+          #30 This is an Info message
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Javascript">
+      <span class="framework HTML5_2"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1366294904"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="info" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="173217930" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">info</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="173217930" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="163037677">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="163037677">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="163037677" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge  item-count">1</span>
+    </td>
+    <td style="text-align:center;">
+      <span>1</span>
+    </td>
+    <td>
+      
+      <span class="critical icon ellipsis dashboard-item-title" title="Critical">
+        <a title="critical"  href="/item/163037677/" data-ajaxload-usemodal="true">
+          #29 critical
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Javascript">
+      <span class="framework HTML5_2"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1365463878"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="critical" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="163037677" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">critical</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level active" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="163037677" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="146896800">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="146896800">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="146896800" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge  item-count">1</span>
+    </td>
+    <td style="text-align:center;">
+      <span>1</span>
+    </td>
+    <td>
+      
+      <span class="debug icon ellipsis dashboard-item-title" title="Debug">
+        <a title="some log mejkjhkssage"  href="/item/146896800/" data-ajaxload-usemodal="true">
+          #27 some log mejkjhkssage
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Javascript">
+      <span class="framework HTML5_2"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1363884095"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="debug" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="146896800" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">debug</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="146896800" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  <tr>
+    <td colspan="10" class="deploy">
+      <a href="/deploy/56285/">2013-03-19 03:45 pm</a>:
+      <strong>brian@rollbar.com</strong>
+      deployed
+      <strong>production</strong>
+      revision
+      <a href="https://github.com/rollbar/rollbar-rails-demo/commit/6fcd43526ae7fd62a0a6bafe13204f5ee0eb27a4" target="_blank">6fcd435</a>
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="145405797">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="145405797">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="145405797" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge  item-count">1</span>
+    </td>
+    <td style="text-align:center;">
+      <span>1</span>
+    </td>
+    <td>
+      
+      <span class="error icon ellipsis dashboard-item-title" title="Error">
+        <a title="ActionView::Template::Error: undefined method `username&#39; for #&lt;User:0x0000010303f8c8&gt;"  href="/item/145405797/" data-ajaxload-usemodal="true">
+          #25 ActionView::Template::Error: undefined method `username&#39; for #&lt;User:0x0000010303f8c8&gt;
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Rails">
+      <span class="framework ruby_transparent"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1363732965"></span></td>
+    <td><span class="item-environment">development</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="error" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="145405797" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">error</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="145405797" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="145390151">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="145390151">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="145390151" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge  item-count">1</span>
+    </td>
+    <td style="text-align:center;">
+      <span>1</span>
+    </td>
+    <td>
+      
+      <span class="debug icon ellipsis dashboard-item-title" title="Debug">
+        <a title="just debugging"  href="/item/145390151/" data-ajaxload-usemodal="true">
+          #23 just debugging
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Javascript">
+      <span class="framework HTML5_2"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1363732046"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="debug" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="145390151" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">debug</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="145390151" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="145390111">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="145390111">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="145390111" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge  item-count">1</span>
+    </td>
+    <td style="text-align:center;">
+      <span>1</span>
+    </td>
+    <td>
+      
+      <span class="warning icon ellipsis dashboard-item-title" title="Warning">
+        <a title="js warning"  href="/item/145390111/" data-ajaxload-usemodal="true">
+          #22 js warning
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Javascript">
+      <span class="framework HTML5_2"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1363732037"></span></td>
+    <td><span class="item-environment">production</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="warning" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="145390111" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">warning</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="145390111" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  <tr>
+    <td colspan="10" class="deploy">
+      <a href="/deploy/56277/">2013-03-19 03:25 pm</a>:
+      <strong>brian@rollbar.com</strong>
+      deployed
+      <strong>production</strong>
+      revision
+      <a href="https://github.com/rollbar/rollbar-rails-demo/commit/bf48b11e593795a40700b9e1ab1bca7b4b065e5c" target="_blank">bf48b11</a>
+    </td>
+  </tr>
+
+          
+  
+  
+  <tr class="item-details" data-itemid="145382854">
+      <td>
+        <input type="checkbox" class="multiselect" data-multiselect-id="145382854">
+      </td>
+    <td>
+      <span class="inlinebar item-sparkline" data-itemid="145382854" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></span>
+    </td>
+    <td>
+      <span class="badge  item-count">1</span>
+    </td>
+    <td style="text-align:center;">
+      <span>1</span>
+    </td>
+    <td>
+      
+      <span class="error icon ellipsis dashboard-item-title" title="Error">
+        <a title="NoMethodError: undefined method `[]&#39; for nil:NilClass"  href="/item/145382854/" data-ajaxload-usemodal="true">
+          #18 NoMethodError: undefined method `[]&#39; for nil:NilClass
+        </a>
+      </span>
+    </td>
+    <td style="text-align:right;" title="Rails">
+      <span class="framework ruby_transparent"></span>
+    </td>
+    <td><span class="item-date" data-itemdate="1363731515"></span></td>
+    <td><span class="item-environment">development</span></td>
+    <td>
+      
+  <div class="btn-group item-level-container " data-itemlevel-url="https://rollbar.com/project/1300/set_item_level/" data-itemlevel-current="error" data-itemlevel-refreshsearch="0" data-itemlevel-clearonselect="0">
+    <select class="hidden level-ids" >
+        <option value="145382854" selected="selected"></option>
+    </select>
+    <button class="btn dropdown-toggle btn-small" data-toggle="dropdown"><span class="item-level-current-name">error</span>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+          <li><a class="btn-item-level" data-itemlevel-name="critical" href="#">Critical</a></li>
+          <li><a class="btn-item-level active" data-itemlevel-name="error" href="#">Error</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="warning" href="#">Warning</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="info" href="#">Info</a></li>
+          <li><a class="btn-item-level" data-itemlevel-name="debug" href="#">Debug</a></li>
+    </ul>
+  </div>
+
+    </td>
+    <td>
+      
+  
+  <button class="item-status-button item-status-listener btn btn-small btn-success" data-itemstatus-url="https://rollbar.com/project/1300/set_item_status/" data-itemstatus-currentstatus="active">
+    Resolve
+    <select class="hidden status-ids" >
+        <option value="145382854" selected="selected"/>
+    </select>
+  </button>
+
+    </td>
+  </tr>
+
+          
+  <tr>
+    <td colspan="10" class="deploy">
+      <a href="/deploy/56261/">2013-03-19 02:36 pm</a>:
+      <strong>brian@rollbar.com</strong>
+      deployed
+      <strong>production</strong>
+      revision
+      <a href="https://github.com/rollbar/rollbar-rails-demo/commit/8680e85931122544ab3f5e9d963096e3b46086a2" target="_blank">8680e85</a>
+    </td>
+  </tr>
+
+          
+  <tr>
+    <td colspan="10" class="deploy">
+      <a href="/deploy/53709/">2013-03-08 12:12 pm</a>:
+      <strong>brian@rollbar.com</strong>
+      deployed
+      <strong>production</strong>
+      revision
+      <a href="https://github.com/rollbar/rollbar-rails-demo/commit/2acc981461c110664b8d0f722151076beeaffcdf" target="_blank">2acc981</a>
+    </td>
+  </tr>
+
+    </table>
+
+
+  
+  <script type="text/javascript">
+    $(function() {
+      var itemSparklines = new Rollbar.ItemSparkline($('.item-sparkline'));
+      var itemDetails = new Rollbar.ItemDetails($('.item-details'));
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+        <div class="text-divider"></div>
+        <div class="spacer">&nbsp;</div>
+        
+  <section class="feedback container">
+    <div class="row">
+      <div class="span8">
+        <p>
+          <span class="dialog icon muted">How can we make this page better for you?</span>
+        </p>
+        <form class="form-inline feedback-form" action="/feedback/footer" method="POST">
+          <input type="hidden" name="page_url">
+            <input type="hidden" name="user_id" value="1479">
+          <textarea rows="2" name="user_comment" class="comment" placeholder="Your suggestions, ideas and complaints will greatly help us."></textarea>
+          <input type="submit" class="btn feedback-submit" value="Save">
+        </form>
+      </div>
+    </div>
+  </section>
+
+    </div> <!-- /container -->
+  </div>
+
+      </div>
+
+      <footer class="footer">
+        <div class="container" style="text-align:center;">
+          <div>
+            <strong>Email:</strong> support@rollbar.com
+            &middot;
+            <strong>Phone:</strong> 1.415.857.0548
+            &middot;
+            <a href="#" onclick="olark('api.box.show');olark('api.box.expand');return false;">Chat with Us</a>
+          </div>
+          <div>
+            &copy; 2013 Rollbar, Inc.
+            &nbsp;
+            &nbsp;
+            <a href="/about">About Us</a>
+            &nbsp;
+            &nbsp;
+            <a href="/blog/">Blog</a>
+            &nbsp;
+            &nbsp;
+            <a href="/changelog">Changelog</a>
+            &nbsp;
+            &nbsp;
+              <a href="/docs/project/1300/index/">Documentation</a>
+            &nbsp;
+            &nbsp;
+            <a href="/tos">TOS</a>
+            &nbsp;
+            &nbsp;
+            <a href="/privacy">Privacy</a>
+            &nbsp;
+            &nbsp;
+            <a href="http://stats.pingdom.com/azyhgygioih4">Service Status</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  
+    <div>
+      
+  <div class="modal hide" id="modal-dialog">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <h3 class="modal-header-content">&nbsp;</h3>
+    </div>
+    <div class="modal-body">
+      <p class="modal-body-content"></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="btn" data-dismiss="modal">Close</a>
+    </div>
+  </div>
+
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- jQuery scripts -->
+    <script type="text/javascript" src="//d37gvrvc0wt4s1.cloudfront.net/static/js/jquery-ui.custom.min.js?ts=1361907905"></script>
+    <script type="text/javascript" src="//d37gvrvc0wt4s1.cloudfront.net/static/js/jquery.sparkline.min.js?ts=1361907905"></script>
+    <script type="text/javascript" src="//d37gvrvc0wt4s1.cloudfront.net/static/js/jquery.easydate.min.js?ts=1361907905"></script>
+
+    <!-- d3 scripts -->
+    <script type="text/javascript" src="//d37gvrvc0wt4s1.cloudfront.net/static/js/d3.v2.min.js?ts=1361907905"></script>
+
+    <!-- Bootstrap scripts -->
+    <script src="//d37gvrvc0wt4s1.cloudfront.net/static/js/bootstrap.min.js?ts=1363379434"></script>
+    <script src="//d37gvrvc0wt4s1.cloudfront.net/static/js/bootstrap-datepicker.min.js?ts=1363379434"></script>
+
+    <!-- Socket.io scripts -->
+    <script type="text/javascript" src="//d37gvrvc0wt4s1.cloudfront.net/static/js/socket.io.min.js?ts=1363379434"></script>
+
+    <!-- Site scripts -->
+    <script src="//d37gvrvc0wt4s1.cloudfront.net/static/js/class.min.js?ts=1363379434"></script>
+    <script src="//d37gvrvc0wt4s1.cloudfront.net/static/js/site.min.js?ts=1366146272" type="text/javascript"></script>
+
+      
+  <script type="text/javascript" src="//d37gvrvc0wt4s1.cloudfront.net/static/js/rts.min.js?ts=1363379434"></script>
+  <script type="text/javascript" src="//d37gvrvc0wt4s1.cloudfront.net/static/js/rtshandlers.min.js?ts=1363379434"></script>
+
+      
+  <script>
+    <!-- Setup the RTS connection -->
+    (function() {
+      var RTS = window.RTS;
+      if (!RTS) {
+        var rollbarRtsUrl = "https://rollbar.com/";
+        var $rtsElem = $('<div id="rtsHub" class="hide"></div>');
+        $(document.body).append($rtsElem);
+        RTS = new Rollbar.RTS(rollbarRtsUrl, 1479, $rtsElem);
+        window.RTS = RTS;
+      }
+    })();
+
+
+    <!-- Initialize some UI components -->
+    (function() {
+      var initScripts = function($base) {
+        var dummy;
+
+        <!-- Initialize the item level handlers -->
+        dummy = new Rollbar.ItemLevelDropdown($('.item-level-container', $base));
+
+        <!-- Initialize the item status dropdown handlers -->
+        dummy = new Rollbar.ItemStatusDropdown($('.item-status-container', $base));
+
+        <!-- Initialize the item status button handlers -->
+        dummy = new Rollbar.ItemStatusButton($('.item-status-button', $base));
+
+        <!-- Initialize the item table handlers -->
+        dummy = new Rollbar.ItemTable($('.item-table', $base));
+
+        <!-- Initialize toggle elements -->
+        dummy = new Rollbar.Toggle($('.toggle', $base));
+
+        <!-- Initialize any multi-checkbox dropdowns -->
+        dummy = new Rollbar.MultipleCheckboxDropdown($('.multi-checkbox-dropdown', $base));
+
+        <!-- Initialize search controls -->
+        dummy = new Rollbar.SearchControls($('.search-controls', $base));
+
+        <!-- Initialize multiselect controls -->
+        dummy = new Rollbar.MultiselectItemList($('#multiselect', $base));
+
+        <!-- Initialize inline editable forms -->
+        dummy = new Rollbar.InlineEditableForm($('form.inline-editable', $base));
+      };
+
+      initScripts($(document.body));
+
+      // Hook up JS handlers on ajax loads
+      $(document.body).on('ajaxLoad', function(evt, loadedDataElems) {
+        for (var index in loadedDataElems) {
+          initScripts(loadedDataElems[index]);
+        }
+      });
+    })();
+  </script>
+
+
+    <!-- Site script initialization -->
+    
+  <script>
+    <!-- Initialize the utils -->
+    var RollbarUtil = window.RollbarUtil;
+    if (!RollbarUtil) {
+      window.RollbarUtil = new Rollbar.Util();
+    }
+
+    <!-- Initialize the alert system -->
+    var AlertManager = window.AlertManager;
+    if (!AlertManager) {
+      window.AlertManager = new Rollbar.AlertManager($('#alerts'));
+    }
+
+    <!-- Initialize the textbox handler -->
+    var AjaxTextboxFormManager = window.AjaxTextboxFormManager;
+    if (!AjaxTextboxFormManager) {
+      window.AjaxTextboxFormManager = new Rollbar.AjaxTextboxFormManager($(document.body));
+    }
+    
+    <!-- Initialize the replay checkbox handler -->
+    var AjaxCheckboxFormManager = window.AjaxCheckboxFormManager;
+    if (!AjaxCheckboxFormManager) {
+      window.AjaxCheckboxFormManager = new Rollbar.AjaxCheckboxFormManager($(document.body));
+    }
+
+    <!-- Feedback form -->
+    var FeedbackFormManager = window.FeedbackFormManager;
+    if (!FeedbackFormManager) {
+      window.FeedbackFormManager = new Rollbar.FeedbackFormManager($(document.body));
+    }
+
+    var initScripts = function($base) {
+      var dummy;
+
+      $('.alert-message', $base).alert();
+
+      <!-- Initialize the ajax load forms/links -->
+      dummy = new Rollbar.AjaxLoad('ajaxLoad',
+                                   $('#main-stage'),
+                                   $('#modal-dialog'),
+                                   $('.ajax-load', $base));
+    };
+
+    // Hook up JS handlers on initial page load
+    initScripts($(document.body));
+
+    // Hook up JS handlers on ajax loads
+    $(document.body).on('ajaxLoad', function(evt, loadedDataElems) {
+      for (var index in loadedDataElems) {
+        initScripts(loadedDataElems[index]);
+      }
+    });
+  </script>
+
+
+    
+<!-- begin olark code --><script data-cfasync="false" type='text/javascript'>/*{literal}<![CDATA[*/
+window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){f[z]=function(){(a.s=a.s||[]).push(arguments)};var a=f[z]._={},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={0:+new Date};a.P=function(u){a.p[u]=new Date-a.p[0]};function s(){a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var t=b.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('9008-423-10-3698');/*]]>{/literal}*/</script><noscript><a href="https://www.olark.com/site/9008-423-10-3698/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript><!-- end olark code -->
+      <script>
+        olark('api.chat.updateVisitorNickname', {snippet: 'sys:guest'});
+        olark('api.visitor.updateEmailAddress', {emailAddress: 'demo@rollbar.com'});
+      </script>
+
+    
+  <script type="text/javascript">
+    (function() {
+      window._pa = window._pa || {};
+      var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+      pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/5150bf6d718969000200036f.js";
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+    })();
+  </script>
+
+    
+  <script type="text/javascript">
+  adroll_adv_id = "SCL7CXCYJNBBTO566ZDUKF";
+  adroll_pix_id = "YEQEU6VHIVHTRGLV6KEN4R";
+  (function () {
+  var oldonload = window.onload;
+  window.onload = function(){
+     __adroll_loaded=true;
+     var scr = document.createElement("script");
+     var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+     scr.setAttribute('async', 'true');
+     scr.type = "text/javascript";
+     scr.src = host + "/j/roundtrip.js";
+     ((document.getElementsByTagName('head') || [null])[0] ||
+      document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+     if(oldonload){oldonload()}};
+  }());
+  </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

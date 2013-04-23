@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var _kmq = _kmq || [];
+        var _kmk = _kmk || '3225b0c50e306468d63651238f71383a01850728';
+        function _kms(u){
+          setTimeout(function(){
+            var d = document, f = d.getElementsByTagName('script')[0],
+            s = d.createElement('script');
+            s.type = 'text/javascript'; s.async = true; s.src = u;
+            f.parentNode.insertBefore(s, f);
+          }, 1);
+        }
+        _kms('//i.kissmetrics.com/i.js');
+        _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+      //]]>
+    </script>
+    <title>
+      Olark | Live chat with your customers for sales and support
+    </title>
+    <link href='http://www.olark.com' rel='canonical' />
+    <meta content='Live chat and real-time monitoring of your website visitors so you can sell better and provide excellent support' name='description' />
+    <meta content='Olark, chat, livehelp, livesales, free, website, visitors, website monitoring, visitor monitoring, gtalk' name='keywords' />
+    <script src="//cdn.optimizely.com/js/6427001.js"></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+        
+        // setup Google analytics
+        window._gaq = window._gaq || [];
+        window._gaq.push(['_setAccount', 'UA-395071-7']);
+        window._gaq.push(['_setAllowLinker', true]);
+        window._gaq.push(['_setAllowHash', false]);
+      //]]>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var requirejs = {
+            baseUrl: "/javascripts/modules"
+        };
+      //]]>
+    </script>
+    <script src="/javascripts/requirejs.js"></script>
+    <!--[if IE 6]><script type='text/javascript' src="/javascripts/pngfix/DD_belatedPNG.js"></script><![endif]-->
+    <!--[if IE 6]>
+    <script type='text/javascript'>
+        $(document).ready(function(){
+            DD_belatedPNG.fix('#control_navigation_primary li, .page, .background_container, .one, .two, #thisone, a, img, h1, .button, #top, #bottom');
+        });
+    </script>
+    <![endif]-->
+    <script type='text/javascript'>
+      //<![CDATA[
+        WebFontConfig = {
+        google: { families: [ 'Arvo:400,700:latin', 'Annie+Use+Your+Telescope:latin' ] }
+        };
+        (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+        })();
+      //]]>
+    </script>
+    <!-- begin olark code --> <script type='text/javascript'> /*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";(function(){f[z]=function(){ (a.s=a.s||[]).push(arguments)};var a=f[z]._={},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){f[z]("call",n,arguments)}})(c.methods[q] )}a.v=0;a.l=c.loader;a.i=arguments.callee;a.f=setTimeout(function(){if(a.f){(new Image).src=l+"//"+a.l.replace(".js",".png")+"&"+escape(f.location.href) }a.f=null},20000);a.p={0:+new Date};a.P=function(u){a.p[u]=new Date-a.p[0]};function s(){a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false ):f.attachEvent("on"+r,s);(function(){function p(){return["<head></head><",i,' onload="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h, "('script')).",k,"='",l,"//",a.l,"'\"></",i,">"].join("")}var i="body",m=d[i];if(!m){return setTimeout(arguments.callee,100)}a.P(1);var j="appendChild", h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild ).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE\s+6/.test(navigator.userAgent)){b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{ b.contentWindow[g].open()}catch(w){c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var t=b.contentWindow[g]; t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,'\\"')+'");d.close();'}a.P(2)})()})()})({loader:(function(m){ return"static.olark.com/jsclient/loader0.js?ts="+(m?m[1]:(+new Date))})(document.cookie.match(/olarkld=(\d+)/)), name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('9353-431-10-4341'); /*]]*/</script><!-- end olark code -->
+    
+    <script type='text/javascript'>
+      //<![CDATA[
+        olark('api.chat.onCommandFromOperator', function(event) {
+            if (event.command.name == 'oops') {
+              olark('api.chat.sendNotificationToOperator', {body: 'autotype on!'});
+              var autoMessages = [
+                "I work for Olark, the company that makes this chat program",
+                "perhaps you arrived here by mistake?",
+                "if you close this browser tab, you'll probably be back where you need to be!"
+                ];
+              delay = 0;
+              while (autoMessages.length) {
+                  (function(msg){
+                    delay = delay + msg.length*130;
+                    setTimeout(function(){
+                      olark('api.chat.sendMessageToVisitor', {body: msg});
+                      olark('api.chat.sendNotificationToOperator', {body: msg});
+                    }, delay);
+                  })(autoMessages.shift())
+              }
+            }
+        });
+        olark.configure('system.allow_mobile_boot', true);
+        
+        // Check for referral ID
+        if(document.location.toString().match(/rid=\d+\-\d+\-\d+/)){
+        
+            olark('api.box.hide');
+        
+            window.setTimeout(function() {
+                olark('api.box.show')
+            }, 30000);
+        
+        }else {
+            olark('api.box.show');
+        }
+      //]]>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        olark.extend(function(api) {
+            api.chat.updateVisitorNickname({
+                snippet: ''
+            })
+        })
+        olark('api.visitor.updateCustomFields', {
+            username: ""
+        });
+      //]]>
+    </script>
+    <link href='/stylesheets/compiled/marketing/base.css?v=1' media='screen, projection' rel='stylesheet' type='text/css' />
+    <link href='/stylesheets/compiled/print.css' media='print' rel='stylesheet' type='text/css' />
+    <!--[if lte IE 9]><link rel="stylesheet" href="/stylesheets/compiled/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link href='/images/sky/common/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <script src='/javascripts/landing_pages/front_page/jquery.scrollTo-1.4.2-min.js' type='text/javascript'></script>
+    <script src='/javascripts/landing_pages/front_page/jquery.localscroll-1.2.7-min.js' type='text/javascript'></script>
+    <script src='/javascripts/landing_pages/front_page/front_page.js' type='text/javascript'></script>
+  </head>
+  <body>
+    
+    <div class=' main_background' id='front_page'>
+      <div id='header'>
+        <div class='header-container'>
+          <div id='logo'>
+            <a class='logo' href='/'></a>
+          </div>
+          <div class='container'>
+            <ul id='marketing-site-navigation'>
+              <li>
+                <a class='plans' href='/plans'>Pricing</a>
+              </li>
+              <li>
+                <a class='features' href='/features'>Features</a>
+              </li>
+              <li>
+                <a class='customers' href='/customers'>Customers</a>
+              </li>
+              <li>
+                <a class='about' href='/about'>About</a>
+              </li>
+              <li>
+                <a class='blog' href='http://www.olark.com/blog'>Blog</a>
+              </li>
+              <li>
+                <a class='button header-signup-button' href='/signup/create_new_account/'>Sign Up</a>
+              </li>
+            </ul>
+            <ul id='user-navigation'>
+              <li class='first'>
+                <a href='http://www.olark.com/help'>Help</a>
+              </li>
+              <li>
+                <a href='/account/login'>Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class='clear'></div>
+      <div id='main'>
+        <div id='background_container'>
+          <div class='container'>
+            
+            <script type='text/javascript'>
+              //<![CDATA[
+                _kmq.push(['record', 'Viewed Homepage']);
+              //]]>
+            </script>
+            <div id='placeholder'></div>
+            <div id='above_the_fold'>
+              <div id='front_page_logo'>
+                <a href='/signup/create_new_account'>
+                  <img height='220px' src='/images/sky/front_page_variant/logo.png' width='327px' />
+                </a>
+              </div>
+              <h1>
+                <div class='bigline'></div>
+                <b>Chat</b> with your <b>Customers</b>
+                <div class='bigline'></div>
+              </h1>
+              <h2>
+                <div class='smallline'></div>
+                Create <b>trust</b>, <b>loyalty</b>, &amp; <b>happiness</b>
+                <div class='smallline'></div>
+              </h2>
+              <div class='call_to_action local_scroll'>
+                <a class='button gray_border' href='#below_the_fold' id='learn'>
+                  Learn More
+                </a>
+                <a class='button green_border' href='/signup/create_new_account'>
+                  Get Started
+                </a>
+              </div>
+            </div>
+            <div class='call_to_action local_scroll' id='screenshot'>
+              <a href='#below_the_fold'>  </a>
+            </div>
+            <div id='cloud1'></div>
+            <div id='cloud2'></div>
+            <div class='clear'></div>
+            <!--fold? what? we're not a newspaper -->
+            <div id='below_the_fold'>
+              <div class='shadow'></div>
+              <br />
+              <br />
+              <div class='prepend-1 span-12'>
+                <br />
+                <div class='center'>
+                  <img src='/images/sky/front_page_variant/partners-frontpage-verticalwider.png' />
+                </div>
+              </div>
+              <div class='span-10 append-1 last'>
+                <div class='framed'>
+                  <a class='wistia-popover[height=400,width=640]' href='https://fast.wistia.com/embed/iframe/79c2daad08?autoPlay=true&amp;controlsVisibleOnLoad=true&amp;popover=true&amp;version=v1&amp;videoHeight=400&amp;videoWidth=640&amp;plugin%5BpostRoll%5D%5Blink%5D=http%3A%2F%2Fwww.olark.com%2Fsignup%2Fcreate_new_account%3Fvideo%3Dtrue&amp;plugin%5BpostRoll%5D%5Bstyle%5D%5BbackgroundColor%5D=%23616161&amp;plugin%5BpostRoll%5D%5Bstyle%5D%5Bcolor%5D=%23ffffff&amp;plugin%5BpostRoll%5D%5Bstyle%5D%5BfontFamily%5D=Gill%20Sans%2C%20Helvetica%2C%20Arial%2C%20sans-serif&amp;plugin%5BpostRoll%5D%5Bstyle%5D%5BfontSize%5D=36px&amp;plugin%5BpostRoll%5D%5Btext%5D=Add%20Olark%20to%20your%20website&amp;plugin%5BpostRoll%5D%5Bversion%5D=v1'>
+                    <img src='/images/sky/front_page_variant/mainvideo.png' />
+                  </a>
+            <script charset="ISO-8859-1" src="https://fast.wistia.com/static/popover-v1.js"></script>
+                </div>
+              </div>
+              <div class='prepend-1 span-22 append-1 last'>
+                <div class='doily'>
+                  <h2>
+                    We've got the goods
+                  </h2>
+                </div>
+                <div class='triple_feature'>
+                  <div class='feature'>
+                    <div class='framed'>
+                      <a href='/features#chat'>
+                        <img src='/images/sky/front_page_variant/imclient.png' />
+                      </a>
+                    </div>
+                    <h3>
+                      Chat inside your IM client
+                    </h3>
+                    <div class='subtext'>
+                      no proprietary tools to learn!
+                    </div>
+                  </div>
+                  <div class='feature'>
+                    <div class='framed'>
+                      <a href='/features#crm'>
+                        <img src='/images/sky/front_page_variant/crm.png' />
+                      </a>
+                    </div>
+                    <h3>
+                      CRM Integration &amp; Transcripts
+                    </h3>
+                    <div class='subtext'>
+                      keep track of all your clients
+                    </div>
+                  </div>
+                  <div class='feature'>
+                    <div class='framed'>
+                      <a href='/features#visitor'>
+                        <img src='/images/sky/front_page_variant/customize.png' />
+                      </a>
+                    </div>
+                    <h3>
+                      Beautiful &amp; Customizable
+                    </h3>
+                    <div class='subtext'>
+                      an enjoyable no-popout experience
+                    </div>
+                  </div>
+                  <div class='clear'></div>
+                </div>
+              </div>
+              <div class='prepend-1 span-22 append-1 last'>
+                <p class='center'>
+                  </br>
+                  <a class='button gray_border' href='/features' id='learn'>
+                    More Features
+                  </a>
+                  <a class='button green_border' href='/signup/create_new_account'>
+                    Sign Up!
+                  </a>
+                </p>
+              </div>
+            </div>
+            <script type='text/javascript'>
+              //<![CDATA[
+                $(document).ready(function(){
+                    if(document.location.toString().match(/rid=\d/)){
+                        var site_ids = ["6563-379-10-6646", "9269-727-10-9792", "3909-399-10-2128", "3866-551-10-4004", "2712-459-10-9339", "6280-319-10-7253", "5988-211-10-2146", "3189-316-10-8868", "8222-401-10-4084", "1883-397-10-2066", "6522-901-10-7305", "6553-503-10-3209", "3936-860-10-1637", "8465-134-10-8121", "5152-648-10-1660", "4633-605-10-1919", "8661-551-10-2795", "3387-292-10-4228", "3178-317-10-7787", "2093-267-10-7812", "7055-482-10-5729", "2195-616-10-3680", "9460-903-10-2457", "9070-864-10-3331", "1076-318-10-8178", "6093-258-10-6939", "8808-665-10-4541", "1757-786-10-4371", "5863-514-10-8569", "9353-431-10-4341", "6093-258-10-6939"];
+                        for(var i=0;i<site_ids.length;i++){
+                            if(document.location.toString().match("rid=" + site_ids[i])){
+                                if(window.console){
+                                    window.console.log("hiding olark on purpose");
+                                }
+                                olark('api.box.hide');
+                            }
+                        }
+                    }
+                
+                });
+              //]]>
+            </script>
+            <div id='footer_push'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='footer'>
+      <div class='style'>
+        <div class='container'>
+          <div class='prepend-1 span-5'>
+            <ul>
+              <li class='emphasis'>
+                <a href='/plans'>Sign Up / Pricing</a>
+              </li>
+              <li>
+                <a href='/about'>About Us</a>
+              </li>
+              <li>
+                <a href='/pages/contact'>Contact Us</a>
+              </li>
+              <li>
+                <a href='/customers'>Happy Customers</a>
+              </li>
+              <li>
+                <a href='/partners'>Partner Program</a>
+              </li>
+              <li>
+                <a href='/integrations'>Integrations</a>
+              </li>
+              <li>
+                <a href='/pages/press'>Press</a>
+              </li>
+              <li>
+                <a href='/pages/tos'>Legal</a>
+              </li>
+            </ul>
+          </div>
+          <div class='prepend-2 span-5 append-2'>
+            <ul>
+              <li>
+                <h6>Resources</h6>
+              </li>
+              <li>
+                <a href='/help'>Help</a>
+              </li>
+              <li>
+                <a href='/community'>Community</a>
+              </li>
+              <li>
+                <a href='/developer'>Developers / API</a>
+              </li>
+              <li>
+                <a href='/jobs'>
+                  Jobs <em>(We're hiring!)</em>
+                </a>
+              </li>
+              <li>
+                <a href='http://www.olark.com/blog'>Blog</a>
+              </li>
+              <li>
+                Follow Us:
+                <a href='http://www.twitter.com/olark'>Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div class='append-1 span-6 last'>
+            <p class='box'>
+              <b>Olark</b>
+              by Habla, Inc.
+              <br />
+              245 Ramona St.
+              <br />
+              Palo Alto, CA 94301
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/common.js?1358903014" type="text/javascript"></script>
+    <link href='/stylesheets/facebox.css' rel='stylesheet' />
+    <script src='/javascripts/facebox.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+        })();
+        
+        try { window.mpmetrics = new MixpanelLib("0908d20dfe9d3ea7c81e64bb4ffd7d36"); } catch(err) {}
+      //]]>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        piAId = '10362';
+        piCId = '6331';
+        
+        (function() {
+        	function async_load(){
+        		var s = document.createElement('script'); s.type = 'text/javascript';
+        		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+        		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+        	}
+        	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+        	else { window.addEventListener('load', async_load, false); }
+        })();
+      //]]>
+    </script>
+    
+  <script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";e.async=true;e.src="https://d1ros97qkrwjf5.cloudfront.net/42/eum/rum.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-1.newrelic.com","dae0eaea0d",426661,"dl1eRBBcXAhVFxtIVkdGUVxNWl4AVR0=",0,12,new Date().getTime(),"","","","",""])</script></body>
+</html>

@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Rollbar - Real-time Error Tracking for Ruby, Python, PHP, Node.js, Javascript, and Flash.</title>
+    <title>Rollbar - Sign Up</title>
     
     
   <meta name="description" content="Rollbar collects errors that happen in your application, notifies you, and analyzes them so you can debug and fix them. Ruby, Python, PHP, Node.js, Javascript, and Flash libraries available."/>
@@ -35,7 +35,7 @@
     "server.environment": "production", 
     "server.host": "web8",
     "endpoint": "https://api.rollbar.com/api/1/",
-    "context": "root/index"
+    "context": "auth/signup"
       , person: {
         id: 1479,
         username: 'sys:guest',
@@ -85,7 +85,7 @@
       "$created": new Date(1362037485 * 1000),
       "$username": 'sys:guest'
     });
-    mixpanel.track("pageview-root/index", {"matchdict": {}});
+    mixpanel.track("pageview-auth/signup", {"matchdict": {}});
   </script><!-- end Mixpanel -->
 
     
@@ -155,143 +155,86 @@
     <div class="main-stage">
       
   
+<div id="alerts">
+  
+  
 
 
-  <div class="box-block">   
-    <div id="banner" class="row-fluid">
-      <div class="container">
-        <div class="span5 banner-text">
-          <h1>Take control of your errors</h1>
-          <p>Rollbar collects and analyzes errors<br>so you can find and fix them faster.</p>
-          <ul class="inline buttons">
-              <li><a href="/demo/" class="btn btn-success">See Live Demo</a></li>
-              <li><a href="/features/" class="btn">Explore Features</a></li>
-          </ul>
-        </div>
-        <div class="span7 banner-screenshot">
-          <a href="/features/dashboard/"><img src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/slider/slide1.png?ts=1361855929" alt="Rollbar Dashboard" /></a>
-        </div>
-      </div>
-    </div>    
-  </div>
-  <div id="clients">
-    <div class="row-fluid">
-      <div class="container">
-        <div class="span12">
-          <div class="carousel slide" id="logos-carousel">
-            <div class="carousel-inner">
-              <div class="active item">
-                <ul class="inline logos-clients">
-                  <li><a target="_blank" href="http://99designs.com"><img src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/clients/99design.png?ts=1361844227" alt="99 designs" /></a></li>
-                  <li><a target="_blank" href="http://www.mapmyrun.com"><img style="height:25px;margin-top:4px;" src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/clients/mapmyrun.png?ts=1361844227" alt="MapMyRun" /></a></li>
-                  <li><a target="_blank" href="http://crowdflower.com"><img src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/clients/crowdflower.png?ts=1361844227" alt="CrowdFlower" /></a></li>
-                  <li><a target="_blank" href="http://sincerely.com"><img style="margin-top: 7px;" src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/clients/sincerely.png?ts=1361844227" alt="Sincerely" /></a></li>
-                  <li><a target="_blank" href="http://instacart.com"><img src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/clients/instacart.png?ts=1361844227" alt="Instacart" /></a></li>
-                  <li><a target="_blank" href="http://instaedu.com"><img style="margin-top: 2px;" src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/clients/instaedu.png?ts=1361844227" alt="InstaEDU" /></a></li>
-                </ul>
-              </div>
-              <div class="item">
-                <ul class="inline logos-clients">
-                  <li><a target="_blank" href="http://evr.st"><img style="margin-top: 1px;" src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/clients/everest.png?ts=1362003873" alt="Everest" /></a></li>
-                  <li><a target="_blank" href="http://sprucemedia.com"><img style="margin-bottom: 3px;" src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/clients/sprucemedia.png?ts=1361844227" alt="Spruce Media" /></a></li>
-                  <li><a target="_blank" href="http://www.messageme.com"><img style="margin-top: 7px;" src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/clients/messageme.png?ts=1361844227" alt="MessageMe" /></a></li>
-                  <li><a target="_blank" href="https://www.socialsci.com"><img style="margin-bottom: 2px;" src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/clients/socialsci.png?ts=1361844227" alt="SocialSci" /></a></li>
-                  <li><a target="_blank" href="http://bombfell.com"><img style="margin-top: 0px;" src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/clients/bombfell.png?ts=1361844227" alt="Bombfell" /></a></li>
-                  <li><a target="_blank" href="https://www.homejoy.com"><img style="margin-top: 7px;" src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/clients/homejoy.png?ts=1361844227" alt="HomeJoy" /></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div id="how-it-works" class="container-fluid main-content"> 
-      <div class="row-fluid">
-        <div class="span12">
-          <h2>Built for Faster Cycles</h2>
-        </div>
-      </div>
-      <div class="row-fluid column-box">
-        <div class="span4 text-center">
-          <h3>Collect all your errors</h3>
-          <p>Rollbar installs as a small library to detect errors and collect<br> context about each.</p>
-          <a href="/docs/">
-            <img src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/rollbar-projects.png?ts=1361580921" alt="Rollbar Libraries" class="indent">
-          </a>
-        </div>
-        <div class="spacer visible-phone">&nbsp;</div>
-        <div class="text-divider visible-phone"></div>
-        <div class="spacer visible-phone">&nbsp;</div>
-        <div class="span4 text-center">
-          <h3>Surface the top issues</h3>
-          <p>Get alerts only when they matter.<br> See everything in one place<br> on the Rollbar dashboard.</p>
-          <ul class="unstyled text-center list-featured">
-            <li>
-              <a href="/features/alerts/">
-                <span class="icon icon-email"></span>
-                Email Notifications
-              </a>
-            </li>
-            <li>
-              <a href="/features/dashboard/">
-                <span class="icon icon-dashboard"></span>
-                Real-Time Dashboard
-              </a>
-            </li>
-            <li>
-              <a href="/features/analysis/">
-                <span class="icon icon-occurrences"></span>
-                Matching occurrences<br/>grouped together
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="spacer visible-phone">&nbsp;</div>
-        <div class="text-divider visible-phone"></div>
-        <div class="spacer visible-phone">&nbsp;</div>
-        <div class="span4 text-center">
-          <h3>Find, fix, and resolve</h3>
-          <p>Use our forensics tools to understand, reproduce, and fix.<br>Get notified if it happens again.</p>
-          <ul class="unstyled text-center list-featured circle-items">
-            <li>
-              <span class="icon icon-3"></span>
-              See trends over time
-            </li>
-            <li>
-              <span class="icon icon-1"></span>
-              Drill down
-            </li>
-            <li>
-              <span class="icon icon-2"></span>
-              Group by person, browser, host
-            </li>
-          </ul>
-        </div>
-        <div class="spacer visible-phone">&nbsp;</div>
-      </div>
-    </div> 
-  </div>
-  <div id="built-reliability-box">
-    <div class="container-fluid">
-      <section class="row-fluid">
-        <div id="built-reliability" class="main-content">
-          <h2 style="padding-bottom:24px;">Built for Reliability &amp; Scale</h2>
-          <p style="text-align:center;font-size:24px;color:white;font-weight:normal;">Error collectors in 4 data centers with automatic failover</p>
-          <p style="text-align:center;font-size:18px;color:white;">Anycast DNS routes error reports to the closet endpoint for fast response times</p>
-          <p style="text-align:center;font-size:18px;color:white;padding-bottom:24px;">Automatic failover means we won't lose your data if we lose a datacenter</p>
-          <div class="container">
-            <img src="//d37gvrvc0wt4s1.cloudfront.net/static/img2/map.png?ts=1361580921" alt="Map" />
-          </div>
-        </div>
-      </section>
+</div>
+<div class="auth-content container-fluid">
+  <section class="row-fluid">
+    <div class="span6 offset3">
+      <div class="well">
+        
+
+
+
+  <div class="inner" style="border: 0;">
+    <form method="POST" action="/signup/" class="form-horizontal">
+      <input id="csrf_token" name="csrf_token" type="hidden" value="5c540d15c17238348f44fe83acb3b823">
+      <input id="invite_token" name="invite_token" type="hidden" value="">
+      <input id="early_access_token" name="early_access_token" type="hidden" value="">
+      <fieldset>
+        <legend>Sign up for Free Trial</legend>
+        <p style="margin-bottom:18px;">You're minutes away from tracking errors with Rollbar.</p>
+        
+  <div class="control-group ">
+    <label class="control-label" for="email">Email address</label>
+    <div class="controls">
+      <input id="email" name="email" type="text" value="">
     </div>
   </div>
 
+        
+  <div class="control-group ">
+    <label class="control-label" for="username">Choose a Username</label>
+    <div class="controls">
+      <input id="username" name="username" type="text" value="">
+    </div>
+  </div>
+
+        
+  <div class="control-group ">
+    <label class="control-label" for="password">Password</label>
+    <div class="controls">
+      <input id="password" name="password" type="password" value="">
+    </div>
+  </div>
+
+        
+  <div class="control-group ">
+    <label class="control-label" for="confirm">Confirm Password</label>
+    <div class="controls">
+      <input id="confirm" name="confirm" type="password" value="">
+    </div>
+  </div>
+
+        <div class="control-group">
+          <div class="controls">
+            <input type="submit" class="btn btn-primary btn-large" value="Sign Up">
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <br/>
+  <div class="pull-right">
+    Already have an account? 
+      <a href="/login/">Log In</a>
+  </div>
+  <br/>
 
 
 
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+</div>
 
 
 
@@ -368,11 +311,6 @@
     <script type="text/javascript" src="//d37gvrvc0wt4s1.cloudfront.net/static/js2/bootstrap.min.js?ts=1361580921"></script>
     <script type="text/javascript">
       
-  $(document).ready(function() {
-    $('.carousel').carousel({
-      interval: 5000
-    });
-  });
 
     </script>
 

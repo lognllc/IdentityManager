@@ -1,0 +1,1724 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Rollbar - Blog - real-time error tracking for Rails, Python, PHP, Javascript, and Flash</title>
+  <meta name="author" content="Rollbar, Inc.">
+
+  
+  <meta name="description" content="You&#8217;ve probably seen unique constraints somewhere &#8211; either in Rails&#8217; validates :uniqueness, Django&#8217;s Field.unique, or a raw &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+  <link rel="canonical" href="http://rollbar.com/blog/">
+  
+  
+  <link rel="publisher" href="https://plus.google.com/u/1/b/117853246165185436076/117853246165185436076/posts"/>
+  
+  <link href="/static/img/favicon.ico" rel="icon" type="image/png">
+  <link href="/blog/stylesheets/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/blog/stylesheets/custom.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/blog/stylesheets/stylesheet.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/blog/stylesheets/blog.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="Rollbar - Blog - real-time error tracking for Rails, Python, PHP, Javascript, and Flash" type="application/atom+xml">
+  <script type="text/javascript">
+    (function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");
+    b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+
+    '//cdn.mxpnl.com/libs/mixpanel-2.0.min.js';d=c.getElementsByTagName("script")[0];
+    d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){
+    var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(
+    Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=a[f]=[]:
+    f="mixpanel";g.people=g.people||[];h=['disable','track','track_pageview','track_links',
+    'track_forms','register','register_once','unregister','identify','name_tag',
+    'set_config','people.set','people.increment'];for(e=0;e<h.length;e++)d(g,h[e]);
+    a._i.push([b,c,f])};a.__SV=1.1;})(document,window.mixpanel||[]);
+    mixpanel.init("00a701b73e44aa932686f370607c338e");
+</script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38870420-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+
+</head>
+
+<body   >
+    <div class="container-fluid">
+  <header class="row-fluid">
+    <div class="container">
+      <div class="span3">
+        <h1><a href="/" class="logo"></a></h1>
+      </div>
+      <div class="span9">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/features/">Features</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/docs/">Docs</a></li>
+          <li><span><a href="/login/" class="btn">Log In</a></span></li>
+          <li><span><a href="/signup/" class="btn btn-primary">Free Trial</a></span></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</div>
+
+
+    
+    
+    <div id="main-stage" class="container">
+      <div id="content">
+        <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/post/2013/03/29/using-unique-indexes-for-fun-and-profit/">Taking UNIQUE indexes to the next level</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-29T09:15:00-07:00" pubdate data-updated="true">Mar 29<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>You&#8217;ve probably seen unique constraints somewhere &#8211; either in Rails&#8217; <a href="http://guides.rubyonrails.org/active_record_validations_callbacks.html#uniqueness"><code>validates :uniqueness</code></a>, Django&#8217;s <a href="https://docs.djangoproject.com/en/dev/ref/models/fields/#unique"><code>Field.unique</code></a>, or a raw SQL <a href="http://dev.mysql.com/doc/refman/5.5/en/create-index.html">table definition</a>. The basic function of unique constraints (preventing duplicate data from being inserted) is nice, but they&#8217;re so much more powerful than that. When you write INSERT or REPLACE statements that rely on them, you can do some pretty cool (and efficient) things that you would&#8217;ve had to do multiple queries for otherwise.</p>
+
+<p>This post covers unique indexes in MySQL 5.5. Other versions of MySQL are similar. I&#8217;m not sure about Postgres or other relational databases but presume they&#8217;re similar-ish as well.</p>
+
+<h2>Primer: what is a unique index?</h2>
+
+<p>Pre-primer: data in a database is stored on disk somewhere. In a SQL database, the data is organized into tables which have rows and columns. An index is a way to look up particular rows, based on the values of one or more columns, without having to scan through the whole table. Instead, you look up those values in the index, which tells you where to find the matching rows.</p>
+
+<p>Index lookups are typically faster than full table scans because they&#8217;re organized for fast searches on the indexed columns (usually using binary trees), and they&#8217;re also generally smaller than the original data.</p>
+
+<p>A unique index is an index that also imposes a constraint: that no two entries in the index can have the same values. It can be comprised of one column or many columns. If many columns, then the entire tuple of columns is used for determining uniqueness. There can be other columns in the table that are not part of the index; these don&#8217;t affect the constraint.</p>
+
+<p>Primary keys are a special case of unique index; we&#8217;ll cover this in more detail later.</p>
+
+<p>Unique indexes can be created in a CREATE TABLE statement like this 123123:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="k">user</span> <span class="p">(</span>
+</span><span class='line'>  <span class="n">username</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">32</span><span class="p">),</span>
+</span><span class='line'>  <span class="n">password</span> <span class="nb">char</span><span class="p">(</span><span class="mi">32</span><span class="p">),</span>
+</span><span class='line'>  <span class="k">unique</span> <span class="p">(</span><span class="n">username</span><span class="p">)</span>
+</span><span class='line'><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or using an ALTER TABLE statement like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">users</span> <span class="k">ADD</span> <span class="k">unique</span> <span class="p">(</span><span class="n">username</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>What does a unique constraint affect?</h2>
+
+<p>A unique constraint prevents you from changing your data in a way that would result in having duplicate data in the index. For example, given the above &#8216;user&#8217; table, the following will happen if we try to insert duplicate data:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">INSERT</span> <span class="k">INTO</span> <span class="k">user</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">&#39;brian&#39;</span><span class="p">,</span> <span class="n">PASSWORD</span><span class="p">(</span><span class="s1">&#39;asdf&#39;</span><span class="p">));</span>
+</span><span class='line'><span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span><span class="p">,</span> <span class="mi">1</span> <span class="n">warning</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">04</span> <span class="n">sec</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">INSERT</span> <span class="k">INTO</span> <span class="k">user</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">&#39;brian&#39;</span><span class="p">,</span> <span class="n">PASSWORD</span><span class="p">(</span><span class="s1">&#39;asdfjkl&#39;</span><span class="p">));</span>
+</span><span class='line'><span class="n">ERROR</span> <span class="mi">1062</span> <span class="p">(</span><span class="mi">23000</span><span class="p">):</span> <span class="n">Duplicate</span> <span class="n">entry</span> <span class="s1">&#39;brian&#39;</span> <span class="k">for</span> <span class="k">key</span> <span class="s1">&#39;username&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or if we try to get duplicate data with an update:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">INSERT</span> <span class="k">INTO</span> <span class="k">user</span> <span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;sherlock&#39;</span><span class="p">,</span> <span class="n">PASSWORD</span><span class="p">(</span><span class="s1">&#39;123456&#39;</span><span class="p">));</span>
+</span><span class='line'><span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">1</span> <span class="k">row</span> <span class="n">affected</span><span class="p">,</span> <span class="mi">1</span> <span class="n">warning</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">UPDATE</span> <span class="k">user</span> <span class="k">SET</span> <span class="n">username</span> <span class="o">=</span> <span class="s1">&#39;brian&#39;</span> <span class="k">WHERE</span> <span class="n">username</span> <span class="o">=</span> <span class="s1">&#39;sherlock&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="n">ERROR</span> <span class="mi">1062</span> <span class="p">(</span><span class="mi">23000</span><span class="p">):</span> <span class="n">Duplicate</span> <span class="n">entry</span> <span class="s1">&#39;brian&#39;</span> <span class="k">for</span> <span class="k">key</span> <span class="s1">&#39;username&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So we can see that unique indexes are a great way to maintain consistency of our data at the database level. If two people try to sign up with the same username, for example, the database will reject it and return a duplicate key error.</p>
+
+<h2>Taking it to the next level</h2>
+
+<p>MySQL provides several commands, all variations of INSERT, that can take advantage of unique indexes by specifying what to do (instead of erroring) when the insert would result in a duplicate. These are best illustrated by example.</p>
+
+<h3>INSERT &#8230; ON DUPLICATE KEY UPDATE</h3>
+
+<p>Let&#8217;s say we&#8217;re building a simple ad impression tracking system. Ads are served by web servers and the impression counts are tracked in a database. We just want to know the number of ad impressions each hour. So we make a table like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">hour_impression</span> <span class="p">(</span>
+</span><span class='line'>  <span class="n">hour</span> <span class="nb">int</span> <span class="n">unsigned</span> <span class="k">not</span> <span class="k">null</span><span class="p">,</span>  <span class="c1">-- number of hours since unix epoch</span>
+</span><span class='line'>  <span class="n">impressions</span> <span class="nb">int</span> <span class="n">unsigned</span> <span class="k">not</span> <span class="k">null</span> <span class="k">default</span> <span class="mi">0</span><span class="p">,</span>
+</span><span class='line'>  <span class="k">primary</span> <span class="k">key</span><span class="p">(</span><span class="n">hour</span><span class="p">)</span>
+</span><span class='line'><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Side note: here we&#8217;re using <code>hour</code> as the primary key, rather than having an auto-increment primary key like before in the &#8216;user&#8217; table. This guarantees that <code>hour</code> is unique (since primary keys are a subset of unique keys), and has a nice property of laying out the data on disk in hour-order.</p>
+
+<p>A naive algorithm for recording each impression would be to:</p>
+
+<ol>
+<li>Check if a row already exists for the hour</li>
+<li>If not: <code>INSERT INTO hour_impression (hour, impressions) VALUES (:hour, 1)</code></li>
+<li>If so: <code>UPDATE hour_impression SET impressions = impressions + 1 WHERE hour = :hour</code></li>
+</ol>
+
+
+<p>But this exposes a race condition: what happens if two impressions happen at approximately the same time, on two different web servers? It&#8217;s possible that both will try to INSERT, and the second one is going to fail (because of the unique constraint).</p>
+
+<p>What we want to do is combine the above algorithm into a single step. This is what INSERT … ON DUPLICATE KEY UPDATE is for:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">hour_impression</span> <span class="p">(</span><span class="n">hour</span><span class="p">,</span> <span class="n">impressions</span><span class="p">)</span>
+</span><span class='line'><span class="k">VALUES</span> <span class="p">(</span><span class="mi">379015</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span class='line'><span class="k">ON</span> <span class="n">DUPLICATE</span> <span class="k">KEY</span> <span class="k">UPDATE</span> <span class="n">impressions</span> <span class="o">=</span> <span class="n">impressions</span> <span class="o">+</span> <span class="mi">1</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now that it&#8217;s a single step, we can run as many of these statements in parallel as we want, and the database will take care of the concurrency issues for us. Sweet!</p>
+
+<h3>INSERT IGNORE</h3>
+
+<p>Now let&#8217;s say instead of counting the number of impressions in each hour, we just want to know which minutes any impressions at all were shown. So we create a table like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">minute_impression</span> <span class="p">(</span>
+</span><span class='line'>  <span class="k">minute</span> <span class="nb">int</span> <span class="n">unsigned</span> <span class="k">not</span> <span class="k">null</span><span class="p">,</span>  <span class="c1">-- number of minutes since the unix epoch</span>
+</span><span class='line'>  <span class="k">primary</span> <span class="k">key</span> <span class="p">(</span><span class="k">minute</span><span class="p">)</span>
+</span><span class='line'><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Similar to before, a naive algorithm for recording which minutes had any impressions would be to:</p>
+
+<ol>
+<li>Check if a row already exists for the minute</li>
+<li>If so, do nothing</li>
+<li>If not, <code>INSERT INTO minute_impression (minute) VALUES (:minute)</code></li>
+</ol>
+
+
+<p>This has the same kind of race condition as in the previous example. INSERT IGNORE exists to combine all of this into a single step:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">INSERT</span> <span class="k">IGNORE</span> <span class="k">INTO</span> <span class="n">minute_impression</span> <span class="p">(</span><span class="k">minute</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">22740922</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And as before, now we can run as many of these in parallel as we want and let the database take care of the concurrency.</p>
+
+<h2>More tricks</h2>
+
+<h3>REPLACE</h3>
+
+<p>The opposite of INSERT IGNORE. Overwrites matching rows with the new data instead of discarding it.</p>
+
+<h3>Nullable unique indexes</h3>
+
+<p>Values in a unique index have to be unique, but there&#8217;s an exception: NULLs don&#8217;t count. For example, let&#8217;s say you let people pick their username after signup. You might have table like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="k">user</span> <span class="p">(</span>
+</span><span class='line'>  <span class="n">id</span> <span class="nb">int</span> <span class="n">unsigned</span> <span class="k">not</span> <span class="k">null</span> <span class="n">auto_increment</span><span class="p">,</span>
+</span><span class='line'>  <span class="n">username</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span> <span class="k">default</span> <span class="k">null</span><span class="p">,</span>
+</span><span class='line'>  <span class="k">unique</span> <span class="p">(</span><span class="n">username</span><span class="p">),</span>
+</span><span class='line'>  <span class="k">primary</span> <span class="k">key</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span>
+</span><span class='line'><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can have as many users as you like who haven&#8217;t chosen a username (it&#8217;ll be NULL) while still preventing multiple users from having the same username.</p>
+
+<h3>VALUES() in the ON DUPLICATE KEY UPDATE clause</h3>
+
+<p>You can insert multiple rows in a single INSERT … ON DUPLICATE KEY UPDATE statement, and the UPDATE rule will apply for each row that would&#8217;ve been a duplicate. In some cases you&#8217;ll want the update statement to reflect the values of each particular row, and that&#8217;s not possible to do by hardcoding them in the statement.</p>
+
+<p>For example, let&#8217;s return to the ad impression tracking problem from before, with this hour_impression table:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">hour_impression</span> <span class="p">(</span>
+</span><span class='line'>  <span class="n">hour</span> <span class="nb">int</span> <span class="n">unsigned</span> <span class="k">not</span> <span class="k">null</span><span class="p">,</span>  <span class="c1">-- number of hours since unix epoch</span>
+</span><span class='line'>  <span class="n">impressions</span> <span class="nb">int</span> <span class="n">unsigned</span> <span class="k">not</span> <span class="k">null</span> <span class="k">default</span> <span class="mi">0</span><span class="p">,</span>
+</span><span class='line'>  <span class="k">primary</span> <span class="k">key</span><span class="p">(</span><span class="n">hour</span><span class="p">)</span>
+</span><span class='line'><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But now instead of recording impressions one at a time, we&#8217;re batching them so that each INSERT increments <code>impressions</code> by a value 1 or higher. If we insert one of these batches at a time, we can do:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">hour_impression</span> <span class="p">(</span><span class="n">hour</span><span class="p">,</span> <span class="n">impressions</span><span class="p">)</span>
+</span><span class='line'><span class="k">VALUES</span> <span class="p">(</span><span class="mi">379015</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span>  <span class="c1">-- 23 impressions during 12am 3/28/2013</span>
+</span><span class='line'><span class="k">ON</span> <span class="n">DUPLICATE</span> <span class="k">KEY</span> <span class="k">UPDATE</span>
+</span><span class='line'><span class="n">impressions</span> <span class="o">=</span> <span class="n">impressions</span> <span class="o">+</span> <span class="mi">23</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If we want to insert multiple rows in the same statement, there&#8217;s a problem &#8211; the amount in the UPDATE clause is hardcoded. We can fix this using VALUES() to reference the value from the would-have-been-inserted row:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sql'><span class='line'><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">hour_impression</span> <span class="p">(</span><span class="n">hour</span><span class="p">,</span> <span class="n">impressions</span><span class="p">)</span>
+</span><span class='line'><span class="k">VALUES</span> <span class="p">(</span><span class="mi">379015</span><span class="p">,</span> <span class="mi">23</span><span class="p">),</span> <span class="p">(</span><span class="mi">379015</span><span class="p">,</span> <span class="mi">55</span><span class="p">)</span>
+</span><span class='line'><span class="k">ON</span> <span class="n">DUPLICATE</span> <span class="k">KEY</span> <span class="k">UPDATE</span>
+</span><span class='line'><span class="n">impressions</span> <span class="o">=</span> <span class="n">impressions</span> <span class="o">+</span> <span class="k">VALUES</span><span class="p">(</span><span class="n">impressions</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Conclusion</h2>
+
+<p>Unique indexes are useful when used alone and become incredibly powerful when used in combination with INSERT &#8230; ON DUPLICATE KEY UPDATE and its variants. We make heavy use of this at <a href="https://rollbar.com">Rollbar</a> and it works great.</p>
+
+<p>Questions? Corrections? Let me know in the comments.</p>
+
+<h3>References</h3>
+
+<ol>
+<li><a href="http://dev.mysql.com/doc/refman/5.0/en/insert-on-duplicate.html">INSERT &#8230; ON DUPLICATE KEY UPDATE syntax</a></li>
+<li><a href="http://dev.mysql.com/doc/refman/5.0/en/insert.html">INSERT IGNORE syntax</a> (ctrl+f on the page)</li>
+<li><a href="http://dev.mysql.com/doc/refman/5.0/en/replace.html">REPLACE syntax</a></li>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/post/2013/03/21/improved-grouping-for-javascript-errors/">Improved grouping for Javascript errors</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-21T16:14:00-07:00" pubdate data-updated="true">Mar 21<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We&#8217;ve released an updated to how Javascript errors are grouped in Rollbar. The new update does a better job of separating different errors into different groups (&#8220;Items&#8221; in Rollbar parlance) while still recognizing the same issue in different browsers as the same. It&#8217;s now enabled for all new projects. Existing projects can enable it on the Migrations tab in Settings.</p>
+
+<p>Now the longer version&#8230;</p>
+
+<p>First some background: by default, exceptions in Rollbar are grouped using their stack traces. We take all of the filenames and method names in all of the stack frames, plus the exception class name, apply a number of heuristics to normalize them, and then combine everything together and take a sha1 hash. The result is a 40-character string used as the &#8220;fingerprint&#8221;; occurrences with matching fingerprints that also have the same project, environment, and platform are grouped together. The fingerprint can also be <a href="https://rollbar.com/docs/api_items/">overridden at the API level</a> for custom grouping.</p>
+
+<p>This generally works pretty well:</p>
+
+<ul>
+<li>Omitting the line numbers from stack frames means groups persist across code changes elsewhere in the file.</li>
+<li>Using the whole stack trace, instead of just the very last frame, avoids conflating unrelated issues that happen to cause an exception on the same line of code.</li>
+<li>Using just the exception class, instead of also the message, avoids including data in the fingerprint, and when we have a nice, long stack trace, that&#8217;s usually enough uniqueness.</li>
+</ul>
+
+
+<p>Javascript uncaught errors are a different story though. They&#8217;re reported through <a href="https://developer.mozilla.org/en-US/docs/DOM/window.onerror">window.onerror</a>, which luckily is supported in all major browsers but doesn&#8217;t provide a lot of context: only the error message, filename, and line number. The Rollbar <a href="https://rollbar.com/docs/items_js/">javascript library</a> converts this into a stack trace with a single frame (using the filename and line number), and parses the error message to get a semblance of class and message.</p>
+
+<p>The problem with this approach has been that since the grouping algorithm only uses filenames (not line numbers), there&#8217;s only one stack frame, since it only uses the exception class name (not message), there isn&#8217;t a whole lot of uniqueness. The updated algorithm improves this dramatically. Here&#8217;s how it works:</p>
+
+<ol>
+<li>There aren&#8217;t <em>that</em> many different kinds of Javascript errors. We&#8217;ve built up a database of the error messages generated by all of them, in all major browsers.</li>
+<li>When we process an error, we try to match it against the patterns we know about. Several of the patterns have data in them; for some of the patterns, we keep the data (i.e. if it&#8217;s a variable name), and in others we discard it (i.e. if it&#8217;s an out-of-range precision value).</li>
+<li>If we aren&#8217;t able to match any of the known patterns, we fall back to the old algorithm.</li>
+</ol>
+
+
+<p>We&#8217;ve been using this internally for the past couple weeks and so far it feels much better. A caveat: our pattern database currently is English-only, so errors from end-users with their language preferences set otherwise will be grouped using the old algorithm.</p>
+
+<p>The new algorithm is now enabled for all newly-created projects. We aren&#8217;t automatically turning it on for old projects because none of the new groups will map to old groups; this will be a one-time event but could result in a lot of notifications and we don&#8217;t want to force the change. To enable it for an existing project, find the Migrations tab in the Settings for your project, and check the box next to &#8220;Browser JS Occurrence Grouping V2&#8221;.</p>
+
+<p>Any questions? Let us know in the comments.</p>
+
+<p><em>Rollbar collects and analyzes errors so you can find and fix them faster. <a href="https://rollbar.com/signup">Create a free account</a> to get started today.</em></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/post/2013/02/26/rollbar-notifier-upgrades/">Upgrading to the new Rollbar notifier libraries</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-26T17:25:00-08:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We&#8217;ve updated all of our notifier library repositories to match the name change to Rollbar today. The old Ratchet.io repos have been deprecated and all further development will continue on the respective Rollbar versions.</p>
+
+<p>Please note that the <code>submit.ratchet.io</code> endpoint and the existing libraries will continue to work for the indefinite future, so you don&#8217;t have to do anything right now. But we do recommend upgrading to take advantage of future updates.</p>
+
+<p>Upgrading <em>should</em> be seamless and quick. Please contact <a href="mailto:support@rollbar.com">support@rollbar.com</a> if you run into any issues.</p>
+
+<p>Here are links to the upgrade instructions for each:</p>
+
+<ul>
+<li><p>Browser JS - update the JS snippet used on your site to the version shown <a href="http://rollbar.com/docs/">here</a></p></li>
+<li><p><a href="https://github.com/rollbar/pyrollbar/blob/master/UPGRADE_FROM_RATCHET.md">pyratchet</a></p></li>
+<li><p><a href="https://github.com/rollbar/rollbar-gem/blob/master/UPGRADE_FROM_RATCHET.md">ratchetio-gem</a></p></li>
+<li><p><a href="https://github.com/rollbar/rollbar-php/blob/master/UPGRADE_FROM_RATCHET.md">ratchetio-php</a></p></li>
+<li><p><a href="https://github.com/rollbar/rollbar-agent/blob/master/UPGRADE_FROM_RATCHET.md">ratchet-agent</a></p></li>
+<li><p><a href="https://github.com/rollbar/node_rollbar/blob/master/UPGRADE_FROM_RATCHET.md">node_ratchet</a></p></li>
+<li><p><a href="https://github.com/rollbar/flash_rollbar/blob/master/UPGRADE_FROM_RATCHET.md">flash_ratchet</a></p></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/post/2013/02/26/rollbar-launch-and-initial-funding/">Rollbar launches, raises initial funding</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-26T12:15:00-08:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Today we’re excited to announce the public launch of Rollbar. Rollbar tracks and analyzes errors in production applications, helping dev and ops teams diagnose and fix them.</p>
+
+<h3>Platform-agnostic API</h3>
+
+<p>Anything that can speak JSON and HTTP can talk to Rollbar. Our API accepts raw &#8220;items&#8221; (errors, exceptions, and log messages) and deploys as inputs, and aggregated items, occurrences, and deploys as outputs. We provide official libraries for Ruby, Python, PHP, Node.js, Javascript, and Flash; or you can <a href="https://rollbar.com/docs/api_items/">roll your own</a>.</p>
+
+<h3>Severity levels</h3>
+
+<p>Just because something raises an exception, doesn&#8217;t mean it should be treated as an &#8220;error&#8221;. Rollbar lets you utilize five severity levels (from &#8220;debug&#8221; to &#8220;critical&#8221;) to control visibility and notifications. Severity can be set in your code, or after-the-fact in the Rollbar interface.</p>
+
+<h3>Track users through your stack</h3>
+
+<p>Person tracking helps you provide great customer support by emailing affected users when you fix an error they hit. Or see the history for a particular user and link customer error reports to code problems, client- and server-side.</p>
+
+<h3>So much more</h3>
+
+<p>API endpoints on 3 continents. Resolving and reactivations. Real-time notifications for new issues. Graphs everywhere. Deploy tracking. Search by title, host, file, context, date, severity, status. Replay an issue by pressing a button. SSL everywhere. Github, Asana, and Pivotal Tracker integration.</p>
+
+<p>We&#8217;ve built many of the pieces our beta customers have needed, and we really think you&#8217;re going to like it. <a href="https://rollbar.com/signup/">Start a free trial now</a>, or see <a href="https://rollbar.com/pricing">pricing</a>, <a href="https://rollbar.com/features/">features</a>, or <a href="https://rollbar.com/docs/">docs</a>.</p>
+
+<h3>More firepower</h3>
+
+<p>We&#8217;re also excited to announce that we&#8217;ve raised an initial round of funding from some of the smartest people in the business. Mike Hirshland (Resolute.vc), Hiten Shah (KISSmetrics), and Arjun Sethi participated in the round. This funding gives us some extra firepower to grow the team and bring our vision to life.</p>
+
+<p>We’re really excited and can’t wait to keep making Rollbar better!</p>
+
+<p>Brian, Cory, and Sergei</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/post/2013/01/11/post-mortem-from-last-nights-outage/">Post-mortem from last night&#8217;s outage</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-11T15:57:00-08:00" pubdate data-updated="true">Jan 11<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><blockquote><p><em>Tl;dr: from about 9:30pm to 12:30am last night, our website was unreachable and we weren&#8217;t sending out any notifications. Our API stayed up nearly the whole time thanks to an automatic failover.</em></p></blockquote>
+
+<p>We had our first major outage last night. We want to apologize to all of our customers for this outage, and we&#8217;re going to continue to work to make the <a href="http://rollbar.com">Rollbar.com</a> service stable, reliable, and performant.</p>
+
+<p>What follows is a timeline of events, and a summary of what went wrong, what went right, and what we&#8217;re doing to address what went wrong.</p>
+
+<h2>Background</h2>
+
+<p>First some background: our infrastructure is currently hosted at Softlayer and layed out like this (simplified):</p>
+
+<p><img src="https://d2tf6sbdgil6xr.cloudfront.net/static/img/blog/infrastructurediagram.png"></p>
+
+<p>That is:</p>
+
+<ul>
+<li>our primary cluster of servers is in San Jose</li>
+<li>all web traffic (rollbar.com / www.rollbar.com) is handled by lb2</li>
+<li>all API traffic (api.rollbar.com) is handled by lb1</li>
+<li>lb3 (in Singapore) and lb4 (Amsterdam) are ready to go but not in use yet (more on this below), providing failover and faster API response times to customers outside of the Americas.</li>
+</ul>
+
+
+<p>We&#8217;ve been in the process of setting up lb3 and lb4, along with some <a href="http://dyn.com/dns/dynect-managed-dns/">fancy DNS functionality</a> from Dyn, to provide redundancy and faster response times to our customers outside of the Americas. Each is running a stripped-down version of our infrastructure, including:</p>
+
+<ul>
+<li>a frontend web server (nginx)</li>
+<li>two instsances of our node.js API server</li>
+<li>a partial database slave (for validating access tokens)</li>
+<li>our offline loading process (soon to be open-sourced!), for doing async writes to the active master database.</li>
+</ul>
+
+
+<p>Switching DNS to Dyn requires changing the nameservers, which can take &#8220;up to 48 hours&#8221;. At the start of this story, it&#8217;s been about 36 hours. To play it safe, after testing out Dyn on a separate domain, we configured it to have the same settings as we had before &#8211; lb3 and lb4 are not in play yet.</p>
+
+<h2>Timeline</h2>
+
+<p>Now the (abbreviated) timeline. All times are PST.</p>
+
+<div style="padding-left:2em;">
+<p>9:30pm: Cory got an alert from Pingdom that our website (rollbar.com) was down. He tried visiting it but it wouldn&#8217;t load (just hung). Remembering the pending DNS change, he immediately checked DNS propagation and saw that rollbar.com was pointing at the wrong load balancer &#8211; lb1 (the API tier), not lb2.
+
+<p>Cory and Sergei investigated. The A record for rollbar.com showed as correct in Dyn, but DNS was resolving incorrectly.
+
+<p>9:47pm: Cory and Sergei looked at <a href="http://twitter.com/SoftlayerNotify" target="_blank">@SoftlayerNotify</a> and saw that there was an issue underway with one of the routers in the San Jose data center.
+
+<p>9:49pm: Website accessible by its IP address.
+
+<p>9:51pm: No longer accessible by IP.
+
+<p>10:05pm: Twitter search for &#8220;softlayer outage&#8221; shows other people being affected.
+
+<p>10:05pm: API tier (api.rollbar.com) appears to be working. Sergei verifies that it&#8217;s hitting lb3 (in Singapore).
+</div>
+
+
+<p>You might notice that we said before that lb3 wasn&#8217;t supposed to be in service yet. What appeared to have happened DNS had automatically failed over to lb3 (since lb1 was down because of the Softlayer outage). We had set something like this up before when testing out Dyn, but it wasn&#8217;t supposed to be active yet. Fortunately, lb3 was ready to go and handled all of our API load just fine.</p>
+
+<div style="padding-left:2em;">
+<p>10:22pm: Sergei tries fiddling with the Dyn configuration to see if anything helps.
+
+<p>10:35pm: Sergei starts trying to get ahold Dyn
+
+<p>10:58pm: Softlayer posts that &#8220;13 out of 14 rows of servers are online&#8221;. We must be in the 14th, because we&#8217;re still unreachable at this point. Brian tries hard-rebooting the &#8216;dev&#8217; server to see if it helps. It doesn&#8217;t.
+
+<p>11:15pm: Sergei gets a call from Dyn, who tells him that the problem was a &#8220;stale Real-Time Traffic Manager configuration&#8221; and they&#8217;re looking into it.
+
+<p>11:54pm: @SoftlayerNotify posts that &#8220;all servers are online however some intermittent problems remain&#8221;
+
+<p>11:55pm: Sergei notices that the A record for rollbar.com in the Dyn interface appears to have been deleted, and he can&#8217;t add it back.
+
+<p>12:00am: Brian sees that rollbar.com is working again. Cory notices that API calls are hitting lb2, causing them to hit the old, non-optimized API handling code on our web tier, overloading them and causing the website to hang. Frequent process restarts minimize the impact.
+
+<p>12:19am: Sergei gets an email back from Dyn saying that they&#8217;re still looking into the problem.
+
+<p>12:28am: Dyn calls to say they were able to fix everything. Sergei confirms. lb3 and lb4 are now fully utilized.
+
+<p>12:42am: Brian tweets that all systems are stable.
+
+<p>2:58am: Softlayer tweets that they&#8217;re about to run some code upgrades on the troubled router, which will cause some public network disruption.
+
+<p>4:00am:- A customer reports connectivity issues to rollbar.com
+
+<p>4:10am: Softlayer tweets that the troubled router is finally stable.
+</div>
+
+
+<h2>So what happened here?</h2>
+
+<ol>
+<li>Softlayer experienced a network outage, causing our servers in San Jose to be intermittently, then fully, unreachable</li>
+<li>This triggered a DNS failover controlled by a stale Dyn configuration, which cascaded into a broken set of DNS records</li>
+<li>After about 3 hours, our San Jose servers came back online, and about 30 minutes after that, the DNS issue was resolved.</li>
+</ol>
+
+
+<h2>What went right</h2>
+
+<ul>
+<li>We were notified of the problem by our backup monitoring service, Pingdom. (We&#8217;re using Nagios as our primary, but it runs inside of San Jose.)</li>
+<li>Dyn&#8217;s DNS failover did work, even though wasn&#8217;t really supposed to be turned on. Our logs don&#8217;t show any large gaps in customer data being received.</li>
+<li>A single machine (lb3) was able to handle all of our API traffic during the outage.</li>
+<li>The API tier was able to handle a master-offline situation.</li>
+<li>When San Jose came back online, data processing quickly caught up, notifications were sent, and the system was stable.</li>
+<li>Our team came together, stayed mostly calm, and did everything we reasonably could to restore service as quickly as possible.</li>
+</ul>
+
+
+<p>As a bonus, our Singapore and Amsterdam servers are <a href="http://www.whatsmydns.net/#A/api.rollbar.com">now in service</a>.</p>
+
+<h2>What went wrong</h2>
+
+<ul>
+<li>Parts of our service were unusable for a long period of time
+
+<ul>
+<li>Notifications for new errors, etc. weren&#8217;t sent</li>
+<li>The web app didn&#8217;t load, and there was no maintenance page.</li>
+<li><a href="http://status.rollbar.com">status.rollbar.com</a> didn&#8217;t show useful information</li>
+</ul>
+</li>
+<li>Even though the Softlayer private network was at least partially accessible, we couldn&#8217;t access it because we only had one way in (&#8216;dev&#8217;, in San Jose).</li>
+<li>The web tier got crushed trying to handle the API load with its old code.</li>
+</ul>
+
+
+<h2>Action items</h2>
+
+<p>In the short term (most of this will get done today):</p>
+
+<div style="padding-left:2em;">
+<p><i>1b.</i> Set up a web server in a separate datacenter to serve a maintenance page.
+
+<p><i>1c.</i> Add meta-level checks to status.rollbar.com. It currently gets data pushed from Nagios, but this isn&#8217;t helpful when San Jose is entirely unreachable.
+
+<p><i>2.</i> Add another &#8216;dev&#8217;-like machine that we can use to administer servers, deploy code, etc. if San Jose is unreachable
+
+<p><i>3.</i> Remove that old code, and make it an error if any API traffic hits the web tier.
+</div>
+
+
+<p>And longer term:</p>
+
+<div style="padding-left:2em;">
+<p><i>1a.</i> Add a host master standby in another datacenter for fast failover. If an episode like last night&#8217;s happens again, this will let us get notifications back online in a few minutes instead of a few hours.
+
+<p><i>1b.</i> Set up a read-only web tier in another datacenter
+</div>
+
+
+<h2>Conclusion</h2>
+
+<p>We hope this was, if nothing else, an interesting look into our infrastructure, and to the journey of building a highly-available we service.</p>
+
+<p>If you have any questions about the outage or otherwise, let us know in the comments or email us at support@rollbar.com</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/post/2012/10/31/happy-halloween/">Happy Halloween</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-31T12:40:00-07:00" pubdate data-updated="true">Oct 31<span>st</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>Y U No Use Rollbar?</h1>
+
+<p><img src="https://d2tf6sbdgil6xr.cloudfront.net/static/img/blog/halloween-2012.jpg"></p>
+
+<p>&#8211; Happy Halloween from <a href="http://rollbar.com/">Rollbar.com</a>!</p>
+
+<p>If you don&#8217;t have an account yet, <a href="https://rollbar.com/">sign up here for early access</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/post/2012/10/24/real-time-search-for-exceptions-and-errors/">Real-time Search for Exceptions and Errors</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-24T11:24:00-07:00" pubdate data-updated="true">Oct 24<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We&#8217;re happy today to announce the release of real-time search. You can now search your exceptions, errors, and log messages by title:</p>
+
+<p><img src="https://d2tf6sbdgil6xr.cloudfront.net/static/img/blog/realtimesearch1.png"></p>
+
+<p>For exceptions, the title contains the exception class and message. For errors and log messages, it contains the entire message. It’s a full-text search that works best on whole words; we also do a few tricks with camelCase and underscore_separated terms.</p>
+
+<p>The search index is kept up-to-date in real-time as new items are added to the system (that&#8217;s the &#8220;real-time&#8221; part). Typically the delay is ~2 seconds from receiving the input at our API to being in the index and searchable.</p>
+
+<p>Current customers can try it out now; let us know if you run into any issues. What else would you like to see indexed?</p>
+
+<p>If you don&#8217;t have an account yet, <a href="https://rollbar.com/">sign up here for early access</a>.</p>
+
+<h2>Under the hood</h2>
+
+<p>We&#8217;re using the new <a href="http://sphinxsearch.com/">Sphinx</a> realtime features for indexing and querying. It&#8217;s currently running on a single dedicated machine (1 core, 2GB ram, 100GB local disk).</p>
+
+<p>New items are indexed by a long-running script that indexes new items as they are inserted. (It keeps track of its location in the table and polls every second for new rows.) The index includes two full-text <em>fields</em>, <code>title</code> and <code>environment</code>, and two scalar <em>attributes</em>, <code>status</code> and <code>level</code>.</p>
+
+<p>Title and environment don&#8217;t change, so we don&#8217;t need to update them. But status (active/resolved) and level (critical/error/warning/info/debug) do. We keep these in sync by simply writing to the search server whenever we update the primary database and whenever we modify our tokenizing algorithm.</p>
+
+<p>Queries are routed through our API server, which returns the paged list of matching item ids that we can then use to filter with on our primary database, (in case the search results are out of date) and fetch the other data necessary for the results page (last occurrence, etc.)</p>
+
+<p>Although our setup is straightforward, there were a few gotchas and lessons learned.</p>
+
+<h3>Infix queries</h3>
+
+<p>Sphinx&#8217;s realtime index does not currently support infix queries. That means that if you’re searching for &#8220;Error&#8221; then exceptions with titles like &#8220;ReferenceError&#8221; or &#8220;not_found_error&#8221; or even &#8220;(Error)&#8221; would not be found. To get around this, we index both the original title as well as another set of tokens that we’ve determined are useful for the lookup.</p>
+
+<p>e.g. &#8220;#462 UnicodeEncodeError: &#8216;latin-1&#8217; codec can&#8217;t encode character u&#8217;\u0441&#8217; in position 71: ordinal not in range(256)&#8221;</p>
+
+<p>gets tokenized and becomes</p>
+
+<p>&#8220;#462 UnicodeEncodeError: &#8216;latin-1&#8217; codec can&#8217;t encode character u&#8217;\u0441&#8217; in position 71: ordinal not in range(256) can’t u0441 71 256 Unicode Encode Error latin-1&#8217;&#8221;</p>
+
+<p>By tacking on these extra tokens, we are able to support most of the relevant infix searches our users are likely to make.</p>
+
+<h3>Sphinx + MySQL</h3>
+
+<p>Sphinx search comes with a super-handy feature that lets you connect, add and query the search index using a vanilla MySQL protocol. This is great for debugging and testing but comes with some caveats.</p>
+
+<p>There are a lot of operations that SphinxQL does not yet support. One of the major ones is the lack of support for &#8220;OR&#8221; where_conditions and another is lack of a &#8220;COUNT(*)&#8221; method.</p>
+
+<p>Since our API server is written in node, we were able to use the <a href="https://github.com/felixge/node-mysql">node-mysql</a> library from Felix Geisendörfer. After plugging in the library, we noticed that the Sphinx server drops client connections fairly rigorously so we implemented a layer on top of the node-mysql library to handle reconnects, disconnects, etc&#8230; This has been great since it lets us perform maintenance on the Sphinx server without taking down our API server.</p>
+
+<h3>REPLACE</h3>
+
+<p>Lastly, we made sure that we were able to re-index our entire database into our Sphinx server by only using the REPLACE command when inserting new items. The docs mention that this can cause memory issues but since it&#8217;s so infrequent for our use-case, we haven&#8217;t run into any trouble and the benefit of re-indexing whenever we want more than makes up for it.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/post/2012/09/07/using-pyramid-request-factory-to-write-less-code/">Using a Request Factory in Pyramid to write a little less code</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-07T11:00:00-07:00" pubdate data-updated="true">Sep 7<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>At <a href="http://rollbar.com/">Rollbar.com</a>, we&#8217;ve been using <a href="http://www.pylonsproject.org/">Pyramid</a> as our web framework and have been pretty happy with it. It&#8217;s lightweight and mostly stays out of our way.</p>
+
+<p>Pyramid doesn&#8217;t have a global request object that you can just import [1], so it makes you pass around <code>request</code> wherever you need it. That results in a lot of library code that looks like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="c"># lib/helpers.py</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">flash_success</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">request</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">flash</span><span class="p">({</span><span class="s">&#39;body&#39;</span><span class="p">:</span> <span class="n">body</span><span class="p">,</span> <span class="s">&#39;title&#39;</span><span class="p">:</span> <span class="n">title</span><span class="s">&#39;})</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and a lot of view code that looks like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="c"># views/auth.py</span>
+</span><span class='line'><span class="nd">@view_config</span><span class="p">(</span><span class="n">route_name</span><span class="o">=</span><span class="s">&#39;auth/login&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">login</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+</span><span class='line'>    <span class="c"># (do the login...)</span>
+</span><span class='line'>    <span class="n">helpers</span><span class="o">.</span><span class="n">flash_success</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s">&quot;You&#39;re now logged in.&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="c"># (redirect...)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That is, there ends up being a lot of function calls that pass <code>request</code> as their first argument. Wouldn&#8217;t it be nicer if we could attach these functions as methods on <code>request</code> itself? That would save a few characters every time we call them, and let us stop thinking about whether <code>request</code> is the first or last argument. Pyramid facilitates this by letting us provide our own <a href="http://pyramid.readthedocs.org/en/latest/narr/hooks.html#changing-the-request-factory">Request Factory</a>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">pyramid.request</span> <span class="kn">import</span> <span class="n">Request</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">MyRequest</span><span class="p">(</span><span class="n">Request</span><span class="p">):</span>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span class='line'>        <span class="k">print</span> <span class="s">&quot;hello!&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">global_config</span><span class="p">,</span> <span class="o">**</span><span class="n">settings</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">config</span> <span class="o">=</span> <span class="n">Configurator</span><span class="p">(</span><span class="n">settings</span><span class="o">=</span><span class="n">settings</span><span class="p">,</span> <span class="n">request_factory</span><span class="o">=</span><span class="n">MyRequest</span><span class="p">)</span>
+</span><span class='line'>    <span class="c"># ...</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now the <code>request</code> passed to our view methods, and everwhere else in our app, has our <code>hello</code> method.</p>
+
+<p>So, what can we do with this that&#8217;s actually useful? In our codebase, we have a few convenience methods to get data about the logged-in user, flash messages, and check if features are enabled.</p>
+
+<p>Here it is, unedited, in its entirety:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">class</span> <span class="nc">MoxRequest</span><span class="p">(</span><span class="n">pyramid</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">Request</span><span class="p">):</span>
+</span><span class='line'>    <span class="c"># logged-in-user access</span>
+</span><span class='line'>    <span class="nd">@util.CachedAttribute</span>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">user_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span class='line'>        <span class="kn">from</span> <span class="nn">pyramid.security</span> <span class="kn">import</span> <span class="n">authenticated_userid</span>
+</span><span class='line'>        <span class="n">user_id</span> <span class="o">=</span> <span class="n">authenticated_userid</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s">&#39;authenticated user id: </span><span class="si">%r</span><span class="s">&#39;</span><span class="p">,</span> <span class="n">user_id</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">return</span> <span class="n">user_id</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nd">@util.CachedAttribute</span>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">user</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span class='line'>        <span class="n">user_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">user_id</span>
+</span><span class='line'>        <span class="k">if</span> <span class="n">user_id</span><span class="p">:</span>
+</span><span class='line'>            <span class="k">return</span> <span class="n">model</span><span class="o">.</span><span class="n">User</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">return</span> <span class="bp">None</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nd">@util.CachedAttribute</span>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">username</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span class='line'>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">user</span><span class="p">:</span>
+</span><span class='line'>            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">username</span>
+</span><span class='line'>        <span class="k">else</span><span class="p">:</span>
+</span><span class='line'>            <span class="k">return</span> <span class="bp">None</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">gater_check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">feature_name</span><span class="p">):</span>
+</span><span class='line'>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">registry</span><span class="o">.</span><span class="n">settings</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;gater.</span><span class="si">%s</span><span class="s">&#39;</span> <span class="o">%</span> <span class="n">feature_name</span><span class="p">)</span> <span class="o">==</span> <span class="s">&#39;on&#39;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c"># flash methods</span>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">flash_success</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">):</span>
+</span><span class='line'>        <span class="bp">self</span><span class="o">.</span><span class="n">_flash_message</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span> <span class="n">queue</span><span class="o">=</span><span class="s">&#39;success&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">flash_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">):</span>
+</span><span class='line'>        <span class="bp">self</span><span class="o">.</span><span class="n">_flash_message</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span> <span class="n">queue</span><span class="o">=</span><span class="s">&#39;info&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">flash_warning</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">):</span>
+</span><span class='line'>        <span class="bp">self</span><span class="o">.</span><span class="n">_flash_message</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span> <span class="n">queue</span><span class="o">=</span><span class="s">&#39;warning&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">flash_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">):</span>
+</span><span class='line'>        <span class="bp">self</span><span class="o">.</span><span class="n">_flash_message</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span> <span class="n">queue</span><span class="o">=</span><span class="s">&#39;error&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">_flash_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">,</span> <span class="n">queue</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">):</span>
+</span><span class='line'>        <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">flash</span><span class="p">({</span><span class="s">&#39;title&#39;</span><span class="p">:</span> <span class="n">title</span><span class="p">,</span> <span class="s">&#39;body&#39;</span><span class="p">:</span> <span class="n">body</span><span class="p">},</span> <span class="n">queue</span><span class="o">=</span><span class="n">queue</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This just sits in our top-level <code>__init__.py</code>, along with the <code>main()</code> entry point.</p>
+
+<p>Notes: <code>@util.CachedAttribute</code> contains <a href="http://code.activestate.com/recipes/276643-caching-and-aliasing-with-descriptors/">this recipe</a>. &#8220;Mox&#8221; is an easy-to-type codename, named after <a href="http://www.summitpost.org/mox-peaks-from-red-face-mountain/690027">these mountains</a>.</p>
+
+<p>[1] I&#8217;m still not sold on this, but I&#8217;m getting by. It arguably causes problems with testing and such, but it <em>is</em> pretty nice to magically <code>from flask import request</code>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/post/2012/08/16/writing-a-simple-deploy-script-with-fabric-and-roles/">Writing a simple deploy script with Fabric and @roles</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-16T11:52:00-07:00" pubdate data-updated="true">Aug 16<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I first heard about <a href="http://www.fabfile.org">Fabric</a> a couple years ago while at Lolapps and liked the idea of:</p>
+
+<ul style="margin-left:40px;">
+  <li>writing deployment and sysadmin scripts in a language other than Bash</li>
+  <li>that language being Python, which we used everywhere else</li>
+</ul>
+
+
+<p>but we already had a huge swath of shell scripts that worked well (and truth be told, Bash isn’t really that bad). But now that we have at clean slate for <a href="https://rollbar.com">Rollbar</a>, Fabric it is.</p>
+
+<p>I wanted a simple deployment script that would do the following:</p>
+
+<ol style="margin-left:40px;">
+  <li>check to make sure it’s running as the user &#8220;deploy&#8221; (since that&#8217;s the user that has ssh keys set up and owns the code on the remote machines)</li>
+  <li>for each webserver:
+    <ol style="list-style:lower-alpha;margin-left:20px;">
+      <li>git pull</li>
+      <li>pip install -r requirements.txt</li>
+      <li>in series, restart each web process</li>
+    </ol>
+  </li>
+  <li>make an HTTP POST to our <a href="https://rollbar.com/docs/deploys/">deploys api</a> to record that the deploy completed successfully</li>
+</ol>
+
+
+<p>Here’s my first attempt:</p>
+
+<figure class='code'><figcaption><span> (fabfile1.py)</span> <a href='/blog/downloads/code/fabfile1.py'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+</pre></td><td class='code'><pre><code class='py'><span class='line'><span class="kn">import</span> <span class="nn">sys</span>
+</span><span class='line'>
+</span><span class='line'><span class="kn">from</span> <span class="nn">fabric.api</span> <span class="kn">import</span> <span class="n">run</span><span class="p">,</span> <span class="n">local</span><span class="p">,</span> <span class="n">cd</span><span class="p">,</span> <span class="n">env</span><span class="p">,</span> <span class="n">roles</span><span class="p">,</span> <span class="n">execute</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">requests</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">env</span><span class="o">.</span><span class="n">hosts</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;web1&#39;</span><span class="p">,</span> <span class="s">&#39;web2&#39;</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">deploy</span><span class="p">():</span>
+</span><span class='line'>    <span class="c"># pre-roll checks</span>
+</span><span class='line'>    <span class="n">check_user</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c"># do the roll.</span>
+</span><span class='line'>    <span class="n">update_and_restart</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c"># post-roll tasks</span>
+</span><span class='line'>    <span class="n">rollbar_record_deploy</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">update_and_restart</span><span class="p">():</span>
+</span><span class='line'>    <span class="n">code_dir</span> <span class="o">=</span> <span class="s">&#39;/home/deploy/www/mox&#39;</span>
+</span><span class='line'>    <span class="k">with</span> <span class="n">cd</span><span class="p">(</span><span class="n">code_dir</span><span class="p">):</span>
+</span><span class='line'>        <span class="n">run</span><span class="p">(</span><span class="s">&quot;git pull&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">run</span><span class="p">(</span><span class="s">&quot;pip install -r requirements.txt&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">run</span><span class="p">(</span><span class="s">&quot;supervisorctl restart web1&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">run</span><span class="p">(</span><span class="s">&quot;supervisorctl restart web2&quot;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">check_user</span><span class="p">():</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">local</span><span class="p">(</span><span class="s">&#39;whoami&#39;</span><span class="p">,</span> <span class="n">capture</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span> <span class="o">!=</span> <span class="s">&#39;deploy&#39;</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">print</span> <span class="s">&quot;This command should be run as deploy. Run like: sudo -u deploy fab deploy&quot;</span>
+</span><span class='line'>        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">rollbar_record_deploy</span><span class="p">():</span>
+</span><span class='line'>    <span class="c"># read access_token from production.ini</span>
+</span><span class='line'>    <span class="n">access_token</span> <span class="o">=</span> <span class="n">local</span><span class="p">(</span><span class="s">&quot;grep &#39;rollbar.access_token&#39; production.ini | sed &#39;s/^.* = //g&#39;&quot;</span><span class="p">,</span>
+</span><span class='line'>        <span class="n">capture</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">environment</span> <span class="o">=</span> <span class="s">&#39;production&#39;</span>
+</span><span class='line'>    <span class="n">local_username</span> <span class="o">=</span> <span class="n">local</span><span class="p">(</span><span class="s">&#39;whoami&#39;</span><span class="p">,</span> <span class="n">capture</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">revision</span> <span class="o">=</span> <span class="n">local</span><span class="p">(</span><span class="s">&#39;git log -n 1 --pretty=format:&quot;%H&quot;&#39;</span><span class="p">,</span> <span class="n">capture</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">&#39;https://api.rollbar.com/api/1/deploy/&#39;</span><span class="p">,</span> <span class="p">{</span>
+</span><span class='line'>        <span class="s">&#39;access_token&#39;</span><span class="p">:</span> <span class="n">access_token</span><span class="p">,</span>
+</span><span class='line'>        <span class="s">&#39;environment&#39;</span><span class="p">:</span> <span class="n">environment</span><span class="p">,</span>
+</span><span class='line'>        <span class="s">&#39;local_username&#39;</span><span class="p">:</span> <span class="n">local_username</span><span class="p">,</span>
+</span><span class='line'>        <span class="s">&#39;revision&#39;</span><span class="p">:</span> <span class="n">revision</span>
+</span><span class='line'>    <span class="p">},</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="n">resp</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">print</span> <span class="s">&quot;Deploy recorded successfully&quot;</span>
+</span><span class='line'>    <span class="k">else</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">print</span> <span class="s">&quot;Error recording deploy:&quot;</span><span class="p">,</span> <span class="n">resp</span><span class="o">.</span><span class="n">text</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Looks close-ish, right? It knows which hosts to deploy to, checks that it’s running as deploy, updates and restarts each host, and records the deploy. Here’s the output:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo -u deploy fab deploy
+</span><span class='line'>(env-mox)[brian@dev mox]$ sudo -u deploy fab deploy
+</span><span class='line'>[sudo] password for brian: 
+</span><span class='line'>[web1] Executing task 'deploy'
+</span><span class='line'>[localhost] local: whoami
+</span><span class='line'>[web1] run: git pull
+</span><span class='line'>[web1] out: remote: Counting objects: 8, done.
+</span><span class='line'>[web1] out: remote: Compressing objects: 100% (4/4), done.
+</span><span class='line'>[web1] out: remote: Total 6 (delta 4), reused 4 (delta 2)
+</span><span class='line'>[web1] out: Unpacking objects: 100% (6/6), done.
+</span><span class='line'>[web1] out: From github.com:brianr/mox
+</span><span class='line'>[web1] out:    c731b57..1d365e0  master     -&gt; origin/master
+</span><span class='line'>[web1] out: Updating c731b57..1d365e0
+</span><span class='line'>[web1] out: Fast-forward
+</span><span class='line'>[web1] out:  fabfile.py |    8 ++++----
+</span><span class='line'>[web1] out:  1 file changed, 4 insertions(+), 4 deletions(-)
+</span><span class='line'>
+</span><span class='line'>[web1] run: pip install -r requirements.txt
+</span><span class='line'>[web1] out: Requirement already satisfied (use --upgrade to upgrade): Beaker==1.6.3 in /home/deploy/env-mox/lib/python2.7/site-packages (from -r requirements.txt (line 1))
+</span><span class='line'>&lt;snip&gt;
+</span><span class='line'>[web1] out: Cleaning up...
+</span><span class='line'>
+</span><span class='line'>[web1] run: supervisorctl restart web1
+</span><span class='line'>[web1] out: web1: stopped
+</span><span class='line'>[web1] out: web1: started
+</span><span class='line'>
+</span><span class='line'>[web1] run: supervisorctl restart web2
+</span><span class='line'>[web1] out: web2: stopped
+</span><span class='line'>[web1] out: web2: started
+</span><span class='line'>
+</span><span class='line'>[localhost] local: grep 'rollbar.access_token' production.ini | sed 's/^.* = //g'
+</span><span class='line'>[localhost] local: whoami
+</span><span class='line'>[localhost] local: git log -n 1 --pretty=format:"%H"
+</span><span class='line'>Deploy recorded successfully. Deploy id: 307
+</span><span class='line'>[web2] Executing task 'deploy'
+</span><span class='line'>[localhost] local: whoami
+</span><span class='line'>[web2] run: git pull
+</span><span class='line'>[web2] out: remote: Counting objects: 8, done.
+</span><span class='line'>[web2] out: remote: Compressing objects: 100% (4/4), done.
+</span><span class='line'>[web2] out: remote: Total 6 (delta 4), reused 4 (delta 2)
+</span><span class='line'>[web2] out: Unpacking objects: 100% (6/6), done.
+</span><span class='line'>[web2] out: From github.com:brianr/mox
+</span><span class='line'>[web2] out:    c731b57..1d365e0  master     -&gt; origin/master
+</span><span class='line'>[web2] out: Updating c731b57..1d365e0
+</span><span class='line'>[web2] out: Fast-forward
+</span><span class='line'>[web2] out:  fabfile.py |    8 ++++----
+</span><span class='line'>[web2] out:  1 file changed, 4 insertions(+), 4 deletions(-)
+</span><span class='line'>
+</span><span class='line'>[web2] run: pip install -r requirements.txt
+</span><span class='line'>[web2] out: Requirement already satisfied (use --upgrade to upgrade): Beaker==1.6.3 in /home/deploy/env-mox/lib/python2.7/site-packages (from -r requirements.txt (line 1))
+</span><span class='line'>
+</span><span class='line'>[web2] out: Cleaning up...
+</span><span class='line'>
+</span><span class='line'>[web2] run: supervisorctl restart web1
+</span><span class='line'>[web2] out: web1: stopped
+</span><span class='line'>[web2] out: web1: started
+</span><span class='line'>
+</span><span class='line'>[web2] run: supervisorctl restart web2
+</span><span class='line'>[web2] out: web2: stopped
+</span><span class='line'>[web2] out: web2: started
+</span><span class='line'>
+</span><span class='line'>[localhost] local: grep 'rollbar.access_token' production.ini | sed 's/^.* = //g'
+</span><span class='line'>[localhost] local: whoami
+</span><span class='line'>[localhost] local: git log -n 1 --pretty=format:"%H"
+</span><span class='line'>Deploy recorded successfully. Deploy id: 308
+</span><span class='line'>
+</span><span class='line'>Done.
+</span><span class='line'>Disconnecting from web2... done.
+</span><span class='line'>Disconnecting from web1... done.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Lots of good things happening. But it&#8217;s doing the whole process &#8211; <code>check_user</code>, <code>update_and_restart</code>, <code>rollbar_record_deploy</code> &#8211; twice, once for each host. The duplicate <code>check_user</code> just slows things down, but the duplicate <code>rollbar_record_deploy</code> is going to mess with our deploy history, and it&#8217;s only going to get worse as we add more servers.</p>
+
+<p>Fabric&#8217;s solution to this, described in their <a href="http://docs.fabfile.org/en/1.4.3/usage/execution.html">docs</a>, is &#8220;roles&#8221;. We can map hosts to roles, then decorate tasks with which roles they apply to. Here we replace the <code>env.hosts</code> declaration with <code>env.roledefs</code>, decorate <code>update_and_restart</code> with <code>@roles</code>, and call <code>update_and_restart</code> with <code>execute</code> so that the <code>@roles</code> decorator is honored:</p>
+
+<figure class='code'><figcaption><span> (fabfile2.py)</span> <a href='/blog/downloads/code/fabfile2.py'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+</pre></td><td class='code'><pre><code class='py'><span class='line'><span class="kn">import</span> <span class="nn">sys</span>
+</span><span class='line'>
+</span><span class='line'><span class="kn">from</span> <span class="nn">fabric.api</span> <span class="kn">import</span> <span class="n">run</span><span class="p">,</span> <span class="n">local</span><span class="p">,</span> <span class="n">cd</span><span class="p">,</span> <span class="n">env</span><span class="p">,</span> <span class="n">roles</span><span class="p">,</span> <span class="n">execute</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">requests</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">env</span><span class="o">.</span><span class="n">roledefs</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>    <span class="s">&#39;web&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;web1&#39;</span><span class="p">,</span> <span class="s">&#39;web2&#39;</span><span class="p">]</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">deploy</span><span class="p">():</span>
+</span><span class='line'>    <span class="c"># pre-roll checks</span>
+</span><span class='line'>    <span class="n">check_user</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c"># do the roll.</span>
+</span><span class='line'>    <span class="c"># execute() will call the passed-in function, honoring host/role decorators.</span>
+</span><span class='line'>    <span class="n">execute</span><span class="p">(</span><span class="n">update_and_restart</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c"># post-roll tasks</span>
+</span><span class='line'>    <span class="n">rollbar_record_deploy</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="nd">@roles</span><span class="p">(</span><span class="s">&#39;web&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">update_and_restart</span><span class="p">():</span>
+</span><span class='line'>    <span class="n">code_dir</span> <span class="o">=</span> <span class="s">&#39;/home/deploy/www/mox&#39;</span>
+</span><span class='line'>    <span class="k">with</span> <span class="n">cd</span><span class="p">(</span><span class="n">code_dir</span><span class="p">):</span>
+</span><span class='line'>        <span class="n">run</span><span class="p">(</span><span class="s">&quot;git pull&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">run</span><span class="p">(</span><span class="s">&quot;pip install -r requirements.txt&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">run</span><span class="p">(</span><span class="s">&quot;supervisorctl restart web1&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">run</span><span class="p">(</span><span class="s">&quot;supervisorctl restart web2&quot;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">check_user</span><span class="p">():</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">local</span><span class="p">(</span><span class="s">&#39;whoami&#39;</span><span class="p">,</span> <span class="n">capture</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span> <span class="o">!=</span> <span class="s">&#39;deploy&#39;</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">print</span> <span class="s">&quot;This command should be run as deploy. Run like: sudo -u deploy fab deploy&quot;</span>
+</span><span class='line'>        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">rollbar_record_deploy</span><span class="p">():</span>
+</span><span class='line'>    <span class="c"># read access_token from production.ini</span>
+</span><span class='line'>    <span class="n">access_token</span> <span class="o">=</span> <span class="n">local</span><span class="p">(</span><span class="s">&quot;grep &#39;rollbar.access_token&#39; production.ini | sed &#39;s/^.* = //g&#39;&quot;</span><span class="p">,</span>
+</span><span class='line'>        <span class="n">capture</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">environment</span> <span class="o">=</span> <span class="s">&#39;production&#39;</span>
+</span><span class='line'>    <span class="n">local_username</span> <span class="o">=</span> <span class="n">local</span><span class="p">(</span><span class="s">&#39;whoami&#39;</span><span class="p">,</span> <span class="n">capture</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">revision</span> <span class="o">=</span> <span class="n">local</span><span class="p">(</span><span class="s">&#39;git log -n 1 --pretty=format:&quot;%H&quot;&#39;</span><span class="p">,</span> <span class="n">capture</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">&#39;https://api.rollbar.com/api/1/deploy/&#39;</span><span class="p">,</span> <span class="p">{</span>
+</span><span class='line'>        <span class="s">&#39;access_token&#39;</span><span class="p">:</span> <span class="n">access_token</span><span class="p">,</span>
+</span><span class='line'>        <span class="s">&#39;environment&#39;</span><span class="p">:</span> <span class="n">environment</span><span class="p">,</span>
+</span><span class='line'>        <span class="s">&#39;local_username&#39;</span><span class="p">:</span> <span class="n">local_username</span><span class="p">,</span>
+</span><span class='line'>        <span class="s">&#39;revision&#39;</span><span class="p">:</span> <span class="n">revision</span>
+</span><span class='line'>    <span class="p">},</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="n">resp</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">print</span> <span class="s">&quot;Deploy recorded successfully&quot;</span>
+</span><span class='line'>    <span class="k">else</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">print</span> <span class="s">&quot;Error recording deploy:&quot;</span><span class="p">,</span> <span class="n">resp</span><span class="o">.</span><span class="n">text</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here&#8217;s the output:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(env-mox)[brian@dev mox]$ sudo -u deploy fab deploy
+</span><span class='line'>[sudo] password for brian: 
+</span><span class='line'>[localhost] local: whoami
+</span><span class='line'>[web1] Executing task 'update_and_restart'
+</span><span class='line'>[web1] run: git pull
+</span><span class='line'>[web1] out: Already up-to-date.
+</span><span class='line'>
+</span><span class='line'>[web1] run: pip install -r requirements.txt
+</span><span class='line'>[web1] out: Requirement already satisfied (use --upgrade to upgrade): Beaker==1.6.3 in /home/deploy/env-mox/lib/python2.7/site-packages (from -r requirements.txt (line 1))
+</span><span class='line'>&lt;snip&gt;
+</span><span class='line'>[web1] out: Cleaning up...
+</span><span class='line'>
+</span><span class='line'>[web1] run: supervisorctl restart web1
+</span><span class='line'>[web1] out: web1: stopped
+</span><span class='line'>[web1] out: web1: started
+</span><span class='line'>
+</span><span class='line'>[web1] run: supervisorctl restart web2
+</span><span class='line'>[web1] out: web2: stopped
+</span><span class='line'>[web1] out: web2: started
+</span><span class='line'>
+</span><span class='line'>[web2] Executing task 'update_and_restart'
+</span><span class='line'>[web2] run: git pull
+</span><span class='line'>[web2] out: Already up-to-date.
+</span><span class='line'>
+</span><span class='line'>[web2] run: pip install -r requirements.txt
+</span><span class='line'>[web2] out: Requirement already satisfied (use --upgrade to upgrade): Beaker==1.6.3 in /home/deploy/env-mox/lib/python2.7/site-packages (from -r requirements.txt (line 1))
+</span><span class='line'>
+</span><span class='line'>[web2] out: Cleaning up...
+</span><span class='line'>
+</span><span class='line'>[web2] run: supervisorctl restart web1
+</span><span class='line'>[web2] out: web1: stopped
+</span><span class='line'>[web2] out: web1: started
+</span><span class='line'>
+</span><span class='line'>[web2] run: supervisorctl restart web2
+</span><span class='line'>[web2] out: web2: stopped
+</span><span class='line'>[web2] out: web2: started
+</span><span class='line'>
+</span><span class='line'>[localhost] local: grep 'rollbar.access_token' production.ini | sed 's/^.* = //g'
+</span><span class='line'>[localhost] local: whoami
+</span><span class='line'>[localhost] local: git log -n 1 --pretty=format:"%H"
+</span><span class='line'>Deploy recorded successfully. Deploy id: 309
+</span><span class='line'>
+</span><span class='line'>Done.
+</span><span class='line'>Disconnecting from web2... done.
+</span><span class='line'>Disconnecting from web1... done.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&#8217;s more like it. Since <code>env.hosts</code> is not set, the undecorated tasks just run locally (and only once), and the <code>@roles('web')</code>-decorated task runs for each web host.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/blog/archives">Blog Archives</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <ul class="well nav nav-list" id="recent_posts">
+    <li class="nav-header">Recent Posts</li>
+    
+      <li class="post">
+        <a href="/blog/post/2013/03/29/using-unique-indexes-for-fun-and-profit/">Taking UNIQUE indexes to the next level</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/post/2013/03/21/improved-grouping-for-javascript-errors/">Improved grouping for Javascript errors</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/post/2013/02/26/rollbar-notifier-upgrades/">Upgrading to the new Rollbar notifier libraries</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/post/2013/02/26/rollbar-launch-and-initial-funding/">Rollbar launches, raises initial funding</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/post/2013/01/11/post-mortem-from-last-nights-outage/">Post-mortem from last night&#8217;s outage</a>
+      </li>
+    
+    <li class="divider"></li>
+    <li><a href="/blog/blog/archives">Blog Archives</a></li>
+  </ul>
+</section>
+
+  
+</aside>
+
+      </div>
+    </div>
+    
+    <footer class="row-fluid">
+      <div class="container">
+        <div class="row-fluid footer-content">
+          <div class="left-col pull-left"><a class="logo-footer" href="/"></a></div>
+            <div class="right-col pull-left">
+              <div class="item pull-left">
+              <strong>Rollbar</strong>
+              <ul>
+                <li><a href="/home/">Home</a></li>
+                <li><a href="/about">About us</a></li>
+                <li><a href="/pricing">Pricing</a></li>
+                <li><a href="mailto:jobs@rollbar.com?Subject=I+am+awesome,+hire+me!">Jobs</a></li>
+                <li><a href="/blog/">Blog</a></li>
+              </ul>
+            </div>
+            <div class="item pull-left">
+              <strong>Features</strong>
+              <ul>
+                <li><a href="/features/multiplatform/">Monitor errors</a></li>
+                <li><a href="/features/alerts/">Real-time Alerts</a></li>
+                <li><a href="/features/dashboard/">Dashboard</a></li>
+                <li><a href="/features/deploys/">Track Deploys</a></li>
+                <li><a href="/features/people/">Person Tracking</a></li>
+                <li><a href="/features/hosts/">Host Tracking</a></li>
+                <li><a href="/features/bugtrackers/">Bug Tracker Integration</a></li>
+                <li><a href="/features/github/">Github Integration</a></li>
+                <li><a href="/features/">Other Features</a></li>
+              </ul>
+            </div>
+            <div class="item pull-left">
+              <strong>Resources</strong>
+              <ul>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/docs/">Docs</a></li>
+                <li><a href="/changelog">Change Log</a></li>
+              </ul>
+            </div>
+            <div class="item pull-left">
+              <strong>Support</strong>
+              <ul>
+                <li><a href="/docs/">Help Center</a></li>
+                <li><a href="/tos">Terms of Service</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+              </ul>
+              
+              <div class="social">
+                <strong>Share via</strong>
+                <ul>
+                  <li class="twitter"><a href="https://twitter.com/share?url=http://rollbar.com/"></a></li>
+                  <li class="facebook"><a href="https://www.facebook.com/dialog/feed?app_id=516762375041550&link=http%3A%2F%2Frollbar.com%2F&picture=http%3A%2F%2Frollbar.com%2Fstatic%2Fimg2%2Flogo.png&name=Rollbar&caption=Monitor and analyze your application's errors and deploys in real-time.&redirect_uri=http%3A%2F%2Frollbar.com%2F" target="_blank"></a></li>
+                  <li class="email last"><a href="mailto:?Subject=Rollbar" target="_blank"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid footer-content-bottom">
+          <p>&copy; 2013 Rollbar, Inc.</p>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+<script type="text/javascript">
+      var disqus_shortname = 'rollbar';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,510 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+  <head>
+    <script>
+    var _rollbarParams = {
+      "server.environment": "production-js",
+      "server.host": "www.socialsci.com",
+      "notifier.snippet_version": "2",
+      person: {
+      }
+    };
+    var _rollbar=["f8b2dcb031a84503bffd2a7404a1e2db", _rollbarParams];
+    var _ratchet=_rollbar;
+    (function(w,d){w.onerror=function(e,u,l){_rollbar.push({_t:'uncaught',e:e,u:u,l:l});};
+    var i=function(){var s=d.createElement("script");var 
+    f=d.getElementsByTagName("script")[0];s.src="//d37gvrvc0wt4s1.cloudfront.net/js/1/rollbar.min.js";s.async=!0;
+    f.parentNode.insertBefore(s,f);};if(w.addEventListener){w.addEventListener("load",i,!1);}
+    else{w.attachEvent("onload",i);}})(window,document);
+  </script>
+
+  <script src="https://d1ybwah56txnv1.cloudfront.net/assets/exceptional-4792ff1f86180d3d6ffe902f35da1692.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    Exceptional.setHost('exceptional-api.heroku.com');
+    Exceptional.setKey('90bc6c2fa5efa11e11b54a3f3933c68e936e0e7b');
+    // Configure strings to filter here. Filtering will be done with "indexOf" to find an exact match only.
+    exceptional_filtered_strings = [
+      "TopLine is not defined"
+    ]
+
+    _window_onerror = window.onerror;
+    window.onerror = function(message, url, linenumber) {
+      for(var i=0; i < exceptional_filtered_strings.length; i++) {
+        if (message && String(message).indexOf(exceptional_filtered_strings[i]) != -1) {
+          return false;
+        }
+      }
+      _window_onerror(message, url, linenumber);
+    }
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="title" content="SocialSci" />
+  <meta name="keywords" content="surveys, psychology, statistics, academic, research, socialsci" />
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="nY14oGMSxFZXV8bWvvyMm4D+sGlokQti2O1eW4lJcKc=" name="csrf-token" />
+
+  <title>Research Participants | SocialSci</title>
+
+  <link rel="image_src" href="https://d1ybwah56txnv1.cloudfront.net/assets/flask-567724827e5b0115038ad4fca9c9947f.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://d1ybwah56txnv1.cloudfront.net/assets/favicon-3fbb1fb3cc6d5ef3172f16e3915a5afa.ico" />
+  <link rel="apple-touch-icon" href="https://d1ybwah56txnv1.cloudfront.net/assets/ios/apple-touch-icon-8f109029d9b7116ac4873f453fcaa565.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="https://d1ybwah56txnv1.cloudfront.net/assets/ios/apple-touch-icon-72x72-04817675dbd82a11c6f5aa713e5ad80a.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="https://d1ybwah56txnv1.cloudfront.net/assets/ios/apple-touch-icon-114x114-1d2ad6b657e6bcce2ada11133b31212c.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="https://d1ybwah56txnv1.cloudfront.net/assets/ios/apple-touch-icon-144x144-058a795262de701f69599e2ea07b913e.png" />
+
+  <link href="https://d1ybwah56txnv1.cloudfront.net/assets/v2/application-632b7683ba6d166c7c6e45cc0802f8ab.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  <script src="https://d1ybwah56txnv1.cloudfront.net/assets/modernizr-2.5.3-respond-1.1.0.min-7113053f2264032002d314e971c2f767.js" type="text/javascript"></script>
+  
+</head>
+
+
+  <body>
+    <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>very old!</em> <a href="http://browsehappy.com/">Upgrade to a newer browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to have the best experience with our site.</p><![endif]-->
+
+      <div id="body_wrapper" class="home_wrapper">
+    <div id="home-navbar" class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <div class="row">
+        <div class="span12" style="position:relative">
+          <a href="https://www.socialsci.com/" class="brand pull-left">            <img alt="SocialSci" id="bare_logo" src="https://d1ybwah56txnv1.cloudfront.net/assets/socialsci_x60-45bb4b5e3a1de6c9c8aa19a6f464bb34.png" /></a>          <ul class="nav pull-right">
+              <li><a href="/signup?target=pool" class="ajaxbox-signup">Try the Pool</a></li>
+            <li><a href="/features">Features</a></li>
+            <li><a href="/reviews">Reviews</a></li>
+            <li><a href="/contact_us">Contact Us</a></li>
+              <li><a href="/signup" class="btn pull-right signup-rounded ajaxbox-signup">Sign up</a>
+</li>
+          </ul>
+
+          <div id="n_login">
+  <div class="sign-in-container">
+      <div class="have-an-account">
+        <a href="/login" class="sign-in-link" id="sign-in-link" tabindex="1">
+          <span class="plaintext">Have an account?</span>
+          Sign in
+          <span id="right-arrow">»</span><span id="left-arrow">&laquo;</span>
+</a>        <div id="sign-in" class="offscreen">
+          <div id="sign-in-inner">
+            <form accept-charset="UTF-8" action="/account_sessions" class="form-stacked" id="new_account_session" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="nY14oGMSxFZXV8bWvvyMm4D+sGlokQti2O1eW4lJcKc=" /></div>
+              <div class="clearfix">
+                <label for="account_session_login">Login</label>
+                <a href="#" class="signin-hint" data-placement="right" rel="tooltip" title="&lt;strong&gt;Researchers&lt;/strong&gt;: use your email&lt;br&gt;&lt;strong&gt;Participants&lt;/strong&gt;: use your username">
+                  <img alt="Question_mark" src="https://d1ybwah56txnv1.cloudfront.net/assets/question_mark-166cd94854d291202a9e5d24fc79f8a5.png" />
+</a>                <div class="input">
+                  <input autocomplete="off" id="account_session_login" name="account_session[login]" size="30" tabindex="1" type="text" /><br>
+                </div>
+              </div>
+              <div class="clearfix">
+                <label for="account_session_password">Password</label>
+                <div class="input">
+                  <input id="account_session_password" name="account_session[password]" size="30" tabindex="2" type="password" />
+                </div>
+              </div>
+              <div class="clearfix">
+                <div class="input">
+                  <input class="btn" name="commit" tabindex="4" type="submit" value="Go" />
+                  <input name="account_session[remember_me]" type="hidden" value="0" /><input id="account_session_remember_me" name="account_session[remember_me]" tabindex="3" type="checkbox" value="1" />
+                  <label for="account_session_remember_me" style="display: inline;font-size:85%;line-height:30px">Remember me</label>
+                </div>
+                <a href="/password_resets/new" class="small">I forgot my password!</a>
+                <div style="clear:both"></div>
+              </div>
+</form>          </div>
+        </div>
+      </div>
+  </div>
+    <div class="participant-link">
+      <a href="/participants">Looking to <strong>participate</strong> in surveys? Click here!</a>
+      &nbsp;
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <div id="home_container" class="container">
+        <div id="flash-container">
+</div>
+
+        <section class="hero-unit summary">
+  <h2 id="headline">Honest Participants For Your Scientific Studies</h2>
+  <div class="row">
+    <div class="span5">
+      <div class="video-thumbnail" id="video-splash">
+          <a href="/videos/videodemo/reveal" class="ajaxbox" id="homepage-video">
+            <img alt="Mainimagesmall_op" height="180" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/MAINImageSMALL_op-fada51df5582d5ebc11bebfe10a7b6f7.png" width="300" />
+</a>      </div>
+    </div>
+    <div class="highlights span7">
+      <div>
+        <span class="keyword">Design</span>&nbsp;
+        surveys with intuitive, cutting-edge tools
+      </div>
+      <div>
+        <span class="keyword">Conduct</span>&nbsp;
+        studies with an instant participant pool
+      </div>
+      <div>
+        <span class="keyword">Save</span>&nbsp;
+        money with affordable research participants
+      </div>
+      <div class="try-headline">
+        Try SocialSci for free — unlimited surveys &amp; responses.
+      </div>
+      <a href="/signup" class="btn signup-rounded ajaxbox-signup" id="signup-10-seconds">
+        <span class="main-text">Sign up</span> <span>&ndash; in under 30 seconds</span>
+</a>      &nbsp;
+      <a href="#features" class="read-more-link scrollable-anchor-link" data-anchorid="#features">or Read More...</a>
+    </div>
+  </div>
+</section>
+
+<div id="testimonials">
+  &ldquo;It's easy to imagine every university in America buying a subscription to the service.&rdquo;
+  <span>&ndash;</span>
+  <img alt="The Boston Globe" src="https://d1ybwah56txnv1.cloudfront.net/assets/the_boston_globe_16-77316e9cd6050d7321e787ff0613da91.png" style="vertical-align:-3px" />
+</div>
+
+<div class="main-body rounded">
+  <section class="participating-schools">
+    <p class="intro">
+      SocialSci has helped hundreds of researchers around the world collect data for their surveys and experiments. Join your colleagues from the following universities by trying our unique survey platform today.
+    </p>
+    <div class="school-roll">
+  <ul class="schools" class="unstyled">
+    <li>Harvard</li>
+    <li><img alt="Australian National University" height="71" src="https://d1ybwah56txnv1.cloudfront.net/assets/schools/anu-ebbc188a98a969f7d32764c9957713f2.png" width="205" /></li>
+    <li>Stanford</li>
+    <li><img alt="NYU Stern" height="104" src="https://d1ybwah56txnv1.cloudfront.net/assets/schools/stern-64a4b791ab57db47ccc4b507a853c2ce.png" width="119" /></li>
+    <li>Yale</li>
+  </ul>
+  <div class="clear"></div>
+</div>
+
+    <div class="span11">
+      <div class="row">
+        <div class="better-science span5">
+          <h3>The Best Platform For Your Research</h3>
+          <p>
+            SocialSci was designed from the ground up specifically and only for academic research. We have created the most efficient data collection platform online by combining cutting-edge computer technology with modern-day participant recruitment practices. We provide the tools you need to power your research. We also guarantee that every participant takes your study seriously and answers your questions honestly—you no longer need to worry about fake responses or repeat survey-takers. And you’ll spend less time learning new software with our powerful and easy-to-use tools. With SocialSci, you'll be up and collecting data in minutes.
+          </p>
+          <h3 id="care-science">We Care About Science</h3>
+          <p>
+            We offer academic-friendly pricing and take a vested interest in your research. We guarantee your study will be completed to your satisfaction.
+          </p>
+          <div style="text-align: center;">
+            <a href="/signup" class="btn signup-rounded ajaxbox-signup">
+              <span class="main-text">Sign up</span> <span style="font-size:18px">&ndash; Free Account</span>
+</a>          </div>
+        </div>
+        <div class="showcase span6">
+          <div class="row">
+            <div class="span3">
+              <img alt="Homesurveyquestions_op" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/HOMEsurveyQuestions_op-c926e45ee35028f6bb61dfa4ae3fa7a7.png" />
+              <div class="caption">
+                <h4>Design Complex Questionnaires</h4>
+                <p>
+                  Use an intuitive yet robust survey platform to power your studies!
+                </p>
+              </div>
+            </div>
+            <div class="span3">
+              <img alt="Homeinstantparticipants_op" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/HOMEinstantparticipants_op-130426bdf390bcdd46a443c1534295f1.png" />
+              <div class="caption">
+                <h4>Instant Participants</h4>
+                <p>
+                  Access thousands of participants from a global and demographically-diverse pool in seconds!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span3">
+              <img alt="Homelivechatnew_op" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/HOMElivechatNEW_op-a7372f6dd3a0161a962dc243a9f4056a.png" />
+              <div class="caption">
+                <h4>Live 24/7 Support</h4>
+                <p>
+                  Chat instantly with a SocialSci support representative via live chat. No waiting!
+                </p>
+              </div>
+            </div>
+            <div class="span3">
+              <img alt="Homerealtime_op" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/HOMErealtime_op-66ae8f2a51ad6d6691e381859a536db6.png" />
+              <div class="caption">
+                <h4>Real-Time Collaboration</h4>
+                <p>
+                  Share and develop your questionnaire in real-time with your colleagues!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </section>
+
+  <section class="features" id="features">
+  <div class="span11">
+    <a href="/signup" class="btn pull-right signup-rounded ajaxbox-signup">Sign up</a>
+
+    <h2>SocialSci Features</h2>
+  </div>
+  <div class="span10">
+    <div class="row">
+      <div class=" feature-block span5" permalink="drag-and-drop-survey"><img alt="System" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/system-a269b528128052af3cc937d5e19b23cb.png" /><div class="feature-blob span"><a name="drag-and-drop-survey"></a><div class="feature-headline"><a href="drag-and-drop-survey" class="invisible-link">Drag and Drop Survey Creator</a></div><div class="feature-summary">
+        An intuitive survey design platform that integrates all the question types, logic, and design features needed to smoothly create complex surveys and experiments.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="pdf-upload-survey"><img alt="Documents" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/documents-3244355631119ab720bcdc39b79ca098.png" /><div class="feature-blob span"><a name="pdf-upload-survey"></a><div class="feature-headline"><a href="pdf-upload-survey" class="invisible-link">PDF Upload Survey Creator</a></div><div class="feature-summary">
+        We don't assume that all your studies conform to the capabilities of traditional online data collection programs. SocialSci enables you to turn any PDF into a questionnaire in seconds.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="advanced-survey-logic"><img alt="Settings" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/settings-87d1badf1e964e226a3f6aa5679fadbc.png" /><div class="feature-blob span"><a name="advanced-survey-logic"></a><div class="feature-headline"><a href="advanced-survey-logic" class="invisible-link">Advanced Logic</a></div><div class="feature-summary">
+        We’ve designed SocialSci so you can use all the complex logic you need to make your surveys and experiments run properly without sacrificing ease-of-use or quick learnability.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="data-exportation"><img alt="Download" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/download-e670bcc2dc71f041051c5670647270f4.png" /><div class="feature-blob span"><a name="data-exportation"></a><div class="feature-headline"><a href="data-exportation" class="invisible-link">Simple Data Export</a></div><div class="feature-summary">
+        We enable you to export your data at any stage of data collection via numerous formats. SocialSci also allows for data tags, so your export is readable and organized.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="participant-pool"><img alt="User" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/user-be9fb1b6c0d3618870d80f146a362850.png" /><div class="feature-blob span"><a name="participant-pool"></a><div class="feature-headline"><a href="participant-pool" class="invisible-link">Instant Participant Pool</a></div><div class="feature-summary">
+        SocialSci has developed the first anonymous, honest, and payable pool of participants that are vetted over time. Our process was designed to decrease the cost and headache of finding the right participants.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="vetting-system"><img alt="Search" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/search-4613b89a5f8b6dae14e112236aa7c2e8.png" /><div class="feature-blob span"><a name="vetting-system"></a><div class="feature-headline"><a href="vetting-system" class="invisible-link">Innovative Vetting System</a></div><div class="feature-summary">
+        All demographic questions answered by participants are stored with their anonymous usernames, so we can ensure participants are genuine. This vetting information also allows us to provide you with the exact type of participant you need.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="survey-analytics"><img alt="Stats" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/stats-1d35bb1cd3fae8f4df99cf087e72f3d0.png" /><div class="feature-blob span"><a name="survey-analytics"></a><div class="feature-headline"><a href="survey-analytics" class="invisible-link">Live Analytics</a></div><div class="feature-summary">
+        Our platform enables you to view raw data as participants respond to your study. We also maintain frequency charts and graphs for each item in your questionnaire, which you can access at any time in your data collection process.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="research-participant-interaction"><img alt="Chat" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/chat-5da5f34f8e6611d1861763cc4ea5ca66.png" /><div class="feature-blob span"><a name="research-participant-interaction"></a><div class="feature-headline"><a href="research-participant-interaction" class="invisible-link">Unprecedented Participant Interaction</a></div><div class="feature-summary">
+        SocialSci enables researchers and participants to interact directly through our secure messaging system. Researchers often receive feedback from participants, which may provide you with additional insight into your research questions.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="time-control"><img alt="Temporary" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/temporary-fd72e92fd9b839bd7dd1cc6b3e2692bf.png" /><div class="feature-blob span"><a name="time-control"></a><div class="feature-headline"><a href="time-control" class="invisible-link">Unique Time Control</a></div><div class="feature-summary">
+        Whether you want to auto-advance participants to the next page in your study or see how long participants spend on each question, SocialSci offers excellent tools to keep track of time.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="irb-assistance"><img alt="Mail" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/mail-a58a1c87242937f837d4bbb95d92ed04.png" /><div class="feature-blob span"><a name="irb-assistance"></a><div class="feature-headline"><a href="irb-assistance" class="invisible-link">IRB Assistance</a></div><div class="feature-summary">
+        SocialSci been approved by Institutional Review Boards at colleges and universities around the world. We are more than happy to share what we have learned. SocialSci reps are available to help craft your next IRB application.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="live-support"><img alt="Security" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/security-d118a8dbbb61e12df9f08d59fbc0c312.png" /><div class="feature-blob span"><a name="live-support"></a><div class="feature-headline"><a href="live-support" class="invisible-link">Live 24/7 Support</a></div><div class="feature-summary">
+        Simply click the "live help" tab on the right-hand side of any SocialSci page and a representative will assist you instantly. We are here to help with everything from study design to IRB compliance.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="real-time-collaboration"><img alt="Select" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/select-088156f83c50e4dcdc7514b080aeebda.png" /><div class="feature-blob span"><a name="real-time-collaboration"></a><div class="feature-headline"><a href="real-time-collaboration" class="invisible-link">Real-Time Colleague Collaboration</a></div><div class="feature-summary">
+        Working with a lab-mate or colleague at a different university? See in real-time who is editing and what is being altered, and transfer control of your experiment seamlessly.
+</div></div><div style="clear:both"></div></div>
+
+      <div class=" feature-block span5" permalink="code-import"><img alt="Import" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/import-bfce6428571f831a8348ecdb51811ef3.png" /><div class="feature-blob span"><a name="code-import"></a><div class="feature-headline"><a href="code-import" class="invisible-link">Code Import</a></div><div class="feature-summary">
+        Need to run Java or Flash from within your survey or experiment? Just provide us with the source. We will compile the code and insert it directly into your study.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="incentivized-payments"><img alt="Incentivized" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/incentivized-c4a0b2de2b39c987cea96f5e5ff54784.png" /><div class="feature-blob span"><a name="incentivized-payments"></a><div class="feature-headline"><a href="incentivized-payments" class="invisible-link">Incentivized Payments</a></div><div class="feature-summary">
+        Our platform enables you to control when a participant is compensated, even during a study. Set actions or conditions that influence the total compensation provided to participants.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="longitudinal-data-collection"><img alt="Longitudinal" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/longitudinal-ee4229501ec50cd4f21ff4e126652b65.png" /><div class="feature-blob span"><a name="longitudinal-data-collection"></a><div class="feature-headline"><a href="longitudinal-data-collection" class="invisible-link">Longitudinal Data Collection</a></div><div class="feature-summary">
+        Our unique participant pool provides the ultimate resource for longitudinal data collection. Easily set permissions, previous study requirements, and interact with participants over time.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="deceit-participant-pool"><img alt="Deceit" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/deceit-f2e077fd6393b6a48146821e590a6549.png" /><div class="feature-blob span"><a name="deceit-participant-pool"></a><div class="feature-headline"><a href="deceit-participant-pool" class="invisible-link">Deceit Pool</a></div><div class="feature-summary">
+        SocialSci provides a large opt-in deceit pool that allows you to conduct your experiments as needed while lessening your IRB submission burden.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="drawing-question-type"><img alt="Drawing" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/drawing-bfa16e1d6dda0e28acfa95a76009c8cf.png" /><div class="feature-blob span"><a name="drawing-question-type"></a><div class="feature-headline"><a href="drawing-question-type" class="invisible-link">Drawing Question Type</a></div><div class="feature-summary">
+        Participants can easily create drawings within your survey! They can easily choose different shapes, colors, lines, and a free-draw marker to draw within your experiment.
+</div></div><div style="clear:both"></div></div>      <div class=" feature-block span5" permalink="card-sort-task"><img alt="Cards" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/cards-cdb7bcdbebd45316476af24fd3246ae7.png" /><div class="feature-blob span"><a name="card-sort-task"></a><div class="feature-headline"><a href="card-sort-task" class="invisible-link">Card Sorting Tasks</a></div><div class="feature-summary">
+        SocialSci fully supports both open and closed card sorting tasks, where participants interactively choose categories for different cards via an easy drag-and-drop interface.
+</div></div><div style="clear:both"></div></div>      <div class="beta feature-block span5" permalink="reaction-time-iat"><img alt="Reaction_time" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/reaction_time-cdc7b56d4b3a219e7e52c16924b6cf15.png" /><div class="feature-blob span"><a name="reaction-time-iat"></a><div class="feature-headline"><a href="reaction-time-iat" class="invisible-link">Reaction Time</a></div><div class="feature-summary">
+        <span class="beta">(Currently in Beta)</span> We are extending the SocialSci platform to cover a wide range of reaction time tasks. If you would like to learn more or be involved in our beta testing program, please do not hesitate to let us know.
+</div></div><div style="clear:both"></div></div>      <div class="beta feature-block span5" permalink="participants-live-in-lab"><img alt="In_lab" class="feature-thumb" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/icons/in_lab-db14cb40ef2f0cbac1f5a798a4120414.png" /><div class="feature-blob span"><a name="participants-live-in-lab"></a><div class="feature-headline"><a href="participants-live-in-lab" class="invisible-link">Participants Live in Lab</a></div><div class="feature-summary">
+        <span class="beta">(Currently in Beta)</span> Based on researcher demand, we will enable academics to recruit SocialSci participants for live in-lab experiments. If you would like to learn more or be involved in our beta testing program, please do not hesitate to let us know.
+</div></div><div style="clear:both"></div></div>    </div>
+  </div>
+  <div class="clear"></div>
+</section>
+
+
+  <section class="pool">
+    <div class="span11">
+      <a href="/signup" class="btn pull-right signup-rounded ajaxbox-signup">Sign up</a>
+
+      <h2>Tell Me More About The Pool</h2>
+    </div>
+    <img alt="Demograph" src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/demograph-671dd52bd4947da924e99c40eebd8452.png" />
+    <div id="global-pool">
+      <strong>Access a 
+        <a href="participant-pool" class="invisible-link">global pool</a>
+         in seconds</strong><br>
+        Thousands of <a href="research-participants" class="invisible-link">research participants</a>
+        <br>
+      <strong>Various continents/countries</strong><br>
+      Various languages<br>
+      <strong>Various cultures</strong>
+    </div>
+    <div id="gender-ratio">
+      <strong>Balanced Sex Ratio</strong><br>
+      Various sexualities<br>
+      <strong>Ages 13 to 75</strong>
+    </div>
+    <div id="diverse-background">
+      <strong>Immensely diverse economic backgrounds</strong><br>
+      Many different careers and positions<br>
+      <strong>Various educational histories</strong>
+    </div>
+  </section>
+
+  <section class="faq last">
+  <div class="span11">
+    <h2>Frequently Asked Questions</h2>
+  </div>
+  <div class="span10">
+    <div class="row">
+      <div class="faq-block span5 left-side"><div class="faq-title">What does “try for free” mean?</div><div class="faq-answer">
+        SocialSci currently offers free basic accounts to academic researchers. This enables you to create unlimited surveys and collected unlimited responses.
+</div></div>      <div class="faq-block span5 right-side"><div class="faq-title">Who can utilize SocialSci’s Platform?</div><div class="faq-answer">
+        Currently, we only allow academic researchers conducting IRB-approved research to use our pool. Others are welcome to use our survey platform, but will not be granted access to technical support or to our pool.
+</div></div>      <div class="faq-block span5 left-side"><div class="faq-title">Can I use your survey tools and not the pool?</div><div class="faq-answer">
+        Absolutely—though we’re confident that you won’t find a better pool than ours—online or off. Contact us and we’ll prove it!
+</div></div>      <div class="faq-block span5 right-side"><div class="faq-title">How do you ensure anonymous yet honest participants?</div><div class="faq-answer">
+        We take a three-tiered approach to our participant pool. We first authenticate users to make sure they are human and not creating multiple accounts. We then send them through our vetting process, which ensures that our participants are honest by tracking every demographic question they answer across studies. If a participant claims to be 18-years-old one week and 55-years-old the next, our platform will notify you and deliver another quality participant free-of-charge. Finally, we compensate participants via a secure online transaction where personally identifiable information is never revealed.
+</div></div>      <div class="faq-block span5 left-side"><div class="faq-title">Will my IRB board ‘OK’ this survey platform?</div><div class="faq-answer">
+        We’ve worked with IRBs at institutions around the world. SocialSci was created with the IRB process in mind. We are more than happy to assist you with your IRB application. Speak with an IRB specialist <a href="#" id="startSnapEngageChat">here</a>.
+</div></div>    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="need-help">
+    <a href="/signup" class="btn signup-rounded ajaxbox-signup">Sign up</a> or <a href="/contact_us">Contact Us</a>
+  </div>
+</section>
+
+
+  <div class="participate">
+    <a href="/participants">Looking to participate in studies and earn rewards? Click here.</a>
+  </div>
+  <div class="clear"></div>
+</div>
+
+      </div>
+
+    <div id="footer_push" ></div>
+  </div>
+  <footer id="v2_footer" >
+  <div id="top_shadow"></div>
+  <div class="container">
+    <div class="row">
+        <div class="span4">
+          <div class="footer-column">
+            <h3>Participants wanted:</h3>
+            <p>
+              Not a scientist, but still interested in helping science? Sign up
+              as a participant, take surveys from the comfort of your own home,
+              and earn rewards for assisting in real research.
+            </p>
+            <a href="/participants" class="btn">Visit our participant site</a>
+          </div>
+        </div>
+        <div class="span4">
+          <div class="footer-column">
+            <h3>Try SocialSci for free.</h3>
+            <p>
+              Interested in using SocialSci to power your research? Let us know and we’ll schedule a free demo to show you how our system works. 
+            </p>
+            <br>
+            <a href="/schedule_demo" class="btn ajaxbox">Schedule a Demo</a>
+          </div>
+        </div>
+        <div class="span4">
+          <div class="footer-column">
+            <h3>Follow SocialSci across the web:</h3>
+            <p class="follow_link">
+              <a href="http://twitter.com/socialsci"><img alt="Twitter" src="https://d1ybwah56txnv1.cloudfront.net/assets/new_layout/twitter-fb119607a28b48b40563f69bcb260ed8.png" /></a> on Twitter at<br>
+              <a href="http://twitter.com/socialsci">http://twitter.com/socialsci</a>
+            </p>
+            <p class="follow_link">
+              <a href="http://facebook.com/socialsci"><img alt="Facebook" src="https://d1ybwah56txnv1.cloudfront.net/assets/new_layout/facebook-554593c9e54b18e167ae68b6b9b406b3.png" /></a> on Facebook at<br>
+              <a href="http://facebook.com/socialsci">http://facebook.com/socialsci</a>
+            </p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div id="subfooter">
+    <a href="http://blog.socialsci.com">Blog</a> |
+    <a href="/faq">F.A.Q.</a> |
+    <a href="/terms">Terms of Service</a> |
+    <a href="/privacy">Privacy Policy</a> |
+    <a href="/contact_us">Contact Us</a> |
+    1-888-603-8496 |
+    &copy; SocialSci 2013.
+  </div>
+</footer>
+
+
+      <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11652997-1']);
+  _gaq.push(['_setSiteSpeedSampleRate', 50]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<script src="https://d1ybwah56txnv1.cloudfront.net/assets/v2/application-4c2a0dc2d6bb991c6f8946ffcb37a444.js" type="text/javascript"></script>
+<script type="text/javascript" language="javascript" charset="utf-8">
+//<![CDATA[
+  var audio_options = {}
+  /*@cc_on
+    @if (@_jscript_version == 9)
+      audio_options.mode = 'shim';
+    @end
+  @*/
+  $('audio').mediaelementplayer(audio_options);
+//]]>
+</script>
+
+
+  <div class="SnapABug_Button" onclick="SnapABug.startLink()">
+  <img alt="Live_help" src="https://d1ybwah56txnv1.cloudfront.net/assets/live_help-5ffb01ae19a19245d2b8df43847c4dfc.png" style="position: relative; right: 0px;" />
+</div>
+<div id="SnapABug_W"></div>
+<div id="SnapABug_WP"></div>
+<div id="SnapABug_Applet"></div>
+
+<script type="text/javascript">
+//<![CDATA[
+$(function(){
+  if(typeof SnapABug === "undefined") {
+    $.ajax({
+      url: 'https://snapabug.appspot.com/snapabug.js',
+      dataType: "script",
+      cache: true,
+      success: function() {
+        if (typeof SnapABug !== "undefined") {
+          SnapABug.initAsync('2a80e45b-9da5-496a-bc7b-8853d4b3486e');
+          SnapABug.allowOffline(false);
+          
+        }
+      }
+    });
+  }
+});
+//]]>
+</script>
+
+
+
+
+            <!-- start Mixpanel -->
+          <script type="text/javascript">
+            (function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");
+            b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+
+            '//cdn.mxpnl.com/libs/mixpanel-2.0.min.js';d=c.getElementsByTagName("script")[0];
+            d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){
+            var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(
+            Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?g=a[f]=[]:
+            f="mixpanel";g.people=g.people||[];h=['disable','track','track_pageview','track_links',
+            'track_forms','register','register_once','unregister','identify','name_tag',
+            'set_config','people.set','people.increment'];for(e=0;e<h.length;e++)d(g,h[e]);
+            a._i.push([b,c,f])};a.__SV=1.1;})(document,window.mixpanel||[]);
+
+            mixpanel.init("a2f011fa0713eb52637c47890a7aa307");
+            mixpanel.set_config({});
+          </script>
+          <!-- end Mixpanel -->
+</body>
+</html>
+
