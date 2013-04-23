@@ -3,7 +3,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Community Downloads | SpringSource.org</title>
+  <title>This Week in Spring, September 27th, 2011 | SpringSource.org</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
   <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
@@ -22,8 +22,7 @@
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/spring_siii_downloads/css/spring_siii_downloads.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/comment/comment.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
@@ -55,8 +54,6 @@
 <script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
 <script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
 <script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
-<script type="text/javascript" src="/sites/all/modules/custom/spring_siii_downloads/js/jquery.dimensions.js?1366755454"></script>
-<script type="text/javascript" src="/sites/all/modules/custom/spring_siii_downloads/js/jquery.accordion.js?1366755454"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
@@ -66,10 +63,10 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
 //--><!]]>
 </script>
 </head>
-<body class="page not-front not-logged-in page-spring-siii-downloads no-sidebars page-download-community section-download">
+<body class="page not-front not-logged-in node-type-story no-sidebars page-node-3270 section-node page-panels">
+
 
 	  
-
 
 <!--begin custom navigation-->
       	  
@@ -206,23 +203,95 @@ box-shadow: 0 0 15px #333;">
 	  
                         
 
-       <table width="100%" >
-       <tr>
-     <td width="100%" valign="top" align="left">
-       <div style="width:100%">
-       
- <div id="content-area">
+       <table width="100%" style="margin-top:-10px;">
+        <tr>
+         <td width="600px" valign="top" align="left">
+          <div style="width:600px;margin-top:5px;">
+          <a href="http://blog.springsource.com">Visit our blog</a>
+          <h1 class="title" style="margin-top:5px;margin-bottom:50px;" id="main-page-title">News & Events</h1>
+          <h2>This Week in Spring, September 27th, 2011</h2>
 
-	<div style="margin-top:-20px;">
-	<!--[If IE 7]><br><![endif]-->
 
-<table>
-<tr>
-<td width="95%">
-	  <h1 class="title" id="page-title">Community Downloads</h1>
-</td>
-<td align="right">
-      <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+          
+          <div id="content-area">
+
+
+           <div id="node-3261" class="node node-type-story node-promoted build-mode-full"><div class="node-inner">
+
+  
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Wed, 2011-09-28 02:30        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last"><a href="/taxonomy/term/14" rel="tag" title="">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <P> 
+ What a week! Lots of content and so precious little time, so we'll get right into it. First, some programming notes: SpringSource will be at  JavaOne. If you're there, then be sure to  visit the SpringSource booth in the exhibitors hall and say hi and meet-'n-greet with engineers from SpringSource, yours truly included. Likewise, there is a <EM>lot</EM> of fine content from the SpringSource team at <a href="http://www.springsource.org/node/3237">JavaOne</a> itself, so make sure to add them to your schedule! 
+ </P><P>Finally, what're you guys doing Thursday morning? Say around <a href="http://www.springsource.org/node/3230">10 AM PST</a> in North America, or <a href="http://www.springsource.org/node/3229">3 PM GMT</a> in Europe? Well, if you're not busy, let's have a social get together! Just you, me, Craig Walls, and several thousand of our closest friends.   Craig Walls is putting on a  webinar introducing <a href="http://www.springsource.org/spring-social">Spring Social.</a>  
+This webinar will introduce Spring Social essentials such as connecting to service providers and using Spring Social's API bindings. We'll also see how to add provider-based sign in and how to extend Spring Social's service provider support. RSVP ASAP!
+
+
+</P>
+<oL>
+	<LI> Gunnar Hillert, resident nice guy and integration expert, has put together a blog explaining how to 
+	<a href="http://blog.springsource.com/2011/09/22/rapid-cloud-foundry-deployments-with-maven/">use the new CloudFoundry Maven plugin to deploy applications</a> as part of the build.   
+		Um.. so what are you still reading this for? That's <EM>really</EM> cool, go check it out! We'll wait... 
+	</LI>
+	<LI> <a href="http://www.springsource.org/node/3268">SpringSource Tool Suite 2.8.0.M2</a> Released! The new release has lots of features, including Spring 3.1 support, c-namespace content-assist, quick-fix and validation, an update to the new <em>m2e</eM> plugin (which is the plugin formerly-known-as-Pri...sorry, wrong one, it's the plugin-formerly-known-as-m2eclipse), and much more. </LI> 	
+	<LI> <a href="http://www.springsource.org/node/3269"> Spring GemFire 1.1.0.M3 Released</a> The new release features improved support for indicies, as well as improved region creation. Check it out!</li>
+	<LI>This  <a href="http://www.springsource.org/node/3267">video</a> provides a live coding introduction to the Spring Data JPA project by Oliver Gierke. Spring JPA aims to significantly improve the implementation of data access layers by reducing the effort to the amount that's actually needed.  </a>  </li> 
+
+	<LI> This post explains <a href="http://nosql.mypopescu.com/post/10726525718/mongodb-type-safe-queries-with-querydsl-and-spring">how to create type-safe queries with MongoDB and QueryDSL</a>.</LI>
+
+	<LI> Steve Harris explains how to use <a href="http://scaleaholic.blogspot.com/2011/09/spring-performance-with-annotations-and.html">Ehcache Project's Spring annotations to handle declarative caching</a> with Ehcache. This is a nice post, complete with sample code.  NB:  these annotations refer to the Ehcache specific annotations, and <em>not</EM> to the <A href="http://blog.springsource.com/2011/02/23/spring-3-1-m1-caching/">generic Spring Cache abstraction</a> present in the imminent Spring 3.1 release. Good stuff, but going forward, you might consider using the more generic abstraction in Spring core. </LI>
+
+	<LI> Using Spring Social? Using Google+? Of course you are. And, so are many others. To fill the gap, the community's put together an initial integration at a Google+ API Spring Social API.
+ To learn more, check out this post on <a href="http://www.recompile.it/2011/09/spring-social-meets-google-apis.html">a project to provide Spring Social integration with Google's APIs</a>, starting with  Google+ and Google Contacts. </LI>
+	<LI> <a href="http://spring-roo.blogspot.com/2011/09/creating-jpa-entities-using-spring-roo.html">Ashish Sarin</a> has written a post on how to create JPA entities with Spring Roo. Nice post! Ashish, as you no doubt know, is the author of Packt publishing's <a href="http://www.amazon.com/gp/product/1849514585/"><EM>Spring Roo 1.1 Cookbook</EM></A>, which is an interesting read.  </LI>
+	<LI>Faithful readers of this roundup will no doubt know the name Gordon Dickens, who has come in this week with not one, but two posts on using Spring in the cloud this week.
+ <a href="http://gordondickens.com/wordpress/2011/09/23/rocket-to-the-cloud-fast-with-roo/">
+	The first post</a> introduces using <a href="http://www.springsource.org/roo">Spring Roo</a> with <a href="http://www.cloudfoundry.org">CloudFoundry</a>. Very cool! 
+	The second post talks about using Spring Roo with <a href="http://gordondickens.com/wordpress/2011/09/26/buzzing-the-cloud-with-cloudbees-and-roo/">CloudBees</a>, an alternative cloud. 
+	Spring (and the projects that build on it like Grails and Spring Roo) has always had a strong portability story, and this just exemplifies that feature. Now, if you want to take your application further, and want portability, then definitely consider CloudFoundry as your PaaS choice. Remember, <a href="http://eigwebhosting.com/linode/need-someone-to-transfer-my-heroku-site-to-lt_2790483N59e_Sep2011.html?utm_medium=twitter&utm_source=twitterfeed">portability matters</a>! 	
+  </li>  
+	<LI>  <a href="http://www.springsource.com/developer/sts">Using SpringSource Tool Suite? </a>
+	One of my favorite features are the template projects, which provide ready-to-use, pre-configured starter projects. To access them, you go to <b>File</B> &gt; <B>New</B> &gt; <b>Spring Template Project</b>, and then choose one. There are lots to choose from - Spring Batch Admin, Spring MVC, etc. 
+	However, one of the most popular is sure to be the Spring MVC template, which comes with a ready-to-use Maven <CODE>pom.xml</CODE> that is, well, perhaps a bit overloaded! 
+ <a href="http://java.dzone.com/articles/dissecting-springs-mvc-project">This blog post</a> disects that template's <code>pom.xml</code>, providing guidance for developers who want to know which parts of the <code>pom.xml</code>	 are optional, and what they do. Good stuff! And, I think some of the feedback can be incorporated into the templates in future iterations of STS ;-)
+ </LI>
+	<LI> <a href ="http://java.dzone.com/articles/aop-and-aspectj-terminology">This post introduces AOP and AspectJ terminology</a> which can be very useful if you're looking to Spring's AOP support for the first time. Good stuff! </LI>
+	<LI> This post, <a href="http://java.dzone.com/articles/getting-started-spring-0">Getting started with Spring Integration v2 and Enterprise Integration Patterns - A Simple Example using File and Mail Adapters</a> explains... well... how to get started with Spring Integration, version 2.0, using the file and mail adapters. Nice work!
+	 </LI>
+
+
+
+	<LI> Ashish is at it again this week, this time with a post on how to <a href="http://spring-roo.blogspot.com/2011/09/creating-your-first-java-project-using.html">setup a simple project using Spring Roo.</a> Good stuff, and always helpful for the stalwart Roo developer...  </LI>
+	<li><a href="http://www.dzone.com/links/r/swapping_out_spring_bean_configuration_at_runtime.html">Swapping Out Spring Bean Configuration at Runtime</a> </LI>
+	<LI> <a href="http://www.giantflyingsaucer.com/blog/?p=3113">This admittedly very introductory post</a> explains how to use Netbeans 7, Maven and the Spring Framework.</LI>
+
+ 
+</oL>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+
+
+        
+        </div>
+        </td>
+
+        <td width="60px">&nbsp;</td>
+        <td width="320px" valign="top" align="left">
+
+        <div align="right" style="margin-top:35px;margin-bottom:47px;">
+         <p>
+			<a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
 <script type="text/javascript">
 var a2a_config = a2a_config || {};
 a2a_config.color_main = "e5e6e6";
@@ -233,160 +302,18 @@ var a2a_config = a2a_config || {};
 a2a_config.onclick = 1;
 </script>
 <script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
-</td>
-</tr>
-</table>
-	  <p>
-	  	  </p>
+         </p>
+        </div>
 
-           
-<!-- Begin Google Code for Lead Conversion Page -->
-<script type="text/javascript">
-<!--
-var google_conversion_id = 1071228626;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "lead";
-var google_conversion_value = 0;
-//-->
-</script>
-<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1071228626/?label=lead&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-<!-- End Google Code for Lead Conversion Page -->
-
-<script>
-$(document).ready(function() {
-    $('#accProjects').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accProject',
-        clearStyle: false
-    }); 
-
-    $('#accBundlesSpringShell').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accBundle',
-        clearStyle: false
-    });
-
-    $('#accBundlesSpringShellMore').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accBundleMore',
-        clearStyle: false
-    });
-});
-</script>
-<ul id="accProjects" class="ui-accordion-container">
-
-    <li>
-        <a class="ui-accordion-link accProject">Spring Shell</a>
-        <div>
-            <ul class="ui-accordion-container" id="accBundlesSpringShell">
-
-                    <li>
-                        <a class="ui-accordion-link accBundle releaseStyle">Latest GA release: 1.0.0.RELEASE</a>
-                        <div>
-                        <table>
-                        
-    
-                            <tr>
-                            <td class="accFile"><a href="http://repo.springsource.org/libs-release-local/org/springframework/shell/spring-shell/1.0.0.RELEASE/spring-shell-1.0.0.RELEASE-dist.zip">spring-shell-1.0.0.RELEASE-dist.zip</a></td>
-                            <td class="accFile"><a href="http://repo.springsource.org/libs-release-local/org/springframework/shell/spring-shell/1.0.0.RELEASE/spring-shell-1.0.0.RELEASE-dist.zip.sha1">(sha1)</a></td>
-                            
-                            <td>1.6 MB</td>
-                            </tr>
-    
-                            </table>
-                            </div>
-                        </li>
-    
-                        <li>
-                            <a class="ui-accordion-link accBundle">More &gt;&gt;</a>
-                            <div>
-                            <ul class="ui-accordion-container" id="accBundlesSpringShellMore">
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.RC1</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.RC1/spring-shell-1.0.0.RC1-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.RC1-dist.zip'});">spring-shell-1.0.0.RC1-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.RC1/spring-shell-1.0.0.RC1-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>1.6 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.M2</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M2/spring-shell-1.0.0.M2-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.M2-dist.zip'});">spring-shell-1.0.0.M2-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M2/spring-shell-1.0.0.M2-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>2.0 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.M1</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M1/spring-shell-1.0.0.M1-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.M1-dist.zip'});">spring-shell-1.0.0.M1-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M1/spring-shell-1.0.0.M1-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>2.0 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                        </ul>
-                        </div>
-                </li>
-
-            </ul>
-            </div>
-    </li>
-
-</ul>
-
-
-            </div>
-    </div>
-        </td>
-
-        <td width="50px">&nbsp;</td>
-        <td width="310px" valign="top" align="left">
 
         <div class="region region-content-right">
-  <div id="block-block-19" class="block block-block first region-odd odd region-count-1 count-3"><div class="block-inner">
+  <div id="block-block-54" class="block block-block first region-odd odd region-count-1 count-3"><div class="block-inner">
 
       <h2 class="title">Newsletter Subscription</h2>
   
   <div class="content">
     <div style="background-color:#fff;padding:10px;">
-<p style="margin-left:3px;">Our monthly newsletter is packed full of techniques, tutorials, tips and tricks to get you on your way to Spring nirvana. <a href="/news-events/newsletters">View Archive</a></p>
+<p style="margin-left:3px;">Our monthly newsletter is packed full of techniques, tutorials, tips and tricks to get you on your way to Spring nirvana. <a href="/news-events/newsletters">View Archive</a> </p>
 
 <form enctype="multipart/form-data" name="StandardForm" method="post" action="http://now.eloqua.com/e/f2.aspx">
     <input type="hidden" value="StandardForm" name="elqFormName" /> <input type="hidden" value="524" name="elqSiteID" /> <input type="hidden" value="" name="elqCustomerGUID" /> <input type="hidden" value="0" name="elqCookieWrite" />
@@ -420,15 +347,12 @@ function initPage(){
 </tr>
 </table>
 </form>
-</div>
-<br>
-  </div>
+</div>  </div>
 
   
 </div></div> <!-- /block-inner, /block -->
-<div id="block-block-18" class="block block-block region-even even region-count-2 count-4"><div class="block-inner">
+<div id="block-block-53" class="block block-block last region-even even region-count-2 count-4"><div class="block-inner">
 
-      <h2 class="title">Upcoming Events</h2>
   
   <div class="content">
     <!--<a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu" target="_blank"><img src="http://blog.springsource.org/wp-content/themes/spring11/files/PROMO_SpringSourceU_320x118.png"></a>-->
@@ -436,72 +360,15 @@ function initPage(){
 
   
 </div></div> <!-- /block-inner, /block -->
-<div id="block-event-1" class="block block-event region-odd odd region-count-3 count-5"><div class="block-inner">
-
-  
-  <div class="content">
-    <div class="item-list"><ul><li class="first last">No upcoming events available</li>
-</ul></div><div class="ical-link"><a href="http://www.springsource.org/event/ical" title="Add this calendar to your iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Add to iCalendar" /></a></div><div class="more-link"><a href="/event" title="More events.">more</a></div>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-block-60" class="block block-block region-even even region-count-4 count-6"><div class="block-inner">
-
-      <h2 class="title">Upcoming Training</h2>
-  
-  <div class="content">
-    <script>
-var now = new Date().getTime();
-document.write(unescape("%3Cscript src='http://dserv.springsource.org/spring_mylearn_banner?wh=wwworg&ies="+now+"' type='text/javascript'%3E%3C/script%3E"));
-</script>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-block-3" class="block block-block last region-odd odd region-count-5 count-7"><div class="block-inner">
-
-  
-  <div class="content">
-    <p><strong><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17750">Core Spring Framework</a></strong></p><p>04/15 - 04/18:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158750">Bangalore</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=173542">Live Online</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=174009">San Francisco</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=171408">London</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166673">Edison </a><br/>04/23 - 04/26:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=163743">Zürich</a><br/></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17834"><strong>Rich Web Applications with Spring</strong></a></p><p></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17833"><strong>Enterprise Integration with Spring</strong></a></p><p>04/16 - 04/19:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=172348">Wien</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158752">Bangalore</a><br/>04/30 - 05/03:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166871">Washington DC</a><br/>
-<p><strong>Plus:</strong> 
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18355"><strong>Hibernate with Spring</strong></a>, 
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18339"><strong>Core Spring.NET</strong></a>,
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18353"><strong>Groovy & Grails</strong></a></p>
-<p> <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu">and more...</a></p>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
 </div><!-- /.region -->
-      <!--[If IE 7]><br><![endif]-->
-      <div style="margin-top:-40px;">
-      <div align="right">
 
-	  <p style="line-height:26px;">&nbsp;</p>
-	  <p>
 
-      </p>
-      </div>
 
-	              
-      
-       
-        
-        
-        
-        </div>
+</div>
         </td>
 
         </tr>
         </table>
-
 
         
       </div></div><!-- /.section, /#content -->

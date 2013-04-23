@@ -3,7 +3,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Community Downloads | SpringSource.org</title>
+  <title>Spring Web Flow 1st preview release is out | SpringSource.org</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
   <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
@@ -22,8 +22,7 @@
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/spring_siii_downloads/css/spring_siii_downloads.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/comment/comment.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
@@ -55,8 +54,6 @@
 <script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
 <script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
 <script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
-<script type="text/javascript" src="/sites/all/modules/custom/spring_siii_downloads/js/jquery.dimensions.js?1366755454"></script>
-<script type="text/javascript" src="/sites/all/modules/custom/spring_siii_downloads/js/jquery.accordion.js?1366755454"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
@@ -66,10 +63,10 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
 //--><!]]>
 </script>
 </head>
-<body class="page not-front not-logged-in page-spring-siii-downloads no-sidebars page-download-community section-download">
+<body class="page not-front not-logged-in node-type-story no-sidebars page-node-16 section-node page-panels">
+
 
 	  
-
 
 <!--begin custom navigation-->
       	  
@@ -206,23 +203,134 @@ box-shadow: 0 0 15px #333;">
 	  
                         
 
-       <table width="100%" >
-       <tr>
-     <td width="100%" valign="top" align="left">
-       <div style="width:100%">
-       
- <div id="content-area">
+       <table width="100%" style="margin-top:-10px;">
+        <tr>
+         <td width="600px" valign="top" align="left">
+          <div style="width:600px;margin-top:5px;">
+          <a href="http://blog.springsource.com">Visit our blog</a>
+          <h1 class="title" style="margin-top:5px;margin-bottom:50px;" id="main-page-title">News & Events</h1>
+          <h2>Spring Web Flow 1st preview release is out</h2>
 
-	<div style="margin-top:-20px;">
-	<!--[If IE 7]><br><![endif]-->
 
-<table>
-<tr>
-<td width="95%">
-	  <h1 class="title" id="page-title">Community Downloads</h1>
-</td>
-<td align="right">
-      <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+          
+          <div id="content-area">
+
+
+           <div id="node-16" class="node node-type-story node-promoted build-mode-full"><div class="node-inner">
+
+  
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Colin Sampaleanu on Wed, 2005-03-30 08:00        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    We are pleased to
+announce a preview release of Spring Web Flow for use with the Spring
+1.2 release path.&nbsp; With this release, we consider the web flow
+system fit for development use. <br />
+
+            <br />
+Contained in this release are new features we expect to take web
+applications with demanding page flow requirements to the next
+level.&nbsp; These include: <br />
+            <ul><li>The ability to capture the logical
+page flows of
+your application as self-contained modules reusable in multiple
+situations. </li><li>The ability to nest flows 'n' levels
+deep (as
+subflows), where each flow is a &quot;black-box&quot; adhering to a well-defined
+contract for input/output. </li><li>The ability to express page flows
+declaratively,
+with a pluggable flow definition format (currently Java-based and
+XML-based builder formats are provided.) </li><li>The ability to affect the path
+through a flow in a
+dynamic fashion by reasoning on contextual data in any supported scope.
+              </li><li>The ability to track and respond to
+the lifecycle
+of a page flow. </li><li>Automatic state management with the
+ability to
+store model data in several scopes (event, request, flow) </li><li>The ability to centralize related
+action logic
+associated with a flow in one class. </li><li>Support for application transaction
+synchronization, using a token-based mechanism. </li><li>No hard-wired dependency on HTTP
+servlet
+request/response or any request URL, for use in other environments like
+Portlets, JSF, and Tapestry.
+- An expired flow detector, for automatic cleanup of abandoned flows. </li><li>Out of the box helper actions for
+form data binding
+and validation. </li><li>Out of the box Struts 1.x
+integration (sample
+forthcoming.) </li><li>Out of the box Spring MVC
+integration. </li><li>Designed for extensibility, with
+well-documented
+plug-in points for customization (custom state types, custom flow
+builders, etc.)
+&nbsp; </li></ul>
+            <br />
+And as always, with the Spring seal of quality you?ve come to expect,
+we offer: <br />
+            <ul><li>Quality documentation, both in the javadocs and
+forthcoming reference docs</li><li>Strong test coverage</li><li>Careful attention to naming, packaging, and ease of use</li><li>Exceptional error reporting</li><li>A feature set driven by end user
+needs
+&nbsp; </li></ul>
+            <br />
+To download the preview release:
+&nbsp; <br />
+            <ol><li>Access the springframework project file <a href="http://sourceforge.net/project/showfiles.php?group_id=73357">list</a>
+              </li><li>Scroll down to the 'spring-webflow' release package
+and select 'spring-webflow-preview1.zip' for download.
+&nbsp; </li></ol>
+The release archive consists of two jars: <br />
+            <ol><li>spring-webflow.jar - the core web flow system
+(org.springframework.web.flow.*) </li><li>spring-webflow-support.jar - supporting packages not
+yet released as
+part of the core Spring framework.
+&nbsp; </li></ol>
+As the release archive does not ship with the Spring Framework, please
+download Spring 1.2 RC1 first if you have not done so already.
+&nbsp; <br />
+            <br />
+Once downloaded, visit the <a href="http://opensource.atlassian.com/confluence/spring/display/WEBFLOW/Home">webflow
+space</a> to review the module documentation and &quot;Quick Start.&quot;
+&nbsp; <br />
+            <br />
+To get a good feel for Spring Web Flow in action, checkout the samples
+in the release archive within the samples/webflow directory.&nbsp; See
+the samples/webflow/readme.txt file on how to build and deploy the
+sample applications.
+&nbsp;
+We very much value your feedback, and hope you enjoy using Spring Web
+Flow as much as we have enjoyed bringing it to you.
+&nbsp; <br />
+            <br />
+Cheers,
+&nbsp; <br />
+            <br />
+Keith Donald <br />
+Erwin Vervaet   </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+
+
+        
+        </div>
+        </td>
+
+        <td width="60px">&nbsp;</td>
+        <td width="320px" valign="top" align="left">
+
+        <div align="right" style="margin-top:35px;margin-bottom:47px;">
+         <p>
+			<a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
 <script type="text/javascript">
 var a2a_config = a2a_config || {};
 a2a_config.color_main = "e5e6e6";
@@ -233,160 +341,18 @@ var a2a_config = a2a_config || {};
 a2a_config.onclick = 1;
 </script>
 <script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
-</td>
-</tr>
-</table>
-	  <p>
-	  	  </p>
+         </p>
+        </div>
 
-           
-<!-- Begin Google Code for Lead Conversion Page -->
-<script type="text/javascript">
-<!--
-var google_conversion_id = 1071228626;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "lead";
-var google_conversion_value = 0;
-//-->
-</script>
-<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1071228626/?label=lead&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-<!-- End Google Code for Lead Conversion Page -->
-
-<script>
-$(document).ready(function() {
-    $('#accProjects').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accProject',
-        clearStyle: false
-    }); 
-
-    $('#accBundlesSpringShell').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accBundle',
-        clearStyle: false
-    });
-
-    $('#accBundlesSpringShellMore').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accBundleMore',
-        clearStyle: false
-    });
-});
-</script>
-<ul id="accProjects" class="ui-accordion-container">
-
-    <li>
-        <a class="ui-accordion-link accProject">Spring Shell</a>
-        <div>
-            <ul class="ui-accordion-container" id="accBundlesSpringShell">
-
-                    <li>
-                        <a class="ui-accordion-link accBundle releaseStyle">Latest GA release: 1.0.0.RELEASE</a>
-                        <div>
-                        <table>
-                        
-    
-                            <tr>
-                            <td class="accFile"><a href="http://repo.springsource.org/libs-release-local/org/springframework/shell/spring-shell/1.0.0.RELEASE/spring-shell-1.0.0.RELEASE-dist.zip">spring-shell-1.0.0.RELEASE-dist.zip</a></td>
-                            <td class="accFile"><a href="http://repo.springsource.org/libs-release-local/org/springframework/shell/spring-shell/1.0.0.RELEASE/spring-shell-1.0.0.RELEASE-dist.zip.sha1">(sha1)</a></td>
-                            
-                            <td>1.6 MB</td>
-                            </tr>
-    
-                            </table>
-                            </div>
-                        </li>
-    
-                        <li>
-                            <a class="ui-accordion-link accBundle">More &gt;&gt;</a>
-                            <div>
-                            <ul class="ui-accordion-container" id="accBundlesSpringShellMore">
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.RC1</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.RC1/spring-shell-1.0.0.RC1-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.RC1-dist.zip'});">spring-shell-1.0.0.RC1-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.RC1/spring-shell-1.0.0.RC1-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>1.6 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.M2</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M2/spring-shell-1.0.0.M2-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.M2-dist.zip'});">spring-shell-1.0.0.M2-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M2/spring-shell-1.0.0.M2-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>2.0 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.M1</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M1/spring-shell-1.0.0.M1-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.M1-dist.zip'});">spring-shell-1.0.0.M1-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M1/spring-shell-1.0.0.M1-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>2.0 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                        </ul>
-                        </div>
-                </li>
-
-            </ul>
-            </div>
-    </li>
-
-</ul>
-
-
-            </div>
-    </div>
-        </td>
-
-        <td width="50px">&nbsp;</td>
-        <td width="310px" valign="top" align="left">
 
         <div class="region region-content-right">
-  <div id="block-block-19" class="block block-block first region-odd odd region-count-1 count-3"><div class="block-inner">
+  <div id="block-block-54" class="block block-block first region-odd odd region-count-1 count-3"><div class="block-inner">
 
       <h2 class="title">Newsletter Subscription</h2>
   
   <div class="content">
     <div style="background-color:#fff;padding:10px;">
-<p style="margin-left:3px;">Our monthly newsletter is packed full of techniques, tutorials, tips and tricks to get you on your way to Spring nirvana. <a href="/news-events/newsletters">View Archive</a></p>
+<p style="margin-left:3px;">Our monthly newsletter is packed full of techniques, tutorials, tips and tricks to get you on your way to Spring nirvana. <a href="/news-events/newsletters">View Archive</a> </p>
 
 <form enctype="multipart/form-data" name="StandardForm" method="post" action="http://now.eloqua.com/e/f2.aspx">
     <input type="hidden" value="StandardForm" name="elqFormName" /> <input type="hidden" value="524" name="elqSiteID" /> <input type="hidden" value="" name="elqCustomerGUID" /> <input type="hidden" value="0" name="elqCookieWrite" />
@@ -420,15 +386,12 @@ function initPage(){
 </tr>
 </table>
 </form>
-</div>
-<br>
-  </div>
+</div>  </div>
 
   
 </div></div> <!-- /block-inner, /block -->
-<div id="block-block-18" class="block block-block region-even even region-count-2 count-4"><div class="block-inner">
+<div id="block-block-53" class="block block-block last region-even even region-count-2 count-4"><div class="block-inner">
 
-      <h2 class="title">Upcoming Events</h2>
   
   <div class="content">
     <!--<a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu" target="_blank"><img src="http://blog.springsource.org/wp-content/themes/spring11/files/PROMO_SpringSourceU_320x118.png"></a>-->
@@ -436,72 +399,15 @@ function initPage(){
 
   
 </div></div> <!-- /block-inner, /block -->
-<div id="block-event-1" class="block block-event region-odd odd region-count-3 count-5"><div class="block-inner">
-
-  
-  <div class="content">
-    <div class="item-list"><ul><li class="first last">No upcoming events available</li>
-</ul></div><div class="ical-link"><a href="http://www.springsource.org/event/ical" title="Add this calendar to your iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Add to iCalendar" /></a></div><div class="more-link"><a href="/event" title="More events.">more</a></div>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-block-60" class="block block-block region-even even region-count-4 count-6"><div class="block-inner">
-
-      <h2 class="title">Upcoming Training</h2>
-  
-  <div class="content">
-    <script>
-var now = new Date().getTime();
-document.write(unescape("%3Cscript src='http://dserv.springsource.org/spring_mylearn_banner?wh=wwworg&ies="+now+"' type='text/javascript'%3E%3C/script%3E"));
-</script>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-block-3" class="block block-block last region-odd odd region-count-5 count-7"><div class="block-inner">
-
-  
-  <div class="content">
-    <p><strong><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17750">Core Spring Framework</a></strong></p><p>04/15 - 04/18:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158750">Bangalore</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=173542">Live Online</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=174009">San Francisco</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=171408">London</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166673">Edison </a><br/>04/23 - 04/26:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=163743">Zürich</a><br/></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17834"><strong>Rich Web Applications with Spring</strong></a></p><p></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17833"><strong>Enterprise Integration with Spring</strong></a></p><p>04/16 - 04/19:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=172348">Wien</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158752">Bangalore</a><br/>04/30 - 05/03:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166871">Washington DC</a><br/>
-<p><strong>Plus:</strong> 
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18355"><strong>Hibernate with Spring</strong></a>, 
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18339"><strong>Core Spring.NET</strong></a>,
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18353"><strong>Groovy & Grails</strong></a></p>
-<p> <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu">and more...</a></p>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
 </div><!-- /.region -->
-      <!--[If IE 7]><br><![endif]-->
-      <div style="margin-top:-40px;">
-      <div align="right">
 
-	  <p style="line-height:26px;">&nbsp;</p>
-	  <p>
 
-      </p>
-      </div>
 
-	              
-      
-       
-        
-        
-        
-        </div>
+</div>
         </td>
 
         </tr>
         </table>
-
 
         
       </div></div><!-- /.section, /#content -->

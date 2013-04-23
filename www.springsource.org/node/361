@@ -3,7 +3,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Community Downloads | SpringSource.org</title>
+  <title>How to create a Spring-DM bundle project using Maven (and Eclipse...) | SpringSource.org</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
   <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
@@ -22,8 +22,7 @@
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/spring_siii_downloads/css/spring_siii_downloads.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/comment/comment.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
@@ -55,8 +54,6 @@
 <script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
 <script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
 <script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
-<script type="text/javascript" src="/sites/all/modules/custom/spring_siii_downloads/js/jquery.dimensions.js?1366755454"></script>
-<script type="text/javascript" src="/sites/all/modules/custom/spring_siii_downloads/js/jquery.accordion.js?1366755454"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
@@ -66,7 +63,7 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
 //--><!]]>
 </script>
 </head>
-<body class="page not-front not-logged-in page-spring-siii-downloads no-sidebars page-download-community section-download">
+<body class="page not-front not-logged-in node-type-book no-sidebars page-node-361 section-node page-panels">
 
 	  
 
@@ -219,7 +216,7 @@ box-shadow: 0 0 15px #333;">
 <table>
 <tr>
 <td width="95%">
-	  <h1 class="title" id="page-title">Community Downloads</h1>
+	  <h1 class="title" id="page-title">How to create a Spring-DM bundle project using Maven (and Eclipse...)</h1>
 </td>
 <td align="right">
       <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
@@ -239,137 +236,349 @@ a2a_config.onclick = 1;
 	  <p>
 	  	  </p>
 
-           
-<!-- Begin Google Code for Lead Conversion Page -->
-<script type="text/javascript">
-<!--
-var google_conversion_id = 1071228626;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "lead";
-var google_conversion_value = 0;
-//-->
-</script>
-<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1071228626/?label=lead&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-<!-- End Google Code for Lead Conversion Page -->
+           <div id="node-361" class="node node-type-book build-mode-full"><div class="node-inner">
 
-<script>
-$(document).ready(function() {
-    $('#accProjects').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accProject',
-        clearStyle: false
-    }); 
-
-    $('#accBundlesSpringShell').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accBundle',
-        clearStyle: false
-    });
-
-    $('#accBundlesSpringShellMore').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accBundleMore',
-        clearStyle: false
-    });
-});
-</script>
-<ul id="accProjects" class="ui-accordion-container">
-
-    <li>
-        <a class="ui-accordion-link accProject">Spring Shell</a>
-        <div>
-            <ul class="ui-accordion-container" id="accBundlesSpringShell">
-
-                    <li>
-                        <a class="ui-accordion-link accBundle releaseStyle">Latest GA release: 1.0.0.RELEASE</a>
-                        <div>
-                        <table>
-                        
-    
-                            <tr>
-                            <td class="accFile"><a href="http://repo.springsource.org/libs-release-local/org/springframework/shell/spring-shell/1.0.0.RELEASE/spring-shell-1.0.0.RELEASE-dist.zip">spring-shell-1.0.0.RELEASE-dist.zip</a></td>
-                            <td class="accFile"><a href="http://repo.springsource.org/libs-release-local/org/springframework/shell/spring-shell/1.0.0.RELEASE/spring-shell-1.0.0.RELEASE-dist.zip.sha1">(sha1)</a></td>
-                            
-                            <td>1.6 MB</td>
-                            </tr>
-    
-                            </table>
-                            </div>
-                        </li>
-    
-                        <li>
-                            <a class="ui-accordion-link accBundle">More &gt;&gt;</a>
-                            <div>
-                            <ul class="ui-accordion-container" id="accBundlesSpringShellMore">
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.RC1</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.RC1/spring-shell-1.0.0.RC1-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.RC1-dist.zip'});">spring-shell-1.0.0.RC1-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.RC1/spring-shell-1.0.0.RC1-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>1.6 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.M2</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M2/spring-shell-1.0.0.M2-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.M2-dist.zip'});">spring-shell-1.0.0.M2-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M2/spring-shell-1.0.0.M2-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>2.0 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.M1</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M1/spring-shell-1.0.0.M1-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.M1-dist.zip'});">spring-shell-1.0.0.M1-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M1/spring-shell-1.0.0.M1-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>2.0 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                        </ul>
-                        </div>
-                </li>
-
-            </ul>
-            </div>
-    </li>
-
+  
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Oleg Zhurakousky on Fri, 2008-08-08 11:59        </div>
+      
+          </div>
+  
+  <div class="content">
+    <p>
+This quick guide will demonstrate how to set up Spring-DM project using Spring-DM Maven Archetype and configure it for Eclipse development. 
+</p>
+<p>
+The Spring-OSGi project supplies a maven archetype that will create a Spring bundle project for you all set up and ready to go. 
+</p>
+<pre>
+mvn archetype:create   -DarchetypeGroupId=org.springframework.osgi   
+-DarchetypeArtifactId=spring-osgi-bundle-archetype  
+-DarchetypeVersion=&lt;spring-dm version&gt;   
+-DgroupId=&lt;your-project-groupId&gt;  
+-DartifactId=&lt;your-project-artifactId&gt; 
+-Dversion=&lt;your-project-version&gt;
+</pre>
+<p>
+Example:
+</p>
+<p>
+To create a new project open a console and navigate to the directory where you want to create project and simply type the following:<br />
+</p>
+<pre>
+mvn archetype:create   -DarchetypeGroupId=org.springframework.osgi   
+-DarchetypeArtifactId=spring-osgi-bundle-archetype  
+-DarchetypeVersion=1.1.0   
+-DgroupId=org.foo  
+-DartifactId=org.foo.my-springdm-bundle 
+-Dversion=0.1
+</pre>
+<p>
+<i>Note: Make sure it is all typed as a single line. It's been formated here for readability. </i>
+</p>
+<p>
+The result of this is a directory <i>org.foo.my-springdm-bundle </i>which is a maven project that defines a public package <i>org.foo</i>, a private one <i>org.foo.internal</i> and two Spring configurations under <i>src/main/resources/META-INF/spring/bundle-context.xml</i> and <i>src/main/resources/META-INF/spring/bundle-context-osgi.xml</i>. The project is packaged as an OSGi bundle. The general rule: you define your interfaces in public package and implementations in private. 
+</p>
+This project does not contain MANIFEST.MF file in META-INF directory - to generate one, navigate into the project's root directory and invoke the following commands:
+<pre>
+mvn package
+</pre>
+<p>
+Now we'll use maven-bundle-plugin provided by Apache Felix (see more info <a href="http://felix.apache.org/site/maven-bundle-plugin-bnd.html" target="_blank">here</a>) which will generate MANIFEST.MF file inside of META-INF directory
+</p>
+<pre>
+mvn org.apache.felix:maven-bundle-plugin:manifest
+</pre>
+<p>
+You should now see the MANIFEST under META-INF folder.
+</p>
+<p>
+<i>Note: if you haven't already downloaded and installed the spring-osgi artifacts (by running 'mvn install' on the spring-osgi tree) you'll need to add an additional parameter to the above command: -DremoteRepositories=http://s3.amazonaws.com/maven.springframework.org/milestone. If this parameter does not work for you first time, see the additional instructions <a href="http://jira.codehaus.org/browse/TRAILS-2">here</a>.</i>
+</p>
+<p>
+<i>Second Note: Snapshots version are available from: </i><i>-DremoteRepositories=http://s3.amazonaws.com/maven.springframework.org/snapshot</i>
+</p>
+<p>
+Simply 'cd' into your newly created project directory and type 'mvn install' and you are good to go!
+</p>
+<h2>Generated Project features at-a-glance:</h2> 
+<ul>
+	<li>Packaged as an OSGi bundle</li>   
+	<li>META-INF/MANIFEST.MF automatically generated</li>
+	<li>src/main/java/&lt;package&gt; public package automatically exported</li>
+	<li>src/main/java/&lt;package&gt;/internal private  package</li>
+	<li>src/main/resources/META-INF/spring/bundle-context.xml is a spring configuration file that defines the simple bean.</li>   
+	<li>src/main/resources/META-INF/spring/bundle-context-osgi.xml is a spring configuration file ready for you to add bean definitions from the osgi namespace (services, references etc.).</li>   
+	<li>.project, .classpath, and build.properties files created to enable use of this project directly inside eclipse as a PDE plugin project</li> 
 </ul>
+<p>
+To see the latest instructions, please read <a href="http://static.springframework.org/osgi/docs/current/reference/html/appendix-archetype.html">this</a> section of the reference documentation.
+</p>
+<h2>Using the project inside of Eclipse</h2>
+<p>
+In order to use the project wihin inside of Eclipse IDE we need to perform two stepps:
+</p>
+<p>
+<i>1. Configure Workspace Build Path <br />
+2. Configure Eclipse artifacts (.project file etc.) so the project could be imported into the Workspace</i> 
+</p>
+<p>
+Our generated bundle project contains <i>.classpath</i> file which points to varios JARs relative to <i>M2_REPO</i> variable. This variable should point to the root of your Maven repository - <i>.m2/repository</i>.  
+</p>
+<p>
+So, we need to configure Eclipse's Build Path to recognize <i>M2_REPO</i> variable.  We can do it manually of course, but <a href="http://maven.apache.org/plugins/maven-eclipse-plugin/plugin-info.html" target="_blank">eclipse-maven-plugin</a> has a nifty command that will do it for use. 
+</p>
+<pre>
+mvn eclipse:configure-workspace -Declipse.workspace=&lt;path to the workspace&gt; 
+</pre>
+<p>
+Example: 
+</p>
+<pre>
+mvn eclipse:configure-workspace -Declipse.workspace=/Users/kermit/eclipse/workspaces/myspringdm_workspace 
+</pre>
+<p>
+Now we are ready to configure our newly created project as Eclipse project. We are going to be using the same maven-eclipse-plugin. <br />
+Navigate to the project's root directory and execute the following command:
+</p>
+<pre>
+mvn eclipse:eclipse
+</pre>
+<p>
+This will generate required Eclipse artifacts (i.e., .project etc.) inside of your project structure.<br />
+<br />
+Open up Eclipse and use &quot;<i>Import Existing project into the workspace</i>&quot; feature to import newly created Spring-DM project into the workspace.<br />
+That is all. 
+</p>
+<p>
+&nbsp;
+</p>
+<h2>Using the archetype from within Eclipse</h2>  
+<p>
+You can make it really easy to create a new Spring-OSGi bundle project from within eclipse by defining a new &quot;External Tools&quot; launch configuration. Open the &quot;External Tools&quot; configuration dialog, select the &quot;Program&quot; category and click &quot;new&quot;. Refer to Eclipse documentation for more info on How to configure external tools 
+</p>
+<p>
+The &quot;${string_prompt}&quot; entries cause Eclipse to pop up a dialog asking you for a value when you run tool. You can also change the working directory to be something other than the workspace location (or even a ${folder_prompt} prompt if you like). This is the directory in which your new project will be created.
+</p>
+<p>
+Now the creation of a new Spring-OSGi bundle project is as easy as click of a button
+</p>
+<p>
+<i>Note: the generated eclipse project depends on a number of the spring-osgi bundle projects that it expects to find installed in your workspace. See the instructions <a href="/node/360">here</a> for setting these additional projects up (one-time task).</i>
+</p>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+  <div id="comments">
+          <h2 id="comments-title">Comments</h2>
+        <a id="comment-3319"></a>
+<div class="comment first odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/361#comment-3319" class="active">More refinements..</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by Dave Syer on Sun, 2007-12-23 09:42.  </div>
+
+  <div class="content">
+    <p>I got the archetype by follwing the instructions here, but it wouldn't build out of the box.&nbsp; Eclipse was missing all the dependencies from .classpath.&nbsp; The easiest way to get them is to run Maven on the command line first, but that didn't work either - I had to uncomment the repositories section in the pom.xml.&nbsp; Why would that be disabled by default?&nbsp; I also had to do &quot;mvn eclipse:eclipse&quot; again after the build worked on the command line to get all the dependencies into the .classpath.<br /></p><p>That section of the pom contains some pretty dodgy looking stuff as well, including plugin snapshot repos and old spring repos that are not officially supported (should use the s3 repo now not the static.springframework one).&nbsp; Can't it be pared down to what is actually needed?</p><p>And can't we use Spring 2.5 instead of those old manually packaged 2.1 snapshots?</p><p>The comment above &quot;may need some hand-editing&quot; should read &quot;will need a lot of hand-editing&quot;.&nbsp; Surely this can be done by the archetype plugin?</p><p>The pom is also a bit strange - it doesn't have the group and artifact id that was specified on the command line.</p>      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-1259"></a>
+<div class="comment even"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/361#comment-1259" class="active">I finally got the solution</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by dearwolf on Tue, 2006-10-31 06:17.  </div>
+
+  <div class="content">
+    <p>I finally got the solution:</p>
+<p>mvn archetype:create<br />
+-DarchetypeGroupId=org.springframework.osgi<br />
+-DarchetypeArtifactId=spring-osgi-bundle-archetype<br />
+-DarchetypeVersion=1.0-SNAPSHOT<br />
+-DremoteRepositories= http://static.springframework.org/maven2-snapshots<br />
+-DgroupId=maventest<br />
+-DartifactId=maventest<br />
+-Dversion=1.0.0</p>
+<p>this command runs correctly on my computer</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-682"></a>
+<div class="comment odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/361#comment-682" class="active">A few minor corrections</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by Craig Walls on Fri, 2006-10-20 22:04.  </div>
+
+  <div class="content">
+    <p>Just noticed a few more things of note with regard to this OSGi archetype...</p>
+<p>First, the "-DarchetypeId" parameter (next to the last one in Adrian's original post) should be "-DartifactId". </p>
+<p>Also, I said that once you run the archetype with the "-DremoteRepository" the first time you won't have to use it again. That's not exactly true...because it's a SNAPSHOT version, you'll need to use the "-DremoteRepository" parameter once every day (or maybe change your Maven configuration's SNAPSHOT policy).</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<div class="indented"><a id="comment-1236"></a>
+<div class="comment even"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/361#comment-1236" class="active">corrections summary</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by welo on Sun, 2006-10-29 15:18.  </div>
+
+  <div class="content">
+    <p>For me the remote repository parameter only worked after updating the archetype plugin as pointed out by delasoul in another post (see http://jira.codehaus.org/browse/TRAILS-2). </p>
+<p>Furthermore, the correct parameter name seems to be '-DremoteRepositor<strong>ies</strong>=' instead of '-DremoteRepository='.</p>
+<p>This basically means to first run</p>
+<p><code><br />
+mvn -U archetype:create<br />
+</code></p>
+<p>and then<br />
+<code><br />
+mvn archetype:create<br />
+  -DarchetypeGroupId=org.springframework.osgi<br />
+  -DarchetypeArtifactId=spring-osgi-bundle-archetype<br />
+  -DremoteRepositories=http://static.springframework.org/maven2-snapshots<br />
+  -DarchetypeVersion=1.0-SNAPSHOT<br />
+  -DgroupId=&lt;your-project-groupId&gt;<br />
+  -DartifactId=&lt;your-project-artifactId&gt;<br />
+</code></p>
+<p>it might also work to combine these two statements by simply adding the -U option to the full archetype:create command, though I did not verify this.</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+</div><a id="comment-658"></a>
+<div class="comment odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/361#comment-658" class="active">Need to specify plugin repository</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by Craig Walls on Fri, 2006-10-20 10:55.  </div>
+
+  <div class="content">
+    <p>This is wonderful (I'm a huge fan of Maven archetypes), but fails to mention that you need to specify the remote plugin repository the very first time you run it:</p>
+<p>mvn archetype:create ... -DremoteRepository=http://static.springframework.org/maven2-snapshots</p>
+<p>(Fill in the ellipses with all of the stuff in Adrian's original post.)</p>
+<p>This tells Maven where to download the archetype plugin from. (You *should* be able to specify the remote repository in settings.xml, but that isn't working in the latest release of Maven. See http://jira.codehaus.org/browse/ARCHETYPE-1.)</p>
+<p>Once you've used the archetype, the plugin will be placed in your local Maven repository and you won't need to specify the remote repository again.</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<div class="indented"><a id="comment-1020"></a>
+<div class="comment even"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/361#comment-1020" class="active">remoteRepository doesn&#039;t work for MAVEN 2.0.4</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by kelmo on Mon, 2006-10-23 06:04.  </div>
+
+  <div class="content">
+    <p>I tried to follow your tips and wasn't been able to achieved the installation of the plugins with the -DremoteRepository (also tried repositories in settings.xml)<br />
+So I've install "by hand" (using install:install-file<br />
+). Once I've installed spring-osgi-bundle-archetype and import the project into my Eclipse workspace, I had to install (to avoid eclipse classpath errors) also:<br />
+- commons-logging.osgi<br />
+- spring-beans<br />
+- spring-context<br />
+- spring-core (in the repository it appears with a bomb ico!!! What does it mean?)<br />
+- spring-mock</p>
+<p>Now the Eclipse project is OK</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<div class="indented"><a id="comment-1095"></a>
+<div class="comment odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/361#comment-1095" class="active">to get  -DremoteRepositories</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by delasoul on Wed, 2006-10-25 07:45.  </div>
+
+  <div class="content">
+    <p>to get  -DremoteRepositories working see<br />
+http://jira.codehaus.org/browse/TRAILS-2<br />
+You have to update your archetype create first before it uses this param,</p>
+<p>hth,</p>
+<p>Michael</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<div class="indented"><a id="comment-1257"></a>
+<div class="comment last even"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/361#comment-1257" class="active">Thanks for the feedback</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by Adrian Colyer on Tue, 2006-10-31 05:35.  </div>
+
+  <div class="content">
+    <p>Thanks everyone for the feedback and comments on these instructions. I've folded them into the main body of the text.</p>
+<p>-- Adrian</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+</div></div></div>  </div>
 
 
             </div>
@@ -379,108 +588,7 @@ $(document).ready(function() {
         <td width="50px">&nbsp;</td>
         <td width="310px" valign="top" align="left">
 
-        <div class="region region-content-right">
-  <div id="block-block-19" class="block block-block first region-odd odd region-count-1 count-3"><div class="block-inner">
-
-      <h2 class="title">Newsletter Subscription</h2>
-  
-  <div class="content">
-    <div style="background-color:#fff;padding:10px;">
-<p style="margin-left:3px;">Our monthly newsletter is packed full of techniques, tutorials, tips and tricks to get you on your way to Spring nirvana. <a href="/news-events/newsletters">View Archive</a></p>
-
-<form enctype="multipart/form-data" name="StandardForm" method="post" action="http://now.eloqua.com/e/f2.aspx">
-    <input type="hidden" value="StandardForm" name="elqFormName" /> <input type="hidden" value="524" name="elqSiteID" /> <input type="hidden" value="" name="elqCustomerGUID" /> <input type="hidden" value="0" name="elqCookieWrite" />
-
-<table>
-<tr>
-<td>
-<input type="text" class="form-text" size="18" id="edit-submitted-first-name" name="first_name" maxlength="128" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" value="First Name" class="form-text" onblur="this.value = this.value || 'First Name'; this.style.color = '#ccc';" onfocus="if(this.value=='First Name') {this.value='';} this.style.color = '#ccc';" />
-</td>
-<td>
-<input type="text" class="form-text" size="20" id="edit-submitted-last-name" name="last_name" maxlength="128"  value="Last Name" class="form-text" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" onblur="this.value = this.value || 'Last Name'; this.style.color = '#ccc';" onfocus="if(this.value=='Last Name') {this.value='';} this.style.color = '#ccc';" />
-</td>
-</tr>
-</table>
-<table style="margin-top:-13px;">
-<tr>
-<td valign="top">
-<input type="text" class="form-text" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" size="30" id="edit-submitted-email" name="email" maxlength="128" value="Email" class="form-text" onblur="this.value = this.value || 'Email'; this.style.color = '#ccc';" onfocus="if(this.value=='Email') {this.value='';} this.style.color = '#ccc';" />
-</td>
-<td valign="bottom">
-    <input type="hidden" value="http://www.springsource.com/newsevents/newsletter-registration-thank-you" name="redirect" />
-<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='/elqNow/elqScr.js'></script>  <SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript'><!--//
-window.onload = initPage;
-function initPage(){
-    if (this.GetElqCustomerGUID)
-        document.forms["StandardForm"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
-}
-//--></script>
-    <input type="hidden" value="StandardForm" id="edit-submitted-elqformname" name="submitted[elqformname]" />  <input type="hidden" value="524" id="edit-submitted-elqsiteid" name="submitted[elqsiteid]" />  <input type="hidden" value="" id="edit-submitted-elqcustomerguid" name="submitted[elqcustomerguid]" />  <input type="hidden" value="0" id="edit-submitted-elqcookiewrite" name="submitted[elqcookiewrite]" />  <input type="hidden" value="default" id="edit-details-email-subject" name="details[email_subject]" />  <input type="hidden" value="default" id="edit-details-email-from-name" name="details[email_from_name]" />  <input type="hidden" value="default" id="edit-details-email-from-address" name="details[email_from_address]" />  <input type="hidden" value="form-30d82aaa8598120208cca2aa409c85df" id="form-30d82aaa8598120208cca2aa409c85df" name="form_build_id" />  <input type="hidden" value="webform_client_form_3706" id="edit-webform-client-form-3706" name="form_id" />  <input type="image" src="http://www.springsource.org/sites/all/themes/s2org11/images/button_newsevents_subscribe_gray.png"  class="form-submit" value="" id="edit-submit" border="0" name="op" />
-</td>
-</tr>
-</table>
-</form>
-</div>
-<br>
-  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-block-18" class="block block-block region-even even region-count-2 count-4"><div class="block-inner">
-
-      <h2 class="title">Upcoming Events</h2>
-  
-  <div class="content">
-    <!--<a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu" target="_blank"><img src="http://blog.springsource.org/wp-content/themes/spring11/files/PROMO_SpringSourceU_320x118.png"></a>-->
-<a href="http://www.springone2gx.com/conference/santa_clara/2013/09/register" target="_blank"><img src="/files/SpringOne/2013/springone-badge-2013.png"></a>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-event-1" class="block block-event region-odd odd region-count-3 count-5"><div class="block-inner">
-
-  
-  <div class="content">
-    <div class="item-list"><ul><li class="first last">No upcoming events available</li>
-</ul></div><div class="ical-link"><a href="http://www.springsource.org/event/ical" title="Add this calendar to your iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Add to iCalendar" /></a></div><div class="more-link"><a href="/event" title="More events.">more</a></div>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-block-60" class="block block-block region-even even region-count-4 count-6"><div class="block-inner">
-
-      <h2 class="title">Upcoming Training</h2>
-  
-  <div class="content">
-    <script>
-var now = new Date().getTime();
-document.write(unescape("%3Cscript src='http://dserv.springsource.org/spring_mylearn_banner?wh=wwworg&ies="+now+"' type='text/javascript'%3E%3C/script%3E"));
-</script>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-block-3" class="block block-block last region-odd odd region-count-5 count-7"><div class="block-inner">
-
-  
-  <div class="content">
-    <p><strong><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17750">Core Spring Framework</a></strong></p><p>04/15 - 04/18:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158750">Bangalore</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=173542">Live Online</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=174009">San Francisco</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=171408">London</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166673">Edison </a><br/>04/23 - 04/26:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=163743">Zürich</a><br/></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17834"><strong>Rich Web Applications with Spring</strong></a></p><p></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17833"><strong>Enterprise Integration with Spring</strong></a></p><p>04/16 - 04/19:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=172348">Wien</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158752">Bangalore</a><br/>04/30 - 05/03:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166871">Washington DC</a><br/>
-<p><strong>Plus:</strong> 
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18355"><strong>Hibernate with Spring</strong></a>, 
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18339"><strong>Core Spring.NET</strong></a>,
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18353"><strong>Groovy & Grails</strong></a></p>
-<p> <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu">and more...</a></p>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-</div><!-- /.region -->
-      <!--[If IE 7]><br><![endif]-->
+              <!--[If IE 7]><br><![endif]-->
       <div style="margin-top:-40px;">
       <div align="right">
 

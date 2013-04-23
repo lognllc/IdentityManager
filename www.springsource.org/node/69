@@ -3,7 +3,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Community Downloads | SpringSource.org</title>
+  <title>New www.springframework.org site is live! | SpringSource.org</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
   <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
@@ -22,8 +22,7 @@
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/spring_siii_downloads/css/spring_siii_downloads.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/comment/comment.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
@@ -55,8 +54,6 @@
 <script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
 <script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
 <script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
-<script type="text/javascript" src="/sites/all/modules/custom/spring_siii_downloads/js/jquery.dimensions.js?1366755454"></script>
-<script type="text/javascript" src="/sites/all/modules/custom/spring_siii_downloads/js/jquery.accordion.js?1366755454"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
@@ -66,10 +63,10 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
 //--><!]]>
 </script>
 </head>
-<body class="page not-front not-logged-in page-spring-siii-downloads no-sidebars page-download-community section-download">
+<body class="page not-front not-logged-in node-type-story no-sidebars page-node-69 section-node page-panels">
+
 
 	  
-
 
 <!--begin custom navigation-->
       	  
@@ -206,23 +203,275 @@ box-shadow: 0 0 15px #333;">
 	  
                         
 
-       <table width="100%" >
-       <tr>
-     <td width="100%" valign="top" align="left">
-       <div style="width:100%">
-       
- <div id="content-area">
+       <table width="100%" style="margin-top:-10px;">
+        <tr>
+         <td width="600px" valign="top" align="left">
+          <div style="width:600px;margin-top:5px;">
+          <a href="http://blog.springsource.com">Visit our blog</a>
+          <h1 class="title" style="margin-top:5px;margin-bottom:50px;" id="main-page-title">News & Events</h1>
+          <h2>New www.springframework.org site is live!</h2>
 
-	<div style="margin-top:-20px;">
-	<!--[If IE 7]><br><![endif]-->
 
-<table>
-<tr>
-<td width="95%">
-	  <h1 class="title" id="page-title">Community Downloads</h1>
-</td>
-<td align="right">
-      <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+          
+          <div id="content-area">
+
+
+           <div id="node-69" class="node node-type-story node-promoted build-mode-full"><div class="node-inner">
+
+  
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Colin Sampaleanu on Thu, 2005-05-05 09:00        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>I'm happy to announce that a new, enhanced <a href="../../../../undefined/http://www.springframework.org" target="_self">www.springframework.org</a>
+is now live!</p>
+
+<p>
+The site, sporting a new look and driven by a dynamic content
+management engine, should serve the needs of the Spring community much
+better. Expect the look and feel, as well as the capabilities of the
+site, to continue to evolve.</p><p>This was a lot of work. Thanks to <a target="_self" href="http://www.springframework.com">Interface21</a>
+for sponsoring the installation, design and hosting of the new site.
+This site will sit on the same host as the Spring Framework Support
+foums. Thanks to <a href="http://www.contegix.com" target="_self">Contegix LLC</a> for providig excellent managed hosting, and subsidizing the bandwidth.<br />
+</p>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+  <div id="comments">
+          <h2 id="comments-title">Comments</h2>
+        <a id="comment-9"></a>
+<div class="comment first odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/69#comment-9" class="active">criticism</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by effjay on Mon, 2005-05-09 08:07.  </div>
+
+  <div class="content">
+    <p>I must admit that I found the previous version more clear. The new font is smaller (less readable) and the first I see on the left side are the Upcoming events instead of the main navigation links.</p>
+<p>Switching the navigation with the events would already help, I think.</p>
+<p>Aside of that it is a good idea to put the site on top of a CMS, even though it is a PHP CMS :-). Less time spent in site update is more time spent with improving the Springframework.</p>
+<p>Good luck and thanks for a great piece of software.</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-8"></a>
+<div class="comment even"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/69#comment-8" class="active">Gaudy graphics!</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by vamsee on Sun, 2005-05-08 06:35.  </div>
+
+  <div class="content">
+    <p>I liked the soft colors of the previous springframework site much better. And the graphics look really gaudy.</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-5"></a>
+<div class="comment odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/69#comment-5" class="active">Beautiful</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by lukasbradley on Fri, 2005-05-06 10:52.  </div>
+
+  <div class="content">
+    <p>Very beautiful new interface.  Much easier to use.  Thanks.</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-2"></a>
+<div class="comment even"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/69#comment-2" class="active">What&#039;s the skinny on the new engine?</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by jimhazen2000 on Thu, 2005-05-05 17:01.  </div>
+
+  <div class="content">
+    <p>Can you elaborate on the new dynamic content management engine?  Spring based, open source, easy to use?  Is this something Interface21 wrote?</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<div class="indented"><a id="comment-3"></a>
+<div class="comment odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/69#comment-3" class="active">See comment below from Colin</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by Jose Nyimi on Thu, 2005-05-05 18:16.  </div>
+
+  <div class="content">
+    <p>See comment below from Colin in response to Matt.</p>
+<p>&gt; -----Message d'origine-----<br />
+&gt; De : springframework-user-admin@lists.sourceforge.net<br />
+&gt; [mailto:springframework-user-admin@lists.sourceforge.net] De<br />
+&gt; la part de Colin Sampaleanu<br />
+&gt; Envoyé : jeudi 5 mai 2005 22:45<br />
+&gt; À : springframework-user@lists.sourceforge.net<br />
+&gt; Cc : springframework-developer@lists.sourceforge.net<br />
+&gt; Objet : Re: [Springframework-user] Re:<br />
+&gt; [Springframework-developer] New www.springframework.org site is live!<br />
+&gt;<br />
+&gt;<br />
+&gt; The CMS here is Drupal.<br />
+&gt;<br />
+&gt; It's certainly possible to handle historical URLs, and some<br />
+&gt; already are.<br />
+&gt; Most of the site is handled dynamically by Drupal, but<br />
+&gt;    /dtd<br />
+&gt; and<br />
+&gt;   /buttons<br />
+&gt; is redirected internally (invisibly) by Apache to the new<br />
+&gt;   http://static.springframework.org<br />
+&gt; site meant for completely static content like online<br />
+&gt; documentation. It<br />
+&gt; was critical to do this to not break DTD URLs and existing<br />
+&gt; button links<br />
+&gt; using the images directly from the Spring website.<br />
+&gt;<br />
+&gt; There is a question of what to do this for however. The old static<br />
+&gt; structure was somewhat adhoc and simplistic. If you look at<br />
+&gt; your example<br />
+&gt;<br />
+&gt; http://www.springframework.org/docs/api/org/springframework/we<br />
+&gt; b/servlet/mvc/SimpleFormController.html<br />
+&gt; there's no product name (spring base library vs. webflow vs whatever<br />
+&gt; other lib) in there, and there's no version number. Under the new<br />
+&gt; structure, this is available as<br />
+&gt;<br />
+&gt; http://static.springframework.org/spring/docs/1.1.5/api/org/sp<br />
+&gt; ringframework/web/servlet/mvc/SimpleFormController.html<br />
+&gt;<br />
+&gt; Colin<br />
+&gt;<br />
+&gt; Matt Raible wrote:<br />
+&gt;<br />
+&gt; &gt; Nice work guys - now we just need to get you to write the CMS using<br />
+&gt; &gt; Spring. ;-)  I'm guessing this site uses Plone like the<br />
+&gt; &gt; springframework.com site?<br />
+&gt; &gt;<br />
+&gt; &gt; One request: is it possible to put in some smart redirection so that<br />
+&gt; &gt; old URLs still resolve?  For example:<br />
+&gt; &gt;<br />
+&gt; &gt; http://www.springframework.org/docs/api/org/springframework/web/<br />
+&gt; &gt; servlet/mvc/SimpleFormController.html<br />
+&gt; &gt;<br />
+&gt; &gt; I imagine there's lots of articles and such that link to the<br />
+&gt; &gt; documentation and now those links might not resolve.<br />
+&gt; &gt;<br />
+&gt; &gt; http://www.w3.org/Provider/Style/URI.html ;-)<br />
+&gt; &gt;<br />
+&gt; &gt; Thanks,<br />
+&gt; &gt;<br />
+&gt; &gt; Matt<br />
+&gt; &gt;<br />
+&gt; &gt;</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<div class="indented"><a id="comment-6"></a>
+<div class="comment even"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/69#comment-6" class="active">Why Drupal?</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by jimhazen2000 on Fri, 2005-05-06 18:44.  </div>
+
+  <div class="content">
+    <p>I find it interesting that a group centered around Java frameworks would choose a CMS engine based on PHP.  I'm not making a judgement, just wondering what the thought process was.</p>
+<p>Less time spent on CMS tasks = more time spent on Spring projects?  Drupal was the best tool for the job and Interface21 doesn't intend to extend this site with it's own code?  Interface21 has PHP experience that I don't know about?</p>
+<p>Just wondering, framework guys don't do anything by accident.  Maybe there's something to be learned here.</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<div class="indented"><a id="comment-7"></a>
+<div class="comment odd comment-by-node-author"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/node/69#comment-7" class="active">We have very finite resources</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by Colin Sampaleanu on Fri, 2005-05-06 19:13.  </div>
+
+  <div class="content">
+    <p>We have a very finite amount of resources which are frankly better spent on enhancing parts of Spring that are of use to the largest audience, not on modifying or implementing a CMS. While we did have to spend a decent amount of time tweaking the theme to our satisfaction, and inputing the old content, equivalent or more effort of this type would have been requiered with any solution. On the other hand, Drupal out of the box comes with all the functionality we need, so we didn't have to spend any of those scarce resources on development or customization of the product itself. It's that simple.</p>
+<p>Of course we went through a complete process of figuring out our requirements and looking for the best product to meet those requirements, now. The &quot;now&quot; part is very important. I have a feeling that in a year's time at least some of the products like Daisy, Magnolia, eXo, Lenya, etc. will have evolved to the point where they they would make better sense than Drupal.</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+</div></div></div>  </div>
+
+
+        
+        </div>
+        </td>
+
+        <td width="60px">&nbsp;</td>
+        <td width="320px" valign="top" align="left">
+
+        <div align="right" style="margin-top:35px;margin-bottom:47px;">
+         <p>
+			<a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
 <script type="text/javascript">
 var a2a_config = a2a_config || {};
 a2a_config.color_main = "e5e6e6";
@@ -233,160 +482,18 @@ var a2a_config = a2a_config || {};
 a2a_config.onclick = 1;
 </script>
 <script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
-</td>
-</tr>
-</table>
-	  <p>
-	  	  </p>
+         </p>
+        </div>
 
-           
-<!-- Begin Google Code for Lead Conversion Page -->
-<script type="text/javascript">
-<!--
-var google_conversion_id = 1071228626;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "lead";
-var google_conversion_value = 0;
-//-->
-</script>
-<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1071228626/?label=lead&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-<!-- End Google Code for Lead Conversion Page -->
-
-<script>
-$(document).ready(function() {
-    $('#accProjects').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accProject',
-        clearStyle: false
-    }); 
-
-    $('#accBundlesSpringShell').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accBundle',
-        clearStyle: false
-    });
-
-    $('#accBundlesSpringShellMore').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accBundleMore',
-        clearStyle: false
-    });
-});
-</script>
-<ul id="accProjects" class="ui-accordion-container">
-
-    <li>
-        <a class="ui-accordion-link accProject">Spring Shell</a>
-        <div>
-            <ul class="ui-accordion-container" id="accBundlesSpringShell">
-
-                    <li>
-                        <a class="ui-accordion-link accBundle releaseStyle">Latest GA release: 1.0.0.RELEASE</a>
-                        <div>
-                        <table>
-                        
-    
-                            <tr>
-                            <td class="accFile"><a href="http://repo.springsource.org/libs-release-local/org/springframework/shell/spring-shell/1.0.0.RELEASE/spring-shell-1.0.0.RELEASE-dist.zip">spring-shell-1.0.0.RELEASE-dist.zip</a></td>
-                            <td class="accFile"><a href="http://repo.springsource.org/libs-release-local/org/springframework/shell/spring-shell/1.0.0.RELEASE/spring-shell-1.0.0.RELEASE-dist.zip.sha1">(sha1)</a></td>
-                            
-                            <td>1.6 MB</td>
-                            </tr>
-    
-                            </table>
-                            </div>
-                        </li>
-    
-                        <li>
-                            <a class="ui-accordion-link accBundle">More &gt;&gt;</a>
-                            <div>
-                            <ul class="ui-accordion-container" id="accBundlesSpringShellMore">
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.RC1</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.RC1/spring-shell-1.0.0.RC1-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.RC1-dist.zip'});">spring-shell-1.0.0.RC1-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.RC1/spring-shell-1.0.0.RC1-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>1.6 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.M2</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M2/spring-shell-1.0.0.M2-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.M2-dist.zip'});">spring-shell-1.0.0.M2-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M2/spring-shell-1.0.0.M2-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>2.0 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.M1</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M1/spring-shell-1.0.0.M1-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.M1-dist.zip'});">spring-shell-1.0.0.M1-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M1/spring-shell-1.0.0.M1-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>2.0 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                        </ul>
-                        </div>
-                </li>
-
-            </ul>
-            </div>
-    </li>
-
-</ul>
-
-
-            </div>
-    </div>
-        </td>
-
-        <td width="50px">&nbsp;</td>
-        <td width="310px" valign="top" align="left">
 
         <div class="region region-content-right">
-  <div id="block-block-19" class="block block-block first region-odd odd region-count-1 count-3"><div class="block-inner">
+  <div id="block-block-54" class="block block-block first region-odd odd region-count-1 count-3"><div class="block-inner">
 
       <h2 class="title">Newsletter Subscription</h2>
   
   <div class="content">
     <div style="background-color:#fff;padding:10px;">
-<p style="margin-left:3px;">Our monthly newsletter is packed full of techniques, tutorials, tips and tricks to get you on your way to Spring nirvana. <a href="/news-events/newsletters">View Archive</a></p>
+<p style="margin-left:3px;">Our monthly newsletter is packed full of techniques, tutorials, tips and tricks to get you on your way to Spring nirvana. <a href="/news-events/newsletters">View Archive</a> </p>
 
 <form enctype="multipart/form-data" name="StandardForm" method="post" action="http://now.eloqua.com/e/f2.aspx">
     <input type="hidden" value="StandardForm" name="elqFormName" /> <input type="hidden" value="524" name="elqSiteID" /> <input type="hidden" value="" name="elqCustomerGUID" /> <input type="hidden" value="0" name="elqCookieWrite" />
@@ -420,15 +527,12 @@ function initPage(){
 </tr>
 </table>
 </form>
-</div>
-<br>
-  </div>
+</div>  </div>
 
   
 </div></div> <!-- /block-inner, /block -->
-<div id="block-block-18" class="block block-block region-even even region-count-2 count-4"><div class="block-inner">
+<div id="block-block-53" class="block block-block last region-even even region-count-2 count-4"><div class="block-inner">
 
-      <h2 class="title">Upcoming Events</h2>
   
   <div class="content">
     <!--<a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu" target="_blank"><img src="http://blog.springsource.org/wp-content/themes/spring11/files/PROMO_SpringSourceU_320x118.png"></a>-->
@@ -436,72 +540,15 @@ function initPage(){
 
   
 </div></div> <!-- /block-inner, /block -->
-<div id="block-event-1" class="block block-event region-odd odd region-count-3 count-5"><div class="block-inner">
-
-  
-  <div class="content">
-    <div class="item-list"><ul><li class="first last">No upcoming events available</li>
-</ul></div><div class="ical-link"><a href="http://www.springsource.org/event/ical" title="Add this calendar to your iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Add to iCalendar" /></a></div><div class="more-link"><a href="/event" title="More events.">more</a></div>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-block-60" class="block block-block region-even even region-count-4 count-6"><div class="block-inner">
-
-      <h2 class="title">Upcoming Training</h2>
-  
-  <div class="content">
-    <script>
-var now = new Date().getTime();
-document.write(unescape("%3Cscript src='http://dserv.springsource.org/spring_mylearn_banner?wh=wwworg&ies="+now+"' type='text/javascript'%3E%3C/script%3E"));
-</script>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-block-3" class="block block-block last region-odd odd region-count-5 count-7"><div class="block-inner">
-
-  
-  <div class="content">
-    <p><strong><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17750">Core Spring Framework</a></strong></p><p>04/15 - 04/18:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158750">Bangalore</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=173542">Live Online</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=174009">San Francisco</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=171408">London</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166673">Edison </a><br/>04/23 - 04/26:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=163743">Zürich</a><br/></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17834"><strong>Rich Web Applications with Spring</strong></a></p><p></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17833"><strong>Enterprise Integration with Spring</strong></a></p><p>04/16 - 04/19:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=172348">Wien</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158752">Bangalore</a><br/>04/30 - 05/03:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166871">Washington DC</a><br/>
-<p><strong>Plus:</strong> 
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18355"><strong>Hibernate with Spring</strong></a>, 
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18339"><strong>Core Spring.NET</strong></a>,
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18353"><strong>Groovy & Grails</strong></a></p>
-<p> <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu">and more...</a></p>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
 </div><!-- /.region -->
-      <!--[If IE 7]><br><![endif]-->
-      <div style="margin-top:-40px;">
-      <div align="right">
 
-	  <p style="line-height:26px;">&nbsp;</p>
-	  <p>
 
-      </p>
-      </div>
 
-	              
-      
-       
-        
-        
-        
-        </div>
+</div>
         </td>
 
         </tr>
         </table>
-
 
         
       </div></div><!-- /.section, /#content -->

@@ -3,8 +3,9 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Community Downloads | SpringSource.org</title>
+  <title>News and Announcements | SpringSource.org</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - News and Announcements" href="/taxonomy/term/4/0/feed" />
 <link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
   <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
@@ -22,7 +23,7 @@
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/spring_siii_downloads/css/spring_siii_downloads.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/taxonomy/taxonomy.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
@@ -55,8 +56,6 @@
 <script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
 <script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
 <script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
-<script type="text/javascript" src="/sites/all/modules/custom/spring_siii_downloads/js/jquery.dimensions.js?1366755454"></script>
-<script type="text/javascript" src="/sites/all/modules/custom/spring_siii_downloads/js/jquery.accordion.js?1366755454"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
@@ -66,10 +65,10 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
 //--><!]]>
 </script>
 </head>
-<body class="page not-front not-logged-in page-spring-siii-downloads no-sidebars page-download-community section-download">
+<body class="page not-front not-logged-in no-sidebars page-taxonomy-term-4 section-taxonomy">
+
 
 	  
-
 
 <!--begin custom navigation-->
       	  
@@ -205,24 +204,14 @@ box-shadow: 0 0 15px #333;">
 	  
 	  
                         
-
-       <table width="100%" >
-       <tr>
-     <td width="100%" valign="top" align="left">
-       <div style="width:100%">
-       
- <div id="content-area">
-
-	<div style="margin-top:-20px;">
-	<!--[If IE 7]><br><![endif]-->
-
-<table>
-<tr>
-<td width="95%">
-	  <h1 class="title" id="page-title">Community Downloads</h1>
-</td>
-<td align="right">
-      <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+        <table>
+	      <tr>
+	       <td width="870">
+	        <h1 class="title" id="main-page-title">News and Announcements&nbsp;&nbsp;<span style="vertical-align:top;"><a href="http://feeds.feedburner.com/springsource/SvVO" target="_blank"><img src="/misc/feed.png"></a></span></h1>
+	       </td>
+	       <td align="right">
+	  	    <p>
+		 	  <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
 <script type="text/javascript">
 var a2a_config = a2a_config || {};
 a2a_config.color_main = "e5e6e6";
@@ -233,151 +222,277 @@ var a2a_config = a2a_config || {};
 a2a_config.onclick = 1;
 </script>
 <script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
-</td>
-</tr>
-</table>
-	  <p>
-	  	  </p>
+            </p>
+	  	  </td>
+	  	 </tr>
+	  	</table>
 
-           
-<!-- Begin Google Code for Lead Conversion Page -->
-<script type="text/javascript">
-<!--
-var google_conversion_id = 1071228626;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "lead";
-var google_conversion_value = 0;
-//-->
-</script>
-<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1071228626/?label=lead&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-<!-- End Google Code for Lead Conversion Page -->
+       <table width="100%" style="margin-top:-10px;">
+        <tr>
+         <td width="600px" valign="top" align="left">
+          <div style="width:600px;">
 
-<script>
-$(document).ready(function() {
-    $('#accProjects').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accProject',
-        clearStyle: false
-    }); 
+          
+          <div id="content-area">
 
-    $('#accBundlesSpringShell').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accBundle',
-        clearStyle: false
-    });
 
-    $('#accBundlesSpringShellMore').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accBundleMore',
-        clearStyle: false
-    });
-});
-</script>
-<ul id="accProjects" class="ui-accordion-container">
+           <div class="taxonomy-term-description">News and announcements<br />
+</div><div id="node-192" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
 
-    <li>
-        <a class="ui-accordion-link accProject">Spring Shell</a>
-        <div>
-            <ul class="ui-accordion-container" id="accBundlesSpringShell">
-
-                    <li>
-                        <a class="ui-accordion-link accBundle releaseStyle">Latest GA release: 1.0.0.RELEASE</a>
-                        <div>
-                        <table>
-                        
-    
-                            <tr>
-                            <td class="accFile"><a href="http://repo.springsource.org/libs-release-local/org/springframework/shell/spring-shell/1.0.0.RELEASE/spring-shell-1.0.0.RELEASE-dist.zip">spring-shell-1.0.0.RELEASE-dist.zip</a></td>
-                            <td class="accFile"><a href="http://repo.springsource.org/libs-release-local/org/springframework/shell/spring-shell/1.0.0.RELEASE/spring-shell-1.0.0.RELEASE-dist.zip.sha1">(sha1)</a></td>
-                            
-                            <td>1.6 MB</td>
-                            </tr>
-    
-                            </table>
-                            </div>
-                        </li>
-    
-                        <li>
-                            <a class="ui-accordion-link accBundle">More &gt;&gt;</a>
-                            <div>
-                            <ul class="ui-accordion-container" id="accBundlesSpringShellMore">
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.RC1</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.RC1/spring-shell-1.0.0.RC1-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.RC1-dist.zip'});">spring-shell-1.0.0.RC1-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.RC1/spring-shell-1.0.0.RC1-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>1.6 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.M2</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M2/spring-shell-1.0.0.M2-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.M2-dist.zip'});">spring-shell-1.0.0.M2-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M2/spring-shell-1.0.0.M2-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>2.0 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.M1</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M1/spring-shell-1.0.0.M1-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.M1-dist.zip'});">spring-shell-1.0.0.M1-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M1/spring-shell-1.0.0.M1-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>2.0 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                        </ul>
-                        </div>
-                </li>
-
-            </ul>
-            </div>
-    </li>
-
+  
+      <h2 class="title">
+      <a href="/node/192" title="Spring Framework Training Summary (November)">Spring Framework Training Summary (November)</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Keith Donald on Wed, 2005-11-02 19:01        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last active"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+" class="active">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p><a target="_self" href="http://www.springframework.com/">Interface21</a> is pleased to offer a number of Spring Framework training events in the upcoming period, delivered by core Spring Framework developers.    For full details, please visit the main <a href="http://www.springframework.com/training/" target="_self">training information page</a>.   Here is a summary of the upcoming courses and venues:
+<ul>
+<li><em><strong>Core Spring: </strong></em>November 22nd - 25th, Amsterdam, NL </li>
+<li><strong><em>Introduction to Spring</em></strong>: Nov. 30th - Dec. 2nd, Amsterdam, NL   </li>
+<li><em><strong>Core Spring: </strong></em>November 29th - December 2nd, Dallas, TX (discount extended!)</li>
+<li><strong><em>Core Spring: </em></strong>November 29th - December 2nd, Edinburgh, UK (early-bird deadline is November 4th!)</li>
+<li><strong><em>Core Spring: </em></strong>January 24th - 27th, Cork, Republic of Ireland</li>
 </ul>
+</p><p>  Interested in a full-course of Spring during Winter? The <a href="http://www.thespringexperience.com/show_view.jsp?showId=44" target="_self">Spring Experience 2005</a> conference is taking place in sunny Bal Harbor Beach, Florida, from Dec. 7th-10th.</p>
+  </div>
 
+  <ul class="links inline"><li class="comment_comments first last"><a href="/node/192#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-" class="node node-type- node-unpublished node-teaser build-mode-teaser"><div class="node-inner">
 
-            </div>
+  
+      <h2 class="title">
+      <a href="/node/" title=""></a>
+    </h2>
+  
+      <div class="unpublished">Unpublished</div>
+  
+  
+  <div class="content">
+    n/a  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
+<div id="node-182" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/182" title="First chapter of Spring: A Developer&#039;s Notebook available for download">First chapter of Spring: A Developer&#039;s Notebook available for download</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Steven Devijver on Thu, 2005-10-06 09:23        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last active"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+" class="active">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p><a href="http://www.oreilly.com/catalog/springadn/index.html" target="_blank">Spring: A Developer's Notebook</a>&nbsp;is an introductory book to the Spring framework introducing the IoC container, Spring MVC, JDBC abstraction, AOP and transaction management. The first chapter is&nbsp;now available for <a href="http://www.onjava.com/lpt/a/6223" target="_blank">download</a>.</p>
+  </div>
+
+  <ul class="links inline"><li class="comment_comments first last"><a href="/node/182#comments" title="Jump to the first comment of this posting.">7 comments</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-180" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/180" title="Spring Framework Training Summary (October)">Spring Framework Training Summary (October)</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Colin Sampaleanu on Tue, 2005-10-04 15:08        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last active"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+" class="active">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p><a href="http://www.springframework.com/" target="_self">Interface21</a> is pleased to offer a number of Spring Framework training events in the upcoming period, taught by the same people who built Spring.</p> <p>For full details, please visit the main <a target="_self" href="http://www.springframework.com/training/">training information page</a>.</p> <p>Here is a summary of the upcoming courses and venues:</p> <ul> <li><strong><em>Core Spring</em></strong>: Oct. 11th-14th, Washington, DC</li><li><strong><em>Core Spring</em></strong>: Oct. 25th-28th, Oslo, Norway (early bird date is Sep. 16th!)</li><li><strong><em>Introduction to Spring</em></strong>: Nov. 7th-9th, Amsterdam, NL (early bird date is Oct. 7th!)</li><li><strong><em>Core Spring</em></strong>: Nov. 22nd-25th, Amsterdam, NL (early bird date is Oct. 28th!)</li><li><strong><em>Core Spring</em></strong>: Nov. 29th - Dec. 2nd, Dallas, TX (early bird date is Nov. 4th!)</li> <li><strong><em>Core Spring</em></strong>: Nov. 29th - Dec. 2nd, Edinburgh, UK (early bird date is Nov. 4th!)</li><li><strong><em>Introduction to Spring</em></strong>: Nov. 30th - Dec. 2nd, Amsterdam, NL (early bird date is Oct. 28th!)</li> </ul>Interesting in a bit of Spring during Winter? The <a target="_self" href="http://www.thespringexperience.com/show_view.jsp?showId=44">Spring Experience 2005</a> conference is taking place in sunny Bal Harbor Beach, Florida, from Dec. 7th-10th.  </div>
+
+  <ul class="links inline"><li class="comment_comments first last"><a href="/node/180#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-178" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/178" title="Spring at BEAWorld">Spring at BEAWorld</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Keith Donald on Thu, 2005-09-29 18:30        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last active"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+" class="active">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>The Spring Framework was in full force at BEAWorld 2005 in Santa Clara, CA, where BEA and <a href="http://www.interface21.com" target="_self">Interface21</a> highlighted how well BEA's WebLogic server and Spring work together, and BEA announced its endorsement of Spring on WLS that includes 24x7 support for Spring in that environment.</p>
+  </div>
+
+  <ul class="links inline"><li class="comment_comments first"><a href="/node/178#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+<li class="node_read_more last"><a href="/node/178" title="Read the rest of Spring at BEAWorld.">Read more</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-179" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/179" title="Spring on WLS package released on BEA dev2dev">Spring on WLS package released on BEA dev2dev</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Colin Sampaleanu on Thu, 2005-09-29 18:29        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last active"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+" class="active">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>BEA has released their '<a target="_self" href="http://commerce.bea.com/showproduct.jsp?family=SPRING&major=1.2.5&minor=0">Spring-on-WLS</a>' package on dev2dev. This bundle includes Spring 1.2.5 along with an enhancement to the WebLogic management console that enables real-time management of Spring Beans.</p><p>The bundle also includes a new version of BEA's MedRec sample application.&nbsp; This version has been re-architected from a legacy EJB-based architecture to a Spring-based architecture for the handling of transactions, data access, and remoting, among other services.</p><p>It is interesting to note how many lines of code were saved as a result of the port to Spring.<br /> </p>  </div>
+
+  <ul class="links inline"><li class="comment_comments first last"><a href="/node/179#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-175" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/175" title="WebWork Embraces Spring">WebWork Embraces Spring</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Keith Donald on Fri, 2005-09-23 11:34        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last active"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+" class="active">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>Open Symphony's <a href="http://www.opensymphony.com/webwork/" target="_self">WebWork</a>, an open source web application framework, has standardized on Spring for the configuration, assembly, and deployment of POJO-based middle-tier services.</p><p>Patrick Lightbody, co-lead of the WebWork project, notes, &quot;as the most complete 'lightweight container' available today, Spring is the de facto standard for the management of the internal architecture of a JEE application.&nbsp; We are excited to ship official Spring integration with WebWork 2.2, which is nearing final release.&nbsp; This integration will make it even easier for WebWork users to use Spring.&quot;</p><p>In addition to WebWork, Spring's middleware stack integrates with a number of other established web application frameworks including Struts, JSF, Tapestry, and Spring MVC.&nbsp; Spring is committed to supporting a flexible set of configurations across both JEE and JSE environments.<br /> </p><p>For more information, see Patrick's <a href="http://blogs.opensymphony.com/webwork/2005/09/spring_and_webwork_together.html" target="_self">original announcement</a>.</p>   </div>
+
+  <ul class="links inline"><li class="comment_comments first last"><a href="/node/175#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-173" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/173" title="Spring Framework 1.2.5 Released">Spring Framework 1.2.5 Released</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Juergen Hoeller on Thu, 2005-09-22 22:01        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last active"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+" class="active">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>We're pleased to announce that Spring 1.2.5 has just been released. This is a bugfix and minor enhancement release, fixing a number of issues found in previous 1.2.x releases and introducing various minor new features.</p> <p>As always, for a full list of enhancements and fixes, please see the <a target="_self" href="http://static.springframework.org/spring/docs/current/changelog.txt">changelog</a>.</p>  </div>
+
+  <ul class="links inline"><li class="comment_comments first last"><a href="/node/173#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-170" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/170" title="Article: Spring Loaded Observer Pattern">Article: Spring Loaded Observer Pattern</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by klr8 on Sat, 2005-09-17 04:13        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last active"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+" class="active">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>Scott Priolo's&nbsp;article on TheServerSide describes an easy process of implementing the observer pattern with the Spring framework. <a href="http://www.theserverside.com/articles/article.tss?l=SpringLoadedObserverPattern" target="_blank">Read the article</a>.</p>
+  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
+<div id="node-169" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/169" title="The Spring Experience, International Spring Framework Conference: Update">The Spring Experience, International Spring Framework Conference: Update</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Colin Sampaleanu on Tue, 2005-09-13 22:36        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last active"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+" class="active">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p><a href="http://www.springframework.com/">Interface21</a> and <a href="http://www.nofluffjuststuff.com/">NoFluffJustStuff</a> Java Symposiums (NFJS) are pleased to announce that James Strachan and Jonas Boner have joined the list of speakers at <a target="_self" href="http://www.thespringexperience.com/">The Spring Experience</a>, the first ever conference exclusively for the Spring Framework community.</p> <p><span class="postbody">Taking place Dec. 7th-10th, at the </span>Sheraton Bal Harbour Beach Resort, South Florida<span class="postbody">, The Spring Experience will feature over 40 technically focused sessions across three (3) full days spanning four (4) parallel tracks covering effective web architecture, enterprise systems, and agile process. Other featured speakers include Spring Framework founders Rod Johnson and Juergen Hoeller, as well as lead Spring developers Rob Harrop, Colin Sampaleanu, Keith Donald, Alef Arendsen, Ben Alex, and Jim Clark.&nbsp; In addition, industry experts and distinguished authors Bruce Tate, Matt Raible, Craig Walls, Justin Gehtland, and Dion Almaer will each be holding sessions. </span></p> The last day for super early bird registration discounts is Sept. 19th. We encourage you to register as soon as possible because the attendance is capped at five hundred (500) and we anticipate a sold out show.  </div>
+
+  <ul class="links inline"><li class="comment_comments first last"><a href="/node/169#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="/taxonomy/term/4" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="/taxonomy/term/4?page=75" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-item"><a href="/taxonomy/term/4?page=72" title="Go to page 73" class="active">73</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4?page=73" title="Go to page 74" class="active">74</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4?page=74" title="Go to page 75" class="active">75</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4?page=75" title="Go to page 76" class="active">76</a></li>
+<li class="pager-current">77</li>
+<li class="pager-item"><a href="/taxonomy/term/4?page=77" title="Go to page 78" class="active">78</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4?page=78" title="Go to page 79" class="active">79</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4?page=79" title="Go to page 80" class="active">80</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4?page=80" title="Go to page 81" class="active">81</a></li>
+<li class="pager-next"><a href="/taxonomy/term/4?page=77" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="/taxonomy/term/4?page=80" title="Go to last page" class="active">last »</a></li>
+</ul></div>
+
+        
     </div>
         </td>
 
-        <td width="50px">&nbsp;</td>
-        <td width="310px" valign="top" align="left">
+        <td width="60px">&nbsp;</td>
+        <td width="320px" valign="top" align="left">
 
         <div class="region region-content-right">
   <div id="block-block-19" class="block block-block first region-odd odd region-count-1 count-3"><div class="block-inner">
@@ -480,29 +595,17 @@ document.write(unescape("%3Cscript src='http://dserv.springsource.org/spring_myl
   
 </div></div> <!-- /block-inner, /block -->
 </div><!-- /.region -->
-      <!--[If IE 7]><br><![endif]-->
-      <div style="margin-top:-40px;">
-      <div align="right">
 
-	  <p style="line-height:26px;">&nbsp;</p>
-	  <p>
 
-      </p>
-      </div>
 
-	              
-      
-       
-        
-        
-        
-        </div>
+</div>
         </td>
 
         </tr>
         </table>
 
 
+                  <div class="feed-icons"><a href="/taxonomy/term/4/0/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="RSS - News and Announcements" width="16" height="16" /></a></div>
         
       </div></div><!-- /.section, /#content -->
 

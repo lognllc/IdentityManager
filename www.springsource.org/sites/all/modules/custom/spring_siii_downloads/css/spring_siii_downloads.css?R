@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+a:hover {
+	color: lightgreen;	
+}
+
+.accProject {
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.accBundle {
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.accBundleMore {
+	cursor: pointer;
+}
+
+.accFile {
+	font-size: 12px;
+}
+
+.releaseStyle {
+	color: darkgreen;
+}
+
+.milestoneStyle { 
+	color: olive; 
+}
+
+
+.integrationStyle { 
+	color: lightblue; 
+}
+
+.field_error {
+	color: red;
+	margin-left:42%;
+	text-align:center;
+	width:210px;
+}

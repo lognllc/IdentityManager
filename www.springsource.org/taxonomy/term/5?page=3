@@ -3,8 +3,9 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Community Downloads | SpringSource.org</title>
+  <title>Event | SpringSource.org</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - Event" href="/taxonomy/term/5/0/feed" />
 <link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
   <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
@@ -22,7 +23,7 @@
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/spring_siii_downloads/css/spring_siii_downloads.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/taxonomy/taxonomy.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
@@ -55,8 +56,6 @@
 <script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
 <script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
 <script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
-<script type="text/javascript" src="/sites/all/modules/custom/spring_siii_downloads/js/jquery.dimensions.js?1366755454"></script>
-<script type="text/javascript" src="/sites/all/modules/custom/spring_siii_downloads/js/jquery.accordion.js?1366755454"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
@@ -66,7 +65,7 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
 //--><!]]>
 </script>
 </head>
-<body class="page not-front not-logged-in page-spring-siii-downloads no-sidebars page-download-community section-download">
+<body class="page not-front not-logged-in no-sidebars page-taxonomy-term-5 section-taxonomy">
 
 	  
 
@@ -219,7 +218,7 @@ box-shadow: 0 0 15px #333;">
 <table>
 <tr>
 <td width="95%">
-	  <h1 class="title" id="page-title">Community Downloads</h1>
+	  <h1 class="title" id="page-title">Event</h1>
 </td>
 <td align="right">
       <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
@@ -239,138 +238,298 @@ a2a_config.onclick = 1;
 	  <p>
 	  	  </p>
 
-           
-<!-- Begin Google Code for Lead Conversion Page -->
-<script type="text/javascript">
-<!--
-var google_conversion_id = 1071228626;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "lead";
-var google_conversion_value = 0;
-//-->
-</script>
-<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1071228626/?label=lead&amp;guid=ON&amp;script=0"/>
+           <div class="taxonomy-term-description">A normal event<br />
+</div><div id="node-" class="node node-type- node-unpublished node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/" title=""></a>
+    </h2>
+  
+      <div class="unpublished">Unpublished</div>
+  
+  
+  <div class="content">
+    n/a  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
+<div id="node-475" class="node node-type-event node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/475" title="Spring Presentation at Java User Group Cologne">Spring Presentation at Java User Group Cologne</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Eberhard Wolff on Fri, 2007-06-01 11:01        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_5 first last active"><a href="/taxonomy/term/5" rel="tag" title="A normal event
+" class="active">Event</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <div class="event-nodeapi">
+  <div class="event-start dtstart" title="-00-00T00:00:00Z"><label>Start:  </label> -00-00  </div>
 </div>
-</noscript>
-<!-- End Google Code for Lead Conversion Page -->
+ <div class="event-nodeapi">
+   <div class="event-tz"><label>Timezone: </label> </div>
+  </div>
+<p>Description:<br />
+ On June 18th Eberhard Wolff (Managing Consultant, Interface21 Germany) will be giving a presentation about Spring at the Java User Group Cologne. The talk will be given in German and you can find more information about it at the <a target="_self" href="http://jugcologne.org/">website</a> of the Java User Group Cologne.</p>
+  </div>
 
-<script>
-$(document).ready(function() {
-    $('#accProjects').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accProject',
-        clearStyle: false
-    }); 
-
-    $('#accBundlesSpringShell').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accBundle',
-        clearStyle: false
-    });
-
-    $('#accBundlesSpringShellMore').accordion({
-        alwaysOpen: false,
-        autoheight: false,
-        header: 'a.accBundleMore',
-        clearStyle: false
-    });
-});
-</script>
-<ul id="accProjects" class="ui-accordion-container">
-
-    <li>
-        <a class="ui-accordion-link accProject">Spring Shell</a>
-        <div>
-            <ul class="ui-accordion-container" id="accBundlesSpringShell">
-
-                    <li>
-                        <a class="ui-accordion-link accBundle releaseStyle">Latest GA release: 1.0.0.RELEASE</a>
-                        <div>
-                        <table>
-                        
-    
-                            <tr>
-                            <td class="accFile"><a href="http://repo.springsource.org/libs-release-local/org/springframework/shell/spring-shell/1.0.0.RELEASE/spring-shell-1.0.0.RELEASE-dist.zip">spring-shell-1.0.0.RELEASE-dist.zip</a></td>
-                            <td class="accFile"><a href="http://repo.springsource.org/libs-release-local/org/springframework/shell/spring-shell/1.0.0.RELEASE/spring-shell-1.0.0.RELEASE-dist.zip.sha1">(sha1)</a></td>
-                            
-                            <td>1.6 MB</td>
-                            </tr>
-    
-                            </table>
-                            </div>
-                        </li>
-    
-                        <li>
-                            <a class="ui-accordion-link accBundle">More &gt;&gt;</a>
-                            <div>
-                            <ul class="ui-accordion-container" id="accBundlesSpringShellMore">
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.RC1</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.RC1/spring-shell-1.0.0.RC1-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.RC1-dist.zip'});">spring-shell-1.0.0.RC1-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.RC1/spring-shell-1.0.0.RC1-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>1.6 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.M2</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M2/spring-shell-1.0.0.M2-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.M2-dist.zip'});">spring-shell-1.0.0.M2-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M2/spring-shell-1.0.0.M2-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>2.0 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                                <li>
-                                <a class="ui-accordion-link accBundleMore milestoneStyle">1.0.0.M1</a>
-                                <div>
-                                <table>
-    
-                                    <tr>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M1/spring-shell-1.0.0.M1-dist.zip" onClick="mktoMunchkinFunction('clickLink',{href:'/clickedToDownload/Community/spring-shell-1.0.0.M1-dist.zip'});">spring-shell-1.0.0.M1-dist.zip</a></td>
-                                    <td class="accFile"><a href="https://repo.springsource.org/libs-milestone-local/org/springframework/shell/spring-shell/1.0.0.M1/spring-shell-1.0.0.M1-dist.zip.sha1">(sha1)</a></td>
-                                    
-                                    <td>2.0 MB</td>
-                                    </tr>
-    
-                                </table>
-                                </div>
-                                </li>
-    
-                        </ul>
-                        </div>
-                </li>
-
-            </ul>
-            </div>
-    </li>
-
+  <ul class="links inline"><li class="comment_forbidden first"></li>
+<li class="event_calendar last"><a href="/event/%252F00/00">Calendar</a></li>
 </ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-467" class="node node-type-event node-promoted node-teaser build-mode-teaser"><div class="node-inner">
 
+  
+      <h2 class="title">
+      <a href="/jaxindia2007" title="Interface21 Sponsors JAX India 2007 in Bangalore">Interface21 Sponsors JAX India 2007 in Bangalore</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Neelan Choksi on Sat, 2007-05-26 07:13        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_5 first last active"><a href="/taxonomy/term/5" rel="tag" title="A normal event
+" class="active">Event</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <div class="event-nodeapi">
+  <div class="event-start dtstart" title="-00-00T00:00:00Z"><label>Start:  </label> -00-00  </div>
+</div>
+ <div class="event-nodeapi">
+   <div class="event-tz"><label>Timezone: </label> </div>
+  </div>
+<p>Description:<br />
+ Interface21 COO Neelan Choksi and Sr. Consultant Vishal Puri will be speaking at JAX India in Bangalore on Wednesday May 30.  Topics include:</p>
+<ul>
+<li>Simplifying Enterprise Applications with Spring 2.0 by Puri
+</li><li>An Open Source Agnostic's View from the Inside by Choksi
+</li><li>You Can't Buy an Open Source Community by Choksi
+</li><li>AOP - What's New and Cool in Spring 2.0 by Puri
+</li></ul>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first"></li>
+<li class="event_calendar last"><a href="/event/%252F00/00">Calendar</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-" class="node node-type- node-unpublished node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/" title=""></a>
+    </h2>
+  
+      <div class="unpublished">Unpublished</div>
+  
+  
+  <div class="content">
+    n/a  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
+<div id="node-463" class="node node-type-event node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/463" title="FREE Seminar in Edinburgh on How, Why and When to Use Spring with Rick Evans">FREE Seminar in Edinburgh on How, Why and When to Use Spring with Rick Evans</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Sally Greenwood on Tue, 2007-05-15 09:05        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_5 first last active"><a href="/taxonomy/term/5" rel="tag" title="A normal event
+" class="active">Event</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <div class="event-nodeapi">
+  <div class="event-start dtstart" title="-00-00T00:00:00Z"><label>Start:  </label> -00-00  </div>
+</div>
+ <div class="event-nodeapi">
+   <div class="event-tz"><label>Timezone: </label> </div>
+  </div>
+<p>Location:<br />
+ Eclectic Edinburgh, 16 St Mary's Street, Edinburgh, EH1 1SU</p>
+<p> Description:<br />
+ Ever wonder, how, when or why to use Spring? If so, join Rick Evans, Senior Consultant at Interface21, the company behind the Spring Framework, for this free Skills Matter "In the Brain" session in Edinburgh on Monday 25 June 2007 and have all your questions answered!<br />
+For more information or to register (places are free but numbers are limited), go to the <a href="http://tinyurl.com/yth4va">Skills Matter</a> website.</p>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first"></li>
+<li class="event_calendar last"><a href="/event/%252F00/00">Calendar</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-461" class="node node-type-event node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/461" title="FREE Seminar in London on Migrating to Spring 2.0 with Dave Syer">FREE Seminar in London on Migrating to Spring 2.0 with Dave Syer</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Sally Greenwood on Tue, 2007-05-15 08:33        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_5 first last active"><a href="/taxonomy/term/5" rel="tag" title="A normal event
+" class="active">Event</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <div class="event-nodeapi">
+  <div class="event-start dtstart" title="-00-00T00:00:00Z"><label>Start:  </label> -00-00  </div>
+</div>
+ <div class="event-nodeapi">
+   <div class="event-tz"><label>Timezone: </label> </div>
+  </div>
+<p>Location:<br />
+ Skills Matter, 1 Sekforde Street, London, EC1R 0BE, UK</p>
+<p> Description:<br />
+ Join Dr. David Syer, Principal Consultant at Interface21 and experienced, delivery-focused architect and development manager, for this Skills Matter "In the Brain" Session on Migrating to Spring 2.0! If you are already familiar with all that Spring 1.2 has to offer, you will definitely not want to miss this "In the Brain" session as Dave takes you through changing over to Spring 2.0.<br />
+For more information or to register (places are free but numbers are limited), go to the <a href="http://www.skillsmatter.com/david-syer-spring-2-in-the-brain">Skills Matter</a> website.</p>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first"></li>
+<li class="event_calendar last"><a href="/event/%252F00/00">Calendar</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-452" class="node node-type-event node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/452" title="Inauguration event for the Swiss Spring User Group in Zurich">Inauguration event for the Swiss Spring User Group in Zurich</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Juergen Hoeller on Mon, 2007-04-30 05:05        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_5 first last active"><a href="/taxonomy/term/5" rel="tag" title="A normal event
+" class="active">Event</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <div class="event-nodeapi">
+  <div class="event-start dtstart" title="-00-00T00:00:00Z"><label>Start:  </label> -00-00  </div>
+</div>
+ <div class="event-nodeapi">
+   <div class="event-tz"><label>Timezone: </label> </div>
+  </div>
+<p>Description:<br />
+ This inauguration event for the Swiss Spring User Group features a presentation about "Spring 2.1 in the Java EE 5 and OSGI World", by Spring Framework project lead Juergen Hoeller, discussing the feature set for the upcoming Spring 2.1 release as well as the road map beyond 2.1. Come and join the party :-)<br />
+<a href="http://www.jugs.ch/html/events/2007/springnews.html">http://www.jugs.ch/html/events/2007/springnews.html</a></p>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first"></li>
+<li class="event_calendar last"><a href="/event/%252F00/00">Calendar</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-" class="node node-type- node-unpublished node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/" title=""></a>
+    </h2>
+  
+      <div class="unpublished">Unpublished</div>
+  
+  
+  <div class="content">
+    n/a  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
+<div id="node-413" class="node node-type-event node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/413" title="Spring Founder Rod Johnson to speak in Philadelphia, PA on March 29th">Spring Founder Rod Johnson to speak in Philadelphia, PA on March 29th</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Thomas Risberg on Tue, 2007-02-06 15:16        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_5 first last active"><a href="/taxonomy/term/5" rel="tag" title="A normal event
+" class="active">Event</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <div class="event-nodeapi">
+  <div class="event-start dtstart" title="-00-00T00:00:00Z"><label>Start:  </label> -00-00  </div>
+</div>
+ <div class="event-nodeapi">
+   <div class="event-tz"><label>Timezone: </label> </div>
+  </div>
+<p>Location:<br />
+ Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104</p>
+<p> Description:<br />
+ Rod Johnson will be giving the keynote presentation as well as a technical talk at the &quot;Emerging Technologies for the Enterprise&quot; conference arranged by Chariot Solutions.  This is as far as I know the only Mid-Atlantic event where Rod will give a talk this year.  The conference is held at Drexel University on March 28-29 and it will feature, in addition to Rod, Ramnivas Laddad (Spring/AOP), Colin Sampaleanu (Spring), Howard Lewis Ship (Tapestry), Ari Zilka (Terracotta), Dan Diephouse (X-Fire), Kito Mann (JSF) and a number of other speakers.  See <a href="http://www.phillyemergingtech.com" target="_blank">http://www.phillyemergingtech.com</a> for more detail.</p>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first"></li>
+<li class="node_read_more"><a href="/node/413" title="Read the rest of Spring Founder Rod Johnson to speak in Philadelphia, PA on March 29th.">Read more</a></li>
+<li class="event_calendar last"><a href="/event/%252F00/00">Calendar</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-411" class="node node-type-simple-event node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/411" title="LAJUG: Ben Hale to Present on What&#039;s New in Spring 2.0">LAJUG: Ben Hale to Present on What&#039;s New in Spring 2.0</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Colin Sampaleanu on Thu, 2007-02-01 15:35        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_5 first last active"><a href="/taxonomy/term/5" rel="tag" title="A normal event
+" class="active">Event</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>Description:<br />
+ At the February 6 meeting of the LAJUG, Ben Hale will be doing a presentation on Spring 2.0.Title: <em>What's new in Spring 2.0?</em>Abstract:This session provides a practical tour through what's new in Spring 2.&nbsp; If you are using Spring 1.x and want to know what 2.0 will buy you, this talk is for you.&nbsp; If you are not yet using Spring, this is the place to be to get a good overview of the latest developments.  The talk will highlight the simplified and extensible XML configuration support, updates to Spring AOP, new bean scoping options, JPA support, asynchronous JMS, updates to Spring MVC, scripting language support and more!Directions and times available <a target="_self" href="http://www.lajug.org/events.html#meeting">on the event info page</a>.</p>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="/taxonomy/term/5" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="/taxonomy/term/5?page=2" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-item"><a href="/taxonomy/term/5" title="Go to page 1" class="active">1</a></li>
+<li class="pager-item"><a href="/taxonomy/term/5?page=1" title="Go to page 2" class="active">2</a></li>
+<li class="pager-item"><a href="/taxonomy/term/5?page=2" title="Go to page 3" class="active">3</a></li>
+<li class="pager-current">4</li>
+<li class="pager-item"><a href="/taxonomy/term/5?page=4" title="Go to page 5" class="active">5</a></li>
+<li class="pager-item"><a href="/taxonomy/term/5?page=5" title="Go to page 6" class="active">6</a></li>
+<li class="pager-item"><a href="/taxonomy/term/5?page=6" title="Go to page 7" class="active">7</a></li>
+<li class="pager-item"><a href="/taxonomy/term/5?page=7" title="Go to page 8" class="active">8</a></li>
+<li class="pager-next"><a href="/taxonomy/term/5?page=4" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="/taxonomy/term/5?page=7" title="Go to last page" class="active">last »</a></li>
+</ul></div>
 
             </div>
     </div>
@@ -379,108 +538,7 @@ $(document).ready(function() {
         <td width="50px">&nbsp;</td>
         <td width="310px" valign="top" align="left">
 
-        <div class="region region-content-right">
-  <div id="block-block-19" class="block block-block first region-odd odd region-count-1 count-3"><div class="block-inner">
-
-      <h2 class="title">Newsletter Subscription</h2>
-  
-  <div class="content">
-    <div style="background-color:#fff;padding:10px;">
-<p style="margin-left:3px;">Our monthly newsletter is packed full of techniques, tutorials, tips and tricks to get you on your way to Spring nirvana. <a href="/news-events/newsletters">View Archive</a></p>
-
-<form enctype="multipart/form-data" name="StandardForm" method="post" action="http://now.eloqua.com/e/f2.aspx">
-    <input type="hidden" value="StandardForm" name="elqFormName" /> <input type="hidden" value="524" name="elqSiteID" /> <input type="hidden" value="" name="elqCustomerGUID" /> <input type="hidden" value="0" name="elqCookieWrite" />
-
-<table>
-<tr>
-<td>
-<input type="text" class="form-text" size="18" id="edit-submitted-first-name" name="first_name" maxlength="128" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" value="First Name" class="form-text" onblur="this.value = this.value || 'First Name'; this.style.color = '#ccc';" onfocus="if(this.value=='First Name') {this.value='';} this.style.color = '#ccc';" />
-</td>
-<td>
-<input type="text" class="form-text" size="20" id="edit-submitted-last-name" name="last_name" maxlength="128"  value="Last Name" class="form-text" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" onblur="this.value = this.value || 'Last Name'; this.style.color = '#ccc';" onfocus="if(this.value=='Last Name') {this.value='';} this.style.color = '#ccc';" />
-</td>
-</tr>
-</table>
-<table style="margin-top:-13px;">
-<tr>
-<td valign="top">
-<input type="text" class="form-text" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" size="30" id="edit-submitted-email" name="email" maxlength="128" value="Email" class="form-text" onblur="this.value = this.value || 'Email'; this.style.color = '#ccc';" onfocus="if(this.value=='Email') {this.value='';} this.style.color = '#ccc';" />
-</td>
-<td valign="bottom">
-    <input type="hidden" value="http://www.springsource.com/newsevents/newsletter-registration-thank-you" name="redirect" />
-<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='/elqNow/elqScr.js'></script>  <SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript'><!--//
-window.onload = initPage;
-function initPage(){
-    if (this.GetElqCustomerGUID)
-        document.forms["StandardForm"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
-}
-//--></script>
-    <input type="hidden" value="StandardForm" id="edit-submitted-elqformname" name="submitted[elqformname]" />  <input type="hidden" value="524" id="edit-submitted-elqsiteid" name="submitted[elqsiteid]" />  <input type="hidden" value="" id="edit-submitted-elqcustomerguid" name="submitted[elqcustomerguid]" />  <input type="hidden" value="0" id="edit-submitted-elqcookiewrite" name="submitted[elqcookiewrite]" />  <input type="hidden" value="default" id="edit-details-email-subject" name="details[email_subject]" />  <input type="hidden" value="default" id="edit-details-email-from-name" name="details[email_from_name]" />  <input type="hidden" value="default" id="edit-details-email-from-address" name="details[email_from_address]" />  <input type="hidden" value="form-30d82aaa8598120208cca2aa409c85df" id="form-30d82aaa8598120208cca2aa409c85df" name="form_build_id" />  <input type="hidden" value="webform_client_form_3706" id="edit-webform-client-form-3706" name="form_id" />  <input type="image" src="http://www.springsource.org/sites/all/themes/s2org11/images/button_newsevents_subscribe_gray.png"  class="form-submit" value="" id="edit-submit" border="0" name="op" />
-</td>
-</tr>
-</table>
-</form>
-</div>
-<br>
-  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-block-18" class="block block-block region-even even region-count-2 count-4"><div class="block-inner">
-
-      <h2 class="title">Upcoming Events</h2>
-  
-  <div class="content">
-    <!--<a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu" target="_blank"><img src="http://blog.springsource.org/wp-content/themes/spring11/files/PROMO_SpringSourceU_320x118.png"></a>-->
-<a href="http://www.springone2gx.com/conference/santa_clara/2013/09/register" target="_blank"><img src="/files/SpringOne/2013/springone-badge-2013.png"></a>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-event-1" class="block block-event region-odd odd region-count-3 count-5"><div class="block-inner">
-
-  
-  <div class="content">
-    <div class="item-list"><ul><li class="first last">No upcoming events available</li>
-</ul></div><div class="ical-link"><a href="http://www.springsource.org/event/ical" title="Add this calendar to your iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Add to iCalendar" /></a></div><div class="more-link"><a href="/event" title="More events.">more</a></div>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-block-60" class="block block-block region-even even region-count-4 count-6"><div class="block-inner">
-
-      <h2 class="title">Upcoming Training</h2>
-  
-  <div class="content">
-    <script>
-var now = new Date().getTime();
-document.write(unescape("%3Cscript src='http://dserv.springsource.org/spring_mylearn_banner?wh=wwworg&ies="+now+"' type='text/javascript'%3E%3C/script%3E"));
-</script>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-<div id="block-block-3" class="block block-block last region-odd odd region-count-5 count-7"><div class="block-inner">
-
-  
-  <div class="content">
-    <p><strong><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17750">Core Spring Framework</a></strong></p><p>04/15 - 04/18:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158750">Bangalore</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=173542">Live Online</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=174009">San Francisco</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=171408">London</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166673">Edison </a><br/>04/23 - 04/26:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=163743">Zürich</a><br/></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17834"><strong>Rich Web Applications with Spring</strong></a></p><p></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17833"><strong>Enterprise Integration with Spring</strong></a></p><p>04/16 - 04/19:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=172348">Wien</a><br/>04/22 - 04/25:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158752">Bangalore</a><br/>04/30 - 05/03:
-        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166871">Washington DC</a><br/>
-<p><strong>Plus:</strong> 
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18355"><strong>Hibernate with Spring</strong></a>, 
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18339"><strong>Core Spring.NET</strong></a>,
-<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18353"><strong>Groovy & Grails</strong></a></p>
-<p> <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu">and more...</a></p>  </div>
-
-  
-</div></div> <!-- /block-inner, /block -->
-</div><!-- /.region -->
-      <!--[If IE 7]><br><![endif]-->
+              <!--[If IE 7]><br><![endif]-->
       <div style="margin-top:-40px;">
       <div align="right">
 
@@ -503,6 +561,7 @@ document.write(unescape("%3Cscript src='http://dserv.springsource.org/spring_myl
         </table>
 
 
+                  <div class="feed-icons"><a href="/taxonomy/term/5/0/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="RSS - Event" width="16" height="16" /></a></div>
         
       </div></div><!-- /.section, /#content -->
 
