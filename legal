@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>Legal | Cloud Foundry</title>
+<meta content='text/html; charset=UTF-8' http-equiv='content-type'>
+<meta content='Pivotal' name='author'>
+<meta content='Copyright Pivotal 2013. All Rights Reserved.' name='copyright'>
+<meta content='juhk3p2B-UhzEjLXtqFwDMVLo5Lmy4ZP-zVe7Gxo2Dw' name='google-site-verification'>
+<link href='/assets/favicon.ico' rel='shortcut icon'>
+<meta content='all' name='robots'>
+<link href="/assets/application-edd86625eb7752bd9c5be2f8da6bae1b.css" media="all" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9 ]>
+<style>
+  /*<![CDATA[*/
+    #content .container-bottom, .bg-content, #content .container-full, #content .container-bottom {background:  #ebf0fa;}
+    .promo-webinars, .framework-box, .service-box, .answer, .right, .column-jobs {background:#e3e8f2}
+    .announcement hr {display: none;}
+    .announcement-banner {padding-left:35px}
+    .announcements-more-link {margin-right:203px;}
+    .partners-section-column {border-right:none}
+    #footer {background:#000;}
+  /*]]>*/
+</style>
+<![endif]-->
+<script src='https://www.google.com/jsapi?key=ABQIAAAAzwK7tlhdQQfX4rk2KPbxTRSq7DPBv_aUluqtKsDSLC6FrtG5GxQ6nT694TGX535NkrhNWQTwyPiSKg' type='text/javascript'></script>
+<script src="/assets/application-bf4b5a315bade6b17e28a7164c1ea196.js" type="text/javascript"></script>
+<meta content='' name='Description'>
+<meta content='' name='keywords'>
+</head>
+<body>
+<img id='bg' src='/assets/bg-plain-x.jpg'>
+<div id='non_footer'>
+<div id='header'>
+<div class='container_wide'>
+<ul class='actions'>
+<li class='last'>
+<a href='/contact'>Contact Us</a>
+</li>
+<!-- %a.register_link{:href => "http://login.cloudfoundry.com"} My Account -->
+<!-- %li -->
+<!-- %a{:href=>"/contact"} Contact Us -->
+</ul>
+</div>
+</div>
+<div id='content'>
+<div class='logo-main'>
+<div class='logo'>
+<a href='/'>
+<img alt='Cloud Foundry' src='/assets/logo-cf-clean.png'>
+</a>
+</div>
+<div class='cta'>
+<a href='http://my.cloudfoundry.com/signup'>
+<img alt='Sign up for a Free Cloud Foundry Account' src='/assets/signup.png'>
+</a>
+</div>
+</div>
+<div class='container-full'>
+<div id='organization_bar'>
+<div class='navbar'>
+<ul class='nav'>
+<li>
+<a href='/use' id='use'>Using Cloud Foundry</a>
+</li>
+<li>
+<a href='/run' id='run'>Running Cloud Foundry</a>
+</li>
+<li>
+<a href='/getinvolved' id='getinvolved'>Get Involved</a>
+</li>
+<li id='docs-off'>
+<a href='http://docs.cloudfoundry.com' id='docs'>
+<div id='icon-docs'></div>
+</a>
+<div id='docs-list'>
+<div class='docs-list-list'>
+<a class='docs-list-th' href='http://docs.cloudfoundry.com/docs/using/'>Using Cloud Foundry</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/using/app-arch/'>Application Architecture Considerations</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/using/deploying-apps/'>Deploying Apps</a>
+<br><a href='http://docs.cloudfoundry.com/docs/using/managing-apps/'>Managing Apps</a><br><a href='http://docs.cloudfoundry.com/docs/using/tunnelling-with-services.html'>Tunnelling with Services</a><br>
+<a class='docs-list-see-all' href='http://docs.cloudfoundry.com/docs/using/'>See all</a>
+</div>
+<div class='hr-vertical'></div>
+<div class='docs-list-list'>
+<a class='docs-list-th' href='http://docs.cloudfoundry.com/docs/running/'>Running Cloud Foundry</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/api/'>Cloud Foundry API</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/architecture/'>Architecture</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/bosh/'>BOSH</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/deploying-cf/'>Deploying with BOSH</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/deploying-cf-with-chef/'>Deploying with Chef</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/micro_cloud_foundry/'>Micro Cloud Foundry</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/monitoring/'>Monitoring</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/managing-users/'>Managing Users</a>
+<br>
+<a class='docs-list-see-all' href='http://docs.cloudfoundry.com/docs/running/'>See all</a>
+</div>
+<div class='hr-vertical'></div>
+<div class='docs-list-list'>
+<a class='docs-list-th' href='http://docs.cloudfoundry.com/docs/reference/'>Reference</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/reference/cc-api.html'>Cloud Foundry REST API</a>
+<br>
+<a class='docs-list-th' href='http://docs.cloudfoundry.com/docs/dotcom/'>CloudFoundry.com</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/dotcom/integration/'>Technical Integration</a>
+<br>
+<a class='docs-list-th' href='http://docs.cloudfoundry.com/docs/community/'>Community</a>
+</div>
+</div>
+</li>
+<li id='search-off'>
+<a id='search'>
+<div class='icon-search'></div>
+</a>
+</li>
+<li id='search-on'>
+<a id='search2'>
+<form action='http://www.cloudfoundry.com/search' class='search-form' method='get' onsubmit='return submitQuery()'>
+<input autocomplete='off' class='search-input' id='search-query' name='q' onfocus="this.placeholder = ''" placeholder='' type='search' value=''>
+</form>
+<div class='cancel-x'></div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div class='content_inner'>
+<h1>Legal</h1>
+<br>
+<h3>General</h3>
+<p>
+Welcome to CloudFoundry.com, operated by VMware, Inc. ("VMware"). Please review the following terms and conditions concerning your use of this site. By using this site, including downloading materials, you agree to these terms and conditions. VMware reserves the right to change these terms and conditions from time to time at its sole discretion. These terms and conditions apply to all visits to the Cloud Foundry Web site, both now and in the future. These terms represent the entire understanding relating to the use of the CloudFoundry.com Web site and prevail over any prior or contemporaneous, conflicting or additional, communications.
+</p>
+<p>
+Any action related to this Web site will be governed by California law and controlling U.S. federal law. No choice of law rules of any jurisdiction will apply.
+</p>
+<h3>Use of Software</h3>
+<p>
+To the extent that VMware provides for the download of proprietary VMware software and open source software from VMware's Web site ("Software"), such Software is protected by the applicable copyright, patent or other intellectual property rights of either VMware or the open source licensor, respectively. Any use of the Software is subject to the terms of the applicable end-user or open source license agreement.
+</p>
+<p>
+All evaluation Software is provided for evaluation, personal and internal use only and may not be used for commercial, development or production purposes. In addition, such Software is time-disabled meaning that all Software functions and features will cease to operate after a period of time.
+</p>
+<h3>Trademarks</h3>
+<p>
+Cloud Foundry, VMware, the VMware "boxes" logo and design are registered trademarks or trademarks (the "Marks") of VMware, Inc. in the United States and/or other jurisdictions.  You are not permitted to use the Marks without the prior written consent of VMware.
+</p>
+<p>
+All other marks and names mentioned herein may be trademarks of their respective companies.
+</p>
+<h3>Copyright</h3>
+<p>
+Except where otherwise specified, the contents of this site are copyright (c) 1998 - 2011 VMware, Inc., 3401 Hillview Ave, Palo Alto, CA 94304, USA. All rights reserved.
+</p>
+<p>
+The contents of this site are subject to protection under U.S. and foreign copyright laws. You may not copy or distribute any portion of this site, except as necessary to view this site.
+</p>
+<p>
+Please direct any questions or comments to
+<a href='http://www.vmware.com/contact/contactus.html?department=info' title='Contact VMware'>VMware</a>.
+</p>
+<h3>Links to Third Party Sites</h3>
+<p>
+This Web site may provide links to third-party Web sites for your convenience and information. VMware does not endorse or make any representations about third party Web sites, nor does the inclusion of any link imply any such endorsement. If you access those links, you will leave this Web site. VMware is not responsible for webcasting or any other form of transmission received from any third-party sites. VMware does not control those sites and VMware is not responsible for the contents of any third-party sites, any links contained in third-party sites, any changes or updates to third-party sites, or their privacy practices, which may differ from those of VMware. The personal data you may choose to give to such third party web sites is not covered by VMware™ privacy policies. VMware encourages you to review the privacy policy of any company before submitting your personal information. Some third party companies may choose to share their personal data with VMware, in which case such data sharing shall be governed by that third party's privacy policy.
+</p>
+<h3>Disclaimer</h3>
+<p>
+<strong>
+Although VMware has attempted to provide accurate information on this Web site, information on this Web site may contain technical inaccuracies or typographical errors. The contents of any documents on this Web site are believed to be current and accurate as of their publication dates. VMware assumes no responsibility for the accuracy of the information. VMware may change the programs or products mentioned at any time without notice. For the most current and complete documents, please contact VMware directly. Mention of non-VMware products or services is for information purposes only and constitutes neither an endorsement nor a recommendation.
+</strong>
+</p>
+<p>
+<strong>
+ALL INFORMATION, SOFTWARE, PRODUCTS AND SERVICES PROVIDED ON THIS WEB SITE ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE. VMWARE DISCLAIMS ALL WARRANTIES, EXPRESSED OR IMPLIED INCLUDING, WITHOUT LIMITATION, THOSE OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OR ARISING FROM A COURSE OF DEALING, USAGE, OR TRADE PRACTICE. Some jurisdictions do not allow the exclusion of implied warranties, so the above exclusion may not apply to you.
+</strong>
+</p>
+<p>
+<strong>
+VMWARE SHALL NOT BE LIABLE FOR ANY INDIRECT, SPECIAL, CONSEQUENTIAL, OR INCIDENTAL DAMAGES INCLUDING, WITHOUT LIMITATION, LOST PROFITS OR REVENUES, COSTS OF REPLACEMENT GOODS, LOSS OR DAMAGE TO DATA ARISING OUT OF THE USE OR INABILITY TO USE THIS WEB SITE OR ANY VMWARE PRODUCT, OR DAMAGES RESULTING FROM USE OR RELIANCE ON THE INFORMATION PRESENT, EVEN IF VMWARE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+</strong>
+</p>
+</div>
+</div>
+
+</div>
+</div>
+<div id='footer'>
+<div id='container-footer'>
+<div class='bg_social'>
+<ul class='social'>
+<li>
+<a href='http://twitter.com/cloudfoundry' target='_blank'>
+<img alt='Twitter' src='/assets/twitter_large.png'>
+</a>
+</li>
+<li>
+<a href='https://plus.google.com/114245065906861739918/posts' target='_blank'>
+<img alt='Google+' src='/assets/g+_large.png'>
+</a>
+</li>
+<li>
+<a href='http://facebook.com/cloudfoundry' target='_blank'>
+<img alt='Facebook' src='/assets/facebook_large.png'>
+</a>
+</li>
+<li>
+<a href='http://youtube.com/cloudfoundry' target='_blank'>
+<img alt='Youtube' src='/assets/youtube_large.png'>
+</a>
+</li>
+</ul>
+</div>
+<ul class='links'>
+<li>
+<a href='/about'>About</a>
+</li>
+<li class='disc'>•</li>
+<li>
+<a href='http://blog.cloudfoundry.com/'>Blog</a>
+</li>
+<li class='disc'>•</li>
+<li>
+<a href='/partners'>Partners</a>
+</li>
+<li class='disc'>•</li>
+<li>
+<a href='http://stackoverflow.com/questions/tagged/cloudfoundry' target='_blank'>Forums</a>
+</li>
+<li class='disc'>•</li>
+<li>
+<a href='http://status.cloudfoundry.com/' target='_blank'>Status</a>
+</li>
+<li class='disc'>•</li>
+<li>
+<a href='/contact'>Contact</a>
+</li>
+</ul>
+<div id='container-footerth'>
+<div class='footerth'>
+<a href='/use'>Using Cloud Foundry</a>
+<span class='footerlist'>
+<a href='http://docs.cloudfoundry.com/docs/using/app-arch/'>Application Architecture</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/using/deploying-apps/'>Deploying Apps</a>
+<br><a href='http://docs.cloudfoundry.com/docs/using/managing-apps/'>Managing Apps</a><br><a href='http://docs.cloudfoundry.com/docs/using/tunnelling-with-services.html'>Tunnelling with Services</a></span>
+</div>
+<div class='footerth'>
+<a href='/run'>Running Cloud Foundry</a>
+<span class='footerlist'>
+<a href='http://docs.cloudfoundry.com/docs/running/api/'>Cloud Foundry API</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/architecture/'>Architecture</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/bosh/'>BOSH</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/deploying-cf/'>Deploying with BOSH</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/deploying-cf-with-chef/'>Deploying with Chef</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/micro_cloud_foundry/'>Micro Cloud Foundry</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/monitoring/'>Monitoring</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/managing-users/'>Managing Users</a>
+</span>
+</div>
+<div class='footerth'>
+<a href='/getinvolved'>Developer Community</a>
+<span class='footerlist'>
+<br>
+<a href='/getinvolved'>Get Involved</a>
+<br>
+<a href='/getinvolved'><span class="translation_missing" title="translation missing: en.contribute">Contribute</span></a>
+<br>
+<a href='http://github.com/cloudfoundry' target='_blank'>Source Code</a>
+<br>
+<a href='https://groups.google.com/a/cloudfoundry.org/groups/dir' target='_blank'>Mailing Lists</a>
+<br>
+<a href='http://github.com/cloudfoundry' target='_blank'>Report Issues</a>
+</span>
+</div>
+<div class='footerth'>
+<a href='http://docs.cloudfoundry.com'>Documentation</a>
+<span class='footerlist'>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/using/'>Using Cloud Foundry</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/running/'>Running Cloud Foundry</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/reference/'>Reference</a>
+<br>
+<a href='http://docs.cloudfoundry.com/docs/community/'>Community</a>
+</span>
+</div>
+<div class='footerth'>
+<a href='/about'>Cloud Foundry</a>
+<span class='footerlist'>
+<br>
+<a href='/getinvolved#events'>Events</a>
+<br>
+<a href='/calendar'>Calendar</a>
+<br>
+<a href='/webinars'>Webinars</a>
+<br>
+<a href='/faq'>FAQ</a>
+<br>
+<a href='/jobs'>Jobs</a>
+</span>
+</div>
+</div>
+<div class='copyright'>
+<div class='hr-horizontal-dark'></div>
+<br>
+<p>
+&copy;
+<script>
+  //<![CDATA[
+    var d = new Date();
+    document.write(d.getFullYear());
+  //]]>
+</script>
+EMC & VMware. All rights reserved.
+<a href='/terms'>Terms</a>
+<a href='/legal'>Legal</a>
+<a href='http://www.vmware.com/help/privacy.html' target='_blank'>Privacy</a>
+</p>
+</div>
+<script>
+  //<![CDATA[
+    //
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', "UA-22181585-1"]);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  //]]>
+</script>
+</div>
+</div>
+</img>
+</body>
+</html>
