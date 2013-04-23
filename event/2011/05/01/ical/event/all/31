@@ -1,0 +1,98 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  May 01 2011- June 01 2011 | Filter\: 
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224355Z
+DTSTART;VALUE=DATE-TIME:20110519T140000Z
+DTEND;VALUE=DATE-TIME:20110519T151500Z
+UID:http://www.springsource.org/node/3125
+URL;VALUE=URI:http://www.springsource.org/node/3125
+SUMMARY:Webinar\: Spring from Zero to Cloud in 60 minutes - Europe
+DESCRIPTION:<p><em>Hosted by Ramnivas Laddad &amp\; Mark Fisher</em></p>
+ <p><a href=\\"http\://www.cloudfoundry.com\\">Cloud Foundry</a>\, an open source project by VMware\, is a multi-language\, multi-framework\, and multi-deployment cloud. It lets developers focus on what is really important--their applications. Spring based applications are perfectly suited for Cloud Foundry which provides a set of tools to make developing and deploying these applications a simple task. </p>
+ <p>In this webinar\, we show what Cloud Foundry has to offer to Spring developers. We will develop a few applications\, show how to use a variety of services with it\, and scale it to meet changes in demand. After 60 minutes\, you will be ready to develop and deploy your own Spring applications to cloud.</p>
+ <p><a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=667420157\\">Europe\: May 19\, 3\:00pm UK / 4\:00pm Europe</a></p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224355Z
+DTSTART;VALUE=DATE-TIME:20110519T170000Z
+DTEND;VALUE=DATE-TIME:20110519T181500Z
+UID:http://www.springsource.org/node/3126
+URL;VALUE=URI:http://www.springsource.org/node/3126
+SUMMARY:Webinar\: Spring from Zero to Cloud in 60 minutes - North America
+DESCRIPTION:<p><em>Hosted by Ramnivas Laddad &amp\; Mark Fisher</em></p>
+ <p><a href=\\"http\://www.cloudfoundry.com\\">Cloud Foundry</a>\, an open source project by VMware\, is a multi-language\, multi-framework\, and multi-deployment cloud. It lets developers focus on what is really important--their applications. Spring based applications are perfectly suited for Cloud Foundry which provides a set of tools to make developing and deploying these applications a simple task. </p>
+ <p>In this webinar\, we show what Cloud Foundry has to offer to Spring developers. We will develop a few applications\, show how to use a variety of services with it\, and scale it to meet changes in demand. After 60 minutes\, you will be ready to develop and deploy your own Spring applications to cloud.</p>
+ <p><a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=667109726\\">May 19\, 1\:00pm EST / 10\:00am PST</a></p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224355Z
+DTSTART;VALUE=DATE-TIME:20110525T160000Z
+DTEND;VALUE=DATE-TIME:20110525T171500Z
+UID:http://www.springsource.org/node/3132
+URL;VALUE=URI:http://www.springsource.org/node/3132
+SUMMARY:Webinar\: Lightweight Application Server Use Cases
+DESCRIPTION:<p>The complexity\, cost and technological bloat of traditional Java EE application servers are often barriers to running a lean and efficient IT organization. Increased need for scalability and rapid application delivery are driving businesses to reconsider the platform they use for application deployment. By combining the portability and agility of the Spring framework with a lightweight application server\, your organization can meet business demands while staying within budget constraints. <a href=\\"http\://www.vmware.com/products/vfabric-tcserver/overview.html\\">VMware vFabric™ tc Server</a> is a modern\, lightweight Java application server based on Apache Tomcat. It improves developer productivity\, control and manageability—and is the most flexible platform for virtualizing Java applications and workloads for the cloud.</p>
+ <p>Attend this webcast to find out about\:</p>
+ <ul>
+ <li>Real-world examples of companies that have adopted VMware vFabric tc Server</li>
+ <li>The decision process for moving to VMware vFabric tc Server</li>
+ <li>Realized benefits of using Spring and VMware vFabric tc Server</li>
+ <li>When it is appropriate to stay on a JEE platform</li>
+ <li>Planning for future cloud deployments</li>
+ </ul>
+ <p>Featured Speaker\:<br />
+ Filip Hanik\, Tomcat Expert &amp\; Core Committer\, VMware</p>
+ <p>Register\: <a href=\\"http\://event.on24.com/r.htm?e=308505&amp\;s=1&amp\;k=0486490C5F9B30F407ACFC91570D3016&amp\;partnerref=SALESOFT\\">Wednesday\, May 25 at 9\:00 a.m. PDT</a></p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224355Z
+DTSTART;VALUE=DATE-TIME:20110526T080000Z
+DTEND;VALUE=DATE-TIME:20020203
+UID:http://www.springsource.org/node/3091
+URL;VALUE=URI:http://www.springsource.org/node/3091
+SUMMARY:S2G Forum 2011 - Amsterdam
+DESCRIPTION:<p>The <a href=\\"http\://www.springsource.com/events/s2gforum-5-26-2011-amsterdam\\">S2G Forum</a> is the best place to learn about modern enterprise application architecture\, development practices\, and cloud service capabilities. This one day\, multi-track\, lecture-based forum gives developers\, engineers and IT managers the latest information about enterprise Java technology. Presented by the technical thought leaders from SpringSource\, the forum is comprised of three parallel session tracks.</p>
+ <ul>
+ <li><strong>Essential Spring</strong>\: The sessions in this track cover how to use the latest developments in Spring technology\, like Spring 3.1 and Spring Data\, as well as build rich\, multi-client platform web application\, integrate enterprise systems\, and how to get the most out cloud platforms for your Spring applications.</li>
+ <li><strong>Production Systems</strong>\: Detailed discussions about optimal production use of Tomcat\, how to intelligently virtualize Java workloads\, design and build applications for incredible scalability and leverage cloud deployment platforms.</li>
+ <li><strong>Groovy &amp\; Grails</strong>\: These talks provide an update on the latest versions of Groovy and Grails\, practical information about tuning Grails for best performance and cloud platforms as well as a tutorial for creating domain specific languages with Groovy.</li>
+ </ul>
+ <p>From development to the datacenter and into the cloud\, the S2G Forum is the optimal way to learn how to build and run tomorrow’s applications today. Learn the best practices from the experts and exchange tips with other IT professionals that are interested in the latest technology. Register now!</p>
+ <p>SpringSource S2G Forum – Amsterdam - May 26\, 2011. Cost per attendee is € 114. <a href=\\"http\://www.seeuthere.com/vm/springsourceamsterdam2011\\">Register Now!</a></p>
+ <p>Registration\: 8\:00 AM - 9\:00 AM<br />
+ Sessions\: 9\:00 AM - 5\:00 PM</p>
+ <p><a href=\\"http\://maps.google.com/maps?q=NH+Grand+Hotel+Krasnapolsky&amp\;ie=UTF8&amp\;hl=en&amp\;hq=NH+Grand+Hotel+Krasnapolsky&amp\;hnear=NH+Grand+Hotel+Krasnapolsky\,+Dam+9\,+1012+JS+Amsterdam\,+The+Netherlands&amp\;ll=52.372734\,4.894297&amp\;spn=0.002145\,0.0053&amp\;z=18&amp\;iwloc=A\\">NH Grand Hotel Krasnapolsky</a><br />
+ Dam 9<br />
+ 1012 Amsterdam\, Netherlands<br />
+ 020 5549111</p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224355Z
+DTSTART;VALUE=DATE-TIME:20110531T230900Z
+DTEND;VALUE=DATE-TIME:20020203
+UID:http://www.springsource.org/node/3092
+URL;VALUE=URI:http://www.springsource.org/node/3092
+SUMMARY:S2G Forum 2011 - London
+DESCRIPTION:<p>The <a href=\\"http\://www.springsource.com/events/s2gforum-5-31-2011-london\\">S2G Forum</a> is the best place to learn about modern enterprise application architecture\, development practices\, and cloud service capabilities. This one day\, multi-track\, lecture-based forum gives developers\, engineers and IT managers the latest information about enterprise Java technology. Presented by the technical thought leaders from SpringSource\, the forum is comprised of three parallel session tracks.</p>
+ <ul>
+ <li><strong>Essential Spring</strong>\: The sessions in this track cover how to use the latest developments in Spring technology\, like Spring 3.1 and Spring Data\, as well as build rich\, multi-client platform web application\, integrate enterprise systems\, and how to get the most out cloud platforms for your Spring applications.</li>
+ <li><strong>Production Systems</strong>\: Detailed discussions about optimal production use of Tomcat\, how to intelligently virtualize Java workloads\, design and build applications for incredible scalability and leverage cloud deployment platforms.</li>
+ <li><strong>Groovy &amp\; Grails</strong>\: These talks provide an update on the latest versions of Groovy and Grails\, practical information about tuning Grails for best performance and cloud platforms as well as a tutorial for creating domain specific languages with Groovy.</li>
+ </ul>
+ <p>From development to the datacenter and into the cloud\, the S2G Forum is the optimal way to learn how to build and run tomorrow’s applications today. Learn the best practices from the experts and exchange tips with other IT professionals that are interested in the latest technology. Register now!</p>
+ <p>SpringSource S2G Forum – London - May 31\, 2011. Cost per attendee is £ 99. <a href=\\"http\://www.seeuthere.com/vm/springsourcelondon2011\\">Register Now!</a></p>
+ <p>Registration\: 8\:00 AM - 9\:00 AM<br />
+ Sessions\: 9\:00 AM - 5\:00 PM</p>
+ <p><a href=\\"http\://maps.google.com/maps?q=The+London+Hilton&amp\;hl=en&amp\;ie=UTF8&amp\;view=map&amp\;cid=11841857464932658291&amp\;z=16&amp\;iwloc=A\\">The London Hilton on Park Lane</a><br />
+ 22 Park Lane<br />
+ London W1K 1BE</p>
+ 
+END:VEVENT
+END:VCALENDAR

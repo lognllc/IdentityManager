@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  February 06 2012- February 13 2012
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224254Z
+DTSTART;VALUE=DATE-TIME:20120209T140000Z
+DTEND;VALUE=DATE-TIME:20120209T151500Z
+UID:http://www.springsource.org/node/3374
+URL;VALUE=URI:http://www.springsource.org/node/3374
+SUMMARY:Webinar\: Messaging for Modern Applications - Europe
+DESCRIPTION:<p>Deploying modern applications in the cloud can introduce new challenges like distributing and integrating application components across private and public networks\, using heterogeneous messaging systems\, driving heavier workloads and horizontally scaling the messaging tier. Join Tom McCuch to learn how to overcome these challenges using proven enterprise integration patterns with <a href=\\"/spring-amqp\\">AMQP based messaging</a>\, <a href=\\"/spring-integration\\">Spring Integration</a>\, and <a href=\\"http\://www.rabbitmq.com\\">RabbitMQ</a>.</p>
+ <p>Europe\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=669267795\\">February 09\, 3\:00pm UK / 4\:00pm Europe</a></p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224254Z
+DTSTART;VALUE=DATE-TIME:20120209T170000Z
+DTEND;VALUE=DATE-TIME:20120209T181500Z
+UID:http://www.springsource.org/node/3375
+URL;VALUE=URI:http://www.springsource.org/node/3375
+SUMMARY:Webinar\: Messaging for Modern Applications - North America
+DESCRIPTION:<p>Deploying modern applications in the cloud can introduce new challenges like distributing and integrating application components across private and public networks\, using heterogeneous messaging systems\, driving heavier workloads and horizontally scaling the messaging tier. Join Tom McCuch to learn how to overcome these challenges using proven enterprise integration patterns with <a href=\\"/spring-amqp\\">AMQP based messaging</a>\, <a href=\\"/spring-integration\\">Spring Integration</a>\, and <a href=\\"http\://www.rabbitmq.com\\">RabbitMQ</a>.</p>
+ <p>North America\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=668918092\\">February 09\, 1\:00pm EST / 10\:00am PST</a></p>
+ 
+END:VEVENT
+END:VCALENDAR

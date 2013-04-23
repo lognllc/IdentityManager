@@ -1,0 +1,936 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Spring Roo | SpringSource.org</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ctools/css/ctools.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/google_cse/google_cse.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/filefield/filefield.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/nice_menus/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/framework/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/page-backgrounds.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/tabs.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/messages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/pages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/block-editing.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/blocks.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/navigation.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/panels-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/views-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/nodes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/comments.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/forms.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/fields.css?R" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/s2org11/css/print.css?R" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie.css?R" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie6.css?R" />
+<![endif]-->
+  <script type="text/javascript" src="/misc/jquery.js?R"></script>
+<script type="text/javascript" src="/misc/drupal.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/superfish.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.bgiframe.min.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.hoverIntent.minified.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
+<script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay": 800, "speed": 1 }, "prettify": { "linenums": false, "match": ".content", "nocode": "no-code", "custom": [  ], "markup": { "code": true, "pre": true, "precode": false } } });
+//--><!]]>
+</script>
+</head>
+<body class="page not-front not-logged-in node-type-project-page no-sidebars page-spring-roo section-spring-roo page-panels">
+
+	  
+
+<!--begin custom navigation-->
+      	  
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+<div style="height:97px;margin-top:0px;background: #457228;">
+<![endif]-->
+
+<div style="height:97px;margin-top:0px; background: url('http://www.springsource.org/sites/all/themes/s2org11/images/BG_SiteHeader_Glow.png') no-repeat scroll center top, url('/files/homepage/BG_SiteBillboardAndHeader_50.png') repeat-x scroll 0 0 #367B09;">
+
+    <div id="top">
+  		<div style = "height:80px;margin-top:0px;background: url('/files/homepage/BG_SiteTopNav_new.png') repeat-x scroll 0 0 #F1F1F1;
+  	-moz-border-radius: 0 0 5px 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 0 0 5px 5px;
+-moz-box-shadow: 0 0 15px #333;
+-webkit-box-shadow: 0 0 15px#333;
+box-shadow: 0 0 15px #333;">
+<div style="margin-left:10px;margin-right:10px;">
+ 	          <table valign="top" height="80" style="font-size:14px;text-transform:uppercase;color:#666;margin:0;">
+	          <tr>
+	          
+	          <td>
+	           <a href="/"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/logo_springsource_community.png"></a>
+	           </td>
+	           <td width="5">&nbsp;</td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                  <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/features" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_features.png" id="b1"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-started" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getstarted.png" id="b2"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-involved" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getinvolved.png" id="b3"></a></br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/news-events" onmouseover="mouseOver4()" onmouseout="mouseOut4()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_newsevents.png" id="b4"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td width="7" align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+
+	           <td align="center">
+
+	      	  
+        <div id="search-box" style="border-bottom: 1px solid #E2E2E2;">
+          <form action="/search/google" method="get" id="search-theme-form">
+            <div><div id="search" class="container-inline">
+
+              <input type="text" maxlength="128" size="16" name="query" value="Search" style="border: 1px solid #CCCCCC;margin-bottom:10px;margin-left: 2px;color:#999999" class="form-text" onblur="this.value = this.value || 'Search'; this.style.color = '#999999';" onfocus="if(this.value=='Search') {this.value='';} this.style.color = '#999999';" />
+                          
+              <input type="hidden" name="output" value="xml_no_dtd" />
+              <input type="hidden" name="client" value="google-csbe" />
+              <input type="hidden" name="cx" value="009687201310241541466:zerjfa_shxo" />
+              <input type="hidden" name="ie" value="utf-8" />
+              <input type="hidden" name="oe" value="utf-8" />
+              <input type="hidden" name="op" value="Search" />
+            </div></div>
+          </form>
+        </div>
+               <div id="subscribe" style="color: #7E7E7E;float: left;padding-top: 5px;padding-left: 10px;border-top: 1px solid whiteSmoke;">
+              <a href="/newsletter-subscription" style="color: #7e7e7e;background:url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat" onmouseover="this.style.background = 'url(/files/header/nav_subscription_on.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'" onmouseout="this.style.background = 'url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'">
+                  <span style="padding-left:23px">Subscribe</a>
+              </a>
+        </div>
+        
+
+		      </td>
+		      
+		      </tr>
+	      </table>
+</div>
+  		
+              </div></div></div>
+
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+ </div>
+<![endif]-->
+<!--end custom navigation-->
+
+
+
+  <div id="page-wrapper"><div id="page">
+
+  
+    <div id="header"><div class="section clearfix">
+
+      
+<div id="name-and-slogan">
+
+</div>
+
+      
+      
+
+
+    </div></div><!-- /.section, /#header -->
+
+    <div id="main-wrapper"><div id="main" class="clearfix">
+
+      <div id="content" style="margin-left:10px;margin-right:10px;" class="column"><div class="section">
+
+
+        
+        
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › </div> -->
+
+	  
+	  
+	  
+                        
+
+       <table width="100%" >
+       <tr>
+     <td width="620px" valign="top" align="left">
+       <div style="width:600px;">
+       
+ <div id="content-area">
+
+	<div style="margin-top:-20px;">
+	<!--[If IE 7]><br><![endif]-->
+	  <p class="intro" style="margin-bottom:5px;"><a href="/projects">Spring Projects</a></p>
+	  <h1 class="title" id="main-page-title">Spring Roo</h1>
+
+	  <p>
+	  <p>Spring Roo is a next-generation rapid application development tool for Java developers. With Roo you can easily build full Java applications in minutes. It differs from other productivity tools by focusing on:</p>
+<ul>
+    <li>Rapid results</li>
+    <li>100% develop in Java</li>
+    <li>Easy-to-use</li>
+    <li>Fast and simple to remove</li>
+    <li>Totally compromise free</li>
+    <li>Active, helpful community</li>
+    <li>Comprehensive technology integrations</li>
+    <li>Extension points via Roo add-ons</li>
+    <li>SpringSource-certified architecture</li>
+</ul>
+<p>&nbsp;</p>	  </p>
+
+           <div id="node-3235" class="node node-type-project-page build-mode-full"><div class="node-inner">
+
+  
+  
+  
+  
+  <div class="content">
+    <div class="field field-type-text field-field-overview">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Spring Roo is a next-generation rapid application development tool for Java developers. With Roo you can easily build full Java applications in minutes. It differs from other productivity tools by focusing on:</p>
+<ul>
+    <li>Rapid results</li>
+    <li>100% develop in Java</li>
+    <li>Easy-to-use</li>
+    <li>Fast and simple to remove</li>
+    <li>Totally compromise free</li>
+    <li>Active, helpful community</li>
+    <li>Comprehensive technology integrations</li>
+    <li>Extension points via Roo add-ons</li>
+    <li>SpringSource-certified architecture</li>
+</ul>
+<p>&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-video">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><a href="http://s3.springsource.com/MRKT/roo/2010-01-Five_Minutes_Roo.mov" target="_blank"><img width="320" height="186" src="/files/imagefield_thumbs/project/images/Project_Roo_video.png" alt="" /></a></p>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img  class="imagefield imagefield-field_image" width="320" height="184" alt="" src="http://www.springsource.org/files/imagefield_default_images/placeholder_video_spring_projects.png?1317158563" />        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-download-link">
+    <div class="field-items">
+            <div class="field-item odd">
+                    http://www.springsource.com/download/community?project=Spring Roo        </div>
+        </div>
+</div>
+<div style="width:600px">
+<h3>Instant Results - Making Java Fun</h3>
+<p>Spring Roo is a lightweight developer tool that makes it fast and easy to deliver instant results. Best of all, you code 100% in Java and get to reuse all your existing Java knowledge, skills and experience. You'll like it - and have plenty of fun too! Read how <b><a href="http://www.springsource.org/node/3001">TomTom cut development time in half</a></b> using Spring Roo.</p>
+<p>Download the book by Josh Long and Steve Mayzak called <a href="http://spring-roo-repository.springsource.org/Getting_Started_with_Roo.pdf">Getting Started with Roo</a>. You can also purchase it as a print-on-demand book or in alternative formats from the <a href="http://oreilly.com/catalog/0636920020981">O'Reilly</a> web site.</p>
+<p>Ken Rimple and Srini Penchikala have also written the definitive Roo reference book called <a href="http://www.manning.com/rimple/">Spring Roo in Action</a> available for purchase from <a href="http://www.manning.com/">Manning Publications</a>.</p>
+<h3>Exciting Features - GWT. Solr. Cloud. Flex...</h3>
+<p>MVC applications with JPA are a breeze with Roo, but it also eases your journey into the next generation of technology. We already support cool features like Google Web Toolkit (GWT) for advanced next-generation user interfaces, Solr for search server integration and cloud deployment like Google App Engine. Plus we have incremental database introspection, Flex, Spring Integration and much more actively in development.</p>
+<p>SpringSource and Google are working together to combine the speed of development of Spring Roo with the power of the Google Web Toolkit (GWT) to build rich browser apps. Try out the exciting GWT and Google App Engine support now available from Spring Roo 1.1.</p>
+<h3>Zero Risks - Productivity Without Compromise</h3>
+<p>With Roo you still program everything in Java. Its innovative approach operates entirely at compile-time and is completely compatible with your IDE. Plus because there's no runtime portion, adoption is also simplified and low risk. All your Java developers will feel comfortable and be productive from day one. Roo really represents productivity without compromise.</p>
+<p><br />
+<a name="why"></a></p>
+<hr />
+<h2>Why Spring Roo?</h2>
+<p>Spring Roo is a next-generation rapid application development tool for Java developers. With Roo you can easily build full Java applications in minutes. It differs from other productivity tools by focusing on:</p>
+<table>
+    <tbody>
+        <tr>
+            <td width="50%" valign="top">
+            <ul>
+                <li><a href="#try">Rapid results</a></li>
+                <li>100% <a href="#how_it_works">develop in Java</a></li>
+                <li>Easy-to-use</li>
+                <li>Fast and simple to remove</li>
+                <li>Totally <a href="#no_compromises">compromise free</a></li>
+            </ul>
+            </td>
+            <td width="50%" valign="top">
+            <ul>
+                <li>Active, helpful <a href="#talk">community</a></li>
+                <li>Comprehensive <a href="#integrations">technology integrations</a></li>
+                <li>Extension points via Roo add-ons</li>
+                <li><a target="_blank" href="http://www.springsource.com/about/about-us">SpringSource</a>-certified architecture</li>
+            </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><a name="integrations"> </a></p>
+<h3><a name="integrations">Technology Integrations</a></h3>
+<p><a name="integrations"> </a></p>
+<p>&nbsp;</p>
+<p>Roo gives you easy and immediate access to all of the mainstream Java technologies important to building sophisticated enterprise applications. Here's just some of the technologies that Roo-based projects can instantly leverage (plus there's plenty more supported by third-party add-ons, or you can write your own add-on):</p>
+<table style="width:100%;">
+    <tbody>
+        <tr>
+            <td valign="top" style="width:33.33%;">
+            <ul>
+                <li>Adobe Flex</li>
+                <li>Apache ActiveMQ</li>
+                <li>Apache Maven</li>
+                <li>Apache OpenJPA</li>
+                <li>Apache Tiles</li>
+                <li>Apache Tomcat</li>
+                <li>AspectJ</li>
+                <li>AspectJ Development Tools</li>
+                <li>Cloud computing</li>
+                <li>Dojo Toolkit</li>
+                <li>Eclipse IDE</li>
+                <li>EclipseLink</li>
+                <li>Google Web Toolkit</li>
+                <li>Google App Engine</li>
+                <li>Hibernate</li>
+            </ul>
+            </td>
+            <td valign="top" style="width:33.33%;">
+            <ul>
+                <li>Java 5+</li>
+                <li>Java Bean Validation</li>
+                <li>Java Database Connectivity</li>
+                <li>Java Message Service</li>
+                <li>Java Persistence API</li>
+                <li>Java Transaction API</li>
+                <li>Java Server Pages</li>
+                <li>Jetty</li>
+                <li>JUnit</li>
+                <li>Log4J</li>
+                <li>Representational State Transfer (REST)</li>
+                <li>Selenium</li>
+            </ul>
+            </td>
+            <td valign="top" style="width:33.33%;">
+            <ul>
+                <li>OSGi add-ons</li>
+                <li>Solr search</li>
+                <li>SpringSource tc Server with Insight</li>
+                <li>SpringSource Tool Suite</li>
+                <li>Spring Integration</li>
+                <li>Spring Framework</li>
+                <li>Spring Security</li>
+                <li>Spring Web Flow</li>
+                <li>URL Rewrite Filter</li>
+                <li>Web application resource (WAR) packaging</li>
+                <li>Write Your Own Add-Ons</li>
+            </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h3><a name="no_compromises">Productivity Without Compromise</a></h3>
+<p>Roo's <a href="#how_it_works">innovative approach</a> is free of any compromises:</p>
+<ul>
+    <li>Program in Java!</li>
+    <li>Full IDE support (with features like code assist, refactoring and debugging)</li>
+    <li>No runtime portion, which means easier adoption in enterprise with approval requirements</li>
+    <li>Excellent runtime performance, as there's no runtime memory usage, deployment footprint, control flow invocation time etc</li>
+    <li>Lower risk of bugs impacting your project, as Roo operates entirely at development time (just like your IDE)</li>
+    <li>No lock-in to Roo, as you can remove it from your project in just minutes</li>
+    <li>Easy extensibility to new features thanks to OSGi-based add-on extensibility</li>
+    <li>We could go on, but you get the point: Roo doesn't make you compromise (ever) :-)</li>
+</ul>
+<h3><a name="how_it_works">How It Works</a></h3>
+<p>In a nutshell, Roo is a lightweight console shell that you load up while developing your projects. While the Roo shell can be used to complete time-consuming operations in just one quick command, most of the time you'll just ignore Roo and go off and develop your project in your IDE or text editor.</p>
+<!--<p><img alt="" src="http://www.springsource.org/files/minisite_roo/Screenshot-Spring-Roo-102.gif" /></p>-->
+<p>&nbsp;</p>
+<p>As you go about editing code in your normal way, Roo keeps an eye on your project files and automatically modifies them in response to your actions. Depending on the Roo add-ons you have running, Roo can help you with different types of files. For example, Roo's JPA add-on means you can write an incredibly simple Hello.java file that looks like this:</p>
+<pre>
+ 
+@RooJpaActiveRecord public class Hello {
+	private String world;
+}</pre>
+<p>You might wondering what good is a Java class that only has a single private field. Well, not much. But Roo fixes that by using the compiler's &quot;mixins&quot; feature to add extra goodies into the .class files at compile-time (not runtime). This means the Hello.class actually contains a large number of useful members, none of which you had to go to the trouble of writing - or maintaining, debugging and testing - yourself:</p>
+<pre>
+ 
+public class Hello {
+	private String world {..}
+	public String getWorld() {..}
+	public void setWorld(String world) {..}
+	public Long getId() {..}
+	public void setId(Long id) {..}
+	public Integer getVersion() {..}
+	public void setVersion(Integer version) {..}
+	public String toString() {..}
+	public void persist() {..}
+	public void remove() {..}
+	public void flush() {..}
+	public static Long countHellos() {..}
+	public static Hello findHello(Long id) {..}
+	public static List findAllHellos() {..}
+        public static List findHelloEntries(int start, int finish) {..} // there are even more methods
+}
+</pre>
+<p>What's neat about the Roo approach is your Hello.java is free of all that noise and effort, yet your Hello.class is extremely useful and totally compatible with your IDE (code assist, debugging etc) and runtime environment (no Roo dependencies or other compromises). Plus because it's just a plain Java class, it also performs brilliantly at runtime and doesn't consume extra memory at runtime. Roo is totally round-trip aware and will maintain the mixins as you develop your entity. For example, if you add another field Roo will instantly produce the getter/setter and update the toString() method. If you add an @Id field, Roo will stop producing its identifier field and yours will take priority. If you write a toString() method yourself, yours will of course be used and the Roo one will disappear. In fact if you comment out your toString() method, Roo's will instantly return. It's all incredibly easy (and fun as well!).</p>
+<p>More subtle factors not immediately obvious above are that the @Roo* annotations are &quot;source retention&quot;. That means they don't appear in the .class file, reflecting Roo's &quot;zero lock-in&quot; and &quot;no runtime&quot; policy. Plus you can easily get rid of Roo by copying the contents of its generated mixin source code straight into your .java files. In fact there's even a refactoring command in Eclipse that will complete this for you in just a few seconds! Oh, and if you didn't want to write the Hello.java source file, you could have just used two Roo TAB-aware commands to do it: &quot;entity --class Hello&quot;, &quot;field String world&quot;. Like we said, it's all incredibly easy (and fun as well!).</p>
+<p>Roo's approach delivers you the best of lock-in free, high-performance productivity tooling. It just works. <a href="#try">Try it</a> and see for yourself. Or <a href="http://static.springsource.org/spring-roo/reference/html/index.html target=">head over to our reference guide</a> to learn more about why you'd choose Roo as your productivity tool.</p>
+<p><br />
+<a name="try"></a></p>
+<hr />
+<h2>Try Spring Roo</h2>
+<p>It's very easy to get started with Roo. Just follow the steps on this page and you'll have a running environment in minutes.</p>
+<h3>Download</h3>
+<p>Roo requires you to download and install:</p>
+<ul>
+    <li>&nbsp;<a target="_blank" href="http://java.sun.com/javase/downloads/index.jsp">Java 6 JDK</a></li>
+    <li>&nbsp;<a target="_blank" href="http://maven.apache.org/download.html">Apache Maven</a></li>
+</ul>
+<p>To obtain Roo, you can either download its standalone command-line shell version or use the version built into SpringSource Tool Suite. You can also download both and use them together if you prefer:</p>
+<ul>
+    <li>&nbsp;<a target="_blank" href="http://www.springsource.com/download/community?project=Spring%20Roo">Spring Roo</a></li>
+    <li>&nbsp;<a target="_blank" href="http://www.springsource.com/products/sts">SpringSource Tool Suite</a></li>
+</ul>
+<h3>Install</h3>
+<p>If you downloaded the standalone Spring Roo, simply unzip it to a location of your choice. Then:</p>
+<ul>
+    <li>Windows users: add %ROO_HOME%\bin to your path</li>
+    <li>*nix users: create a symbolic link to $ROO_HOME/bin/roo.sh (eg sudo ln -s ~/spring-roo-1.x.x/bin/roo.sh /usr/bin/roo)</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Watch Video</h3>
+<p>If you'd like to watch how easy it is to use Roo once you've installed it, <a target="_blank" href="http://s3.springsource.com/MRKT/roo/2010-01-Five_Minutes_Roo.mov">this video</a> will show you how. Alternately, complete the steps below and try it for yourself.</p>
+<h3>First Project - Roo Standalone</h3>
+<p>Let's build a project. We'll omit the console output in the steps below. We also strongly recommend you type &quot;hint&quot; after each step to help learn to use the shell. Please note you need Roo 1.2.0 or above to execute these commands:</p>
+<pre>
+ 
+mkdir hello
+cd hello
+roo
+roo&gt; hint
+roo&gt; project --topLevelPackage com.foo
+roo&gt; jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY         
+roo&gt; entity jpa --class ~.Timer --testAutomatically
+roo&gt; field string --fieldName message --notNull
+roo&gt; hint web mvc
+roo&gt; web mvc setup
+roo&gt; web mvc all --package ~.web
+roo&gt; selenium test --controller ~.web.TimerController
+roo&gt; web gwt setup
+roo&gt; web gwt all --proxyPackage ~.client.proxy --requestPackage ~.client.request          
+roo&gt; perform tests
+roo&gt; quit
+</pre>
+<p>Wow! You've now got a webapp complete with JUnit tests, Selenium tests, a MVC front-end, a Google Web Toolkit frontend. Just use &ldquo;mvn gwt:run&rdquo; to play with the GWT client, or use &ldquo;mvn tomcat:run&rdquo; to start the Tomcat MVC front-end and view with http://localhost:8080/foo/timers.</p>
+<p>Next up you probably want to type &quot;mvn eclipse:eclipse&quot; and then use Eclipse's &quot;General &gt; Import Existing Project into Workspace&quot; feature. Leave the Roo shell running and feel free to edit in Eclipse. You'll see Roo maintains your files while its running. If you change anything without Roo running, don't worry - just load Roo up and it will catch up on anything you've changed.</p>
+<h3>First Project &ndash; via STS</h3>
+<p>If you installed SpringSource Tool Suite, just use File &gt; New &gt; Roo Project. Then enter a &quot;project name&quot; of &quot;Foo&quot; and a &quot;package&quot; of &quot;com.foo&quot;. Once you click &quot;Next&quot; and &quot;Finish&quot;, you'll see the Roo shell load up at the bottom of STS. Then enter the same commands as we saw in the &quot;First Project (Roo standalone)&quot; section and you can run the application easily via WTP.</p>
+<h3>Next Steps</h3>
+<p>We have a <a target="_blank" href="http://static.springsource.org/spring-roo/reference/html/index.html">detailed reference guide</a> to help you get started. The following sections are likely of assistance:</p>
+<ul>
+    <li>Installation</li>
+    <li>First Steps</li>
+    <li>Roo's Samples</li>
+    <li>Suggested Steps</li>
+    <li>Detailed Tutorial</li>
+</ul>
+<p><br />
+<a name="learn"></a></p>
+<hr />
+<h2>Learn Spring Roo</h2>
+<h3>Getting Started</h3>
+<p>We've made it easy to learn Roo. There are many resources available to assist you learn Roo either at your leisure or with some help.</p>
+<p>Before you continue, we recommend you read the <a href="http://www.springsource.org/roo/start">getting started</a> page and follow the first steps there. Here you'll learn how to install Roo and create your first project. There are also links to important sections of the reference guide to help you get started.</p>
+<h3>Reference Guide</h3>
+<p>We have over 100 pages of Roo <a target="_blank" href="/roo/guide">reference documentation</a> included in the Roo download to assist you. There are four main sections of the guide: Welcome to Roo, Base Add-Ons, Interals and Add-On Development, and Appendicies. This is the best resource to start with once you've finished the <a href="http://www.springsource.org/roo/start">getting started</a> page.</p>
+<h3>Community Resources</h3>
+<p>Visit the <a href="http://www.springsource.org/roo/community">community page</a> to learn about the numerous ways you can connect with the wider Roo community. This is not only a great way to learn about Roo, but it's also a lot of fun and very friendly.</p>
+<h3>Videos and Presentations</h3>
+<p>A large number of videos and downloadable presentations about Spring Roo are available via the <a target="_blank" href="http://forum.springsource.org/showthread.php?t=71985">Project Links</a> Page. If you would like to present on Roo, also feel free to <a target="_blank" href="http://forum.springsource.org/forumdisplay.php?f=67">contact</a> the Spring Roo project engineers and we'll be happy to provide the latest available slides and roadmap information to further assist you.</p>
+<h3>Books</h3>
+<p>Manning have published a &quot;Roo In Action&quot; book. Visit<a target="_blank" href="http://manning.com/rimple"> http://www.manning.com/rimple</a> or follow <a target="_blank" href="http://twitter.com/RooInAction">@RooInAction</a> for the latest updates.</p>
+
+<p>Packt Publishing have published <a href="http://www.packtpub.com/spring-roo-1-1-cookbook/book">Spring Roo 1.1 Cookbook</a> by Ashish Sarin.</p>
+
+<p>O'Reilly have  published  <a href="http://oreilly.com/catalog/0636920020981">Getting Started with Roo</a>. You can also download the <a href="http://spring-roo-repository.springsource.org/Getting_Started_with_Roo.pdf">open-source version of the book</a>.  This book is more a succinct introduction than a reference text. 
+
+</p>
+
+</p>
+
+<h3>Training</h3>
+<p>SpringSource (a division of VMware) offer comprehensive on-site and public <a href="http://www.springsource.com/training">training courses</a> covering the Spring platform, including Roo. If you're looking for a detailed custom course on Roo, SpringSource can also assist you.</p>
+<h3>Professional Services</h3>
+<p>SpringSource is also available for short-duration <a href="http://www.springsource.com/support/professional-services">professional services</a>. Common services include design reviews, architectural advice and mentoring services.</p>
+<h3>Support Subscriptions</h3>
+<p>Comprehensive developer and production<a href="http://www.springsource.com/services/enterprisesupport"> support subscriptions</a> are available from SpringSource. These include SLA-backed 24 x 7 x 365 options for mission-critical environments.</p>
+<p><br />
+<a name="talk"></a></p>
+<hr />
+<h2>Talk Spring Roo</h2>
+<h3>Spring Roo Community</h3>
+<p>The Roo community consists of thousands of people who are using Roo, ranging from beginning Java developers to JavaOne rockstars - and everyone in between! The Roo community is inclusive, friendly and warmly welcomes your participation. We will not only help you learn Roo, but we're also happy to assist you with usage tips, roadmap information and architectural advice. The ways to participate in the Roo community are detailed on this page. We look forward to hearing from you!</p>
+<h3>Twitter</h3>
+<p>Follow <a target="_blank" href="http://twitter.com/SpringRoo">@SpringRoo</a> for the latest official news and release announcements. If you're interested in the development progress of Roo and other interesting updates, we also encourage you to follow the <a target="_blank" href="http://twitter.com/SpringRoo/roo-team/members">Roo project team engineers</a>.</p>
+<p>If you Tweet about Roo, please include #SpringRoo in the message (please do not use #roo or similar). This will help others find your Tweet, and it will be found by the Twitter gadgets on this page and our home page. Please let us (and others!) know what you think of Roo in this easy and fast way.</p>
+<h3>Community Forum</h3>
+<p>The Roo <a target="_blank" href="http://forum.springsource.org/forumdisplay.php?f=67">community forum</a> is the main way to communicate with other members of the community about getting started with Roo, usage advice, architectural help, roadmap information and possible bugs. You'll also find it an easy way to reach the Roo core project engineers, all of whom are active on the community forum and are happy to discuss roadmaps and detailed Roo internals with you.</p>
+<h3>Spread The Word</h3>
+<p>If you like Roo, let others know about it! The easiest way is to simply Tweet with @SpringRoo, but other approaches can include internal company presentations, user group talks, conference sessions and so on. Roo is a pleasure to present because it's so demo-friendly, plus we also have a lot of freely-available and regularly-updated presentation material available for you (just <a target="_blank" href="http://forum.springsource.org/forumdisplay.php?f=67">contact us</a> on the community forum). If you've already presented Roo, please let us know and we'll try to send you a small Roo gift (we normally have something nice to give out thanks to SpringSource).</p>
+<h3>Application Showcase</h3>
+<p>Soon we'll be launching an &quot;Application Showcase&quot; to show others the applications that people have produced with Roo. If you have built an application in Roo and would like to provide a screen shot and short sentence or two about it, please get in touch with us via the <a href="http://forum.springsource.org/forumdisplay.php?f=67">forum</a>.</p>
+<h3>Issue Tracker</h3>
+<p>If you've found a bug, or have a feature idea, please log it in our issue tracker. Our<a target="_blank" href="http://jira.springframework.org/browse/ROO"> issue tracker</a> can also be used to locate features other people have submitted, comment on requirements and vote for those features that you would find most useful. This is a common way we prioritise enhancement requests.</p>
+<h3>Blog</h3>
+<p>The core Roo engineers regularly blog about Roo on the SpringSource <a target="_blank" href="http://blog.springsource.com/">Team Blog</a>. You can also directly access Roo-related articles by following the <a target="_blank" href="http://blog.springsource.com/category/roo/">Roo category</a>.</p>
+<h3>Write Code</h3>
+<p>If you'd like to dig into the Roo code, the first step is to clone our Git repository and follow the readme.txt in the root directory. We use Maven to build Roo, so it's very easy to build your own releases (as you probably installed Maven already in order to use Roo!). The Git command you'll need is:</p>
+<pre>
+ 
+git clone git://github.com/SpringSource/spring-roo.git</pre>
+<p>One easy way to write code for Roo is to develop an add-on. Because Roo uses an OSGi-based addon architecture, you can easily build add-ons that can be located by others and and installed into their Roo shell. <br />
+<br />
+If you'd like to contribute to Roo itself (as opposed to writing an external add-on), you're also very welcome to do so. Have a look through the issue tracker or post a message on the community forum that outlines what you'd be interested in working on and we'll be pleased to help.</p>
+<p>&nbsp;</p>
+</div><div class="field field-type-text field-field-quickjump">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <table width="100%" class="quickjump">
+    <tbody>
+        <tr>
+            <td width="50%" valign="top">
+            <p><a href="#download">Download</a><br />
+            <a href="#documentation">Documentation</a><br />
+            <a href="#relateddiscussions">Discussions</a><br />
+            <a href="http://forum.springsource.org/forumdisplay.php?67-Roo">Get Involved</a><br>
+            <a href="https://github.com/springsource/spring-roo" target="_blank">Source Repository</a></p>
+            </td>
+            <td width="50%" valign="top">
+            <p><a href="#why">Why Spring Roo?</a><br />
+            <a href="#try">Try Spring Roo</a><br />
+            <a href="#learn">Learn Spring Roo</a><br />
+            <a href="#talk">Talk Spring Roo</a></p>
+            </td>
+        </tr>
+    </tbody>
+</table>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-releasesummary">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Spring Roo <b>1.2.3</b> is the current GA release.</p>
+<p><a href="http://www.springsource.com/download/community?project=Spring%20Roo" target="_blank">Download</a> | <a href="http://blog.springsource.org/2012/12/18/spring-roo-1-2-3-release-available/">Announcement</a></p>
+<p>Spring Roo <b>continuous integration snapshots</b> are available for testing and development purposes</p>
+<p><a href="http://static.springsource.org/downloads/nightly/snapshot-download.php?project=ROO" target="_blank">Download</a></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-documentation">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Spring Roo <strong>1.2.3</strong> (current release <strong>1.2.3.RELEASE</strong>)</p>
+<ul>
+    <li>
+    <p>Reference Manual (<a href="http://static.springsource.org/spring-roo/reference/html/index.html" target="_blank">HTML</a> | <a href="http://static.springsource.org/spring-roo/reference/pdf/spring-roo-docs.pdf" target="_blank">PDF</a>)</p>
+    </li>
+</ul>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-relateddiscussions">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><a href="http://forum.springsource.org/forumdisplay.php?f=67">Roo</a></p>        </div>
+        </div>
+</div>
+  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
+
+
+            </div>
+    </div>
+        </td>
+
+        <td width="50px">&nbsp;</td>
+        <td width="310px" valign="top" align="left">
+
+              <!--[If IE 7]><br><![endif]-->
+      <div style="margin-top:-40px;">
+      <div align="right">
+
+	  <p style="line-height:26px;">&nbsp;</p>
+	  <p>
+	  <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+<script type="text/javascript">
+var a2a_config = a2a_config || {};
+a2a_config.color_main = "e5e6e6";
+a2a_config.color_border = "5c6c75";
+a2a_config.color_link_text = "333333";
+a2a_config.color_link_text_hover = "333333";
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+</script>
+<script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
+      </p>
+      </div>
+
+	  	  <p><a href="http://s3.springsource.com/MRKT/roo/2010-01-Five_Minutes_Roo.mov" target="_blank"><img width="320" height="186" src="/files/imagefield_thumbs/project/images/Project_Roo_video.png" alt="" /></a></p>      
+                  <div style="height:127px;width:100%;background-color:#fff;" align="center">
+      <p style="line-height:11px;">&nbsp;</p>
+      <p style="margin-top:12px;">
+      <!--[If IE 7]><p style="margin-top:-50px;">&nbsp;</p><![endif]-->
+      <a href="http://www.springsource.com/download/community?project=Spring Roo" target="_blank"><img src="/sites/all/themes/s2org11/images/button_download_green.png"></a><br>
+      </p>
+      </div>
+      <br>
+            
+               	<a name="quickjump" title="quickjump"></a>
+			<h2>Quick Jump</h2>
+        	<table width="100%" class="quickjump">
+    <tbody>
+        <tr>
+            <td width="50%" valign="top">
+            <p><a href="#download">Download</a><br />
+            <a href="#documentation">Documentation</a><br />
+            <a href="#relateddiscussions">Discussions</a><br />
+            <a href="http://forum.springsource.org/forumdisplay.php?67-Roo">Get Involved</a><br>
+            <a href="https://github.com/springsource/spring-roo" target="_blank">Source Repository</a></p>
+            </td>
+            <td width="50%" valign="top">
+            <p><a href="#why">Why Spring Roo?</a><br />
+            <a href="#try">Try Spring Roo</a><br />
+            <a href="#learn">Learn Spring Roo</a><br />
+            <a href="#talk">Talk Spring Roo</a></p>
+            </td>
+        </tr>
+    </tbody>
+</table>        	<p style="line-height:0px;">&nbsp;</p>
+        
+        
+        	<a name="download" title="download"></a>
+        	<hr>
+        	<h2>Release Summary</h2>
+        	<p>Spring Roo <b>1.2.3</b> is the current GA release.</p>
+<p><a href="http://www.springsource.com/download/community?project=Spring%20Roo" target="_blank">Download</a> | <a href="http://blog.springsource.org/2012/12/18/spring-roo-1-2-3-release-available/">Announcement</a></p>
+<p>Spring Roo <b>continuous integration snapshots</b> are available for testing and development purposes</p>
+<p><a href="http://static.springsource.org/downloads/nightly/snapshot-download.php?project=ROO" target="_blank">Download</a></p>			<p style="line-height:0px;">&nbsp;</p>
+        
+        
+        	<a name="documentation" title="documentation"></a>
+        	<hr>
+        	<h2>Documentation</h2>
+        	<p>Spring Roo <strong>1.2.3</strong> (current release <strong>1.2.3.RELEASE</strong>)</p>
+<ul>
+    <li>
+    <p>Reference Manual (<a href="http://static.springsource.org/spring-roo/reference/html/index.html" target="_blank">HTML</a> | <a href="http://static.springsource.org/spring-roo/reference/pdf/spring-roo-docs.pdf" target="_blank">PDF</a>)</p>
+    </li>
+</ul>			<p style="line-height:0px;">&nbsp;</p>
+        
+        
+        
+        	<a name="relateddiscussions" title="relateddiscussions"></a>
+        	<hr>
+        	<h2>Related Discussions</h2>
+        	<p><a href="http://forum.springsource.org/forumdisplay.php?f=67">Roo</a></p>			<p style="line-height:0px;">&nbsp;</p>
+			<hr>
+		</div>
+        </td>
+
+        </tr>
+        </table>
+
+
+        
+      </div></div><!-- /.section, /#content -->
+
+
+      
+      
+    </div></div><!-- /#main, /#main-wrapper -->
+
+<div style="background-color:#252525;margin-top:-14px;">
+         <div id="footer"><div class="section">
+
+
+        <div class="region region-footer">
+  <div id="block-block-23" class="block block-block first region-odd odd region-count-1 count-1"><div class="block-inner">
+
+  
+  <div class="content">
+    <style type="text/css">
+#communities{position:relative;}
+#communities li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#communities li, #communities a{height:69px;display:block;}
+
+#cf{left:0px;width:260px;}
+#cf{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat 0 0;}
+#cf a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat 0 0;}
+
+#grails{left:275px;width:120px;}
+#grails{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -275px 0;}
+#grails a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -275px 0;}
+
+#groovy{left:400px;width:100px;}
+#groovy{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -400px 0;}
+#groovy a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -400px 0;}
+
+#hyperic{left:500px;width:170px;}
+#hyperic{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -500px 0;}
+#hyperic a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -500px 0;}
+
+#rabbit{left:670px;width:140px;}
+#rabbit{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -670px 0;}
+#rabbit a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -670px 0;}
+
+#wm{left:810px;width:170px;}
+#wm{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -810px 0;}
+#wm a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -810px 0;}
+
+#communities_bg {background-color:#181818;height:69px;padding:1px 10px 15px 10px;border-radius:5px;margin:10px 0 27px 0}
+
+#communities_title {color: #CCC;font-size: 18px;font-weight: 300;padding-bottom: 15px;line-height: 24px;text-shadow: 0 1px 0 black;margin-left:10px}
+
+</style>
+
+<p>&nbsp;</p>
+<table style="margin: 0 10px 0 10px;">
+
+<tr valign="top">
+    <span id="communities_title">Other Communities</span>
+</tr>
+<tr valign="top">
+    <div id="communities_bg">
+        <ul id="communities">
+            <li id="cf" style="margin-left: 30px;"><a href="http://www.cloudfoundry.org" target="_blank"></a></li>
+            <li id="grails" style="margin-left: 65px;"><a href="http://www.grails.org" target="_blank"></a></li>
+            <li id="groovy" style="margin-left: 110px;"><a href="http://groovy.codehaus.org/" target="_blank"></a></li>
+            <!--<li id="hyperic"><a href="http://www.hyperic.com/community" target="_blank"></a></li>-->
+            <li id="rabbit" style="margin-left: -20px;"><a href="http://www.rabbitmq.com" target="_blank"></a></li>
+            <li id="wm"><a href="http://redis.io" target="_blank"></a></li>
+        </ul>
+    </div>
+</tr>
+
+<tr valign="top">
+<th class="footerth" style="padding-left:-10px;"><a href="http://www.springsource.org">SpringSource</a></th>
+
+<th class="footerth"><a href="/features">Features</a></th>
+
+<th class="footerth"><a href="/get-started">Get Started</a></th>
+
+<th class="footerth"><a href="/get-involved">Get Involved</a></th>
+
+<th class="footerth"><a href="/projects">Projects</a></th>
+
+
+</tr>
+<tr>
+<td valign="top" width="195px">
+
+<span class="footerlist">
+<a href="/about">About Us</a><br>
+<a href="http://blog.springsource.org">Our Blog</a><br>
+<a href="/case-studies">Case Studies</a><br>
+<a href="/news-events">Latest News & Events</a><br>
+<a href="http://www.vmware.com/jobs/" target="_blank">SpringSource Jobs</a>&nbsp;&nbsp;<a href="http://www.vmware.com/jobs/" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/consulting">Consulting</a><br>
+<!--<a href="http://www.springsource.com/contact" target="_blank">Contact Us</a><br>-->
+<a href="/newsletter-subscription">Subscribe to Newsletter</a><br>
+
+</span>
+
+<p style="margin-top:15px;"><a href="/newsletter-subscription">
+<img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_home_subscribe.png"></a></p>
+</td>
+
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/features/modern-web">Modern Web</a><br>
+<a href="/features/data-access">Data Access</a><br>
+<a href="/features/integration">Integration</a><br>
+<a href="/features/mobile">Mobile</a><br>
+<a href="/features/social">Social</a><br>
+<a href="/features/security">Security</a><br>
+<a href="/features/cloud-ready">Cloud Ready</a><br>
+</span>
+</td>
+
+
+<td valign="top" width="160px">
+
+<span class="footerlist">
+<a href="/sts">Get Tool Kit (STS)</a> <br>
+<a href="/tutorials">Tutorials</a> <br>
+<a href="/samples">Code Samples</a> <br>
+<a href="/documentation">Documentation</a> <br>
+<a href="http://forum.springsource.org">Forums</a> <br>
+<a href="http://www.springsource.com/training" target="_blank">Training</a><br>
+
+
+</span>
+</td>
+
+
+<td valign="top" width="156px">
+
+<span class="footerlist">
+
+
+<a href="http://forum.springsource.org">Discussions</a><br>
+<a href="https://jira.springsource.org" target="_blank">Issue Tracker</a><br>
+<a href="https://github.com/SpringSource" target="_blank">Source Repository</a>&nbsp;&nbsp;<a href="https://github.com/SpringSource" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br> 
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-amqp">Spring AMQP</a><br>
+<a href="/spring-android">Spring for Android</a><br>
+<a href="/spring-batch">Spring Batch</a><br>
+<a href="/spring-data">Spring Data</a><br>
+<a href="/spring-framework">Spring Framework</a><br>
+<a href="/spring-gemfire">Spring Gemfire</a><br>
+<a href="/spring-integration">Spring Integration</a><br>
+
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-mobile">Spring Mobile</a><br>
+<a href="http://www.springframework.net" target="_blank">Spring .NET</a>&nbsp;&nbsp;<a href="http://www.springframework.net" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/spring-roo">Spring Roo</a><br>
+<a href="/spring-security">Spring Security</a><br>
+<a href="/spring-social">Spring Social</a><br>
+<a href="/spring-web-flow">Spring Web Flow</a><br>
+<a href="/spring-web-services">Spring Web Services</a><br>
+
+</span>
+</td>
+
+
+
+</tr>
+</table>
+
+
+<div style="background-color:#1e1e1e;width:952;-moz-border-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 5px;">
+<center>
+<p class="copyright">
+<a style="color:#eee;" href="/user">&#169;</a>&nbsp;
+<script type="text/javascript">
+
+var d = new Date();
+document.write(d.getFullYear());
+
+</script>
+SpringSource.
+All Rights Reserved.
+<a href="http://www.vmware.com/help/legal.html" target="_blank">Terms of Use</a>, 
+<a href="http://www.vmware.com/help/privacy.html" target="_blank">Privacy</a> and 
+<a href="/trademark_standards">Trademark Standards</a>
+</p>
+</center>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-7" class="block block-block last region-even even region-count-2 count-2"><div class="block-inner">
+
+  
+  <div class="content">
+    <!-- Eloqua Img Code Code -->
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqImg.js"></script>
+<!-- Begin Google Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2728886-3");
+pageTracker._setDomainName("springsource.org");
+pageTracker._setAllowHash(false);
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+var OrgTracker = _gat._getTracker("UA-2728886-2");
+OrgTracker._setDomainName("springsource.org");
+OrgTracker._setAllowHash(false);
+OrgTracker._setAllowLinker(true);
+OrgTracker._trackPageview();
+</script>
+<!-- End Google Code -->  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div><!-- /.region -->
+
+      </div></div>   <!-- /.section, /#footer -->
+    <!--  -->
+</div>
+  </div></div><!-- /#page, /#page-wrapper -->
+
+  
+  <script type="text/javascript" src="/sites/all/modules/custom/google_cse/google_cse.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "googleCSE": { "language": "en" } });
+//--><!]]>
+</script>
+
+</body>
+</html>

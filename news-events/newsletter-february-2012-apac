@@ -1,0 +1,780 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Newsletter - February 2012, APAC | SpringSource.org</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ctools/css/ctools.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/google_cse/google_cse.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/filefield/filefield.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/nice_menus/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/framework/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/page-backgrounds.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/tabs.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/messages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/pages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/block-editing.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/blocks.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/navigation.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/panels-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/views-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/nodes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/comments.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/forms.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/fields.css?R" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/s2org11/css/print.css?R" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie.css?R" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie6.css?R" />
+<![endif]-->
+  <script type="text/javascript" src="/misc/jquery.js?R"></script>
+<script type="text/javascript" src="/misc/drupal.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/superfish.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.bgiframe.min.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.hoverIntent.minified.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
+<script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay": 800, "speed": 1 }, "prettify": { "linenums": false, "match": ".content", "nocode": "no-code", "custom": [  ], "markup": { "code": true, "pre": true, "precode": false } } });
+//--><!]]>
+</script>
+</head>
+<body class="page not-front not-logged-in node-type-springsource-newsletter no-sidebars page-news-events-newsletter-february-2012-apac section-news-events page-panels">
+
+	  
+
+
+<!--begin custom navigation-->
+      	  
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+<div style="height:97px;margin-top:0px;background: #457228;">
+<![endif]-->
+
+<div style="height:97px;margin-top:0px; background: url('http://www.springsource.org/sites/all/themes/s2org11/images/BG_SiteHeader_Glow.png') no-repeat scroll center top, url('/files/homepage/BG_SiteBillboardAndHeader_50.png') repeat-x scroll 0 0 #367B09;">
+
+    <div id="top">
+  		<div style = "height:80px;margin-top:0px;background: url('/files/homepage/BG_SiteTopNav_new.png') repeat-x scroll 0 0 #F1F1F1;
+  	-moz-border-radius: 0 0 5px 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 0 0 5px 5px;
+-moz-box-shadow: 0 0 15px #333;
+-webkit-box-shadow: 0 0 15px#333;
+box-shadow: 0 0 15px #333;">
+<div style="margin-left:10px;margin-right:10px;">
+ 	          <table valign="top" height="80" style="font-size:14px;text-transform:uppercase;color:#666;margin:0;">
+	          <tr>
+	          
+	          <td>
+	           <a href="/"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/logo_springsource_community.png"></a>
+	           </td>
+	           <td width="5">&nbsp;</td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                  <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/features" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_features.png" id="b1"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-started" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getstarted.png" id="b2"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-involved" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getinvolved.png" id="b3"></a></br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/news-events" onmouseover="mouseOver4()" onmouseout="mouseOut4()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_newsevents.png" id="b4"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td width="7" align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+
+	           <td align="center">
+
+	      	  
+        <div id="search-box" style="border-bottom: 1px solid #E2E2E2;">
+          <form action="/search/google" method="get" id="search-theme-form">
+            <div><div id="search" class="container-inline">
+
+              <input type="text" maxlength="128" size="16" name="query" value="Search" style="border: 1px solid #CCCCCC;margin-bottom:10px;margin-left: 2px;color:#999999" class="form-text" onblur="this.value = this.value || 'Search'; this.style.color = '#999999';" onfocus="if(this.value=='Search') {this.value='';} this.style.color = '#999999';" />
+                          
+              <input type="hidden" name="output" value="xml_no_dtd" />
+              <input type="hidden" name="client" value="google-csbe" />
+              <input type="hidden" name="cx" value="009687201310241541466:zerjfa_shxo" />
+              <input type="hidden" name="ie" value="utf-8" />
+              <input type="hidden" name="oe" value="utf-8" />
+              <input type="hidden" name="op" value="Search" />
+            </div></div>
+          </form>
+        </div>
+               <div id="subscribe" style="color: #7E7E7E;float: left;padding-top: 5px;padding-left: 10px;border-top: 1px solid whiteSmoke;">
+              <a href="/newsletter-subscription" style="color: #7e7e7e;background:url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat" onmouseover="this.style.background = 'url(/files/header/nav_subscription_on.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'" onmouseout="this.style.background = 'url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'">
+                  <span style="padding-left:23px">Subscribe</a>
+              </a>
+        </div>
+        
+
+		      </td>
+		      
+		      </tr>
+	      </table>
+</div>
+  		
+              </div></div></div>
+
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+ </div>
+<![endif]-->
+<!--end custom navigation-->
+
+
+
+  <div id="page-wrapper"><div id="page">
+
+  
+    <div id="header"><div class="section clearfix">
+
+      
+<div id="name-and-slogan">
+
+</div>
+
+      
+      
+
+
+    </div></div><!-- /.section, /#header -->
+
+    <div id="main-wrapper"><div id="main" class="clearfix">
+
+      <div id="content" style="margin-left:10px;margin-right:10px;" class="column"><div class="section">
+
+
+        
+        
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › </div> -->
+
+	  
+	  
+	  
+                        
+
+       <table width="100%" >
+       <tr>
+     <td width="100%" valign="top" align="left">
+       <div style="width:100%">
+       
+ <div id="content-area">
+
+	<div style="margin-top:-20px;">
+	<!--[If IE 7]><br><![endif]-->
+
+<table>
+<tr>
+<td width="95%">
+	  <h1 class="title" id="page-title">Newsletter - February 2012, APAC</h1>
+</td>
+<td align="right">
+      <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+<script type="text/javascript">
+var a2a_config = a2a_config || {};
+a2a_config.color_main = "e5e6e6";
+a2a_config.color_border = "5c6c75";
+a2a_config.color_link_text = "333333";
+a2a_config.color_link_text_hover = "333333";
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+</script>
+<script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
+</td>
+</tr>
+</table>
+	  <p>
+	  	  </p>
+
+           <div id="node-3498" class="node node-type-springsource-newsletter build-mode-full"><div class="node-inner">
+
+  
+  
+  
+  
+  <div class="content">
+    <HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>VMware :: SpringSource</TITLE><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /></HEAD>
+<BODY bgColor=#eeeeee>
+<CENTER>
+<TABLE cellSpacing=0 cellPadding=0 width=650 bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top align=left width=15><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=15 border=0></TD>
+<TD vAlign=top align=left width=300><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=300 border=0></TD>
+<TD vAlign=top align=left width=20><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=20 border=0></TD>
+<TD vAlign=top align=left width=300><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=300 border=0></TD>
+<TD vAlign=top align=left width=15><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=15 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left width=15><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=15 border=0></TD>
+<TD vAlign=top align=left colSpan=3><A href="http://www.springsource.com/"><IMG height=100 alt="SpringSource Newsletter :: a division of VMware" src="http://campaign.vmware.com/imgs/springsource/newsletter_b/S2_Newsletter_Header.png" width=620 border=0></A><BR><IMG height=5 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD>
+<TD vAlign=top align=left width=15><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=15 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left width=15><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=15 border=0></TD>
+<TD style="FONT-SIZE: 11px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left>February 2012 – Issue 40<BR><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left width=15><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=15 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left width=15><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=15 border=0></TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3><A href="http://opentour.cloudfoundry.com/"><IMG height=200 alt="Spring and Grails Developers Sessions at Cloud Foundry Open Tour" src="http://campaign.vmware.com/imgs/springsource/newsletter_b/015869_SpringGrails_CFTour.png" width=620 border=0></A><BR><BR><STRONG>Spring and Grails Developers Sessions at Cloud Foundry Open Tour</STRONG><BR>The Spring community is invited to attend special Spring and Grails focused sessions being held during the upcoming Cloud Foundry Open Tour. There are lots of opportunities all over the world to connect with SpringSource developers about the latest technologies. Save the date in the city nearest you! 
+<UL>
+<LI><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://opentour.cloudfoundry.com/2012/beijing">Beijing</A><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://opentour.cloudfoundry.com/2012/beijing"> - March 28</A> 
+<LI><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://opentour.cloudfoundry.com/2012/shanghai">Shanghai - March 30</A> 
+<LI><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://opentour.cloudfoundry.com/2012/tokyo">Tokyo - April 2</A> </LI></UL></TD>
+<TD vAlign=top align=left width=15><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=15 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left width=15><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=15 border=0></TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left width=15><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=15 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=2 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_dkgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 24px; COLOR: #666666; LINE-HEIGHT: 30px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left>In This Issue</TD>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=3 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_ltgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left><STRONG>Latest Articles</STRONG><BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="#article1">Business Intelligence with Spring and BIRT</A> <BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="#article2">Spring.NET Social 1.0.0 is Now Available</A><BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="#article3">SpringOne 2GX Talk Now Online</A><BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="#article4">Webinars and Videos</A><BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="#article5">Software Release Summary</A><BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="#article6">Blog Digest</A></TD>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left><STRONG>Webinars & Videos</STRONG><BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&d=660356280&elq=<span class=eloquaemail>recipientid</span>">Register Now</A>: Creating Spring Insight Plugins with John Kew - February 16<SUP>th</SUP> <BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&d=668353572&elq=<span class=eloquaemail>recipientid</span>">Register Now</A>: Native Android Development with Spring Android - March 8<SUP>th</SUP><BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&d=660731529&elq=<span class=eloquaemail>recipientid</span>">Register Now</A>: SQL? NoSQL? NewSQL?!? What's a Java developer to do? - March 22<SUP>nd</SUP><BR>Videos: <A style="COLOR: #0095d3; TEXT-DECORATION: none" href="#article3">New SpringOne 2GX Topics</A> <BR><BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="#article4">More Videos</A></TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left colSpan=5><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=2 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_dkgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 24px; COLOR: #666666; LINE-HEIGHT: 30px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3><A id=article1 name=article1></A>Business Intelligence with Spring and BIRT</TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=3 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_ltgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left colSpan=5><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3>Eclipse's Business Intelligence and Reporting Tools (BIRT) project is an open-source project based on the popular Eclipse IDE. A new <A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.org/BusinessIntelligenceWithSpringAndBIRT">BIRT tutorial for Spring developers</A> gives details on: 
+<UL>
+<LI>Integrating the BIRT engines in Spring MVC 
+<LI>Accessing Spring beans from the BIRT Viewer 
+<LI>Using Spring Remoting to access Spring Beans from a BIRT report </LI></UL></TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left colSpan=5><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=2 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_dkgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 24px; COLOR: #666666; LINE-HEIGHT: 30px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3><A id=article2 name=article2></A>Spring.NET Social 1.0.0 is Now Available</TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=3 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_ltgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left colSpan=5><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3>Spring.NET Social 1.0.0 Has Been Released! Hot on the heels of the Spring Social 1.0 (for Java) release late last year, <A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.org/node/3382">Spring.NET Social 1.0.0</A> has been released with the foundation API as well as API implementations for Dropbox, LinkedIn and Twitter. And supports the following runtime environments: 
+<UL>
+<LI>.NET 2.0 
+<LI>.NET Client Profile 3.5 and 4.0 
+<LI>Silverlight 4.0 and 5.0 
+<LI>Windows Phone 7.0 and 7.1 </LI></UL></TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=2 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_dkgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 24px; COLOR: #666666; LINE-HEIGHT: 30px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3><A id=article3 name=article3></A>More SpringOne 2GX Talks Now Online</TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=3 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_ltgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left colSpan=5><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3>More great technical content delivered at SpringOne 2GX through InfoQ's coverage—thank you InfoQ! 
+<UL>
+<LI>Chris Richardson, <A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.org/node/3463">Polyglot Persistence for Java Developers</A> 
+<LI>Roy Clarkson & Josh Long, <A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.org/node/3381">Mobile Web Development with HTML5</A> 
+<LI>Ramnivas Laddad, <A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.org/node/3376">Cloud Foundry with Spring: Using Services</A> 
+<LI>Craig Walls, <A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.org/node/3380">The Rise of OAuth</A> 
+<LI>Chris Ramsdale, <A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.org/node/3373">Spring on Google App Engine</A> 
+<LI>Stephen Bohlen, <A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.org/node/3462">Spring and Platform Interoperability</A> </LI></UL>Additional sessions will be added every other week on springsource.org through April 2012, so check back regularly. <BR></TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left colSpan=5><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=2 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_dkgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 24px; COLOR: #666666; LINE-HEIGHT: 30px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3><A id=article4 name=article4></A>Webinars and Videos</TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=3 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_ltgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left colSpan=5><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3><STRONG>Creating Spring Insight Plugins</STRONG><BR>Spring Insight is a developer tool that provides visibility into your application's runtime performance and behavior by tracing how low level SQL queries, transaction times and application pages are performing. Optimized out of the box for standard Spring-developed applications, Insight also provides a pluggable architecture for enhancing trace capabilities to provide further visibility into your application performance. In this session you will understand capabilities of Spring Insight's plugin framework and best practices in development of plug-ins.<BR><STRONG>February 16</STRONG> - 3:00pm UK / 4:00pm Europe - <A style="COLOR: #0095d3; TEXT-DECORATION: none" href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&d=660356280&elq=<span class=eloquaemail>recipientid</span>">Register Now</A><BR><BR><STRONG>Native Android Development with Spring Android</STRONG><BR>This session will provide an introductory overview of Android's architecture, the layout of an Android project, the use of various Maven plugins and tools for enabling dependency management in your Android project. When building Android apps, you can use a third party library, like Spring Android, that provides an abstraction for consuming RESTful services within your native Android app. Spring Android also supports the use of Spring Social on Android, and we will discuss how Spring Social can help you connect your apps to OAuth protected services like Facebook and Twitter.<BR><STRONG>March 8</STRONG> - 3:00pm UK / 4:00pm Europe - <A style="COLOR: #0095d3; TEXT-DECORATION: none" href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&d=668353572&elq=<span class=eloquaemail>recipientid</span>">Register Now</A><BR><BR>Video: <A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.org/node/3378">Modern Enterprise Java Architectures with Spring 3.1</A> with Juergen Hoeller<BR>Video: <A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.youtube.com/cloudfoundry">Get Started on Cloud Foundry</A> with Ramnivas Laddad </TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=15 border=0></TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=15 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=2 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_dkgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 24px; COLOR: #666666; LINE-HEIGHT: 30px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3><A id=article5 name=article5></A>Software Release Summary</TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=3 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_ltgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left colSpan=5><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.org/node/3382">Spring.NET Social 1.0.0</A><BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.org/spring-mobile/news/1.0.0.rc1-released">Spring Mobile 1.0.0.RC1 Released</A><BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.org/node/3377">SpringSource Tool Suite 2.9.0.M2 Released</A></A><BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.tomcatexpert.com/blog/2012/01/24/apache-tomcat-7025-released">Apache Tomcat 7.0.25 Released</A><BR><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.org/spring-social/news/1.0.2-released">Spring Social 1.0.2 Released</A> </TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left colSpan=5><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=2 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_dkgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 24px; COLOR: #666666; LINE-HEIGHT: 30px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3><A id=article6 name=article6></A>Blog Digest</TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=3 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_ltgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left colSpan=5><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.tomcatexpert.com/blog/2012/01/24/using-tomcat-7-jdbc-connection-pool-production">Using the Tomcat 7 JDBC Connection Pool in Production </A>with Daniel Mikusa</TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left colSpan=5><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=2 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_dkgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=2 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 24px; COLOR: #666666; LINE-HEIGHT: 30px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3><A id=article7 name=article7></A>SpringSource University – Upcoming Training</TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=3 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_ltgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left colSpan=5><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.springsource.com/training/findacourse?region=APAC&title=Enterprise+Integration+with+Spring&country=&state=&city=&elq=<span class=eloquaemail>recipientid</span>">Enterprise Integration</A> <BR><BR></TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD>
+<TD vAlign=top align=left colSpan=3><IMG height=3 src="http://campaign.vmware.com/imgs/springsource/newsletter_b/hr_ltgray.gif" width=620 border=0></TD>
+<TD vAlign=top align=left><IMG height=1 src="http://campaign.vmware.com/imgs/spacer.gif" width=1 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left colSpan=5><IMG height=15 src="http://campaign.vmware.com/imgs/spacer.gif" width=10 border=0></TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3>
+<TABLE cellSpacing=0 cellPadding=0 width=620 border=0>
+<TBODY>
+<TR>
+<TD style="FONT-SIZE: 14px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left width=251><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://blog.springsource.com/">Read our blog</A></TD>
+<TD style="FONT-SIZE: 14px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left width=162><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.twitter.com/springsource">Follow us on Twitter</A></TD>
+<TD style="FONT-SIZE: 14px; COLOR: #666666; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=right width=207><A style="COLOR: #0095d3; TEXT-DECORATION: none" href="http://www.youtube.com/springsourcedev">Watch us on YouTube</A></TD></TR></TBODY></TABLE></TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left>&nbsp;</TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=left>&nbsp;</TD>
+<TD style="FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Helvetica, sans-serif" vAlign=top align=left colSpan=3><A style="COLOR: #0099cc; TEXT-DECORATION: none" href="http://www.springsource.com/training/certification"><IMG height=75 alt="SpringSource University, Learn Spring from the Source" src="http://campaign.vmware.com/imgs/springsource/newsletter_b/660x80_S2University.jpg" width=620 border=0></A><BR>&nbsp;</TD>
+<TD vAlign=top align=left>&nbsp;</TD></TR></TBODY></TABLE><BR>
+<TABLE cellSpacing=0 cellPadding=0 width=600 align=center>
+<TBODY>
+<TR>
+<TD style="FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #999999; FONT-FAMILY: Arial, Helvetica, sans-serif" align=right>15870</TD></TR></TBODY></TABLE></CENTER></BODY></HTML>  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
+
+
+            </div>
+    </div>
+        </td>
+
+        <td width="50px">&nbsp;</td>
+        <td width="310px" valign="top" align="left">
+
+              <!--[If IE 7]><br><![endif]-->
+      <div style="margin-top:-40px;">
+      <div align="right">
+
+	  <p style="line-height:26px;">&nbsp;</p>
+	  <p>
+
+      </p>
+      </div>
+
+	              
+      
+       
+        
+        
+        
+        </div>
+        </td>
+
+        </tr>
+        </table>
+
+
+        
+      </div></div><!-- /.section, /#content -->
+
+
+      
+      
+    </div></div><!-- /#main, /#main-wrapper -->
+
+<div style="background-color:#252525;margin-top:-14px;">
+         <div id="footer"><div class="section">
+
+
+        <div class="region region-footer">
+  <div id="block-block-23" class="block block-block first region-odd odd region-count-1 count-1"><div class="block-inner">
+
+  
+  <div class="content">
+    <style type="text/css">
+#communities{position:relative;}
+#communities li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#communities li, #communities a{height:69px;display:block;}
+
+#cf{left:0px;width:260px;}
+#cf{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat 0 0;}
+#cf a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat 0 0;}
+
+#grails{left:275px;width:120px;}
+#grails{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -275px 0;}
+#grails a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -275px 0;}
+
+#groovy{left:400px;width:100px;}
+#groovy{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -400px 0;}
+#groovy a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -400px 0;}
+
+#hyperic{left:500px;width:170px;}
+#hyperic{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -500px 0;}
+#hyperic a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -500px 0;}
+
+#rabbit{left:670px;width:140px;}
+#rabbit{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -670px 0;}
+#rabbit a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -670px 0;}
+
+#wm{left:810px;width:170px;}
+#wm{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -810px 0;}
+#wm a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -810px 0;}
+
+#communities_bg {background-color:#181818;height:69px;padding:1px 10px 15px 10px;border-radius:5px;margin:10px 0 27px 0}
+
+#communities_title {color: #CCC;font-size: 18px;font-weight: 300;padding-bottom: 15px;line-height: 24px;text-shadow: 0 1px 0 black;margin-left:10px}
+
+</style>
+
+<p>&nbsp;</p>
+<table style="margin: 0 10px 0 10px;">
+
+<tr valign="top">
+    <span id="communities_title">Other Communities</span>
+</tr>
+<tr valign="top">
+    <div id="communities_bg">
+        <ul id="communities">
+            <li id="cf" style="margin-left: 30px;"><a href="http://www.cloudfoundry.org" target="_blank"></a></li>
+            <li id="grails" style="margin-left: 65px;"><a href="http://www.grails.org" target="_blank"></a></li>
+            <li id="groovy" style="margin-left: 110px;"><a href="http://groovy.codehaus.org/" target="_blank"></a></li>
+            <!--<li id="hyperic"><a href="http://www.hyperic.com/community" target="_blank"></a></li>-->
+            <li id="rabbit" style="margin-left: -20px;"><a href="http://www.rabbitmq.com" target="_blank"></a></li>
+            <li id="wm"><a href="http://redis.io" target="_blank"></a></li>
+        </ul>
+    </div>
+</tr>
+
+<tr valign="top">
+<th class="footerth" style="padding-left:-10px;"><a href="http://www.springsource.org">SpringSource</a></th>
+
+<th class="footerth"><a href="/features">Features</a></th>
+
+<th class="footerth"><a href="/get-started">Get Started</a></th>
+
+<th class="footerth"><a href="/get-involved">Get Involved</a></th>
+
+<th class="footerth"><a href="/projects">Projects</a></th>
+
+
+</tr>
+<tr>
+<td valign="top" width="195px">
+
+<span class="footerlist">
+<a href="/about">About Us</a><br>
+<a href="http://blog.springsource.org">Our Blog</a><br>
+<a href="/case-studies">Case Studies</a><br>
+<a href="/news-events">Latest News & Events</a><br>
+<a href="http://www.vmware.com/jobs/" target="_blank">SpringSource Jobs</a>&nbsp;&nbsp;<a href="http://www.vmware.com/jobs/" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/consulting">Consulting</a><br>
+<!--<a href="http://www.springsource.com/contact" target="_blank">Contact Us</a><br>-->
+<a href="/newsletter-subscription">Subscribe to Newsletter</a><br>
+
+</span>
+
+<p style="margin-top:15px;"><a href="/newsletter-subscription">
+<img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_home_subscribe.png"></a></p>
+</td>
+
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/features/modern-web">Modern Web</a><br>
+<a href="/features/data-access">Data Access</a><br>
+<a href="/features/integration">Integration</a><br>
+<a href="/features/mobile">Mobile</a><br>
+<a href="/features/social">Social</a><br>
+<a href="/features/security">Security</a><br>
+<a href="/features/cloud-ready">Cloud Ready</a><br>
+</span>
+</td>
+
+
+<td valign="top" width="160px">
+
+<span class="footerlist">
+<a href="/sts">Get Tool Kit (STS)</a> <br>
+<a href="/tutorials">Tutorials</a> <br>
+<a href="/samples">Code Samples</a> <br>
+<a href="/documentation">Documentation</a> <br>
+<a href="http://forum.springsource.org">Forums</a> <br>
+<a href="http://www.springsource.com/training" target="_blank">Training</a><br>
+
+
+</span>
+</td>
+
+
+<td valign="top" width="156px">
+
+<span class="footerlist">
+
+
+<a href="http://forum.springsource.org">Discussions</a><br>
+<a href="https://jira.springsource.org" target="_blank">Issue Tracker</a><br>
+<a href="https://github.com/SpringSource" target="_blank">Source Repository</a>&nbsp;&nbsp;<a href="https://github.com/SpringSource" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br> 
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-amqp">Spring AMQP</a><br>
+<a href="/spring-android">Spring for Android</a><br>
+<a href="/spring-batch">Spring Batch</a><br>
+<a href="/spring-data">Spring Data</a><br>
+<a href="/spring-framework">Spring Framework</a><br>
+<a href="/spring-gemfire">Spring Gemfire</a><br>
+<a href="/spring-integration">Spring Integration</a><br>
+
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-mobile">Spring Mobile</a><br>
+<a href="http://www.springframework.net" target="_blank">Spring .NET</a>&nbsp;&nbsp;<a href="http://www.springframework.net" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/spring-roo">Spring Roo</a><br>
+<a href="/spring-security">Spring Security</a><br>
+<a href="/spring-social">Spring Social</a><br>
+<a href="/spring-web-flow">Spring Web Flow</a><br>
+<a href="/spring-web-services">Spring Web Services</a><br>
+
+</span>
+</td>
+
+
+
+</tr>
+</table>
+
+
+<div style="background-color:#1e1e1e;width:952;-moz-border-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 5px;">
+<center>
+<p class="copyright">
+<a style="color:#eee;" href="/user">&#169;</a>&nbsp;
+<script type="text/javascript">
+
+var d = new Date();
+document.write(d.getFullYear());
+
+</script>
+SpringSource.
+All Rights Reserved.
+<a href="http://www.vmware.com/help/legal.html" target="_blank">Terms of Use</a>, 
+<a href="http://www.vmware.com/help/privacy.html" target="_blank">Privacy</a> and 
+<a href="/trademark_standards">Trademark Standards</a>
+</p>
+</center>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-7" class="block block-block last region-even even region-count-2 count-2"><div class="block-inner">
+
+  
+  <div class="content">
+    <!-- Eloqua Img Code Code -->
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqImg.js"></script>
+<!-- Begin Google Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2728886-3");
+pageTracker._setDomainName("springsource.org");
+pageTracker._setAllowHash(false);
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+var OrgTracker = _gat._getTracker("UA-2728886-2");
+OrgTracker._setDomainName("springsource.org");
+OrgTracker._setAllowHash(false);
+OrgTracker._setAllowLinker(true);
+OrgTracker._trackPageview();
+</script>
+<!-- End Google Code -->  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div><!-- /.region -->
+
+      </div></div>   <!-- /.section, /#footer -->
+    <!--  -->
+</div>
+  </div></div><!-- /#page, /#page-wrapper -->
+
+  
+  <script type="text/javascript" src="/sites/all/modules/custom/google_cse/google_cse.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "googleCSE": { "language": "en" } });
+//--><!]]>
+</script>
+
+</body>
+</html>

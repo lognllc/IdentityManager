@@ -1,0 +1,966 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>News and Announcements | SpringSource.org</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - News and Announcements" href="/taxonomy/term/4/14/feed" />
+<link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ctools/css/ctools.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/google_cse/google_cse.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/filefield/filefield.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/nice_menus/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/framework/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/taxonomy/taxonomy.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/page-backgrounds.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/tabs.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/messages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/pages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/block-editing.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/blocks.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/navigation.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/panels-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/views-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/nodes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/comments.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/forms.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/fields.css?R" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/s2org11/css/print.css?R" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie.css?R" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie6.css?R" />
+<![endif]-->
+  <script type="text/javascript" src="/misc/jquery.js?R"></script>
+<script type="text/javascript" src="/misc/drupal.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/superfish.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.bgiframe.min.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.hoverIntent.minified.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
+<script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay": 800, "speed": 1 }, "prettify": { "linenums": false, "match": ".content", "nocode": "no-code", "custom": [  ], "markup": { "code": true, "pre": true, "precode": false } } });
+//--><!]]>
+</script>
+</head>
+<body class="page not-front not-logged-in no-sidebars page-taxonomy-term-4-14 section-taxonomy">
+
+
+	  
+
+<!--begin custom navigation-->
+      	  
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+<div style="height:97px;margin-top:0px;background: #457228;">
+<![endif]-->
+
+<div style="height:97px;margin-top:0px; background: url('http://www.springsource.org/sites/all/themes/s2org11/images/BG_SiteHeader_Glow.png') no-repeat scroll center top, url('/files/homepage/BG_SiteBillboardAndHeader_50.png') repeat-x scroll 0 0 #367B09;">
+
+    <div id="top">
+  		<div style = "height:80px;margin-top:0px;background: url('/files/homepage/BG_SiteTopNav_new.png') repeat-x scroll 0 0 #F1F1F1;
+  	-moz-border-radius: 0 0 5px 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 0 0 5px 5px;
+-moz-box-shadow: 0 0 15px #333;
+-webkit-box-shadow: 0 0 15px#333;
+box-shadow: 0 0 15px #333;">
+<div style="margin-left:10px;margin-right:10px;">
+ 	          <table valign="top" height="80" style="font-size:14px;text-transform:uppercase;color:#666;margin:0;">
+	          <tr>
+	          
+	          <td>
+	           <a href="/"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/logo_springsource_community.png"></a>
+	           </td>
+	           <td width="5">&nbsp;</td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                  <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/features" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_features.png" id="b1"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-started" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getstarted.png" id="b2"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-involved" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getinvolved.png" id="b3"></a></br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/news-events" onmouseover="mouseOver4()" onmouseout="mouseOut4()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_newsevents.png" id="b4"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td width="7" align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+
+	           <td align="center">
+
+	      	  
+        <div id="search-box" style="border-bottom: 1px solid #E2E2E2;">
+          <form action="/search/google" method="get" id="search-theme-form">
+            <div><div id="search" class="container-inline">
+
+              <input type="text" maxlength="128" size="16" name="query" value="Search" style="border: 1px solid #CCCCCC;margin-bottom:10px;margin-left: 2px;color:#999999" class="form-text" onblur="this.value = this.value || 'Search'; this.style.color = '#999999';" onfocus="if(this.value=='Search') {this.value='';} this.style.color = '#999999';" />
+                          
+              <input type="hidden" name="output" value="xml_no_dtd" />
+              <input type="hidden" name="client" value="google-csbe" />
+              <input type="hidden" name="cx" value="009687201310241541466:zerjfa_shxo" />
+              <input type="hidden" name="ie" value="utf-8" />
+              <input type="hidden" name="oe" value="utf-8" />
+              <input type="hidden" name="op" value="Search" />
+            </div></div>
+          </form>
+        </div>
+               <div id="subscribe" style="color: #7E7E7E;float: left;padding-top: 5px;padding-left: 10px;border-top: 1px solid whiteSmoke;">
+              <a href="/newsletter-subscription" style="color: #7e7e7e;background:url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat" onmouseover="this.style.background = 'url(/files/header/nav_subscription_on.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'" onmouseout="this.style.background = 'url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'">
+                  <span style="padding-left:23px">Subscribe</a>
+              </a>
+        </div>
+        
+
+		      </td>
+		      
+		      </tr>
+	      </table>
+</div>
+  		
+              </div></div></div>
+
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+ </div>
+<![endif]-->
+<!--end custom navigation-->
+
+
+
+  <div id="page-wrapper"><div id="page">
+
+  
+    <div id="header"><div class="section clearfix">
+
+      
+<div id="name-and-slogan">
+
+</div>
+
+      
+      
+
+
+    </div></div><!-- /.section, /#header -->
+
+    <div id="main-wrapper"><div id="main" class="clearfix">
+
+      <div id="content" style="margin-left:10px;margin-right:10px;" class="column"><div class="section">
+
+
+        
+        
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › </div> -->
+
+	  
+	  
+	  
+                        
+        <table>
+	      <tr>
+	       <td width="870">
+	        <h1 class="title" id="main-page-title">News and Announcements&nbsp;&nbsp;<span style="vertical-align:top;"><a href="http://feeds.feedburner.com/springsource/SvVO" target="_blank"><img src="/misc/feed.png"></a></span></h1>
+	       </td>
+	       <td align="right">
+	  	    <p>
+		 	  <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+<script type="text/javascript">
+var a2a_config = a2a_config || {};
+a2a_config.color_main = "e5e6e6";
+a2a_config.color_border = "5c6c75";
+a2a_config.color_link_text = "333333";
+a2a_config.color_link_text_hover = "333333";
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+</script>
+<script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
+            </p>
+	  	  </td>
+	  	 </tr>
+	  	</table>
+
+       <table width="100%" style="margin-top:-10px;">
+        <tr>
+         <td width="600px" valign="top" align="left">
+          <div style="width:600px;">
+
+          
+          <div id="content-area">
+
+
+           <div class="taxonomy-term-description">News and announcements<br />
+</div><div id="node-3670" class="node node-type-story node-promoted node-sticky node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3670" title="Video: Spring Security Fundamentals">Video: Spring Security Fundamentals</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Pieter Humphrey on Tue, 2012-09-25 18:09        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>
+
+<p>By Rob Winch, Senior Software Engineer, Spring Security Lead  
+<p>Due to its complexity, implementing security can be a daunting task for developers of all skill levels. In this presentation we will discuss, in depth, the foundation of Spring Security's architecture through the use of working sample code. We will start off with an existing application and learn how we can add Spring Security to it. We will then explore how Spring Security works underneath the hood. 
+<p>
+
+<center><iframe width="560" height="315" src="http://www.youtube.com/embed/if6EMTVZ200" frameborder="0" allowfullscreen></iframe></center>
+
+
+<p>Be sure to thumbs up the presentation if you find it useful and <a href="http://www.youtube.com/subscription_center?adduser=SpringSourceDev">subscribe to the SpringSourceDev channel</a> to see other recordings and screencasts.</p>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3667" class="node node-type-story node-promoted node-sticky node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3667" title="SpringOne 2GX Session Highlight: Client-Side UI Smackdown with Craig Walls">SpringOne 2GX Session Highlight: Client-Side UI Smackdown with Craig Walls</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Pieter Humphrey on Mon, 2012-09-24 16:44        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p> 
+<div style="float: right; width:114; padding: 10px">
+<a href="http://www.springone2gx.com/conference/washington/2012/10/session?id=27660"><img height="130" alt="Craig Walls" width="130" border="0" src="http://www.springone2gx.com/s/images/bio/38_Walls_20110408_053039_medium_sq.jpg"/></a>
+</div>
+
+<p>In the modern web, user interfaces are expected to be rich, highly   responsive, and available anytime, anywhere, and on any device.   Round-trip server-side HTML rendering doesn't fit the bill any longer   and numerous JavaScript frameworks have stepped forward to simplify   development of client-side user-interfaces. With so many great options   available, we now face a paradox of choice and it can be difficult to   decide which UI framework best suits our needs.</p>
+<p>In this session we'll explore a handful of the most popular   client-side UI frameworks, including Backbone, Knockout, Sammy, and   Spine (and others) weighing their strengths and weaknesses and helping   decide which framework is most suitable for a given set of UI goals.</p>
+<p>Check out the <a href="http://www.springone2gx.com/conference/washington/2012/10/session?id=27660">session on SpringOne2GX.com</a> for more details and  <a href="http://www.springone2gx.com/conference/washington/2012/10/register">register</a> today!</p>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3666" class="node node-type-story node-promoted node-sticky node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3666" title="SpringOne 2GX: October 15-18, 2012 – Final Schedule Available Now">SpringOne 2GX: October 15-18, 2012 – Final Schedule Available Now</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Pieter Humphrey on Sat, 2012-09-22 15:05        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <strong>SpringOne 2GX: October 15-18, 2012 – Washington, DC</strong><br>
+<br>
+Check out the <a href="http://app.connect.vmware.com/e/er?s=524&lid=23456&elq=e51f40e947ee4ab1b3aa5dac932267b8">final schedule</a> of <a href="http://app.connect.vmware.com/e/er?s=524&lid=22487&elq=e51f40e947ee4ab1b3aa5dac932267b8">speakers and  sessions </a>for this year's event! SpringOne 2GX is your opportunity to  learn from development leads and published authors on the Spring,  Groovy/Grails, Tomcat and Cloud technologies—speakers include this year's  keynote Adrian Colyer, Juergen Hoeller, Chris Beams, Ben Alex, Chris  Richardson, Ramnivas Laddad, Mark Pollack, and Mark Fisher. Sessions are geared  to teach you information that is immediately applicable to developing business  applications on or off premise, creating multi-device aware web applications,  enabling your application for Big Data and NoSQL, and managing high performance  infrastructures for your organization.<br>
+<br>
+<a href="http://app.connect.vmware.com/e/er?s=524&lid=23293&elq=e51f40e947ee4ab1b3aa5dac932267b8">Register today</a> – see you in October!  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3665" class="node node-type-story node-promoted node-sticky node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3665" title="Spring Integration Release Candidate 1 is Released!">Spring Integration Release Candidate 1 is Released!</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Gary Russell on Fri, 2012-09-21 16:55        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>Spring Integration 2.2.0.RC1 - the release candidate for the 2.2 stream, including a number of important features and improvements, is now available. Barring major issues, we expect to make the final release shortly, so users are encouraged to try out the new features, some of which are described <a href="http://static.springsource.org/spring-integration/docs/2.2.0.RC1/reference/htmlsingle/#whats-new">here</a>. Over the next week or so, we intend to release a number of <a href="http://blog.springsource.com/">blog posts</a> highlighting some of these features and others.</p>
+<ul>
+<li>Release notes are available <a href="https://jira.springsource.org/secure/ReleaseNote.jspa?projectId=10121&amp;version=12602">here</a>. The issues listed there are closed, in addition to those in milestones 1 through 4.</li>
+<li>Artifacts are available in the <a href="http://repo.springsource.org/simple/libs-milestone-local/org/springframework/integration/"> SpringSource repo</a> and <a href="http://www.springsource.org/download/community?project=Spring%2520Integration">the community download page</a>.</li>
+</ul>
+<p>More information is available on the project's <a href="http://www.springsource.org/spring-integration">home page</a>.</p>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3664" class="node node-type-story node-promoted node-sticky node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3664" title="Spring Shell 1.0.0.RC1 Released ">Spring Shell 1.0.0.RC1 Released </a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Costin Leau on Thu, 2012-09-20 13:26        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>Dear Spring Community,</p>
+<p>I am pleased to announce the first release candidate for Spring Shell project! Spring Shell is an interactive shell that can be easily extended with commands using a Spring based programming model, extracted from the Spring Roo project.</p>
+<p><a href="http://www.springsource.com/download/community?project=Spring%20Shell&amp;version=1.0.0.RC1">Downloads</a> | <a href="http://static.springsource.org/spring-shell/docs/1.0.0.RC1/api/">JavaDocs</a> | <a href="http://static.springsource.org/spring-shell/docs/1.0.0.RC1/reference/html">Reference Documentation</a> | <a href="http://static.springsource.org/spring-shell/docs/1.0.0.RC1/changelog.txt">Changelog</a></p>
+<p>This release contains various fixes related to JLine/Jansi. See the <a href="http://static.springsource.org/spring-shell/docs/1.0.0.RC1/changelog.txt">changelog</a> for detailed info. </p>
+<p>We look forward to your feedback on the <a href="http://forum.springsource.org/forum.php">forum</a> or in the <a href="https://jira.springsource.org/browse/SHL">issue tracker</a>.</p>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3663" class="node node-type-story node-promoted node-sticky node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3663" title="This Week in Spring - 18th September, 2012">This Week in Spring - 18th September, 2012</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Wed, 2012-09-19 02:27        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last"><a href="/taxonomy/term/14" rel="tag" title="">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+     
+<p> Welcome to another installation of <EM>This Week in Spring</EM>! 
+	 This week I'm in Bloomington-Normal, Illinois talking to StateFarm about Spring Projects: MVC, REST,  Mobile, and  Android.  The developers here are code ninjas. Listening to their internal talks over the course of the day has been eye opening, to say the least. Don't miss the Spring, Groovy and Grails event of the year in Washington, DC: <a href="http://www.springone2gx.com/conference/washington/2012/10/home">SpringOne2GX</a>.  If you haven't already registered, now's the time! Oh, and don't forget, if you're in the United States, today is <a href ="http://www.huffingtonpost.com/2012/09/18/national-cheeseburger-day-la_n_1892385.html">national cheeseburger day</a>! So... bon appetit! </p>
+	
+<OL>
+	
+    <LI> Chris Beams has announced the availability of <a href ="http://www.springsource.org/node/3654">Spring Framework 3.2 M2</a>, which features many new features including improved <CODE>TestContext</CODE> support, Spring MVC improvements, asynchronous <CODE>@Controllers</CODE>, and lots of bug-fixes and improvements.  </LI>
+    <LI> This month's SpringSource webinar is coming fast - <a href ="http://www.springsource.org/node/3653"> Spring Security with Rob Winch</a>. Be sure to register now! </LI>
+    <li> Martin Lippert has announced the availability  of the <a href="http://www.springsource.org/node/3658">3.1.0.M1 update for the Spring and Grails Tool Suites</a>.
+    The new release includes integrations built on top of Eclipse 3.8 and Eclipse 4.2, updated support for Mylyn 3.8.1, Maven support for Grails projects, and Mac OSX 10.8's Gatekeeper support. </li>
+    <li><a href = "http://twitter.com/m_f_">Mark Fisher's</a> epic tome <a href = "http://www.springsource.org/node/3659"><em>Spring Integration in Action</em> is available</a>! </li>
+    <li>  Broadleaf Commerce published  <a href="http://www.broadleafcommerce.com/post/why-broadleaf-continues-to-choose-spring">a great blog</a> post about why their project continues to choose Spring over Java EE.</li>
+    <li> Jonathan Brisbin has announced the availability of <a href ="http://www.springsource.org/node/3657">the Spring Data REST project, 1.0.0.RC3</a>, which includes a significant number of bug fixes, adds improved JSON representation, better integration of Jackson user-defined <code>Module</code>s, and support for the <a href="https://github.com/SpringSource/spring-hateoas">Spring HATEOAS project</a>.</li>
+    <LI> The TomcatExpert portal has announced the availability of <a href  ="http://www.tomcatexpert.com/blog/2012/09/18/apache-tomcat-maven-plugin-20">the Apache Tomcat Maven Plugin, version 2.0</a>, which supports deploying to - and embedding instances of - Apache Tomcat from the Maven build tool. </LI>
+ 
+    <LI> 
+      Spring Data ninja Oliver Gierke tweeted the availability <a href ="https://github.com/SpringSource/spring-hateoas/commit/9e728b4660238f96a6ab25a4d63fe443a1c187eb">of JAX-RS support in Spring HATEOAS</a>. Spring HATEOAS, named for the pattern ("HTTP-as-the-engine-of-application-state"), makes it dead simple to build links to other RESTful resources based on the classes that host those resources. In a sense,
+	   you get type safety when building RESTful URLs.  You build an HTTP URL reference to a Spring MVC <CODE>@Controller</CODE> based on its class. Now, you can do the same for <CODE>@Path</CODE>-annotated JAX-RS classes thanks to this novel pull request. Nice! 
+  </LI>
+    <LI> The RabbitMQ blog announces the availability of <a href ="https://www.rabbitmq.com/blog/2012/09/12/mqtt-adapter/">a new MQTT adapter for RabbitMQ</a>. MQTT, to quote <a href="http://mqtt.org">the MQTT website</A>, "A lightweight messaging protocol for small sensors and mobile devices, optimized for high-latency or unreliable networks." Really cool!  </LI>
+    <LI> Nicolas Frankel has an interesting post <a href= "http://java.dzone.com/articles/lessons-learned-integrating">about his experience jBPM 4 and Spring</a>. 	
+	Normally, at this point, I'd forward people to the <a href="http://www.activi.org">Activiti</a> open-source BPMNS 2 workflow engine, which enjoys a very powerful Spring integration, but Nicolas has already tried it and couldn't adapt it because of organizational pressures! So, it's nice to at least see how to integrate jBPM. 
+  </LI>
+    <LI> Christian Posta has a nice post on how to handle routes with Spring Integration, <a href="http://architects.dzone.com/articles/backing-spring-integration-0">delegating to an ActiveMQ broker for durable exchanges</a>.  </LI>
+    <LI> Julio de Jesus has put together a nice  blog  on using <a href ="http://ykchee.blogspot.com/2012/09/spring-31-bean-profiles.html">Spring 3.1's bean profiles feature to describe environment-specific beans in a Spring application</a>.  </LI>
+    <LI>  The Thymeleaf project has just announced <a href="http://forum.thymeleaf.org/Thymeleaf-now-has-Spring-Security-integration-td4025044.html">new support for Spring Security integration</a> with the Thymeleaf view template technology.</LI>
+
+    <LI> The Technical Notes blog has a great post describing how to <a href = " http://tshikatshikaaa.blogspot.com/2012/09/spring-sitemesh-integration-example.html">integrate Sitemesh with your Spring applications</a>. </LI>
+    <LI> Our pal Roger Hughes is back at it, this time with a lovely post on <a href="http://java.dzone.com/articles/spring-31-caching-and">using Spring 3.1's <CODE>@Cacheable</CODE> annotation and the <CODE>CacheManager</CODE> API</a>. </LI> 
+    <LI> A new version of the <a href="http://t.co/ltm7fgbo">C24 Spring Components has been released</a>.  </lI>
+</OL>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3662" class="node node-type-story node-promoted node-sticky node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3662" title="Spring Data Neo4j 2.1.0 Release Candidate 4 released">Spring Data Neo4j 2.1.0 Release Candidate 4 released</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by mhunger on Tue, 2012-09-18 18:59        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>Shortly before the Spring Data GA release train arrives, we would like to gather some feedback on fixes and updates in <a href="http://springsource.org/spring-data/neo4j">Spring Data</a> - <a href="http://neo4j.org">Neo4j</a>. That's why we released an Release Candidate 4.</p>
+<p>Here is a quick overview of the changes that made it into this release candidate, much longer than we intended to, but still very useful.</p>
+<p>Changes in version 2.1.0.RC4 (2012-08-19)</p>
+<ul>
+<li>DATAGRAPH-296 Updates to stable versions of Neo4j 1.8.RC1, spatial, cypher-dsl and java-rest-binding, adopted to API changes</li>
+<li>DATAGRAPH-285 adding application events for save and delete</li>
+<li>DATAGRAPH-263, DATAGRAPH-212, DATAGRAPH-272, DATAGRAPH-147 refactored derived query creation, added support for multiple indexed fields and all query keywords</li>
+<li>DATAGRAPH-294 derived finder methods for numerically indexed values</li>
+<li>DATAGRAPH-293 find objects by graph-id</li>
+<li>DATAGRAPH-275 non graceful fallback on empty graph for TypeRepresentationStrategyFactory</li>
+<li>DATAGRAPH-246 allowing entity as parameter to derived finders</li>
+<li>DATAGRAPH-281 Added support for Enums and Dates as parameters to Cypher</li>
+</ul>
+<p>Just point your dependency version to <code>2.1.0.RC4</code>. For now the online resources have not been updated due to manual effort and time constraints. Those will be available for the 2.1.0.RELEASE.</p>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3660" class="node node-type-story node-promoted node-sticky node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3660" title="SpringOne 2GX Session Highlight: How to build Big Data Pipelines for Hadoop using OSS">SpringOne 2GX Session Highlight: How to build Big Data Pipelines for Hadoop using OSS</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Pieter Humphrey on Mon, 2012-09-17 22:06        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p> 
+<div style="float: right; width:114; padding: 10px">
+<a href="http://springone2gx.com/topics/how_to_build_big_data_pipelines_for_hadoop_using_oss"><img height="130" alt="Costin Leau" width="130" border="0" src="http://springone2gx.com/s/images/bio/11360_Leau_20110418_113720_medium_sq.jpg"/></a>
+</div>
+
+<p>In this SpringOne 2GX 2012 session Costin Leau will discuss how Hadoop is a great foundation for big data initatives. To deliver a complete Big Data solution, however, a   data pipeline needs to be developed that incorporates and orchestrates   many diverse technologies.  A Hadoop focused data pipeline not only needs to coordinate the running   of multiple Hadoop jobs (MapReduce, Hive, Pig or Cascading), but also   encompass real-time data acquisition and the analysis of reduced data   sets extracted into relational/NoSQL databases or dedicated analytical   engines.                                            </p>
+<p>Using an example of real-time event processing (Twitter), in this   session we will demonstrate how to build manageable and robust pipeline   solutions around BigData using Open Source software such as Apache   Hadoop, Cascading, Spring Batch &amp; Integration and Redis.</p>
+<p>Check out the <a href="http://springone2gx.com/topics/how_to_build_big_data_pipelines_for_hadoop_using_oss">session on SpringOne2GX.com</a> for more details and  <a href="http://www.springone2gx.com/conference/washington/2012/10/register">register</a> today!</p>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3658" class="node node-type-story node-promoted node-sticky node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3658" title="Spring Tool Suite and Groovy/Grails Tool Suite 3.1.0.M1 released">Spring Tool Suite and Groovy/Grails Tool Suite 3.1.0.M1 released</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Martin Lippert on Fri, 2012-09-14 14:40        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>Dear Spring Community,</p>
+<p>I am happy to announce the first milestone release 3.1.0.M1 of the Spring Tool Suite (STS) and the Groovy/Grails Tool Suite (GGTS).</p>
+<p>Highlights from this milestone include:</p>
+<ul>
+<li>We now provide distributions based on Eclipse 3.8 and Eclipse 4.2</li>
+<li>Mylyn updated to 3.8.1</li>
+<li>Mac apps now signed for Gatekeeper in OSX 10.8 Mountain Lion</li>
+<li>Maven support for Grails projects</li>
+</ul>
+<p>Some of our users reported general performance issues with the new Eclipse Juno 4.2 platform that STS 3.0.0 ships with. Most of these issues seem to be related to the underlying UI platform and its usage from various plugins and extensions. Since our goal is to provide the best possible user experience, we decided to provide two separate distributions for STS 3.1.0.M1: one that is built on top of Eclipse Juno 3.8 and one on top of Eclipse Juno 4.2. People who have trouble using the 4.2-based version should try the 3.8-based distribution instead.</p>
+<p>The 3.1.0 release is planned to arrive shortly after the Eclipse Juno SR1 release and will also provide both distributions.</p>
+<p>To download the distributions, please go visit:</p>
+<ul>
+<li>Spring Tool Suite: <a href="http://www.springsource.org/sts">http://www.springsource.org/sts</a></li>
+<li>Groovy/Grails Tool Suite: <a href="http://grails.org/products/ggts">http://grails.org/products/ggts</a></li>
+</ul>
+<p>Detailed new and noteworthy notes can be found here: <a href="http://static.springsource.org/sts/nan/v310/NewAndNoteworthy.html">STS/GGTS 3.1.0.M1 New &amp; Noteworthy</a>.</p>
+<p>3.1.0.RELEASE is planned for the week of October 8th.</p>
+<p>Enjoy!</p>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3657" class="node node-type-story node-promoted node-sticky node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3657" title="Spring Data REST 1.0.0.RC3 Released">Spring Data REST 1.0.0.RC3 Released</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Jonathan Brisbin on Fri, 2012-09-14 10:44        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>I'm pleased to announce the release of Spring Data REST 1.0.0.RC3! This release includes a significant number of bug fixes, changes to the structure of the JSON representation, better integration of user-defined Jackson Modules that are bootstrapped into the internal ObjectMapper, as well integration with Spring HATEOAS. Also included in this release is support for extending the resource representation (e.g. to add links to other, related resources) using the Spring HATEOAS ResourceProcessor abstraction.</p>
+<p>New functionality includes:</p>
+<ul>
+<li>JSON output looks different in an effort to make property names consistent and structure clearer.</li>
+<li>Pulls in any Jackson Module beans discovered and integrates user configuration with internal ObjectMapper.</li>
+<li>Integration with Spring HATEOAS - Customize the outgoing JSON by adding or removing links or otherwise altering the resource.</li>
+</ul>
+<p><a href="https://github.com/springsource/spring-data-rest-webmvc">Starter Web Application</a> | <a href="https://github.com/SpringSource/spring-data-rest/wiki/">Wiki</a> | <a href="https://jira.springsource.org/secure/ReleaseNote.jspa?projectId=10901&amp;version=13598">Release Notes</a></p>
+<p>To learn more about the project, visit the Spring Data REST <a href="http://www.springsource.org/spring-data/rest">homepage</a>, or visit <a href="https://github.com/SpringSource/spring-data-rest">the Github repository</a> to download the source.</p>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="/taxonomy/term/4/14" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="/taxonomy/term/4/14?page=8" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=5" title="Go to page 6" class="active">6</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=6" title="Go to page 7" class="active">7</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=7" title="Go to page 8" class="active">8</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=8" title="Go to page 9" class="active">9</a></li>
+<li class="pager-current">10</li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=10" title="Go to page 11" class="active">11</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=11" title="Go to page 12" class="active">12</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=12" title="Go to page 13" class="active">13</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=13" title="Go to page 14" class="active">14</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a href="/taxonomy/term/4/14?page=10" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="/taxonomy/term/4/14?page=92" title="Go to last page" class="active">last »</a></li>
+</ul></div>
+
+        
+    </div>
+        </td>
+
+        <td width="60px">&nbsp;</td>
+        <td width="320px" valign="top" align="left">
+
+        <div class="region region-content-right">
+  <div id="block-block-19" class="block block-block first region-odd odd region-count-1 count-3"><div class="block-inner">
+
+      <h2 class="title">Newsletter Subscription</h2>
+  
+  <div class="content">
+    <div style="background-color:#fff;padding:10px;">
+<p style="margin-left:3px;">Our monthly newsletter is packed full of techniques, tutorials, tips and tricks to get you on your way to Spring nirvana. <a href="/news-events/newsletters">View Archive</a></p>
+
+<form enctype="multipart/form-data" name="StandardForm" method="post" action="http://now.eloqua.com/e/f2.aspx">
+    <input type="hidden" value="StandardForm" name="elqFormName" /> <input type="hidden" value="524" name="elqSiteID" /> <input type="hidden" value="" name="elqCustomerGUID" /> <input type="hidden" value="0" name="elqCookieWrite" />
+
+<table>
+<tr>
+<td>
+<input type="text" class="form-text" size="18" id="edit-submitted-first-name" name="first_name" maxlength="128" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" value="First Name" class="form-text" onblur="this.value = this.value || 'First Name'; this.style.color = '#ccc';" onfocus="if(this.value=='First Name') {this.value='';} this.style.color = '#ccc';" />
+</td>
+<td>
+<input type="text" class="form-text" size="20" id="edit-submitted-last-name" name="last_name" maxlength="128"  value="Last Name" class="form-text" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" onblur="this.value = this.value || 'Last Name'; this.style.color = '#ccc';" onfocus="if(this.value=='Last Name') {this.value='';} this.style.color = '#ccc';" />
+</td>
+</tr>
+</table>
+<table style="margin-top:-13px;">
+<tr>
+<td valign="top">
+<input type="text" class="form-text" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" size="30" id="edit-submitted-email" name="email" maxlength="128" value="Email" class="form-text" onblur="this.value = this.value || 'Email'; this.style.color = '#ccc';" onfocus="if(this.value=='Email') {this.value='';} this.style.color = '#ccc';" />
+</td>
+<td valign="bottom">
+    <input type="hidden" value="http://www.springsource.com/newsevents/newsletter-registration-thank-you" name="redirect" />
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='/elqNow/elqScr.js'></script>  <SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript'><!--//
+window.onload = initPage;
+function initPage(){
+    if (this.GetElqCustomerGUID)
+        document.forms["StandardForm"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
+}
+//--></script>
+    <input type="hidden" value="StandardForm" id="edit-submitted-elqformname" name="submitted[elqformname]" />  <input type="hidden" value="524" id="edit-submitted-elqsiteid" name="submitted[elqsiteid]" />  <input type="hidden" value="" id="edit-submitted-elqcustomerguid" name="submitted[elqcustomerguid]" />  <input type="hidden" value="0" id="edit-submitted-elqcookiewrite" name="submitted[elqcookiewrite]" />  <input type="hidden" value="default" id="edit-details-email-subject" name="details[email_subject]" />  <input type="hidden" value="default" id="edit-details-email-from-name" name="details[email_from_name]" />  <input type="hidden" value="default" id="edit-details-email-from-address" name="details[email_from_address]" />  <input type="hidden" value="form-30d82aaa8598120208cca2aa409c85df" id="form-30d82aaa8598120208cca2aa409c85df" name="form_build_id" />  <input type="hidden" value="webform_client_form_3706" id="edit-webform-client-form-3706" name="form_id" />  <input type="image" src="http://www.springsource.org/sites/all/themes/s2org11/images/button_newsevents_subscribe_gray.png"  class="form-submit" value="" id="edit-submit" border="0" name="op" />
+</td>
+</tr>
+</table>
+</form>
+</div>
+<br>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-18" class="block block-block region-even even region-count-2 count-4"><div class="block-inner">
+
+      <h2 class="title">Upcoming Events</h2>
+  
+  <div class="content">
+    <!--<a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu" target="_blank"><img src="http://blog.springsource.org/wp-content/themes/spring11/files/PROMO_SpringSourceU_320x118.png"></a>-->
+<a href="http://www.springone2gx.com/conference/santa_clara/2013/09/register" target="_blank"><img src="/files/SpringOne/2013/springone-badge-2013.png"></a>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-event-1" class="block block-event region-odd odd region-count-3 count-5"><div class="block-inner">
+
+  
+  <div class="content">
+    <div class="item-list"><ul><li class="first last">No upcoming events available</li>
+</ul></div><div class="ical-link"><a href="http://www.springsource.org/event/ical" title="Add this calendar to your iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Add to iCalendar" /></a></div><div class="more-link"><a href="/event" title="More events.">more</a></div>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-60" class="block block-block region-even even region-count-4 count-6"><div class="block-inner">
+
+      <h2 class="title">Upcoming Training</h2>
+  
+  <div class="content">
+    <script>
+var now = new Date().getTime();
+document.write(unescape("%3Cscript src='http://dserv.springsource.org/spring_mylearn_banner?wh=wwworg&ies="+now+"' type='text/javascript'%3E%3C/script%3E"));
+</script>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-3" class="block block-block last region-odd odd region-count-5 count-7"><div class="block-inner">
+
+  
+  <div class="content">
+    <p><strong><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17750">Core Spring Framework</a></strong></p><p>04/15 - 04/18:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158750">Bangalore</a><br/>04/22 - 04/25:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=173542">Live Online</a><br/>04/22 - 04/25:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=174009">San Francisco</a><br/>04/22 - 04/25:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=171408">London</a><br/>04/22 - 04/25:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166673">Edison </a><br/>04/23 - 04/26:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=163743">Zürich</a><br/></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17834"><strong>Rich Web Applications with Spring</strong></a></p><p></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17833"><strong>Enterprise Integration with Spring</strong></a></p><p>04/16 - 04/19:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=172348">Wien</a><br/>04/22 - 04/25:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158752">Bangalore</a><br/>04/30 - 05/03:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166871">Washington DC</a><br/>
+<p><strong>Plus:</strong> 
+<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18355"><strong>Hibernate with Spring</strong></a>, 
+<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18339"><strong>Core Spring.NET</strong></a>,
+<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18353"><strong>Groovy & Grails</strong></a></p>
+<p> <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu">and more...</a></p>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div><!-- /.region -->
+
+
+
+</div>
+        </td>
+
+        </tr>
+        </table>
+
+
+                  <div class="feed-icons"><a href="/taxonomy/term/4/14/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="RSS - News and Announcements" width="16" height="16" /></a></div>
+        
+      </div></div><!-- /.section, /#content -->
+
+
+      
+      
+    </div></div><!-- /#main, /#main-wrapper -->
+
+<div style="background-color:#252525;margin-top:-14px;">
+         <div id="footer"><div class="section">
+
+
+        <div class="region region-footer">
+  <div id="block-block-23" class="block block-block first region-odd odd region-count-1 count-1"><div class="block-inner">
+
+  
+  <div class="content">
+    <style type="text/css">
+#communities{position:relative;}
+#communities li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#communities li, #communities a{height:69px;display:block;}
+
+#cf{left:0px;width:260px;}
+#cf{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat 0 0;}
+#cf a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat 0 0;}
+
+#grails{left:275px;width:120px;}
+#grails{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -275px 0;}
+#grails a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -275px 0;}
+
+#groovy{left:400px;width:100px;}
+#groovy{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -400px 0;}
+#groovy a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -400px 0;}
+
+#hyperic{left:500px;width:170px;}
+#hyperic{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -500px 0;}
+#hyperic a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -500px 0;}
+
+#rabbit{left:670px;width:140px;}
+#rabbit{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -670px 0;}
+#rabbit a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -670px 0;}
+
+#wm{left:810px;width:170px;}
+#wm{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -810px 0;}
+#wm a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -810px 0;}
+
+#communities_bg {background-color:#181818;height:69px;padding:1px 10px 15px 10px;border-radius:5px;margin:10px 0 27px 0}
+
+#communities_title {color: #CCC;font-size: 18px;font-weight: 300;padding-bottom: 15px;line-height: 24px;text-shadow: 0 1px 0 black;margin-left:10px}
+
+</style>
+
+<p>&nbsp;</p>
+<table style="margin: 0 10px 0 10px;">
+
+<tr valign="top">
+    <span id="communities_title">Other Communities</span>
+</tr>
+<tr valign="top">
+    <div id="communities_bg">
+        <ul id="communities">
+            <li id="cf" style="margin-left: 30px;"><a href="http://www.cloudfoundry.org" target="_blank"></a></li>
+            <li id="grails" style="margin-left: 65px;"><a href="http://www.grails.org" target="_blank"></a></li>
+            <li id="groovy" style="margin-left: 110px;"><a href="http://groovy.codehaus.org/" target="_blank"></a></li>
+            <!--<li id="hyperic"><a href="http://www.hyperic.com/community" target="_blank"></a></li>-->
+            <li id="rabbit" style="margin-left: -20px;"><a href="http://www.rabbitmq.com" target="_blank"></a></li>
+            <li id="wm"><a href="http://redis.io" target="_blank"></a></li>
+        </ul>
+    </div>
+</tr>
+
+<tr valign="top">
+<th class="footerth" style="padding-left:-10px;"><a href="http://www.springsource.org">SpringSource</a></th>
+
+<th class="footerth"><a href="/features">Features</a></th>
+
+<th class="footerth"><a href="/get-started">Get Started</a></th>
+
+<th class="footerth"><a href="/get-involved">Get Involved</a></th>
+
+<th class="footerth"><a href="/projects">Projects</a></th>
+
+
+</tr>
+<tr>
+<td valign="top" width="195px">
+
+<span class="footerlist">
+<a href="/about">About Us</a><br>
+<a href="http://blog.springsource.org">Our Blog</a><br>
+<a href="/case-studies">Case Studies</a><br>
+<a href="/news-events">Latest News & Events</a><br>
+<a href="http://www.vmware.com/jobs/" target="_blank">SpringSource Jobs</a>&nbsp;&nbsp;<a href="http://www.vmware.com/jobs/" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/consulting">Consulting</a><br>
+<!--<a href="http://www.springsource.com/contact" target="_blank">Contact Us</a><br>-->
+<a href="/newsletter-subscription">Subscribe to Newsletter</a><br>
+
+</span>
+
+<p style="margin-top:15px;"><a href="/newsletter-subscription">
+<img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_home_subscribe.png"></a></p>
+</td>
+
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/features/modern-web">Modern Web</a><br>
+<a href="/features/data-access">Data Access</a><br>
+<a href="/features/integration">Integration</a><br>
+<a href="/features/mobile">Mobile</a><br>
+<a href="/features/social">Social</a><br>
+<a href="/features/security">Security</a><br>
+<a href="/features/cloud-ready">Cloud Ready</a><br>
+</span>
+</td>
+
+
+<td valign="top" width="160px">
+
+<span class="footerlist">
+<a href="/sts">Get Tool Kit (STS)</a> <br>
+<a href="/tutorials">Tutorials</a> <br>
+<a href="/samples">Code Samples</a> <br>
+<a href="/documentation">Documentation</a> <br>
+<a href="http://forum.springsource.org">Forums</a> <br>
+<a href="http://www.springsource.com/training" target="_blank">Training</a><br>
+
+
+</span>
+</td>
+
+
+<td valign="top" width="156px">
+
+<span class="footerlist">
+
+
+<a href="http://forum.springsource.org">Discussions</a><br>
+<a href="https://jira.springsource.org" target="_blank">Issue Tracker</a><br>
+<a href="https://github.com/SpringSource" target="_blank">Source Repository</a>&nbsp;&nbsp;<a href="https://github.com/SpringSource" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br> 
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-amqp">Spring AMQP</a><br>
+<a href="/spring-android">Spring for Android</a><br>
+<a href="/spring-batch">Spring Batch</a><br>
+<a href="/spring-data">Spring Data</a><br>
+<a href="/spring-framework">Spring Framework</a><br>
+<a href="/spring-gemfire">Spring Gemfire</a><br>
+<a href="/spring-integration">Spring Integration</a><br>
+
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-mobile">Spring Mobile</a><br>
+<a href="http://www.springframework.net" target="_blank">Spring .NET</a>&nbsp;&nbsp;<a href="http://www.springframework.net" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/spring-roo">Spring Roo</a><br>
+<a href="/spring-security">Spring Security</a><br>
+<a href="/spring-social">Spring Social</a><br>
+<a href="/spring-web-flow">Spring Web Flow</a><br>
+<a href="/spring-web-services">Spring Web Services</a><br>
+
+</span>
+</td>
+
+
+
+</tr>
+</table>
+
+
+<div style="background-color:#1e1e1e;width:952;-moz-border-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 5px;">
+<center>
+<p class="copyright">
+<a style="color:#eee;" href="/user">&#169;</a>&nbsp;
+<script type="text/javascript">
+
+var d = new Date();
+document.write(d.getFullYear());
+
+</script>
+SpringSource.
+All Rights Reserved.
+<a href="http://www.vmware.com/help/legal.html" target="_blank">Terms of Use</a>, 
+<a href="http://www.vmware.com/help/privacy.html" target="_blank">Privacy</a> and 
+<a href="/trademark_standards">Trademark Standards</a>
+</p>
+</center>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-7" class="block block-block last region-even even region-count-2 count-2"><div class="block-inner">
+
+  
+  <div class="content">
+    <!-- Eloqua Img Code Code -->
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqImg.js"></script>
+<!-- Begin Google Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2728886-3");
+pageTracker._setDomainName("springsource.org");
+pageTracker._setAllowHash(false);
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+var OrgTracker = _gat._getTracker("UA-2728886-2");
+OrgTracker._setDomainName("springsource.org");
+OrgTracker._setAllowHash(false);
+OrgTracker._setAllowLinker(true);
+OrgTracker._trackPageview();
+</script>
+<!-- End Google Code -->  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div><!-- /.region -->
+
+      </div></div>   <!-- /.section, /#footer -->
+    <!--  -->
+</div>
+  </div></div><!-- /#page, /#page-wrapper -->
+
+  
+  <script type="text/javascript" src="/sites/all/modules/custom/google_cse/google_cse.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "googleCSE": { "language": "en" } });
+//--><!]]>
+</script>
+
+</body>
+</html>

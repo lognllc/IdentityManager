@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.springsource.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>SpringSource.org - Technical Article</title>
+ <link>http://www.springsource.org/taxonomy/term/6/0</link>
+ <description>A link to a technical article about Spring</description>
+ <language>en</language>
+<item>
+ <title>Spring BlazeDS Integration Test Drive: Updated for M2</title>
+ <link>http://www.springsource.org/node/1106</link>
+ <description>&lt;p&gt;
+Christophe Coenraets, Senior Technical Evangelist for Adobe, has updated his excellent set of samples to get you up and running quickly with Spring BlazeDS Integration M2.  See &lt;a href=&quot;http://coenraets.org/blog/2009/03/springblazeds-integration-test-drive-m2-update-available/&quot;&gt;his blog&lt;/a&gt; for a link to the download and installation instructions.
+&lt;/p&gt;
+&lt;p&gt;
+&amp;quot;To help developers get started with the integration, I put together a new “Spring / BlazeDS Test Drive”.  This Test Drive consists of a minimal version of Tomcat with BlazeDS and the “Spring / BlazeDS integration” preconfigured and ready to use. It also includes a series of samples running “out-of-the-box” that should allow you to get up and running integrating Flex (and Adobe AIR) with Spring in a matter of minutes.&amp;quot;
+&lt;/p&gt;
+</description>
+ <comments>http://www.springsource.org/node/1106#comments</comments>
+ <category domain="http://www.springsource.org/presentations">Technical Article</category>
+ <pubDate>Thu, 12 Mar 2009 13:36:56 +0000</pubDate>
+ <dc:creator>jeremyg484</dc:creator>
+ <guid isPermaLink="false">1106 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>New Spring BlazeDS Integration Test Drive</title>
+ <link>http://www.springsource.org/node/972</link>
+ <description>&lt;p&gt;Christophe Coenraets, Senior Technical Evangelist for Adobe, has assembled a great new set of samples to get you up and running quickly with Spring BlazeDS Integration M1.  See &lt;a href=&quot;http://coenraets.org/blog/2009/01/new-springblazeds-integration-test-drive/&quot;&gt;his blog&lt;/a&gt; for a link to the download and installation instructions.&lt;/p&gt;
+&lt;p&gt;&amp;quot;To help developers get started with the integration, I put together a new “Spring / BlazeDS Test Drive”.  This Test Drive consists of a minimal version of Tomcat with BlazeDS and the “Spring / BlazeDS integration” preconfigured and ready to use. It also includes a series of samples running “out-of-the-box” that should allow you to get up and running integrating Flex (and Adobe AIR) with Spring in a matter of minutes.&amp;quot; &lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+ <comments>http://www.springsource.org/node/972#comments</comments>
+ <category domain="http://www.springsource.org/presentations">Technical Article</category>
+ <pubDate>Tue, 27 Jan 2009 20:14:45 +0000</pubDate>
+ <dc:creator>jeremyg484</dc:creator>
+ <guid isPermaLink="false">972 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Blog Entry about Spring Integration</title>
+ <link>http://www.springsource.org/node/594</link>
+ <description>&lt;p&gt;Craig Walls has posted a blog entitled &lt;a href=&quot;http://www.jroller.com/habuma/entry/spring_integration_return_of_the&quot;&gt;Spring Integration:Return of the Bride of FileSucker Strikes Back...With a Vengeance&lt;/a&gt;. If it&#039;s not obvious enough from the title, the example demonstrates usage of the Spring Integration file-source adapter. It also highlights both the annotation-based model and the spring-integration namespace support. Craig provides all of the information and source code necessary to try out the sample for yourself. If you&#039;d like to learn more after checking out Craig&#039;s blog, visit the &lt;a href=&quot;/spring-integration&quot;&gt;Spring Integration Home&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.springsource.org/node/594&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.springsource.org/node/594#comments</comments>
+ <category domain="http://www.springsource.org/presentations">Technical Article</category>
+ <pubDate>Tue, 19 Feb 2008 16:56:17 +0000</pubDate>
+ <dc:creator>Mark Fisher</dc:creator>
+ <guid isPermaLink="false">594 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Article: Spring Scheduling in WebSphere</title>
+ <link>http://www.springsource.org/node/589</link>
+ <description>&lt;p&gt;Eivind Barstad Waaler has written &lt;a title=&quot;Spring Scheduling in WebSphere&quot; href=&quot;http://boss.bekk.no/display/BOSS/Spring+Scheduling+in+WebSphere&quot;&gt;an article&lt;/a&gt; about setting up scheduling in WebSphere using Spring and the CommonJ TimerManager API. The article is complete with &lt;a title=&quot;spring-scheduling.zip attached to Spring Scheduling in WebSphere&quot; href=&quot;http://boss.bekk.no/download/attachments/705/spring-scheduling.zip?version=1&quot;&gt;a runnable example application&lt;/a&gt; and can be read here: &lt;a title=&quot;Spring Scheduling in WebSphere&quot; href=&quot;http://boss.bekk.no/display/BOSS/Spring+Scheduling+in+WebSphere&quot;&gt;Spring Scheduling in WebSphere&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
+ <comments>http://www.springsource.org/node/589#comments</comments>
+ <category domain="http://www.springsource.org/presentations">Technical Article</category>
+ <pubDate>Thu, 07 Feb 2008 20:57:14 +0000</pubDate>
+ <dc:creator>Colin Sampaleanu</dc:creator>
+ <guid isPermaLink="false">589 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Presentation: Using AOP in the Enterprise</title>
+ <link>http://www.springsource.org/node/588</link>
+ <description>In this &lt;a href=&quot;http://www.infoq.com/news/2008/01/presentation-colyer-aop&quot; target=&quot;_self&quot;&gt;presentation from QCon San Francisco 2007&lt;/a&gt;, SpringSource CTO and AspectJ project lead Adrian Colyer discusses where Aspect-Oriented Programming (AOP) should be used, practical applications of AOP in enterprise situations such as Hibernate exception translation and automatic operation retry on nonfatal exceptions, and AOP mechanisms in Spring 2.5.</description>
+ <comments>http://www.springsource.org/node/588#comments</comments>
+ <category domain="http://www.springsource.org/presentations">Technical Article</category>
+ <pubDate>Thu, 07 Feb 2008 20:52:43 +0000</pubDate>
+ <dc:creator>Colin Sampaleanu</dc:creator>
+ <guid isPermaLink="false">588 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title></title>
+ <link>http://www.springsource.org/node/564</link>
+ <description>n/a</description>
+ <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false"> at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>&quot;Spring in Production&quot; white paper now available</title>
+ <link>http://www.springsource.org/node/557</link>
+ <description>&lt;p&gt;Interface21 have made available a &lt;a target=&quot;_blank&quot; href=&quot;http://www.interface21.com/whitepapers/&quot;&gt;new white paper&lt;/a&gt; on the topic of &amp;quot;Spring in Production.&amp;quot;  &lt;/p&gt;
+&lt;p&gt;There&#039;s lots of documentation available on Spring&#039;s programming and configuration models, but very little written to date that explains what Spring does at runtime and how it manages the request processing pipeline. In this white paper you&#039;ll learn about the Spring kernel and the enterprise services layer that sits on top of it, and how these co-operate to manage Spring-powered applications. The white paper also contains a section on tuning Spring-powered applications. I asked many of my colleagues at Interface21 for their hints and tips on how to get the most out of a Spring-powered application in a production setting, and this priceless advice is distilled into over 25 recommendations and suggestions. In this part of the white paper you will: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;learn how to establish an effective blueprint for your application that takes full advantage of your deployment platform&lt;/li&gt;
+&lt;li&gt;discover many tips for creating effective application designs in both OLTP and batch scenarios, and
+	&lt;/li&gt;
+&lt;li&gt;pick up some great ideas on exposing configuration data through JMX and for integrating statistics into your testing
+	&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I encourage you to &lt;a target=&quot;_blank&quot; href=&quot;http://www.interface21.com/whitepapers/&quot;&gt;download a copy of the white paper now&lt;/a&gt; and let us know what you think. Interface21 white papers are freely available, but we do ask that you register your interest first.&lt;/p&gt;
+</description>
+ <comments>http://www.springsource.org/node/557#comments</comments>
+ <category domain="http://www.springsource.org/presentations">Technical Article</category>
+ <pubDate>Fri, 09 Nov 2007 22:04:40 +0000</pubDate>
+ <dc:creator>Adrian Colyer</dc:creator>
+ <guid isPermaLink="false">557 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title></title>
+ <link>http://www.springsource.org/node/550</link>
+ <description>n/a</description>
+ <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+ <dc:creator />
+ <guid isPermaLink="false"> at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Article: Expose Your POJO-Based Domain Apps as Web Services</title>
+ <link>http://www.springsource.org/node/538</link>
+ <description>&lt;p&gt;In &lt;a href=&quot;http://www.devx.com/Java/Article/33839&quot; target=&quot;_self&quot;&gt;this DevX article&lt;/a&gt;, Ramanujam A. Rao explains how to expose existing POJO-driven J2EE applications as web services using &lt;a target=&quot;new&quot; href=&quot;http://ws.apache.org/axis2/index.html&quot;&gt;Axis2&lt;/a&gt;, showing the integration of Spring to facilitate the creation and control of these services.&lt;/p&gt;
+</description>
+ <comments>http://www.springsource.org/node/538#comments</comments>
+ <category domain="http://www.springsource.org/presentations">Technical Article</category>
+ <pubDate>Mon, 08 Oct 2007 12:27:58 +0000</pubDate>
+ <dc:creator>Colin Sampaleanu</dc:creator>
+ <guid isPermaLink="false">538 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Spring Framework Training Summary (October)</title>
+ <link>http://www.springsource.org/node/539</link>
+ <description>&lt;a target=&quot;_self&quot; href=&quot;http://www.interface21.com/&quot;&gt;Interface21&lt;/a&gt; is pleased to offer a number of Spring Framework 2.0 and AOP training events in the upcoming period, delivered by the people who build and sustain the Spring Framework. For full details, please visit the main &lt;a href=&quot;http://www.springframework.com/training/&quot; target=&quot;_self&quot;&gt;training information page&lt;/a&gt;. Here is a summary of some of the upcoming courses and venues:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;North America&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-ord-7.html&quot; target=&quot;_self&quot;&gt;October 9th - 12th, Chicago, IL&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-lax-3.htmlhttp://www.interface21.com/training/eventDetails/2007/core-lax-3.html&quot; target=&quot;_self&quot;&gt;October 23rd - 26th, Los Angeles, CA&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-atl-3.html&quot; target=&quot;_self&quot;&gt;October 30th - November 2nd, Atlanta, GA&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-nyc-7.html&quot; target=&quot;_self&quot;&gt;November 6th - 9th, New York, NY&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-dal-3.html&quot; target=&quot;_self&quot;&gt;November 13th - 16th, Dallas, TX&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-iad-10.html&quot; target=&quot;_self&quot;&gt;November 27th - 30th, Washington, DC&lt;br /&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/core-sdg-2.html&quot; target=&quot;_self&quot;&gt;December 4th - 7th, San Diego, CA&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-bos-4.html&quot; target=&quot;_self&quot;&gt;December 17th - 20th, Boston, MA&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-mco-3.html&quot; target=&quot;_self&quot;&gt;January 8th - 11th, Orlando, FL&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Europe&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-lon-23.html&quot; target=&quot;_self&quot;&gt;October 9th - 12th, London, UK&lt;/a&gt; &lt;/li&gt;&lt;li&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-sto-1.html&quot; target=&quot;_self&quot;&gt;October 16th - 19th, Stockholm, Sweden&lt;/a&gt;&lt;em&gt; &lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;/em&gt;&lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-hel-1.html&quot; target=&quot;_self&quot;&gt;October 23rd - 26th, Helsinki, Finland&lt;/a&gt;&lt;em&gt;&lt;em&gt; &lt;/em&gt;&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;/em&gt;&lt;/em&gt;&lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-ham-1.html&quot; target=&quot;_self&quot;&gt;October 23rd - 26th, Hamburg, Germany&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt;&lt;/em&gt;&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-lon-24.html&quot; target=&quot;_self&quot;&gt;October 30th - November 2nd, London, UK&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt;&lt;/em&gt;&lt;/em&gt; &lt;a href=&quot;http://www.zenika.com/formation_spring.php&quot; target=&quot;_self&quot;&gt;November 6th - 9th, Paris, France&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Core AOP&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/aop-sto-3.html&quot; target=&quot;_self&quot;&gt;November 15th - 16th, Malmo, Sweden&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt;&lt;/em&gt;&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/Core-ams-3.html&quot; target=&quot;_self&quot;&gt;November 20th - 23rd, Amsterdam, Netherlands&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Web Services&lt;/em&gt;&lt;em&gt;:&lt;/em&gt;&lt;/em&gt;&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/ws-ams-1.html&quot; target=&quot;_self&quot;&gt;November 26th - 27th, Amsterdam, Netherlands&lt;/a&gt; &lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt;&lt;/em&gt;&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/copy_of_core-cop-2.html&quot; target=&quot;_self&quot;&gt;November 27th - 30th, Copenhagen, Denmark&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Core AOP&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/aop-lon-6.html&quot; target=&quot;_self&quot;&gt;December 6th - 7th, London&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Australia/Asia/Other&lt;br /&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-syd-8.html&quot; target=&quot;_self&quot;&gt;October 15th - 18th, &lt;/a&gt;&lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-syd-8.html&quot; target=&quot;_self&quot;&gt;Sydney, Australia&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-mel-3.html&quot; target=&quot;_self&quot;&gt;October 22nd - 25th, Melbourne, Australia&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt; &lt;a href=&quot;http://www.xml-asia.org/springtraining/&quot; target=&quot;_self&quot;&gt;October 23rd - 26th, Shanghai, China&lt;/a&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;br /&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-wlg-2.html&quot; target=&quot;_self&quot;&gt;Oct 29th - Nov 1st, Wellington, New Zealand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt; &lt;a href=&quot;http://www.interface21.com/training/eventDetails/2007/core-bri-4.html&quot; target=&quot;_self&quot;&gt;November 5th - 8th, Brisbane, Australia&lt;/a&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;br /&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt; &lt;a target=&quot;_self&quot; href=&quot;http://www.interface21.com/training/eventDetails/2007/core-del-1.html&quot;&gt;November 5th - 8th, New Delhi, India&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt; &lt;a target=&quot;_self&quot; href=&quot;http://www.interface21.com/training/eventDetails/2007/core-blr-1.html&quot;&gt;November 19th - 22nd, Bangalore, India&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt; &lt;a href=&quot;http://www.xml-asia.org/springtraining/&quot; target=&quot;_self&quot;&gt;November 20th - 23rd, Cheng Du, China&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;em&gt;Core Spring&lt;/em&gt;&lt;em&gt;:&lt;/em&gt; &lt;a href=&quot;http://www.xml-asia.org/springtraining/&quot; target=&quot;_self&quot;&gt;December 18th - 21st, Dalian, China&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;&lt;em&gt;... &lt;a href=&quot;http://www.springframework.com/training/&quot; target=&quot;_self&quot;&gt;plus others&lt;/a&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;/em&gt;&lt;a href=&quot;http://www.springframework.com/training/&quot; target=&quot;_self&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;   Interested in a full-course of Spring during Winter? The &lt;a target=&quot;_self&quot; href=&quot;http://www.thespringexperience.com/conference/hollywood/2007/12/index.html&quot;&gt;Spring Experience 2007&lt;/a&gt; conference is taking place in sunny Hollywood, Florida, from Dec. 12th-15th.  &lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.springsource.org/node/539&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.springsource.org/node/539#comments</comments>
+ <category domain="http://www.springsource.org/presentations">Technical Article</category>
+ <pubDate>Tue, 02 Oct 2007 12:43:06 +0000</pubDate>
+ <dc:creator>Colin Sampaleanu</dc:creator>
+ <guid isPermaLink="false">539 at http://www.springsource.org</guid>
+</item>
+</channel>
+</rss>

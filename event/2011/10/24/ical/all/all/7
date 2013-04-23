@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  October 24 2011- October 31 2011
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223855Z
+DTSTART;VALUE=DATE-TIME:20111026T010000Z
+DTEND;VALUE=DATE-TIME:20111028T220000Z
+UID:http://www.springsource.org/SpringOne2GX2011
+URL;VALUE=URI:http://www.springsource.org/SpringOne2GX2011
+SUMMARY:SpringOne 2GX 2011
+DESCRIPTION:<p><a href=\\"http\://www.springsource.com\\">SpringSource</a> in conjunction with the <a href=\\"http\://www.nofluffjuststuff.com/\\">No Fluff Just Stuff</a> Symposium Series are pleased to present <a href=\\"http\://springone2gx.com\\">SpringOne 2GX</a>\, the premier Java event of 2011. SpringOne 2GX is a collocated event covering the entire Spring ecosystem and Groovy/Grails technologies.</p>
+ <p>SpringOne 2GX is a one-of-a-kind conference for application developers\, solution architects\, web operations and IT teams who develop business applications\, create multi-device aware web applications\, design cloud architectures\, and manage high performance infrastructure. The sessions are specifically tailored for developers using the hugely popular open source Spring technologies\, Groovy &amp\; Grails\, and Tomcat. Whether you're building and running mission-critical business applications or designing the next killer cloud application\, SpringOne 2GX will keep you up to date with the latest enterprise technology.</p>
+ <p>Featuring over 100 presentations delivered by development leads and published authors on the Spring\, Groovy/Grails\, Tomcat and Cloud technology today\, it's the ideal place to obtain critical skills to help you build\, run and manage tomorrow's software solutions. Plus you'll meet and learn from open source leaders who drive innovation for these technologies. </p>
+ <p>SpringOne 2GX will be held in Chicago\, IL\, on October 25-28th\, 2011. <a href=\\"http\://springone2gx.com/conference/chicago/2011/10/register\\">Register Now!</a></p>
+ <p><a href=\\"http\://www.marriott.com/hotels/travel/chidt-chicago-marriott-downtown-magnificent-mile/\\">Magnificent Mile Marriott</a><br />
+ Downtown Chicago<br />
+ 540 North Michigan Ave.<br />
+ Chicago\, Illinois   60611<br />
+ 1 (800) 228-9290</p>
+ 
+END:VEVENT
+END:VCALENDAR

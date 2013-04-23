@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  March 05 2012- March 12 2012
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224324Z
+DTSTART;VALUE=DATE-TIME:20120308T140000Z
+DTEND;VALUE=DATE-TIME:20120308T151500Z
+UID:http://www.springsource.org/node/3481
+URL;VALUE=URI:http://www.springsource.org/node/3481
+SUMMARY:Webinar\: Native Android Development with Spring Android - Europe
+DESCRIPTION:<p>This session will provide an introductory overview of Android’s architecture\, the layout of an Android project\, the use of various Maven plugins and tools for enabling dependency management in your Android project. When building Android apps\, you can use a third party library\, like <a href=\\"http\://www.springsource.org/spring-android\\">Spring Android</a>\, that provides an abstraction for consuming RESTful services within your native Android app. Spring Android also supports the use of Spring Social on Android\, and we will discuss how Spring Social can help you connect your apps to OAuth protected services like Facebook and Twitter.</p>
+ <p>Europe\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=668353572\\">March 08\, 3\:00pm UK / 4\:00pm Europe</a></p>
+ <p>Hosted by <a href=\\"http\://blog.springsource.org/author/rclarkson/\\">Roy Clarkson</a>\, Spring Android Lead and Mobile Expert</p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224324Z
+DTSTART;VALUE=DATE-TIME:20120308T170000Z
+DTEND;VALUE=DATE-TIME:20120308T181500Z
+UID:http://www.springsource.org/node/3482
+URL;VALUE=URI:http://www.springsource.org/node/3482
+SUMMARY:Webinar\: Native Android Development with Spring Android - North America
+DESCRIPTION:<p>This session will provide an introductory overview of Android’s architecture\, the layout of an Android project\, the use of various Maven plugins and tools for enabling dependency management in your Android project. When building Android apps\, you can use a third party library\, like <a href=\\"/spring-android\\">Spring Android</a>\, that provides an abstraction for consuming RESTful services within your native Android app. Spring Android also supports the use of Spring Social on Android\, and we will discuss how Spring Social can help you connect your apps to OAuth protected services like Facebook and Twitter.</p>
+ <p>North America\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=667330791\\">March 08\, 1\:00pm EST / 10\:00am PST</a></p>
+ <p>Hosted by <a href=\\"http\://blog.springsource.org/author/rclarkson/\\">Roy Clarkson</a>\, Spring Android Lead and Mobile Expert</p>
+ 
+END:VEVENT
+END:VCALENDAR

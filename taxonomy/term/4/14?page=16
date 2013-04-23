@@ -1,0 +1,1190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>News and Announcements | SpringSource.org</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - News and Announcements" href="/taxonomy/term/4/14/feed" />
+<link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ctools/css/ctools.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/google_cse/google_cse.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/filefield/filefield.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/nice_menus/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/framework/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/taxonomy/taxonomy.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/page-backgrounds.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/tabs.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/messages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/pages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/block-editing.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/blocks.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/navigation.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/panels-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/views-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/nodes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/comments.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/forms.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/fields.css?R" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/s2org11/css/print.css?R" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie.css?R" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie6.css?R" />
+<![endif]-->
+  <script type="text/javascript" src="/misc/jquery.js?R"></script>
+<script type="text/javascript" src="/misc/drupal.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/superfish.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.bgiframe.min.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.hoverIntent.minified.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
+<script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay": 800, "speed": 1 }, "prettify": { "linenums": false, "match": ".content", "nocode": "no-code", "custom": [  ], "markup": { "code": true, "pre": true, "precode": false } } });
+//--><!]]>
+</script>
+</head>
+<body class="page not-front not-logged-in no-sidebars page-taxonomy-term-4-14 section-taxonomy">
+
+
+	  
+
+<!--begin custom navigation-->
+      	  
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+<div style="height:97px;margin-top:0px;background: #457228;">
+<![endif]-->
+
+<div style="height:97px;margin-top:0px; background: url('http://www.springsource.org/sites/all/themes/s2org11/images/BG_SiteHeader_Glow.png') no-repeat scroll center top, url('/files/homepage/BG_SiteBillboardAndHeader_50.png') repeat-x scroll 0 0 #367B09;">
+
+    <div id="top">
+  		<div style = "height:80px;margin-top:0px;background: url('/files/homepage/BG_SiteTopNav_new.png') repeat-x scroll 0 0 #F1F1F1;
+  	-moz-border-radius: 0 0 5px 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 0 0 5px 5px;
+-moz-box-shadow: 0 0 15px #333;
+-webkit-box-shadow: 0 0 15px#333;
+box-shadow: 0 0 15px #333;">
+<div style="margin-left:10px;margin-right:10px;">
+ 	          <table valign="top" height="80" style="font-size:14px;text-transform:uppercase;color:#666;margin:0;">
+	          <tr>
+	          
+	          <td>
+	           <a href="/"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/logo_springsource_community.png"></a>
+	           </td>
+	           <td width="5">&nbsp;</td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                  <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/features" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_features.png" id="b1"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-started" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getstarted.png" id="b2"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-involved" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getinvolved.png" id="b3"></a></br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/news-events" onmouseover="mouseOver4()" onmouseout="mouseOut4()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_newsevents.png" id="b4"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td width="7" align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+
+	           <td align="center">
+
+	      	  
+        <div id="search-box" style="border-bottom: 1px solid #E2E2E2;">
+          <form action="/search/google" method="get" id="search-theme-form">
+            <div><div id="search" class="container-inline">
+
+              <input type="text" maxlength="128" size="16" name="query" value="Search" style="border: 1px solid #CCCCCC;margin-bottom:10px;margin-left: 2px;color:#999999" class="form-text" onblur="this.value = this.value || 'Search'; this.style.color = '#999999';" onfocus="if(this.value=='Search') {this.value='';} this.style.color = '#999999';" />
+                          
+              <input type="hidden" name="output" value="xml_no_dtd" />
+              <input type="hidden" name="client" value="google-csbe" />
+              <input type="hidden" name="cx" value="009687201310241541466:zerjfa_shxo" />
+              <input type="hidden" name="ie" value="utf-8" />
+              <input type="hidden" name="oe" value="utf-8" />
+              <input type="hidden" name="op" value="Search" />
+            </div></div>
+          </form>
+        </div>
+               <div id="subscribe" style="color: #7E7E7E;float: left;padding-top: 5px;padding-left: 10px;border-top: 1px solid whiteSmoke;">
+              <a href="/newsletter-subscription" style="color: #7e7e7e;background:url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat" onmouseover="this.style.background = 'url(/files/header/nav_subscription_on.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'" onmouseout="this.style.background = 'url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'">
+                  <span style="padding-left:23px">Subscribe</a>
+              </a>
+        </div>
+        
+
+		      </td>
+		      
+		      </tr>
+	      </table>
+</div>
+  		
+              </div></div></div>
+
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+ </div>
+<![endif]-->
+<!--end custom navigation-->
+
+
+
+  <div id="page-wrapper"><div id="page">
+
+  
+    <div id="header"><div class="section clearfix">
+
+      
+<div id="name-and-slogan">
+
+</div>
+
+      
+      
+
+
+    </div></div><!-- /.section, /#header -->
+
+    <div id="main-wrapper"><div id="main" class="clearfix">
+
+      <div id="content" style="margin-left:10px;margin-right:10px;" class="column"><div class="section">
+
+
+        
+        
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › </div> -->
+
+	  
+	  
+	  
+                        
+        <table>
+	      <tr>
+	       <td width="870">
+	        <h1 class="title" id="main-page-title">News and Announcements&nbsp;&nbsp;<span style="vertical-align:top;"><a href="http://feeds.feedburner.com/springsource/SvVO" target="_blank"><img src="/misc/feed.png"></a></span></h1>
+	       </td>
+	       <td align="right">
+	  	    <p>
+		 	  <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+<script type="text/javascript">
+var a2a_config = a2a_config || {};
+a2a_config.color_main = "e5e6e6";
+a2a_config.color_border = "5c6c75";
+a2a_config.color_link_text = "333333";
+a2a_config.color_link_text_hover = "333333";
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+</script>
+<script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
+            </p>
+	  	  </td>
+	  	 </tr>
+	  	</table>
+
+       <table width="100%" style="margin-top:-10px;">
+        <tr>
+         <td width="600px" valign="top" align="left">
+          <div style="width:600px;">
+
+          
+          <div id="content-area">
+
+
+           <div class="taxonomy-term-description">News and announcements<br />
+</div><div id="node-3681" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/spring-training-schedule-november" title="Professional SpringSource Training Schedule: November, 2012">Professional SpringSource Training Schedule: November, 2012</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Mark Baars on Thu, 2012-10-04 09:28        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>SpringSource has released the training schedule for November 2012. Professional Spring and vFabric trainings will be provided in several locations spread over the world. This month SpringSource is also giving away a professional Spring training. For more information about the <a href="http://www.springsource.org/spring-prize-contest">Spring Prize Contest click here</a>. The complete training schedule for November, 2012 can be found below:</p>
+<p><strong>Week 45</strong></p>
+<ul>
+<li>05 – 08 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=125251">Enterprise Integration with Spring in Jakarta, Indonesia</a></li>
+<li>05 – 07 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=140929">Hibernate with Spring in Toronto, Canada</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=149927">Core Spring in Zagreb, Croatia</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=143225">Core Spring in Lisbon, Portugal</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142233">Core Spring in Cape Town, South Africa</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=132913">Core Spring in Stockholm, Sweden</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=139653">Core Spring in Amsterdam, Netherlands</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=141748">Core Spring in Los Angeles, United States</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=144002">Core Spring in Philadelphia, United States</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142234">Enterprise Integration with Spring in Brussels, Belgium</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=148714">Enterprise Integration with Spring in Phoenix, United States</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=148715">Enterprise Integration with Spring in Sacramento, United States</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=148713">Enterprise Integration with Spring in San Francisco, United States</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=141764">Enterprise Integration with Spring in Boston, United States</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=113045">Spring Web in Munich, Germany</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142773">Spring Web in Dublin, Ireland</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142771">Spring Web in London, UK</a></li>
+<li>06 – 09 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=141762">Spring Web in Chicago, IL</a></li></ul>
+
+<p><strong>Week 46</strong></p>
+<ul><li>12 – 15 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133589">Core Spring in Sydney, Australia</a></li>
+<li>12 – 15 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=139429">Core Spring in Manila, Philippines</a></li>
+<li>12 – 15 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=140937">Spring Web in Edison, United States</a></li>
+<li>13 – 16 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=149919">Core Spring in Dublin, Ireland</a></li>
+<li>13 – 16 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=138360">Core Spring in Madrid, Spain</a></li>
+<li>13 – 16 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=149910">Core Spring in London, United Kingdom</a></li>
+<li>13 – 16 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=136220">Core Spring Live Online in United States</a></li>
+<li>13 – 16 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=141750">Core Spring in Minneapolis, United States</a></li>
+<li>13 – 16 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=141752">Core Spring in Dallas, United States</a></li>
+<li>13 – 16 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=143226">Enterprise Integration with Spring in Lisbon, Portugal</a></li>
+<li>13 – 16 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=149926">Enterprise Integration with Spring in Zurich, Switzerland</a></li>
+<li>13 – 16 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142155">Enterprise Integration with Spring Live Online in Europe</a></li>
+<li>13 – 16 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=141763">Spring Web in Charlotte, United States</a></li></ul>
+
+<p><strong>Week 47</strong></p>
+<ul><li>19 – 22 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133592">Core Spring in Brisbane, Australia</a></li>
+<li>19 – 22 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=150818">Core Spring in Bangalore, India</a></li>
+<li>19 – 22 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133360">Enterprise Integration with Spring in Ottawa, Canada</a></li>
+<li>19 – 22 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133361">Enterprise Integration with Spring in Montreal, Canada</a></li>
+<li>19 – 22 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=126519">Spring Web in Paris, France</a></li>
+<li>20 – 23 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=113028">Enterprise Integration with Spring in Munich, Germany</a></li>
+<li>20 – 23 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=149918">Enterprise Integration with Spring in Dublin, Ireland</a></li>
+<li>20 – 23 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=132924">Enterprise Integration with Spring in Oslo, Norway</a></li>
+<li>20 – 23 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=151790">Spring Web in Mexico City, Mexico</a></li></ul>
+
+<p><strong>Week 48</strong></p>
+<ul><li>26 – 29 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133353">Core Spring in Ottawa, Canada</a></li>
+<li>26 – 29 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133354">Core Spring in Montreal, Canada</a></li>
+<li>26 – 29 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=128978">Core Spring in Aarhus, Denmark</a></li>
+<li>26 – 29 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=130059">Core Spring in Bangalore, India</a></li>
+<li>27 – 30 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=150582 ">Core Spring in Buenos Aires, Argentina</a></li>
+<li>27 – 30 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=130636">Core Spring in Paris, France</a></li>
+<li>27 – 30 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=126517">Core Spring in Lyon, France</a></li>
+<li>27 – 30 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=113025">Core Spring in Munich, Germany</a></li>
+<li>27 – 30 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=135319 ">Core Spring in Rome, Italy</a></li>
+<li>27 – 30 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=132916">Core Spring in Oslo, Norway</a></li>
+<li>27 – 30 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=149930">Core Spring in Moscow, Russia</a></li>
+<li>27 – 30 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=141761">Core Spring in Atlanta, United States</a></li>
+<li>27 – 30 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=141759">Core Spring in Chicago, United States</a></li>
+<li>27 – 30 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=149912">Enterprise Integration with Spring in London, United Kingdom</a></li>
+<li>27 – 30 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=141765">Enterprise Integration with Spring in Washington, United States</a></li>
+<li>27 – 30 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=148716">Enterprise Integration with Spring in New York, United States</a></li>
+<li>27 – 29 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=130639">Groovy & Grails in Paris, France</a></li>
+<li>27 – 30 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=136221">Spring Web Live Online in United States</a></li></ul>
+<p>If you cannot find a professional training near you, you can always request an <a href=http://mylearn.vmware.com/mgrReg/message.cfm?ui=www&subject=Onsite%20Training>onsite SpringSource training</a></p>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3675" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/spring-prize-contest" title="Win a Spring Training seat worth $2,500">Win a Spring Training seat worth $2,500</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Mark Baars on Mon, 2012-10-01 03:28        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>Whether you are a beginner with Spring or an experienced Spring professional there is always a <a href="http://vmware.us5.list-manage.com/subscribe?u=7aa6598689f1502ae57179bcc&id=94a56c9bfd">SpringSource training</a> for you. SpringSource offers several learning paths including the Spring developer path with <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17750">Core Spring</a>, <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17833">Enterprise Integration with Spring</a> and <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=33053">Spring Web</a>.</p>
+
+<p> Now is your chance to win one of these SpringSource trainings. SpringSource is giving away a free SpringSource Spring training seat worth over $2,500. Sign up for the SpringSource newsletter before January 20, 2013 to join this contest. Winners will be announced on January 21, 2013. Winners will receive a referral code that can be used at the <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu">Spring Education Site</a> for a training of choice.</p>
+
+<p>December 2012 Winner: A. Harmeniak (Israel)</p>
+
+<div style="float: left; padding: 10px">
+<a href="http://vmware.us5.list-manage.com/subscribe?u=7aa6598689f1502ae57179bcc&id=94a56c9bfd"><img alt="vFabric RabbitMQ Fundamentals" border="0" src="http://www.springsource.org/files/join-now.gif"/></a>
+</div>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first"></li>
+<li class="upload_attachments last"><a href="/spring-prize-contest#attachments" title="Read full article to view attachments.">1 attachment</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3661" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/groovy-grails-online-training" title="Official Groovy &amp; Grails Training Now Also Available Online">Official Groovy &amp; Grails Training Now Also Available Online</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Mark Baars on Tue, 2012-09-18 05:11        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <div style="float: right; padding: 10px">
+<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18353"><img alt="Groovy & Grails Logo" border="0" src="http://www.springsource.org/files/groovy-grails-logo.png" /></a>
+</div><p>It is now possible to attend the <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18353">Groovy & Grails training</a> online. This way you can save on travel and expenses and attend the training from the comfort of your own home or office.</p>
+
+<p>The 3-day training teaches Groovy and Grails in great detail. After an introduction to the technology, students are taken through the advanced aspects of both the Groovy programming language and the Grails web application framework.</p>
+
+<p>During the training you will learn to:</p>
+<ul>
+<li>Write programs using Groovy</li>
+<li>Integrate with Java</li>
+<li>Use Grails for Web development and persistence</li>
+<li>Have a sound knowledge of all the core concepts from the Web to the persistence layer</li>
+<li>Understand key development best practices that enable the development of higher quality code</li></ul>
+
+<p>Groovy & Grails is the only official Groovy/Grails training in the world. The full schedule can be found here:</p>
+
+<p><b>North & South America</b><br />
+<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=144510">26 - 28 September: Live Online</a></p>
+
+<p><b>Asia & Australia</b><br />
+<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=143231">16 - 18 October 2012: Live Online</a></p>
+
+<p><b>Europe</b><br />
+<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=130639">03 - 05 October 2012: Paris, France</a></p>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first"></li>
+<li class="upload_attachments last"><a href="/groovy-grails-online-training#attachments" title="Read full article to view attachments.">1 attachment</a></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3648" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/springsource-promo-emea-2012" title="Last chance to save over £625 on Core Spring classes in Europe">Last chance to save over £625 on Core Spring classes in Europe</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Mark Baars on Fri, 2012-09-07 05:55        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>Monday is the last day to register for Core Spring in Dublin and London to <b>SAVE 30%</b> on the registration fee. SpringSource has also extended the offer to Austria, The Netherlands and Switzerland. Make sure to register in time. Registration is possible by selecting the class near you below:</p>
+<p><b>Core Spring</b></p>
+<ul>
+<li>September 18 - 21: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142212&rcode=SPLPROMOCLS">Dublin, Ireland</a></li>
+<li>September 18 - 21: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142209&rcode=SPLPROMOCLS">London, United Kingdom</a></li>
+<li>September 25 - 28: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=139646">Amsterdam, The Netherlands</a></li>
+<li>October 02 - 05: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142217">Zurich, Switzerland</a></li>
+<li>October 09 - 12: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142223">Wien, Austria</a></li>
+</ul>
+<p>Please use the following discount code in the referral code field during the registration process: <b>SPLPROMOCLS</b></p>
+<p>To view more training locations please visit the <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu">vFabric Education page</a></p>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3646" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3646" title="September Webinars on STS and Spring Security">September Webinars on STS and Spring Security</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Adam Fitzgerald on Tue, 2012-09-04 15:08        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>There are two SpringSource community webinars this month:</p>
+<ul>
+<li><strong>Introducing the Spring Tool Suite (STS)</strong>: Join STS lead, Martin Lippert, and Spring Advocate, Josh Long, for this special webinar covering all the new updates to the <a href="http://www.springsource.org/sts">Spring Tool Suite</a>.
+<ul>
+<li>Europe: <a href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=663506981">September 6, 3:00pm UK / 4:00pm Europe Summer</a></li>
+<li>North America: <a href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=668793547">September 6, 1:00pm EDT / 10:00am PDT</a></li>
+</ul>
+</li>
+<li><strong>Spring Security Fundamentals</strong>: Join Spring Security lead, Rob Winch, to learn the foundations of <a href="http://www.springsource.org/spring-security">Spring Security</a>'s architecture through the use of working sample code. Rob will start off with an existing application and learn how we can add Spring Security to it. Rob will then explore how Spring Security works underneath the hood.
+<ul>
+<li>Europe: <a href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=666410799">September 20, 2:00pm UK / 3:00pm Europe Summer Time</a></li>
+<li>North America: <a href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=662548136">September 20, 1:00pm EDT / 10:00am PDT</a></li>
+</ul>
+</li>
+</ul>
+<p>Of course, if you can't make it to the webinars in person, you can always catch up with the recordings on the <a href="http://www.youtube.com/user/SpringSourceDev">SpringSourceDev YouTube channel</a>.</p>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3644" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/spring-training-october-2012" title="Professional SpringSource Training Schedule: October">Professional SpringSource Training Schedule: October</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Mark Baars on Tue, 2012-08-28 14:43        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>SpringSource has released the training schedule for October 2012. Professional Spring and vFabric trainings will be provided in several locations spread over the world. This month SpringSource is also providing <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course= 144270">vFabric Gemfire for Developers</a> publically for the first time. The complete training schedule can be found below:</p>
+<p><strong>Week 40</strong></p>
+<ul>
+<li>01 – 02 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=130055">Hibernate with Spring in Bangalore, India</a></li><li>01 – 04 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=125245">Core Spring in Singapore</a></li>
+<li>02 – 05 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=128398">Enterprise Integration with Spring in Mexico City, Mexico</a></li>
+<li>01 – 03 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=140927">Hibernate with Spring in Edmonton, Canada</a></li>
+<li>01 – 03 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=140928">Hibernate with Spring in Vancouver, Canada</a></li>
+<li>01 – 03 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133373">Core Spring in San Francisco CA, United States</a></li>
+<li>02 – 05 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133588">Core Spring in Sydney, Australia</a></li>
+<li>02 – 05 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=132910">Core Spring in Oslo, Norway</a></li>
+<li>02 – 05 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=112759">Core Spring in Sevilla, Spain</a></li>
+<li>02 – 05 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142217">Core Spring in Zurich, Switzerland</a></li>
+<li>02 – 05 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=137348">Core Spring in Denver CO, United States</a></li>
+<li>02 – 05 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=137349">Core Spring in Kansas City KS, United States</a></li>
+<li>02 – 05 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=136217">Spring Web Live Online, United States</a></li>
+<li>03 – 06 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=130057">Enterprise Integration with Spring in Bangalore, India</a></li>
+<li>03 – 05 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=130639">Groovy & Grails in Paris, France</a></li>
+<li>02 – 05 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=136217">Spring Web Live Online, United States</a></li></ul>
+
+<p><strong>Week 41</strong></p>
+<ul><li>08 – 11 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133586">Core Spring in Melbourne, Australia</a></li>
+<li>08 – 11 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=128399">Core Spring in Mexico City, MX</a></li>
+<li>08 – 11 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=140935">Spring Web in Sacramento CA, United States</a></li>
+<li>08 – 11 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=140936">Spring Web in San Francisco, United States</a></li>
+<li>09 – 12 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142223">Core Spring in Wien, Austria</a></li>
+<li>09 – 12 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142024">Core Spring Live Online in Europe</a></li>
+<li>09 – 12 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=137352">Core Spring in Chicago IL, United States</a></li>
+<li>09 – 12 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=137351">Core Spring in Indianapolis IN, United States</a></li>
+<li>09 – 12 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=137350">Core Spring in Boston MA, United States</a></li>
+<li>09 – 12 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142023">Enterprise Integration with Spring Live Online in Europe</a></li>
+<li>10 – 12 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=137353">Hibernate with Spring in Washington DC, United States</a></li></ul>
+
+<p><strong>Week 42</strong></p>
+<li>15 – 18 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133345">Core Spring in Toronto, Canada</a></li>
+<li>15 – 18 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133593">Core Spring in Auckland, New Zealand</a></li>
+<li>15 – 18 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133327">Core Spring in Edison NJ, United States</a></li>
+<li>16 – 19 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=130635">Core Spring in Paris, France</a></li>
+<li>16 – 19 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=113018">Core Spring in Stuttgart, Germany</a></li>
+<li>16 – 19 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142228">Core Spring in Dublin, Ireland</a></li>
+<li>16 – 19 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142226">Core Spring in Moscow, Russia</a></li>
+<li>16 – 19 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142227">Core Spring in London, United Kingdom</a></li>
+<li>16 – 19 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=136218">Core Spring Live Online in United States</a></li>
+<li>16 – 19 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=138177">Core Spring in Atlanta GA, United States</a></li>
+<li>16 – 19 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=138176">Core Spring in Charlotte NC, United States</a></li>
+<li>16 – 18 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=143231">Groovy & Grails Live Online in Asiapacific</a></li>
+<li>16 – 19 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=123349">Spring Web in Barcelona, Spain</a></li></ul>
+
+<p><strong>Week 43</strong></p>
+<ul><li>22 – 25 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133352">Core Spring in Edmonton, Canada</a></li>
+<li>22 – 25 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133351">Core Spring in Vancouver, Canada</a></li>
+<li>22 – 25 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133328">Core Spring in San Jose CA, United States</a></li>
+<li>22 – 25 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142229">Core Spring in Brussels, Belgium</a></li>
+<li>23 – 26 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=123349">Spring Web in Barcelona, Spain</a></li>
+<li>23 – 26 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=138180">Core Spring in San Diego CA, United States</a></li>
+
+<li>23 – 26 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=138181">Core Spring in Portland OR, United States</a></li>
+<li>23 – 26 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=138182">Core Spring in Austin TX, United States</a></li>
+<li>23 – 26 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=138183">Core Spring in Houston TX, United States</a></li>
+<li>23 – 26 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=126521">Enterprise Integration with Spring in Paris, France</a></li>
+<li>23 – 26 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course= 139654 "> Enterprise Integration with Spring in Amsterdam, Netherlands</a></li>
+<li>23 – 26 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course= 144270">vFabric Gemfire for Developers in London, United Kingdom <strong>NEW</strong></a></li></ul>
+
+<p><strong>Week 44</strong></p>
+<ul><li>29 OCT – 01 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133591">Core Spring in Canberra, Australia</a></li>
+<li>29 OCT – 01 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=130061">Core Spring in Mumbia, India</a></li>
+<li>29 OCT – 01 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133332">Core Spring in Phoenix AZ, United States</a></li>
+<li>29 OCT – 01 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133335">Core Spring in Sacramento CA, United States</a></li>
+<li>29 OCT – 01 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=133330">Core Spring in San Francisco, United States</a></li>
+<li>29 OCT – 01 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=125250">Enterprise Integration with Spring in Singapore, Singapore</a></li>
+<li>29 – 31 OCT: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=113036">Hibernate with Spring in Munich, Germany</a></li>
+<li>30 OCT – 02 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142232">Core Spring in Prague, Czech Republic</a></li>
+<li>30 OCT – 02 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=132911">Core Spring in Copenhagen, Denmark</a></li>
+
+<li>30 OCT – 02 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=113016">Core Spring in Frankfurt, Germany</a></li>
+<li>30 OCT – 02 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=138185">Core Spring in Washington DC, United States</a></li>
+<li>30 OCT – 02 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=138184">Core Spring in Columbus OH, United States</a></li>
+<li>30 OCT – 02 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=138186">Core Spring in Salt Lake City UT, United States</a></li>
+<li>30 OCT – 02 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=143230">Enteprise Integration with Spring Live Online in Asiapacific</a></li>
+<li>30 OCT – 02 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=136219">Enteprise Integration with Spring Live Online in United States</a></li>
+<li>30 OCT – 02 NOV: <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=142469">Spring Web Live Online in Europe</a></li></ul>
+<p>If you cannot find a professional training near you, you can always request an <a href=http://mylearn.vmware.com/mgrReg/message.cfm?ui=www&subject=Onsite%20Training>onsite SpringSource training</a></p>
+
+
+
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3632" class="node node-type-story node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3632" title="Video: Introduction to Spring Data Neo4j">Video: Introduction to Spring Data Neo4j</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Chloe Jackson on Wed, 2012-08-15 20:57        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>
+View this webinar for a practical guide to get started with Spring Data Neo4j the integration library for the <a href="http://neo4j.org">Neo4j</a> graph database. This webinar is the perfect complement to the <a href="http://bit.ly/sdn-book">Good Relationships book</a> and is aimed toward those interested in quickly learning how to get started using <a href="http://springsource.org/spring-data/neo4j">Spring Data Neo4j</a>.
+</p>
+<p>
+During this webinar we will cover:
+  <ul>
+    <li>Spring Data Neo4j's features and benefits</li>
+    <li>Spring Data Neo4j use case: A twitter-graph app using Spring Data Neo4j with Spring Social</li>
+    <li>Step by step demo to get started working on Spring Data Neo4j</li>
+  </ul>
+</p>
+<p>
+Spring Data Neo4j is part of the Spring Data project which aims to provide convenient support for NoSQL databases.
+</p>
+<p>
+Please also see the <a href="http://blog.neo4j.org/2012/08/spring-data-neo4j-webinar-follow-up.html">follow-up blog post</a> which answers all questions from the Q&A section and links to sourcecode and slides.
+</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/heC-8Pq2exQ" frameborder="0" allowfullscreen></iframe>
+
+<p>Be sure to thumbs up the presentation if you find it useful and <a href="http://www.youtube.com/subscription_center?adduser=SpringSourceDev">subscribe to the SpringSourceDev channel</a> to see other recordings and screencasts.</p>
+
+<p>
+<iframe src="http://de.slideshare.net/slideshow/embed_code/13767601" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe></p>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3572" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3572" title="This Week in Spring - June 12th, 2012">This Week in Spring - June 12th, 2012</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Wed, 2012-06-13 02:37        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last"><a href="/taxonomy/term/14" rel="tag" title="">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+     
+<P> 
+ Welcome back to another installment of <EM>This Week in Spring</EM>. We've got a lot to cover this week, so let's get to it! 
+</P>
+<OL>
+	 
+ <LI> Gordon Dickens is at it again, this time with a great look <a href= "http://gordondickens.com/wordpress/2012/06/12/spring-3-1-constructor-namespace/">at Spring 3.1's constructor namespace</A>, which provides the  logical counterpart to the <CODE>p:</CODE> namespace element.   </LI>
+	
+
+
+ <LI> Matt Vickery's at it again! He's got an interesting post on how to use the <a href="http://java.dzone.com/articles/spring-and-c24-io-accelerating">C24 iO product with Spring</A>.    </LI>
+ <LI> The Vaadin blog has an interesting post on serialization with <a href = "https://vaadin.com/web/petter/home/-/blogs/experimenting-with-vaadin-spring-and-serialization">the Vaadin web framework and Spring</A>.  </LI> <LI> The Java Code Geeks has a blog post on using the <a href="http://www.javacodegeeks.com/2012/06/resteasy-tutorial-part-2-spring.html">RESTEasy REST framework with Spring-based services</A>. While I would recommend the Spring REST support in Spring MVC over this approach, it's at least interesting to have the recipe if you ever need to use it.  </LI>
+ <LI>  The Java Code Geeks blog has another post on building  <a href ="http://www.javacodegeeks.com/2012/05/rest-cxf-for-spring-jpa2-backend.html">Spring-based JPA services that sit behind a RESTful CXF backend</A>.  This is another one of those situations where, while it's useful to know how to do in case you need to, you're better off using Spring MVC's REST support.  It's easier, and integrates more naturally with the component model. </LI>
+	
+
+ <LI> The <EM>Banging My Head Against a Wall</EM> blog has a great post on <a href = "http://stevewall123.wordpress.com/2012/06/07/upgrading-from-spring-2-5-to-3-1/">Upgrading from Spring 2.5 to 3.1</A>.  
+	 This blog shows that the migration is dead simple, if you haven't already made the jump, and he's got insight into one particular little <EM>gotcha</EM> you might hit to make the migration that much smoother. 
+	</Li>
+<LI>The TeamExtension blog has a quick post introducing how <a href ="http://blog.teamextension.com/quick-spring-mobile-1-tutorial-944">to get started with Spring Mobile 1.0</A>. They recommend stock Eclipse with the m2e support, but of course, if you use <a href = "http://www.springsource.com/developer/sts">the SpringSource Tool Suite</A>, you won't have to set anything up.  </LI>
+<LI>  Are you a .NET developer looking for a solid dependency injection framework like Spring? Have you heard about <a href ="http://springframework.net/">Spring.NET</A>, the dependency injection framework from the same people behind SpringSource?  
+	Blogger  Åukasz Budnik has an interesting post about <a href="http://dotnet.dzone.com/articles/springnet-superiority-over-ms"> Spring.NET's superiority over other alternatives in the space (Microsoft's Unity and Ninject)</A>.
+	  </LI>
+
+</OL>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3570" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3570" title="This Week in Spring, June 5th, 2012">This Week in Spring, June 5th, 2012</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Wed, 2012-06-06 01:12        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last"><a href="/taxonomy/term/14" rel="tag" title="">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+     
+<P> 
+ Welcome back to another installment of <EM>This Week in Spring</EM>. As usual, we've got a lot to look at this week so let's get to it.. 
+</P>
+<OL> 	<LI>  The video from Chris Beams's recent webinar 
+		on the <a href ="http://www.springsource.org/node/3567">various  styles  of dependency injection that Spring supports</A> 
+			is up. Chris is a core Spring framework engineer (and all around good guy). This video is definitely worth a
+			watch especially if you still think Spring configurations requires XML. 
+		 
+		  </LI> 
+	 <LI> Oleg Zhurakousky announced the availability of 
+		 <a href = "http://www.springsource.org/node/3569">
+		 Spring Integration 2.1.2 RELEASE and 2.2.0M2</A>. The new releases are filled with many important bug fixes as well as several  
+		
+		 new features.  
+		 </LI>
+		<LI>  Roy Clarkson has announced the availability of <a href= "http://www.springsource.org/spring-android/news/1.0.0-released">Spring Android 1.0.0.RELEASE</A>! The project is an extension of the Spring Framework that aims to simplify the development of native Android applications by providing RESTTemplate support for mobile clients. 
+			 
+			 
+		</LI>  
+		<LI> The  Birds and Bytes blog has an interesting approach to exposing  <a href = "http://birds-and-bytes.tumblr.com/post/24068122981/sharing-spring-mvc-localization-with-the-client-side">Spring MVC internationalized messages  to JavaScript code by using Jackson to write them to a JavaScript-consumable dictionary</A>. This is pretty slick, <EM>and</EM> simple!
+			
+			   </LI>
+ 		 <LI> After you've watched Chris Beams' amazing webinar, you might check out Steve Schols' blog, which  
+	offers a perspective on 
+			 <a href = "http://steveschols.wordpress.com/2012/06/05/i-was-wrong-constructor-vs-setter-injection/">which approach to dependency injection (constructor- or setter-based injection) to take</A>, and relates them to 
+			  relevant support in the Spring framework. The Spring framework, of course, supports both setter- and constructor-based injection, but it's nonetheless interesting to see one person's perspective of the tradeoffs in using one or the other.
+			 </LI>
+	
+  <LI> Carlo Scarioni has put together a great post introducing how 
+	<a href = "http://java.dzone.com/articles/creating-custom-spring-3-xml">to create custom 
+	Spring 3 XML namespaces</A>.  The XML namespace mechanism is one that is available for public consumption: you don't have to be a 
+	SpringSource engineer to wrap your API in an XML namespace and make it available for consumption by other 
+	 engineers. XML namespaces can pack a lot of punch!  It is common to see open source, third party APIs also expose an XML
+	namespace, and it's  easy enough to do that every team should consider exposing one of their own.
+	   
+  </LI>
+  <LI> Ken Rimple, co-author of <EM>Spring Roo in Action</EM>, has put together a wonderful 
+	 blog on how  
+	 <a href  ="http://java.dzone.com/articles/roo-add-development-testing">to unit-test Spring Roo addons.</A>
+	  </LI>
+	<LI> Matt Vickery is at it again, this time with an amazing post on 
+		<a href = "http://java.dzone.com/articles/spring-integration-robust">
+		how 
+			to use the dynamic duo of Spring Integration's   <CODE>splitter</CODE> and <code>aggregator</code>.
+			</A>
+    <li> Avner has written a post about 
+    <a href="http://birds-and-bytes.tumblr.com/post/24068122981/sharing-spring-mvc-localization-with-the-client-side">sharing Spring MVC localization with the client side</a>. 
+    </li>
+            
+		 </LI>
+ <LI>  The VoltDB blog has a great post on using Spring's <a Href ="http://voltdb.com/company/blog/using-spring-schedule-annotation"> <CODE>@Scheduled</CODE> annotation to run 
+	 scheduled tasks</A>.     </LI> 
+ <li>  Arjen Poutsma has announced 
+	 the <a href  = "http://forum.springsource.org/showthread.php?126957-Spring-Web-Services-2-1-0-RELEASE-released">availability of Spring Web Services 2.1.0.RELEASE.</A> The new release  
+		 includes many updates to third party dependencies, and mainly marks the stabilization point
+		 of the 2.1 line.  
+	    </LI>
+ 	<LI> The Hyperic blog has an interesting post on the <a href = "http://blog.hyperic.com/hyperic-gives-managing-apache-tomcat-an-upgrade/">updates to Hyperic as part of the larger, recent vFabric 5.1 line that 
+	   
+	     support Tomcat 7</A>.
+	  </LI> 
+	
+	 
+</OL>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3568" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/spring-android/news/1.0.0-released" title="Spring for Android 1.0.0 Released">Spring for Android 1.0.0 Released</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Roy Clarkson on Wed, 2012-05-30 19:35        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>Dear Spring Community,</p>
+
+<p>
+We are pleased to announce the general availability of <a href="http://www.springsource.org/spring-android">Spring for Android 1.0</a>!
+</p>
+<p>Spring for Android supports usage of the Spring Framework in a Android environment.</p>
+
+<p>This GA release includes minor fixes and improvements since the RC1 release. See the <a href="http://static.springsource.org/autorepo/docs/spring-android/1.0.0.RELEASE/changelog.txt">changelog</a> and <a href="http://static.springsource.org/autorepo/docs/spring-android/1.0.0.RELEASE/reference/html/">reference manual</a> for more information.
+</p>
+
+<p>A significant change in this release is that the default RestTemplate constructor no longer includes any message body converters. However, an alternate constructor allows you to include a standard set of message converters, similar to previous releases. See the API Javadoc and Reference Manual for more details on this change.</p>
+
+<p>To retrieve the software, 
+<a href="http://www.springsource.org/download/community?project=Spring%20for%20Android">download</a> the release distribution, or add the <a href="http://www.springsource.org/spring-android#maven">maven artifacts</a> to your project. Sample apps are available at <a href="https://github.com/SpringSource/spring-android-samples">github.com/SpringSource/spring-android-samples</a></p>
+
+<p>We want to thank the community for their contributions to this GA release, and we look forward to working with them on future releases.  If you are building a native Android app, we encourage you to try out Spring for Android 1.0 and <a href="http://forum.springsource.org/forumdisplay.php?f=88">collaborate</a> with us on the next iteration of the project.</p>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="/taxonomy/term/4/14" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="/taxonomy/term/4/14?page=15" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=12" title="Go to page 13" class="active">13</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=13" title="Go to page 14" class="active">14</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=14" title="Go to page 15" class="active">15</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=15" title="Go to page 16" class="active">16</a></li>
+<li class="pager-current">17</li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=17" title="Go to page 18" class="active">18</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=18" title="Go to page 19" class="active">19</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=19" title="Go to page 20" class="active">20</a></li>
+<li class="pager-item"><a href="/taxonomy/term/4/14?page=20" title="Go to page 21" class="active">21</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a href="/taxonomy/term/4/14?page=17" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="/taxonomy/term/4/14?page=92" title="Go to last page" class="active">last »</a></li>
+</ul></div>
+
+        
+    </div>
+        </td>
+
+        <td width="60px">&nbsp;</td>
+        <td width="320px" valign="top" align="left">
+
+        <div class="region region-content-right">
+  <div id="block-block-19" class="block block-block first region-odd odd region-count-1 count-3"><div class="block-inner">
+
+      <h2 class="title">Newsletter Subscription</h2>
+  
+  <div class="content">
+    <div style="background-color:#fff;padding:10px;">
+<p style="margin-left:3px;">Our monthly newsletter is packed full of techniques, tutorials, tips and tricks to get you on your way to Spring nirvana. <a href="/news-events/newsletters">View Archive</a></p>
+
+<form enctype="multipart/form-data" name="StandardForm" method="post" action="http://now.eloqua.com/e/f2.aspx">
+    <input type="hidden" value="StandardForm" name="elqFormName" /> <input type="hidden" value="524" name="elqSiteID" /> <input type="hidden" value="" name="elqCustomerGUID" /> <input type="hidden" value="0" name="elqCookieWrite" />
+
+<table>
+<tr>
+<td>
+<input type="text" class="form-text" size="18" id="edit-submitted-first-name" name="first_name" maxlength="128" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" value="First Name" class="form-text" onblur="this.value = this.value || 'First Name'; this.style.color = '#ccc';" onfocus="if(this.value=='First Name') {this.value='';} this.style.color = '#ccc';" />
+</td>
+<td>
+<input type="text" class="form-text" size="20" id="edit-submitted-last-name" name="last_name" maxlength="128"  value="Last Name" class="form-text" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" onblur="this.value = this.value || 'Last Name'; this.style.color = '#ccc';" onfocus="if(this.value=='Last Name') {this.value='';} this.style.color = '#ccc';" />
+</td>
+</tr>
+</table>
+<table style="margin-top:-13px;">
+<tr>
+<td valign="top">
+<input type="text" class="form-text" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" size="30" id="edit-submitted-email" name="email" maxlength="128" value="Email" class="form-text" onblur="this.value = this.value || 'Email'; this.style.color = '#ccc';" onfocus="if(this.value=='Email') {this.value='';} this.style.color = '#ccc';" />
+</td>
+<td valign="bottom">
+    <input type="hidden" value="http://www.springsource.com/newsevents/newsletter-registration-thank-you" name="redirect" />
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='/elqNow/elqScr.js'></script>  <SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript'><!--//
+window.onload = initPage;
+function initPage(){
+    if (this.GetElqCustomerGUID)
+        document.forms["StandardForm"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
+}
+//--></script>
+    <input type="hidden" value="StandardForm" id="edit-submitted-elqformname" name="submitted[elqformname]" />  <input type="hidden" value="524" id="edit-submitted-elqsiteid" name="submitted[elqsiteid]" />  <input type="hidden" value="" id="edit-submitted-elqcustomerguid" name="submitted[elqcustomerguid]" />  <input type="hidden" value="0" id="edit-submitted-elqcookiewrite" name="submitted[elqcookiewrite]" />  <input type="hidden" value="default" id="edit-details-email-subject" name="details[email_subject]" />  <input type="hidden" value="default" id="edit-details-email-from-name" name="details[email_from_name]" />  <input type="hidden" value="default" id="edit-details-email-from-address" name="details[email_from_address]" />  <input type="hidden" value="form-30d82aaa8598120208cca2aa409c85df" id="form-30d82aaa8598120208cca2aa409c85df" name="form_build_id" />  <input type="hidden" value="webform_client_form_3706" id="edit-webform-client-form-3706" name="form_id" />  <input type="image" src="http://www.springsource.org/sites/all/themes/s2org11/images/button_newsevents_subscribe_gray.png"  class="form-submit" value="" id="edit-submit" border="0" name="op" />
+</td>
+</tr>
+</table>
+</form>
+</div>
+<br>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-18" class="block block-block region-even even region-count-2 count-4"><div class="block-inner">
+
+      <h2 class="title">Upcoming Events</h2>
+  
+  <div class="content">
+    <!--<a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu" target="_blank"><img src="http://blog.springsource.org/wp-content/themes/spring11/files/PROMO_SpringSourceU_320x118.png"></a>-->
+<a href="http://www.springone2gx.com/conference/santa_clara/2013/09/register" target="_blank"><img src="/files/SpringOne/2013/springone-badge-2013.png"></a>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-event-1" class="block block-event region-odd odd region-count-3 count-5"><div class="block-inner">
+
+  
+  <div class="content">
+    <div class="item-list"><ul><li class="first last">No upcoming events available</li>
+</ul></div><div class="ical-link"><a href="http://www.springsource.org/event/ical" title="Add this calendar to your iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Add to iCalendar" /></a></div><div class="more-link"><a href="/event" title="More events.">more</a></div>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-60" class="block block-block region-even even region-count-4 count-6"><div class="block-inner">
+
+      <h2 class="title">Upcoming Training</h2>
+  
+  <div class="content">
+    <script>
+var now = new Date().getTime();
+document.write(unescape("%3Cscript src='http://dserv.springsource.org/spring_mylearn_banner?wh=wwworg&ies="+now+"' type='text/javascript'%3E%3C/script%3E"));
+</script>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-3" class="block block-block last region-odd odd region-count-5 count-7"><div class="block-inner">
+
+  
+  <div class="content">
+    <p><strong><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17750">Core Spring Framework</a></strong></p><p>04/15 - 04/18:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158750">Bangalore</a><br/>04/22 - 04/25:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=173542">Live Online</a><br/>04/22 - 04/25:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=174009">San Francisco</a><br/>04/22 - 04/25:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=171408">London</a><br/>04/22 - 04/25:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166673">Edison </a><br/>04/23 - 04/26:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=163743">Zürich</a><br/></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17834"><strong>Rich Web Applications with Spring</strong></a></p><p></p><p><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17833"><strong>Enterprise Integration with Spring</strong></a></p><p>04/16 - 04/19:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=172348">Wien</a><br/>04/22 - 04/25:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=158752">Bangalore</a><br/>04/30 - 05/03:
+        <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=166871">Washington DC</a><br/>
+<p><strong>Plus:</strong> 
+<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18355"><strong>Hibernate with Spring</strong></a>, 
+<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18339"><strong>Core Spring.NET</strong></a>,
+<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18353"><strong>Groovy & Grails</strong></a></p>
+<p> <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu">and more...</a></p>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div><!-- /.region -->
+
+
+
+</div>
+        </td>
+
+        </tr>
+        </table>
+
+
+                  <div class="feed-icons"><a href="/taxonomy/term/4/14/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="RSS - News and Announcements" width="16" height="16" /></a></div>
+        
+      </div></div><!-- /.section, /#content -->
+
+
+      
+      
+    </div></div><!-- /#main, /#main-wrapper -->
+
+<div style="background-color:#252525;margin-top:-14px;">
+         <div id="footer"><div class="section">
+
+
+        <div class="region region-footer">
+  <div id="block-block-23" class="block block-block first region-odd odd region-count-1 count-1"><div class="block-inner">
+
+  
+  <div class="content">
+    <style type="text/css">
+#communities{position:relative;}
+#communities li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#communities li, #communities a{height:69px;display:block;}
+
+#cf{left:0px;width:260px;}
+#cf{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat 0 0;}
+#cf a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat 0 0;}
+
+#grails{left:275px;width:120px;}
+#grails{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -275px 0;}
+#grails a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -275px 0;}
+
+#groovy{left:400px;width:100px;}
+#groovy{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -400px 0;}
+#groovy a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -400px 0;}
+
+#hyperic{left:500px;width:170px;}
+#hyperic{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -500px 0;}
+#hyperic a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -500px 0;}
+
+#rabbit{left:670px;width:140px;}
+#rabbit{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -670px 0;}
+#rabbit a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -670px 0;}
+
+#wm{left:810px;width:170px;}
+#wm{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -810px 0;}
+#wm a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -810px 0;}
+
+#communities_bg {background-color:#181818;height:69px;padding:1px 10px 15px 10px;border-radius:5px;margin:10px 0 27px 0}
+
+#communities_title {color: #CCC;font-size: 18px;font-weight: 300;padding-bottom: 15px;line-height: 24px;text-shadow: 0 1px 0 black;margin-left:10px}
+
+</style>
+
+<p>&nbsp;</p>
+<table style="margin: 0 10px 0 10px;">
+
+<tr valign="top">
+    <span id="communities_title">Other Communities</span>
+</tr>
+<tr valign="top">
+    <div id="communities_bg">
+        <ul id="communities">
+            <li id="cf" style="margin-left: 30px;"><a href="http://www.cloudfoundry.org" target="_blank"></a></li>
+            <li id="grails" style="margin-left: 65px;"><a href="http://www.grails.org" target="_blank"></a></li>
+            <li id="groovy" style="margin-left: 110px;"><a href="http://groovy.codehaus.org/" target="_blank"></a></li>
+            <!--<li id="hyperic"><a href="http://www.hyperic.com/community" target="_blank"></a></li>-->
+            <li id="rabbit" style="margin-left: -20px;"><a href="http://www.rabbitmq.com" target="_blank"></a></li>
+            <li id="wm"><a href="http://redis.io" target="_blank"></a></li>
+        </ul>
+    </div>
+</tr>
+
+<tr valign="top">
+<th class="footerth" style="padding-left:-10px;"><a href="http://www.springsource.org">SpringSource</a></th>
+
+<th class="footerth"><a href="/features">Features</a></th>
+
+<th class="footerth"><a href="/get-started">Get Started</a></th>
+
+<th class="footerth"><a href="/get-involved">Get Involved</a></th>
+
+<th class="footerth"><a href="/projects">Projects</a></th>
+
+
+</tr>
+<tr>
+<td valign="top" width="195px">
+
+<span class="footerlist">
+<a href="/about">About Us</a><br>
+<a href="http://blog.springsource.org">Our Blog</a><br>
+<a href="/case-studies">Case Studies</a><br>
+<a href="/news-events">Latest News & Events</a><br>
+<a href="http://www.vmware.com/jobs/" target="_blank">SpringSource Jobs</a>&nbsp;&nbsp;<a href="http://www.vmware.com/jobs/" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/consulting">Consulting</a><br>
+<!--<a href="http://www.springsource.com/contact" target="_blank">Contact Us</a><br>-->
+<a href="/newsletter-subscription">Subscribe to Newsletter</a><br>
+
+</span>
+
+<p style="margin-top:15px;"><a href="/newsletter-subscription">
+<img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_home_subscribe.png"></a></p>
+</td>
+
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/features/modern-web">Modern Web</a><br>
+<a href="/features/data-access">Data Access</a><br>
+<a href="/features/integration">Integration</a><br>
+<a href="/features/mobile">Mobile</a><br>
+<a href="/features/social">Social</a><br>
+<a href="/features/security">Security</a><br>
+<a href="/features/cloud-ready">Cloud Ready</a><br>
+</span>
+</td>
+
+
+<td valign="top" width="160px">
+
+<span class="footerlist">
+<a href="/sts">Get Tool Kit (STS)</a> <br>
+<a href="/tutorials">Tutorials</a> <br>
+<a href="/samples">Code Samples</a> <br>
+<a href="/documentation">Documentation</a> <br>
+<a href="http://forum.springsource.org">Forums</a> <br>
+<a href="http://www.springsource.com/training" target="_blank">Training</a><br>
+
+
+</span>
+</td>
+
+
+<td valign="top" width="156px">
+
+<span class="footerlist">
+
+
+<a href="http://forum.springsource.org">Discussions</a><br>
+<a href="https://jira.springsource.org" target="_blank">Issue Tracker</a><br>
+<a href="https://github.com/SpringSource" target="_blank">Source Repository</a>&nbsp;&nbsp;<a href="https://github.com/SpringSource" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br> 
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-amqp">Spring AMQP</a><br>
+<a href="/spring-android">Spring for Android</a><br>
+<a href="/spring-batch">Spring Batch</a><br>
+<a href="/spring-data">Spring Data</a><br>
+<a href="/spring-framework">Spring Framework</a><br>
+<a href="/spring-gemfire">Spring Gemfire</a><br>
+<a href="/spring-integration">Spring Integration</a><br>
+
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-mobile">Spring Mobile</a><br>
+<a href="http://www.springframework.net" target="_blank">Spring .NET</a>&nbsp;&nbsp;<a href="http://www.springframework.net" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/spring-roo">Spring Roo</a><br>
+<a href="/spring-security">Spring Security</a><br>
+<a href="/spring-social">Spring Social</a><br>
+<a href="/spring-web-flow">Spring Web Flow</a><br>
+<a href="/spring-web-services">Spring Web Services</a><br>
+
+</span>
+</td>
+
+
+
+</tr>
+</table>
+
+
+<div style="background-color:#1e1e1e;width:952;-moz-border-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 5px;">
+<center>
+<p class="copyright">
+<a style="color:#eee;" href="/user">&#169;</a>&nbsp;
+<script type="text/javascript">
+
+var d = new Date();
+document.write(d.getFullYear());
+
+</script>
+SpringSource.
+All Rights Reserved.
+<a href="http://www.vmware.com/help/legal.html" target="_blank">Terms of Use</a>, 
+<a href="http://www.vmware.com/help/privacy.html" target="_blank">Privacy</a> and 
+<a href="/trademark_standards">Trademark Standards</a>
+</p>
+</center>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-7" class="block block-block last region-even even region-count-2 count-2"><div class="block-inner">
+
+  
+  <div class="content">
+    <!-- Eloqua Img Code Code -->
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqImg.js"></script>
+<!-- Begin Google Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2728886-3");
+pageTracker._setDomainName("springsource.org");
+pageTracker._setAllowHash(false);
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+var OrgTracker = _gat._getTracker("UA-2728886-2");
+OrgTracker._setDomainName("springsource.org");
+OrgTracker._setAllowHash(false);
+OrgTracker._setAllowLinker(true);
+OrgTracker._trackPageview();
+</script>
+<!-- End Google Code -->  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div><!-- /.region -->
+
+      </div></div>   <!-- /.section, /#footer -->
+    <!--  -->
+</div>
+  </div></div><!-- /#page, /#page-wrapper -->
+
+  
+  <script type="text/javascript" src="/sites/all/modules/custom/google_cse/google_cse.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "googleCSE": { "language": "en" } });
+//--><!]]>
+</script>
+
+</body>
+</html>

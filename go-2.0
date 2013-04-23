@@ -1,0 +1,805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Spring 2.0 Final Released | SpringSource.org</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ctools/css/ctools.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/google_cse/google_cse.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/filefield/filefield.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/nice_menus/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/framework/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/comment/comment.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/page-backgrounds.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/tabs.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/messages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/pages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/block-editing.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/blocks.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/navigation.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/panels-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/views-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/nodes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/comments.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/forms.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/fields.css?R" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/s2org11/css/print.css?R" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie.css?R" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie6.css?R" />
+<![endif]-->
+  <script type="text/javascript" src="/misc/jquery.js?R"></script>
+<script type="text/javascript" src="/misc/drupal.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/superfish.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.bgiframe.min.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.hoverIntent.minified.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
+<script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay": 800, "speed": 1 }, "prettify": { "linenums": false, "match": ".content", "nocode": "no-code", "custom": [  ], "markup": { "code": true, "pre": true, "precode": false } } });
+//--><!]]>
+</script>
+</head>
+<body class="page not-front not-logged-in node-type-story no-sidebars page-go-20 section-go-20 page-panels">
+
+
+	  
+
+<!--begin custom navigation-->
+      	  
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+<div style="height:97px;margin-top:0px;background: #457228;">
+<![endif]-->
+
+<div style="height:97px;margin-top:0px; background: url('http://www.springsource.org/sites/all/themes/s2org11/images/BG_SiteHeader_Glow.png') no-repeat scroll center top, url('/files/homepage/BG_SiteBillboardAndHeader_50.png') repeat-x scroll 0 0 #367B09;">
+
+    <div id="top">
+  		<div style = "height:80px;margin-top:0px;background: url('/files/homepage/BG_SiteTopNav_new.png') repeat-x scroll 0 0 #F1F1F1;
+  	-moz-border-radius: 0 0 5px 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 0 0 5px 5px;
+-moz-box-shadow: 0 0 15px #333;
+-webkit-box-shadow: 0 0 15px#333;
+box-shadow: 0 0 15px #333;">
+<div style="margin-left:10px;margin-right:10px;">
+ 	          <table valign="top" height="80" style="font-size:14px;text-transform:uppercase;color:#666;margin:0;">
+	          <tr>
+	          
+	          <td>
+	           <a href="/"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/logo_springsource_community.png"></a>
+	           </td>
+	           <td width="5">&nbsp;</td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                  <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/features" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_features.png" id="b1"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-started" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getstarted.png" id="b2"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-involved" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getinvolved.png" id="b3"></a></br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/news-events" onmouseover="mouseOver4()" onmouseout="mouseOut4()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_newsevents.png" id="b4"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td width="7" align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+
+	           <td align="center">
+
+	      	  
+        <div id="search-box" style="border-bottom: 1px solid #E2E2E2;">
+          <form action="/search/google" method="get" id="search-theme-form">
+            <div><div id="search" class="container-inline">
+
+              <input type="text" maxlength="128" size="16" name="query" value="Search" style="border: 1px solid #CCCCCC;margin-bottom:10px;margin-left: 2px;color:#999999" class="form-text" onblur="this.value = this.value || 'Search'; this.style.color = '#999999';" onfocus="if(this.value=='Search') {this.value='';} this.style.color = '#999999';" />
+                          
+              <input type="hidden" name="output" value="xml_no_dtd" />
+              <input type="hidden" name="client" value="google-csbe" />
+              <input type="hidden" name="cx" value="009687201310241541466:zerjfa_shxo" />
+              <input type="hidden" name="ie" value="utf-8" />
+              <input type="hidden" name="oe" value="utf-8" />
+              <input type="hidden" name="op" value="Search" />
+            </div></div>
+          </form>
+        </div>
+               <div id="subscribe" style="color: #7E7E7E;float: left;padding-top: 5px;padding-left: 10px;border-top: 1px solid whiteSmoke;">
+              <a href="/newsletter-subscription" style="color: #7e7e7e;background:url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat" onmouseover="this.style.background = 'url(/files/header/nav_subscription_on.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'" onmouseout="this.style.background = 'url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'">
+                  <span style="padding-left:23px">Subscribe</a>
+              </a>
+        </div>
+        
+
+		      </td>
+		      
+		      </tr>
+	      </table>
+</div>
+  		
+              </div></div></div>
+
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+ </div>
+<![endif]-->
+<!--end custom navigation-->
+
+
+
+  <div id="page-wrapper"><div id="page">
+
+  
+    <div id="header"><div class="section clearfix">
+
+      
+<div id="name-and-slogan">
+
+</div>
+
+      
+      
+
+
+    </div></div><!-- /.section, /#header -->
+
+    <div id="main-wrapper"><div id="main" class="clearfix">
+
+      <div id="content" style="margin-left:10px;margin-right:10px;" class="column"><div class="section">
+
+
+        
+        
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › </div> -->
+
+	  
+	  
+	  
+                        
+
+       <table width="100%" style="margin-top:-10px;">
+        <tr>
+         <td width="600px" valign="top" align="left">
+          <div style="width:600px;margin-top:5px;">
+          <a href="http://blog.springsource.com">Visit our blog</a>
+          <h1 class="title" style="margin-top:5px;margin-bottom:50px;" id="main-page-title">News & Events</h1>
+          <h2>Spring 2.0 Final Released</h2>
+
+
+          
+          <div id="content-area">
+
+
+           <div id="node-348" class="node node-type-story node-promoted build-mode-full"><div class="node-inner">
+
+  
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Rod Johnson on Tue, 2006-10-03 11:00        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p align="left">It is our pleasure to announce that the long-awaited final release of the Spring Framework version 2.0 is now available.<br /><a href="http://sourceforge.net" target="_self"><br /></a></p>
+<p align="center"><img border="0" title="Spring 2.0 Released" alt="Spring 2.0 Released" src="http://static.springframework.org/images/spring20.png" /></p>
+<p align="center"><a href="http://sourceforge.net/project/showfiles.php?group_id=73357&amp;package_id=173644&amp;release_id=452461" target="_self">Download</a> | <a href="http://static.springframework.org/spring/docs/2.0.x/reference/index.html" target="_blank">Documentation</a> | <a href="http://static.springframework.org/spring/docs/2.0.x/changelog.txt" target="_blank">Changelog</a>&nbsp;  </p>
+<blockquote><p>As the leading full-stack Java/Java EE application framework, Spring delivers significant benefits for many projects, reducing development effort and costs while improving test coverage and quality. </p>
+</blockquote>
+<p>This stable, production-grade release comes after 9 months of active development.&nbsp; In this short time the Spring 2.x series has matured immensely, benefiting from over 150,000 early access downloads across 9 milestone releases, resulting in over 750 JIRA issues resolved, 50 of which introduce major new features.</p>
+<p><strong>What's New?</strong></p>
+<p>We believe three attributes capture what our users can expect from the Spring 2.0 series: <strong>Simple</strong>, <strong>Powerful</strong>, and <strong>Proven</strong>.</p>
+<p><strong><img border="0" src="http://static.springframework.org/images/simple.png" /></strong></p>
+<p>Version 2.0 brings major new simplifications to the framework's overall usage model.&nbsp; As our existing users know, the heart of Spring is the <em>Bean Container</em> which <a href="http://static.springframework.org/images/spring2-bean-container-magic.png" target="_blank">drives the configuration</a> of your Java and Java EE application.&nbsp; In version 2.0 many common configuration tasks have been simplified through the introduction of custom <em>Bean Configuration Dialects</em>.&nbsp; What does this mean to you?</p>
+<p>This means you can now:</p>
+<ul>
+<li>Make your business services transactional in one-line of configuration code.<a target="_self" href="http://static.springframework.org/see-it"><br /></a></li>
+<li>Lookup objects from JNDI in one-line of configuration code.</li>
+<li>Expose externalized properties to your services in one line of configuration code.<a target="_self" href="http://static.springframework.org/see-it"><br /></a></li>
+<li>Apply consistent exception handling policies to your data access objects with a single annotation.<a target="_self" href="http://static.springframework.org/see-it"><br /></a></li>
+<li>Invoke Stateless Remote EJBs by defining a single configuration tag.&nbsp; No more custom service locators or business delegates.<a target="_self" href="http://static.springframework.org/see-it"><br /></a></li>
+</ul>
+<p>Simplifications continue across the <a href="http://static.springframework.org/spring/docs/2.0.x/reference/introduction.html#introduction-overview" target="_blank">modules of the framework</a>, allowing you to:
+<ul>
+<li>Write parameterized JDBC queries in one line of code.<a target="_self" href="http://static.springframework.org/see-it"><br /></a></li>
+<li>Apply <em>convention over configuration</em> when deploying your Spring MVC controllers.<a target="_self" href="http://static.springframework.org/see-it"><br /></a></li>
+<li>Use Spring JSP tags to reduce your typing when developing input forms.<a target="_self" href="http://static.springframework.org/see-it"><br /></a></li>
+</ul>
+<p><img border="0" src="http://static.springframework.org/images/powerful.png" /></p>
+<p>A major goal of Spring 2.0 is to make the common tasks easier.&nbsp; Version 2.0 also opens up exciting new doors for solving the harder problems in an elegant manner.&nbsp; In 2.0 you may:</p>
+<ul>
+<li>Weave custom behavior into multiple points of program execution using AspectJ's concise pointcut expression language.<a target="_self" href="http://static.springframework.org/see-it"><br /></a></li>
+<li>Receive asynchronous JMS messages with transactional and thread-safety guarantees.&nbsp; <a target="_blank" href="http://static.springframework.org/spring/videos/message-driven-pojos.htm">See it live</a></li>
+<li>Develop your own <em>Bean Configuration Dialect</em> for your application.<a target="_self" href="http://static.springframework.org/see-it"><br /></a></li>
+<li>Inject objects from custom scopes such as &quot;request&quot; and &quot;session&quot; scope in a thread-safe manner.<a target="_self" href="http://static.springframework.org/see-it"><br /></a></li>
+<li>Invoke Groovy, Beanshell, and JRuby scripts from your Java application.<a target="_self" href="http://static.springframework.org/see-it"><br /></a></li>
+<li>Schedule tasks to run asynchronously with sophisticated threading and pooling options.<a target="_self" href="http://static.springframework.org/see-it"><br /></a></li>
+</ul>
+<p><img border="0" src="http://static.springframework.org/images/proven.png" /></p>
+<p>Version 2.0 builds on the foundation set by Spring 1.x.&nbsp; This new release delivers major new functionality while preserving backwards compatability as far as possible.</p>
+<p class="MsoNormal">With over <a target="_self" href="http://blog.interface21.com/main/2006/09/22/thank-you-spring-framework-passes-1-million-downloads/">one million downloads</a> since its release in March 2004, Spring 1.x made developing sophisticated applications from plain Java Objects (POJOs) the de-facto standard.&nbsp; The 2.x series builds on this widely-recognized best-practice to deliver new simplification and power while preserving full compatiblity with the established Spring 1.x series.&nbsp; Users can expect their upgrade to be straightforward; in most cases, simply a matter of replacing the 1.2.8 JAR files with those included in Spring 2.0.</p>
+<p><strong> </strong></p>
+<p><strong>Enjoy, and thank you</strong></p>
+<p>Spring 2.0 represents the cumulative effort of many over the last year.&nbsp; From the lead developers Juergen, Rob, Rick, and Costin at <a href="http://www.interface21.com" target="_self">Interface21</a>, to our supporting partners BEA and Oracle, to the many in the community contributing innovations, patches, documentation, bug reports, and tests--there is a lot of blood, sweat, and tears here.&nbsp; We truly hope you find this new version as much a joy to use as it was for us to build.&nbsp; Enjoy, and rest assured: the work doesn't stop here.</p>
+<p>Sincerely,</p>
+<p>The Spring Team</p>
+<p>&nbsp;</p>
+<hr />
+<p><strong>Additional Resources</strong></p>
+<ul>
+<li>Watch <a href="http://www.infoq.com/interviews/harrop-hoeller-spring-2" target="_blank">Juergen and Rob's interview</a> with InfoQ on the goals of Spring 2.0.</li>
+</ul>
+<ul>
+<li>Attend <a href="http://www.thespringexperience.com" target="_blank">The Spring Experience 2006</a>, the premier conference for the Spring community, December 7th - 10th in Hollywood, Florida.&nbsp; Register by October 16th to secure the early bird discount for your team.</li>
+</ul>
+<ul>
+<li>Get started with Spring 2.0 by <a href="http://sourceforge.net/project/showfiles.php?group_id=73357&amp;package_id=173644&amp;release_id=452461" target="_self">downloading the release</a> and reviewing the JPetStore and Petclinic sample applications, supplementing with the <a href="http://static.springframework.org/spring/docs/2.0.x/reference/index.html" target="_self">reference manual </a>and <a href="http://static.springframework.org/spring/docs/2.0.x/api/index.html" target="_self">API JavaDocs</a> as needed.</li>
+</ul>
+<ul>
+<li>Get community support at <a target="_blank" href="http://forum.springframework.org">forum.springframework.org</a>.</li>
+</ul>
+<ul>
+<li>Read content leading up to the release including the <a href="http://www.infoq.com/articles/spring-2-update" target="_blank">Spring 2.0 update</a> and Adrian's <a href="http://www.infoq.com/articles/Simplifying-Enterprise-Apps" target="_blank">Simplifying Enterprise Applications</a>.</li>
+</ul>
+<ul>
+<li>Track future Spring 2.x development with the <a target="_blank" href="http://opensource.atlassian.com/projects/spring/browse/SPR?report=com.atlassian.jira.plugin.system.project:roadmap-panel">Roadmap</a></li>
+</ul>
+<ul>
+<li>Get insights from the leads of Spring development at the <a target="_blank" href="http://blog.interface21.com">Interface21 team blog</a>.</li>
+</ul>
+<ul>
+<li>Interface21 is offering upcoming and newly updated <a target="_self" href="/node/349">Spring 2.0 training courses</a> in 2006 and 2007.</li>
+</ul>
+<ul>
+<li>Spring 2.0 will be available in the <a target="_self" href="http://www.ibiblio.org/maven2">Maven2 repository</a> in the coming days.</li>
+</ul>
+<ul>
+<li>The release of <a target="_blank" href="/webflow">Spring Web Flow</a> 1.0 final will follow next week.</li>
+</ul>
+<ul>
+<li>Bookmark <a target="_self" href="/go-2.0">this page</a> for the rollout of additional screencasts and code examples showing the new 2.0 features in action.</li>
+</ul>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+  <div id="comments">
+          <h2 id="comments-title">Comments</h2>
+        <a id="comment-262"></a>
+<div class="comment first odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/go-2.0#comment-262" class="active">Congratulations</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by forhouor on Sun, 2006-10-08 02:43.  </div>
+
+  <div class="content">
+    <p>Congratulations!!!!!!!!!!!!!!!!!!!<br />
+Thanks</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-257"></a>
+<div class="comment even"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/go-2.0#comment-257" class="active">congratulations!</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by ologist on Wed, 2006-10-04 02:05.  </div>
+
+  <div class="content">
+    <p>I have used spring well.<br />
+spring2.0`s method will be supported more many solutions.<br />
+thanks for all!!</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-256"></a>
+<div class="comment odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/go-2.0#comment-256" class="active">Kudos to Spring Team!</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by aalmero on Tue, 2006-10-03 17:33.  </div>
+
+  <div class="content">
+    <p>Job well done! Long live the POJO's....</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-255"></a>
+<div class="comment even"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/go-2.0#comment-255" class="active">Congratulations!</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by gerard_dragoi on Tue, 2006-10-03 16:51.  </div>
+
+  <div class="content">
+    <p>New magic for us, "mere mortals" ... :)</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-254"></a>
+<div class="comment odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/go-2.0#comment-254" class="active">Thanks !!!</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by Thalen on Tue, 2006-10-03 14:56.  </div>
+
+  <div class="content">
+    <p>I use spring in many production enviroments.<br />
+Thanks for all!</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-253"></a>
+<div class="comment even"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/go-2.0#comment-253" class="active">Congrats!</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by klr8 on Tue, 2006-10-03 13:18.  </div>
+
+  <div class="content">
+    <p>Well done Spring team!</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+<a id="comment-252"></a>
+<div class="comment last odd"><div class="comment-inner clear-block">
+
+      <h3 class="title">
+      <a href="/go-2.0#comment-252" class="active">Congratulations, well done!</a>          </h3>
+  
+  
+  
+  <div class="submitted">
+    Submitted by dareklis on Tue, 2006-10-03 12:48.  </div>
+
+  <div class="content">
+    <p>Congratulations, well done!</p>
+      </div>
+
+      <div class="links">
+      <ul class="links"><li class="comment_forbidden first last"></li>
+</ul>    </div>
+  
+</div></div> <!-- /comment-inner, /comment -->
+  </div>
+
+
+        
+        </div>
+        </td>
+
+        <td width="60px">&nbsp;</td>
+        <td width="320px" valign="top" align="left">
+
+        <div align="right" style="margin-top:35px;margin-bottom:47px;">
+         <p>
+			<a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+<script type="text/javascript">
+var a2a_config = a2a_config || {};
+a2a_config.color_main = "e5e6e6";
+a2a_config.color_border = "5c6c75";
+a2a_config.color_link_text = "333333";
+a2a_config.color_link_text_hover = "333333";
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+</script>
+<script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
+         </p>
+        </div>
+
+
+        <div class="region region-content-right">
+  <div id="block-block-54" class="block block-block first region-odd odd region-count-1 count-3"><div class="block-inner">
+
+      <h2 class="title">Newsletter Subscription</h2>
+  
+  <div class="content">
+    <div style="background-color:#fff;padding:10px;">
+<p style="margin-left:3px;">Our monthly newsletter is packed full of techniques, tutorials, tips and tricks to get you on your way to Spring nirvana. <a href="/news-events/newsletters">View Archive</a> </p>
+
+<form enctype="multipart/form-data" name="StandardForm" method="post" action="http://now.eloqua.com/e/f2.aspx">
+    <input type="hidden" value="StandardForm" name="elqFormName" /> <input type="hidden" value="524" name="elqSiteID" /> <input type="hidden" value="" name="elqCustomerGUID" /> <input type="hidden" value="0" name="elqCookieWrite" />
+
+<table>
+<tr>
+<td>
+<input type="text" class="form-text" size="18" id="edit-submitted-first-name" name="first_name" maxlength="128" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" value="First Name" class="form-text" onblur="this.value = this.value || 'First Name'; this.style.color = '#ccc';" onfocus="if(this.value=='First Name') {this.value='';} this.style.color = '#ccc';" />
+</td>
+<td>
+<input type="text" class="form-text" size="20" id="edit-submitted-last-name" name="last_name" maxlength="128"  value="Last Name" class="form-text" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" onblur="this.value = this.value || 'Last Name'; this.style.color = '#ccc';" onfocus="if(this.value=='Last Name') {this.value='';} this.style.color = '#ccc';" />
+</td>
+</tr>
+</table>
+<table style="margin-top:-13px;">
+<tr>
+<td valign="top">
+<input type="text" class="form-text" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" size="30" id="edit-submitted-email" name="email" maxlength="128" value="Email" class="form-text" onblur="this.value = this.value || 'Email'; this.style.color = '#ccc';" onfocus="if(this.value=='Email') {this.value='';} this.style.color = '#ccc';" />
+</td>
+<td valign="bottom">
+    <input type="hidden" value="http://www.springsource.com/newsevents/newsletter-registration-thank-you" name="redirect" />
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='/elqNow/elqScr.js'></script>  <SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript'><!--//
+window.onload = initPage;
+function initPage(){
+    if (this.GetElqCustomerGUID)
+        document.forms["StandardForm"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
+}
+//--></script>
+    <input type="hidden" value="StandardForm" id="edit-submitted-elqformname" name="submitted[elqformname]" />  <input type="hidden" value="524" id="edit-submitted-elqsiteid" name="submitted[elqsiteid]" />  <input type="hidden" value="" id="edit-submitted-elqcustomerguid" name="submitted[elqcustomerguid]" />  <input type="hidden" value="0" id="edit-submitted-elqcookiewrite" name="submitted[elqcookiewrite]" />  <input type="hidden" value="default" id="edit-details-email-subject" name="details[email_subject]" />  <input type="hidden" value="default" id="edit-details-email-from-name" name="details[email_from_name]" />  <input type="hidden" value="default" id="edit-details-email-from-address" name="details[email_from_address]" />  <input type="hidden" value="form-30d82aaa8598120208cca2aa409c85df" id="form-30d82aaa8598120208cca2aa409c85df" name="form_build_id" />  <input type="hidden" value="webform_client_form_3706" id="edit-webform-client-form-3706" name="form_id" />  <input type="image" src="http://www.springsource.org/sites/all/themes/s2org11/images/button_newsevents_subscribe_gray.png"  class="form-submit" value="" id="edit-submit" border="0" name="op" />
+</td>
+</tr>
+</table>
+</form>
+</div>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-53" class="block block-block last region-even even region-count-2 count-4"><div class="block-inner">
+
+  
+  <div class="content">
+    <!--<a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu" target="_blank"><img src="http://blog.springsource.org/wp-content/themes/spring11/files/PROMO_SpringSourceU_320x118.png"></a>-->
+<a href="http://www.springone2gx.com/conference/santa_clara/2013/09/register" target="_blank"><img src="/files/SpringOne/2013/springone-badge-2013.png"></a>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div><!-- /.region -->
+
+
+
+</div>
+        </td>
+
+        </tr>
+        </table>
+
+        
+      </div></div><!-- /.section, /#content -->
+
+
+      
+      
+    </div></div><!-- /#main, /#main-wrapper -->
+
+<div style="background-color:#252525;margin-top:-14px;">
+         <div id="footer"><div class="section">
+
+
+        <div class="region region-footer">
+  <div id="block-block-23" class="block block-block first region-odd odd region-count-1 count-1"><div class="block-inner">
+
+  
+  <div class="content">
+    <style type="text/css">
+#communities{position:relative;}
+#communities li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#communities li, #communities a{height:69px;display:block;}
+
+#cf{left:0px;width:260px;}
+#cf{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat 0 0;}
+#cf a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat 0 0;}
+
+#grails{left:275px;width:120px;}
+#grails{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -275px 0;}
+#grails a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -275px 0;}
+
+#groovy{left:400px;width:100px;}
+#groovy{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -400px 0;}
+#groovy a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -400px 0;}
+
+#hyperic{left:500px;width:170px;}
+#hyperic{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -500px 0;}
+#hyperic a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -500px 0;}
+
+#rabbit{left:670px;width:140px;}
+#rabbit{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -670px 0;}
+#rabbit a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -670px 0;}
+
+#wm{left:810px;width:170px;}
+#wm{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -810px 0;}
+#wm a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -810px 0;}
+
+#communities_bg {background-color:#181818;height:69px;padding:1px 10px 15px 10px;border-radius:5px;margin:10px 0 27px 0}
+
+#communities_title {color: #CCC;font-size: 18px;font-weight: 300;padding-bottom: 15px;line-height: 24px;text-shadow: 0 1px 0 black;margin-left:10px}
+
+</style>
+
+<p>&nbsp;</p>
+<table style="margin: 0 10px 0 10px;">
+
+<tr valign="top">
+    <span id="communities_title">Other Communities</span>
+</tr>
+<tr valign="top">
+    <div id="communities_bg">
+        <ul id="communities">
+            <li id="cf" style="margin-left: 30px;"><a href="http://www.cloudfoundry.org" target="_blank"></a></li>
+            <li id="grails" style="margin-left: 65px;"><a href="http://www.grails.org" target="_blank"></a></li>
+            <li id="groovy" style="margin-left: 110px;"><a href="http://groovy.codehaus.org/" target="_blank"></a></li>
+            <!--<li id="hyperic"><a href="http://www.hyperic.com/community" target="_blank"></a></li>-->
+            <li id="rabbit" style="margin-left: -20px;"><a href="http://www.rabbitmq.com" target="_blank"></a></li>
+            <li id="wm"><a href="http://redis.io" target="_blank"></a></li>
+        </ul>
+    </div>
+</tr>
+
+<tr valign="top">
+<th class="footerth" style="padding-left:-10px;"><a href="http://www.springsource.org">SpringSource</a></th>
+
+<th class="footerth"><a href="/features">Features</a></th>
+
+<th class="footerth"><a href="/get-started">Get Started</a></th>
+
+<th class="footerth"><a href="/get-involved">Get Involved</a></th>
+
+<th class="footerth"><a href="/projects">Projects</a></th>
+
+
+</tr>
+<tr>
+<td valign="top" width="195px">
+
+<span class="footerlist">
+<a href="/about">About Us</a><br>
+<a href="http://blog.springsource.org">Our Blog</a><br>
+<a href="/case-studies">Case Studies</a><br>
+<a href="/news-events">Latest News & Events</a><br>
+<a href="http://www.vmware.com/jobs/" target="_blank">SpringSource Jobs</a>&nbsp;&nbsp;<a href="http://www.vmware.com/jobs/" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/consulting">Consulting</a><br>
+<!--<a href="http://www.springsource.com/contact" target="_blank">Contact Us</a><br>-->
+<a href="/newsletter-subscription">Subscribe to Newsletter</a><br>
+
+</span>
+
+<p style="margin-top:15px;"><a href="/newsletter-subscription">
+<img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_home_subscribe.png"></a></p>
+</td>
+
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/features/modern-web">Modern Web</a><br>
+<a href="/features/data-access">Data Access</a><br>
+<a href="/features/integration">Integration</a><br>
+<a href="/features/mobile">Mobile</a><br>
+<a href="/features/social">Social</a><br>
+<a href="/features/security">Security</a><br>
+<a href="/features/cloud-ready">Cloud Ready</a><br>
+</span>
+</td>
+
+
+<td valign="top" width="160px">
+
+<span class="footerlist">
+<a href="/sts">Get Tool Kit (STS)</a> <br>
+<a href="/tutorials">Tutorials</a> <br>
+<a href="/samples">Code Samples</a> <br>
+<a href="/documentation">Documentation</a> <br>
+<a href="http://forum.springsource.org">Forums</a> <br>
+<a href="http://www.springsource.com/training" target="_blank">Training</a><br>
+
+
+</span>
+</td>
+
+
+<td valign="top" width="156px">
+
+<span class="footerlist">
+
+
+<a href="http://forum.springsource.org">Discussions</a><br>
+<a href="https://jira.springsource.org" target="_blank">Issue Tracker</a><br>
+<a href="https://github.com/SpringSource" target="_blank">Source Repository</a>&nbsp;&nbsp;<a href="https://github.com/SpringSource" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br> 
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-amqp">Spring AMQP</a><br>
+<a href="/spring-android">Spring for Android</a><br>
+<a href="/spring-batch">Spring Batch</a><br>
+<a href="/spring-data">Spring Data</a><br>
+<a href="/spring-framework">Spring Framework</a><br>
+<a href="/spring-gemfire">Spring Gemfire</a><br>
+<a href="/spring-integration">Spring Integration</a><br>
+
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-mobile">Spring Mobile</a><br>
+<a href="http://www.springframework.net" target="_blank">Spring .NET</a>&nbsp;&nbsp;<a href="http://www.springframework.net" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/spring-roo">Spring Roo</a><br>
+<a href="/spring-security">Spring Security</a><br>
+<a href="/spring-social">Spring Social</a><br>
+<a href="/spring-web-flow">Spring Web Flow</a><br>
+<a href="/spring-web-services">Spring Web Services</a><br>
+
+</span>
+</td>
+
+
+
+</tr>
+</table>
+
+
+<div style="background-color:#1e1e1e;width:952;-moz-border-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 5px;">
+<center>
+<p class="copyright">
+<a style="color:#eee;" href="/user">&#169;</a>&nbsp;
+<script type="text/javascript">
+
+var d = new Date();
+document.write(d.getFullYear());
+
+</script>
+SpringSource.
+All Rights Reserved.
+<a href="http://www.vmware.com/help/legal.html" target="_blank">Terms of Use</a>, 
+<a href="http://www.vmware.com/help/privacy.html" target="_blank">Privacy</a> and 
+<a href="/trademark_standards">Trademark Standards</a>
+</p>
+</center>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-7" class="block block-block last region-even even region-count-2 count-2"><div class="block-inner">
+
+  
+  <div class="content">
+    <!-- Eloqua Img Code Code -->
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqImg.js"></script>
+<!-- Begin Google Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2728886-3");
+pageTracker._setDomainName("springsource.org");
+pageTracker._setAllowHash(false);
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+var OrgTracker = _gat._getTracker("UA-2728886-2");
+OrgTracker._setDomainName("springsource.org");
+OrgTracker._setAllowHash(false);
+OrgTracker._setAllowLinker(true);
+OrgTracker._trackPageview();
+</script>
+<!-- End Google Code -->  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div><!-- /.region -->
+
+      </div></div>   <!-- /.section, /#footer -->
+    <!--  -->
+</div>
+  </div></div><!-- /#page, /#page-wrapper -->
+
+  
+  <script type="text/javascript" src="/sites/all/modules/custom/google_cse/google_cse.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "googleCSE": { "language": "en" } });
+//--><!]]>
+</script>
+
+</body>
+</html>
