@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Spring Integration | SpringSource.org</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - Spring Integration" href="/taxonomy/term/27/0/feed" />
+<link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ctools/css/ctools.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/google_cse/google_cse.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/filefield/filefield.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/nice_menus/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/framework/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/taxonomy/taxonomy.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/page-backgrounds.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/tabs.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/messages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/pages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/block-editing.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/blocks.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/navigation.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/panels-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/views-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/nodes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/comments.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/forms.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/fields.css?R" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/s2org11/css/print.css?R" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie.css?R" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie6.css?R" />
+<![endif]-->
+  <script type="text/javascript" src="/misc/jquery.js?R"></script>
+<script type="text/javascript" src="/misc/drupal.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/superfish.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.bgiframe.min.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.hoverIntent.minified.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
+<script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay": 800, "speed": 1 }, "prettify": { "linenums": false, "match": ".content", "nocode": "no-code", "custom": [  ], "markup": { "code": true, "pre": true, "precode": false } } });
+//--><!]]>
+</script>
+</head>
+<body class="page not-front not-logged-in no-sidebars page-taxonomy-term-27 section-taxonomy">
+
+	  
+
+
+<!--begin custom navigation-->
+      	  
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+<div style="height:97px;margin-top:0px;background: #457228;">
+<![endif]-->
+
+<div style="height:97px;margin-top:0px; background: url('http://www.springsource.org/sites/all/themes/s2org11/images/BG_SiteHeader_Glow.png') no-repeat scroll center top, url('/files/homepage/BG_SiteBillboardAndHeader_50.png') repeat-x scroll 0 0 #367B09;">
+
+    <div id="top">
+  		<div style = "height:80px;margin-top:0px;background: url('/files/homepage/BG_SiteTopNav_new.png') repeat-x scroll 0 0 #F1F1F1;
+  	-moz-border-radius: 0 0 5px 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 0 0 5px 5px;
+-moz-box-shadow: 0 0 15px #333;
+-webkit-box-shadow: 0 0 15px#333;
+box-shadow: 0 0 15px #333;">
+<div style="margin-left:10px;margin-right:10px;">
+ 	          <table valign="top" height="80" style="font-size:14px;text-transform:uppercase;color:#666;margin:0;">
+	          <tr>
+	          
+	          <td>
+	           <a href="/"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/logo_springsource_community.png"></a>
+	           </td>
+	           <td width="5">&nbsp;</td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                  <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/features" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_features.png" id="b1"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-started" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getstarted.png" id="b2"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-involved" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getinvolved.png" id="b3"></a></br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/news-events" onmouseover="mouseOver4()" onmouseout="mouseOut4()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_newsevents.png" id="b4"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td width="7" align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+
+	           <td align="center">
+
+	      	  
+        <div id="search-box" style="border-bottom: 1px solid #E2E2E2;">
+          <form action="/search/google" method="get" id="search-theme-form">
+            <div><div id="search" class="container-inline">
+
+              <input type="text" maxlength="128" size="16" name="query" value="Search" style="border: 1px solid #CCCCCC;margin-bottom:10px;margin-left: 2px;color:#999999" class="form-text" onblur="this.value = this.value || 'Search'; this.style.color = '#999999';" onfocus="if(this.value=='Search') {this.value='';} this.style.color = '#999999';" />
+                          
+              <input type="hidden" name="output" value="xml_no_dtd" />
+              <input type="hidden" name="client" value="google-csbe" />
+              <input type="hidden" name="cx" value="009687201310241541466:zerjfa_shxo" />
+              <input type="hidden" name="ie" value="utf-8" />
+              <input type="hidden" name="oe" value="utf-8" />
+              <input type="hidden" name="op" value="Search" />
+            </div></div>
+          </form>
+        </div>
+               <div id="subscribe" style="color: #7E7E7E;float: left;padding-top: 5px;padding-left: 10px;border-top: 1px solid whiteSmoke;">
+              <a href="/newsletter-subscription" style="color: #7e7e7e;background:url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat" onmouseover="this.style.background = 'url(/files/header/nav_subscription_on.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'" onmouseout="this.style.background = 'url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'">
+                  <span style="padding-left:23px">Subscribe</a>
+              </a>
+        </div>
+        
+
+		      </td>
+		      
+		      </tr>
+	      </table>
+</div>
+  		
+              </div></div></div>
+
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+ </div>
+<![endif]-->
+<!--end custom navigation-->
+
+
+
+  <div id="page-wrapper"><div id="page">
+
+  
+    <div id="header"><div class="section clearfix">
+
+      
+<div id="name-and-slogan">
+
+</div>
+
+      
+      
+
+
+    </div></div><!-- /.section, /#header -->
+
+    <div id="main-wrapper"><div id="main" class="clearfix">
+
+      <div id="content" style="margin-left:10px;margin-right:10px;" class="column"><div class="section">
+
+
+        
+        
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › </div> -->
+
+	  
+	  
+	  
+                        
+
+       <table width="100%" >
+       <tr>
+     <td width="100%" valign="top" align="left">
+       <div style="width:100%">
+       
+ <div id="content-area">
+
+	<div style="margin-top:-20px;">
+	<!--[If IE 7]><br><![endif]-->
+
+<table>
+<tr>
+<td width="95%">
+	  <h1 class="title" id="page-title">Spring Integration</h1>
+</td>
+<td align="right">
+      <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+<script type="text/javascript">
+var a2a_config = a2a_config || {};
+a2a_config.color_main = "e5e6e6";
+a2a_config.color_border = "5c6c75";
+a2a_config.color_link_text = "333333";
+a2a_config.color_link_text_hover = "333333";
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+</script>
+<script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
+</td>
+</tr>
+</table>
+	  <p>
+	  	  </p>
+
+           <div id="node-579" class="node node-type-project-page node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/spring-integration" title="Spring Integration">Spring Integration</a>
+    </h2>
+  
+  
+      <div class="meta">
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_27 first last active"><a href="/taxonomy/term/27" rel="tag" title="" class="active">Spring Integration</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <div class="field field-type-text field-field-overview">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Spring Integration provides an extension of the Spring programming model to support the well-known <a target="_blank" href="http://www.eaipatterns.com">Enterprise Integration Patterns</a>. It enables lightweight messaging <em>within</em> Spring-based applications and supports integration with external systems via declarative adapters. Those adapters provide a higher-level of abstraction over Spring's support for remoting, messaging, and scheduling. Spring Integration's primary goal is to provide a simple model for building enterprise integration solutions while maintaining the separation of concerns that is essential for producing maintainable, testable code.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img  class="imagefield imagefield-field_image" width="320" height="184" alt="" src="http://www.springsource.org/files/imagefield_default_images/placeholder_video_spring_projects.png?1317158563" />        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-download-link">
+    <div class="field-items">
+            <div class="field-item odd">
+                    http://www.springsource.com/download/community?project=Spring%20Integration        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-maven-artifacts">
+    <div class="field-items">
+            <div class="field-item odd">
+                    #maven        </div>
+        </div>
+</div>
+<h3>Latest News</h3>
+<ul>
+<li>Spring Integration 3.0.0 Milestone 1 has been released! <a href="http://www.springsource.org/node/3813" target="_blank">announcement</a> | <a target="_blank" href="http://www.springsource.com/download/community?project=Spring%20Integration">download</a> | <a href="http://static.springsource.org/spring-integration/docs/3.0.0.M1/reference/html/">Reference</a> | <a href="http://static.springsource.org/spring-integration/docs/3.0.0.M1/api/">API</a>. </li>
+<li>Spring Integration 2.2.3 has been released! <a href="http://www.springsource.org/node/4305" target="_blank">announcement</a> | <a target="_blank" href="http://www.springsource.com/download/community?project=Spring%20Integration">download</a>. </li>
+<li>The second Milestone of Spring Integration Scala DSL (1.0.0.M2) has been released! More information <a target="_blank" href="https://github.com/SpringSource/spring-integration-dsl-scala/wiki">here</a>.</li>
+
+<li>Spring Integration 2.1.5 has been released! Download it <a target="_blank" href="http://www.springsource.com/download/community?project=Spring%20Integration">here</a>.</li>
+    <li>Webinar Available: <a target="_blank" href="http://www.springsource.com/webinar/message-driven-architecture-spring">Message Driven Architecture with Spring</a></li>
+</ul>
+<h3>Spring Integration Artifacts</h3>
+<ul>
+    <li><a target="_blank" href="http://www.springsource.com/download/community?project=Spring%20Integration">Download Distribution</a></li>
+    <li><a target="_blank" href="http://www.springsource.org/node/2962">Configure Maven POMs</a></li>
+    <li><a target="_blank" href="http://www.springsource.org/node/2960">Build from Source</a></li>
+</ul>
+<h3>Spring Integration Resources</h3>
+<ul>
+    <li>Reference Manual: <a target="_blank" href="http://static.springsource.org/spring-integration/reference/htmlsingle/">HTML</a> | <a target="_blank" href="http://static.springsource.org/spring-integration/reference/pdf/spring-integration-reference.pdf">PDF</a></li>
+    <li>API Documentation: <a target="_blank" href="http://static.springframework.org/spring-integration/api/">JavaDoc</a></li>
+    <li><a target="_blank" href="https://github.com/SpringSource/spring-integration/wiki/Spring-Integration-2.1-to-2.2-Migration-Guide">2.1 to 2.2 Migration Guide</a></li>
+    <li><a target="_blank" href="https://github.com/SpringSource/spring-integration/wiki/Spring-Integration-2.0-to-2.1-Migration-Guide">2.0 to 2.1 Migration Guide</a></li>
+    <li><a target="_blank" href="http://www.springsource.org/node/2976">1.0 to 2.0 Migration Guide</a></li>
+    <li><a target="_blank" href="http://forum.springsource.org/forumdisplay.php?f=42">Spring Integration Forum</a></li>
+    <li>Source Code: <a target="_blank" href="https://github.com/SpringSource/spring-integration">Git</a></li>
+    <li>Change Log: <a target="_blank" href="https://fisheye.springsource.org/changelog/spring-integration">Fisheye</a></li>
+    <li>Issue Tracking: <a target="_blank" href="http://jira.springsource.org/browse/INT">Jira</a></li>
+    <li>Samples Source Code: <a target="_blank" href="https://github.com/SpringSource/spring-integration-samples">Git</a></li>
+    <li>Samples Issue Tracking (Request more samples): <a target="_blank" href="http://jira.springsource.org/browse/INTSAMPLES">Samples Jira</a></li>
+    <li>Build Status: <a target="_blank" href="https://build.springsource.org/browse/INT">Bamboo</a></li>
+    <li>Metrics: <a target="_blank" href="https://sonar.springsource.org/dashboard/index/org.springframework.integration:spring-integration">Sonar</a></li>
+     <li><a target="_blank" href="http://www.springsource.org/node/3309">Community Contributors</a></li>
+</ul>
+<h3>Spring Integration Books</h3>
+<ul>
+    <li>Mark Fisher, Jonas Partner, Marius Bogoevici, Iwein Fuld: <a target="_blank" href="http://www.manning.com/fisher/">Spring Integration in Action</a></li>
+    <li>Madhusudhan Konda: <a target="_blank" href="http://www.amazon.com/dp/1449316085/">Just Spring Integration</a></li>
+    <li>Dr. Mark Lui, Mario Gray, Andy Chan, Josh Long: <a target="_blank" href="http://www.amazon.com/dp/1430233451/">Pro Spring Integration</a></li>
+</ul>
+<h3>Spring Integration Blogs, Articles, and Podcasts</h3>
+<ul>
+
+<li>C24: <a target="_blank" href="http://ref.c24.biz/whitepapers/Extending_Spring_with_C24_Integration_Objects.pdf">Extending Spring with C24 Integration Objects</a></li>
+<li>Oleg Zhurakousky: <a target="_blank" href="http://www.youtube.com/watch?v=9O2BWBUxuiI&list=UU7yfnfvEUlXUIfm8rGLwZdA&index=1&feature=plcp">Practical Tips-and-Tricks with Spring Integration (Part-2) - Webinar</a></li>
+ 
+<li>Oleg Zhurakousky: <a target="_blank" href="http://www.youtube.com/watch?v=RY6dNUL8k6o&list=UU7yfnfvEUlXUIfm8rGLwZdA&index=2&feature=plcp">Practical Tips-and-Tricks with Spring Integration (Part-1) - Webinar</a></li>
+    <li>Biju Kunjummen, all and sundry blog: <a target="_blank" href="http://biju-allandsundry.blogspot.com/2012/07/spring-integration-session-1-hello.html">Spring Integration - Session 1 - Hello World</a></li>
+    <li>Biju Kunjummen, all and sundry blog: <a target="_blank" href="http://biju-allandsundry.blogspot.com/2012/07/spring-integration-session-2-more-hello.html">Spring Integration - Session 2 - More Hello Worlds</a></li>
+    <li>Tomasz Nurkiewicz: <a target="_blank" href="http://nurkiewicz.blogspot.com/2012/05/integrating-with-recaptcha-using-spring.html">Integrating with reCAPTCHA using... Spring Integration</a></li>
+    <li>Gunnar Hillert: <a target="_blank" href="http://blog.springsource.org/2012/04/09/create-spring-integration-projects-using-sts/">Create Spring Integration Projects using STS</a></li>
+    <li>Oleg Zhurakousky (SpringOne 2GX): <a target="_blank" href="http://www.infoq.com/presentations/Spring-Integration-Practical-Tips-and-Tricks">Spring Integration - Practical Tips and Tricks</a></li>
+    <li>Mark Fisher and Thomas Risberg (SpringOne 2GX): <a target="_blank" href="http://www.infoq.com/presentations/Architecture-Choices-for-Scalable-Cloud-Apps">Architecture Choices for Scalable Cloud Apps</a></li>
+    <li>Gary Russell and David Turanski (SpringOne 2GX): <a target="_blank" href="http://www.infoq.com/presentations/Implementing-HA-Architectures-Spring-Integration">Implementing Scalable HA Architectures with Spring Integration</a></li>
+    <li>Edson Yanaga: <a target="_blank" href="http://www.slideshare.net/yanaga/architecting-cloudenabled-applications-using-springintegration-2x">Architecting cloud-enabled applications using Spring-Integration 2.x</a> (Portuguese)</li>
+    <li>Stardust Wiki: <a target="_blank" href="http://wiki.eclipse.org/Stardust/Knowledge_Base/Integration/Spring_Integration">Eclipse Process Manager (Stardust) Integration</a></li>
+    <li>Leif Hanack: <a target="_blank" href="http://blog-it.hypoport.de/2011/11/07/eigener-esb-andere-esbs-oder-einfach-spring-integration/">Eigener ESB, andere ESBs oder einfach Spring Integration?</a> (German)</li>
+    <li>Avantia Team Blog: <a target="_blank" href="http://blog.avantia-inc.com/2011/06/06/using-enterprise-integration-patterns-as-a-web-content-platform/">Using Enterprise Integration Patterns as a Web Content Platform</a></li>
+    <li>krams915.blogspot.com: <a target="_blank" href="http://krams915.blogspot.com/2011/03/spring-integration-2-integrating-jdbc.html">Spring Integration 2: Integrating a JDBC and WS System</a></li>
+    <li>Matt Vickery's Blog: <a target="_blank" href="http://techiquest.blogspot.com/2012/02/spring-integration-robust-splitter.html">Spring Integration - Robust Splitter Aggregator</a></li>
+    <li>Glenn Renfro's Blog: <a target="_blank" href="http://glenn-renfro-dev.blogspot.com/2012/02/adding-attachement-to-email-via-spring.html">Sending Email Attachments using Spring Integration</a></li>
+    <li>Matt Vickery's Blog: <a target="_blank" href="http://techiquest.blogspot.com/2012/02/spring-integration-gateways-nulls-reply.html">Spring Integration Gateways - Null Handling & Timeouts</a></li>
+    <li>Matt Vickery's Blog: <a target="_blank" href="http://techiquest.blogspot.com/2012/01/spring-integration-input-channel.html">Spring Integration - Input Channel Definition</a></li>
+    <li>Five Minutes Blog: <a target="_blank" href="http://www.fiveminutes.eu/introducing-spring-integration/">Introducing Spring Integration</a></li>
+    <li>C Posta Consulting: <a target="_blank" href="http://www.christianposta.com/blog/?p=161">What Is Spring Integration?</a></li>
+    <li>Insane Programming: <a target="_blank" href="http://www.insaneprogramming.be/?p=358">Exploring Spring Integration 2.1</a></li>
+    <li>Chariot Tech Cast: <a target="_blank" href="http://techcast.chariotsolutions.com/chariot-tech-cast-episode-57-spring-one-2gx-recap">SpringOne2GX Recap</a></li>
+    <li>Xebia blog: <a target="_blank" href="http://xebee.xebia.in/2010/11/01/data-transmission-over-the-network-with-spring-integration/">Data transmission over the network with Spring Integration</a></li>
+    <li>Chariot Tech Cast: <a target="_blank" href="http://techcast.chariotsolutions.com/chariot-tech-cast-episode-56-mark-fisher-on-spring-integration">Mark Fisher on Spring Integration</a></li>
+    <li>Oleg Zhurakousky: <a target="_blank" href="http://blog.springsource.com/2010/09/29/new-spring-integration-samples/">New Spring Integration Samples</a></li>
+    <li>The Code Project - anand kr: <a target="_blank" href="http://www.codeproject.com/Articles/104322/Spring-Integration-with-ActiveMQ-for-POJO-Based-Se">Spring Integration with ActiveMQ for POJO Based Service</a></li>
+    <li>Josh Long: <a target="_blank" href="http://blog.springsource.com/2010/08/23/secure-file-transfer-the-only-way-to-fly">(Secure) File Transfer, the Only Way to Fly... err Copy</a></li>
+    <li>Andrew Skiba's blog: <a target="_blank" href="http://andskiba.blogspot.com/2009/04/delayqueuechannel-for-spring.html">DelayQueueChannel for Spring Integration</a></li>
+    <li>Aparna Chaudhary Blog: <a target="_blank" href="http://blog.aparnachaudhary.net/2010/04/23/using-spring-integration-with-twitter4j-to-email-tweets/">Using Spring Integration with Twitter4J to Email Tweets</a></li>
+    <li>DZone: <a target="_blank" href="http://java.dzone.com/articles/spring-integration-hands-0">Spring Integration: A Hands-On Tutorial Part 2</a></li>
+    <li>DZone: <a target="_blank" href="http://java.dzone.com/articles/spring-integration-hands">Spring Integration: A Hands-On Tutorial, Part 1</a></li>
+    <li>gridshore.nl: <a target="_blank" href="http://www.gridshore.nl/2009/03/29/using-spring-integration-for-rss-reading">Using Spring Integration for RSS reading</a></li>
+    <li>blog.springsource.com: <a target="_blank" href="http://blog.springsource.com/2009/02/27/spring-integration-on-dm-server">Spring Integration on dm Server</a></li>
+    <li>Jonas Partner, Spring Integration committer: <a target="_blank" href="http://www.jonaspartner.com/?p=28">Demo One from my UK Spring User Group talk: The simplicity of Spring Integration</a></li>
+    <li>Josh Long on InfoQ: <a target="_blank" href="http://www.infoq.com/articles/Spring-Integration-Joshua-Long">Getting Started with Spring Integration</a></li>
+    <li>Russ Miles, SpringSource Consultant: <a target="_blank" href="http://www.russmiles.com/home/2008/12/3/spring-integration-100-ga-is-out.html">Spring Integration 1.0.0 GA is out</a></li>
+    <li>Russ Miles, SpringSource Consultant: <a target="_blank" href="http://www.russmiles.com/home/2008/11/6/spring-integration-goes-rc1.html">Spring Integration goes RC1</a></li>
+    <li>SOA in the Real World: <a target="_blank" href="http://soa4real.blogspot.com/2008/07/creating-jms-bridge-with-spring.html">Creating a JMS Bridge with Spring Integration</a></li>
+    <li>SOA in the Real World: <a target="_blank" href="http://soa4real.blogspot.com/2008/06/trying-out-spring-integration.html">Trying out Spring Integration</a></li>
+    <li>blog.springsource.com: <a target="_blank" href="http://blog.springsource.com/main/2008/05/19/implementing-enterprise-integration-patterns-part-0/">Implementing Enterprise Integration Patterns, part 0</a></li>
+    <li>blog.springsource.com: <a target="_blank" href="http://blog.springsource.com/main/2007/12/14/spring-integration-a-new-addition-to-the-spring-portfolio/">Spring Integration: a new addition to the Spring portfolio</a></li>
+    <li>blog.springsource.com: <a target="_blank" href="http://blog.springsource.com/main/2007/12/21/spring-integration-samples/">Spring Integration Samples</a></li>
+    <li>Craig Walls: <a target="_blank" href="http://www.jroller.com/habuma/entry/spring_integration_return_of_the">Spring Integration:Return of the Bride of FileSucker Strikes Back...With a Vengeance</a></li>
+    <li>Craig Walls: <a target="_blank" href="http://www.jroller.com/habuma/entry/spring_integration_meet_the_channel">Spring Integration: Meet the channel adapters</a></li>
+</ul>
+<h3>Additional Reading</h3>
+<ul>
+    <li>DZone: <a target="_blank" href="http://java.dzone.com/articles/getting-know-spring-integratio">Getting to Know Spring Integration</a></li>
+    <li>TheServerSide.com: <a target="_blank" href="http://www.theserverside.com/news/thread.tss?thread_id=52095">Spring Integration 1.0 GA is available</a></li>
+    <li>SpringSource.com: <a target="_blank" href="http://www.springsource.com/web/guest/2007/springintegration">The Official Press Release</a></li>
+    <li>eWeek: <a target="_blank" href="http://www.eweek.com/article2/0,1895,2233544,00.asp">SpringSource Announces Spring Integration</a></li>
+    <li>InfoWorld: <a target="_blank" href="http://www.infoworld.com/article/07/12/13/spring-integration_1.html">Spring Integration boosts service-based apps</a></li>
+    <li>ZDNet Blogs: <a target="_blank" href="http://blogs.zdnet.com/open-source/?p=1821">Spring goes five star with Integration announcement</a></li>
+    <li>TheServerSide: <a target="_blank" href="http://www.theserverside.com/news/thread.tss?thread_id=47868">Spring Integration: a central service and message bus</a></li>
+    <li>Dr. Dobb's Journal: <a target="_blank" href="http://www.ddj.com/java/204802980">Spring Integration Framework Announced</a></li>
+    <li>InfoQ: <a target="_blank" href="http://www.infoq.com/news/2008/11/spring_integration_rc1">Spring Integration RC1 hatched</a></li>
+</ul>
+<p>&nbsp;</p>
+<p><a name="maven"></a></p>
+<h2>Maven Artifacts</h2>
+<p>Here is the Spring Release Repository:</p>
+<pre>
+&lt;repository&gt;<br />    &lt;id&gt;repository.springframework.maven.release&lt;/id&gt;<br />    &lt;name&gt;Spring Framework Maven Release Repository&lt;/name&gt;<br />    &lt;url&gt;http://maven.springframework.org/release&lt;/url&gt;<br />&lt;/repository&gt;</pre>
+<p>Here is the dependency:</p>
+<pre>
+&lt;dependency&gt;<br /> &lt;groupId&gt;org.springframework.integration&lt;/groupId&gt;<br /> &lt;artifactId&gt;spring-integration-core&lt;/artifactId&gt;<br /> &lt;version&gt;2.2.3.RELEASE&lt;/version&gt;<br />&lt;/dependency&gt; </pre>
+
+<p>&nbsp;</p><div class="field field-type-text field-field-quickjump">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <table width="100%" class="quickjump">
+    <tbody>
+        <tr>
+            <td width="50%" valign="top">
+            <p><a href="#download">Download</a><br />
+            <a href="#maven">Maven Artifacts</a><br />
+            <a href="#documentation">Documentation</a><br />
+            <a href="http://forum.springsource.org/forumdisplay.php?f=42">Discussions</a></p>
+            </td>
+            <td width="50%" valign="top">
+            <p><a target="_blank" href="http://jira.springsource.org/browse/INT">Issue Tracker</a><br />
+            <a target="_blank" href="https://github.com/SpringSource/spring-integration">Source Repository</a><br />
+            <a target="_blank" href="https://fisheye.springsource.org/changelog/spring-integration">Change Log</a><br/>
+            <a target="_blank" href="https://sonar.springsource.org/dashboard/index/org.springframework.integration:spring-integration">Metrics (Sonar)</a></p>
+            </td>
+        </tr>
+    </tbody>
+</table>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-releasesummary">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Spring Integration <b>2.2.3.RELEASE</b> is the latest production release.</p>
+<p><a target="_blank" href="http://www.springsource.com/download/community?project=Spring%20Integration">Download</a> | <a href="https://jira.springsource.org/secure/ReleaseNote.jspa?projectId=10121&version=13807" target="_blank">Release Notes</a></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-documentation">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Spring Integration <b>2.2.x</b> (current release <b>2.2.3</b>)</p>
+<p>
+<ul><li>Reference Manual: <a target="_blank" href="http://static.springsource.org/spring-integration/reference/htmlsingle/">HTML</a> | <a target="_blank" href="http://static.springsource.org/spring-integration/reference/pdf/spring-integration-reference.pdf">PDF</a></li>
+<li>
+API Documentation: <a target="_blank" href="http://static.springframework.org/spring-integration/api/">JavaDoc</a>
+</li>
+</ul>
+</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-otherresources">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><a target="_blank" href="https://github.com/SpringSource/spring-integration/wiki/Spring-Integration-2.1-to-2.2-Migration-Guide">2.1 to 2.2 Migration Guide</a> <br />
+<a target="_blank" href="http://jira.springsource.org/browse/INTSAMPLES">Samples Jira</a><br />
+Build Status: <a target="_blank" href="https://build.springsource.org/browse/INT">Bamboo</a></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-relateddiscussions">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><a href="http://forum.springsource.org/forumdisplay.php?f=42">Integration</a></p>        </div>
+        </div>
+</div>
+  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
+
+
+            </div>
+    </div>
+        </td>
+
+        <td width="50px">&nbsp;</td>
+        <td width="310px" valign="top" align="left">
+
+              <!--[If IE 7]><br><![endif]-->
+      <div style="margin-top:-40px;">
+      <div align="right">
+
+	  <p style="line-height:26px;">&nbsp;</p>
+	  <p>
+
+      </p>
+      </div>
+
+	              
+      
+       
+        
+        
+        
+        </div>
+        </td>
+
+        </tr>
+        </table>
+
+
+                  <div class="feed-icons"><a href="/taxonomy/term/27/0/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="RSS - Spring Integration" width="16" height="16" /></a></div>
+        
+      </div></div><!-- /.section, /#content -->
+
+
+      
+      
+    </div></div><!-- /#main, /#main-wrapper -->
+
+<div style="background-color:#252525;margin-top:-14px;">
+         <div id="footer"><div class="section">
+
+
+        <div class="region region-footer">
+  <div id="block-block-23" class="block block-block first region-odd odd region-count-1 count-1"><div class="block-inner">
+
+  
+  <div class="content">
+    <style type="text/css">
+#communities{position:relative;}
+#communities li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#communities li, #communities a{height:69px;display:block;}
+
+#cf{left:0px;width:260px;}
+#cf{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat 0 0;}
+#cf a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat 0 0;}
+
+#grails{left:275px;width:120px;}
+#grails{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -275px 0;}
+#grails a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -275px 0;}
+
+#groovy{left:400px;width:100px;}
+#groovy{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -400px 0;}
+#groovy a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -400px 0;}
+
+#hyperic{left:500px;width:170px;}
+#hyperic{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -500px 0;}
+#hyperic a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -500px 0;}
+
+#rabbit{left:670px;width:140px;}
+#rabbit{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -670px 0;}
+#rabbit a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -670px 0;}
+
+#wm{left:810px;width:170px;}
+#wm{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -810px 0;}
+#wm a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -810px 0;}
+
+#communities_bg {background-color:#181818;height:69px;padding:1px 10px 15px 10px;border-radius:5px;margin:10px 0 27px 0}
+
+#communities_title {color: #CCC;font-size: 18px;font-weight: 300;padding-bottom: 15px;line-height: 24px;text-shadow: 0 1px 0 black;margin-left:10px}
+
+</style>
+
+<p>&nbsp;</p>
+<table style="margin: 0 10px 0 10px;">
+
+<tr valign="top">
+    <span id="communities_title">Other Communities</span>
+</tr>
+<tr valign="top">
+    <div id="communities_bg">
+        <ul id="communities">
+            <li id="cf" style="margin-left: 30px;"><a href="http://www.cloudfoundry.org" target="_blank"></a></li>
+            <li id="grails" style="margin-left: 65px;"><a href="http://www.grails.org" target="_blank"></a></li>
+            <li id="groovy" style="margin-left: 110px;"><a href="http://groovy.codehaus.org/" target="_blank"></a></li>
+            <!--<li id="hyperic"><a href="http://www.hyperic.com/community" target="_blank"></a></li>-->
+            <li id="rabbit" style="margin-left: -20px;"><a href="http://www.rabbitmq.com" target="_blank"></a></li>
+            <li id="wm"><a href="http://redis.io" target="_blank"></a></li>
+        </ul>
+    </div>
+</tr>
+
+<tr valign="top">
+<th class="footerth" style="padding-left:-10px;"><a href="http://www.springsource.org">SpringSource</a></th>
+
+<th class="footerth"><a href="/features">Features</a></th>
+
+<th class="footerth"><a href="/get-started">Get Started</a></th>
+
+<th class="footerth"><a href="/get-involved">Get Involved</a></th>
+
+<th class="footerth"><a href="/projects">Projects</a></th>
+
+
+</tr>
+<tr>
+<td valign="top" width="195px">
+
+<span class="footerlist">
+<a href="/about">About Us</a><br>
+<a href="http://blog.springsource.org">Our Blog</a><br>
+<a href="/case-studies">Case Studies</a><br>
+<a href="/news-events">Latest News & Events</a><br>
+<a href="http://www.vmware.com/jobs/" target="_blank">SpringSource Jobs</a>&nbsp;&nbsp;<a href="http://www.vmware.com/jobs/" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/consulting">Consulting</a><br>
+<!--<a href="http://www.springsource.com/contact" target="_blank">Contact Us</a><br>-->
+<a href="/newsletter-subscription">Subscribe to Newsletter</a><br>
+
+</span>
+
+<p style="margin-top:15px;"><a href="/newsletter-subscription">
+<img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_home_subscribe.png"></a></p>
+</td>
+
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/features/modern-web">Modern Web</a><br>
+<a href="/features/data-access">Data Access</a><br>
+<a href="/features/integration">Integration</a><br>
+<a href="/features/mobile">Mobile</a><br>
+<a href="/features/social">Social</a><br>
+<a href="/features/security">Security</a><br>
+<a href="/features/cloud-ready">Cloud Ready</a><br>
+</span>
+</td>
+
+
+<td valign="top" width="160px">
+
+<span class="footerlist">
+<a href="/sts">Get Tool Kit (STS)</a> <br>
+<a href="/tutorials">Tutorials</a> <br>
+<a href="/samples">Code Samples</a> <br>
+<a href="/documentation">Documentation</a> <br>
+<a href="http://forum.springsource.org">Forums</a> <br>
+<a href="http://www.springsource.com/training" target="_blank">Training</a><br>
+
+
+</span>
+</td>
+
+
+<td valign="top" width="156px">
+
+<span class="footerlist">
+
+
+<a href="http://forum.springsource.org">Discussions</a><br>
+<a href="https://jira.springsource.org" target="_blank">Issue Tracker</a><br>
+<a href="https://github.com/SpringSource" target="_blank">Source Repository</a>&nbsp;&nbsp;<a href="https://github.com/SpringSource" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br> 
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-amqp">Spring AMQP</a><br>
+<a href="/spring-android">Spring for Android</a><br>
+<a href="/spring-batch">Spring Batch</a><br>
+<a href="/spring-data">Spring Data</a><br>
+<a href="/spring-framework">Spring Framework</a><br>
+<a href="/spring-gemfire">Spring Gemfire</a><br>
+<a href="/spring-integration">Spring Integration</a><br>
+
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-mobile">Spring Mobile</a><br>
+<a href="http://www.springframework.net" target="_blank">Spring .NET</a>&nbsp;&nbsp;<a href="http://www.springframework.net" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/spring-roo">Spring Roo</a><br>
+<a href="/spring-security">Spring Security</a><br>
+<a href="/spring-social">Spring Social</a><br>
+<a href="/spring-web-flow">Spring Web Flow</a><br>
+<a href="/spring-web-services">Spring Web Services</a><br>
+
+</span>
+</td>
+
+
+
+</tr>
+</table>
+
+
+<div style="background-color:#1e1e1e;width:952;-moz-border-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 5px;">
+<center>
+<p class="copyright">
+<a style="color:#eee;" href="/user">&#169;</a>&nbsp;
+<script type="text/javascript">
+
+var d = new Date();
+document.write(d.getFullYear());
+
+</script>
+SpringSource.
+All Rights Reserved.
+<a href="http://www.vmware.com/help/legal.html" target="_blank">Terms of Use</a>, 
+<a href="http://www.vmware.com/help/privacy.html" target="_blank">Privacy</a> and 
+<a href="/trademark_standards">Trademark Standards</a>
+</p>
+</center>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-7" class="block block-block last region-even even region-count-2 count-2"><div class="block-inner">
+
+  
+  <div class="content">
+    <!-- Eloqua Img Code Code -->
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqImg.js"></script>
+<!-- Begin Google Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2728886-3");
+pageTracker._setDomainName("springsource.org");
+pageTracker._setAllowHash(false);
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+var OrgTracker = _gat._getTracker("UA-2728886-2");
+OrgTracker._setDomainName("springsource.org");
+OrgTracker._setAllowHash(false);
+OrgTracker._setAllowLinker(true);
+OrgTracker._trackPageview();
+</script>
+<!-- End Google Code -->  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div><!-- /.region -->
+
+      </div></div>   <!-- /.section, /#footer -->
+    <!--  -->
+</div>
+  </div></div><!-- /#page, /#page-wrapper -->
+
+  
+  <script type="text/javascript" src="/sites/all/modules/custom/google_cse/google_cse.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "googleCSE": { "language": "en" } });
+//--><!]]>
+</script>
+
+</body>
+</html>

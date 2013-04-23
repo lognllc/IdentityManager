@@ -3,9 +3,9 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Events | SpringSource.org</title>
+  <title>Spring for Android | SpringSource.org</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="alternate" type="application/rss+xml" title="Events at &lt;em&gt;SpringSource.org&lt;/em&gt;" href="http://www.springsource.org/event/feed" />
+<link rel="alternate" type="application/rss+xml" title="RSS - Spring for Android" href="/taxonomy/term/38/0/feed" />
 <link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
   <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
@@ -23,7 +23,7 @@
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/taxonomy/taxonomy.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
@@ -55,7 +55,6 @@
 <script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
 <script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
 <script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
-<script type="text/javascript" src="/misc/tableheader.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
@@ -65,10 +64,10 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
 //--><!]]>
 </script>
 </head>
-<body class="page not-front not-logged-in no-sidebars page-event section-event">
-
+<body class="page not-front not-logged-in no-sidebars page-taxonomy-term-38 section-taxonomy">
 
 	  
+
 
 <!--begin custom navigation-->
       	  
@@ -198,139 +197,30 @@ box-shadow: 0 0 15px #333;">
 
         
         
-        <!-- <div class="breadcrumb"><a href="/">Home</a> › <a href="/event" class="active">Events</a> › </div> -->
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › </div> -->
 
 	  
 	  
 	  
                         
 
-       <table width="100%" style="margin-top:-10px;">
-        <tr>
-         <td width="600px" valign="top" align="left">
-          <div style="width:600px;margin-top:5px;">
-          <a href="http://blog.springsource.com">Visit our blog</a>
-          <h1 class="title" style="margin-top:5px;margin-bottom:50px;" id="main-page-title">News & Events</h1>
-          <h2>Events</h2>
+       <table width="100%" >
+       <tr>
+     <td width="100%" valign="top" align="left">
+       <div style="width:100%">
+       
+ <div id="content-area">
 
+	<div style="margin-top:-20px;">
+	<!--[If IE 7]><br><![endif]-->
 
-          
-          <div id="content-area">
-
-
-           <div class="event-filter-control"><form action="/event"  accept-charset="UTF-8" method="post" id="event-taxonomy-filter-form">
-<div><div class="form-item" id="edit-event-term-select-wrapper">
- <select name="event_term_select" onchange="this.form.submit()" class="form-select" id="edit-event-term-select" ><option value="all">(all)</option><option value="5">Events - Event</option></select>
- <div class="description">Select event terms to filter by</div>
-</div>
-<input type="hidden" name="form_build_id" id="form-2a8348e4c0d2c58da4230e6f915c9e21" value="form-2a8348e4c0d2c58da4230e6f915c9e21"  />
-<input type="hidden" name="form_id" id="edit-event-taxonomy-filter-form" value="event_taxonomy_filter_form"  />
-
-</div></form>
-</div><div class="event-filter-control"><form action="/event"  accept-charset="UTF-8" method="post" id="event-type-filter-form">
-<div><div class="form-item" id="edit-event-type-select-wrapper">
- <select name="event_type_select" onchange="this.form.submit()" class="form-select" id="edit-event-type-select" ><option value="all">(all)</option><option value="event">Event</option></select>
- <div class="description">Select event type to filter by</div>
-</div>
-<input type="hidden" name="form_build_id" id="form-5eba165a3f7136d2b5b0e33ac1a590ac" value="form-5eba165a3f7136d2b5b0e33ac1a590ac"  />
-<input type="hidden" name="form_id" id="edit-event-type-filter-form" value="event_type_filter_form"  />
-
-</div></form>
-</div><ul class="links"><li class="event_week first"><a href="/event/2013/04/23/week/" title="Week view">Week</a></li>
-<li class="event_day"><a href="/event/2013/04/23/day/" title="Day view">Day</a></li>
-<li class="event_table"><a href="/event/2013/04/23/table/" title="Table view">Table</a></li>
-<li class="event_list last"><a href="/event/2013/04/23/list/" title="List view">List</a></li>
-</ul><div class="event-calendar"><div class="month-view"><table class="sticky-enabled">
-<caption><span class="prev"><a href="/event/2013/03/23/month/all/all/1">«</a></span>  April 2013 <span class="next"><a href="/event/2013/05/23/month/all/all/1">»</a></span></caption>
- <thead><tr><th class="mon">Mon</th><th class="tue">Tue</th><th class="wed">Wed</th><th class="thu">Thu</th><th class="fri">Fri</th><th class="sat">Sat</th><th class="sun">Sun</th> </tr></thead>
-<tbody>
- <tr class="odd"><td class="mon day-01"><div class="day">1</div>
-<div class="event-empty"></div>
-</td><td class="tue day-02"><div class="day">2</div>
-<div class="event-empty"></div>
-</td><td class="wed day-03"><div class="day">3</div>
-<div class="event-empty"></div>
-</td><td class="thu day-04"><div class="day">4</div>
-<div class="event-empty"></div>
-</td><td class="fri day-05"><div class="day">5</div>
-<div class="event-empty"></div>
-</td><td class="sat day-06"><div class="day">6</div>
-<div class="event-empty"></div>
-</td><td class="sun day-07"><div class="day">7</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="even"><td class="mon day-08"><div class="day">8</div>
-<div class="event-empty"></div>
-</td><td class="tue day-09"><div class="day">9</div>
-<div class="event-empty"></div>
-</td><td class="wed day-10"><div class="day">10</div>
-<div class="event-empty"></div>
-</td><td class="thu day-11"><div class="day">11</div>
-<div class="event-empty"></div>
-</td><td class="fri day-12"><div class="day">12</div>
-<div class="event-empty"></div>
-</td><td class="sat day-13"><div class="day">13</div>
-<div class="event-empty"></div>
-</td><td class="sun day-14"><div class="day">14</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="odd"><td class="mon day-15"><div class="day">15</div>
-<div class="event-empty"></div>
-</td><td class="tue day-16"><div class="day">16</div>
-<div class="event-empty"></div>
-</td><td class="wed day-17"><div class="day">17</div>
-<div class="event-empty"></div>
-</td><td class="thu day-18"><div class="day">18</div>
-<div class="event-empty"></div>
-</td><td class="fri day-19"><div class="day">19</div>
-<div class="event-empty"></div>
-</td><td class="sat day-20"><div class="day">20</div>
-<div class="event-empty"></div>
-</td><td class="sun day-21"><div class="day">21</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="even"><td class="mon day-22"><div class="day">22</div>
-<div class="event-empty"></div>
-</td><td class="tue day-23 today selected"><div class="day">23</div>
-<div class="event monthview vevent">
-  <div class="stripe-1"></div>
-      <div class="type"> <a href="/event/2013/04/23/month/event" title="limit view to events of this type">(event)</a> </div>
-    <div class="title summary"><a href="/node/4306" title="view this event">Webinar: Hadoop and Pivotal HD</a></div>
-      <div class="start dtstart" title="2013-04-23T17:00:00Z">Start: 2013-04-23 10:00</div>
-          <div class="end dtend" title="2013-04-23T17:00:00Z">End: 2013-04-23 10:00</div>
-      <div class="links"></div>
-</div>
-</td><td class="wed day-24"><div class="day">24</div>
-<div class="event-empty"></div>
-</td><td class="thu day-25"><div class="day">25</div>
-<div class="event-empty"></div>
-</td><td class="fri day-26"><div class="day">26</div>
-<div class="event-empty"></div>
-</td><td class="sat day-27"><div class="day">27</div>
-<div class="event-empty"></div>
-</td><td class="sun day-28"><div class="day">28</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="odd"><td class="mon day-29"><div class="day">29</div>
-<div class="event-empty"></div>
-</td><td class="tue day-30"><div class="day">30</div>
-<div class="event-empty"></div>
-</td><td class="pad"></td><td class="pad"></td><td class="pad"></td><td class="pad"></td><td class="pad"></td> </tr>
-</tbody>
-</table>
-</div></div>
-<div class="ical-link"><a href="http://www.springsource.org/event/2013/04/01/ical/all/all/30" title="Add this calendar to your iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Add to iCalendar" /></a></div>
-
-        
-        </div>
-        </td>
-
-        <td width="60px">&nbsp;</td>
-        <td width="320px" valign="top" align="left">
-
-        <div align="right" style="margin-top:35px;margin-bottom:47px;">
-         <p>
-			<a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+<table>
+<tr>
+<td width="95%">
+	  <h1 class="title" id="page-title">Spring for Android</h1>
+</td>
+<td align="right">
+      <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
 <script type="text/javascript">
 var a2a_config = a2a_config || {};
 a2a_config.color_main = "e5e6e6";
@@ -341,20 +231,191 @@ var a2a_config = a2a_config || {};
 a2a_config.onclick = 1;
 </script>
 <script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
-         </p>
+</td>
+</tr>
+</table>
+	  <p>
+	  	  </p>
+
+           <div id="node-2903" class="node node-type-project-page node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/spring-android" title="Spring for Android">Spring for Android</a>
+    </h2>
+  
+  
+      <div class="meta">
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_38 first last active"><a href="/taxonomy/term/38" rel="tag" title="" class="active">Spring for Android</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <div class="field field-type-text field-field-overview">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Spring for Android is an extension of the Spring Framework that aims to simplify the development of native Android applications.</p>
+<p>Building a mobile web app? Take a look at <a href="/spring-mobile">Spring Mobile</a>.</p>        </div>
         </div>
-
-
-        
-
-
 </div>
+<div class="field field-type-text field-field-video">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>&nbsp;<img alt="Spring for Android" width="320" height="186" src="/files/imagefield_thumbs/project/images/Project_Droid.png" /></p>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img  class="imagefield imagefield-field_image" width="320" height="184" alt="" src="http://www.springsource.org/files/imagefield_default_images/placeholder_video_spring_projects.png?1317158563" />        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-download-link">
+    <div class="field-items">
+            <div class="field-item odd">
+                    http://www.springsource.com/download/community?project=Spring Android        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-maven-artifacts">
+    <div class="field-items">
+            <div class="field-item odd">
+                    #maven        </div>
+        </div>
+</div>
+<h3>Features</h3>
+<ul>
+    <li>A <a target="_blank" href="http://static.springsource.org/spring-android/docs/1.0.x/reference/html/rest-template.html">Rest Client</a> for Android</li>
+    <li><a target="_blank" href="http://static.springsource.org/spring-android/docs/1.0.x/reference/html/auth.html">Auth support</a> for accessing secure APIs</li>
+</ul>
+<h3>Latest News</h3>
+<ul>
+    <li><a href="http://www.springsource.org/spring-android/news/1.0.1-released">Spring for Android 1.0.1 Released</a></li>
+    <li><a href="http://www.springsource.org/spring-android/news/1.0.0-released">Spring for Android 1.0.0 Released</a></li>
+    <li><a href="http://www.springsource.org/spring-android/news/1.0.0.rc1-released">Spring for Android 1.0.0.RC1 Released</a></li>
+    <li><a href="http://www.springsource.org/spring-android/news/1.0.0.m4-released">Spring for  Android 1.0.0.M4 Released</a></li>
+    <li><a href="http://www.springsource.org/spring-android/news/1.0.0.m3-released">Spring for Android 1.0.0.M3 Released</a></li>
+    <li><a href="http://www.springsource.org/spring-android/news/1.0.0.m2-released">Spring for Android 1.0.0.M2 Released</a></li>
+    <li><a href="http://www.springsource.org/spring-android/news/1.0.0.m1-released">Spring for Android 1.0.0.M1 Released</a></li>
+</ul>
+<h3>Twitter</h3>
+<ul>
+    <li><a href="https://twitter.com/#!/springandroid">@springandroid</a></li>
+</ul>
+<h3>SpringSource Team Blog</h3>
+<ul>
+    <li><a href="http://www.springsource.org/node/3505">Video: Native Android Development with Spring</a></li>
+    <li><a href="http://www.springsource.org/node/3474">Video: SpringOne 2GX - Native Android Development Practices</a></li>
+    <li><a href="http://blog.springsource.org/2011/11/07/updated-maven-support-for-android-projects">Updated Maven Support for Android Projects</a></li>
+    <li><a href="http://blog.springsource.org/2011/08/26/clean-code-with-android">Clean Code in Android Applications</a></li>
+    <li><a href="http://blog.springsource.com/2011/02/09/spring-android-and-maven-part-2">Spring Android and Maven (Part 2)</a></li>
+    <li><a href="http://blog.springsource.com/2010/12/17/spring-android-and-maven-part-1">Spring Android and Maven (Part 1)</a></li>
+    <li><a href="http://blog.springsource.com/2010/11/19/spring-into-mobile-application-development">Spring into Mobile Application Development</a></li>
+</ul>
+
+<h3>Buzz</h3>
+<ul>
+    <li><a href="http://www.jmanzano.es/blog/?p=163&lang=en">Efficient REST request with Spring Android</a> (Javier Manzano)</li>
+    <li><a href="http://www.ibm.com/developerworks/web/library/x-springandroid/index.html">Develop a Spring client for Android to a JAX-RS web service</a> (Deepak Vohra)</li>
+    <li><a href="http://blog.jeroenreijn.com/2011/02/hippos-restful-jax-rs-component-support.html">HIPPOs RESTful JAX-RS Component Support & Spring Android</a> (Jeroen Reijn)</li>
+    <li><a href="http://blog.jteam.nl/2011/02/07/creating-an-android-app-for-your-website-with-spring-android-and-rest">Creating an Android app for your website with Spring Android and REST</a> (Roberto van der Linden)</li>
+    <li><a href="http://www.developer.com/ws/spring-android-bringing-spring-components-to-your-android-apps.html">Spring Android: Bringing Spring Components to Your Android Apps</a> (Chris King)</li>
+    <li><a href="http://www.makeurownrules.com/rest-spring-maven-android">RESTFul client using Spring+Maven on Android</a> (Kapil Jain)</li>
+    <li><a href="http://devblog.limettengruen.ch/?p=72">Spring Android Rest</a> (Stefan Ludwig)</li>
+    <li><a href="http://xebee.xebia.in/2010/12/31/spring-android-spring-for-android">Spring-Android: Spring for Android!!!</a> (Yogesh Kapoor)</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><a name="maven"></a></p>
+<h2>Maven Artifacts</h2>
+<p>Here is the Spring Repository:</p>
+<pre>
+&lt;repository&gt;<br />    &lt;id&gt;springsource-repo&lt;/id&gt;<br />    &lt;name&gt;SpringSource Repository&lt;/name&gt;<br />    &lt;url&gt;http://repo.springsource.org/release&lt;/url&gt;<br />&lt;/repository&gt;</pre>
+<p>Here is the dependency:</p>
+<pre>
+&lt;dependency&gt;<br />    &lt;groupId&gt;org.springframework.android&lt;/groupId&gt;<br />    &lt;artifactId&gt;spring-android-rest-template&lt;/artifactId&gt;<br />    &lt;version&gt;1.0.1.RELEASE&lt;/version&gt;<br />&lt;/dependency&gt; </pre>
+<p>&nbsp;</p><div class="field field-type-text field-field-quickjump">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <table width="100%" class="quickjump">
+    <tbody>
+        <tr>
+            <td width="50%" valign="top">
+            <p><a target="_blank" href="http://www.springsource.com/download/community?project=Spring%20Android">Download</a><br />
+            <a href="#maven">Maven Artifacts</a><br />
+            <a href="#documentation">Documentation</a><br />
+            <a href="#relateddiscussions">Discussions</a></p>
+            </td>
+            <td width="50%" valign="top">
+            <p><a target="_blank" href="http://jira.springframework.org/browse/ANDROID">Issue Tracker</a><br />
+            <a target="_blank" href="https://github.com/SpringSource/spring-android">Source Repository</a><br />
+            <a target="_blank" href="https://github.com/SpringSource/spring-android-samples">Samples</a><br />
+            <a target="_blank" href="https://github.com/SpringSource/spring-android/wiki/Contributor-Guidelines">Contributor Guidelines</a></p>
+            </td>
+        </tr>
+    </tbody>
+</table>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-documentation">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><a target="_blank" href="http://static.springsource.org/spring-android/docs/1.0.x/reference/htmlsingle/">Reference Manual</a> <br />
+<a target="_blank" href="http://static.springframework.org/spring-android/docs/1.0.x/api">API Javadoc</a></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-otherresources">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><a href="/greenhouse">Greenhouse Reference App</a> <br />
+<a target="_blank" href="http://static.springframework.org/spring-android/docs/1.0.x/changelog.txt">Change Log</a> <br />
+<a target="_blank" href="http://build.springframework.org/browse/ANDROID">Build Status</a></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-relateddiscussions">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><a href="http://forum.springsource.org/forumdisplay.php?f=88">Android</a><br />
+<a href="http://forum.springsource.org/forumdisplay.php?f=85">Mobile</a></p>        </div>
+        </div>
+</div>
+  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
+
+
+            </div>
+    </div>
+        </td>
+
+        <td width="50px">&nbsp;</td>
+        <td width="310px" valign="top" align="left">
+
+              <!--[If IE 7]><br><![endif]-->
+      <div style="margin-top:-40px;">
+      <div align="right">
+
+	  <p style="line-height:26px;">&nbsp;</p>
+	  <p>
+
+      </p>
+      </div>
+
+	              
+      
+       
+        
+        
+        
+        </div>
         </td>
 
         </tr>
         </table>
 
-                  <div class="feed-icons"><a href="http://www.springsource.org/event/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="Events at &lt;em&gt;SpringSource.org&lt;/em&gt;" width="16" height="16" /></a></div>
+
+                  <div class="feed-icons"><a href="/taxonomy/term/38/0/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="RSS - Spring for Android" width="16" height="16" /></a></div>
         
       </div></div><!-- /.section, /#content -->
 

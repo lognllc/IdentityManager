@@ -3,9 +3,8 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Events | SpringSource.org</title>
+  <title>SpringSource Newsletter - March 2010, EMEA | SpringSource.org</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="alternate" type="application/rss+xml" title="Events at &lt;em&gt;SpringSource.org&lt;/em&gt;" href="http://www.springsource.org/event/feed" />
 <link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
   <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
@@ -23,7 +22,6 @@
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
@@ -55,7 +53,6 @@
 <script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
 <script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
 <script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
-<script type="text/javascript" src="/misc/tableheader.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
@@ -65,10 +62,10 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
 //--><!]]>
 </script>
 </head>
-<body class="page not-front not-logged-in no-sidebars page-event section-event">
-
+<body class="page not-front not-logged-in node-type-springsource-newsletter no-sidebars page-news-events-springsource-newsletter-march-2010-emea section-news-events page-panels">
 
 	  
+
 
 <!--begin custom navigation-->
       	  
@@ -198,139 +195,30 @@ box-shadow: 0 0 15px #333;">
 
         
         
-        <!-- <div class="breadcrumb"><a href="/">Home</a> › <a href="/event" class="active">Events</a> › </div> -->
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › </div> -->
 
 	  
 	  
 	  
                         
 
-       <table width="100%" style="margin-top:-10px;">
-        <tr>
-         <td width="600px" valign="top" align="left">
-          <div style="width:600px;margin-top:5px;">
-          <a href="http://blog.springsource.com">Visit our blog</a>
-          <h1 class="title" style="margin-top:5px;margin-bottom:50px;" id="main-page-title">News & Events</h1>
-          <h2>Events</h2>
+       <table width="100%" >
+       <tr>
+     <td width="100%" valign="top" align="left">
+       <div style="width:100%">
+       
+ <div id="content-area">
 
+	<div style="margin-top:-20px;">
+	<!--[If IE 7]><br><![endif]-->
 
-          
-          <div id="content-area">
-
-
-           <div class="event-filter-control"><form action="/event"  accept-charset="UTF-8" method="post" id="event-taxonomy-filter-form">
-<div><div class="form-item" id="edit-event-term-select-wrapper">
- <select name="event_term_select" onchange="this.form.submit()" class="form-select" id="edit-event-term-select" ><option value="all">(all)</option><option value="5">Events - Event</option></select>
- <div class="description">Select event terms to filter by</div>
-</div>
-<input type="hidden" name="form_build_id" id="form-2a8348e4c0d2c58da4230e6f915c9e21" value="form-2a8348e4c0d2c58da4230e6f915c9e21"  />
-<input type="hidden" name="form_id" id="edit-event-taxonomy-filter-form" value="event_taxonomy_filter_form"  />
-
-</div></form>
-</div><div class="event-filter-control"><form action="/event"  accept-charset="UTF-8" method="post" id="event-type-filter-form">
-<div><div class="form-item" id="edit-event-type-select-wrapper">
- <select name="event_type_select" onchange="this.form.submit()" class="form-select" id="edit-event-type-select" ><option value="all">(all)</option><option value="event">Event</option></select>
- <div class="description">Select event type to filter by</div>
-</div>
-<input type="hidden" name="form_build_id" id="form-5eba165a3f7136d2b5b0e33ac1a590ac" value="form-5eba165a3f7136d2b5b0e33ac1a590ac"  />
-<input type="hidden" name="form_id" id="edit-event-type-filter-form" value="event_type_filter_form"  />
-
-</div></form>
-</div><ul class="links"><li class="event_week first"><a href="/event/2013/04/23/week/" title="Week view">Week</a></li>
-<li class="event_day"><a href="/event/2013/04/23/day/" title="Day view">Day</a></li>
-<li class="event_table"><a href="/event/2013/04/23/table/" title="Table view">Table</a></li>
-<li class="event_list last"><a href="/event/2013/04/23/list/" title="List view">List</a></li>
-</ul><div class="event-calendar"><div class="month-view"><table class="sticky-enabled">
-<caption><span class="prev"><a href="/event/2013/03/23/month/all/all/1">«</a></span>  April 2013 <span class="next"><a href="/event/2013/05/23/month/all/all/1">»</a></span></caption>
- <thead><tr><th class="mon">Mon</th><th class="tue">Tue</th><th class="wed">Wed</th><th class="thu">Thu</th><th class="fri">Fri</th><th class="sat">Sat</th><th class="sun">Sun</th> </tr></thead>
-<tbody>
- <tr class="odd"><td class="mon day-01"><div class="day">1</div>
-<div class="event-empty"></div>
-</td><td class="tue day-02"><div class="day">2</div>
-<div class="event-empty"></div>
-</td><td class="wed day-03"><div class="day">3</div>
-<div class="event-empty"></div>
-</td><td class="thu day-04"><div class="day">4</div>
-<div class="event-empty"></div>
-</td><td class="fri day-05"><div class="day">5</div>
-<div class="event-empty"></div>
-</td><td class="sat day-06"><div class="day">6</div>
-<div class="event-empty"></div>
-</td><td class="sun day-07"><div class="day">7</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="even"><td class="mon day-08"><div class="day">8</div>
-<div class="event-empty"></div>
-</td><td class="tue day-09"><div class="day">9</div>
-<div class="event-empty"></div>
-</td><td class="wed day-10"><div class="day">10</div>
-<div class="event-empty"></div>
-</td><td class="thu day-11"><div class="day">11</div>
-<div class="event-empty"></div>
-</td><td class="fri day-12"><div class="day">12</div>
-<div class="event-empty"></div>
-</td><td class="sat day-13"><div class="day">13</div>
-<div class="event-empty"></div>
-</td><td class="sun day-14"><div class="day">14</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="odd"><td class="mon day-15"><div class="day">15</div>
-<div class="event-empty"></div>
-</td><td class="tue day-16"><div class="day">16</div>
-<div class="event-empty"></div>
-</td><td class="wed day-17"><div class="day">17</div>
-<div class="event-empty"></div>
-</td><td class="thu day-18"><div class="day">18</div>
-<div class="event-empty"></div>
-</td><td class="fri day-19"><div class="day">19</div>
-<div class="event-empty"></div>
-</td><td class="sat day-20"><div class="day">20</div>
-<div class="event-empty"></div>
-</td><td class="sun day-21"><div class="day">21</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="even"><td class="mon day-22"><div class="day">22</div>
-<div class="event-empty"></div>
-</td><td class="tue day-23 today selected"><div class="day">23</div>
-<div class="event monthview vevent">
-  <div class="stripe-1"></div>
-      <div class="type"> <a href="/event/2013/04/23/month/event" title="limit view to events of this type">(event)</a> </div>
-    <div class="title summary"><a href="/node/4306" title="view this event">Webinar: Hadoop and Pivotal HD</a></div>
-      <div class="start dtstart" title="2013-04-23T17:00:00Z">Start: 2013-04-23 10:00</div>
-          <div class="end dtend" title="2013-04-23T17:00:00Z">End: 2013-04-23 10:00</div>
-      <div class="links"></div>
-</div>
-</td><td class="wed day-24"><div class="day">24</div>
-<div class="event-empty"></div>
-</td><td class="thu day-25"><div class="day">25</div>
-<div class="event-empty"></div>
-</td><td class="fri day-26"><div class="day">26</div>
-<div class="event-empty"></div>
-</td><td class="sat day-27"><div class="day">27</div>
-<div class="event-empty"></div>
-</td><td class="sun day-28"><div class="day">28</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="odd"><td class="mon day-29"><div class="day">29</div>
-<div class="event-empty"></div>
-</td><td class="tue day-30"><div class="day">30</div>
-<div class="event-empty"></div>
-</td><td class="pad"></td><td class="pad"></td><td class="pad"></td><td class="pad"></td><td class="pad"></td> </tr>
-</tbody>
-</table>
-</div></div>
-<div class="ical-link"><a href="http://www.springsource.org/event/2013/04/01/ical/all/all/30" title="Add this calendar to your iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Add to iCalendar" /></a></div>
-
-        
-        </div>
-        </td>
-
-        <td width="60px">&nbsp;</td>
-        <td width="320px" valign="top" align="left">
-
-        <div align="right" style="margin-top:35px;margin-bottom:47px;">
-         <p>
-			<a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+<table>
+<tr>
+<td width="95%">
+	  <h1 class="title" id="page-title">SpringSource Newsletter - March 2010, EMEA</h1>
+</td>
+<td align="right">
+      <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
 <script type="text/javascript">
 var a2a_config = a2a_config || {};
 a2a_config.color_main = "e5e6e6";
@@ -341,20 +229,224 @@ var a2a_config = a2a_config || {};
 a2a_config.onclick = 1;
 </script>
 <script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
-         </p>
-        </div>
+</td>
+</tr>
+</table>
+	  <p>
+	  	  </p>
+
+           <div id="node-3390" class="node node-type-springsource-newsletter build-mode-full"><div class="node-inner">
+
+  
+  
+  
+  
+  <div class="content">
+    <p><style type="text/css">
+p.head1 {font-size:16px;color:#285C28;}
+p.head2 {font-size:14px;color:#285C28;}
+</style></p>
+<table border="0" cellpadding="4" cellspacing="4" width="730">
+<tbody>
+<tr>
+<td colspan="3"><img alt="SpringSource INewsletter" border="0" src="http://springsource.com/files/hdr-image.jpg" /></td>
+</tr>
+<tr>
+<td valign="top" height="10">
+<p class="head1"><b>SpringSource Introduces tc Server Spring Edition</b></p>
+<p>Based on the popular Apache Tomcat server, tc Server Spring Edition delivers new levels of developer productivity, operational control and deployment flexibility for customers building and deploying Spring applications.  tc Server Spring Edition provides a lightweight platform for running modern applications and is ideally-suited for the virtualized datacenter as well as private and public cloud environments.  With the March 10th announcement comes a <a target="_blank" href="http://www.vmware.com/landing_pages/tcserver-promo">special offer</a> for VMware customers.</p>
+<p><a target="_blank" href="http://www.springsource.com/newsevents/springsource-unveils-tc-server-spring-e">Read More</a></p>
+<hr />
+            <img alt="Shaun Connely" title="Shaun Connely" align="right" src="http://www.springsource.com/files/uploads/all/images/people/shaun-connolly.jpg" /></p>
+<p class="head1"><b>Webinar: SpringSource tc Server&mdash;The Best Place to Build and Run Spring Applications</b></p>
+<ul>
+<li>Writing Spring Applications but deploying on heavyweight platforms?</li>
+<li>Deploying applications in a virtual environment or the cloud?</li>
+<li>Tired of the cost and complexity of Java EE Servers?</li>
+</ul>
+<p>If you answered &lsquo;yes&rsquo; to any of these questions, view this webinar to find out how you can gain new levels of developer productivity, operational control and deployment flexibility using this Apache Tomcat-based application server.</p>
+<p><a target="_blank" href="http://www.springsource.com/webinar/springsource-tc-server-best-place-build-an">View webinar</a></p>
+<hr />
+            <img alt="" align="right" src="http://www.springsource.com/files/uploads/all/images/icons/special-offer-med.gif" /></p>
+<p class="head1"><b>Spring on VMware Promotion</b></p>
+<p><a target="_blank" href="http://www.vmware.com/landing_pages/tcserver-promo/"><b>Two Free CPUs of tc Server Spring Edition with vSphere Purchase</b></a></p>
+<p>If you are a VMware customer and your organization makes a vSphere, vCenter, View or ThinApp product family purchase (license only) between March 8th and May 8th, 2010, you are entitled to two Free CPU licenses of tc Server Spring Edition.  <a target="_blank" href="http://www.vmware.com/landing_pages/tcserver-promo/">See promotional offer</a> for more details.</p>
+<hr />
+            <img alt="Attendees at SpringSource S2G Forum Seminar take a break" style="margin: 0pt 5px 10px 10px;" width="200" align="right" height="145" src="http://www.springsource.com/files/uploads/all/images/news_event/breaktime.jpg" /></p>
+<p class="head1"><b>SpringSource S2G Forum Seminars Coming to London and Amsterdam</b></p>
+<p>Building on the success of our recent Munich event, the SpringSource S2G Forum is now coming to London and Amsterdam in May.  The event is a one day, multi-track, lecture-based forum that gives developers, engineers and IT managers the latest information about enterprise Java technology.  There will be sessions devoted to Spring technologies, enterprise production systems, Groovy &amp; Grails, virtualization and the cloud.  From development to the datacenter and into the cloud, the S2G Forum is the optimal way to learn how to build and run tomorrow's applications today.  Register now.</p>
+<p><b>Amsterdam:</b> May 11, 2010 <a href="http://www.springsource.com/events/s2gforum-5-11-2010-amsterdam">Register Here</a><br />
+            <b>London:</b> May 13, 2010 <a href="http://www.springsource.com/events/s2gforum-5-13-2010-london">Register Here</a></p>
+<hr />
+            <img alt="" align="right" src="http://www.springsource.com/files/uploads/all/images/product/tools.gif" /></p>
+<p class="head1"><b>SpringSource Tool Suite 2.3.1 Now Available</b></p>
+<p>The latest version of SpringSource Tool Suite (STS) is now available.  STS is the best Eclipse-powered development environment for building Spring, Groovy and Grails powered enterprise applications.  The new version uses the latest Eclipse 3.5.2 base.</p>
+<p><a target="_blank" href="http://www.springsource.com/products/springsource-tool-suite-download">Download</a> | <a target="_blank" href="http://download.springsource.com/release/STS/doc/STS-installation_instructions-2.3.1.RELEASE.pdf">Install Instructions</a> | <a target="_blank" href="https://issuetracker.springsource.com/secure/ReleaseNote.jspa?version=10526&amp;styleName=Html&amp;projectId=10010&amp;Create=Create">ChangeLog</a> | <a target="_blank" href="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.3.1.RELEASE.pdf">New &amp; Noteworthy</a> | <a target="_blank" href="http://issuetracker.springsource.com/browse/STS">JIRA</a></p>
+<hr />
+<p class="head1"><b>SpringBlazeDS 1.0.3 Release Now Available</b></p>
+<p>The 1.0.3 maintenance release of Spring BlazeDS Integration, the open source solution for building Spring-powered RIAs with Adobe Flex, is now available.  This release adds bug fixes against the new 1.0.2 functionality and compatibility with the upcoming BlazeDS4 release.</p>
+<p><a target="_blank" href="http://www.springsource.com/download/community?project=Spring%20BlazeDS%20Integration">Download</a> | <a target="_blank" href="http://static.springframework.org/spring-flex/docs/1.0.x/reference/html/index.html">Reference Documentation</a> | <a target="_blank" href="http://static.springsource.org/spring-flex/docs/1.0.x/javadoc-api/overview-summary.html">JavaDocs</a> | <a target="_blank" href="http://static.springframework.org/spring-flex/docs/1.0.x/changelog.txt">Changelog</a></p>
+<hr />
+<p class="head1"><b>Behind the Spring Security Namespace</b></p>
+<p>Learn more about Spring Security in this <a target="_blank" href="http://blog.springsource.com/2010/03/06/behind-the-spring-security-namespace/">blog article</a> by Luke Taylor, where he looks at a simple  namespace configuration for a web application and what it would look like as a full-blown Spring bean configuration.</p>
+<p><a target="_blank" href="http://blog.springsource.com/2010/03/06/behind-the-spring-security-namespace/">Read more</a></p>
+<hr />
+            <img alt="Pizza Hut" title="Pizza Hut" align="right" src="http://www.springsource.com/files/uploads/all/images/logos/pizza-hut.gif" /> <img alt="NPC International" title="NPC International" style="margin: 0pt 5px;" align="right" src="http://www.springsource.com/files/uploads/all/images/logos/npc.gif" /></p>
+<p class="head1"><b>Case Study: SpringSource tc Server helps NPC International Stay Connected</b></p>
+<p>NPC International, based in Overland Park, Kansas, is the largest Pizza Hut franchisee in the world and is owned by Merrill-Lynch Global Private Equity Group.  NPC International connects to its 1,200 restaurants across the US via a web application deployed through the local POS system, providing a variety of essential corporate functionality such as payroll, vacation requests, compliance management, invoice approval and online employee training.  The web-based system must be kept running at top performance to handle 170,000 page views per day by NPC International users.</p>
+<p><a target="_blank" href="http://www.springsource.com/files/uploads/all/pdf_files/customer/S2_CaseStudy_NPC_USLET_EN.pdf">Read More</a></p>
+</td>
+<td>&nbsp;</td>
+<td valign="top">
+<p class="head2"><b>ISSUE 17 | 3-2010</b></p>
+<p>            <img alt="" border="0" src="http://springsource.com/files/bar-image.jpg" /></p>
+<p class="head2"><b>In This Issue</b></p>
+<table width="194" border="0" cellpadding="1" cellspacing="1" height="127">
+<tbody>
+<tr>
+<td align="left" valign="top" width="16" class="bullet">►</td>
+<td style="text-align: left;">SpringSource Introduces<br />
+                        tc Server Spring Edition</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" width="1" height="6" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="16" class="bullet">►</td>
+<td style="text-align: left;">Recorded Webinar: SpringSource tc Server&mdash;The Best Place to Build and Run Spring Applications</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" width="1" height="6" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="16" class="bullet">►</td>
+<td style="text-align: left;">VMware Spring on VMware Customer Offer</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" width="1" height="6" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="16" class="bullet">►</td>
+<td style="text-align: left;">SpringSource S2G Forum - London and Amsterdam</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" width="1" height="6" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="16" class="bullet">►</td>
+<td style="text-align: left;">SpringSource Tool Suite 2.3.1</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" width="1" height="6" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="16" class="bullet">►</td>
+<td style="text-align: left;">SpringBlazeDS 1.0.3<br />
+                        Now Available</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" width="1" height="6" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="16" class="bullet">►</td>
+<td style="text-align: left;">Behind the Spring<br />
+                        Security Namespace</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" width="1" height="15" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="16" class="bullet">►</td>
+<td style="text-align: left;">Case Study: SpringSource<br />
+                        tc Server Helps NPC International Stay Connected</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" width="1" height="15" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+</tbody>
+</table>
+<p>            <img alt="" border="0" src="http://springsource.com/files/bar-image.jpg" /></p>
+<p class="head2"><b>Latest Software Releases</b></p>
+<p><a target="_blank" href="http://www.springsource.com/products/springsource-tool-suite-download">SpringSource Tool Suite 2.3.1</a><br />
+            <a target="_blank" href="http://www.springsource.com/download/community?project=Spring%20BlazeDS%20Integration">SpringBlazeDS 1.0.3</a></p>
+<p>            <img alt="" border="0" src="http://springsource.com/files/bar-image.jpg" /></p>
+<p class="head2"><b>Upcoming Training Courses</b></p>
+<p><b>Core Spring</b> <br />
+            <a target="_blank" href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=S2&amp;a=sort&amp;orderby=0&amp;id_subject=17750">April 6 &ndash; Lyon<br />
+            April 6 &ndash; Hamburg<br />
+            April 12 &ndash; Oslo<br />
+            April 13 &ndash; Brussels<br />
+            April 13 &ndash; Prague<br />
+            April 20 &ndash; Wien<br />
+            April 20 &ndash; Sao Paulo<br />
+            April 20 &ndash; Rome<br />
+            April 27 &ndash; Sydney<br />
+            April 27 &ndash; Paris<br />
+            April 27 &ndash; Munchen<br />
+            April 20 &ndash; Lima, Peru<br />
+            April 6 &ndash; Lisbon<br />
+            April 26 &ndash; Barcelona<br />
+            April 20 &ndash; Stockholm<br />
+            April 20 &ndash; London</a></p>
+<p><b>Hibernate w/Spring</b><br />
+            <a target="_blank" href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=S2&amp;a=sort&amp;orderby=0&amp;id_subject=18355">April 2 &ndash; Bangalore<br />
+            April 22 &ndash; Bangalore</a></p>
+<p><b>Groovy &amp; Grails</b><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=S2&amp;a=sort&amp;orderby=0&amp;id_subject=18353"><br />
+            April 28 &ndash; London</a></p>
+<p><b>Advanced Tomcat Administration</b><br />
+            <a target="_blank" href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=S2&amp;a=sort&amp;orderby=0&amp;id_subject=18359">April 15 &ndash; Stockholm<br />
+            April 15 &ndash; London</a></p>
+<p><b>Enterprise Integration w/Spring</b><a target="_blank" href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=S2&amp;a=sort&amp;orderby=0&amp;id_subject=17833"><br />
+            April 13 &ndash; Copenhagen</a></p>
+<p>            <b>Spring &amp; Java Workshop</b><br />
+            <a target="_blank" href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=S2&amp;a=sort&amp;orderby=0&amp;id_subject=18367">April 19 &ndash; Wien<br />
+            April 5 &ndash; Lisbon</a></p>
+<p><b>Tomcat Administration Fundamentals</b><br />
+            <a target="_blank" href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=S2&amp;a=sort&amp;orderby=0&amp;id_subject=18358">April 13 &ndash; Stockholm</a></p>
+<p><b>Rich Web Applications w/Spring</b><br />
+            <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=S2&amp;a=sort&amp;orderby=0&amp;id_subject=17834">April 27 &ndash; Munchen<br />
+            April 27 &ndash; Luxenbourg<br />
+            April 13 &ndash; Amsterdam</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
 
 
+            </div>
+    </div>
+        </td>
+
+        <td width="50px">&nbsp;</td>
+        <td width="310px" valign="top" align="left">
+
+              <!--[If IE 7]><br><![endif]-->
+      <div style="margin-top:-40px;">
+      <div align="right">
+
+	  <p style="line-height:26px;">&nbsp;</p>
+	  <p>
+
+      </p>
+      </div>
+
+	              
+      
+       
         
-
-
-</div>
+        
+        
+        </div>
         </td>
 
         </tr>
         </table>
 
-                  <div class="feed-icons"><a href="http://www.springsource.org/event/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="Events at &lt;em&gt;SpringSource.org&lt;/em&gt;" width="16" height="16" /></a></div>
+
         
       </div></div><!-- /.section, /#content -->
 

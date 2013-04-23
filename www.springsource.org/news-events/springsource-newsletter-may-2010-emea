@@ -3,9 +3,8 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Events | SpringSource.org</title>
+  <title>SpringSource Newsletter - May 2010, EMEA | SpringSource.org</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="alternate" type="application/rss+xml" title="Events at &lt;em&gt;SpringSource.org&lt;/em&gt;" href="http://www.springsource.org/event/feed" />
 <link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
   <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
@@ -23,7 +22,6 @@
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
@@ -55,7 +53,6 @@
 <script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
 <script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
 <script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
-<script type="text/javascript" src="/misc/tableheader.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
@@ -65,10 +62,10 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
 //--><!]]>
 </script>
 </head>
-<body class="page not-front not-logged-in no-sidebars page-event section-event">
-
+<body class="page not-front not-logged-in node-type-springsource-newsletter no-sidebars page-news-events-springsource-newsletter-may-2010-emea section-news-events page-panels">
 
 	  
+
 
 <!--begin custom navigation-->
       	  
@@ -198,139 +195,30 @@ box-shadow: 0 0 15px #333;">
 
         
         
-        <!-- <div class="breadcrumb"><a href="/">Home</a> › <a href="/event" class="active">Events</a> › </div> -->
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › </div> -->
 
 	  
 	  
 	  
                         
 
-       <table width="100%" style="margin-top:-10px;">
-        <tr>
-         <td width="600px" valign="top" align="left">
-          <div style="width:600px;margin-top:5px;">
-          <a href="http://blog.springsource.com">Visit our blog</a>
-          <h1 class="title" style="margin-top:5px;margin-bottom:50px;" id="main-page-title">News & Events</h1>
-          <h2>Events</h2>
+       <table width="100%" >
+       <tr>
+     <td width="100%" valign="top" align="left">
+       <div style="width:100%">
+       
+ <div id="content-area">
 
+	<div style="margin-top:-20px;">
+	<!--[If IE 7]><br><![endif]-->
 
-          
-          <div id="content-area">
-
-
-           <div class="event-filter-control"><form action="/event"  accept-charset="UTF-8" method="post" id="event-taxonomy-filter-form">
-<div><div class="form-item" id="edit-event-term-select-wrapper">
- <select name="event_term_select" onchange="this.form.submit()" class="form-select" id="edit-event-term-select" ><option value="all">(all)</option><option value="5">Events - Event</option></select>
- <div class="description">Select event terms to filter by</div>
-</div>
-<input type="hidden" name="form_build_id" id="form-2a8348e4c0d2c58da4230e6f915c9e21" value="form-2a8348e4c0d2c58da4230e6f915c9e21"  />
-<input type="hidden" name="form_id" id="edit-event-taxonomy-filter-form" value="event_taxonomy_filter_form"  />
-
-</div></form>
-</div><div class="event-filter-control"><form action="/event"  accept-charset="UTF-8" method="post" id="event-type-filter-form">
-<div><div class="form-item" id="edit-event-type-select-wrapper">
- <select name="event_type_select" onchange="this.form.submit()" class="form-select" id="edit-event-type-select" ><option value="all">(all)</option><option value="event">Event</option></select>
- <div class="description">Select event type to filter by</div>
-</div>
-<input type="hidden" name="form_build_id" id="form-5eba165a3f7136d2b5b0e33ac1a590ac" value="form-5eba165a3f7136d2b5b0e33ac1a590ac"  />
-<input type="hidden" name="form_id" id="edit-event-type-filter-form" value="event_type_filter_form"  />
-
-</div></form>
-</div><ul class="links"><li class="event_week first"><a href="/event/2013/04/23/week/" title="Week view">Week</a></li>
-<li class="event_day"><a href="/event/2013/04/23/day/" title="Day view">Day</a></li>
-<li class="event_table"><a href="/event/2013/04/23/table/" title="Table view">Table</a></li>
-<li class="event_list last"><a href="/event/2013/04/23/list/" title="List view">List</a></li>
-</ul><div class="event-calendar"><div class="month-view"><table class="sticky-enabled">
-<caption><span class="prev"><a href="/event/2013/03/23/month/all/all/1">«</a></span>  April 2013 <span class="next"><a href="/event/2013/05/23/month/all/all/1">»</a></span></caption>
- <thead><tr><th class="mon">Mon</th><th class="tue">Tue</th><th class="wed">Wed</th><th class="thu">Thu</th><th class="fri">Fri</th><th class="sat">Sat</th><th class="sun">Sun</th> </tr></thead>
-<tbody>
- <tr class="odd"><td class="mon day-01"><div class="day">1</div>
-<div class="event-empty"></div>
-</td><td class="tue day-02"><div class="day">2</div>
-<div class="event-empty"></div>
-</td><td class="wed day-03"><div class="day">3</div>
-<div class="event-empty"></div>
-</td><td class="thu day-04"><div class="day">4</div>
-<div class="event-empty"></div>
-</td><td class="fri day-05"><div class="day">5</div>
-<div class="event-empty"></div>
-</td><td class="sat day-06"><div class="day">6</div>
-<div class="event-empty"></div>
-</td><td class="sun day-07"><div class="day">7</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="even"><td class="mon day-08"><div class="day">8</div>
-<div class="event-empty"></div>
-</td><td class="tue day-09"><div class="day">9</div>
-<div class="event-empty"></div>
-</td><td class="wed day-10"><div class="day">10</div>
-<div class="event-empty"></div>
-</td><td class="thu day-11"><div class="day">11</div>
-<div class="event-empty"></div>
-</td><td class="fri day-12"><div class="day">12</div>
-<div class="event-empty"></div>
-</td><td class="sat day-13"><div class="day">13</div>
-<div class="event-empty"></div>
-</td><td class="sun day-14"><div class="day">14</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="odd"><td class="mon day-15"><div class="day">15</div>
-<div class="event-empty"></div>
-</td><td class="tue day-16"><div class="day">16</div>
-<div class="event-empty"></div>
-</td><td class="wed day-17"><div class="day">17</div>
-<div class="event-empty"></div>
-</td><td class="thu day-18"><div class="day">18</div>
-<div class="event-empty"></div>
-</td><td class="fri day-19"><div class="day">19</div>
-<div class="event-empty"></div>
-</td><td class="sat day-20"><div class="day">20</div>
-<div class="event-empty"></div>
-</td><td class="sun day-21"><div class="day">21</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="even"><td class="mon day-22"><div class="day">22</div>
-<div class="event-empty"></div>
-</td><td class="tue day-23 today selected"><div class="day">23</div>
-<div class="event monthview vevent">
-  <div class="stripe-1"></div>
-      <div class="type"> <a href="/event/2013/04/23/month/event" title="limit view to events of this type">(event)</a> </div>
-    <div class="title summary"><a href="/node/4306" title="view this event">Webinar: Hadoop and Pivotal HD</a></div>
-      <div class="start dtstart" title="2013-04-23T17:00:00Z">Start: 2013-04-23 10:00</div>
-          <div class="end dtend" title="2013-04-23T17:00:00Z">End: 2013-04-23 10:00</div>
-      <div class="links"></div>
-</div>
-</td><td class="wed day-24"><div class="day">24</div>
-<div class="event-empty"></div>
-</td><td class="thu day-25"><div class="day">25</div>
-<div class="event-empty"></div>
-</td><td class="fri day-26"><div class="day">26</div>
-<div class="event-empty"></div>
-</td><td class="sat day-27"><div class="day">27</div>
-<div class="event-empty"></div>
-</td><td class="sun day-28"><div class="day">28</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="odd"><td class="mon day-29"><div class="day">29</div>
-<div class="event-empty"></div>
-</td><td class="tue day-30"><div class="day">30</div>
-<div class="event-empty"></div>
-</td><td class="pad"></td><td class="pad"></td><td class="pad"></td><td class="pad"></td><td class="pad"></td> </tr>
-</tbody>
-</table>
-</div></div>
-<div class="ical-link"><a href="http://www.springsource.org/event/2013/04/01/ical/all/all/30" title="Add this calendar to your iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Add to iCalendar" /></a></div>
-
-        
-        </div>
-        </td>
-
-        <td width="60px">&nbsp;</td>
-        <td width="320px" valign="top" align="left">
-
-        <div align="right" style="margin-top:35px;margin-bottom:47px;">
-         <p>
-			<a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+<table>
+<tr>
+<td width="95%">
+	  <h1 class="title" id="page-title">SpringSource Newsletter - May 2010, EMEA</h1>
+</td>
+<td align="right">
+      <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
 <script type="text/javascript">
 var a2a_config = a2a_config || {};
 a2a_config.color_main = "e5e6e6";
@@ -341,20 +229,261 @@ var a2a_config = a2a_config || {};
 a2a_config.onclick = 1;
 </script>
 <script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
-         </p>
-        </div>
+</td>
+</tr>
+</table>
+	  <p>
+	  	  </p>
+
+           <div id="node-3394" class="node node-type-springsource-newsletter build-mode-full"><div class="node-inner">
+
+  
+  
+  
+  
+  <div class="content">
+    <p><style type="text/css">
+p.head1 {font-size:16px;color:#285C28;}
+p.head2 {font-size:14px;color:#285C28;}
+</style></p>
+<table border="0" cellpadding="4" cellspacing="4" width="730">
+<tbody>
+<tr>
+<td colspan="3"><img alt="SpringSource INewsletter" border="0" src="http://springsource.com/files/hdr-image.jpg" /></td>
+</tr>
+<tr>
+<td height="10" valign="top">
+<p class="head1"><b>Cloud Portability from SpringSource and Google</b></p>
+<p>            <img alt="Google" align="right" border="0" height="57" width="145" src="http://www.springsource.com/files/uploads/all/images/logos/google.gif" /></p>
+<p>SpringSource and Google recently announced collaboration on several projects to make cloud applications more productive, portable, and flexible.  These projects will enable Spring developers to build rich web applications, use Google and SpringSource performance tools on cloud apps, and deploy Spring Java applications on Google App Engine.</p>
+<p>Google also announced support for Spring Java apps on Google App Engine in support of a shared vision to make it easy to build, run, and manage applications for the cloud.  VMware and Google are also working together to combine the speed of development of Spring Roo with the power of the Google Web Toolkit (GWT) to build rich browser apps.</p>
+<p><a target="_blank" href="http://blog.springsource.com/2010/05/19/spring-google-appengine/">Team Blog</a> | <a target="_blank" href="http://www.springsource.com/products/springsource-google-download">Download</a> | <a target="_blank" href="http://www.vmware.com/cloudportability/index.html?src=WWW_CloudPortability_HPHero">Learn More</a></p>
+<hr />
+<p class="head1"><b>SpringOne 2GX Conference Registration Now Open</b></p>
+<p>            <img alt="SpringOne2GX" align="right" border="0" height="43" width="170" src="http://www.springsource.com/files/uploads/all/images/logos/SpringOne2GX.gif" /></p>
+<p>SpringSource is pleased to present the premier Java event of 2010: <a target="_blank" href="http://www.springone2gx.com/">SpringOne 2GX</a>.  Join us in <b>Chicago</b> on <b>October 19-22</b> for a technical exploration of the Spring ecosystem along with latest developments in the Groovy/Grails space.</p>
+<p><a target="_blank" href="http://www.springone2gx.com/">SpringOne 2GX</a> will feature over eighty presentations delivered by development leads and published authors in the Spring, Groovy/Grails, Hyperic and Apache Tomcat space today.</p>
+<p><a target="_blank" href="http://www.springone2gx.com/">Register today</a> - save $400!<a target="_blank" href="http://www.springone2gx.com/"><br />
+            </a></p>
+<hr />
+<p class="head1"><b>SpringSource Grabs GemStone Data Grid</b></p>
+<p>SpringSource recently announced that it entered into a definitive agreement to acquire GemStone Systems, a leader in enterprise data management.  The GemStone products enable IT organizations to provide the right data at the right time within a cloud environment and with the highest level of performance and scalability.</p>
+<p><a target="_blank" href="http://blog.springsource.com/2010/05/06/springsource-gemstone/">Team Blog</a> | <a target="_blank" href="http://www.springsource.com/newsevents/springsource-acquires-gemstone-systems">Read Press Release</a></p>
+<p>Want to learn more? Join us for a <a target="_blank" href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=662822882">live webinar</a> discussing GemStone and the critical role of data management in enterprise and cloud computing platforms.</p>
+<p><span class="iconLeftText">May 26, 2:00pm EDT / 11:00am PDT - <a target="_blank" href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=662822882">Register Here</a></span></p>
+<hr />
+<p class="head1"><b>Introducing VMforce &ndash; the Trusted Cloud for Java Developers</b></p>
+<p><a target="_blank" href="http://www.vmforce.com"><img alt="View the VMforce Demo" align="right" border="1" height="93" width="120" src="http://www.springsource.com/files/uploads/all/images/email/demo-vmforce.gif" /></a> VMware and salesforce.com recently announced a new enterprise Platform as a  Service (PaaS), <a target="_blank" href="http://www.vmforce.com">VMforce</a>, which is designed to run Spring-based applications.  Rod Johnson provides an explanation about the technology in his recent <a target="_blank" href="http://blog.springsource.com/2010/04/27/vmforce-spring-cloud/">blog post</a> and Steve Herrod, VMware CTO, talks about the <a target="_blank" href="http://blogs.vmware.com/console/2010/04/vmforce-and-vmwares-open-paas-strategy.html">VMware PaaS vision</a>.  VMforce will be available for developer preview in the second half of this year.  Spring community members can <a target="_blank" href="http://www.vmforce.com/?d=70130000000F3HD">register</a> for updates about development of the platform.</p>
+<hr />
+<p class="head1"><b>Grails 1.3 Released</b></p>
+<p>On top of the <a target="_blank" href="http://docs.codehaus.org/display/GROOVY/Groovy+1.7+release+notes?showComments=true">Groovy 1.7</a> release, significant new features include JUnit 4 support, Maven repository support for Grails plug-ins, declarative plug-in dependencies, dirty checking in  GORM, chaining of named criteria and application wide Sitemesh layouts.</p>
+<p><a target="_blank" href="http://grails.org/Download">Download</a> | <a target="_blank" href="http://www.grails.org/1.3+Release+Notes">Release Notes</a> | <a target="_blank" href="http://grails.org/doc/1.3.0/">Documentation</a></p>
+<hr />
+<p class="head1"><b>Designing and Managing Modern Virtual Java Environments: Multi-City Road Show</b></p>
+<p>Join SpringSource at this half-day symposium where our executive management and technical thought-leaders will describe how enterprise Java developers can harness the economics of modern applications infrastructures without compromising the flexibility, control, and choice they require.  We have dedicated breakout sessions for Developers, Architects, and IT Operations.</p>
+<p>We&rsquo;re coming to a city near you - <a target="_blank" href="http://www.springsource.com/events/modern-virtual-java">Register today!</a></p>
+<hr />
+<p class="head1"><b>Featured Webinar: SpringSource tc Server Security Best Practices</b></p>
+<p>A default SpringSource tc Server installation is secure but each installation environment is different and may have additional security requirements.  This presentation will examine the security configuration options available in the SpringSource tc Server runtime, when to use them (and when not to use them), and the threats they might help mitigate.</p>
+<p><span class="iconLeftText">June 10, 1:00pm EDT / 10:00am PDT - <a target="_blank" href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=663658265">Register Here</a></span></p>
+<hr />
+<p class="head1"><b>Upcoming Webinars:</b></p>
+<p>Register now for any or all of our upcoming weekly webinars covering Spring, SpringSource tc Server, virtualization, and more.</p>
+<p><b>A Tour Through Spring 3 - Developing Web Applications<br />
+            </b><span class="iconLeftText">May 27, 1:00pm EDT / 10:00am PDT - <a target="_blank" href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=669626027">Register Here</a></span></p>
+<p><b>Best Practices for Virtualizing Java Workloads<br />
+            </b><span class="iconLeftText">June 3, 1:00pm EDT / 10:00am PDT</span> <b><span class="iconLeftText">-</span></b> <span class="iconLeftText"><a target="_blank" href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=664579422">Register Here</a></span></p>
+<p><b>Performance Tuning Production Tomcat &amp; SpringSource tc Server: Tuning for Scale</b><br />
+            <span class="iconLeftText">June 17, 1:00pm EDT / 10:00am PDT - <a target="_blank" href="https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=668795932">Register Here</a></span></p>
+<hr />
+<p class="head1"><b>Prepare for VMforce: Become an Expert in Spring</b></p>
+<p>            <img alt="" style="margin-left: 10px;" mce_style="margin-left: 10px;" align="right" src="http://www.springsource.com/files/uploads/all/images/icons/special-offer-med.gif" /></p>
+<p>Interested in learning how to optimize the cloud and VMforce? In the SpringSource 4-day Core Spring training, you will become an expert in using Spring Projects to build powerful applications that can be deployed in the cloud with VMforce.  Register before May 29th and receive <b>20% off any June or July Core Spring Training</b>!</p>
+<p>Last Chance Discount &ndash; <a target="_blank" href="http://www.springsource.org/node/2550">Register Now</a></p>
+<hr />
+<p class="head1"><b>Case Study: Brandeis University Manages Uptime for 350 Systems with SpringSource Hyperic</b></p>
+<p><a target="_blank" href="http://www.brandeis.edu/">Brandeis University</a>, a private research university, has deployed SpringSource Hyperic to monitor its network infrastructure of more than 350 platforms running on VMware.  As a result, the IT staff at Brandeis can address system availability issues quickly, as opposed to previously relying on user reports of outages or performance problems.</p>
+<p><a target="_blank" href="http://www.springsource.com/files/uploads/all/pdf_files/customer/S2_CaseStudy_Brandeis_University.pdf">Read Case Study</a></p>
+<hr />
+<p class="head1"><b>Spring Web Flow 2.1.0 Milestone 1 Released</b></p>
+<p>This release is built on Spring 3.0.2, Spring Security 3.0.2, Tiles 2.1.2, and Portlet API 2.0.  It features use of Spring EL as the default expression language as well as integration with the new type conversion and formatting system available in Spring 3.</p>
+<p><a target="_blank" href="http://www.springsource.com/download?project=Spring%20Web%20Flow&amp;__utma=1.392289774.1273166057.1273267556.1273269362.5&amp;__utmb=1.1.10.1273269362&amp;__utmc=1&amp;__utmx=-&amp;__utmz=1.1273166057.1.1.utmcsr=%28direct%29%7Cutmccn=%28direct%29%7Cutmcmd=%28none%29&amp;__utmv=-&amp;__u">Download</a> | <a target="_blank" href="http://static.springsource.org/spring-webflow/docs/2.1.x/changelog.txt">Change Log</a></p>
+<hr />
+<p class="head1"><b>Spring Python 1.1.0.Final Released</b></p>
+<p>Read the <a target="_blank" href="http://blog.springpython.webfactional.com/2010/05/11/spring-python-1-1-0-released/">blog entry for more details</a> including a list of bugs, features, and improvements.  Spring Python takes the concepts implemented by the Spring Framework, and applies them in Python.  It includes features like dependency injection, aspect oriented programming, data access, transactions, security, remoting, and JMS support.</p>
+<p><a target="_blank" href="http://www.springsource.org/node/2551?mkt_tok=3RkMMJWWfF9wsRow5/mYJoDpwmWGd5mht7VzDtPj1OY6hBkqJrquWw==">Download</a> | <a target="_blank" href="http://springpython.webfactional.com/1.1.0/reference/html/index.html">Reference Documentation</a> | <a target="_blank" href="http://springpython.webfactional.com/1.1.0/pydoc/springpython.html">Python API Docs</a></p>
+<p>&nbsp;</p>
+</td>
+<td>&nbsp;</td>
+<td valign="top">
+<p class="head2"><b>ISSUE 19 | 5-2010</b></p>
+<p>            <img alt="" border="0" src="http://springsource.com/files/bar-image.jpg" /></p>
+<p class="head2"><b>In This Issue</b></p>
+<table border="0" cellpadding="1" cellspacing="1" height="127" width="194">
+<tbody>
+<tr>
+<td class="bullet" align="left" valign="top" width="16">►</td>
+<td style="text-align: left;" mce_style="text-align: left;">Cloud Portability from SpringSource and Google</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" height="6" width="1" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td class="bullet" align="left" valign="top" width="16">►</td>
+<td style="text-align: left;" mce_style="text-align: left;">SpringOne 2GX Conference Registration Now Open</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" height="6" width="1" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td class="bullet" align="left" valign="top" width="16">►</td>
+<td style="text-align: left;" mce_style="text-align: left;">SpringSource Grabs GemStone Data Grid</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" height="6" width="1" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td class="bullet" align="left" valign="top" width="16">►</td>
+<td style="text-align: left;" mce_style="text-align: left;">Introducing VMforce &ndash; the Trusted Cloud for<br />
+                        Java Developers</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" height="6" width="1" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td class="bullet" align="left" valign="top" width="16">►</td>
+<td style="text-align: left;" mce_style="text-align: left;">Grails 1.3 Released</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" height="6" width="1" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td class="bullet" align="left" valign="top" width="16">►</td>
+<td style="text-align: left;" mce_style="text-align: left;">Designing and Managing Modern Virtual Java Environments: Multi-City<br />
+                        Road Show</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" height="6" width="1" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td class="bullet" align="left" valign="top" width="16">►</td>
+<td style="text-align: left;" mce_style="text-align: left;">Featured Webinar: SpringSource tc Server Security Best Practices</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" height="6" width="1" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td class="bullet" align="left" valign="top" width="16">►</td>
+<td style="text-align: left;" mce_style="text-align: left;">Upcoming Webinars</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" height="6" width="1" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td class="bullet" align="left" valign="top" width="16">►</td>
+<td style="text-align: left;" mce_style="text-align: left;">Prepare for VMforce: Become an Expert in Spring</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" height="6" width="1" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td class="bullet" align="left" valign="top">►</td>
+<td style="text-align: left;" mce_style="text-align: left;">Case Study: Brandeis University Manages Uptime for 350 Systems with Hyperic</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" height="6" width="1" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td class="bullet" align="left" valign="top">►</td>
+<td style="text-align: left;" mce_style="text-align: left;">Spring Web Flow 2.1.0 Milestone 1 Released</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" height="6" width="1" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+<tr>
+<td class="bullet" align="left" valign="top">►</td>
+<td style="text-align: left;" mce_style="text-align: left;">Spring Python 1.1.0.Final Released</td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" height="6" width="1" src="http://www.springsource.com/files/uploads/all/images/email/1px.gif" /></td>
+</tr>
+</tbody>
+</table>
+<p>            <img alt="" border="0" height="11" width="200" src="http://springsource.com/files/bar-image.jpg" /></p>
+<p class="head2"><b>Latest Software Releases</b></p>
+<p><a target="_blank" href="http://www.springsource.org/node/2513">Spring Web Flow 2.1.0 Milestone 1</a><br />
+            <a target="_blank" href="http://www.springsource.org/node/2551">Spring Python 1.1.0.Final</a><br />
+            <a target="_blank" href="http://grails.org/Download?mkt_tok=3RkMMJWWfF9wsRow5%2FmYJoDpwmWGd5mht7VzDtPj1OY6hBkqJru8Ww%3D%3D">Grails 1.3</a></p>
+<p>            <img alt="" border="0" height="11" width="200" src="http://springsource.com/files/bar-image.jpg" /></p>
+<p class="head2"><b>Recorded Webinars</b></p>
+<p><a target="_blank" href="http://www.springsource.com/webinar/managing-monitoring-spring-applications">Managing &amp; Monitoring Spring Applications</a></p>
+<p><a target="_blank" href="http://www.springsource.com/webinar/modern-application-architectures-paving-wa">Modern Application Architectures: Paving the Way to the Cloud</a></p>
+<p><a target="_blank" href="http://www.springsource.com/webinar/whats-new-springsource-tool-suite">What&rsquo;s New in SpringSource Tool Suite</a></p>
+<p><a target="_blank" href="http://www.springsource.com/webinar/introducing-roo-extreme-productivity">Introducing Spring Roo: Extreme Productivity in 10 minutes</a></p>
+<p><a target="_blank" href="http://www.springsource.com/webinar/migrating-java-enterprise-servers-enterpri">Migrating from Java Enterprise Servers to Enterprise Tomcat</a></p>
+<p>            <img alt="" border="0" height="11" width="200" src="http://springsource.com/files/bar-image.jpg" /></p>
+<p class="head2"><b>SpringSource University</b></p>
+<p><b>Core Spring<br />
+            </b><a href="http://mylearn.vmware.com/mgrReg/courses.cfm?ui=S2&amp;a=one&amp;id_subject=17750">June 8 - 11 Columbia<br />
+            June 22 - June 25 New York<br />
+            June 22 - June 25 Ottawa<br />
+            June 29 - July 2 Omaha<br />
+            June 29 - July 2 McLean</a></p>
+<p><b>Enterprise Integration with Spring</b><br />
+            <a target="_blank" href="http://mylearn.vmware.com/mgrReg/courses.cfm?ui=S2&amp;a=sort&amp;orderby=0&amp;id_subject=17833">June 8 - 11 San Francisco<br />
+            June 8 - 11 Chicago<br />
+            June 29 - July 2 Online</a></p>
+<p><b>Rich Web Applications with Spring</b><br />
+            <a target="_blank" href="http://mylearn.vmware.com/mgrReg/courses.cfm?ui=S2&amp;a=sort&amp;orderby=0&amp;id_subject=17834">June 8 - 11 Toronto<br />
+            June 15 - 18 Boston</a></p>
+<p><b>Metaprogramming with Groovy</b><br />
+            <a target="_blank" href="http://www.springsource.com/training/free-online-video-metaprogramming-groovy">Free Online Training</a></p>
+<p><b>Groovy &amp; Grails</b><br />
+            <a target="_blank" href="http://mylearn.vmware.com/mgrReg/courses.cfm?ui=S2&amp;a=det&amp;id_course=66255">June 22 - 24 Columbia</a></p>
+<p><b>Tomcat Administration Fundamentals Training</b><br />
+            <a target="_blank" href="http://mylearn.vmware.com/mgrReg/courses.cfm?ui=S2&amp;a=det&amp;id_course=65071">June 22 -23 Vancouver</a></p>
+<p><b>Advanced Tomcat Administration Training</b><br />
+            <a target="_blank" href="http://mylearn.vmware.com/mgrReg/courses.cfm?ui=S2&amp;a=one&amp;id_subject=18359">June 24 - 25 Vancouver</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
 
 
+            </div>
+    </div>
+        </td>
+
+        <td width="50px">&nbsp;</td>
+        <td width="310px" valign="top" align="left">
+
+              <!--[If IE 7]><br><![endif]-->
+      <div style="margin-top:-40px;">
+      <div align="right">
+
+	  <p style="line-height:26px;">&nbsp;</p>
+	  <p>
+
+      </p>
+      </div>
+
+	              
+      
+       
         
-
-
-</div>
+        
+        
+        </div>
         </td>
 
         </tr>
         </table>
 
-                  <div class="feed-icons"><a href="http://www.springsource.org/event/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="Events at &lt;em&gt;SpringSource.org&lt;/em&gt;" width="16" height="16" /></a></div>
+
         
       </div></div><!-- /.section, /#content -->
 

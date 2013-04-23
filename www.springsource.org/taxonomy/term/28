@@ -3,9 +3,9 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Events | SpringSource.org</title>
+  <title>Spring Data Redis | SpringSource.org</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="alternate" type="application/rss+xml" title="Events at &lt;em&gt;SpringSource.org&lt;/em&gt;" href="http://www.springsource.org/event/feed" />
+<link rel="alternate" type="application/rss+xml" title="RSS - Spring Data Redis" href="/taxonomy/term/28/0/feed" />
 <link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
   <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
@@ -23,7 +23,7 @@
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/taxonomy/taxonomy.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
@@ -55,7 +55,6 @@
 <script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
 <script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
 <script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
-<script type="text/javascript" src="/misc/tableheader.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
@@ -65,10 +64,10 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
 //--><!]]>
 </script>
 </head>
-<body class="page not-front not-logged-in no-sidebars page-event section-event">
-
+<body class="page not-front not-logged-in no-sidebars page-taxonomy-term-28 section-taxonomy">
 
 	  
+
 
 <!--begin custom navigation-->
       	  
@@ -198,139 +197,30 @@ box-shadow: 0 0 15px #333;">
 
         
         
-        <!-- <div class="breadcrumb"><a href="/">Home</a> › <a href="/event" class="active">Events</a> › </div> -->
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › </div> -->
 
 	  
 	  
 	  
                         
 
-       <table width="100%" style="margin-top:-10px;">
-        <tr>
-         <td width="600px" valign="top" align="left">
-          <div style="width:600px;margin-top:5px;">
-          <a href="http://blog.springsource.com">Visit our blog</a>
-          <h1 class="title" style="margin-top:5px;margin-bottom:50px;" id="main-page-title">News & Events</h1>
-          <h2>Events</h2>
+       <table width="100%" >
+       <tr>
+     <td width="100%" valign="top" align="left">
+       <div style="width:100%">
+       
+ <div id="content-area">
 
+	<div style="margin-top:-20px;">
+	<!--[If IE 7]><br><![endif]-->
 
-          
-          <div id="content-area">
-
-
-           <div class="event-filter-control"><form action="/event"  accept-charset="UTF-8" method="post" id="event-taxonomy-filter-form">
-<div><div class="form-item" id="edit-event-term-select-wrapper">
- <select name="event_term_select" onchange="this.form.submit()" class="form-select" id="edit-event-term-select" ><option value="all">(all)</option><option value="5">Events - Event</option></select>
- <div class="description">Select event terms to filter by</div>
-</div>
-<input type="hidden" name="form_build_id" id="form-2a8348e4c0d2c58da4230e6f915c9e21" value="form-2a8348e4c0d2c58da4230e6f915c9e21"  />
-<input type="hidden" name="form_id" id="edit-event-taxonomy-filter-form" value="event_taxonomy_filter_form"  />
-
-</div></form>
-</div><div class="event-filter-control"><form action="/event"  accept-charset="UTF-8" method="post" id="event-type-filter-form">
-<div><div class="form-item" id="edit-event-type-select-wrapper">
- <select name="event_type_select" onchange="this.form.submit()" class="form-select" id="edit-event-type-select" ><option value="all">(all)</option><option value="event">Event</option></select>
- <div class="description">Select event type to filter by</div>
-</div>
-<input type="hidden" name="form_build_id" id="form-5eba165a3f7136d2b5b0e33ac1a590ac" value="form-5eba165a3f7136d2b5b0e33ac1a590ac"  />
-<input type="hidden" name="form_id" id="edit-event-type-filter-form" value="event_type_filter_form"  />
-
-</div></form>
-</div><ul class="links"><li class="event_week first"><a href="/event/2013/04/23/week/" title="Week view">Week</a></li>
-<li class="event_day"><a href="/event/2013/04/23/day/" title="Day view">Day</a></li>
-<li class="event_table"><a href="/event/2013/04/23/table/" title="Table view">Table</a></li>
-<li class="event_list last"><a href="/event/2013/04/23/list/" title="List view">List</a></li>
-</ul><div class="event-calendar"><div class="month-view"><table class="sticky-enabled">
-<caption><span class="prev"><a href="/event/2013/03/23/month/all/all/1">«</a></span>  April 2013 <span class="next"><a href="/event/2013/05/23/month/all/all/1">»</a></span></caption>
- <thead><tr><th class="mon">Mon</th><th class="tue">Tue</th><th class="wed">Wed</th><th class="thu">Thu</th><th class="fri">Fri</th><th class="sat">Sat</th><th class="sun">Sun</th> </tr></thead>
-<tbody>
- <tr class="odd"><td class="mon day-01"><div class="day">1</div>
-<div class="event-empty"></div>
-</td><td class="tue day-02"><div class="day">2</div>
-<div class="event-empty"></div>
-</td><td class="wed day-03"><div class="day">3</div>
-<div class="event-empty"></div>
-</td><td class="thu day-04"><div class="day">4</div>
-<div class="event-empty"></div>
-</td><td class="fri day-05"><div class="day">5</div>
-<div class="event-empty"></div>
-</td><td class="sat day-06"><div class="day">6</div>
-<div class="event-empty"></div>
-</td><td class="sun day-07"><div class="day">7</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="even"><td class="mon day-08"><div class="day">8</div>
-<div class="event-empty"></div>
-</td><td class="tue day-09"><div class="day">9</div>
-<div class="event-empty"></div>
-</td><td class="wed day-10"><div class="day">10</div>
-<div class="event-empty"></div>
-</td><td class="thu day-11"><div class="day">11</div>
-<div class="event-empty"></div>
-</td><td class="fri day-12"><div class="day">12</div>
-<div class="event-empty"></div>
-</td><td class="sat day-13"><div class="day">13</div>
-<div class="event-empty"></div>
-</td><td class="sun day-14"><div class="day">14</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="odd"><td class="mon day-15"><div class="day">15</div>
-<div class="event-empty"></div>
-</td><td class="tue day-16"><div class="day">16</div>
-<div class="event-empty"></div>
-</td><td class="wed day-17"><div class="day">17</div>
-<div class="event-empty"></div>
-</td><td class="thu day-18"><div class="day">18</div>
-<div class="event-empty"></div>
-</td><td class="fri day-19"><div class="day">19</div>
-<div class="event-empty"></div>
-</td><td class="sat day-20"><div class="day">20</div>
-<div class="event-empty"></div>
-</td><td class="sun day-21"><div class="day">21</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="even"><td class="mon day-22"><div class="day">22</div>
-<div class="event-empty"></div>
-</td><td class="tue day-23 today selected"><div class="day">23</div>
-<div class="event monthview vevent">
-  <div class="stripe-1"></div>
-      <div class="type"> <a href="/event/2013/04/23/month/event" title="limit view to events of this type">(event)</a> </div>
-    <div class="title summary"><a href="/node/4306" title="view this event">Webinar: Hadoop and Pivotal HD</a></div>
-      <div class="start dtstart" title="2013-04-23T17:00:00Z">Start: 2013-04-23 10:00</div>
-          <div class="end dtend" title="2013-04-23T17:00:00Z">End: 2013-04-23 10:00</div>
-      <div class="links"></div>
-</div>
-</td><td class="wed day-24"><div class="day">24</div>
-<div class="event-empty"></div>
-</td><td class="thu day-25"><div class="day">25</div>
-<div class="event-empty"></div>
-</td><td class="fri day-26"><div class="day">26</div>
-<div class="event-empty"></div>
-</td><td class="sat day-27"><div class="day">27</div>
-<div class="event-empty"></div>
-</td><td class="sun day-28"><div class="day">28</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="odd"><td class="mon day-29"><div class="day">29</div>
-<div class="event-empty"></div>
-</td><td class="tue day-30"><div class="day">30</div>
-<div class="event-empty"></div>
-</td><td class="pad"></td><td class="pad"></td><td class="pad"></td><td class="pad"></td><td class="pad"></td> </tr>
-</tbody>
-</table>
-</div></div>
-<div class="ical-link"><a href="http://www.springsource.org/event/2013/04/01/ical/all/all/30" title="Add this calendar to your iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Add to iCalendar" /></a></div>
-
-        
-        </div>
-        </td>
-
-        <td width="60px">&nbsp;</td>
-        <td width="320px" valign="top" align="left">
-
-        <div align="right" style="margin-top:35px;margin-bottom:47px;">
-         <p>
-			<a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+<table>
+<tr>
+<td width="95%">
+	  <h1 class="title" id="page-title">Spring Data Redis</h1>
+</td>
+<td align="right">
+      <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
 <script type="text/javascript">
 var a2a_config = a2a_config || {};
 a2a_config.color_main = "e5e6e6";
@@ -341,20 +231,308 @@ var a2a_config = a2a_config || {};
 a2a_config.onclick = 1;
 </script>
 <script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
-         </p>
+</td>
+</tr>
+</table>
+	  <p>
+	  	  </p>
+
+           <div id="node-2859" class="node node-type-project-page node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/spring-data" title="Spring Data">Spring Data</a>
+    </h2>
+  
+  
+      <div class="meta">
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_34 first"><a href="/taxonomy/term/34" rel="tag" title="">Spring Data for Apache Hadoop</a></li>
+<li class="taxonomy_term_35"><a href="/taxonomy/term/35" rel="tag" title="">Spring Data Gemfire</a></li>
+<li class="taxonomy_term_32"><a href="/taxonomy/term/32" rel="tag" title="">Spring Data JBDC</a></li>
+<li class="taxonomy_term_31"><a href="/taxonomy/term/31" rel="tag" title="">Spring Data JPA</a></li>
+<li class="taxonomy_term_29"><a href="/taxonomy/term/29" rel="tag" title="">Spring Data MongoDB</a></li>
+<li class="taxonomy_term_30"><a href="/taxonomy/term/30" rel="tag" title="">Spring Data Neo4J</a></li>
+<li class="taxonomy_term_28 active"><a href="/taxonomy/term/28" rel="tag" title="" class="active">Spring Data Redis</a></li>
+<li class="taxonomy_term_33 last"><a href="/taxonomy/term/33" rel="tag" title="">Spring Data REST</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <div class="field field-type-text field-field-overview">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Spring Data makes it easier to build Spring-powered applications that use new data access technologies such as non-relational databases, map-reduce frameworks, and cloud based data services as well as provide improved support for relational database technologies.</p>
+<p>Spring Data is an umbrella open source project which contains many subprojects that are specific to a given database. The projects are developed by working together with many of the companies and developers that are behind these exciting technologies.</p>
+<p>Now available from O'Reilly Media is the book:</p>
+<p><a href="http://shop.oreilly.com/product/0636920024767.do#">Spring Data: Modern Data Access for Enterprise Java</a>.</p>
+
         </div>
-
-
-        
-
-
+        </div>
 </div>
+<div class="field field-type-text field-field-video">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>&nbsp;<img alt="Spring Data" width="320" height="186" src="/files/imagefield_thumbs/project/images/Project_Data.png" /></p>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img  class="imagefield imagefield-field_image" width="320" height="184" alt="" src="http://www.springsource.org/files/imagefield_default_images/placeholder_video_spring_projects.png?1317158563" />        </div>
+        </div>
+</div>
+<h3>Spring Data Projects:</h3>
+<table>
+    <tbody>
+        <tr style="border-top:1px solid #ccc;border-bottom:1px solid #ccc;">
+            <td width="20%"><b>Category</b></td>
+            <td width="20%" align="left"><b>Sub-project</b></td>
+            <td width="60%">&nbsp;</td>
+        </tr>
+        <tr valign="top">
+            <td>Relational Databases</td>
+            <td><a href="http://www.springsource.org/spring-data/jpa">JPA</a></td>
+            <td>Spring Data JPA - Simplifies the development of creating a JPA-based data access layer</td>
+        </tr>
+        <tr valign="top">
+            <td>&nbsp;</td>
+            <td><a href="http://www.springsource.org/spring-data/jdbc-extensions">JDBC Extensions</a></td>
+            <td>Support for Oracle RAC, Advanced Queuing, and Advanced datatypes. Support for using QueryDSL with JdbcTemplate.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #ccc;">
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+        <tr valign="top">
+            <td>Big Data</td>
+            <td><a href="http://www.springsource.org/spring-data/hadoop">Apache Hadoop</a></td>
+            <td>The <a href="http://hadoop.apache.org" target="_blank">Apache Hadoop</a> project is an open-source implementation of frameworks for reliable, scalable, distributed computing and data storage.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #ccc;">
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+        </tr>
+        <tr valign="top">
+            <td>Data-Grid</td>
+            <td><a href="http://www.springsource.org/spring-gemfire">GemFire</a></td>
+            <td><a href="http://www.vmware.com/products/application-platform/vfabric-gemfire" target="_blank">VMware vFabric GemFire</a> is a distributed data management platform providing dynamic scalability, high performance, and database-like persistence. It blends advanced techniques like replication, partitioning, data-aware routing, and continuous querying.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #ccc;">
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr valign="top">
+            <td>HTTP</td>
+            <td><a href="http://www.springsource.org/spring-data/rest">REST</a></td>
+            <td>Spring Data REST - Perform CRUD operations of your persistence model using HTTP and Spring Data Repositories.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #ccc;">
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+        </tr>
+        <tr valign="top">
+            <td>Key Value Stores</td>
+            <td><a href="http://www.springsource.org/spring-data/redis">Redis</a></td>
+            <td><a href="http://redis.io/" target="_blank">Redis</a> is an open source, advanced key-value store.</td>            
+        </tr>
+        <tr style="border-bottom:1px solid #ccc;">
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+        </tr>
+        <tr valign="top">
+            <td>Document Stores</td>
+            <td><a href="http://www.springsource.org/spring-data/mongodb">MongoDB</a></td>
+            <td><a href="http://www.mongodb.org" target="_blank">MongoDB</a> is a scalable, high-performance, open source, document-oriented database.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #ccc;">
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr valign="top">
+            <td>Graph Databases</td>
+            <td><a href="http://www.springsource.org/spring-data/neo4j">Neo4j</a></td>
+            <td><a href="http://neo4j.org/" target="_blank">Neo4j</a> is a graph database, a fully transactional database that stores data structured as graphs.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #ccc;">
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+        </tr>
+        <tr valign="top">
+            <td>Column Stores</td>
+            <td><a href="http://www.springsource.org/spring-data/hadoop">HBase</a></td>
+            <td><a href="http://hbase.apache.org/" target="_blank">Apache HBase</a> is an open-source, distributed, versioned, column-oriented store modeled after Google' Bigtable.  HBase functionality is part of the Spring for Apache Hadoop project.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #ccc;">
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+        </tr>
+        <tr valign="top">
+            <td>Common Infrastructure</td>
+            <td><a href="http://www.springsource.org/spring-data/commons">Commons</a></td>
+            <td>Provides shared infrastructure for use across various data access projects. General support for cross-database persistence is located here</td>
+        </tr>
+        <tr style="border-bottom:1px solid #ccc;">
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Community-driven projects:</h3>
+<table style="width: 100%">
+    <tbody>
+        <tr style="border-top:1px solid #ccc;border-bottom:1px solid #ccc;">
+            <td width="40%" align="left"><b>Sub-project</b></td>
+            <td width="60%">&nbsp;</td>
+        </tr>
+        <tr valign="top">
+            <td><a href="https://github.com/SpringSource/spring-data-solr">Spring Data Solr</a></td>
+            <td>Spring Data repositories abstraction for <a href="http://lucene.apache.org/solr/">Apache Solr</a></td>
+        </tr>
+        <tr valign="top">
+            <td><a href="https://github.com/BioMedCentralLtd/spring-data-elasticsearch">Spring Data Elasticsearch</a></td>
+            <td>Spring Data repositories abstraction for <a href="http://www.elasticsearch.org/">Elasticsearch</a></td>
+        </tr>
+        <tr valign="top">
+            <td><a href="https://github.com/couchbaselabs/spring-data-couchbase">Spring Data Couchbase</a></td>
+            <td>Spring Data repositories abstraction for <a href="http://www.couchbase.com/">Couchbase</a></td>
+        </tr>
+        <tr valign="top">
+            <td><a href="https://github.com/whirlwind-match/fuzzydb-spring/">Spring Data FuzzyDB</a></td>
+            <td>Spring Data repositories abstraction for <a href="https://github.com/whirlwind-match/fuzzydb">FuzzyDB</a></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h3>Attic</h3>
+<p>The <a href="http://www.springsource.org/spring-data/attic">Attic</a> contains links to Spring Data projects that are no longer maintained.</p>
+<h3>Participation</h3>
+<p>Please reach out on the <a href="http://forum.springsource.org/forumdisplay.php?f=80">forums</a> or <a href="http://jira.springsource.org">JIRA</a> with specific questions,requests, and expressing interest to participate in development on github at <a href="https://github.com/SpringSource">http://github.com/SpringSource</a>.</p>
+<h3>Twitter</h3>
+<p>Follow SpringData on Twitter: <a href="http://twitter.com/springdata">SpringData</a></p>
+<h4>Follow the team members on Twitter</h4>
+<ul>
+    <li>Graeme Rocher:<a href="http://twitter.com/graemerocher">graemerocher</a></li>
+    <li>Mark Pollack: <a href="http://twitter.com/markpollack">markpollack</a></li>
+    <li>Thomas Risberg:<a href="http://twitter.com/trisberg">trisberg</a></li>
+    <li>Costin Leau: <a href="http://twitter.com/costinl">costinl</a></li>
+    <li>Oliver Gierke: <a href="http://twitter.com/olivergierke">olivergierke</a></li>
+    <li>Jon Brisbin: <a href="http://twitter.com/j_brisbin">j_brisbin</a></li>
+    <li>David Turanski: <a href="http://twitter.com/dturanski">dturanski</a></li>
+    <li>Henrik Lundgren: <a href="http://twitter.com/henrik_lundgren">henrik_lundgren</a></li>
+    <li>Michael Hunger: <a href="http://twitter.com/mesirii">mesirii</a></li>
+    <li>David Montag: <a href="http://twitter.com/dmontag">dmontag</a></li>
+    <li>Emil Eifrem: <a href="http://twitter.com/emileifrem">emileifrem</a></li>
+    <li>Tareq Abedrabbo: <a href="http://twitter.com/tareq_abedrabbo">tareq_abedrabbo</a></li>
+</ul><div class="field field-type-text field-field-quickjump">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <table width="100%" class="quickjump">
+    <tbody>
+        <tr>
+            <td width="50%" valign="top">
+            <p><a href="/spring-data/jpa">JPA</a><br />
+            <a href="/spring-data/rest">REST</a><br />
+            <a href="/spring-data/jdbc-extensions">JDBC Extensions</a><br />
+	    <a href="/spring-data/hadoop">Apache Hadoop</a><br />
+            <a href="/spring-gemfire">GemFire</a>
+            </p>
+            </td>
+            <td width="50%" valign="top">
+            <p><a href="/spring-data/redis">Redis</a><br/>
+            <a href="/spring-data/mongodb">MongoDB</a><br />
+            <a href="/spring-data/neo4j">Neo4j</a><br />
+            <a href="/spring-data/commons">Commons</a></p>
+            </td>
+        </tr>
+    </tbody>
+</table>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-documentation">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><a href="/spring-data/mongodb#documentation">MongoDB</a> <br />
+<a href="/spring-data/neo4j#documentation">Neo4j</a> <br />
+<a href="/spring-data/redis#documentation">Redis</a> <br />
+<a href="/spring-data/jdbc-extensions#documentation">JDBC Extensions</a> <br />
+<a href="/spring-data/jpa#documentation">JPA</a> <br />
+<a href="/spring-data/rest#documentation">REST</a> <br />
+<a href="/spring-data/commons#documentation">Commons</a></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-relateddiscussions">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><a href="http://forum.springsource.org/forumdisplay.php?27-Data">Data</a> <br />
+<a href="http://forum.springsource.org/forumdisplay.php?80-NoSQL">NoSQL</a> <br />
+<a href="http://forum.springsource.org/forumdisplay.php?77-GemFire">GemFire</a> <br />
+<a href="http://forum.springsource.org/forumdisplay.php?40-LDAP">LDAP</a></p>        </div>
+        </div>
+</div>
+  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
+
+
+            </div>
+    </div>
+        </td>
+
+        <td width="50px">&nbsp;</td>
+        <td width="310px" valign="top" align="left">
+
+              <!--[If IE 7]><br><![endif]-->
+      <div style="margin-top:-40px;">
+      <div align="right">
+
+	  <p style="line-height:26px;">&nbsp;</p>
+	  <p>
+
+      </p>
+      </div>
+
+	              
+      
+       
+        
+        
+        
+        </div>
         </td>
 
         </tr>
         </table>
 
-                  <div class="feed-icons"><a href="http://www.springsource.org/event/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="Events at &lt;em&gt;SpringSource.org&lt;/em&gt;" width="16" height="16" /></a></div>
+
+                  <div class="feed-icons"><a href="/taxonomy/term/28/0/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="RSS - Spring Data Redis" width="16" height="16" /></a></div>
         
       </div></div><!-- /.section, /#content -->
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:geourl="http://geourl.org/rss/module/" xmlns:icbm="http://postneo.com/icbm"  xml:base="http://www.springsource.org">
+<channel>
+ <title>SpringSource.org - Events Feed</title>
+ <link>http://www.springsource.org/event/feed</link>
+ <description> April 23 2013- May 23 2013</description>
+ <language>en</language>
+<item>
+ <title>Webinar: Hadoop and Pivotal HD</title>
+ <link>http://www.springsource.org/node/4306</link>
+ <description>&lt;div class=&quot;start&quot;&gt;Start: 2013-04-23 10:00&lt;/div&gt;
+&lt;div class=&quot;end&quot;&gt;End: 2013-04-23 10:00&lt;/div&gt;
+n/a</description>
+ <comments>http://www.springsource.org/node/4306#comments</comments>
+ <pubDate>Thu, 18 Apr 2013 17:30:20 -0400</pubDate>
+</item>
+</channel>
+</rss>

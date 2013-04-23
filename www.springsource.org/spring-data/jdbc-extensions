@@ -3,9 +3,8 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Events | SpringSource.org</title>
+  <title>Spring Data - JDBC Extensions | SpringSource.org</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="alternate" type="application/rss+xml" title="Events at &lt;em&gt;SpringSource.org&lt;/em&gt;" href="http://www.springsource.org/event/feed" />
 <link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
   <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
@@ -23,7 +22,6 @@
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
@@ -55,7 +53,6 @@
 <script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
 <script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
 <script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
-<script type="text/javascript" src="/misc/tableheader.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
@@ -65,8 +62,7 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
 //--><!]]>
 </script>
 </head>
-<body class="page not-front not-logged-in no-sidebars page-event section-event">
-
+<body class="page not-front not-logged-in node-type-project-page no-sidebars page-spring-data-jdbc-extensions section-spring-data page-panels">
 
 	  
 
@@ -198,139 +194,254 @@ box-shadow: 0 0 15px #333;">
 
         
         
-        <!-- <div class="breadcrumb"><a href="/">Home</a> › <a href="/event" class="active">Events</a> › </div> -->
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › </div> -->
 
 	  
 	  
 	  
                         
 
-       <table width="100%" style="margin-top:-10px;">
-        <tr>
-         <td width="600px" valign="top" align="left">
-          <div style="width:600px;margin-top:5px;">
-          <a href="http://blog.springsource.com">Visit our blog</a>
-          <h1 class="title" style="margin-top:5px;margin-bottom:50px;" id="main-page-title">News & Events</h1>
-          <h2>Events</h2>
+       <table width="100%" >
+       <tr>
+     <td width="620px" valign="top" align="left">
+       <div style="width:600px;">
+       
+ <div id="content-area">
 
+	<div style="margin-top:-20px;">
+	<!--[If IE 7]><br><![endif]-->
+	  <p class="intro" style="margin-bottom:5px;"><a href="/projects">Spring Projects</a></p>
+	  <h1 class="title" id="main-page-title">Spring Data - JDBC Extensions</h1>
 
-          
-          <div id="content-area">
+	  <p>
+	  <p>Spring Data JDBC Extensions&nbsp;is part of the umbrella <a href="http://www.springsource.org/spring-data">Spring Data</a> project which provides&nbsp;support for&nbsp;writing JDBC based&nbsp;applications. &nbsp;</p>
+<p>The bulk of the support is made up of code ported from the SpringSource project &quot;Advanced Pack for Oracle Database&quot; that was available for support subscription customers. We are now making this code available to all Spring users and any new developments will be made in the Spring Data JDBC Extensions project.</p>
+<p>There is also support for using the <a href="http://www.querydsl.com/static/querydsl/2.1.0/reference/html/ch02s04.html">QueryDSL SQL module</a> to provide type-safe query, insert, update and delete functionality.</p>
+	  </p>
 
+           <div id="node-3107" class="node node-type-project-page build-mode-full"><div class="node-inner">
 
-           <div class="event-filter-control"><form action="/event"  accept-charset="UTF-8" method="post" id="event-taxonomy-filter-form">
-<div><div class="form-item" id="edit-event-term-select-wrapper">
- <select name="event_term_select" onchange="this.form.submit()" class="form-select" id="edit-event-term-select" ><option value="all">(all)</option><option value="5">Events - Event</option></select>
- <div class="description">Select event terms to filter by</div>
-</div>
-<input type="hidden" name="form_build_id" id="form-2a8348e4c0d2c58da4230e6f915c9e21" value="form-2a8348e4c0d2c58da4230e6f915c9e21"  />
-<input type="hidden" name="form_id" id="edit-event-taxonomy-filter-form" value="event_taxonomy_filter_form"  />
-
-</div></form>
-</div><div class="event-filter-control"><form action="/event"  accept-charset="UTF-8" method="post" id="event-type-filter-form">
-<div><div class="form-item" id="edit-event-type-select-wrapper">
- <select name="event_type_select" onchange="this.form.submit()" class="form-select" id="edit-event-type-select" ><option value="all">(all)</option><option value="event">Event</option></select>
- <div class="description">Select event type to filter by</div>
-</div>
-<input type="hidden" name="form_build_id" id="form-5eba165a3f7136d2b5b0e33ac1a590ac" value="form-5eba165a3f7136d2b5b0e33ac1a590ac"  />
-<input type="hidden" name="form_id" id="edit-event-type-filter-form" value="event_type_filter_form"  />
-
-</div></form>
-</div><ul class="links"><li class="event_week first"><a href="/event/2013/04/23/week/" title="Week view">Week</a></li>
-<li class="event_day"><a href="/event/2013/04/23/day/" title="Day view">Day</a></li>
-<li class="event_table"><a href="/event/2013/04/23/table/" title="Table view">Table</a></li>
-<li class="event_list last"><a href="/event/2013/04/23/list/" title="List view">List</a></li>
-</ul><div class="event-calendar"><div class="month-view"><table class="sticky-enabled">
-<caption><span class="prev"><a href="/event/2013/03/23/month/all/all/1">«</a></span>  April 2013 <span class="next"><a href="/event/2013/05/23/month/all/all/1">»</a></span></caption>
- <thead><tr><th class="mon">Mon</th><th class="tue">Tue</th><th class="wed">Wed</th><th class="thu">Thu</th><th class="fri">Fri</th><th class="sat">Sat</th><th class="sun">Sun</th> </tr></thead>
-<tbody>
- <tr class="odd"><td class="mon day-01"><div class="day">1</div>
-<div class="event-empty"></div>
-</td><td class="tue day-02"><div class="day">2</div>
-<div class="event-empty"></div>
-</td><td class="wed day-03"><div class="day">3</div>
-<div class="event-empty"></div>
-</td><td class="thu day-04"><div class="day">4</div>
-<div class="event-empty"></div>
-</td><td class="fri day-05"><div class="day">5</div>
-<div class="event-empty"></div>
-</td><td class="sat day-06"><div class="day">6</div>
-<div class="event-empty"></div>
-</td><td class="sun day-07"><div class="day">7</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="even"><td class="mon day-08"><div class="day">8</div>
-<div class="event-empty"></div>
-</td><td class="tue day-09"><div class="day">9</div>
-<div class="event-empty"></div>
-</td><td class="wed day-10"><div class="day">10</div>
-<div class="event-empty"></div>
-</td><td class="thu day-11"><div class="day">11</div>
-<div class="event-empty"></div>
-</td><td class="fri day-12"><div class="day">12</div>
-<div class="event-empty"></div>
-</td><td class="sat day-13"><div class="day">13</div>
-<div class="event-empty"></div>
-</td><td class="sun day-14"><div class="day">14</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="odd"><td class="mon day-15"><div class="day">15</div>
-<div class="event-empty"></div>
-</td><td class="tue day-16"><div class="day">16</div>
-<div class="event-empty"></div>
-</td><td class="wed day-17"><div class="day">17</div>
-<div class="event-empty"></div>
-</td><td class="thu day-18"><div class="day">18</div>
-<div class="event-empty"></div>
-</td><td class="fri day-19"><div class="day">19</div>
-<div class="event-empty"></div>
-</td><td class="sat day-20"><div class="day">20</div>
-<div class="event-empty"></div>
-</td><td class="sun day-21"><div class="day">21</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="even"><td class="mon day-22"><div class="day">22</div>
-<div class="event-empty"></div>
-</td><td class="tue day-23 today selected"><div class="day">23</div>
-<div class="event monthview vevent">
-  <div class="stripe-1"></div>
-      <div class="type"> <a href="/event/2013/04/23/month/event" title="limit view to events of this type">(event)</a> </div>
-    <div class="title summary"><a href="/node/4306" title="view this event">Webinar: Hadoop and Pivotal HD</a></div>
-      <div class="start dtstart" title="2013-04-23T17:00:00Z">Start: 2013-04-23 10:00</div>
-          <div class="end dtend" title="2013-04-23T17:00:00Z">End: 2013-04-23 10:00</div>
-      <div class="links"></div>
-</div>
-</td><td class="wed day-24"><div class="day">24</div>
-<div class="event-empty"></div>
-</td><td class="thu day-25"><div class="day">25</div>
-<div class="event-empty"></div>
-</td><td class="fri day-26"><div class="day">26</div>
-<div class="event-empty"></div>
-</td><td class="sat day-27"><div class="day">27</div>
-<div class="event-empty"></div>
-</td><td class="sun day-28"><div class="day">28</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="odd"><td class="mon day-29"><div class="day">29</div>
-<div class="event-empty"></div>
-</td><td class="tue day-30"><div class="day">30</div>
-<div class="event-empty"></div>
-</td><td class="pad"></td><td class="pad"></td><td class="pad"></td><td class="pad"></td><td class="pad"></td> </tr>
-</tbody>
-</table>
-</div></div>
-<div class="ical-link"><a href="http://www.springsource.org/event/2013/04/01/ical/all/all/30" title="Add this calendar to your iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Add to iCalendar" /></a></div>
-
-        
+  
+  
+  
+      <div class="meta">
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_32 first last"><a href="/taxonomy/term/32" rel="tag" title="">Spring Data JBDC</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <div class="field field-type-text field-field-overview">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Spring Data JDBC Extensions&nbsp;is part of the umbrella <a href="http://www.springsource.org/spring-data">Spring Data</a> project which provides&nbsp;support for&nbsp;writing JDBC based&nbsp;applications. &nbsp;</p>
+<p>The bulk of the support is made up of code ported from the SpringSource project &quot;Advanced Pack for Oracle Database&quot; that was available for support subscription customers. We are now making this code available to all Spring users and any new developments will be made in the Spring Data JDBC Extensions project.</p>
+<p>There is also support for using the <a href="http://www.querydsl.com/static/querydsl/2.1.0/reference/html/ch02s04.html">QueryDSL SQL module</a> to provide type-safe query, insert, update and delete functionality.</p>
         </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img  class="imagefield imagefield-field_image" width="320" height="184" alt="" src="http://www.springsource.org/files/imagefield_default_images/placeholder_video_spring_projects.png?1317158563" />        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-download-link">
+    <div class="field-items">
+            <div class="field-item odd">
+                    http://www.springsource.com/download/community?project=Spring%20Data%20JDBC        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-maven-artifacts">
+    <div class="field-items">
+            <div class="field-item odd">
+                    #maven        </div>
+        </div>
+</div>
+<div style="width:600px">
+<h3>Features</h3>
+<p><b>Core</b></p>
+<ul>
+    <li>QueryDSL Support -&nbsp; Support for using the QueryDSL SQL module with a <a href="http://static.springsource.org/spring-data/data-jdbc/docs/1.0.0.RC1/reference/html/#core.querydsl">QueryDslJdbcTemplate</a> that combines the functionality of QueryDSL and the familiar JdbcTemplate.&nbsp; This provides a type-safe API for query, insert, update and delete operations combined with the conveniences of Spring's JdbcTemplate support, e.g. RowMapper, resource management, declarative transaction management, etc.</li>
+</ul>
+<p><b>Oracle</b></p>
+<ul>
+    <li>RAC &quot;Fast Connection Failover&quot; -&nbsp; The RAC &quot;Fast Connection Failover&quot; provides the ability to have a Spring application transparently failover when a database node fails.</li>
+    <li>Streams AQ (Advanced Queueing) &nbsp;-&nbsp;The AQ support provides the option of using a single local transaction manager for both database and message access without resorting to expensive distributed 2-phase commit<br />
+    transaction management.</li>
+    <li>XML Types -&nbsp;Custom classes, examples and documentation on how to use Oracle JDBC extensions for their native XML Type.</li>
+    <li>Advanced Data Types -&nbsp;Custom classes, examples and documentation on how to use Oracle JDBC extensions for their advanced data types like STRUCT and ARRAY.</li>
+    <li>Custom DataSource Connection Preparer -&nbsp;This feature provides an API for customizing the connection environment with Oracle specific session settings etc.</li>
+</ul>
+<h3>Latest News</h3>
+<ul>
+    <li><a href="http://www.springsource.org/node/3734">Spring Data JDBC&nbsp;Extensions 1.0.0.RELEASE Released</a> (November 12, 2012)</li>
+    <li>Spring Data JDBC&nbsp;Extensions 1.0.0.RC4 Released (October 15, 2012)</li>
+    <li>Spring Data JDBC&nbsp;Extensions 1.0.0.RC3 Released (June 25, 2012)</li>
+    <li>Spring Data JDBC&nbsp;Extensions 1.0.0.RC2 Released (June 1, 2012)</li>
+    <li><a href="http://www.springsource.org/node/3286">Spring Data JDBC&nbsp;Extensions 1.0.0.RC1 Released</a> (October 18, 2011)</li>
+    <li><a href="http://www.springsource.org/node/3192">Spring Data JDBC Extensions&nbsp;1.0.0.M2 Released</a> &nbsp;(July 28, 2011)</li>
+</ul>
+<h3>Resources</h3>
+<ul>
+    <li><a href="http://www.springsource.com/download/community?project=Spring%20Data%20JDBC"> Downloads</a></li>
+    <li><a href="http://forum.springsource.org/forumdisplay.php?f=27">Forum</a></li>
+    <li><a href="https://github.com/SpringSource/spring-sqlfire-samples">Sample Application</a></li>
+</ul>
+<p><a name="project-resources" id="project-resources"></a></p>
+<table width="600px" cellspacing="5" cellpadding="5" border="1">
+    <tbody>
+        <tr>
+            <th>Javadocs</th>
+            <td><a target="_blank" href="http://static.springsource.org/spring-data/data-jdbc/docs/current/api/">HTML</a></td>
+        </tr>
+        <tr>
+            <th>Reference Documentation</th>
+            <td><a target="_blank" href="http://static.springsource.org/spring-data/data-jdbc/docs/current/reference/html/"> HTML</a> | <a target="_blank" href="http://static.springsource.org/spring-data/data-jdbc/docs/current/reference/pdf/spring-data-jdbc-ext-reference.pdf"> PDF</a></td>
+        </tr>
+        <tr>
+            <th>Issue Tracking</th>
+            <td><a target="_blank" href="https://jira.springsource.org/browse/DATAJDBC">https://jira.springsource.org/browse/DATAJDBC</a></td>
+        </tr>
+        <tr>
+            <th>Source Control</th>
+            <td><a href="https://github.com/SpringSource/spring-data-jdbc-ext">https://github.com/SpringSource/spring-data-jdbc-ext</a></td>
+        </tr>
+        <tr>
+            <th>Source Code Browsing</th>
+            <td><a target="_blank" href="https://fisheye.springsource.org/browse/spring-data-jdbc-ext">https://fisheye.springsource.org/browse/spring-data-jdbc-ext</a></td>
+        </tr>
+        <tr>
+            <th>CI Build</th>
+            <td><a href="http://build.springsource.org/browse/SPRINGDATA-DATAJDBC"><span style="text-decoration: underline;">http://build.springsource.org/browse/SPRINGDATA-DATAJDBC</span></a></td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p><a name="maven"></a></p>
+<h2>Maven Artifacts</h2>
+<p>Here is the Spring Release Repository:</p>
+<pre>
+&lt;repository&gt;
+ &lt;id&gt;spring-release&lt;/id&gt;
+ &lt;name&gt;Spring RELEASE Repository&lt;/name&gt;
+ &lt;url&gt;http://repo.springsource.org/libs-release&lt;/url&gt;
+&lt;/repository&gt;
+</pre>
+<p>Here is the dependency:</p>
+<pre>
+&lt;dependency&gt;
+ &lt;groupId&gt;org.springframework.data&lt;/groupId&gt;
+ &lt;artifactId&gt;spring-data-oracle&lt;/artifactId&gt;
+ &lt;version&gt;1.0.0.RELEASE&lt;/version&gt;
+&lt;/dependency&gt; 
+&lt;dependency&gt;
+ &lt;groupId&gt;org.springframework.data&lt;/groupId&gt;
+ &lt;artifactId&gt;spring-data-jdbc-core&lt;/artifactId&gt;
+ &lt;version&gt;1.0.0.RELEASE&lt;/version&gt;
+&lt;/dependency&gt; </pre>
+
+<table width="100%" cellspacing="5" cellpadding="5" border="1">
+    <tbody>
+        <tr>
+            <td style="text-align: left;"><span style="font-weight: bold;">Maven Snapshot Repository</span></td>
+            <td>
+            <div style="width:450px;overflow:auto">
+            <pre>
+&lt;repository&gt;
+ &lt;id&gt;spring-snapshot&lt;/id&gt;
+ &lt;name&gt;Spring SNAPSHOT Repository&lt;/name&gt;
+ &lt;url&gt;http://repo.springsource.org/libs-snapshot&lt;/url&gt;
+ &lt;snapshots&gt;
+  &lt;enabled&gt;true&lt;/enabled&gt;
+ &lt;/snapshots&gt;
+&lt;/repository&gt;
+</pre>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left;"><span style="font-weight: bold;">Maven Snapshot Dependency</span></td>
+            <td>
+            <div style="width:450px;overflow:auto">
+            <pre>
+&lt;dependency&gt;
+ &lt;groupId&gt;org.springframework.data&lt;/groupId&gt;
+ &lt;artifactId&gt;spring-data-oracle&lt;/artifactId&gt;
+ &lt;version&gt;1.1.0.BUILD-SNAPSHOT&lt;/version&gt;
+&lt;/dependency&gt; 
+&lt;dependency&gt;
+ &lt;groupId&gt;org.springframework.data&lt;/groupId&gt;
+ &lt;artifactId&gt;spring-data-jdbc-core&lt;/artifactId&gt;
+ &lt;version&gt;1.1.0.BUILD-SNAPSHOT&lt;/version&gt;
+&lt;/dependency&gt; </pre>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p>&nbsp;</p><div class="field field-type-text field-field-quickjump">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <table width="100%" class="quickjump">
+    <tbody>
+        <tr>
+            <td width="50%" valign="top">
+            <p><a target="_blank" href="http://www.springsource.com/download/community?project=Spring%20Data%20JDBC">Download</a><br />
+            <a href="#maven">Maven Artifacts</a><br />
+            <a href="#documentation">Documentation</a><br />
+            <a href="#relateddiscussions">Discussions</a></p>
+            </td>
+            <td width="50%" valign="top">
+            <p><a target="_blank" href="https://jira.springsource.org/browse/DATAJDBC">Issue Tracker</a><br />
+            <a target="_blank" href="https://github.com/SpringSource/spring-data-jdbc-ext">Source Repository</a></p>
+            </td>
+        </tr>
+    </tbody>
+</table>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-documentation">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Reference Manual (<a target="_blank" href="http://static.springsource.org/spring-data/data-jdbc/docs/1.0.0.RC1/reference/html/">HTML</a> | <a target="_blank" href="http://static.springsource.org/spring-data/data-jdbc/docs/1.0.0.RC1/reference/pdf/spring-data-jdbc-reference.pdf">PDF</a>) <br />
+<a target="_blank" href="http://static.springsource.org/spring-data/data-jdbc/docs/1.0.0.RC1/api/">Javadocs</a></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-otherresources">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><a target="_blank" href="https://fisheye.springsource.org/browse/spring-data-jdbc-ext">Source Code Browsing (Fisheye)</a> <br />
+<a target="_blank" href="http://build.springsource.org/browse/SPRINGDATA-DATAJDBC">Build Status</a></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-relateddiscussions">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><a href="http://forum.springsource.org/forumdisplay.php?f=27">Data</a></p>        </div>
+        </div>
+</div>
+  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
+
+
+            </div>
+    </div>
         </td>
 
-        <td width="60px">&nbsp;</td>
-        <td width="320px" valign="top" align="left">
+        <td width="50px">&nbsp;</td>
+        <td width="310px" valign="top" align="left">
 
-        <div align="right" style="margin-top:35px;margin-bottom:47px;">
-         <p>
-			<a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+              <!--[If IE 7]><br><![endif]-->
+      <div style="margin-top:-40px;">
+      <div align="right">
+
+	  <p style="line-height:26px;">&nbsp;</p>
+	  <p>
+	  <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
 <script type="text/javascript">
 var a2a_config = a2a_config || {};
 a2a_config.color_main = "e5e6e6";
@@ -341,20 +452,67 @@ var a2a_config = a2a_config || {};
 a2a_config.onclick = 1;
 </script>
 <script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
-         </p>
-        </div>
+      </p>
+      </div>
 
-
+	        <img  class="imagefield imagefield-field_image" width="320" height="184" alt="" src="http://www.springsource.org/files/imagefield_default_images/placeholder_video_spring_projects.png?1317158563" />      
+                  <div style="height:127px;width:100%;background-color:#fff;" align="center">
+      <p style="line-height:0px;">&nbsp;</p>
+      <p style="margin-top:12px;">
+      <!--[If IE 7]><p style="margin-top:-50px;">&nbsp;</p><![endif]-->
+      <a href="http://www.springsource.com/download/community?project=Spring%20Data%20JDBC" target="_blank"><img src="/sites/all/themes/s2org11/images/button_download_green.png"></a><br>
+      <a href="#maven">View Maven Artifacts</a>
+      </p>
+      </div>
+      <br>
+            
+               	<a name="quickjump" title="quickjump"></a>
+			<h2>Quick Jump</h2>
+        	<table width="100%" class="quickjump">
+    <tbody>
+        <tr>
+            <td width="50%" valign="top">
+            <p><a target="_blank" href="http://www.springsource.com/download/community?project=Spring%20Data%20JDBC">Download</a><br />
+            <a href="#maven">Maven Artifacts</a><br />
+            <a href="#documentation">Documentation</a><br />
+            <a href="#relateddiscussions">Discussions</a></p>
+            </td>
+            <td width="50%" valign="top">
+            <p><a target="_blank" href="https://jira.springsource.org/browse/DATAJDBC">Issue Tracker</a><br />
+            <a target="_blank" href="https://github.com/SpringSource/spring-data-jdbc-ext">Source Repository</a></p>
+            </td>
+        </tr>
+    </tbody>
+</table>        	<p style="line-height:0px;">&nbsp;</p>
         
-
-
-</div>
+        
+        
+        	<a name="documentation" title="documentation"></a>
+        	<hr>
+        	<h2>Documentation</h2>
+        	<p>Reference Manual (<a target="_blank" href="http://static.springsource.org/spring-data/data-jdbc/docs/1.0.0.RC1/reference/html/">HTML</a> | <a target="_blank" href="http://static.springsource.org/spring-data/data-jdbc/docs/1.0.0.RC1/reference/pdf/spring-data-jdbc-reference.pdf">PDF</a>) <br />
+<a target="_blank" href="http://static.springsource.org/spring-data/data-jdbc/docs/1.0.0.RC1/api/">Javadocs</a></p>			<p style="line-height:0px;">&nbsp;</p>
+        
+        
+        	<a name="otherresources" title="otherresources"></a>
+        	<hr>
+        	<h2>Other Resources</h2>
+        	<p><a target="_blank" href="https://fisheye.springsource.org/browse/spring-data-jdbc-ext">Source Code Browsing (Fisheye)</a> <br />
+<a target="_blank" href="http://build.springsource.org/browse/SPRINGDATA-DATAJDBC">Build Status</a></p>			<p style="line-height:0px;">&nbsp;</p>
+        
+        
+        	<a name="relateddiscussions" title="relateddiscussions"></a>
+        	<hr>
+        	<h2>Related Discussions</h2>
+        	<p><a href="http://forum.springsource.org/forumdisplay.php?f=27">Data</a></p>			<p style="line-height:0px;">&nbsp;</p>
+			<hr>
+		</div>
         </td>
 
         </tr>
         </table>
 
-                  <div class="feed-icons"><a href="http://www.springsource.org/event/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="Events at &lt;em&gt;SpringSource.org&lt;/em&gt;" width="16" height="16" /></a></div>
+
         
       </div></div><!-- /.section, /#content -->
 

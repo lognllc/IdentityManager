@@ -3,9 +3,8 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Events | SpringSource.org</title>
+  <title>Spring Data REST 1.1.0.M1 Released | SpringSource.org</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="alternate" type="application/rss+xml" title="Events at &lt;em&gt;SpringSource.org&lt;/em&gt;" href="http://www.springsource.org/event/feed" />
 <link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
   <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
@@ -23,7 +22,7 @@
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/event/event.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/comment/comment.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
@@ -55,7 +54,6 @@
 <script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
 <script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
 <script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
-<script type="text/javascript" src="/misc/tableheader.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
 <script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
@@ -65,7 +63,7 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
 //--><!]]>
 </script>
 </head>
-<body class="page not-front not-logged-in no-sidebars page-event section-event">
+<body class="page not-front not-logged-in node-type-story no-sidebars page-node-4248 section-node page-panels">
 
 
 	  
@@ -198,7 +196,7 @@ box-shadow: 0 0 15px #333;">
 
         
         
-        <!-- <div class="breadcrumb"><a href="/">Home</a> › <a href="/event" class="active">Events</a> › </div> -->
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › </div> -->
 
 	  
 	  
@@ -211,115 +209,90 @@ box-shadow: 0 0 15px #333;">
           <div style="width:600px;margin-top:5px;">
           <a href="http://blog.springsource.com">Visit our blog</a>
           <h1 class="title" style="margin-top:5px;margin-bottom:50px;" id="main-page-title">News & Events</h1>
-          <h2>Events</h2>
+          <h2>Spring Data REST 1.1.0.M1 Released</h2>
 
 
           
           <div id="content-area">
 
 
-           <div class="event-filter-control"><form action="/event"  accept-charset="UTF-8" method="post" id="event-taxonomy-filter-form">
-<div><div class="form-item" id="edit-event-term-select-wrapper">
- <select name="event_term_select" onchange="this.form.submit()" class="form-select" id="edit-event-term-select" ><option value="all">(all)</option><option value="5">Events - Event</option></select>
- <div class="description">Select event terms to filter by</div>
-</div>
-<input type="hidden" name="form_build_id" id="form-2a8348e4c0d2c58da4230e6f915c9e21" value="form-2a8348e4c0d2c58da4230e6f915c9e21"  />
-<input type="hidden" name="form_id" id="edit-event-taxonomy-filter-form" value="event_taxonomy_filter_form"  />
+           <div id="node-4248" class="node node-type-story node-promoted node-sticky build-mode-full"><div class="node-inner">
 
-</div></form>
-</div><div class="event-filter-control"><form action="/event"  accept-charset="UTF-8" method="post" id="event-type-filter-form">
-<div><div class="form-item" id="edit-event-type-select-wrapper">
- <select name="event_type_select" onchange="this.form.submit()" class="form-select" id="edit-event-type-select" ><option value="all">(all)</option><option value="event">Event</option></select>
- <div class="description">Select event type to filter by</div>
-</div>
-<input type="hidden" name="form_build_id" id="form-5eba165a3f7136d2b5b0e33ac1a590ac" value="form-5eba165a3f7136d2b5b0e33ac1a590ac"  />
-<input type="hidden" name="form_id" id="edit-event-type-filter-form" value="event_type_filter_form"  />
+  
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Jonathan Brisbin on Mon, 2013-03-11 10:41        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_4 first last"><a href="/taxonomy/term/4" rel="tag" title="News and announcements
+">News and Announcements</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+    <p>The Spring Data team is happy to announce the next major step in the evolution of exporting domain objects to the web using RESTful semantics: Spring Data REST 1.1.0.M1 is now available in the SpringSource milestone repository.</p>
 
-</div></form>
-</div><ul class="links"><li class="event_week first"><a href="/event/2013/04/23/week/" title="Week view">Week</a></li>
-<li class="event_day"><a href="/event/2013/04/23/day/" title="Day view">Day</a></li>
-<li class="event_table"><a href="/event/2013/04/23/table/" title="Table view">Table</a></li>
-<li class="event_list last"><a href="/event/2013/04/23/list/" title="List view">List</a></li>
-</ul><div class="event-calendar"><div class="month-view"><table class="sticky-enabled">
-<caption><span class="prev"><a href="/event/2013/03/23/month/all/all/1">«</a></span>  April 2013 <span class="next"><a href="/event/2013/05/23/month/all/all/1">»</a></span></caption>
- <thead><tr><th class="mon">Mon</th><th class="tue">Tue</th><th class="wed">Wed</th><th class="thu">Thu</th><th class="fri">Fri</th><th class="sat">Sat</th><th class="sun">Sun</th> </tr></thead>
-<tbody>
- <tr class="odd"><td class="mon day-01"><div class="day">1</div>
-<div class="event-empty"></div>
-</td><td class="tue day-02"><div class="day">2</div>
-<div class="event-empty"></div>
-</td><td class="wed day-03"><div class="day">3</div>
-<div class="event-empty"></div>
-</td><td class="thu day-04"><div class="day">4</div>
-<div class="event-empty"></div>
-</td><td class="fri day-05"><div class="day">5</div>
-<div class="event-empty"></div>
-</td><td class="sat day-06"><div class="day">6</div>
-<div class="event-empty"></div>
-</td><td class="sun day-07"><div class="day">7</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="even"><td class="mon day-08"><div class="day">8</div>
-<div class="event-empty"></div>
-</td><td class="tue day-09"><div class="day">9</div>
-<div class="event-empty"></div>
-</td><td class="wed day-10"><div class="day">10</div>
-<div class="event-empty"></div>
-</td><td class="thu day-11"><div class="day">11</div>
-<div class="event-empty"></div>
-</td><td class="fri day-12"><div class="day">12</div>
-<div class="event-empty"></div>
-</td><td class="sat day-13"><div class="day">13</div>
-<div class="event-empty"></div>
-</td><td class="sun day-14"><div class="day">14</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="odd"><td class="mon day-15"><div class="day">15</div>
-<div class="event-empty"></div>
-</td><td class="tue day-16"><div class="day">16</div>
-<div class="event-empty"></div>
-</td><td class="wed day-17"><div class="day">17</div>
-<div class="event-empty"></div>
-</td><td class="thu day-18"><div class="day">18</div>
-<div class="event-empty"></div>
-</td><td class="fri day-19"><div class="day">19</div>
-<div class="event-empty"></div>
-</td><td class="sat day-20"><div class="day">20</div>
-<div class="event-empty"></div>
-</td><td class="sun day-21"><div class="day">21</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="even"><td class="mon day-22"><div class="day">22</div>
-<div class="event-empty"></div>
-</td><td class="tue day-23 today selected"><div class="day">23</div>
-<div class="event monthview vevent">
-  <div class="stripe-1"></div>
-      <div class="type"> <a href="/event/2013/04/23/month/event" title="limit view to events of this type">(event)</a> </div>
-    <div class="title summary"><a href="/node/4306" title="view this event">Webinar: Hadoop and Pivotal HD</a></div>
-      <div class="start dtstart" title="2013-04-23T17:00:00Z">Start: 2013-04-23 10:00</div>
-          <div class="end dtend" title="2013-04-23T17:00:00Z">End: 2013-04-23 10:00</div>
-      <div class="links"></div>
-</div>
-</td><td class="wed day-24"><div class="day">24</div>
-<div class="event-empty"></div>
-</td><td class="thu day-25"><div class="day">25</div>
-<div class="event-empty"></div>
-</td><td class="fri day-26"><div class="day">26</div>
-<div class="event-empty"></div>
-</td><td class="sat day-27"><div class="day">27</div>
-<div class="event-empty"></div>
-</td><td class="sun day-28"><div class="day">28</div>
-<div class="event-empty"></div>
-</td> </tr>
- <tr class="odd"><td class="mon day-29"><div class="day">29</div>
-<div class="event-empty"></div>
-</td><td class="tue day-30"><div class="day">30</div>
-<div class="event-empty"></div>
-</td><td class="pad"></td><td class="pad"></td><td class="pad"></td><td class="pad"></td><td class="pad"></td> </tr>
-</tbody>
-</table>
-</div></div>
-<div class="ical-link"><a href="http://www.springsource.org/event/2013/04/01/ical/all/all/30" title="Add this calendar to your iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Add to iCalendar" /></a></div>
+<p><a href="http://www.springsource.org/spring-data/rest">Spring Data REST Home</a> | <a href="https://github.com/SpringSource/spring-data-rest">Source on GitHub</a> | <a href="http://static.springsource.org/spring-data/rest/docs/1.1.0.M1/reference/htmlsingle/">Reference Documentation</a></p>
+
+<h2>Export domain objects to the web</h2>
+
+<p><a href="http://www.springsource.org/spring-data/rest">Spring Data REST</a> is a set of Spring MVC components that you can add to your own Spring MVC applications that export your Spring Data Repositories to the web using RESTful, HATEOAS semantics. It provides a consistent interaction API by exporting repositories to RESTful URLs that are configurable in a couple different ways.</p>
+
+<p>Spring Data REST supports CRUD for top-level entities (those domain objects directly managed by a Spring Data Repository) by literally writing a single line of code that defines an interface that extends Spring Data's <code>CrudRepository</code> interface. That done, your entities then have full RESTful semantics. You can create new ones, update existing ones, and delete them using standard URLs that are, following the principles of HATEOAS, discoverable. That means the user agent accessing your Spring Data REST application doesn't need to have advance knowledge of what resources you are exporting. It can discover what entites exist and what relationships exist on those entities by successive calls to URLs provided in the JSON. These "links" are the real foundation and power of a HATEOAS REST application.</p>
+
+<h2>Changes from the ground up</h2>
+
+<p>Version 1.1 is virtually a re-write from the ground up. Not only is it easier to configure than 1.0 and better conforms to Spring MVC expections for the transition to Spring 3.2, but the biggest change in the internals of Spring Data REST is that it now supports other types of Spring Data repository implementations beyond just JPA. The HTTP semantics for CRUD and manging relationships (if the datastore supports it) remain the same no matter what backing datastore is used.</p>
+
+<p>That means it's now possible to export JPA entities and MongoDB entities within the same Spring Data REST application and access those entities using a common URL structure and using the standard Spring HATEOAS Resource representation for all entities and collections. The user agent accessing those RESTful URLs does not need any special knowledge on which datastore the backing entities are managed by and, most importantly, you don't have to write any code to get that functionality!</p>
+
+<h3>MongoDB support</h3>
+
+<p>Spring Data REST 1.1 now supports exporting MongoDB <code>CrudRepository</code> implementations. The same HTTP semantics apply to MongoDB <code>@Document</code> entities as apply to JPA entities. GET, POST, PUT, DELETE are of course supported, but so is <code>@DBRef</code>. You can view and manage the relationship between two documents using GET, POST, PUT, and DELETE and you can export finder methods based on your <code>@Query</code> definitions. Please reference the <a href="http://static.springsource.org/spring-data/data-mongodb/docs/current/reference/htmlsingle/">spring-data-mongodb reference documentation</a> for the full details of how the object mapping differs from JPA style mapping and how query definitions work.</p>
+
+<h3>Gemfire support</h3>
+
+<p>Spring Data REST 1.1 now supports exporting entities that use the high-performance <a href="http://www.vmware.com/products/application-platform/vfabric-gemfire/">Gemfire database</a> to different Regions. Read the <a href="http://static.springsource.org/autorepo/docs/spring-data-gemfire/1.3.0.M1/reference/htmlsingle/">Spring Data Gemfire documentation</a> for the full explanation of the vast configuration options and how POJO mapping in Gemfire differs from other mapping technologies.</p>
+
+<h3>Neo4J support is next</h3>
+
+<p>Spring Data REST 1.1 is now set to support Neo4J <code>GraphRepository</code>s with the next version of spring-data-neo4j, version 2.3. When that's generally available (which should be around or before the general availablity of Spring Data REST 1.1 RELEASE), you will be able to access <code>@NodeEntity</code>s and their relationships using standard HATEOAS semantics, just like you do with the other datastores.</p>
+
+<h2>Add it to your existing apps</h2>
+
+<p>Spring Data REST is designed in such a way that you can, if you wish, create an entire application for the Spring Data REST application. It's just a standard Spring MVC webapp after all. But things get really interesting when you add Spring Data REST to your own services.</p>
+
+<p><a href="https://github.com/springsource/spring-hateoas">Spring HATEOAS</a> author <a href="https://github.com/olivergierke">Oliver Gierke</a> has created an example application that demonstrates the use of HATEOAS principles in a modern web application. It's called <a href="https://github.com/olivergierke/spring-restbucks">spring-restbucks</a> and is an implementation of the Restbucks application described in the Systematic Theology of REST services: <a href="http://shop.oreilly.com/product/9780596805838.do">REST in Practice</a> by Jim Webber, Savas Parastatidis and Ian Robinson.</p>
+
+<h3>Mixin REST services</h3>
+
+<p>By mixing Spring Data REST with your other RESTful services, you can get a seamless integration between those domain objects exported by Spring Data REST--objects for which you didn't have to write any code to have them exposed--and those services that don't represent an actual entity but a process. You can see an example of how a payment service might interact with domain object CRUD in the spring-restbucks application, where credit card payment processing is handled by a custom controller, while object CRUD is handled by Spring Data REST. Your custom controllers can actually piggyback onto the Spring Data REST URLs so that a consistent and simple URL structure can be maintained throughout the appliation, no matter whether the URL refers to your custom controller, a Spring Data REST JPA Repository, or any of the other supported Repository styles.</p>
+
+<h3>It's not exclusive</h3>
+
+<p>It's not an either-or with Spring Data REST. If you don't want all of your Repositories exposed to a web client, no problem! There a several different ways you can turn off functionality for Repositories. You can embed annotations into your source code or, if you don't have access or simply can't add the Spring Data REST annotations, you can use a fluent, DSL-style configuration to tell Spring Data REST how your resources should be exposed. Using Spring Data REST in your application isn't an exclusive committment to only one way of doing things. Spring Data REST is structured in a what that it will play nicely with your existing application so you can incorporate those bits of functionality from Spring Data REST you want, while still maintaining all the custom-coded services you're used to creating in Spring MVC controllers.</p>
+
+<h4>JSONP support moving to a filter</h4>
+
+<p>The JSONP support that was built into Spring Data REST 1.0 has been removed from the core framework in preference to a forthcoming general-purpose JSONP Serlvet Filter that will work much better than the way JSONP was implemented in version 1.0. When that filter is generally available, then JSONP support can be added not just to Spring Data REST, but virtually any Servlet-based REST resource.</p>
+
+<h2>Installation and Documentation</h2>
+
+<p>To get started playing with Spring Data REST, have a look at <a href="http://static.springsource.org/spring-data/rest/docs/1.1.0.M1/reference/htmlsingle/">the reference documentation</a> to get the lay of the land, so to speak, and get started playing with it in your own application by simply adding a dependency to the <code>spring-data-rest-webmvc</code> artifact (currently at 1.1.0.M1 in the <a href="a%20href=%22http://repo.springsource.org/libs-milestone%22">SpringSource milestone repository</a>) then import the Spring Data REST configuration <a href="https://github.com/olivergierke/spring-restbucks/blob/master/src/main/java/org/springsource/restbucks/RestbucksWebApplicationInitializer.java#L88">like you see being done in the spring-restbucks application</a>.</p>
+
+<h3>Learn more at CONFESS_2013</h3>
+
+<p>If you're planning on attending CONFESS_2013 in Vienna the first week of April, then you can hear all about Spring Data REST at <a href="https://2013.con-fess.com/sessions/-/details/85/Exporting-JPA-Entities-directly-to-the-web-using-Spring-Data-REST">my talk on exporting entities to the web</a>.</p>
+
+<h3>Links</h3>
+
+<p><a href="http://www.springsource.org/spring-data/rest">Spring Data REST Home</a> | <a href="https://github.com/SpringSource/spring-data-rest">Source on GitHub</a> | <a href="http://static.springsource.org/spring-data/rest/docs/1.1.0.M1/reference/htmlsingle/">Reference Documentation</a></p>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+
 
         
         </div>
@@ -345,7 +318,62 @@ a2a_config.onclick = 1;
         </div>
 
 
-        
+        <div class="region region-content-right">
+  <div id="block-block-54" class="block block-block first region-odd odd region-count-1 count-3"><div class="block-inner">
+
+      <h2 class="title">Newsletter Subscription</h2>
+  
+  <div class="content">
+    <div style="background-color:#fff;padding:10px;">
+<p style="margin-left:3px;">Our monthly newsletter is packed full of techniques, tutorials, tips and tricks to get you on your way to Spring nirvana. <a href="/news-events/newsletters">View Archive</a> </p>
+
+<form enctype="multipart/form-data" name="StandardForm" method="post" action="http://now.eloqua.com/e/f2.aspx">
+    <input type="hidden" value="StandardForm" name="elqFormName" /> <input type="hidden" value="524" name="elqSiteID" /> <input type="hidden" value="" name="elqCustomerGUID" /> <input type="hidden" value="0" name="elqCookieWrite" />
+
+<table>
+<tr>
+<td>
+<input type="text" class="form-text" size="18" id="edit-submitted-first-name" name="first_name" maxlength="128" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" value="First Name" class="form-text" onblur="this.value = this.value || 'First Name'; this.style.color = '#ccc';" onfocus="if(this.value=='First Name') {this.value='';} this.style.color = '#ccc';" />
+</td>
+<td>
+<input type="text" class="form-text" size="20" id="edit-submitted-last-name" name="last_name" maxlength="128"  value="Last Name" class="form-text" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" onblur="this.value = this.value || 'Last Name'; this.style.color = '#ccc';" onfocus="if(this.value=='Last Name') {this.value='';} this.style.color = '#ccc';" />
+</td>
+</tr>
+</table>
+<table style="margin-top:-13px;">
+<tr>
+<td valign="top">
+<input type="text" class="form-text" style="padding: 5px 2px; color:#ccc;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #ccc;" size="30" id="edit-submitted-email" name="email" maxlength="128" value="Email" class="form-text" onblur="this.value = this.value || 'Email'; this.style.color = '#ccc';" onfocus="if(this.value=='Email') {this.value='';} this.style.color = '#ccc';" />
+</td>
+<td valign="bottom">
+    <input type="hidden" value="http://www.springsource.com/newsevents/newsletter-registration-thank-you" name="redirect" />
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='/elqNow/elqScr.js'></script>  <SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript'><!--//
+window.onload = initPage;
+function initPage(){
+    if (this.GetElqCustomerGUID)
+        document.forms["StandardForm"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
+}
+//--></script>
+    <input type="hidden" value="StandardForm" id="edit-submitted-elqformname" name="submitted[elqformname]" />  <input type="hidden" value="524" id="edit-submitted-elqsiteid" name="submitted[elqsiteid]" />  <input type="hidden" value="" id="edit-submitted-elqcustomerguid" name="submitted[elqcustomerguid]" />  <input type="hidden" value="0" id="edit-submitted-elqcookiewrite" name="submitted[elqcookiewrite]" />  <input type="hidden" value="default" id="edit-details-email-subject" name="details[email_subject]" />  <input type="hidden" value="default" id="edit-details-email-from-name" name="details[email_from_name]" />  <input type="hidden" value="default" id="edit-details-email-from-address" name="details[email_from_address]" />  <input type="hidden" value="form-30d82aaa8598120208cca2aa409c85df" id="form-30d82aaa8598120208cca2aa409c85df" name="form_build_id" />  <input type="hidden" value="webform_client_form_3706" id="edit-webform-client-form-3706" name="form_id" />  <input type="image" src="http://www.springsource.org/sites/all/themes/s2org11/images/button_newsevents_subscribe_gray.png"  class="form-submit" value="" id="edit-submit" border="0" name="op" />
+</td>
+</tr>
+</table>
+</form>
+</div>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-53" class="block block-block last region-even even region-count-2 count-4"><div class="block-inner">
+
+  
+  <div class="content">
+    <!--<a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31719&ui=www_edu" target="_blank"><img src="http://blog.springsource.org/wp-content/themes/spring11/files/PROMO_SpringSourceU_320x118.png"></a>-->
+<a href="http://www.springone2gx.com/conference/santa_clara/2013/09/register" target="_blank"><img src="/files/SpringOne/2013/springone-badge-2013.png"></a>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div><!-- /.region -->
+
 
 
 </div>
@@ -354,7 +382,6 @@ a2a_config.onclick = 1;
         </tr>
         </table>
 
-                  <div class="feed-icons"><a href="http://www.springsource.org/event/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="Events at &lt;em&gt;SpringSource.org&lt;/em&gt;" width="16" height="16" /></a></div>
         
       </div></div><!-- /.section, /#content -->
 
