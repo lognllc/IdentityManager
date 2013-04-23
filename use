@@ -6,9 +6,9 @@
 <meta content='Pivotal' name='author'>
 <meta content='Copyright Pivotal 2013. All Rights Reserved.' name='copyright'>
 <meta content='juhk3p2B-UhzEjLXtqFwDMVLo5Lmy4ZP-zVe7Gxo2Dw' name='google-site-verification'>
-<link href='/assets/favicon.ico' rel='shortcut icon'>
+<link href='/IdentityManager/assets/favicon.ico' rel='shortcut icon'>
 <meta content='all' name='robots'>
-<link href="/assets/application-edd86625eb7752bd9c5be2f8da6bae1b.css" media="all" rel="stylesheet" type="text/css" />
+<link href="/IdentityManager/assets/application-edd86625eb7752bd9c5be2f8da6bae1b.css" media="all" rel="stylesheet" type="text/css" />
 <!--[if lt IE 9 ]>
 <style>
   /*<![CDATA[*/
@@ -23,12 +23,12 @@
 </style>
 <![endif]-->
 <script src='https://www.google.com/jsapi?key=ABQIAAAAzwK7tlhdQQfX4rk2KPbxTRSq7DPBv_aUluqtKsDSLC6FrtG5GxQ6nT694TGX535NkrhNWQTwyPiSKg' type='text/javascript'></script>
-<script src="/assets/application-bf4b5a315bade6b17e28a7164c1ea196.js" type="text/javascript"></script>
+<script src="/IdentityManager/assets/application-bf4b5a315bade6b17e28a7164c1ea196.js" type="text/javascript"></script>
 <meta content='' name='Description'>
 <meta content='' name='keywords'>
 </head>
 <body id='use'>
-<img id='bg' src='/assets/bg-plain-x.jpg'>
+<img id='bg' src='/IdentityManager/assets/bg-plain-x.jpg'>
 <div id='non_footer'>
 <div id='header'>
 <div class='container_wide'>
@@ -46,12 +46,12 @@
 <div class='logo-main'>
 <div class='logo'>
 <a href='/'>
-<img alt='Cloud Foundry' src='/assets/logo-cf-clean.png'>
+<img alt='Cloud Foundry' src='/IdentityManager/assets/logo-cf-clean.png'>
 </a>
 </div>
 <div class='cta'>
 <a href='http://my.cloudfoundry.com/signup'>
-<img alt='Sign up for a Free Cloud Foundry Account' src='/assets/signup.png'>
+<img alt='Sign up for a Free Cloud Foundry Account' src='/IdentityManager/assets/signup.png'>
 </a>
 </div>
 </div>
@@ -185,7 +185,7 @@ Run Your First App
 </div>
 </div>
 <div id='billboard-use-image'>
-<img src='/assets/triangle-new.png' usemap='#diagrammap'>
+<img src='/IdentityManager/assets/triangle-new.png' usemap='#diagrammap'>
 <map name='diagrammap'>
 <area coords='149,96,210,131' href='/use' id='public' shape='rect'>
 <area coords='252,103,315,124' href='/run' id='private' shape='rect'>
@@ -245,7 +245,7 @@ Run Your First App
 <div class='padded-cell'>
 <center>
 <div class='framework-image'>
-<img src='/assets/devcenter/logo-spring.png'>
+<img src='/IdentityManager/assets/devcenter/logo-spring.png'>
 </div>
 </center>
 <br>
@@ -256,7 +256,7 @@ Run Your First App
 <div class='padded-cell'>
 <center>
 <div class='framework-image'>
-<img src='/assets/devcenter/logo-java.png'>
+<img src='/IdentityManager/assets/devcenter/logo-java.png'>
 </div>
 </center>
 <br>
@@ -267,7 +267,7 @@ Run Your First App
 <div class='padded-cell'>
 <center>
 <div class='framework-image'>
-<img src='/assets/devcenter/logo-ruby.png'>
+<img src='/IdentityManager/assets/devcenter/logo-ruby.png'>
 </div>
 </center>
 <br>
@@ -278,7 +278,7 @@ Run Your First App
 <div class='padded-cell'>
 <center>
 <div class='framework-image'>
-<img src='/assets/devcenter/logo-rails.png'>
+<img src='/IdentityManager/assets/devcenter/logo-rails.png'>
 </div>
 </center>
 <br>
@@ -291,7 +291,7 @@ Run Your First App
 <div class='padded-cell'>
 <center>
 <div class='framework-image'>
-<img src='/assets/devcenter/logo-sinatra.png'>
+<img src='/IdentityManager/assets/devcenter/logo-sinatra.png'>
 </div>
 </center>
 <br>
@@ -302,7 +302,7 @@ Run Your First App
 <div class='padded-cell'>
 <center>
 <div class='framework-image'>
-<img src='/assets/devcenter/logo-node.png'>
+<img src='/IdentityManager/assets/devcenter/logo-node.png'>
 </div>
 </center>
 <br>
@@ -313,7 +313,7 @@ Run Your First App
 <div class='padded-cell'>
 <center>
 <div class='framework-image'>
-<img src='/assets/devcenter/logo-grails.png'>
+<img src='/IdentityManager/assets/devcenter/logo-grails.png'>
 </div>
 </center>
 <br>
@@ -324,7 +324,7 @@ Run Your First App
 <div class='padded-cell'>
 <center>
 <div class='framework-image'>
-<img src='/assets/devcenter/logo-play.png'>
+<img src='/IdentityManager/assets/devcenter/logo-play.png'>
 </div>
 </center>
 <br>
@@ -335,7 +335,7 @@ Run Your First App
 <!-- .padded-cell -->
 <!-- %center -->
 <!-- .framework-image -->
-<!-- %img{:src=>"/assets/devcenter/logo-scala.png"} -->
+<!-- %img{:src=>"/IdentityManager/assets/devcenter/logo-scala.png"} -->
 <!-- %br -->
 <!-- %p Scala is a modern multi-paradigm programming language. -->
 </div>
@@ -349,7 +349,7 @@ Run Your First App
 <div class='padded-cell'>
 <center>
 <div class='service-image'>
-<img src='/assets/devcenter/logo-redis.png'>
+<img src='/IdentityManager/assets/devcenter/logo-redis.png'>
 </div>
 </center>
 <br>
@@ -360,7 +360,7 @@ Run Your First App
 <div class='padded-cell'>
 <center>
 <div class='service-image'>
-<img src='/assets/devcenter/logo-mysql.png'>
+<img src='/IdentityManager/assets/devcenter/logo-mysql.png'>
 </div>
 </center>
 <br>
@@ -371,7 +371,7 @@ Run Your First App
 <div class='padded-cell'>
 <center>
 <div class='service-image'>
-<img src='/assets/devcenter/logo-postgres.png'>
+<img src='/IdentityManager/assets/devcenter/logo-postgres.png'>
 </div>
 </center>
 <br>
@@ -382,7 +382,7 @@ Run Your First App
 <div class='padded-cell'>
 <center>
 <div class='service-image'>
-<img src='/assets/devcenter/logo-rabbit.png'>
+<img src='/IdentityManager/assets/devcenter/logo-rabbit.png'>
 </div>
 </center>
 <br>
@@ -395,7 +395,7 @@ Run Your First App
 <div class='padded-cell'>
 <center>
 <div class='service-image'>
-<img src='/assets/devcenter/logo-mongo.png'>
+<img src='/IdentityManager/assets/devcenter/logo-mongo.png'>
 </div>
 </center>
 <br>
@@ -466,22 +466,22 @@ Foundry better.
 <ul class='social'>
 <li>
 <a href='http://twitter.com/cloudfoundry' target='_blank'>
-<img alt='Twitter' src='/assets/twitter_large.png'>
+<img alt='Twitter' src='/IdentityManager/assets/twitter_large.png'>
 </a>
 </li>
 <li>
 <a href='https://plus.google.com/114245065906861739918/posts' target='_blank'>
-<img alt='Google+' src='/assets/g+_large.png'>
+<img alt='Google+' src='/IdentityManager/assets/g+_large.png'>
 </a>
 </li>
 <li>
 <a href='http://facebook.com/cloudfoundry' target='_blank'>
-<img alt='Facebook' src='/assets/facebook_large.png'>
+<img alt='Facebook' src='/IdentityManager/assets/facebook_large.png'>
 </a>
 </li>
 <li>
 <a href='http://youtube.com/cloudfoundry' target='_blank'>
-<img alt='Youtube' src='/assets/youtube_large.png'>
+<img alt='Youtube' src='/IdentityManager/assets/youtube_large.png'>
 </a>
 </li>
 </ul>
