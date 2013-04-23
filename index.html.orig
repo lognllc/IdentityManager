@@ -6,57 +6,57 @@
   <title>SpringSource.org | </title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="alternate" type="application/rss+xml" title="SpringSource.org RSS" href="http://www.springsource.org/node/feed" />
-<link rel="shortcut icon" href="sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
-  <link type="text/css" rel="stylesheet" media="all" href="http://www.springsource.org/modules/aggregator/aggregator.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.springsource.org/modules/node/node.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.springsource.org/modules/system/defaults.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.springsource.org/modules/system/system.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.springsource.org/modules/system/system-menus.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="http://www.springsource.org/modules/user/user.css?R" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/cck/theme/content-module.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/ctools/css/ctools.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/custom/google_cse/google_cse.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/date/date.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/filefield/filefield.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/nice_menus/nice_menus.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/zen/framework/nice_menus.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/prettify/styles/drupalorg.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/cck/modules/fieldgroup/fieldgroup.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/views/css/views.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/html-reset.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/wireframes.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/layout-fixed.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/page-backgrounds.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/tabs.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/messages.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/pages.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/block-editing.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/blocks.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/navigation.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/panels-styles.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/views-styles.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/nodes.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/comments.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/forms.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="all" href="sites/all/themes/s2org11/css/fields.css%3FR.css" />
-<link type="text/css" rel="stylesheet" media="print" href="sites/all/themes/s2org11/css/print.css%3FR.css" />
+<link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ctools/css/ctools.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/google_cse/google_cse.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/filefield/filefield.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/nice_menus/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/framework/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/page-backgrounds.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/tabs.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/messages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/pages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/block-editing.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/blocks.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/navigation.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/panels-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/views-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/nodes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/comments.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/forms.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/fields.css?R" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/s2org11/css/print.css?R" />
 <!--[if IE]>
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie.css?R" />
 <![endif]-->
 <!--[if lte IE 6]>
 <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie6.css?R" />
 <![endif]-->
-  <script type="text/javascript" src="http://www.springsource.org/misc/jquery.js?R"></script>
-<script type="text/javascript" src="http://www.springsource.org/misc/drupal.js?R"></script>
-<script type="text/javascript" src="sites/all/modules/nice_menus/superfish/js/superfish.js%3FR"></script>
-<script type="text/javascript" src="sites/all/modules/nice_menus/superfish/js/jquery.bgiframe.min.js%3FR"></script>
-<script type="text/javascript" src="sites/all/modules/nice_menus/superfish/js/jquery.hoverIntent.minified.js%3FR"></script>
-<script type="text/javascript" src="sites/all/modules/nice_menus/nice_menus.js%3FR"></script>
-<script type="text/javascript" src="sites/all/libraries/prettify/src/prettify.js%3FR"></script>
-<script type="text/javascript" src="sites/all/modules/prettify/prettify.loader.js%3FR"></script>
-<script type="text/javascript" src="sites/all/themes/s2org11/js/navigation.js%3FR"></script>
-<script type="text/javascript" src="sites/all/themes/s2org11/js/popup.js%3FR"></script>
-<script type="text/javascript" src="sites/all/themes/s2org11/js/elqNow/elqCfg.js%3FR"></script>
+  <script type="text/javascript" src="/misc/jquery.js?R"></script>
+<script type="text/javascript" src="/misc/drupal.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/superfish.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.bgiframe.min.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.hoverIntent.minified.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
+<script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay": 800, "speed": 1 }, "prettify": { "linenums": false, "match": ".content", "nocode": "no-code", "custom": [  ], "markup": { "code": true, "pre": true, "precode": false } } });
@@ -67,7 +67,7 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
  	  html {overflow-x:hidden;}
 
 	  </style>
-<script type="text/javascript" src="sites/all/themes/s2org11/js/homepage.js"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/homepage.js"></script>
 </head>
 <body class="page front not-logged-in no-sidebars">
 
@@ -80,10 +80,10 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay
     <div style="background: url('/sites/all/themes/s2org11/images/BG_SiteBillboardAndHeader.png') repeat-x scroll 0 0 #367B09;">
 <![endif]-->
 
-    <div style="background: url(sites/all/themes/s2org11/images/BG_BillboardLeaf.png) no-repeat scroll center top, url('files/homepage/BG_SiteBillboardAndHeader_50.png') repeat-x scroll 0 0 #367B09;">
+    <div style="background: url(/sites/all/themes/s2org11/images/BG_BillboardLeaf.png) no-repeat scroll center top, url('/files/homepage/BG_SiteBillboardAndHeader_50.png') repeat-x scroll 0 0 #367B09;">
     <div id="top">
   	 <div style = "height:448px;margin-top:0px;">
-  		<div style = "height:80px;margin-top:0px; background:url('files/homepage/BG_SiteTopNav_new.png') repeat-x scroll 0 0 #F1F1F1;
+  		<div style = "height:80px;margin-top:0px; background:url('/files/homepage/BG_SiteTopNav_new.png') repeat-x scroll 0 0 #F1F1F1;
   	-moz-border-radius: 0 0 5px 5px;
     -webkit-border-bottom-left-radius: 5px;
     -webkit-border-bottom-right-radius: 5px;
@@ -95,54 +95,54 @@ box-shadow: 0 0 15px #333;">
   		          <table valign="top" height="80" style="font-size:14px;text-transform:uppercase;color:#666;margin:0;">
   	   	          <tr>
   		          <td>
-  		           <a href="index.html"><img src="sites/all/themes/s2org11/images/logo_springsource_community.png"></a>
+  		           <a href="/"><img src="/sites/all/themes/s2org11/images/logo_springsource_community.png"></a>
   		           </td>
   		           <td width="5">&nbsp;</td>
   		           <td align="center" width="2">
-  		           <img src="files/homepage/nav_sep_line_new.png">
+  		           <img src="/files/homepage/nav_sep_line_new.png">
   		           </td>
   		           <td align="center" width="94">
   		           <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
-  		             		           <a href="http://www.springsource.org/features" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
-  		           <img src="sites/all/themes/s2org11/images/nav_features.png" id="b1"></a><br>
+  		             		           <a href="/features" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
+  		           <img src="/sites/all/themes/s2org11/images/nav_features.png" id="b1"></a><br>
   		             		           <!--[If IE 7]></div><![endif]-->
   		           </td>
   		           <td align="center" width="2">
-  		           <img src="files/homepage/nav_sep_line_new.png">
+  		           <img src="/files/homepage/nav_sep_line_new.png">
   		           </td>
   		           <td align="center" width="118">
   		           <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
-  		             		           <a href="http://www.springsource.org/get-started" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
-  		           <img src="sites/all/themes/s2org11/images/nav_getstarted.png" id="b2"></a><br>
+  		             		           <a href="/get-started" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+  		           <img src="/sites/all/themes/s2org11/images/nav_getstarted.png" id="b2"></a><br>
   		             		           <!--[If IE 7]></div><![endif]-->
   		           </td>
   		           <td align="center" width="2">
-  		           <img src="files/homepage/nav_sep_line_new.png">
+  		           <img src="/files/homepage/nav_sep_line_new.png">
   		           </td>
   		           <td align="center" width="122">
   		           <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
-  		             		           <a href="http://www.springsource.org/get-involved" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
-  		           <img src="sites/all/themes/s2org11/images/nav_getinvolved.png" id="b3"></a><br>
+  		             		           <a href="/get-involved" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
+  		           <img src="/sites/all/themes/s2org11/images/nav_getinvolved.png" id="b3"></a><br>
   		             		           <!--[If IE 7]></div><![endif]-->
   		           </td>
   		           <td align="center" width="2">
-  		           <img src="files/homepage/nav_sep_line_new.png">
+  		           <img src="/files/homepage/nav_sep_line_new.png">
   		           </td>
   		           <td align="center" width="134">
   		           <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
-  		             		           <a href="http://www.springsource.org/news-events" onmouseover="mouseOver4()" onmouseout="mouseOut4()">
-  		           <img src="sites/all/themes/s2org11/images/nav_newsevents.png" id="b4"></a><br>
+  		             		           <a href="/news-events" onmouseover="mouseOver4()" onmouseout="mouseOut4()">
+  		           <img src="/sites/all/themes/s2org11/images/nav_newsevents.png" id="b4"></a><br>
   		             		           <!--[If IE 7]></div><![endif]-->
   		           </td>
   		           <td width="2" align="center">
-  		           <img src="files/homepage/nav_sep_line_new.png">
+  		           <img src="/files/homepage/nav_sep_line_new.png">
   		           </td>
 
   		            <td align="center">
 
   		      	  
         <div id="search-box" style="border-bottom: 1px solid #E2E2E2;">
-          <form action="http://www.springsource.org/search/google" method="get" id="search-theme-form">
+          <form action="/search/google" method="get" id="search-theme-form">
             <div><div id="search" class="container-inline">
 
               <input type="text" maxlength="128" size="16" name="query" value="Search" style="border: 1px solid #CCCCCC;margin-bottom:10px;margin-left: 2px;color:#999999" class="form-text" onblur="this.value = this.value || 'Search'; this.style.color = '#999999';" onfocus="if(this.value=='Search') {this.value='';} this.style.color = '#999999';" />
@@ -157,7 +157,7 @@ box-shadow: 0 0 15px #333;">
           </form>
         </div>
                <div id="subscribe" style="color: #7E7E7E;float: left;padding-top: 5px;padding-left: 10px;border-top: 1px solid whiteSmoke;">
-              <a href="http://www.springsource.org/newsletter-subscription" style="color: #7e7e7e;background:url(files/header/nav_subscription_off.gif) 3px 2px no-repeat" onmouseover="this.style.background = 'url(/files/header/nav_subscription_on.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'" onmouseout="this.style.background = 'url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'">
+              <a href="/newsletter-subscription" style="color: #7e7e7e;background:url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat" onmouseover="this.style.background = 'url(/files/header/nav_subscription_on.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'" onmouseout="this.style.background = 'url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'">
                   <span style="padding-left:23px">Subscribe</a>
               </a>
         </div>
@@ -173,9 +173,9 @@ box-shadow: 0 0 15px #333;">
 			  		  <tr>
 			  		  <td valign="top" width="434">
 			  		  <p>&nbsp;</p>
-			  		  <img src="sites/all/themes/s2org11/images/what-is-spring-home-text.png">
+			  		  <img src="/sites/all/themes/s2org11/images/what-is-spring-home-text.png">
 			  		  <p style = "font-size:18px;color:#fff;margin-top:15px;margin-bottom:40px;line-height:24px;text-shadow: 0 1px 0 #333">Spring is the most popular application development framework for enterprise Java&#153;. Millions of developers use Spring to create high performing, easily testable, reusable code without any lock-in.</p>
-			  		  <a href="http://www.springsource.org/get-started"><img src="sites/all/themes/s2org11/images/button_getstarted_shadow-home.png"></a>&nbsp;&nbsp;<a href="http://www.springsource.org/get-involved"><img src="sites/all/themes/s2org11/images/button_getinvolved_shadow.png"></a>
+			  		  <a href="/get-started"><img src="/sites/all/themes/s2org11/images/button_getstarted_shadow-home.png"></a>&nbsp;&nbsp;<a href="/get-involved"><img src="/sites/all/themes/s2org11/images/button_getinvolved_shadow.png"></a>
 			  		  </td>
 			  		  <td width="30"></td>
 			  		  <td>
@@ -184,7 +184,7 @@ box-shadow: 0 0 15px #333;">
 <div class="homepage">
 
     <div class="video">
-        <img src="files/homepage/home-video-big_WhatIsSpring_496.png">
+        <img src="http://www.springsource.org/files/homepage/home-video-big_WhatIsSpring_496.png">
         <div class="iframe"></div>
     </div>
 
@@ -397,7 +397,7 @@ display: none;
 }
 </style>
 <div style="margin-left:-5px;">
-<script src="../widgets.twimg.com/j/2/widget.js"></script>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
 new TWTR.Widget({
   version: 2,
@@ -451,10 +451,10 @@ new TWTR.Widget({
           <tbody>
             <tr>
               <td width="400" valign="top">
-                <p class="intro" style="margin-top:3px"><em><a href="http://www.springsource.org/news-events">More news...</a></em></p>
+                <p class="intro" style="margin-top:3px"><em><a href="/news-events">More news...</a></em></p>
               </td>
               <td>
-                <a href="http://feeds.feedburner.com/springsource/OEVE" target="_blank"><img src="files/homepage/icon_rss_home.png"></a>
+                <a href="http://feeds.feedburner.com/springsource/OEVE" target="_blank"><img src="/files/homepage/icon_rss_home.png"></a>
               </td>
             </tr>
           </tbody>
@@ -466,24 +466,24 @@ new TWTR.Widget({
 	  	  <table>
 	  	  <tr>
 	  	  <td width="30%">
-	  	  <a href="http://www.twitter.com/springsource" target="_blank"><img src="sites/all/themes/s2org11/images/icon_social_s2.png"></a>&nbsp;<a href="http://www.twitter.com/vmware" target="_blank"><img src="sites/all/themes/s2org11/images/icon_social_vm.png"></a>
+	  	  <a href="http://www.twitter.com/springsource" target="_blank"><img src="/sites/all/themes/s2org11/images/icon_social_s2.png"></a>&nbsp;<a href="http://www.twitter.com/vmware" target="_blank"><img src="/sites/all/themes/s2org11/images/icon_social_vm.png"></a>
 	  	  </td>
 	  	  <td width="40%">&nbsp;
 	  	  </td>
 	  	  <td width=35>
-	  	  <a href="https://plus.google.com/u/0/b/109970428231307622681/109970428231307622681" target="_blank"><img src="files/homepage/icon_gplus_home.png"></a>
+	  	  <a href="https://plus.google.com/u/0/b/109970428231307622681/109970428231307622681" target="_blank"><img src="/files/homepage/icon_gplus_home.png"></a>
 	  	  </td>
 	  	  <td width=35>
 	  	  <a href="http://www.linkedin.com/groups/Spring-Users-46964" target="_blank">
-	  	  <img src="sites/all/themes/s2org11/images/icon_linkedin_home.png"></a>
+	  	  <img src="/sites/all/themes/s2org11/images/icon_linkedin_home.png"></a>
 	  	  </td>
 	  	  <td width=35>
 	  	  <a href="http://www.youtube.com/user/SpringSourceDev" target="_blank">
-	  	  <img src="sites/all/themes/s2org11/images/icon_youtube_home.png"></a>
+	  	  <img src="/sites/all/themes/s2org11/images/icon_youtube_home.png"></a>
 	  	  </td>
 	  	  <td width=35>
 	  	  <a href="http://www.facebook.com/groups/10463298884/" target="_blank">
-	  	  <img src="sites/all/themes/s2org11/images/icon_facebook_home.png">
+	  	  <img src="/sites/all/themes/s2org11/images/icon_facebook_home.png">
 	  	  </td>
 	  	  </tr>
           </table>
@@ -521,28 +521,28 @@ new TWTR.Widget({
 #communities li, #communities a{height:69px;display:block;}
 
 #cf{left:0px;width:260px;}
-#cf{background:url('../springsource.org/files/footer/communities_off.png') no-repeat 0 0;}
-#cf a:hover{background: url('../springsource.org/files/footer/communities_on.png') no-repeat 0 0;}
+#cf{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat 0 0;}
+#cf a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat 0 0;}
 
 #grails{left:275px;width:120px;}
-#grails{background:url('../springsource.org/files/footer/communities_off.png') no-repeat -275px 0;}
-#grails a:hover{background: url('../springsource.org/files/footer/communities_on.png') no-repeat -275px 0;}
+#grails{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -275px 0;}
+#grails a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -275px 0;}
 
 #groovy{left:400px;width:100px;}
-#groovy{background:url('../springsource.org/files/footer/communities_off.png') no-repeat -400px 0;}
-#groovy a:hover{background: url('../springsource.org/files/footer/communities_on.png') no-repeat -400px 0;}
+#groovy{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -400px 0;}
+#groovy a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -400px 0;}
 
 #hyperic{left:500px;width:170px;}
-#hyperic{background:url('../springsource.org/files/footer/communities_off.png') no-repeat -500px 0;}
-#hyperic a:hover{background: url('../springsource.org/files/footer/communities_on.png') no-repeat -500px 0;}
+#hyperic{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -500px 0;}
+#hyperic a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -500px 0;}
 
 #rabbit{left:670px;width:140px;}
-#rabbit{background:url('../springsource.org/files/footer/communities_off.png') no-repeat -670px 0;}
-#rabbit a:hover{background: url('../springsource.org/files/footer/communities_on.png') no-repeat -670px 0;}
+#rabbit{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -670px 0;}
+#rabbit a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -670px 0;}
 
 #wm{left:810px;width:170px;}
-#wm{background:url('../springsource.org/files/footer/communities_off.png') no-repeat -810px 0;}
-#wm a:hover{background: url('../springsource.org/files/footer/communities_on.png') no-repeat -810px 0;}
+#wm{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -810px 0;}
+#wm a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -810px 0;}
 
 #communities_bg {background-color:#181818;height:69px;padding:1px 10px 15px 10px;border-radius:5px;margin:10px 0 27px 0}
 
@@ -570,15 +570,15 @@ new TWTR.Widget({
 </tr>
 
 <tr valign="top">
-<th class="footerth" style="padding-left:-10px;"><a href="index.html">SpringSource</a></th>
+<th class="footerth" style="padding-left:-10px;"><a href="http://www.springsource.org">SpringSource</a></th>
 
-<th class="footerth"><a href="http://www.springsource.org/features">Features</a></th>
+<th class="footerth"><a href="/features">Features</a></th>
 
-<th class="footerth"><a href="http://www.springsource.org/get-started">Get Started</a></th>
+<th class="footerth"><a href="/get-started">Get Started</a></th>
 
-<th class="footerth"><a href="http://www.springsource.org/get-involved">Get Involved</a></th>
+<th class="footerth"><a href="/get-involved">Get Involved</a></th>
 
-<th class="footerth"><a href="http://www.springsource.org/projects">Projects</a></th>
+<th class="footerth"><a href="/projects">Projects</a></th>
 
 
 </tr>
@@ -586,19 +586,19 @@ new TWTR.Widget({
 <td valign="top" width="195px">
 
 <span class="footerlist">
-<a href="http://www.springsource.org/about">About Us</a><br>
+<a href="/about">About Us</a><br>
 <a href="http://blog.springsource.org">Our Blog</a><br>
-<a href="http://www.springsource.org/case-studies">Case Studies</a><br>
-<a href="http://www.springsource.org/news-events">Latest News & Events</a><br>
-<a href="http://www.vmware.com/jobs/" target="_blank">SpringSource Jobs</a>&nbsp;&nbsp;<a href="http://www.vmware.com/jobs/" target="_blank"><img src="sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
-<a href="http://www.springsource.org/consulting">Consulting</a><br>
+<a href="/case-studies">Case Studies</a><br>
+<a href="/news-events">Latest News & Events</a><br>
+<a href="http://www.vmware.com/jobs/" target="_blank">SpringSource Jobs</a>&nbsp;&nbsp;<a href="http://www.vmware.com/jobs/" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/consulting">Consulting</a><br>
 <!--<a href="http://www.springsource.com/contact" target="_blank">Contact Us</a><br>-->
-<a href="http://www.springsource.org/newsletter-subscription">Subscribe to Newsletter</a><br>
+<a href="/newsletter-subscription">Subscribe to Newsletter</a><br>
 
 </span>
 
-<p style="margin-top:15px;"><a href="http://www.springsource.org/newsletter-subscription">
-<img src="sites/all/themes/s2org11/images/button_home_subscribe.png"></a></p>
+<p style="margin-top:15px;"><a href="/newsletter-subscription">
+<img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_home_subscribe.png"></a></p>
 </td>
 
 
@@ -606,13 +606,13 @@ new TWTR.Widget({
 
 <span class="footerlist">
 
-<a href="http://www.springsource.org/features/modern-web">Modern Web</a><br>
-<a href="http://www.springsource.org/features/data-access">Data Access</a><br>
-<a href="http://www.springsource.org/features/integration">Integration</a><br>
-<a href="http://www.springsource.org/features/mobile">Mobile</a><br>
-<a href="http://www.springsource.org/features/social">Social</a><br>
-<a href="http://www.springsource.org/features/security">Security</a><br>
-<a href="http://www.springsource.org/features/cloud-ready">Cloud Ready</a><br>
+<a href="/features/modern-web">Modern Web</a><br>
+<a href="/features/data-access">Data Access</a><br>
+<a href="/features/integration">Integration</a><br>
+<a href="/features/mobile">Mobile</a><br>
+<a href="/features/social">Social</a><br>
+<a href="/features/security">Security</a><br>
+<a href="/features/cloud-ready">Cloud Ready</a><br>
 </span>
 </td>
 
@@ -620,10 +620,10 @@ new TWTR.Widget({
 <td valign="top" width="160px">
 
 <span class="footerlist">
-<a href="http://www.springsource.org/sts">Get Tool Kit (STS)</a> <br>
-<a href="http://www.springsource.org/tutorials">Tutorials</a> <br>
-<a href="http://www.springsource.org/samples">Code Samples</a> <br>
-<a href="http://www.springsource.org/documentation">Documentation</a> <br>
+<a href="/sts">Get Tool Kit (STS)</a> <br>
+<a href="/tutorials">Tutorials</a> <br>
+<a href="/samples">Code Samples</a> <br>
+<a href="/documentation">Documentation</a> <br>
 <a href="http://forum.springsource.org">Forums</a> <br>
 <a href="http://www.springsource.com/training" target="_blank">Training</a><br>
 
@@ -639,7 +639,7 @@ new TWTR.Widget({
 
 <a href="http://forum.springsource.org">Discussions</a><br>
 <a href="https://jira.springsource.org" target="_blank">Issue Tracker</a><br>
-<a href="https://github.com/SpringSource" target="_blank">Source Repository</a>&nbsp;&nbsp;<a href="https://github.com/SpringSource" target="_blank"><img src="sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br> 
+<a href="https://github.com/SpringSource" target="_blank">Source Repository</a>&nbsp;&nbsp;<a href="https://github.com/SpringSource" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br> 
 
 </span>
 </td>
@@ -648,13 +648,13 @@ new TWTR.Widget({
 
 <span class="footerlist">
 
-<a href="http://www.springsource.org/spring-amqp">Spring AMQP</a><br>
-<a href="http://www.springsource.org/spring-android">Spring for Android</a><br>
-<a href="http://www.springsource.org/spring-batch">Spring Batch</a><br>
-<a href="http://www.springsource.org/spring-data">Spring Data</a><br>
-<a href="http://www.springsource.org/spring-framework">Spring Framework</a><br>
-<a href="http://www.springsource.org/spring-gemfire">Spring Gemfire</a><br>
-<a href="http://www.springsource.org/spring-integration">Spring Integration</a><br>
+<a href="/spring-amqp">Spring AMQP</a><br>
+<a href="/spring-android">Spring for Android</a><br>
+<a href="/spring-batch">Spring Batch</a><br>
+<a href="/spring-data">Spring Data</a><br>
+<a href="/spring-framework">Spring Framework</a><br>
+<a href="/spring-gemfire">Spring Gemfire</a><br>
+<a href="/spring-integration">Spring Integration</a><br>
 
 
 </span>
@@ -664,13 +664,13 @@ new TWTR.Widget({
 
 <span class="footerlist">
 
-<a href="http://www.springsource.org/spring-mobile">Spring Mobile</a><br>
-<a href="http://www.springframework.net" target="_blank">Spring .NET</a>&nbsp;&nbsp;<a href="http://www.springframework.net" target="_blank"><img src="sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
-<a href="http://www.springsource.org/spring-roo">Spring Roo</a><br>
-<a href="http://www.springsource.org/spring-security">Spring Security</a><br>
-<a href="http://www.springsource.org/spring-social">Spring Social</a><br>
-<a href="http://www.springsource.org/spring-web-flow">Spring Web Flow</a><br>
-<a href="http://www.springsource.org/spring-web-services">Spring Web Services</a><br>
+<a href="/spring-mobile">Spring Mobile</a><br>
+<a href="http://www.springframework.net" target="_blank">Spring .NET</a>&nbsp;&nbsp;<a href="http://www.springframework.net" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/spring-roo">Spring Roo</a><br>
+<a href="/spring-security">Spring Security</a><br>
+<a href="/spring-social">Spring Social</a><br>
+<a href="/spring-web-flow">Spring Web Flow</a><br>
+<a href="/spring-web-services">Spring Web Services</a><br>
 
 </span>
 </td>
@@ -687,7 +687,7 @@ new TWTR.Widget({
     border-radius: 5px;">
 <center>
 <p class="copyright">
-<a style="color:#eee;" href="http://www.springsource.org/user">&#169;</a>&nbsp;
+<a style="color:#eee;" href="/user">&#169;</a>&nbsp;
 <script type="text/javascript">
 
 var d = new Date();
@@ -698,7 +698,7 @@ SpringSource.
 All Rights Reserved.
 <a href="http://www.vmware.com/help/legal.html" target="_blank">Terms of Use</a>, 
 <a href="http://www.vmware.com/help/privacy.html" target="_blank">Privacy</a> and 
-<a href="http://www.springsource.org/trademark_standards">Trademark Standards</a>
+<a href="/trademark_standards">Trademark Standards</a>
 </p>
 </center>
 </div>
@@ -713,7 +713,7 @@ All Rights Reserved.
   
   <div class="content">
     <!-- Eloqua Img Code Code -->
-<script type="text/javascript" src="sites/all/themes/s2org11/js/elqNow/elqImg.js"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqImg.js"></script>
 <!-- Begin Google Code -->
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
@@ -742,7 +742,7 @@ OrgTracker._trackPageview();
   </div></div><!-- /#page, /#page-wrapper -->
 
   
-  <script type="text/javascript" src="sites/all/modules/custom/google_cse/google_cse.js%3FR"></script>
+  <script type="text/javascript" src="/sites/all/modules/custom/google_cse/google_cse.js?R"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 jQuery.extend(Drupal.settings, { "googleCSE": { "language": "en" } });
