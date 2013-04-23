@@ -1,0 +1,18 @@
+/* $Id: google_cse.css,v 1.1.4.4 2008/06/27 00:13:19 mfb Exp $ */
+#google-cse-searchbox-form div, #google-cse-searchbox-form input { margin: 0; display: inline; }
+#google-cse-results-searchbox-form div, #google-cse-results-searchbox-form input { margin: 0; display: inline; }
+#google-cse-searchbox-form .form-radios div { display: block; }
+#google-cse-results-searchbox-form .form-radios div { display: block; }
+#google-cse-results-gadget a { margin-left: 2em; }
+#google-cse-results-gadget img { margin-left: 2em; }
+.google-cse-result-item { margin-bottom: 10px; }
+.google-cse-result-item p { margin-bottom: 0; margin-top: 0; }
+.google-cse-item-title { font-size: medium; }
+.google-cse-item-title a { color: #0000CC; }
+.google-cse-item-url { font-size: small; }
+.google-cse-item-url a { color: #008000; font-size: small; }
+.google-cse-refinements { font-size: medium; margin: 20px 0 30px 0;}
+.google-cse-refinements p { margin-bottom: 5px; }
+.google-cse-refinements-label { margin-right: 30px; }
+.google-cse-no-results { margin: 20px 0 30px 0;}
+.google-cse-nav-link-wrapper { float: right;}

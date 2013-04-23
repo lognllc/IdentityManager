@@ -1,0 +1,507 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Enterprise Integration with Spring Training</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="en-us" />
+<meta name="copyright" content="VMware, Inc. All rights reserved." />
+
+<link rel="alternate" type="application/rss+xml" href="//www.vmware.com/sitemap.xml" />
+<link rel="alternate" type="application/rss+xml" href="//www.vmware.com/ror.xml" />
+<link rel="alternate" type="application/rss+xml" href="http://vmware.simplefeed.net/rss" />
+<link rel="shortcut icon" type="image/x-icon" href="//www.vmware.com/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="/ui/styles/global_www.css?release=13.4" />
+<link rel="stylesheet" type="text/css" href="//www.vmware.com/files/templates/inc/template.css" />
+<link rel="stylesheet" type="text/css" href="//www.vmware.com/files/templates/inc/fce.css" />
+<link rel="stylesheet" type="text/css" media="print" href="//www.vmware.com/files/templates/inc/print.css" />
+
+
+<script type="text/javascript" src="//www.vmware.com/files/templates/inc/library.js"></script>
+
+			<script type="text/javascript">
+	
+				function changeCSSClasses(activeList,inactiveList,activeStyle,inactiveStyle){
+					var theActiveList = activeList.split(',');
+					var theInactiveList = inactiveList.split(',');
+					if(!activeStyle){var activeStyle='active'}
+					if(!inactiveStyle){var inactiveStyle='inactive'}
+					
+					for(var i = 0; i < theActiveList.length; i++){
+						$(theActiveList[i]).attr('class',activeStyle);
+					}
+					for(var i = 0; i < theInactiveList.length; i++){
+						$(theInactiveList[i]).attr('class',inactiveStyle);
+					}
+				}
+				
+				function showHideWidgetDivs(showList,hideList){
+					var theShowList = showList.split(',');
+					var theHideList = hideList.split(',');
+					
+					for(var i = 0; i < theShowList.length; i++){
+						$(theShowList[i]).show();
+					}
+					for(var i = 0; i < theHideList.length; i++){
+						$(theHideList[i]).hide();
+					}
+				}
+			
+			</script>
+			<script type="text/javascript" src="/ui/jslib/jquery.js?release=13.4"></script>
+<meta name="description" content="Become an expert in building large enterprise applications with Spring in this 4-day SpringSource Training." />
+<meta name="keywords" content="Enterprise Integration with Spring, spring framework training,spring batch,spring integration,spring tutorial,spring framework tutorial,spring batch tutorial,spring ide,spring batch examples,spring batch example,spring rest,rest spring,rest with spring,spring restful,spring 3 rest" />
+<script>userIsLoggedIn = 0; userIsManager = 0;</script></head>
+
+
+<body>
+
+<div id="container">
+  <strong class="seo">VMware</strong>
+  <div id="content-container">
+    <div id="content-left">
+
+      <div id="header" class="firstlevelcusted">
+        <div class="overlay">
+          <h1>VMware Training</h1>
+			
+        </div>
+      </div>
+
+	  
+	  <div id="chatAdvisor">
+		<div class="chatLink">
+		  Course Advisor:
+		  <a href="http://mylearn.vmware.com/contact.cfm?ui=www_edu">Call</a>,
+		  <a href="http://mylearn.vmware.com/contact.cfm?ui=www_edu">Email</a>
+		  or
+		  <a href="http://mylearn.vmware.com/contact.cfm?ui=www_edu">Chat Online</a>
+		</div>
+	  </div>
+		
+      <div id="content">
+
+
+
+
+
+
+
+		
+<h2>Enterprise Integration with Spring Training</h2>
+
+<table cellpadding="0" cellspacing="0" border="0" class="bodytext" width="100%">
+  <tr valign="top">
+	<td class="formrequired">Summary:</td>
+	<td>&nbsp;</td>
+	<td>
+      
+	
+	
+	  <div style="float:right; width:145px; margin: 0 0 9px 15px;">
+		
+	    <div style="margin-bottom:4px;"><a title="Classroom Classes" alt="Classroom Classes" href="/portals/www/search/results.cfm?ui=www_edu&menu=search-results&searchtype=simple&category=schedule&id_subject=17833&deliveryType=1&filters=deliveryType"><img src="/ui/images/buttons/en/btnbluelarge_classroom-classes.png" width="145" height="21" alt="Classroom Classes" border="0" align="absmiddle" /></a></div>
+		
+	    <div style="margin-bottom:4px;"><a title="Live Online Classes" alt="Live Online Classes" href="/portals/www/search/results.cfm?ui=www_edu&menu=search-results&searchtype=simple&category=schedule&id_subject=17833&deliveryType=16&filters=deliveryType"><img src="/ui/images/buttons/en/btnbluelarge_live-online-classes.png" width="145" height="21" alt="Live Online Classes" border="0" align="absmiddle" /></a></div>
+		
+	    <div style="margin-bottom:4px;"><a title="Inquire about Onsite" alt="Inquire about Onsite" href="/mgrReg/message.cfm?ui=www_edu&subject=Onsite%20Training&id_subject=17833"><img src="/ui/images/buttons/en/btnbluelarge_inquire-about-onsite.png" width="145" height="21" alt="Inquire about Onsite" border="0" align="absmiddle" /></a></div>
+		
+	    <div style="margin-bottom:4px;"><a title="Course Datasheet" alt="Course Datasheet" href="/descriptions/EDU_DATASHEET_EnterpriseIntegrationSpring_V2011.pdf" target="_blank"><img src="/ui/images/buttons/en/btngraylarge_course-datasheet.png" width="145" height="21" alt="Course Datasheet" border="0" align="absmiddle" /></a></div>
+		
+	  </div>
+	
+      <div style="margin-top:1px;">
+        - Formats:
+		
+        <strong style="color:#0C8D63;">Classroom</strong>, 
+        <strong style="color:#0C8D63;">Live Online</strong>, 
+        <strong style="color:#0C8D63;">Onsite</strong> 
+      </div>
+	
+	  <div>- Length: 4 Days</div>
+	
+      <div style="padding-top:15px;">
+		<div><strong>Overview:</strong></div>
+	    <div>Enterprise Integration with Spring is a four-day training course that is led by SpringSource experts who will discuss the most important topics and technologies related to enterprise application integration. This hands-on training teaches you how to apply Spring technologies to solve integration problems that face server-side developers.<br>Completion of this training entitles each student to receive a free voucher to schedule an exam at a Pearson VUE Center to become a SpringSource Certified Spring Enterprise Integration Specialist.</div>
+	  </div>
+		
+	</td>
+  </tr>
+  <tr>
+    <td colspan="3"><hr /></td>
+  </tr>
+	
+		
+	
+  <tr valign="top">
+	<td class="formrequired">Objectives:</td>
+	<td>&nbsp;&nbsp;</td>
+	<td class="bodytext">•&nbsp;&nbsp;Use Spring to create concurrent applications and schedule tasks<br>•&nbsp;&nbsp;Use remoting to implement client-server applications<br>•&nbsp;&nbsp;Use Spring Web services to create loosely coupled SOAP-based Web services and clients<br>•&nbsp;&nbsp;Use Spring-MVC to create RESTful Web services and clients<br>•&nbsp;&nbsp;Use JMS for asynchronous messaging-based communication<br>•&nbsp;&nbsp;Understand and use local and distributed transactions<br>•&nbsp;&nbsp;Use Spring Integration to create event-driven pipes-and-filters architectures and integrate with external applications<br>•&nbsp;&nbsp;Use Spring Batch for managed, scalable batch processing that is based on both custom and built-in processing components</td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+		
+  <tr valign="top">
+	<td class="formrequired" nowrap="nowrap">Intended Audience:</td>
+	<td>&nbsp;&nbsp;</td>
+	<td class="bodytext">•&nbsp;&nbsp;Developers<br>•&nbsp;&nbsp;Architects</td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+		
+  <tr valign="top">
+	<td class="formrequired">Prerequisites:</td>
+	<td>&nbsp;&nbsp;</td>
+	<td class="bodytext">•&nbsp;&nbsp;Experience with developing applications using Java<br>•&nbsp;&nbsp;Basic understanding of Spring</td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+		
+  <tr valign="top">
+	<td class="formrequired">Outline:</td>
+	<td>&nbsp;&nbsp;</td>
+	<td class="bodytext">1&nbsp;&nbsp;Introduction<br>•&nbsp;&nbsp;Styles of enterprise integration<br>•&nbsp;&nbsp;File transfer, remoting, and Web services<br>2&nbsp;&nbsp;Tasks and Scheduling<br>•&nbsp;&nbsp;Introduction to concurrency<br>•&nbsp;&nbsp;Java Concurrency APIs<br>•&nbsp;&nbsp;Spring task scheduling support<br>•&nbsp;&nbsp;<task /> namespace<br>•&nbsp;&nbsp;@Scheduled and @Async annotations<br>3&nbsp;&nbsp;Remoting<br>•&nbsp;&nbsp;Limitations of “plain” RMI<br>•&nbsp;&nbsp;Benefits of using Spring remoting<br>•&nbsp;&nbsp;Spring remoting over RMI<br>•&nbsp;&nbsp;Spring HttpInvoker <br>•&nbsp;&nbsp;Hessian and Burlap support<br>4&nbsp;&nbsp;SOAP Web Services with Spring WS<br>•&nbsp;&nbsp;Web services best practices<br>•&nbsp;&nbsp;Introduction to Spring Web services<br>•&nbsp;&nbsp;Object-XML mapping with the Spring OXM abstraction layer<br>•&nbsp;&nbsp;Client access with WebServiceTemplate<br>•&nbsp;&nbsp;Error handling<br>•&nbsp;&nbsp;Out-of-container testing<br>5&nbsp;&nbsp;RESTful Web Services<br>•&nbsp;&nbsp;Core REST concepts<br>•&nbsp;&nbsp;REST support in Spring 3.x<br>•&nbsp;&nbsp;REST specific annotations in Spring<br>•&nbsp;&nbsp;Client access with RestTemplate<br>6&nbsp;&nbsp;Working with JMS<br>•&nbsp;&nbsp;Introduction to JMS<br>•&nbsp;&nbsp;Configuring JMS resources with Spring<br>•&nbsp;&nbsp;Sending and receiving messages using Spring JmsTemplate and message listener containers<br>7&nbsp;&nbsp;Transactional JMS<br>•&nbsp;&nbsp;Why use JMS transactions<br>•&nbsp;&nbsp;Transactional JMS resources with Spring<br>•&nbsp;&nbsp;Duplicate message handling<br>8&nbsp;&nbsp;Global Transaction Management (XA and JTA)<br>•&nbsp;&nbsp;Two-phase commit and XA<br>•&nbsp;&nbsp;JTA and Spring<br>•&nbsp;&nbsp;Configuring JtaTransactionManager<br>•&nbsp;&nbsp;Transaction demarcation<br>9&nbsp;&nbsp;Introduction to Spring Integration<br>•&nbsp;&nbsp;Goals of Spring Integration<br>•&nbsp;&nbsp;Core components of Spring Integration<br>•&nbsp;&nbsp;Defining channels, message endpoints, and gateways<br>•&nbsp;&nbsp;Spring Integration namespaces<br>•&nbsp;&nbsp;Eclipse-based Visual Editor for Spring Integration<br>10&nbsp;&nbsp;Configuring Spring Integration<br>•&nbsp;&nbsp;Channel types and polling<br>•&nbsp;&nbsp;Synchronous and asynchronous handoff<br>•&nbsp;&nbsp;Synchronous and asynchronous error handling<br>•&nbsp;&nbsp;Advanced endpoint types: bridge and router<br>•&nbsp;&nbsp;Working with MessagingTemplate<br>11&nbsp;&nbsp;Spring Integration Advanced Features<br>•&nbsp;&nbsp;Splitting and aggregating messages<br>•&nbsp;&nbsp;Dispatcher configuration<br>•&nbsp;&nbsp;XML support: XPath, XSLT, Object-XML mapping<br>12&nbsp;&nbsp;Introduction to Spring Batch<br>•&nbsp;&nbsp;Spring Batch high-level overview<br>•&nbsp;&nbsp;Working with jobs, steps, readers, and writers<br>•&nbsp;&nbsp;Job parameters and job identity<br>•&nbsp;&nbsp;Batch state persistence in the database<br>•&nbsp;&nbsp;Spring Batch quick-start example<br>13&nbsp;&nbsp;Restart and Recovery with Spring Batch<br>•&nbsp;&nbsp;Stateful ItemReaders/Writers<br>•&nbsp;&nbsp;Reading flat files<br>•&nbsp;&nbsp;Introduction to skip, retry, repeat, and restart<br>•&nbsp;&nbsp;Spring Batch listeners<br>14&nbsp;&nbsp;Spring Batch Admin and Scaling Batch Jobs<br>•&nbsp;&nbsp;The Spring Batch Admin Web console<br>•&nbsp;&nbsp;Scaling and parallel processing<br>•&nbsp;&nbsp;Multithreaded and parallel steps<br>•&nbsp;&nbsp;Partitioning</td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+		
+</table>
+
+
+      </div>
+      <div id="breadcrumbs">
+	    <a href="http://www.vmware.com/">Home</a> &gt;
+		<a href="http://www.vmware.com/services/">Services</a> &gt;
+
+		<a href="http://mylearn.vmware.com/portals/www/">VMware Training</a>
+
+		&gt; <a href='/portals/www/search/findcourse.cfm?ui=www_edu'>Find a Class</a> &gt; Course Description 
+	  </div>
+    </div>
+
+
+    <div id="content-right">
+
+
+
+<ul id="secondary-navigation">
+  <h3><a href="http://www.vmware.com/services/"><span class="bg"><span>Services</span></span></a></h3>
+  <ul>
+  <li ><a href="http://mylearn.vmware.com/portals/certification/"><span class="bg"><span>Certification</span></span></a></li>
+    
+    <li ><a href="http://mylearn.vmware.com/mgrreg/index.cfm?ui=www_edu&redirect=off"><span class="bg"><span>VMware Training</span></span></a>
+	
+	  <ul>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=17377&ui=www_edu">Why VMware Authorized Training</a>
+			
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/portals/vci/mL.cfm?menu=public&ui=www_vci">Be a VMware Authorized Instructor</a>
+			
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/portals/www/search/findcourse.cfm?ui=www_edu">Find a Class</a>
+			
+		  <ul>
+			
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/portals/www/mL.cfm?menu=newcourses">What's New</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=37062&ui=www_edu">Promotions</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/portals/www/search/findcourse2.cfm?ui=www_edu&category=schedule&menu=search&searchtype=advanced&keyword=">Power Search</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=36536&ui=www_edu">Top Classes by Time Zone</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/courseware/151680/VM_Q213_CourseCatalog-without SKUs.pdf">Course Catalog (PDF)</a>
+			
+		    </li>
+				
+		  </ul>
+				
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=32222&ui=www_edu">Delivery Options</a>
+			
+		  <ul>
+			
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/mgrReg/message.cfm?ui=www&subject=Onsite Training">Request Onsite Training</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=33369&ui=www_edu">Free eLearning in Your Language</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://www.vmwarelearning.com">Free Instructional Videos</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://www.vmwarepress.com">Books from VMware Press</a>
+			
+		    </li>
+				
+		  </ul>
+				
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/mgrreg/locations.cfm?ui=www_edu">Training Centers</a>
+			
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/ilearn/MgrReg/faq.cfm?ui=www_edu&category=Customer Education">FAQs</a>
+			
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/contact.cfm?ui=www_edu">Contact Us</a>
+			
+	    </li>
+	
+        <li><a href="https://mylearn.vmware.com/MgrReg/login.cfm?ui=www_edu">Login</a></li>
+	
+      </ul>
+	
+    </li>
+  
+  </ul>
+</ul>
+
+
+<a href="http://www.vmworld.com/registration.jspa?src=VMworld2013interimregcertbanner" target="_blank"><img src="/courseware/174693/vmw-web-vmworld13-US-reg-live-cert-221x91-101.jpg"></a>
+<br/><br/> <a href="http://vmwarelearningpaths.com/lists/viewpoint/subscribe" target="_blank"><img src="http://mylearn.vmware.com/courseware/172878/quarterly_newsletter.png"></a>
+<br/><br/> <center>
+<table border="0">
+<tr><td>
+<a href="http://www.facebook.com/pages/VMware-Education-Services/143592492341597">
+        <img src="http://mylearn.vmware.com/courseware/151448/fb_icon.png">
+      </a>
+      <a href="http://twitter.com/VMwareEducation" class="center">
+        <img src="http://mylearn.vmware.com/courseware/151451/twitter_icon.png">
+      </a>
+      <a href="http://blogs.vmware.com/education" class="last">
+        <img src="http://mylearn.vmware.com/courseware/160392/vmware_ed_blog.png">
+</td></tr></table>
+</center>
+<br/> 	
+<div id="popWidgetTL">
+  <div id="popWidgetHeading">Trending Now</div>
+  <div id="popWidgetTR"></div>
+</div>
+		
+		
+		
+<div id="popWidgetNav">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+			
+			
+			
+				
+      <td class="left" width="33%"><a id="multiList1id1" class="active" href="javascript:;" onClick="changeCSSClasses('#multiList1id1','#multiList1id2,#multiList1id3');showHideWidgetDivs('#contentmultiList1id1','#contentmultiList1id2,#contentmultiList1id3');">What's Hot</a></td>
+			
+				
+      <td class="left" width="33%"><a id="multiList1id2" class="inactive" href="javascript:;" onClick="changeCSSClasses('#multiList1id2','#multiList1id1,#multiList1id3');showHideWidgetDivs('#contentmultiList1id2','#contentmultiList1id1,#contentmultiList1id3');">Top Paid</a></td>
+			
+				
+      <td  width="33%"><a id="multiList1id3" class="inactive" href="javascript:;" onClick="changeCSSClasses('#multiList1id3','#multiList1id1,#multiList1id2');showHideWidgetDivs('#contentmultiList1id3','#contentmultiList1id1,#contentmultiList1id2');">Top Free</a></td>
+			
+	</tr>
+  </table>
+</div>
+		
+<div id="popWidgetContent">
+		
+  <div id="contentmultiList1id1" style="padding-top:5px;">
+    		
+	<ol>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=43354">VMware Horizon Mirage Fundamentals [V4.0]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=37587">VMware vSphere: Install, Configure, Manage [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=40085">VMware vSphere: Fast Track [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=39046">VMware vSphere: Optimize and Scale [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=38176">VMware vSphere: What’s New [V 5.1]</a></li>
+			
+	</ol>
+			
+	<div class="seeAll">
+	  <a href="http://mylearn.vmware.com/portals/www/mL.cfm?menu=hotcourses" title="See all hot courses">See all hot courses&nbsp;&gt;&gt;</a>
+	</div>
+			
+  </div>
+		
+  <div id="contentmultiList1id2" style="padding-top:5px; display:none;">
+    		
+	<ol>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=37587">VMware vSphere: Install, Configure, Manage [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=40085">VMware vSphere: Fast Track [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=39046">VMware vSphere: Optimize and Scale [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=38932">VMware vCloud Director: Install, Configure, Manage [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=31355">VMware View: Install, Configure, Manage [V5.1]</a></li>
+			
+	</ol>
+			
+	<div class="seeAll">
+	  <a href="http://mylearn.vmware.com/portals/www/mL.cfm?menu=toppaidcourses" title="See all top paid courses">See all top paid courses&nbsp;&gt;&gt;</a>
+	</div>
+			
+  </div>
+		
+  <div id="contentmultiList1id3" style="padding-top:5px; display:none;">
+    		
+	<ol>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=43354">VMware Horizon Mirage Fundamentals [V4.0]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=38176">VMware vSphere: What’s New [V 5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=43307">vCloud Networking and Security Fundamentals [V5.X]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=42954">VMware vCenter Operations Manager Fundamentals [V5.6] </a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=27841">VMware View: Fundamentals [V5.0]</a></li>
+			
+	</ol>
+			
+	<div class="seeAll">
+	  <a href="http://mylearn.vmware.com/portals/www/mL.cfm?menu=topfreecourses" title="See all top free courses">See all top free courses&nbsp;&gt;&gt;</a>
+	</div>
+			
+  </div>
+		
+</div>
+<div id="popWidgetBL">
+  <div id="popWidgetBR"></div>
+</div>
+<div style="height:10px;"><!--.--></div>
+	
+	
+				    <div class="promo-style">
+				      <div>
+					
+					    <h3>Quick Links</h3>
+					<div style="margin-top:0;"><a class="more" href="http://mylearn.vmware.com/signin.cfm?ui=www_edu">Class Sign-In</a></div>
+<div><a class="more" href="http://mylearn.vmware.com/evaluate?ui=www_edu">Class Evaluation</a></div>
+<div><a class="more" href="http://mylearn.vmware.com/portals/credits/?ui=www_edu">Credits</a></div>
+<div><a class="more" href="http://mylearn.vmware.com/redeem.cfm">Redeem</a></div>
+<div><a class="more" href="http://mylearn.vmware.com/portals/vci/">VCI Portal</a></div>
+				      </div>
+				    </div>
+					
+    </div>
+  </div>
+
+  <div id="top-of-page">
+    <div id="iglobal-sites"></div>
+    <div id="iprimary-navigation"></div>
+    <div id="isite-tools"></div>
+    <div id="ilanguage"></div>
+    <div id="isearch-form"></div>
+  </div>
+
+  <div id="ifooter"></div>
+</div>
+
+<div id="custom-extras"></div>
+
+
+
+<script type="text/javascript" src="//www.vmware.com/app/template/?set=mylearnedu"></script>
+
+
+<script type="text/javascript" src="//www.vmware.com/files/templates/inc/baynote.js"></script>
+<script type="text/javascript" src="//www.vmware.com/files/elqNow/elqCfg.js"></script>
+<script type="text/javascript" src="//www.vmware.com/files/elqNow/elqImg.js"></script>
+<script type="text/javascript" src="//www.vmware.com/files/templates/inc/s_code_vmw.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+  <!--
+    /* You may give each page an identifying name, server, and channel on the next lines. */
+    s.pageName="vmware : mylearn : www : Course Desc : Enterprise Integration with Spring Training"
+    s.prop23="mylearn : www"
+    s.events=""
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    s.hier1=""
+    if (s.prop1) s.channel=s.prop1
+    setProps1t5();
+    var s_code=s.t();if(s_code)document.write(s_code)
+  //-->
+</script>
+<script type="text/javascript" language="JavaScript">
+  <!--
+    if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+  //-->
+</script>
+
+
+</body>
+</html>
+
+

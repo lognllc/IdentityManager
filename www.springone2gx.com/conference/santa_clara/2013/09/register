@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Registration - SpringOne 2GX - September 9 - 12, 2013 - Santa Clara, CA - Spring Framework , Groovy / Grails, Java / Agility Conference</title>
+
+	<!-- // show_main.jsp -->
+
+	<meta name="robots" content="all" />
+
+<meta name="description" content="SpringOne 2GX"/>
+<meta name="keywords" content="SpringOne 2GX, SpringOne Americas, The Spring Experience, Spring Framework Conference, Spring Conference, Grails Conference, Groovy Conference"/>
+<link href="/styles/spring-stylesheet-3.3.33.css" rel="stylesheet" type="text/css" />
+
+    <link  href="/styles/print.css" rel="stylesheet" type="text/css" media="print" />
+
+<!--[if IE]>
+  		<script src="/script/html5.js"></script>
+		<link href="/styles/theme/ie-spring.css" rel="stylesheet" />
+<![endif]-->
+
+<link href="/images/favicon/spring.ico" rel="SHORTCUT ICON"/>
+<link href="/s/rss/spring.rss" rel="alternate" type="application/rss+xml" title="SpringOne 2GX"/><meta property="fb:app_id" content="146483928738728"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://www.springone2gx.com/conference/santa_clara/2013/09/register"/>
+<meta property="og:image" content="http://springone2gx.com/s/images/fb/springone2gx.com.jpg"/>
+<meta property="og:site_name" content="SpringOne 2GX"/>
+
+
+<meta property="og:title" content="Register - SpringOne 2GX"/><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-361385-13']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body>
+
+<div id="view-wrapper">
+
+<div id="wrapper">
+
+    <div id="container-wrapper">
+
+    <div id="header">
+
+    <a class="logo" href="/conference/santa_clara/2013/09/home">
+    <img src="/styles/spring2013/images/springone-2gx-logo.png" alt="SpringOne 2GX" /></a>
+
+
+    <div class="date-and-location">
+
+        <h3>September 9-12, 2013</h3>
+        <h3>Santa Clara, CA, USA</h3>
+        <br class="clear" />
+    </div>
+
+
+    <br class="clear" />
+</div><div id="nav-top">
+
+    <div class="left-corner"></div>
+    <div class="nav-wrapper">
+
+        <div class="nav">
+
+            <a class="home" href="/conference/santa_clara/2013/09/home">
+                <img src="/styles/spring2013/images/bg-top-nav-home.png" alt="HOME"/>
+            </a>
+
+            <div class="drop-down agenda">
+
+                <a class="drop-down-button" href="#">
+
+                    Agenda
+
+                    <img class="normal" src="/styles/spring2013/images/down_arrow_normal.png" alt="Agenda"/>
+                    <img class="active" src="/styles/spring2013/images/down_arrow_active.png" alt="Agenda"/>
+                </a>
+
+                <br class="clear" />
+
+                <div class="menu-wrapper">
+
+    <div class="menu">
+
+        <h3 class="last">Schedule TBD</h3>
+
+</div> <!-- // menu -->
+
+</div> <!-- // menu-wrapper --></div>
+
+            <div class="drop-down speakers">
+
+                <a class="drop-down-button" href="#">Speakers
+
+                    <img class="normal" src="/styles/spring2013/images/down_arrow_normal.png" alt="Speakers"/>
+                    <img class="active" src="/styles/spring2013/images/down_arrow_active.png" alt="Speakers"/>
+                </a>
+
+                <br class="clear" />
+
+                <div class="menu-wrapper">
+
+    <div class="menu">
+
+
+        <h3><a href="/conference/santa_clara/2013/09/speakers">S2GX Speakers</a></h3>
+        <h4><a href="/conference/santa_clara/2013/09/springone/event_speakers">SpringOne</a> </h4>
+        <h4 class="last"><a href="/conference/santa_clara/2013/09/2gx/event_speakers">Groovy &amp; Grails</a> </h4>
+
+
+    </div> <!-- // menu -->
+
+</div> <!-- // menu-wrapper --></div>
+
+
+            <a class="travel" href="/conference/santa_clara/2013/09/travel">Travel</a>
+
+              <a class="contact" href="/home/feedback">Contact</a>
+
+              <div class="drop-down members">
+
+                <a class="drop-down-button" href="#">Members
+                    <img class="normal" src="/styles/spring2013/images/down_arrow_normal.png" alt="Members"/>
+                    <img class="active" src="/styles/spring2013/images/down_arrow_active.png" alt="Members"/>
+                </a>
+
+
+
+                <br class="clear" />
+
+                <div class="menu-wrapper">
+
+    <div class="menu">
+
+        <h3><a href="https://springone2gx.com/m/login" title="Sign In">Member Sign In</a></h3>
+        <h3 class="last"><a href="/home/feedback">Send Comment</a>                                         </h3>
+
+
+    </div> <!-- // menu -->
+
+</div> <!-- // menu-wrapper -->
+</div>
+              <a class="register" href="/conference/santa_clara/2013/09/register">
+                Register
+              </a>
+
+        </div>
+
+        <br class="clear" /> <!-- // nav-wrapper -->
+    </div>
+
+    <div class="right-corner"></div>
+    <br class="clear" />
+</div>
+
+<div id="container">
+        <br class="clear" />
+
+        <!-- CONTENT SECTION -->
+        <div id="show-content">
+
+            <h1>SpringOne 2GX Registration</h1>
+
+<div class="specialRegistrationPage ">
+
+<form name="register" action="register_redirect" method="POST" target="new">
+
+    <input type="hidden" name="showId" value="320"/>
+
+
+
+<div class="rate-table-wrapper">
+
+<table class="itemTable ratePackages" border="0">
+
+<tr>
+     <th class="package">Package</th>
+     <th class="rate">Before Tue Jun 11 00:00:00 CDT 2013</th>
+     <th class="rate">Before Sat Aug 10 00:00:00 CDT 2013</th>
+     <th class="rate">
+
+          After 2013-08-09 23:59:59.0</th>
+     </tr>
+
+<tr class="odd">
+
+     <td>Standard Package<div class="description">Includes: All Access Pass</div>
+     </td>
+     <td class="rate">1350.0</td>
+     <td class="rate">1550.0</td>
+     <td class="rate">1750.0</td>
+
+
+     </tr>
+
+<tr class="odd">
+     <td colspan="5">
+          * If you register 4 individuals the 5 person is free.  See below for details.
+     </td>
+</tr>
+</table>
+
+
+<div class="termValue submit mr20">
+<input onClick="_gaq.push(['_trackPageview','/register/superearly/acteva']);" type="image" src="/styles/springimages/btn_proceed_to_register.png" alt="Proceed to Register" /><br class="clear" />
+</div>
+
+
+
+
+<br class="clear" />
+</div>
+
+<br class="clear" />
+</form><br class="clear" />
+
+<div class="mt30">
+
+<h3>All Access Pass Includes:</h3>
+<ul class="ml30 mb30 includes">
+<li>Conference Pass - September 9 - 12, 2013</li>
+
+<li>September 9th - Reception and Dinner                                       </li>
+<li>September 10th - Breakfast/Lunch/Dinner, Breaks and evening reception       </li>
+<li>September 11th - Breakfast/Lunch, Dinner & Breaks                           </li>
+<li>September 12th - Breakfast/Lunch, Breaks                                    </li>
+
+<li>SpringOne 2GX &nbsp;2013 T-Shirt</li>
+<li>SpringOne 2GX &nbsp;2013 Four Gig USB Drive</li>
+<li>SpringOne 2GX &nbsp;2013 Notebook</li>
+</ul><div class="note2">
+
+     <b>* Note: </b>
+
+        If you register 4 attendees send <a href="mailto: jzimmerman@nofluffjuststuff.com">jzimmerman@nofluffjuststuff.com</a>
+        an email confirming that the group has been registered.
+        He will then send a promo code back to you which allows the 5th
+        individual to register complimentary.
+
+
+
+    <br/>
+
+</div>
+<p>
+Our registration processing services are provided by <a href="http://www.acteva.com/" target="new">Acteva.com</a>.
+Clicking the registration link will launch the Acteva registration in a new window.
+</p>
+
+
+<div class="note">
+    <b>Note: </b> 1) If you are registering for a group, please <b>provide an email address for each person in your group</b>.
+      Prior to the event, we will send an event instruction email with links to access event content.
+
+        2) Prices are subject to change
+
+     <br class="clear" />
+</div><br class="clear" />     <!-- // mt30 -->
+</div>
+
+
+
+<br class="clear" />     <!-- // specialRegistrationPage -->
+</div><hr class="clear"/>  <!-- // show-content -->
+        </div>
+
+        <hr class="clear"/>  <!-- // container -->
+    </div>
+
+	<div id="container-bottom">
+
+<div class="left"></div>
+<div class="middle"></div>
+<div class="right"></div>
+
+    <br class="clear" />
+</div><br class="clear" /> <!-- // container-wrapper -->
+</div>
+
+
+<!-- FOOTER -->
+    <div id="ftr">
+        <ul>
+            <li><a href="/home/about">About</a></li>
+            <li><a href="/home/feedback">Contact Us</a></li>
+            <li><a href="/mobile/index">Mobile</a></li>
+            <li class="last"><a href="/home/sitemap">Site Map</a></li>
+        </ul><br />
+        <ul>
+            <li class="last"><strong>NFJS SITES:</strong></li>
+            <li><a href="http://nofluffjuststuff.com/">No Fluff Just Stuff</a></li>
+            <li><a href="http://uberconf.com/">Uber Conf</a></li>
+            <li><a href="http://www.nfjsone.com/">NFJS One</a></li>
+            <li><a href="http://www.springone2gx.com/">SpringOne 2GX</a></li>
+            <li><a href="http://www.therichwebexperience.com/">Rich Web Experience</a></li>
+            <li class="last"><a href="http://continuousdeliveryexperience.com/">Continuous Delivery Experience</a></li>
+        </ul><br />
+        <ul>
+            <li class="last"><strong>SPRINGSOURCE SITES:</strong></li>
+            <li><a href="http://www.springsource.com/">Springsource.com</a></li>
+            <li class="last"><a href="http://springsource.org/">Springsource.org</a></li>
+        </ul>
+        <div class="copyright">
+        &copy; 2013 SpringSource, by VMware &amp; No Fluff, Just Stuff <sup>TM</sup>.  All rights reserved. Java is a registered trademark of Oracle.
+        </div>
+    </div>
+
+<script type="text/javascript" src="/script/m/common-3.3.33.js"></script>
+        <script type="text/javascript">
+
+    
+    nfjs.user.https_signout();
+    spring.menu.observe();</script>
+
+
+
+
+</div>   <!-- // wrapper -->
+
+</div> <!-- // view-wrapper -->
+
+</body>
+</html>
+
+

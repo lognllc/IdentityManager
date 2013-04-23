@@ -1,0 +1,508 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Core Spring Training</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="en-us" />
+<meta name="copyright" content="VMware, Inc. All rights reserved." />
+
+<link rel="alternate" type="application/rss+xml" href="//www.vmware.com/sitemap.xml" />
+<link rel="alternate" type="application/rss+xml" href="//www.vmware.com/ror.xml" />
+<link rel="alternate" type="application/rss+xml" href="http://vmware.simplefeed.net/rss" />
+<link rel="shortcut icon" type="image/x-icon" href="//www.vmware.com/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="/ui/styles/global_www.css?release=13.4" />
+<link rel="stylesheet" type="text/css" href="//www.vmware.com/files/templates/inc/template.css" />
+<link rel="stylesheet" type="text/css" href="//www.vmware.com/files/templates/inc/fce.css" />
+<link rel="stylesheet" type="text/css" media="print" href="//www.vmware.com/files/templates/inc/print.css" />
+
+
+<script type="text/javascript" src="//www.vmware.com/files/templates/inc/library.js"></script>
+
+			<script type="text/javascript">
+	
+				function changeCSSClasses(activeList,inactiveList,activeStyle,inactiveStyle){
+					var theActiveList = activeList.split(',');
+					var theInactiveList = inactiveList.split(',');
+					if(!activeStyle){var activeStyle='active'}
+					if(!inactiveStyle){var inactiveStyle='inactive'}
+					
+					for(var i = 0; i < theActiveList.length; i++){
+						$(theActiveList[i]).attr('class',activeStyle);
+					}
+					for(var i = 0; i < theInactiveList.length; i++){
+						$(theInactiveList[i]).attr('class',inactiveStyle);
+					}
+				}
+				
+				function showHideWidgetDivs(showList,hideList){
+					var theShowList = showList.split(',');
+					var theHideList = hideList.split(',');
+					
+					for(var i = 0; i < theShowList.length; i++){
+						$(theShowList[i]).show();
+					}
+					for(var i = 0; i < theHideList.length; i++){
+						$(theHideList[i]).hide();
+					}
+				}
+			
+			</script>
+			<script type="text/javascript" src="/ui/jslib/jquery.js?release=13.4"></script>
+<meta name="description" content="Core Spring is the four-day flagship Spring Framework training. In this course, students build a Spring-powered Java application that demonstrates the Spring Framework and other Spring technologies like Spring AOP and Spring Security in an intensely productive, hands-on setting.
+Completion of this training entitles you to receive a free voucher to schedule an exam at a Pearson VUE Center to become a Spring Certified Professional." />
+<meta name="keywords" content="core spring, spring framework tutorial,spring framework training,java spring training,spring tutorial,spring tutorial step by step,spring java tutorial,spring basic tutorial,spring 3 tutorial,spring framework course,springsource training,learn spring framework,spring training,tutorial spring framework,spring java framework" />
+<script>userIsLoggedIn = 0; userIsManager = 0;</script></head>
+
+
+<body>
+
+<div id="container">
+  <strong class="seo">VMware</strong>
+  <div id="content-container">
+    <div id="content-left">
+
+      <div id="header" class="firstlevelcusted">
+        <div class="overlay">
+          <h1>VMware Training</h1>
+			
+        </div>
+      </div>
+
+	  
+	  <div id="chatAdvisor">
+		<div class="chatLink">
+		  Course Advisor:
+		  <a href="http://mylearn.vmware.com/contact.cfm?ui=www_edu">Call</a>,
+		  <a href="http://mylearn.vmware.com/contact.cfm?ui=www_edu">Email</a>
+		  or
+		  <a href="http://mylearn.vmware.com/contact.cfm?ui=www_edu">Chat Online</a>
+		</div>
+	  </div>
+		
+      <div id="content">
+
+
+
+
+
+
+
+		
+<h2>Core Spring Training</h2>
+
+<table cellpadding="0" cellspacing="0" border="0" class="bodytext" width="100%">
+  <tr valign="top">
+	<td class="formrequired">Summary:</td>
+	<td>&nbsp;</td>
+	<td>
+      
+	
+	
+	  <div style="float:right; width:145px; margin: 0 0 9px 15px;">
+		
+	    <div style="margin-bottom:4px;"><a title="Classroom Classes" alt="Classroom Classes" href="/portals/www/search/results.cfm?ui=www_edu&menu=search-results&searchtype=simple&category=schedule&id_subject=17750&deliveryType=1&filters=deliveryType"><img src="/ui/images/buttons/en/btnbluelarge_classroom-classes.png" width="145" height="21" alt="Classroom Classes" border="0" align="absmiddle" /></a></div>
+		
+	    <div style="margin-bottom:4px;"><a title="Live Online Classes" alt="Live Online Classes" href="/portals/www/search/results.cfm?ui=www_edu&menu=search-results&searchtype=simple&category=schedule&id_subject=17750&deliveryType=16&filters=deliveryType"><img src="/ui/images/buttons/en/btnbluelarge_live-online-classes.png" width="145" height="21" alt="Live Online Classes" border="0" align="absmiddle" /></a></div>
+		
+	    <div style="margin-bottom:4px;"><a title="Inquire about Onsite" alt="Inquire about Onsite" href="/mgrReg/message.cfm?ui=www_edu&subject=Onsite%20Training&id_subject=17750"><img src="/ui/images/buttons/en/btnbluelarge_inquire-about-onsite.png" width="145" height="21" alt="Inquire about Onsite" border="0" align="absmiddle" /></a></div>
+		
+	    <div style="margin-bottom:4px;"><a title="Course Datasheet" alt="Course Datasheet" href="/descriptions/EDU_DATASHEET_CoreSpring_V32B.pdf" target="_blank"><img src="/ui/images/buttons/en/btngraylarge_course-datasheet.png" width="145" height="21" alt="Course Datasheet" border="0" align="absmiddle" /></a></div>
+		
+	  </div>
+	
+      <div style="margin-top:1px;">
+        - Formats:
+		
+        <strong style="color:#0C8D63;">Classroom</strong>, 
+        <strong style="color:#0C8D63;">Live Online</strong>, 
+        <strong style="color:#0C8D63;">Onsite</strong> 
+      </div>
+	
+	  <div>- Length: 4 Days</div>
+	
+      <div style="padding-top:15px;">
+		<div><strong>Overview:</strong></div>
+	    <div>Core Spring is the four-day flagship Spring Framework training. In this course, students build a Spring-powered Java application that demonstrates the Spring Framework and other Spring technologies like Spring AOP and Spring Security in an intensely productive, hands-on setting.<br><br>Completion of this training entitles you to receive a free voucher to schedule an exam at a Pearson VUE Center to become a Spring Certified Professional.</div>
+	  </div>
+		
+	</td>
+  </tr>
+  <tr>
+    <td colspan="3"><hr /></td>
+  </tr>
+	
+		
+	
+  <tr valign="top">
+	<td class="formrequired">Objectives:</td>
+	<td>&nbsp;&nbsp;</td>
+	<td class="bodytext"><li>Use the Spring Framework to develop Java applications<br><li>Use dependency injection to set up and configure applications<br><li>Test Spring-based applications<br><li>Set up Spring configuration using XML, annotations, and Java configuration<br><li>Use JPA/Hibernate and JDBC with Spring to access relational databases<br><li>Use Spring support for transactions<br><li>Use aspect-oriented programming (AOP) to add behavior to objects<br><li>Develop a basic Web application with Spring MVC<br><li>Use Spring Security to secure Web applications<br><li>Use Spring with RMI, HttpInvoker, and JMS for remote communication<br><li>Add management with the JMX API</td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+		
+  <tr valign="top">
+	<td class="formrequired" nowrap="nowrap">Intended Audience:</td>
+	<td>&nbsp;&nbsp;</td>
+	<td class="bodytext"><li>Developers<br><li>Architects</td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+		
+  <tr valign="top">
+	<td class="formrequired">Prerequisites:</td>
+	<td>&nbsp;&nbsp;</td>
+	<td class="bodytext"><li>Experience with developing applications using Java</td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+		
+  <tr valign="top">
+	<td class="formrequired">Outline:</td>
+	<td>&nbsp;&nbsp;</td>
+	<td class="bodytext">1&nbsp;&nbsp;Introduction to Spring<br>•&nbsp;&nbsp;XML configuration and the Spring application context<br>•&nbsp;&nbsp;Best practices: constructor versus setter injection<br>•&nbsp;&nbsp;Working with multiple configuration files<br>•&nbsp;&nbsp;Bean scope and factory beans<br><br>2&nbsp;&nbsp;Advanced XML Dependency Injection <br>•&nbsp;&nbsp;Most popular namespaces<br>•&nbsp;&nbsp;Best practices when working with namespaces<br>•&nbsp;&nbsp;Externalizing constant values into properties files<br>•&nbsp;&nbsp;Working with a high number of configuration files<br>•&nbsp;&nbsp;Bean definition inheritance<br><br>3&nbsp;&nbsp;Annotation-Based Dependency Injection<br>•&nbsp;&nbsp;Autowiring and component scanning<br>•&nbsp;&nbsp;Component scanning: how to do it right<br>•&nbsp;&nbsp;XML versus annotations: when to use what<br>•&nbsp;&nbsp;Life cycle annotations: @PostConstruct and @PreDestroy<br>•&nbsp;&nbsp;Stereotypes and meta-annotations<br><br>4&nbsp;&nbsp;Java-Based Dependency Injection<br>•&nbsp;&nbsp;@Configuration and @Bean annotations<br>•&nbsp;&nbsp;Where is the magic? Inheritance-based proxies<br>•&nbsp;&nbsp;Equivalent to XML namespaces: @Enable annotations<br>•&nbsp;&nbsp;When to use Java configuration<br><br>5&nbsp;&nbsp;Bean Life Cycle: How Does Spring Work Internally?<br>•&nbsp;&nbsp;The init phase: available interceptors <br>•&nbsp;&nbsp;The init phase: what is the difference between XML, annotations, and Java configuration?<br>•&nbsp;&nbsp;What happens during bean post processing<br>•&nbsp;&nbsp;Use and destruction phases<br><br>6&nbsp;&nbsp;Testing a Spring-Based Application<br>•&nbsp;&nbsp;Spring and test-driven development<br>•&nbsp;&nbsp;@ContextConfiguration and @RunWith annotations<br>•&nbsp;&nbsp;Application context caching and the @DirtiesContext annotation<br>•&nbsp;&nbsp;Environment abstraction and bean definition profiles<br><br>7&nbsp;&nbsp;Aspect-Oriented Programming<br>•&nbsp;&nbsp;What problems does AOP solve?<br>•&nbsp;&nbsp;Differences between Spring AOP and AspectJ<br>•&nbsp;&nbsp;Defining pointcut expressions<br>•&nbsp;&nbsp;Implementing an advice: @Around, @Before, @After, and so on<br><br>8&nbsp;&nbsp;Data Access and JDBC with Spring<br>•&nbsp;&nbsp;How Spring integrates with existing data access technologies<br>•&nbsp;&nbsp;DataAccessException hierarchy<br>•&nbsp;&nbsp;Implementing caching using @Cacheable<br>•&nbsp;&nbsp;jdbc namespace and the Spring JdbcTemplate<br><br>9&nbsp;&nbsp;Database Transactions with Spring<br>•&nbsp;&nbsp;@Transactional annotation<br>•&nbsp;&nbsp;Transactions configuration: XML versus annotations<br>•&nbsp;&nbsp;Isolation levels, transaction propagation, and rollback rules<br>•&nbsp;&nbsp;Transactions and integration testing <br>•&nbsp;&nbsp;Should you use read-only transactions?<br><br>10&nbsp;&nbsp;Integrating Spring with JPA and Hibernate<br>•&nbsp;&nbsp;Quick introduction to ORM with JPA<br>•&nbsp;&nbsp;Benefits of using Spring with JPA<br>•&nbsp;&nbsp;JPA configuration in Spring<br>•&nbsp;&nbsp;PersistenceException versus the Spring DataAccessException<br><br>11&nbsp;&nbsp;Spring in a Web Application<br>•&nbsp;&nbsp;Configuring Spring in a Web application (using Spring MVC, Struts, JSF, and so on)<br>•&nbsp;&nbsp;<mvc/> namespace<br>•&nbsp;&nbsp;Introduction to Spring MVC<br>•&nbsp;&nbsp;Using @Controller and @RequestMapping annotations<br><br>12&nbsp;&nbsp;Spring Security<br>•&nbsp;&nbsp;What problems does Spring Security solve?<br>•&nbsp;&nbsp;Configuring authentication and intercepting URLs<br>•&nbsp;&nbsp;Spring Security tag library for JSPs<br>•&nbsp;&nbsp;Security at the method level <br>•&nbsp;&nbsp;Customizing the Spring Security filter chain<br><br>13&nbsp;&nbsp;Advanced Topics<br>•&nbsp;&nbsp;Remoting: Using Spring remoting and the Spring HttpInvoker for remote access<br>•&nbsp;&nbsp;JMS: Sending and receiving messages using the JmsTemplate <br>•&nbsp;&nbsp;JMX: Configuring Spring to export automatically MBeans and exporting a Spring bean as an MBean<br><br>Questions? Contact our <a target="_new" href="http://mylearn.vmware.com/contact.cfm?ui=www_edu">SpringSource/VMware Helpdesk</a><br><br><a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31110&ui=www_cert">Certification</a> | <a href="http://mylearn.vmware.com/ilearn/MgrReg/faq.cfm?ui=www_edu&category=Customer%20Education">FAQ</a> | <a href="http://mylearn.vmware.com/mgrReg/message.cfm?ui=www&subject=Onsite%20Training">Onsite Training</a> | <a href="http://mylearn.vmware.com/portals/credits/?ui=www_edu">PSO Credits</a> | <a href="http://mylearn.vmware.com/ilearn/MgrReg/faq.cfm?ui=www&category=Customer%20Education">Terms & Conditions</a><br><br><img src="http://drh.img.digitalriver.com/DRHM/Storefront/Site/vmware/cm/images/nov09redesign/paymentmethods2.gif" align="middle" hspace="10" alt="SpringSource Payments"/></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+		
+</table>
+
+
+      </div>
+      <div id="breadcrumbs">
+	    <a href="http://www.vmware.com/">Home</a> &gt;
+		<a href="http://www.vmware.com/services/">Services</a> &gt;
+
+		<a href="http://mylearn.vmware.com/portals/www/">VMware Training</a>
+
+		&gt; <a href='/portals/www/search/findcourse.cfm?ui=www_edu'>Find a Class</a> &gt; Course Description 
+	  </div>
+    </div>
+
+
+    <div id="content-right">
+
+
+
+<ul id="secondary-navigation">
+  <h3><a href="http://www.vmware.com/services/"><span class="bg"><span>Services</span></span></a></h3>
+  <ul>
+  <li ><a href="http://mylearn.vmware.com/portals/certification/"><span class="bg"><span>Certification</span></span></a></li>
+    
+    <li ><a href="http://mylearn.vmware.com/mgrreg/index.cfm?ui=www_edu&redirect=off"><span class="bg"><span>VMware Training</span></span></a>
+	
+	  <ul>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=17377&ui=www_edu">Why VMware Authorized Training</a>
+			
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/portals/vci/mL.cfm?menu=public&ui=www_vci">Be a VMware Authorized Instructor</a>
+			
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/portals/www/search/findcourse.cfm?ui=www_edu">Find a Class</a>
+			
+		  <ul>
+			
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/portals/www/mL.cfm?menu=newcourses">What's New</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=37062&ui=www_edu">Promotions</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/portals/www/search/findcourse2.cfm?ui=www_edu&category=schedule&menu=search&searchtype=advanced&keyword=">Power Search</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=36536&ui=www_edu">Top Classes by Time Zone</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/courseware/151680/VM_Q213_CourseCatalog-without SKUs.pdf">Course Catalog (PDF)</a>
+			
+		    </li>
+				
+		  </ul>
+				
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=32222&ui=www_edu">Delivery Options</a>
+			
+		  <ul>
+			
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/mgrReg/message.cfm?ui=www&subject=Onsite Training">Request Onsite Training</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=33369&ui=www_edu">Free eLearning in Your Language</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://www.vmwarelearning.com">Free Instructional Videos</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://www.vmwarepress.com">Books from VMware Press</a>
+			
+		    </li>
+				
+		  </ul>
+				
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/mgrreg/locations.cfm?ui=www_edu">Training Centers</a>
+			
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/ilearn/MgrReg/faq.cfm?ui=www_edu&category=Customer Education">FAQs</a>
+			
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/contact.cfm?ui=www_edu">Contact Us</a>
+			
+	    </li>
+	
+        <li><a href="https://mylearn.vmware.com/MgrReg/login.cfm?ui=www_edu">Login</a></li>
+	
+      </ul>
+	
+    </li>
+  
+  </ul>
+</ul>
+
+
+<a href="http://www.vmworld.com/registration.jspa?src=VMworld2013interimregcertbanner" target="_blank"><img src="/courseware/174693/vmw-web-vmworld13-US-reg-live-cert-221x91-101.jpg"></a>
+<br/><br/> <a href="http://vmwarelearningpaths.com/lists/viewpoint/subscribe" target="_blank"><img src="http://mylearn.vmware.com/courseware/172878/quarterly_newsletter.png"></a>
+<br/><br/> <center>
+<table border="0">
+<tr><td>
+<a href="http://www.facebook.com/pages/VMware-Education-Services/143592492341597">
+        <img src="http://mylearn.vmware.com/courseware/151448/fb_icon.png">
+      </a>
+      <a href="http://twitter.com/VMwareEducation" class="center">
+        <img src="http://mylearn.vmware.com/courseware/151451/twitter_icon.png">
+      </a>
+      <a href="http://blogs.vmware.com/education" class="last">
+        <img src="http://mylearn.vmware.com/courseware/160392/vmware_ed_blog.png">
+</td></tr></table>
+</center>
+<br/> 	
+<div id="popWidgetTL">
+  <div id="popWidgetHeading">Trending Now</div>
+  <div id="popWidgetTR"></div>
+</div>
+		
+		
+		
+<div id="popWidgetNav">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+			
+			
+			
+				
+      <td class="left" width="33%"><a id="multiList1id1" class="active" href="javascript:;" onClick="changeCSSClasses('#multiList1id1','#multiList1id2,#multiList1id3');showHideWidgetDivs('#contentmultiList1id1','#contentmultiList1id2,#contentmultiList1id3');">What's Hot</a></td>
+			
+				
+      <td class="left" width="33%"><a id="multiList1id2" class="inactive" href="javascript:;" onClick="changeCSSClasses('#multiList1id2','#multiList1id1,#multiList1id3');showHideWidgetDivs('#contentmultiList1id2','#contentmultiList1id1,#contentmultiList1id3');">Top Paid</a></td>
+			
+				
+      <td  width="33%"><a id="multiList1id3" class="inactive" href="javascript:;" onClick="changeCSSClasses('#multiList1id3','#multiList1id1,#multiList1id2');showHideWidgetDivs('#contentmultiList1id3','#contentmultiList1id1,#contentmultiList1id2');">Top Free</a></td>
+			
+	</tr>
+  </table>
+</div>
+		
+<div id="popWidgetContent">
+		
+  <div id="contentmultiList1id1" style="padding-top:5px;">
+    		
+	<ol>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=43354">VMware Horizon Mirage Fundamentals [V4.0]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=37587">VMware vSphere: Install, Configure, Manage [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=40085">VMware vSphere: Fast Track [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=39046">VMware vSphere: Optimize and Scale [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=38176">VMware vSphere: What’s New [V 5.1]</a></li>
+			
+	</ol>
+			
+	<div class="seeAll">
+	  <a href="http://mylearn.vmware.com/portals/www/mL.cfm?menu=hotcourses" title="See all hot courses">See all hot courses&nbsp;&gt;&gt;</a>
+	</div>
+			
+  </div>
+		
+  <div id="contentmultiList1id2" style="padding-top:5px; display:none;">
+    		
+	<ol>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=37587">VMware vSphere: Install, Configure, Manage [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=40085">VMware vSphere: Fast Track [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=39046">VMware vSphere: Optimize and Scale [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=38932">VMware vCloud Director: Install, Configure, Manage [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=31355">VMware View: Install, Configure, Manage [V5.1]</a></li>
+			
+	</ol>
+			
+	<div class="seeAll">
+	  <a href="http://mylearn.vmware.com/portals/www/mL.cfm?menu=toppaidcourses" title="See all top paid courses">See all top paid courses&nbsp;&gt;&gt;</a>
+	</div>
+			
+  </div>
+		
+  <div id="contentmultiList1id3" style="padding-top:5px; display:none;">
+    		
+	<ol>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=43354">VMware Horizon Mirage Fundamentals [V4.0]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=38176">VMware vSphere: What’s New [V 5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=43307">vCloud Networking and Security Fundamentals [V5.X]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=42954">VMware vCenter Operations Manager Fundamentals [V5.6] </a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=27841">VMware View: Fundamentals [V5.0]</a></li>
+			
+	</ol>
+			
+	<div class="seeAll">
+	  <a href="http://mylearn.vmware.com/portals/www/mL.cfm?menu=topfreecourses" title="See all top free courses">See all top free courses&nbsp;&gt;&gt;</a>
+	</div>
+			
+  </div>
+		
+</div>
+<div id="popWidgetBL">
+  <div id="popWidgetBR"></div>
+</div>
+<div style="height:10px;"><!--.--></div>
+	
+	
+				    <div class="promo-style">
+				      <div>
+					
+					    <h3>Quick Links</h3>
+					<div style="margin-top:0;"><a class="more" href="http://mylearn.vmware.com/signin.cfm?ui=www_edu">Class Sign-In</a></div>
+<div><a class="more" href="http://mylearn.vmware.com/evaluate?ui=www_edu">Class Evaluation</a></div>
+<div><a class="more" href="http://mylearn.vmware.com/portals/credits/?ui=www_edu">Credits</a></div>
+<div><a class="more" href="http://mylearn.vmware.com/redeem.cfm">Redeem</a></div>
+<div><a class="more" href="http://mylearn.vmware.com/portals/vci/">VCI Portal</a></div>
+				      </div>
+				    </div>
+					
+    </div>
+  </div>
+
+  <div id="top-of-page">
+    <div id="iglobal-sites"></div>
+    <div id="iprimary-navigation"></div>
+    <div id="isite-tools"></div>
+    <div id="ilanguage"></div>
+    <div id="isearch-form"></div>
+  </div>
+
+  <div id="ifooter"></div>
+</div>
+
+<div id="custom-extras"></div>
+
+
+
+<script type="text/javascript" src="//www.vmware.com/app/template/?set=mylearnedu"></script>
+
+
+<script type="text/javascript" src="//www.vmware.com/files/templates/inc/baynote.js"></script>
+<script type="text/javascript" src="//www.vmware.com/files/elqNow/elqCfg.js"></script>
+<script type="text/javascript" src="//www.vmware.com/files/elqNow/elqImg.js"></script>
+<script type="text/javascript" src="//www.vmware.com/files/templates/inc/s_code_vmw.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+  <!--
+    /* You may give each page an identifying name, server, and channel on the next lines. */
+    s.pageName="vmware : mylearn : www : Course Desc : Core Spring Training"
+    s.prop23="mylearn : www"
+    s.events=""
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    s.hier1=""
+    if (s.prop1) s.channel=s.prop1
+    setProps1t5();
+    var s_code=s.t();if(s_code)document.write(s_code)
+  //-->
+</script>
+<script type="text/javascript" language="JavaScript">
+  <!--
+    if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+  //-->
+</script>
+
+
+</body>
+</html>
+
+

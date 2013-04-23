@@ -1,0 +1,89 @@
+#sidebar
+{
+display: none;
+}
+
+#pagenav
+{
+display: none;
+}
+
+*
+{
+border: none !important;
+}
+
+body
+{
+font-size: 76%;
+font-family: Tahoma, 'Trebuchet MS', Arial, Verdana, Sans-Serif;
+color: black !important;
+}
+
+form
+{
+display: none;
+}
+
+.noprint
+{
+display: none;
+}
+
+#page
+{
+width: 95%;
+}
+
+#wrapper
+{
+width: 100%;
+margin-left: 0 !important;
+padding-left: 0 !important;
+}
+
+#main
+{
+width: 100%;
+margin-left: 0 !important;
+padding-left: 0 !important;
+}
+
+.post, #content
+{
+margin: 0; padding: 0;
+}
+
+#header
+{
+border: none;
+}
+
+.colourcode
+{
+overflow: hidden;
+white-space: pre;
+width: 100%;
+}
+
+.colourcodefull
+{
+height: auto;
+}
+
+#inset
+{
+display: none;
+}
+
+.narrowcontents, .widecontent
+{
+width: 100% !important;
+margin: 0;
+padding: 0;
+}
+
+.linkbar
+{
+display: none;
+}

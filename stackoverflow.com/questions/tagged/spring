@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html>
+<head>
+        
+    <title>Newest &#39;spring&#39; Questions - Stack Overflow</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+    <link rel="apple-touch-icon image_src" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+    
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.sstatic.net/js/stub.js?v=1f945f8e69cb"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.sstatic.net/stackoverflow/all.css?v=0f0c93534e2b">
+    
+        <link rel="alternate" type="application/atom+xml" title="Feed of questions tagged spring" href="/feeds/tag/spring" />
+
+
+    <script type="text/javascript">
+        StackExchange.init({"stackAuthUrl":"https://stackauth.com","serverTime":1366754440,"styleCode":true,"enableUserHovercards":true,"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","useNewStyleFavoriteTagsEditor":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"90bcabf5cd89a08d496f78fbc215cc54","isAnonymous":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.js":"6c261bebf56a","js/moderator.js":"f96f7e4ee5dc","js/full-anon.js":"4aa778f20142","js/full.js":"2cb347042411","js/wmd.js":"e62e6bd6c127","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/mobile.js":"6eb68240242f","js/help.js":"fc9fb0517db2","js/tageditor.js":"450c9e8426fc","js/tageditornew.js":"b6c68ad4c7dd","js/inline-tag-editing.js":"8e84e8a137f7","js/revisions.js":"7273bb714bba","js/review.js":"56c3941a5bfc","js/tagsuggestions.js":"aa48ef6154df","js/post-validation.js":"98fa812e7e1a","js/explore-qlist.js":"44794e78c6be"});
+        
+    </script>
+        <script type="text/javascript">
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+</head>
+<body class="tagged-questions-page">
+    <noscript><div id="noscript-padding"></div></noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+    <div class="container">
+        <div id="header" >
+            <div id="portalLink">
+                <a class="genu" href="http://stackexchange.com" onclick="StackExchange.ready(function(){genuwine.click();});return false;">Stack Exchange</a>
+            </div>
+            <div id="topbar">
+                <div id="hlinks">
+                    
+<span id="hlinks-user"></span>
+<span id="hlinks-nav">                    <a href="/users/login?returnurl=%2fquestions%2ftagged%2fspring">log in</a>
+
+ <span class="lsep">|</span>
+                    <a href="http://careers.stackoverflow.com">careers 2.0</a>
+
+ <span class="lsep">|</span>
+</span>
+<span id="hlinks-custom">            <a href="http://chat.stackoverflow.com">chat</a>
+
+ <span class="lsep">|</span>
+                <a href="http://meta.stackoverflow.com">meta</a>
+
+ <span class="lsep">|</span>
+            <a href="/about">about</a>
+
+ <span class="lsep">|</span>
+        <a href="/faq">faq</a>
+</span>
+                </div>
+                <div id="hsearch">
+                    <form id="search" action="/search" method="get" autocomplete="off">
+                        <div>
+                            <input autocomplete="off" name="q" class="textbox" placeholder="search" tabindex="1" type="text" maxlength="240" size="28" value="[spring]">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="/" >
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs ">
+                    <ul>
+                            <li class="youarehere"><a id="nav-questions" href="/questions">Questions</a></li>
+                            <li><a id="nav-tags" href="/tags">Tags</a></li>
+                            <li><a id="nav-users" href="/users">Users</a></li>
+                            <li><a id="nav-badges" href="/badges">Badges</a></li>
+                            <li><a id="nav-unanswered" href="/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion"  href="/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+        <div id="content">
+            
+
+    <div id="mainbar">
+        <div class="subheader">
+            <h1>Tagged Questions</h1>
+            <div id="tabs">
+
+<a href="/tags/spring/info" title="information about this tag">info</a><a class="youarehere" href="/questions/tagged/spring?sort=newest&pagesize=15" title="the most recently asked questions">newest</a>
+<a href="/questions/tagged/spring?sort=featured&pagesize=15" title="questions with open bounties"><span class='bounty-indicator-tab'>3</span>featured</a>
+<a href="/questions/tagged/spring?sort=frequent&pagesize=15" title="questions with the most links">frequent</a>
+<a href="/questions/tagged/spring?sort=votes&pagesize=15" title="questions with the most votes">votes</a>
+<a href="/questions/tagged/spring?sort=active&pagesize=15" title="questions that have recent activity">active</a>
+<a href="/questions/tagged/spring?sort=unanswered&pagesize=15" title="questions that have no upvoted answers">unanswered</a>
+            </div>
+        </div>
+        <div class="question">
+
+
+            <div class="welovestackoverflow" style="margin-top: 10px;">
+                <div style="float: left;">
+                            <p>The Spring Framework is an open source application framework for the Java platform, designed to make Java SE/Java EE technologies easier to use.</p>
+                                            <p style="margin-bottom: 0;">
+                            <a title="tag wiki" href="/tags/spring/info">learn more&hellip;</a>
+                            <span class="lsep">|</span> 
+                            <a title="top answerers and askers in this tag" href="/tags/spring/topusers">top users</a> 
+                            <span class="lsep">|</span> 
+                            <a title="common, alternate spellings or phrasings for this tag" href="/tags/spring/synonyms">synonyms (1)</a>
+                                <span class="lsep">|</span>
+                                <a title="find yourself a job" href="http://careers.stackoverflow.com/jobs/tag/spring">spring jobs</a>
+                                                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div id="questions" class="content-padding">
+
+<div class="question-summary" id="question-summary-16179608">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>0</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="status unanswered">
+                <strong>0</strong>answers
+            </div>
+        </div>
+        
+
+
+<div class="views " title="5 views">
+                    5 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16179608/cxf-interceptor-annotation-works-spring-configuration-does-not" class="question-hyperlink">CXF Interceptor annotation works, spring configuration does not</a></h3>
+        <div class="excerpt">
+            I have implemented a jax-ws service and I'm trying to use a custom interceptor:
+
+TestInterceptor.java
+
+public class TestInterceptor extends AbstractPhaseInterceptor&lt;Message&gt; {
+    public ...
+        </div>
+             
+        <div class="tags t-java t-web-services t-spring t-cxf">
+            <a href="/questions/tagged/java" class="post-tag" title="show questions tagged 'java'" rel="tag">java</a> <a href="/questions/tagged/web-services" class="post-tag" title="show questions tagged 'web-services'" rel="tag">web-services</a> <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/cxf" class="post-tag" title="show questions tagged 'cxf'" rel="tag">cxf</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 21:36:37Z" class="relativetime">24 mins ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1873037/wiliano-vanderkeskov"><div class=""><img src="http://www.gravatar.com/avatar/81073ced67a61340d736c111b1f771b7?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1873037/wiliano-vanderkeskov">wiliano vanderkeskov</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">18</span><span title="2 bronze badges"><span class="badge3"></span><span class="badgecount">2</span></span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16179467">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>0</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="status unanswered">
+                <strong>0</strong>answers
+            </div>
+        </div>
+        
+
+
+<div class="views " title="6 views">
+                    6 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16179467/error-when-trying-to-create-transactionmanager-bean-in-a-spring-hibernate-appl" class="question-hyperlink">Error when trying to create transactionManager bean in a Spring - Hibernate application</a></h3>
+        <div class="excerpt">
+            I am getting an error from spring when it tries to create a transaction manager bean.
+I am posting my java classes and configuration files below.
+
+foo.bar/HelloApp.java :
+
+package foo.bar;
+
+import ...
+        </div>
+             
+        <div class="tags t-spring t-hibernate">
+            <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/hibernate" class="post-tag" title="show questions tagged 'hibernate'" rel="tag">hibernate</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 21:26:36Z" class="relativetime">34 mins ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/881739/skiabox"><div class=""><img src="http://www.gravatar.com/avatar/21d35356b4f79af9d9cc01f042d61ae8?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/881739/skiabox">skiabox</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">466</span><span title="3 silver badges"><span class="badge2"></span><span class="badgecount">3</span></span><span title="15 bronze badges"><span class="badge3"></span><span class="badgecount">15</span></span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16179061">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>0</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="status unanswered">
+                <strong>0</strong>answers
+            </div>
+        </div>
+        
+
+
+<div class="views " title="5 views">
+                    5 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16179061/javafx2-consume-restful-services" class="question-hyperlink">JavaFX2: Consume Restful services</a></h3>
+        <div class="excerpt">
+            I am trying to work on an architecture to consume RESTFul services from a JavaFX application. The requirement is to use spring's rest template(Not too pressed for this. If spring does not work then ...
+        </div>
+             
+        <div class="tags t-web-services t-spring t-rest t-javafx-2">
+            <a href="/questions/tagged/web-services" class="post-tag" title="show questions tagged 'web-services'" rel="tag">web-services</a> <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/rest" class="post-tag" title="show questions tagged 'rest'" rel="tag">rest</a> <a href="/questions/tagged/javafx-2" class="post-tag" title="show questions tagged 'javafx-2'" rel="tag">javafx-2</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 20:58:31Z" class="relativetime">1 hour ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1539057/user1539057"><div class=""><img src="http://www.gravatar.com/avatar/4ab7aad4243cc49debcdef5b0e6edcf0?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1539057/user1539057">user1539057</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">6</span><span title="4 bronze badges"><span class="badge3"></span><span class="badgecount">4</span></span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16178530">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>0</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="status answered">
+                <strong>1</strong>answer
+            </div>
+        </div>
+        
+
+
+<div class="views " title="13 views">
+                    13 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16178530/hibernate-column-with-list" class="question-hyperlink">Hibernate column with list</a></h3>
+        <div class="excerpt">
+            I want to create a hibernate table which can store a list of values. I am doing something like:
+
+@Column(name = "userHobbies")
+@ElementCollection(targetClass = String.class)
+@CollectionTable(schema = ...
+        </div>
+             
+        <div class="tags t-database t-spring t-hibernate t-table">
+            <a href="/questions/tagged/database" class="post-tag" title="show questions tagged 'database'" rel="tag">database</a> <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/hibernate" class="post-tag" title="show questions tagged 'hibernate'" rel="tag">hibernate</a> <a href="/questions/tagged/table" class="post-tag" title="show questions tagged 'table'" rel="tag">table</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 20:25:27Z" class="relativetime">1 hour ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1975139/benz-java"><div class=""><img src="http://www.gravatar.com/avatar/51cae8db0d832831051c954b051517cd?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1975139/benz-java">Benz_java</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">101</span><span title="6 bronze badges"><span class="badge3"></span><span class="badgecount">6</span></span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16178237">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>0</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="status unanswered">
+                <strong>0</strong>answers
+            </div>
+        </div>
+        
+
+
+<div class="views " title="8 views">
+                    8 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16178237/autowiring-not-working-in-spring-jax-ws-on-jboss-as-7" class="question-hyperlink">Autowiring not working in Spring JAX-WS on JBOSS AS 7</a></h3>
+        <div class="excerpt">
+            I have deployed a test Spring JAX-WS Web Service to JBOSS AS 7, but I would like to have dependency injection in the endpoint classes. To achieve this I am extending SpringBeanAutoWiringSupport, but ...
+        </div>
+             
+        <div class="tags t-spring t-jboss t-jax-ws t-autowired">
+            <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/jboss" class="post-tag" title="show questions tagged 'jboss'" rel="tag">jboss</a> <a href="/questions/tagged/jax-ws" class="post-tag" title="show questions tagged 'jax-ws'" rel="tag">jax-ws</a> <a href="/questions/tagged/autowired" class="post-tag" title="show questions tagged 'autowired'" rel="tag">autowired</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 20:08:24Z" class="relativetime">1 hour ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/2312789/steven-romero"><div class=""><img src="http://www.gravatar.com/avatar/e00519bba805852d850d9ef987cbf04e?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/2312789/steven-romero">Steven Romero</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">1</span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16177446">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>0</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="status unanswered">
+                <strong>0</strong>answers
+            </div>
+        </div>
+        
+
+
+<div class="views " title="5 views">
+                    5 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16177446/spring-web-flow-samples" class="question-hyperlink">Spring Web Flow Samples</a></h3>
+        <div class="excerpt">
+            I am trying to use Spring Web Flow for the first time and am following this link: https://github.com/SpringSource/spring-webflow-samples . I tried to do both ways as mentioned in the ReadMe.md. Here ...
+        </div>
+             
+        <div class="tags t-spring t-spring-webflow">
+            <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/spring-webflow" class="post-tag" title="show questions tagged 'spring-webflow'" rel="tag">spring-webflow</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 19:16:16Z" class="relativetime">2 hours ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/387093/mona"><div class=""><img src="http://www.gravatar.com/avatar/61cfc6556d5a56789bfcdcedc2dd95d8?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/387093/mona">mona</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">751</span><span title="3 gold badges"><span class="badge1"></span><span class="badgecount">3</span></span><span title="10 silver badges"><span class="badge2"></span><span class="badgecount">10</span></span><span title="18 bronze badges"><span class="badge3"></span><span class="badgecount">18</span></span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16177086">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>1</strong></span>
+                    <div class="viewcount">vote</div>
+                </div>
+            </div>
+            <div class="status unanswered">
+                <strong>0</strong>answers
+            </div>
+        </div>
+        
+
+
+<div class="views " title="11 views">
+                    11 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16177086/authorization-before-accessing-static-resources-in-spring-web-app" class="question-hyperlink">Authorization Before Accessing Static Resources In Spring Web App</a></h3>
+        <div class="excerpt">
+            I have mapped the static resources in my application in spring's configuration xml like this 
+
+&lt;mvc:resources mapping="/resources/**" location="/WEB-INF/resources/" /&gt;
+
+
+Now i want that only ...
+        </div>
+             
+        <div class="tags t-spring t-spring-mvc t-spring-security">
+            <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/spring-mvc" class="post-tag" title="show questions tagged 'spring-mvc'" rel="tag">spring-mvc</a> <a href="/questions/tagged/spring-security" class="post-tag" title="show questions tagged 'spring-security'" rel="tag">spring-security</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 18:54:59Z" class="relativetime">3 hours ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1633253/mayank-sharma"><div class=""><img src="http://www.gravatar.com/avatar/69498499efc5e66ff7ceb089975e733d?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1633253/mayank-sharma">Mayank Sharma</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">16</span><span title="2 bronze badges"><span class="badge3"></span><span class="badgecount">2</span></span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16176670">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>0</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="status unanswered">
+                <strong>0</strong>answers
+            </div>
+        </div>
+        
+
+
+<div class="views " title="11 views">
+                    11 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16176670/spring-framework-using-sql-server-2008-and-sqljdbc4-jar" class="question-hyperlink">Spring Framework using SQL Server 2008 and sqljdbc4.jar</a></h3>
+        <div class="excerpt">
+            I'm building a web appa nd using Srping Framework.  I did the tutorial: https://sites.google.com/site/springmvcnetbeans/step-by-step/ and thought I would easily be able to convert it to the SQL db ...
+        </div>
+             
+        <div class="tags t-java t-sql-server t-spring t-jdbc t-glassfish">
+            <a href="/questions/tagged/java" class="post-tag" title="show questions tagged 'java'" rel="tag">java</a> <a href="/questions/tagged/sql-server" class="post-tag" title="show questions tagged 'sql-server'" rel="tag">sql-server</a> <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/jdbc" class="post-tag" title="show questions tagged 'jdbc'" rel="tag">jdbc</a> <a href="/questions/tagged/glassfish" class="post-tag" title="show questions tagged 'glassfish'" rel="tag">glassfish</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 18:33:40Z" class="relativetime">3 hours ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/2055871/patrick-bailey"><div class="gravatar-wrapper-32"><img src="http://i.stack.imgur.com/ri0Eh.jpg?s=32&g=1" alt=""></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/2055871/patrick-bailey">Patrick Bailey</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">16</span><span title="4 bronze badges"><span class="badge3"></span><span class="badgecount">4</span></span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16176176">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>0</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="status answered">
+                <strong>1</strong>answer
+            </div>
+        </div>
+        
+
+
+<div class="views " title="14 views">
+                    14 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16176176/how-to-find-out-spring-default-bean-registrations" class="question-hyperlink">How to find out Spring default bean Registrations</a></h3>
+        <div class="excerpt">
+            We have the following XML elements.
+
+ &lt;mvc:annotation-driven /&gt;
+ &lt;context:component-scan /&gt;
+ &lt;context:annotation-config/&gt;
+
+
+etc,
+
+Is there a way to find out (from eclipse or any ...
+        </div>
+             
+        <div class="tags t-java t-spring t-mvc t-configuration">
+            <a href="/questions/tagged/java" class="post-tag" title="show questions tagged 'java'" rel="tag">java</a> <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/mvc" class="post-tag" title="show questions tagged 'mvc'" rel="tag">mvc</a> <a href="/questions/tagged/configuration" class="post-tag" title="show questions tagged 'configuration'" rel="tag">configuration</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 18:06:08Z" class="relativetime">3 hours ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/668650/kevin-rave"><div class=""><img src="http://www.gravatar.com/avatar/32c82f441e4396f06dcdd1dd2108382a?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/668650/kevin-rave">Kevin Rave</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">795</span><span title="3 silver badges"><span class="badge2"></span><span class="badgecount">3</span></span><span title="17 bronze badges"><span class="badge3"></span><span class="badgecount">17</span></span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16175035">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>0</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="status unanswered">
+                <strong>0</strong>answers
+            </div>
+        </div>
+        
+
+
+<div class="views " title="19 views">
+                    19 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16175035/spring-servlet-mapping" class="question-hyperlink">Spring Servlet Mapping</a></h3>
+        <div class="excerpt">
+            I am using Spring 3.2 Web MVC with default annotation mapping. I use a servlet mapping like this:
+
+&lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;profil&lt;/servlet-name&gt;
+    ...
+        </div>
+             
+        <div class="tags t-spring t-spring-mvc">
+            <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/spring-mvc" class="post-tag" title="show questions tagged 'spring-mvc'" rel="tag">spring-mvc</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info user-hover">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 16:58:04Z" class="relativetime">5 hours ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/351758/janning"><div class=""><img src="http://www.gravatar.com/avatar/7e46e616b10e82acf16d17095a9d60f0?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/351758/janning">Janning</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">1,473</span><span title="16 silver badges"><span class="badge2"></span><span class="badgecount">16</span></span><span title="29 bronze badges"><span class="badge3"></span><span class="badgecount">29</span></span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16174987">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>0</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="status unanswered">
+                <strong>0</strong>answers
+            </div>
+        </div>
+        
+
+
+<div class="views " title="6 views">
+                    6 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16174987/spring-security-oauth2-getting-custom-data-from-oauth2-principal" class="question-hyperlink">Spring security oauth2 - getting custom data from OAuth2 principal</a></h3>
+        <div class="excerpt">
+            I have a site that uses Spring security and has users (username &amp; password) and standard form authentication.  I allow users to generate a client Id and client secret linked to their account for ...
+        </div>
+             
+        <div class="tags t-java t-spring t-rest t-spring-security t-oauth-2&#251;0">
+            <a href="/questions/tagged/java" class="post-tag" title="show questions tagged 'java'" rel="tag">java</a> <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/rest" class="post-tag" title="show questions tagged 'rest'" rel="tag">rest</a> <a href="/questions/tagged/spring-security" class="post-tag" title="show questions tagged 'spring-security'" rel="tag">spring-security</a> <a href="/questions/tagged/oauth-2.0" class="post-tag" title="show questions tagged 'oauth-2.0'" rel="tag">oauth-2.0</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 16:55:03Z" class="relativetime">5 hours ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1337127/mark-doyle"><div class=""><img src="http://www.gravatar.com/avatar/88c5c900e5e61ec5d73e63fbb1f8242d?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1337127/mark-doyle">Mark Doyle</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">96</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="3 bronze badges"><span class="badge3"></span><span class="badgecount">3</span></span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16174871">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>0</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="status unanswered">
+                <strong>0</strong>answers
+            </div>
+        </div>
+        
+
+
+<div class="views " title="10 views">
+                    10 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16174871/cloudfoundy-deploying-standalone-application-with-spring-and-rabbitmq" class="question-hyperlink">Cloudfoundy: Deploying standalone application with spring and rabbitmq</a></h3>
+        <div class="excerpt">
+            I am trying to deploy a standalone application (worker) to cloudfoundry. Since it is a worker program, I do not want any web aspects in the program, so I am using a spring application context in my ...
+        </div>
+             
+        <div class="tags t-spring t-rabbitmq t-cloudfoundry">
+            <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/rabbitmq" class="post-tag" title="show questions tagged 'rabbitmq'" rel="tag">rabbitmq</a> <a href="/questions/tagged/cloudfoundry" class="post-tag" title="show questions tagged 'cloudfoundry'" rel="tag">cloudfoundry</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 16:48:07Z" class="relativetime">5 hours ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/474034/lanoxx"><div class=""><img src="http://www.gravatar.com/avatar/b11b9bc8f6dacdd2426412b016f056f0?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/474034/lanoxx">lanoxx</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">613</span><span title="5 silver badges"><span class="badge2"></span><span class="badgecount">5</span></span><span title="12 bronze badges"><span class="badge3"></span><span class="badgecount">12</span></span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16174743">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>1</strong></span>
+                    <div class="viewcount">vote</div>
+                </div>
+            </div>
+            <div class="status answered-accepted">
+                <strong>1</strong>answer
+            </div>
+        </div>
+        
+
+
+<div class="views " title="27 views">
+                    27 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16174743/no-session-found-for-current-thread-in-a-spring-hibernate-project" class="question-hyperlink">No Session found for current thread in a spring-hibernate project</a></h3>
+        <div class="excerpt">
+            I have created a spring-hibernate project, but I am getting the following error when I am trying to run my app.
+
+I provide the relevant classes here.
+
+resources/spring-config.xml :
+
+&lt;?xml ...
+        </div>
+             
+        <div class="tags t-spring t-hibernate">
+            <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/hibernate" class="post-tag" title="show questions tagged 'hibernate'" rel="tag">hibernate</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 16:41:02Z" class="relativetime">5 hours ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/881739/skiabox"><div class=""><img src="http://www.gravatar.com/avatar/21d35356b4f79af9d9cc01f042d61ae8?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/881739/skiabox">skiabox</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">466</span><span title="3 silver badges"><span class="badge2"></span><span class="badgecount">3</span></span><span title="15 bronze badges"><span class="badge3"></span><span class="badgecount">15</span></span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16174734">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>0</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="status unanswered">
+                <strong>0</strong>answers
+            </div>
+        </div>
+        
+
+
+<div class="views " title="26 views">
+                    26 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16174734/is-it-possible-to-use-a-single-spring-datasource-with-multiple-transactionmanage" class="question-hyperlink">Is it possible to use a single Spring DataSource with multiple TransactionManagers?</a></h3>
+        <div class="excerpt">
+            I'm using Spring. I have a bunch of services which are being used by a single desktop application. Since this is not a distributed system, all the services are part of the application itself, they are ...
+        </div>
+             
+        <div class="tags t-java t-spring">
+            <a href="/questions/tagged/java" class="post-tag" title="show questions tagged 'java'" rel="tag">java</a> <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 16:40:37Z" class="relativetime">5 hours ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/708504/paul-t"><div class=""><img src="http://www.gravatar.com/avatar/38f00262e30e2a3c5c02e2de3ab2ee0f?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/708504/paul-t">Paul_T</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">1</span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+<div class="question-summary" id="question-summary-16174277">
+    <div class="statscontainer">
+        <div class="statsarrow"></div>
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>2</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="status answered">
+                <strong>1</strong>answer
+            </div>
+        </div>
+        
+
+
+<div class="views " title="53 views">
+                    53 views
+</div>
+    </div>
+    <div class="summary">        
+        <h3><a href="/questions/16174277/spring-how-do-i-inject-enum-in-spring-configuration-with-generics" class="question-hyperlink">Spring: How do I inject ENUM in Spring configuration with generics?</a></h3>
+        <div class="excerpt">
+            
+
+I have a class like this : 
+
+public class CheckSetFilter&lt;E extends Enum&lt;E&gt;&gt; 
+{
+   public CheckSetFilter(CheckSetManager&lt;E&gt; pCheckSetManager, E pCheckSetId)
+}
+
+
+I have this enum : 
+
+...
+        </div>
+             
+        <div class="tags t-java t-spring t-generics">
+            <a href="/questions/tagged/java" class="post-tag" title="show questions tagged 'java'" rel="tag">java</a> <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> <a href="/questions/tagged/generics" class="post-tag" title="show questions tagged 'generics'" rel="tag">generics</a> 
+
+        </div>
+        <div class="started fr">
+            
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-04-23 16:13:37Z" class="relativetime">5 hours ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/533644/peewee2201"><div class=""><img src="http://www.gravatar.com/avatar/8c798139d8f082aeb1802d667d487df0?s=32&d=identicon&r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/533644/peewee2201">PeeWee2201</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">268</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="8 bronze badges"><span class="badge3"></span><span class="badgecount">8</span></span>
+        </div>
+    </div>
+
+        </div>  
+    </div>
+</div>
+
+        </div>
+
+        <br class="cbt">
+        <div class="pager fl" >
+<span class="page-numbers current">1</span>
+<a href="/questions/tagged/spring?page=2&amp;sort=newest&amp;pagesize=15" title="go to page 2"><span class="page-numbers">2</span></a>
+<a href="/questions/tagged/spring?page=3&amp;sort=newest&amp;pagesize=15" title="go to page 3"><span class="page-numbers">3</span></a>
+<a href="/questions/tagged/spring?page=4&amp;sort=newest&amp;pagesize=15" title="go to page 4"><span class="page-numbers">4</span></a>
+<a href="/questions/tagged/spring?page=5&amp;sort=newest&amp;pagesize=15" title="go to page 5"><span class="page-numbers">5</span></a>
+<span class="page-numbers dots">&hellip;</span>
+<a href="/questions/tagged/spring?page=1814&amp;sort=newest&amp;pagesize=15" title="go to page 1814"><span class="page-numbers">1814</span></a>
+<a href="/questions/tagged/spring?page=2&amp;sort=newest&amp;pagesize=15" title="go to page 2" rel="next"><span class="page-numbers next"> next</span></a>
+</div>
+
+
+
+
+    <div class="page-sizer fr">
+            <a href="/questions/tagged/spring?sort=newest&amp;pagesize=15" title="show 15 items per page" class="page-numbers current">15</a>
+            <a href="/questions/tagged/spring?sort=newest&amp;pagesize=30" title="show 30 items per page" class="page-numbers ">30</a>
+            <a href="/questions/tagged/spring?sort=newest&amp;pagesize=50" title="show 50 items per page" class="page-numbers ">50</a>
+        <span class="page-numbers desc">per page</span>
+    </div>
+
+        
+
+<div id="feed-link">
+    <div id="feed-link-text"><a href="/feeds/tag?tagnames=spring&amp;sort=newest" title="the 30 newest spring questions"><span class="feed-icon"></span>newest spring questions feed</a></div>
+</div>
+
+
+    </div>
+    <div id="sidebar">
+        <div class="module">
+            <div class="summarycount al">27,200</div>
+            <p>questions tagged </p>
+            <div class="tagged">
+                <a href="/questions/tagged/spring" class="post-tag" title="show questions tagged 'spring'" rel="tag">spring</a> 
+<a style='margin-left:10px;' title='tag wiki, stats and faq' href='/tags/spring/info'>about&nbsp;&raquo;</a>            </div>
+        </div>
+
+        
+                    <script type="text/javascript">
+                var scriptSrc = "http://engine.adzerk.net/z/8277/adzerk1_2_4_43,adzerk2_2_17_45?keywords=spring";
+                if (document.referrer) {
+                    if (/\?/.test(scriptSrc))
+                        scriptSrc += "&";
+                    else
+                        scriptSrc += "?";
+                    scriptSrc += "xReferrer=" + document.referrer;
+                }
+                StackExchange.ready(function () {
+                    var z = document.createElement("script");
+                    z.type = "text/javascript";
+                    z.async = "true";
+                    z.src = scriptSrc;
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(z, s);
+                });
+            </script>
+        <div class="everyonelovesstackoverflow" id="adzerk2">
+        </div>
+    <div id="hireme">
+        <script type="text/javascript">
+            window.careers_adurl="http://careers.stackoverflow.com/gethired/js",window.careers_cssurl="//careerscdn.sstatic.net/careers/gethired/sidebar.min.css?v=7ae83073b37e",window.careers_leaderboardcssurl="//careerscdn.sstatic.net/careers/gethired/ninja.min.css?v=78ccbfa5c59f",window.careers_companycssurl="//careerscdn.sstatic.net/careers/gethired/company",window.careers_adselector="div.hireme, div#hireme",StackExchange.ready(function(){$.ajax({url:"//careerscdn.sstatic.net/careers/gethired/loader.min.js?v=607ab2dda910",dataType:"script",cache:!0})})
+        </script>
+    </div>
+
+
+
+        
+
+            <div class="module">
+                
+<h4 id="h-related-tags">Related Tags</h4>
+            <a href="/questions/tagged/spring+java" class="post-tag" title="show questions tagged 'spring java'" rel="tag">java</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">14080</span></span><br>
+            <a href="/questions/tagged/spring+spring-mvc" class="post-tag" title="show questions tagged 'spring spring-mvc'" rel="tag">spring-mvc</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">4934</span></span><br>
+            <a href="/questions/tagged/spring+hibernate" class="post-tag" title="show questions tagged 'spring hibernate'" rel="tag">hibernate</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">4132</span></span><br>
+            <a href="/questions/tagged/spring+spring-security" class="post-tag" title="show questions tagged 'spring spring-security'" rel="tag">spring-security</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">1601</span></span><br>
+            <a href="/questions/tagged/spring+java-ee" class="post-tag" title="show questions tagged 'spring java-ee'" rel="tag">java-ee</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">1066</span></span><br>
+            <a href="/questions/tagged/spring+jpa" class="post-tag" title="show questions tagged 'spring jpa'" rel="tag">jpa</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">1027</span></span><br>
+            <a href="/questions/tagged/spring+jsp" class="post-tag" title="show questions tagged 'spring jsp'" rel="tag">jsp</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">861</span></span><br>
+            <a href="/questions/tagged/spring+tomcat" class="post-tag" title="show questions tagged 'spring tomcat'" rel="tag">tomcat</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">798</span></span><br>
+            <a href="/questions/tagged/spring+maven" class="post-tag" title="show questions tagged 'spring maven'" rel="tag">maven</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">749</span></span><br>
+            <a href="/questions/tagged/spring+transactions" class="post-tag" title="show questions tagged 'spring transactions'" rel="tag">transactions</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">661</span></span><br>
+            <a href="/questions/tagged/spring+annotations" class="post-tag" title="show questions tagged 'spring annotations'" rel="tag">annotations</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">653</span></span><br>
+            <a href="/questions/tagged/spring+dependency-injection" class="post-tag" title="show questions tagged 'spring dependency-injection'" rel="tag">dependency-injection</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">625</span></span><br>
+            <a href="/questions/tagged/spring+mvc" class="post-tag" title="show questions tagged 'spring mvc'" rel="tag">mvc</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">553</span></span><br>
+            <a href="/questions/tagged/spring+rest" class="post-tag" title="show questions tagged 'spring rest'" rel="tag">rest</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">514</span></span><br>
+            <a href="/questions/tagged/spring+junit" class="post-tag" title="show questions tagged 'spring junit'" rel="tag">junit</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">498</span></span><br>
+            <a href="/questions/tagged/spring+eclipse" class="post-tag" title="show questions tagged 'spring eclipse'" rel="tag">eclipse</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">465</span></span><br>
+            <a href="/questions/tagged/spring+jdbc" class="post-tag" title="show questions tagged 'spring jdbc'" rel="tag">jdbc</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">441</span></span><br>
+            <a href="/questions/tagged/spring+aop" class="post-tag" title="show questions tagged 'spring aop'" rel="tag">aop</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">433</span></span><br>
+            <a href="/questions/tagged/spring+json" class="post-tag" title="show questions tagged 'spring json'" rel="tag">json</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">430</span></span><br>
+            <a href="/questions/tagged/spring+web-services" class="post-tag" title="show questions tagged 'spring web-services'" rel="tag">web-services</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">429</span></span><br>
+            <a href="/questions/tagged/spring+jsf" class="post-tag" title="show questions tagged 'spring jsf'" rel="tag">jsf</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">417</span></span><br>
+            <a href="/questions/tagged/spring+servlets" class="post-tag" title="show questions tagged 'spring servlets'" rel="tag">servlets</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">403</span></span><br>
+            <a href="/questions/tagged/spring+mysql" class="post-tag" title="show questions tagged 'spring mysql'" rel="tag">mysql</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">364</span></span><br>
+            <a href="/questions/tagged/spring+xml" class="post-tag" title="show questions tagged 'spring xml'" rel="tag">xml</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">354</span></span><br>
+            <a href="/questions/tagged/spring+security" class="post-tag" title="show questions tagged 'spring security'" rel="tag">security</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">&times;</span>&nbsp;<span class="item-multiplier-count">340</span></span><br>
+
+            </div>
+
+
+    </div>
+
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                    <a href="/about">about</a> |
+                <a href="/faq">faq</a> |
+                
+                <a href="http://blog.stackexchange.com?blb=1">blog</a> |
+                    <a href="http://chat.stackoverflow.com">chat</a> |
+                <a href="http://data.stackexchange.com">data</a> |
+                <a href="http://stackexchange.com/legal">legal</a> |
+                <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a> |
+                <a href="http://stackexchange.com/about/hiring">jobs</a> |
+                <a href="http://engine.adzerk.net/redirect/0/2776/2751/0/4de3c60f719c4dfcb1a57531c7050090/0">advertising info</a> |
+
+                <a onclick='StackExchange.switchMobile("on", "/questions/tagged/spring")'>mobile</a> |
+
+                <b><a href="/help">contact us</a></b>
+                  | <b><a href="http://meta.stackoverflow.com">feedback</a></b>
+                <div id="footer-sites">
+                    <span style="color:#FE7A15;font-size:140%">&#9632;</span>&nbsp;<a href="http://stackoverflow.com">stackoverflow.com</a>&nbsp; 
+<span style="color:#FE7A15;font-size:140%">&#9632;</span>&nbsp;<a href="http://stackapps.com">api/apps</a>&nbsp; 
+<span style="color:#FE7A15;font-size:140%">&#9632;</span>&nbsp;<a href="http://careers.stackoverflow.com">careers&nbsp;2.0</a>&nbsp; 
+<span style="color:#E8272C;font-size:140%">&#9632;</span>&nbsp;<a href="http://serverfault.com">serverfault.com</a>&nbsp; 
+<span style="color:#00AFEF;font-size:140%">&#9632;</span>&nbsp;<a href="http://superuser.com">superuser.com</a>&nbsp; 
+<span style="color:#969696;font-size:140%">&#9632;</span>&nbsp;<a href="http://meta.stackoverflow.com">meta</a>&nbsp; 
+<span style="color:#46937D;font-size:140%">&#9632;</span>&nbsp;<a href="http://area51.stackexchange.com">area&nbsp;51</a>&nbsp; 
+<span style="color:#C0D0DC;font-size:140%">&#9632;</span>&nbsp;<a href="http://webapps.stackexchange.com">webapps</a>&nbsp; 
+<span style="color:#000000;font-size:140%">&#9632;</span>&nbsp;<a href="http://gaming.stackexchange.com">gaming</a>&nbsp; 
+<span style="color:#dd4814;font-size:140%">&#9632;</span>&nbsp;<a href="http://askubuntu.com">ubuntu</a>&nbsp; 
+<span style="color:#9ce4fe;font-size:140%">&#9632;</span>&nbsp;<a href="http://webmasters.stackexchange.com">webmasters</a>&nbsp; 
+<span style="color:#cf4d3f;font-size:140%">&#9632;</span>&nbsp;<a href="http://cooking.stackexchange.com">cooking</a>&nbsp; 
+<span style="color:#f4f28d;font-size:140%">&#9632;</span>&nbsp;<a href="http://gamedev.stackexchange.com">game development</a>&nbsp; 
+<span style="color:#0f3559;font-size:140%">&#9632;</span>&nbsp;<a href="http://math.stackexchange.com">math</a>&nbsp; 
+<span style="color:#f2f2f2;font-size:140%">&#9632;</span>&nbsp;<a href="http://photo.stackexchange.com">photography</a>&nbsp; 
+<span style="color:#037187;font-size:140%">&#9632;</span>&nbsp;<a href="http://stats.stackexchange.com">stats</a>&nbsp; 
+<span style="color:#f1e7cc;font-size:140%">&#9632;</span>&nbsp;<a href="http://tex.stackexchange.com">tex</a>&nbsp; 
+<span style="color:#e1cdae;font-size:140%">&#9632;</span>&nbsp;<a href="http://english.stackexchange.com">english</a>&nbsp; 
+<span style="color:#a2d9f6;font-size:140%">&#9632;</span>&nbsp;<a href="http://cstheory.stackexchange.com">theoretical cs</a>&nbsp; 
+<span style="color:#1b3e6c;font-size:140%">&#9632;</span>&nbsp;<a href="http://programmers.stackexchange.com">programmers</a>&nbsp; 
+<span style="color:#293a5d;font-size:140%">&#9632;</span>&nbsp;<a href="http://unix.stackexchange.com">unix</a>&nbsp;
+<span style="color:#bec0cb;font-size:140%">&#9632;</span>&nbsp;<a href="http://apple.stackexchange.com">apple</a>&nbsp;
+<span style="color:#939185;font-size:140%">&#9632;</span>&nbsp;<a href="http://wordpress.stackexchange.com">wordpress</a>&nbsp;
+<span style="color:#ebf5f5;font-size:140%">&#9632;</span>&nbsp;<a href="http://physics.stackexchange.com">physics</a>&nbsp;
+<span style="color:#4176ab;font-size:140%">&#9632;</span>&nbsp;<a href="http://diy.stackexchange.com">home&nbsp;improvement</a>&nbsp;
+<span style="color:#d1d8d7;font-size:140%">&#9632;</span>&nbsp;<a href="http://gis.stackexchange.com">gis</a>&nbsp;
+<span style="color:#e5e2d3;font-size:140%">&#9632;</span>&nbsp;<a href="http://electronics.stackexchange.com">electrical&nbsp;engineering</a>&nbsp;
+<span style="color:#a4c639;font-size:140%">&#9632;</span>&nbsp;<a href="http://android.stackexchange.com">android</a>&nbsp;
+<span style="color:#2e4e60;font-size:140%">&#9632;</span>&nbsp;<a href="http://security.stackexchange.com">security</a>&nbsp;
+<span style="color:#45bcb5;font-size:140%">&#9632;</span>&nbsp;<a href="http://bicycles.stackexchange.com">bicycles</a>&nbsp;
+<span style="color:#00adee;font-size:140%">&#9632;</span>&nbsp;<a href="http://dba.stackexchange.com">dba</a>&nbsp;
+<span style="color:#2edaf0;font-size:140%">&#9632;</span>&nbsp;<a href="http://drupal.stackexchange.com">drupal</a>&nbsp;
+<span style="color:#213951;font-size:140%">&#9632;</span>&nbsp;<a href="http://sharepoint.stackexchange.com">sharepoint</a>&nbsp;
+<span style="color:#73abb3;font-size:140%">&#9632;</span>&nbsp;<a href="http://scifi.stackexchange.com">scifi&nbsp;&amp;&nbsp;fantasy</a>&nbsp;
+<span style="color:#23629F;font-size:140%">&#9632;</span>&nbsp;<a href="http://ux.stackexchange.com">ux</a>&nbsp;
+<span style="color:#faff72;font-size:140%">&#9632;</span>&nbsp;<a href="http://skeptics.stackexchange.com">skeptics</a>&nbsp;
+<span style="color:#623121;font-size:140%">&#9632;</span>&nbsp;<a href="http://rpg.stackexchange.com">rpg</a>&nbsp;
+<span style="color:#e4be88;font-size:140%">&#9632;</span>&nbsp;<a href="http://judaism.stackexchange.com">judaism</a>&nbsp;
+<span style="color:#ffecb1;font-size:140%">&#9632;</span>&nbsp;<a href="http://mathematica.stackexchange.com">mathematica</a>&nbsp;
+<span style="color:#1b8598;font-size:140%">&#9632;</span>&nbsp;<a href="http://travel.stackexchange.com">travel</a>&nbsp;
+                </div>
+            </div>
+            <div id="footer-flair">
+	            <a href="http://creativecommons.org/licenses/by-sa/3.0/" class="cc-wiki-link"></a>
+                <div id="svnrev">rev 2013.4.23.663</div>
+                        </div>
+            <div id="copyright">
+                site design / logo &copy; 2013 stack exchange inc; 
+                user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc-wiki</a> with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            
+
+        </div>
+    </div>
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+    <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-5620270-1']);
+        _gaq.push(['_setCustomVar', 1, 'tags', '|spring|']); 
+_gaq.push(['_trackPageview']);
+    var _qevents = _qevents || [];
+    (function(){
+        var s=document.getElementsByTagName('script')[0];
+        var ga=document.createElement('script');
+        ga.type='text/javascript';
+        ga.async=true;
+        ga.src='http://www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(ga,s);
+        var sc=document.createElement('script');
+        sc.type='text/javascript';
+        sc.async=true;
+        sc.src='http://edge.quantserve.com/quant.js'; 
+        s.parentNode.insertBefore(sc,s);
+    })();
+    </script>
+    <script type="text/javascript">
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>        
+    
+</body>
+</html>

@@ -1,0 +1,200 @@
+/*
+ * Name: Plain
+ * Version: 2.0
+ * Author: John Godley
+ */
+
+body { background-color: #eeeef5 }
+
+#pagenav, #pagenav ul li a, .page_item { background: none !important; color: #444 }
+
+#wrapper { border: none }
+
+.widecontent h2
+{
+border-bottom: 0px solid #A8A8A8;
+width:97%;
+}
+
+.widecontent h3 a
+{
+color: #4c4c4c;
+}
+
+.nobar
+{
+background: none !important;
+}
+
+h2.narrowheading
+{
+color: #666;
+}
+
+#inset
+{
+color: #959595;
+}
+
+#inset h2
+{
+font-size: 18px; font-weight: 500; color: #666;text-transform:uppercase;text-shadow: 0 1px 0 #fff;
+}
+
+a.author
+{
+color: #4c4c4c !important;
+}
+
+.widecontent a, #inset a
+{
+color: #0095d3;
+text-decoration:none;
+}
+
+.widecontent a:hover, #inset a:hover
+{
+color: #0095d3;
+text-decoration:underline;
+}
+
+#content h2 a
+{
+color: #0095d3 !important;
+}
+
+.postmetadata a
+{
+color: #666 !important;
+}
+
+.postmetadata a:hover { color :#0095d3; text-decoration:underline; }
+
+.postmetadata
+{
+color: #666;
+}
+
+div.hr
+{
+color: #c9c9c9;
+background-color: #c9c9c9;
+}
+
+#headerimg a
+{
+color: #4c4c4c;
+}
+
+.linkbar ul li a, .linkbar ul li p
+{
+color: #333;
+}
+
+.linkbar ul li a:hover, .linkbar .active
+{
+background-color: #4c4c4c;
+color: #333;
+}
+
+ol.commentlist li
+{
+border-bottom: 1px solid #959595;
+}
+
+.commentlist p a, .post a
+{
+color: #095d3;
+}
+
+h2 a
+{
+color: #0095d3 !important;
+}
+
+h2 a:hover { color: #0095d3; text-decoration:underline; }
+
+.sidebar
+{
+color: #4c4c4c;
+}
+
+.sidebar a:hover
+{
+color: #0095d3;
+text-decoration:underline;
+}
+
+.sidebar ul li
+{
+border-bottom: 1px solid #fff;
+}
+
+.sidebar ul li ul li { border: none }
+
+.sidebar h2
+{
+color: #666;
+}
+
+.sidebar a, #searchform, #searchsubmit, #s
+{
+color: #4c4c4c;
+text-decoration: none;
+}
+
+#wp-calendar
+{
+}
+
+.narrowheading { padding-left: 0 !important; margin-left: 0 }
+#wp-calendar caption a, #wp-calendar caption a:hover
+{
+color: #4c4c4c;
+}
+
+#wp-calendar a
+{
+border: 1px solid #a8a8a8;
+}
+
+#wp-calendar a:hover
+{
+border: 1px solid #a8a8a8;
+background-color: #4c4c4c;
+color: #bdbdbd;
+}
+
+#wp-calendar caption
+{
+color: #4c4c4c;
+}
+
+a.java
+{
+color: #0095d3;
+}
+
+.gravatar
+{
+border: 1px solid #c9c9c9;
+}
+
+img.author
+{
+border: 1px solid #0095d3;
+}
+
+
+.commentmetadata, .commentmetadata a
+{
+color: #959595;
+}
+
+.commentlist h4, .commentlist h4 a
+{
+color: #4c4c4c;
+}
+
+
+

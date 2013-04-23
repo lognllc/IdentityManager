@@ -1,0 +1,1330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>SpringSource Case Studies | SpringSource.org</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ctools/css/ctools.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/google_cse/google_cse.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/filefield/filefield.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/nice_menus/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/framework/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/page-backgrounds.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/tabs.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/messages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/pages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/block-editing.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/blocks.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/navigation.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/panels-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/views-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/nodes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/comments.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/forms.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/fields.css?R" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/s2org11/css/print.css?R" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie.css?R" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie6.css?R" />
+<![endif]-->
+  <script type="text/javascript" src="/misc/jquery.js?R"></script>
+<script type="text/javascript" src="/misc/drupal.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/superfish.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.bgiframe.min.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.hoverIntent.minified.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
+<script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay": 800, "speed": 1 }, "prettify": { "linenums": false, "match": ".content", "nocode": "no-code", "custom": [  ], "markup": { "code": true, "pre": true, "precode": false } } });
+//--><!]]>
+</script>
+</head>
+<body class="page not-front not-logged-in node-type-page no-sidebars page-case-studies section-case-studies page-panels">
+
+	  
+
+
+<!--begin custom navigation-->
+      	  
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+<div style="height:97px;margin-top:0px;background: #457228;">
+<![endif]-->
+
+<div style="height:97px;margin-top:0px; background: url('http://www.springsource.org/sites/all/themes/s2org11/images/BG_SiteHeader_Glow.png') no-repeat scroll center top, url('/files/homepage/BG_SiteBillboardAndHeader_50.png') repeat-x scroll 0 0 #367B09;">
+
+    <div id="top">
+  		<div style = "height:80px;margin-top:0px;background: url('/files/homepage/BG_SiteTopNav_new.png') repeat-x scroll 0 0 #F1F1F1;
+  	-moz-border-radius: 0 0 5px 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 0 0 5px 5px;
+-moz-box-shadow: 0 0 15px #333;
+-webkit-box-shadow: 0 0 15px#333;
+box-shadow: 0 0 15px #333;">
+<div style="margin-left:10px;margin-right:10px;">
+ 	          <table valign="top" height="80" style="font-size:14px;text-transform:uppercase;color:#666;margin:0;">
+	          <tr>
+	          
+	          <td>
+	           <a href="/"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/logo_springsource_community.png"></a>
+	           </td>
+	           <td width="5">&nbsp;</td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                  <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/features" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_features.png" id="b1"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-started" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getstarted.png" id="b2"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-involved" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getinvolved.png" id="b3"></a></br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/news-events" onmouseover="mouseOver4()" onmouseout="mouseOut4()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_newsevents.png" id="b4"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td width="7" align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+
+	           <td align="center">
+
+	      	  
+        <div id="search-box" style="border-bottom: 1px solid #E2E2E2;">
+          <form action="/search/google" method="get" id="search-theme-form">
+            <div><div id="search" class="container-inline">
+
+              <input type="text" maxlength="128" size="16" name="query" value="Search" style="border: 1px solid #CCCCCC;margin-bottom:10px;margin-left: 2px;color:#999999" class="form-text" onblur="this.value = this.value || 'Search'; this.style.color = '#999999';" onfocus="if(this.value=='Search') {this.value='';} this.style.color = '#999999';" />
+                          
+              <input type="hidden" name="output" value="xml_no_dtd" />
+              <input type="hidden" name="client" value="google-csbe" />
+              <input type="hidden" name="cx" value="009687201310241541466:zerjfa_shxo" />
+              <input type="hidden" name="ie" value="utf-8" />
+              <input type="hidden" name="oe" value="utf-8" />
+              <input type="hidden" name="op" value="Search" />
+            </div></div>
+          </form>
+        </div>
+               <div id="subscribe" style="color: #7E7E7E;float: left;padding-top: 5px;padding-left: 10px;border-top: 1px solid whiteSmoke;">
+              <a href="/newsletter-subscription" style="color: #7e7e7e;background:url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat" onmouseover="this.style.background = 'url(/files/header/nav_subscription_on.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'" onmouseout="this.style.background = 'url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'">
+                  <span style="padding-left:23px">Subscribe</a>
+              </a>
+        </div>
+        
+
+		      </td>
+		      
+		      </tr>
+	      </table>
+</div>
+  		
+              </div></div></div>
+
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+ </div>
+<![endif]-->
+<!--end custom navigation-->
+
+
+
+  <div id="page-wrapper"><div id="page">
+
+  
+    <div id="header"><div class="section clearfix">
+
+      
+<div id="name-and-slogan">
+
+</div>
+
+      
+      
+
+
+    </div></div><!-- /.section, /#header -->
+
+    <div id="main-wrapper"><div id="main" class="clearfix">
+
+      <div id="content" style="margin-left:10px;margin-right:10px;" class="column"><div class="section">
+
+
+        
+        
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › </div> -->
+
+	  
+	  
+	  
+                        
+
+       <table width="100%" >
+       <tr>
+     <td width="100%" valign="top" align="left">
+       <div style="width:100%">
+       
+ <div id="content-area">
+
+	<div style="margin-top:-20px;">
+	<!--[If IE 7]><br><![endif]-->
+
+<table>
+<tr>
+<td width="95%">
+	  <h1 class="title" id="page-title">SpringSource Case Studies</h1>
+</td>
+<td align="right">
+      <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+<script type="text/javascript">
+var a2a_config = a2a_config || {};
+a2a_config.color_main = "e5e6e6";
+a2a_config.color_border = "5c6c75";
+a2a_config.color_link_text = "333333";
+a2a_config.color_link_text_hover = "333333";
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+</script>
+<script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
+</td>
+</tr>
+</table>
+	  <p>
+	  	  </p>
+
+           <div id="node-3459" class="node node-type-page build-mode-full"><div class="node-inner">
+
+  
+  
+  
+  
+  <div class="content">
+    <style type="text/css">
+.left {width:250px;float:left;}
+.right {padding-left:280px;}
+.casestudy {border-bottom:1px #fff solid;padding: 10px;}
+.img {padding: 25px 55px;background: white;border: 1px solid #CCC;}
+</style>
+
+<div class="casestudy">
+<a name="Aegeon"></a>
+<h2>Aegeon Accelerates Product Development
+with Groovy and Grails</h2>
+
+<div class= "left">
+<img class = "img" alt="Aegeon Logo" src="/files/uploads/all/images/logos/aegeon.gif"/>
+</div>
+<div class= "right">
+<p>Aegeon is a Web 2.0 company focused on Enterprise Social Software solutions. Its principle activities are product development and professional services surrounding Spaceo.us, an innovative Enterprise Social Software platform.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Aegeon_USLET_EN.pdf">Read the Aegeon Case Study...</a></p>
+<p><span>&ldquo;</span>In a traditional Java project, we can spend weeks writing the initial code to set up the infrastructure, which is just the &ldquo;plumbing&rdquo; code. In Groovy and Grails, we can do that in a couple of hours with plug-ins. &rdquo;</p>
+<p><span>&ldquo;</span>If we had built our prototype in Java, we would have only been able to deliver a quarter to a third of the functionality we produced in Groovy and Grails.&rdquo;</p>
+<p><span>&ldquo;</span>We have even greater confidence in Groovy and Grails now that it is backed by SpringSource.&rdquo;</p>
+</div>
+
+</div>
+<div class="casestudy">
+<a name="Anda"></a>
+<h2>Anda Builds Robust and Economical Applications
+with Spring</h2>
+
+<div class= "left">
+<img class= "img" alt="Anda Logo" src="/files/uploads/all/images/logos/anda.gif" />
+</div>
+<div class= "right">
+
+<p>ANDA, founded in 1992, has become the 4th largest distributor of generic pharmaceuticals in the U.S. With over 7,000 items in stock, Anda&rsquo;s product assortment also includes select brands, vaccines, injectables, medical/surgical supplies, oral dosage medications and OTCs/Vitamins.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Anda_USLET_EN.pdf">Read the Anda Case Study...</a></p>
+<p><span>&ldquo;</span>Spring is where I start on every project. It&rsquo;s the glue that holds everything together. Spring is indispensable in enterprise Java development today.&rdquo;</p>
+<p><span>&ldquo;</span>Spring enables us to get up and running fast, with the functionality and security we need. I can&rsquo;t imagine starting a project without it.&rdquo;</p>
+<p><span>&ldquo;</span>The amount of code in our latest application would require the work of a lot more people and a lot more time, if we were not using Spring.&rdquo;</p>
+</div>
+
+</div>
+
+<div class="casestudy">
+<a name="BlueStar"></a>
+
+<h2>Energized by open source: Ditching closed apps spurred growth, utility says</h2>
+<div class = "left">
+<img class="img" alt="BlueStar Logo" src="/files/uploads/all/images/logos/bluestar.gif"/>
+</div>
+<div class= "right">
+
+<p>BlueStar Energy is an independent retail electric supplier unaffiliated with any utility. The fastest-growing energy supplier in the nation, BlueStar is certified to sell electricity in Illinois, Maryland and the District of Columbia. BlueStar also provides green power and energy efficiency solutions to home and business customers.</p>
+<p><a class="moreAfter" target="_blank" href="http://www.computerworld.com/s/article/330528/Energized_by_open_source_Ditching_closed_apps_spurred_growth_utility_says?taxonomyId=14&amp;intsrc=hm_topic">Read Computerworld Story...</a></p>
+<p><span>&ldquo;</span>A shift to open source has been wildly successful for BlueStar Energy&hellip;&rdquo;</p>
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="CAS"></a>
+
+<h2>CAS Severn Maximizes Development Resources with Groovy and Grails</h2>
+
+<div class="left">
+<img class= "img" alt="CAS Severn Logo" src="/files/uploads/all/images/logos/CS_IA_logo-b.png" />
+</div>
+<div class="right">
+
+<p>CAS Severn, based in Laurel, Maryland, has been working for more than  30 years helping companies, government agencies and education sector customers maximize their IT investments by providing end-to-end technology solutions, as well as IT consulting, infrastructure optimization, enterprise process and content management, and operational support.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_CAS_Severn_USLET_EN.pdf">Read the CAS Severn Case Study...</a></p>
+<p><span>&ldquo;</span>In Groovy and Grails it is easy to build a prototype very fast and show it to the client. This is the perfect tool for prototyping.&rdquo;</p>
+<p><span>&ldquo;</span>A new developer can ramp up on Groovy and Grails in a couple weeks. It would take several months, maybe even a year, to get up to speed on our old in-house framework.&rdquo;</p>
+<p><span>&ldquo;</span>The great value of Groovy and Grails is less code, which means less maintenance, and that saves time. Because of the conventions, any developer that knows Grails can look at the code and immediately understand what is going on. This makes maintenance much easier.&rdquo;</p>
+
+</div>
+
+
+</div>
+<div class="casestudy">
+
+<a name="Cornell"></a>
+<h2>Spring Helps Cornell University Quickly Scale Application for Multiple Web Portals</h2>
+
+<div class="left">
+
+<img class="img" alt="Cornell Logo" src="/files/uploads/all/images/logos/cornell.gif" />
+
+</div>
+<div class="right">
+
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Cornell_USLET_EN.pdf">Read the Cornell University Case Study...</a></p>
+<p><span>&ldquo;</span>It used to take up to four weeks of developer time to produce a portal and now it&rsquo;s down to a day with Spring.&rdquo;</p>
+<p><span>&ldquo;</span>Spring enables us to provide more responsive service to customers because all portals get new features as soon as they are available.&rdquo;</p>
+<p><span>&ldquo;</span>When our time investment and developer resources on portal development are minimized due to Spring, this helps our bottom line and we can serve more organizations and reach more people.&rdquo;</p>
+</div>
+
+
+</div>
+
+<div class="casestudy">
+
+<a name="CMA"></a>
+
+<h2>Credit Market Analysis Makes Major Productivity Gains with Spring.NET</h2>
+<div class="left">
+
+<img class="img" alt="CMA Logo" src="/files/uploads/all/images/logos/cma.gif" />
+</div>
+<div class="right">
+
+<p>CMA&mdash;the credit information specialist is headquartered in London with offices in New York and Singapore and is a wholly owned subsidiary of CME Group, the largest and most diverse derivatives exchange in the world.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_CreditMarketAnalysis_USLET_EN.pdf">Read the Credit Market Analysis Case Study...</a></p>
+<p><span>&ldquo;</span>Spring.NET has removed 30% of our development time, by providing the communication infrastructure between the layers of our software&mdash;and that 30% can now be focused on new features or speed to market.&rdquo;</p>
+<p><span>&ldquo;</span>With Spring.NET the cycle to find and fix a problem has been dramatically shortened. We used to take a week to resolve issues, now we can turn a solution around in a day.&rdquo;</p>
+<p><span>&ldquo;</span>We are using Spring.NET to differentiate our software in the market.&rdquo;</p>
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="EPO"></a>
+<h2>European Patent Office Cuts Time-to-Market, Maintenance and Cost with Groovy Dynamic Language</h2>
+
+<div class="left">
+
+<img class="img" alt="European Patent Office logo" src="/files/uploads/all/images/logos/euro-patent-office.png" />
+</div>
+
+<div class="right">
+
+<p>The European Patent Office (EPO) is the patent granting authority of Europe, founded on the European Patent Convention, an agreement between 36 countries. EPO&rsquo;s main responsibility is to examine patent applications and grant European patents, processing more than 140,000 patent applications per year.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_EuropeanPatentOffice.pdf">Read the European Patent Office Case Study...</a></p>
+<p><span>&ldquo;</span>Groovy has allowed us to reduce the cost of our development resources by half. Previously, we used to have 8 developers assigned to these tasks, but now our team has 5 developers.&rdquo;</p>
+<p><span>&ldquo;</span>On the maintenance side, we move twice as fast with Groovy, compared to our previous platform. When you read a script written in our Groovy DFL, you don&rsquo;t have all the Java syntax, you go straight to the point, making it easily maintainable.&rdquo;</p>
+<p><span>&ldquo;</span>When there was a major change to a data flow, it used to take a month at least&hellip;But in Groovy it only takes two weeks.&rdquo;</p>
+
+</div>
+
+
+</div>
+
+<div class="casestudy">
+
+<a name="eHarmony"></a>
+<h2>eHarmony Improves Productivity and Reduces Cycle Times 
+with Spring Integration</h2>
+<div class="left">
+
+<img class="img" alt="eHarmony Logo" src="/files/uploads/all/images/logos/eHarmony-logo.png" />
+</div>
+
+<div class="right">
+<p>Santa Monica, Calif.-based eHarmony, Inc. was founded in 2000 and is a pioneer in using relationship science to match singles seeking longterm relationships. Its services, available in the United States, Canada, Australia, United Kingdom and Brazil, present users with compatible matches based on key dimensions of personality that are scientifically proven to predict highly successful long-term relationships.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_eHarmony_Integration.pdf">Read the eHarmony Case Study...</a></p>
+<p><span>&ldquo;</span>Our engineers can stand up the backbone of a new service in Spring Integration in a day, or even hours. In the past, it could take as much as four times longer. Spring Integration means less development effort, less debugging, better architecture. Time-to-market and cycle times are greatly reduced.&rdquo;</p>
+<p><span>&ldquo;</span>Spring Integration lets us get the job done so we can be competitive. We spend more time focusing on the business logic and less time focusing on how to get the pieces to communicate.&rdquo;</p>
+<p><span>&ldquo;</span>Spring Integration is a good foundation to build our logical service components on because of the Spring-friendly architecture, testability and reliability ... It's easy to use and has a lightweight architecture, which is why we're also migrating all of our legacy web services to it.&rdquo;</p>
+
+</div>
+
+
+</div>
+<div class="casestudy">
+
+<a name="eHarmony2"></a>
+
+<h2>eHarmony Improves User Experience with Groovy and Grails</h2>
+<div class="left">
+<img class="img" alt="eHarmony Logo" src="/files/uploads/all/images/logos/eHarmony-logo.png"/>
+</div>
+
+<div class="right">
+
+<p>Santa Monica, Calif.-based eHarmony, Inc. was founded in 2000 and is a pioneer in using relationship science to match singles seeking long-term relationships. Its services, available in the United States, Canada, Australia and United Kingdom, present users with compatible matches based on key dimensions of personality that are scientifically proven to predict highly successful long-term relationships.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_eHarmony_USLET_EN.pdf">Read the eHarmony Case Study...</a></p>
+<p><span>&ldquo;</span>Groovy enabled us to quickly write scripts. I wrote the data retrieval script in a day, even with everything else I had to do. It would have added days to write the same simple script in Java.&rdquo;</p>
+<p><span>&ldquo;</span>Any enhancement we can develop quickly using Groovy makes a big difference to the whole eHarmony ecosystem.&rdquo;</p>
+<p><span>&ldquo;</span>Coding in Groovy is fun. You can try many different approaches in Groovy. You can go down a path and explore it to the max.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="EverBank"></a>
+
+<h2>EverBank Cuts Development Time with
+Groovy and Grails</h2>
+
+<div class="left">
+<img class="img" alt="EverBank" src="/files/uploads/all/images/logos/everbank.gif" />
+</div>
+
+<div class="right">
+
+<p>EverBank Financial Corp, based in Jacksonville, Florida, is a private financial services holding company with approximately $5.3 billion in assets. EverBank, one of the largest privately-held financial services firms in the US, provides banking and lending products to more than 450,000 customers nationwide. The bank has received numerous industry awards including Money Magazine&rsquo;s &ldquo;Best of the Breed&rdquo; and  Forbes.com&rsquo;s &ldquo;Best of Web&rdquo;.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_EverBank_USLET_EN.pdf">Read the EverBank Case Study...</a></p>
+<p><span>&ldquo;</span>I estimated that the application would take me 3 weeks to develop in Struts. It took me about 3 days to get a working application up in Grails&hellip;Grails is the most productive platform available.&rdquo;</p>
+<p><span>&ldquo;</span>Grails takes less development time, so we have more time to address new features that the users want.&rdquo;</p>
+<p><span>&ldquo;</span>Groovy makes programming more interesting and more enjoyable, as you learn more creative ways to accomplish familiar tasks in  Groovy.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="ExpertPlan"></a>
+
+<h2>ExpertPlan Revolutionizes Development with Groovy and Grails</h2>
+<div class="left">
+<img class="img" alt="Expert Plan" src="/files/uploads/all/images/logos/expert-plan.gif"/>
+</div>
+<div class="right">
+
+<p>ExpertPlan, headquartered near Princeton, New Jersey, is a technology innovator in the area of retirement program administration. The company is a leader in the defi ned contribution market, providing private-labeled retirement solutions for thousands of companies and organizations with billions of dollars in retirement assets.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_ExpertPlan_USLET_EN.pdf">Read the ExpertPlan Case Study...</a></p>
+<p><span>&ldquo;</span>Groovy and Grails cut as much as two-thirds off the development process. I built the reporting application in 3 weeks&hellip;The estimate to complete the project on the old platform was at least 3 months.&rdquo;</p>
+<p><span>&ldquo;</span>Now we have SpringSource, one company to deal with for everything we want to have in the future&mdash;a simplified infrastructure, a more agile development methodology, a cloud, a virtualized infrastructure.&rdquo;</p>
+<p><span>&ldquo;</span>We are a small business competing against the big guys and we are looking for any advantage we can get. We believe Groovy and Grails will enable us to completely rebuild our site and our software to stay competitive.&rdquo;</p>
+
+</div>
+
+
+</div>
+<div class="casestudy">
+
+<a name="FIS"></a>
+<h2>FIS Quickly Customizes and Upgrades Applications for Customers with Spring Web Flow</h2>
+<div class="left">
+<img class="img" alt="FIS Logo" src="/files/uploads/all/images/logos/FIS_logo.png" />
+</div>
+<div class="right">
+
+<p>FIS, headquartered in Jacksonville, Florida, delivers banking and payments technologies to more than 14,000 financial institutions and businesses in more than 90 countries worldwide. FIS provides financial institution core processing, and card issuer and transaction processing services. The company maintains processing and technology relationships with 40 of the top 50 global banks, including 9 of the top 10. FIS has been ranked the number one overall financial technology provider in the world by The American Banker newspaper and the Financial Insights &ldquo;FinTech 100&rdquo; rankings.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_FIS_USLET_EN.pdf">Read the FIS Case Study...</a></p>
+<p><span>&ldquo;</span>With Web Flow, we are now able to change the flows much faster, cutting down on our implementation time by 30%. That helps banks launch their websites much faster with our software, making our product more attractive to customers.&rdquo;</p>
+<p><span>&ldquo;</span>Now Spring Web Flow gives us more confidence to tell customers we can accomplish whatever changes they need with minimal effort.&rdquo;</p>
+<p><span>&ldquo;</span>When we cut down implementation time with Spring Web Flow, it helps us win new customers. Each bank has a specific timeframe during which they must open a bank &hellip; So it is very attractive to new customers when we say we can achieve implementation of the system in 4 months with Spring Web Flow.&rdquo;</p>
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="Intelliware"></a>
+<h2>Spring Helps Intelliware Reduce Costs and Risk</h2>
+<div class="left">
+
+<img class="img" alt="Intelliware Logo" src="/files/uploads/all/images/logos/intelliware.gif"/>
+</div>
+<div class="right">
+
+<p>Intelliware is a software development company that provides development, integration and testing services to healthcare clients. Intelliware's standards-based approach, its expertise with HL7v3-based systems, and its agile development practices ensure timely delivery of high quality healthcare solutions.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Intelliware_USLET_EN.pdf">Read the  Intelliware Case Study...</a></p>
+<p><span>&ldquo;</span>Spring enables a superior architecture over custom frameworks, which means testability is better, fewer bugs, and a more robust end product.&rdquo;</p>
+<p><span>&ldquo;</span>Spring brings a layer of consistency to the architecture, so it takes a less time for a developer to ramp up when they move to a new project.&rdquo;</p>
+<p><span>&ldquo;</span>Spring is a key technology for building flexible data set generation tools.&rdquo;</p>
+
+</div>
+
+
+</div>
+<div class="casestudy">
+
+<a name="Iris"></a>
+<h2>Spring Empowers Iris Interactive to Deliver Flexible, Economical Software</h2>
+<div class="left">
+<img class="img" alt="Iris Interactive Logo" src="/files/uploads/all/images/logos/iris.gif"/>
+</div>
+
+<div class="right">
+
+<p>Iris Interactive is an established Australian company specializing in Brand Driven Innovation software and solutions.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_IrisInteractive_USLET_EN.pdf">Read the  Iris Interactive Case Study...</a></p>
+<p><span>&ldquo;</span>Today 100% of our revenue is attributed to the Iris Product Suite, which is based on Spring. The earlier versions of our Java product didn&rsquo;t get anywhere without Spring. We would not be in business if we didn&rsquo;t have Spring.&rdquo;</p>
+<p><span>&ldquo;</span>Spring has an explosive impact on our productivity&hellip;Productivity improvements are well above 100%, as a conservative estimate.&rdquo;</p>
+<p><span>&ldquo;</span>We are able to develop reliable products at an affordable cost to our customers with Spring.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="LinkedIn"></a>
+<h2>LinkedIn Ensures Positive User Experience with Spring</h2>
+<div class="left">
+<img class="img" alt="Linked In Logo" src="/files/uploads/all/images/logos/linked-in.gif"/>
+</div>
+<div class="right">
+
+<p>LinkedIn takes your personal business network online, giving you access to people, jobs and opportunities like never before. Built upon trusted connections and relationships, LinkedIn has established the world&rsquo;s largest and most powerful professional network. Currently, over 42 million professionals are on LinkedIn, representing all five hundred of the Fortune 500 companies.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_LinkedIn_USLET_EN.pdf">Read the Linked In Case Study...</a></p>
+<p><span>&ldquo;</span>For LinkedIn, Spring life cycle management translates directly to a smooth user experience.&rdquo;</p>
+<p><span>&ldquo;</span>All the employees at SpringSource are really smart and know what they are talking about. They have dug really deep into the issues, they understand our problems, and they solve them. &rdquo;</p>
+<p><span>&ldquo;</span>There is no way we would be able to develop our application using OSGi or migrate to OSGi without a technology like Spring.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+<a name="MTV"></a>
+<h2>LinkedIn, MTV Tap Spring to Develop Core Apps</h2>
+
+<div class="left">
+<img class="img" alt="MTV Logo" src="/files/uploads/all/images/customer/mtv.gif"  /> <br> <img class="img" alt="Linkedin Logo" src="/files/uploads/all/images/customer/linked-in.gif" />
+</div>
+
+<div class="right">
+
+
+<p>LinkedIn takes your personal business network online, giving you access to people, jobs and opportunities like never before. Currently, over 42 million professionals are on LinkedIn, representing all five hundred of the Fortune 500 companies. Formed in July 1999, MTV Networks Music is the world&rsquo;s leading online music entertainment company, with 22 worldwide music destinations on the Web.</p>
+<p><a class="moreAfter" target="_blank" href="http://www.eweek.com/c/a/Application-Development/LinkedIn-MTV-Tap-Spring-to-Develop-Core-Apps/">Read eWeek Story...</a></p>
+<p><span>&ldquo;</span>Major social networking and media organizations such as LinkedIn and MTV Networks are leveraging the Spring Framework to build core applications that run their enterprises and Web sites. The open-source Spring platform is known for reducing the complexity of enterprise Java development.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="Logicalis"></a>
+
+<h2>Logicalis Gains Customer Confidence and Wins News Business with Spring</h2>
+<div class="left">
+
+<img class="img" alt="Logicalis Logo" src="/files/uploads/all/images/logos/logicalis.gif" />
+
+</div>
+
+<div class="right">
+
+
+<p>Headquartered in the UK, Logicalis is an international provider of integrated information and communications technology (ICT) solutions&mdash;delivering secure converged computing and communications infrastructure and services with operations in UK, US, Germany and throughout Latin America.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Logicalis_USLET_EN.pdf">Read the  Logicalis Case Study...</a></p>
+<p><span>&ldquo;</span>Customer confidence that Spring is going to perform helps us close sales. When we propose Spring as an architecture, new clients are very comfortable.&rdquo;</p>
+<p><span>&ldquo;</span>Spring helps us get follow on work from customers because we can price a job at a point that makes us a reasonable margin, while still being cost competitive.&rdquo;</p>
+<p><span>&ldquo;</span>We like to use open source software but we need to have enterprise quality. Spring has helped us balance those requirements.&rdquo;</p>
+
+</div>
+
+
+</div>
+
+<div class="casestudy">
+
+<a name="Namics"></a>
+<h2>Namics Delivers More Functionality for the Money
+with Spring      </h2>
+<div class="left">
+
+<img class="img" alt="Namics Logo" src="/files/uploads/all/images/logos/Namics_Logo.png" />
+</div>
+
+<div class="right">
+
+<p>Namics, based in Switzerland and Germany, is a consulting firm specializing in development of web applications for ecommerce, Intranet, brand communication and web content management. Namics serves companies in a variety of industries in Europe, including automotive, telecommunication, insurance, consumer goods and many others. Namics&rsquo; objective is to maintain long-term customer relationships by delivering on customer expectations, and the company has found that the application development environment can be a key contributor.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Namics_USLET_EN.pdf">Read the Namics Case Study...</a></p>
+<p><span>&ldquo;</span>Developing an application in Spring takes 40% to 50% less time because we don&rsquo;t have to write the code for the infrastructure.&rdquo;</p>
+<p><span>&ldquo;</span>With Spring, we can deliver more functionality for a defined amount. We don&rsquo;t have to tell customers that the budget limits our ability to provide what they have requested. We can now fulfill the needs of the customer more elegantly, and customer satisfaction is much higher.&rdquo;</p>
+<p><span>&ldquo;</span>Spring helps us achieve stronger long-term relationships with our customers, because we are able to deliver on the customer requests.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="Netjay"></a>
+<h2>Netjay Builds Complex Fanorakel Website Fast with Groovy and Grails</h2>
+
+<div class="left">
+
+<img class="img" alt="Netjay Feronakel logo" src="/files/uploads/all/images/customer/fanorakel_de_logo_0.png"/>
+
+</div>
+<div class="right">
+
+
+<p>Netjay, based in Munich, Germany, is a developer of websites and web applications. Netjay provides development, hosting and other technical services for customers in Germany and throughout Europe.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Netjay_Feronakel.pdf">Read the Netjay/Fanorakel  Case Study...</a></p>
+<p><span>&ldquo;</span>We get a huge productivity boost using Grails.Grails is about 50% faster than traditional development.&rdquo;</p>
+<p><span>&ldquo;</span>We could not have completed the website in the tight timeframe without Grails &ndash; it would have taken too long. With the resources we had available for this project, in this timeframe, the website would not be as advanced as it is now.&rdquo;</p>
+<p><span>&ldquo;</span>Using Groovy and Grails is like using the same technology as Spring, but with an additional abstraction layer on top of it that makes it very simple and does not require too much configuration. Everything just works.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="Nimbuzz"></a>
+<h2>Spring Helps Nimbuzz Improve Applications and Developer Performance </h2>
+<div class="left">
+
+<img class="img" alt="Nimbuzz Logo" src="/files/uploads/all/images/customer/Nimbuzz-Logo.png" />
+</div>
+
+<div class="right">
+
+<p>Nimbuzz, based in the Netherlands, provides a mobile social messenger application combining instant messaging, (geo) presence and VoIP. The free application enables users to connect with contacts across popular communities, including Skype, Windows Live Messenger, Yahoo! Messenger, and social networks including Facebook and MySpace &ndash; all from a single application. Nimbuzz has positioned itself to become the largest global communications platform for seamless IP-based communication among mobile devices and social media platforms. Working in a cutting-edge software market requires the company to maintain cutting-edge development practices.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Nimbuzz_USLET_EN.pdf">Read the Nimbuzz Case Study...</a></p>
+<p><span>&ldquo;</span>Spring cuts down the development lifecycle by mega factors, saving a huge amount of time and allowing the R&amp;D organizations to implement their own applications.&rdquo;</p>
+<p><span>&ldquo;</span>Our application has better performance because it is derived from Spring, and the services it offers are very robust, stable and scalable with high performance.&rdquo;</p>
+<p><span>&ldquo;</span>Spring has an immense impact on the development team. It improves the staff&rsquo;s development skills.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="NorthwesternMemorial"></a>
+
+<h2>Northwestern Memorial Hospital Streamlines Development and Prototyping with Groovy and Grails</h2>
+
+<div class="left">
+<img class="img" alt="Northwestern Memorial Hospital Logo" src="/files/uploads/all/images/logos/Nmh_logo.png"/>
+</div>
+
+<div class="right">
+
+
+<p>Northwestern Memorial Hospital has been recognized as the most preferred hospital in Chicago for 15 years. In 2009, 11 of Northwestern Memorial&rsquo;s medical specialties were ranked among the nation&rsquo;s best by <em>U.S. News &amp; World Report magazine</em> with six specialties ranked the highest in Illinois.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_NorthwesternMemorial_USLET_EN.pdf">Read the Northwestern Memorial Hospital Case Study...</a></p>
+<p><span>&ldquo;</span>Within a week, I was able to build a prototype in Groovy and Grails that could talk to the backend system. If we tried to do that in Struts, it would take at least two months to get to that level, because Grails has so much boilerplate code already built in.&rdquo;</p>
+<p><span>&ldquo;</span>In the end, I can improve the user experience for our website, because I am able to quickly and cost-effectively add new features using Groovy and Grails.&rdquo;</p>
+<p><span>&ldquo;</span>SA developer can learn Grails and be productive within a week, because it is so easy and intuitive, while Struts could take up to 4 weeks.&rdquo;</p>
+
+</div>
+
+
+</div>
+
+<div class="casestudy">
+
+<a name="ObjectPartners"></a>
+
+<h2>Spring Helps Object Partners Focus on Business Needs of Customers</h2>
+
+<div class="left">
+
+<img class="img" alt="Object Partners Logo" src="/files/uploads/all/images/logos/objectpartners.gif" />
+
+</div>
+<div class="right">
+
+
+<p>Object Partners is a Minnesota-based enterprise IT consulting firm that specializes in building and deploying large-scale applications for leaders in a variety of industries.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_ObjectPartners_USLET_EN.pdf">Read the  Object Partners Case Study...</a></p>
+<p><span>&ldquo;</span>Using Spring, we are more likely to hit the target delivery date that we promised to a customer, because there is less complexity, fewer problems get in our way, and we are more confident in what we are building upon.&rdquo;</p>
+<p><span>&ldquo;</span>Spring was the reason we were able to deliver at all, because time and money were running out.&rdquo;</p>
+<p><span>&ldquo;</span>Spring allows us to be more innovative.&rdquo;</p>
+
+</div>
+
+
+</div>
+
+<div class="casestudy">
+
+<a name="Orbitz"></a>
+<h2>Orbitz Builds and Maintains Complex Network of Services with Spring</h2>
+
+<div class="left">
+
+<img class="img" alt="Orbitz Logo" src="/files/uploads/all/images/logos/Orbitz_Logo0.png"/>
+
+</div>
+<div class="right">
+
+
+<p>Orbitz Worldwide, based in Chicago, is a leading global online travel company that uses innovative technology to enable leisure and business travelers to research, plan and book a broad range of travel products. Orbitz Worldwide is one of the premier technology organizations in ecommerce today and owns a portfolio of consumer travel brands including:  Orbitz, CheapTickets, ebookers, HotelClub, RatesToGo, the Away Network, Asia hotels, and corporate travel brand Orbitz for Business. Orbitz.com receives 6000 hits per second, and 10+ million unique visitors every day.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Orbitz_USLET_EN.pdf">Read the Orbitz Case Study...</a></p>
+<p><span>&ldquo;</span>On the front end of a project, Spring saves us a couple weeks of time that we are not working on the infrastructure.&rdquo;</p>
+<p><span>&ldquo;</span>We needed a flow engine and Spring was the only platform that could provide that functionality.&rdquo;</p>
+<p><span>&ldquo;</span>The penetration that Spring has made here at Orbitz is very impressive. Because it is so flexible, Spring has worked its way into every corner of  our business.&rdquo;</p>
+
+</div>
+
+</div>
+<div class="casestudy">
+
+<a name="Quantel"></a>
+<h2>Quantel Accelerates Innovation with Spring</h2>
+
+<div class="left">
+
+<img class="img" alt="Quantel Logo" src="/files/uploads/all/images/logos/quantel.gif" />
+
+</div>
+
+<div class="right">
+
+
+<p>Quantel is a world-leading developer of innovative, high performance content creation and delivery systems across post, broadcast and DI.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Quantel_USLET_EN.pdf">Read the  Quantel Case Study...</a></p>
+<p><span>&ldquo;</span>Spring makes our development, testing and research cycle much quicker. Using Spring has shortened out project development time by about a third and gives us a significantly more reliable and easier to manage system than we had previously.&rdquo;</p>
+<p><span>&ldquo;</span>Using Spring, I have already found about 20% of the bugs that I would not have found at this stage using our old process.&rdquo;</p>
+<p><span>&ldquo;</span>We were able to build a prototype in a month using Spring. There is no way we would have been able to build a prototype in the timeframe we had without using Spring.&rdquo;</p>
+
+</div>
+
+
+</div>
+<div class="casestudy">
+
+<a name="QuinScape"></a>
+<h2>QuinScape Speeds Project Delivery and Improves Quality with Spring</h2>
+<div class="left">
+
+<img class="img" alt="QuinScape Logo" src="/files/uploads/all/images/customer/partners_quinscape.gif" />
+
+</div>
+
+<div class="right">
+
+
+<p>QuinScape, based in Dortmund, Germany, is a software development consulting company working with customers throughout Europe. QuinScape specializes in the development of web applications, portal solutions, intranets and extranets.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_QuinScape_USLET_EN.pdf">Read the  QuinScape Case Study...</a></p>
+<p><span>&ldquo;</span>With Spring, we can develop much faster&mdash;a 15-30% increase in speed. Furthermore, when compared with legacy frameworks built in-house by our customers, we achieve up to a 100% speed up with Spring.&rdquo;</p>
+<p><span>&ldquo;</span>In the modular SpringSource dm Server&hellip;it is much easier to assemble large solutions&hellip;we are recomending this beneficial new technology to our clients.&rdquo;</p>
+<p><span>&ldquo;</span>With very good community support and SpringSource behind it, Spring is much more advanced than our competitors&rsquo; frameworks, and this really gives us a competitive advantage.&rdquo;</p>
+
+</div>
+
+
+</div>
+
+<div class="casestudy">
+
+<a name="RealNetworks"></a>
+
+<h2>RealNetworks Drives Innovation and Saves Time and Money with Spring</h2>
+
+<div class="left">
+<img class="img" alt="Real Networks Logo" src="/files/uploads/all/images/logos/real.gif" />
+</div>
+
+<div class="right">
+
+<p>RealNetworks, Inc. delivers digital entertainment services to consumers via PC, portable music player, home entertainment system or mobile phone. Real created the streaming media category in 1995 and has continued to lead the market with pioneering products and services.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_RealNetwork_USLET_EN.pdf">Read the Real Networks  Case Study...</a></p>
+<p><span>&ldquo;</span>Innovation of new capabilities is critical to the success of the company...The modular way applications are built in Spring makes innovation easier and gives us more freedom and independence to experiment.&rdquo;</p>
+<p><span>&ldquo;</span>On our team, everyone&rsquo;s morale is much higher, productivity is greater, and the quality of the applications we are building is much better - because we are using Spring.&rdquo;</p>
+<p><span>&ldquo;</span>Prior to using Spring, we averaged from three weeks to a month for a new developer to ramp up.  Now, a new developer usually gets started on application development on the first or second day.&rdquo;</p>
+
+</div>
+
+
+</div>
+
+<div class="casestudy">
+
+<a name="Sky"></a>
+
+<h2>Sky.Com Accelerates Release Cycle Six Fold with
+Groovy and Grails   </h2>
+
+<div class="left">
+<img class="img" alt="Sky Logo" src="/files/uploads/all/images/logos/sky_case_studies.jpg" />
+
+</div>
+
+<div class="right">
+
+
+<p>Sky is the UK&rsquo;s leading entertainment and communications company, operating a multi-channel television service with 9.4+ million customers - a third of households in the UK and Ireland. Sky also operates multiple websites to deliver entertainment, news and other content to customers, and the company is the UK&rsquo;s fastest growing broadband and fixed-telephony provider. Sky&rsquo;s network of sites extend the company&rsquo;s reach, attracting millions of unique users each month who contribute to over 1 billion monthly page impressions. The home page of sky.com links to content across a variety of sites and plays a vital role in helping Sky achieve its goal to increase traffic across all sites and gain new customers for its portfolio of services.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Sky_USLET_EN.pdf">Read the Sky Case Study...</a></p>
+<p><span>&ldquo;</span>Groovy is so much quicker and simpler to write code, so we can get applications up and running faster. With Groovy and Grails we can create a new feature in a week, when before it could easily take a month or more. I would not switch back to Java development, if given the option.&rdquo;</p>
+<p><span>&ldquo;</span>Now using Groovy and Grails, we release every week to production, compared with every six weeks previously.&rdquo;</p>
+<p><span>&ldquo;</span>With Groovy and Grails, a Java developer can become productive immediately &hellip; You can get started on day one.&rdquo;</p>
+
+</div>
+
+
+</div>
+
+<div class="casestudy">
+
+<a name="Spherion"></a>
+
+<h2>Spherion Boosts Developer Productivity with Spring</h2>
+
+<div class="left">
+
+<img class="img" alt="Spherion Logo" src="/files/uploads/all/images/logos/spherion.gif"/>
+
+</div>
+
+<div class="right">
+
+
+
+<p>Spherion Corporation (NYSE: SFN) is a leading recruiting and staffing company that provides integrated solutions to meet the evolving needs of companies and job candidates. As an industry pioneer for more than 60 years, Spherion has sourced, screened and placed millions of individuals in temporary, temp-to-hire and full-time jobs.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Spherion_USLET_EN.pdf">Read the  Spherion Case Study...</a></p>
+<p><span>&ldquo;</span>Spring has made development much simpler, and it has eliminated the maintenance and development hassle we had before with EJBs&hellip;By using Spring, we have reduced our development time by at least 30%.&rdquo;</p>
+<p><span>&ldquo;</span>It used to take about a month for a new developer to ramp up, but now it only takes a couple days with Spring.&rdquo;</p>
+<p><span>&ldquo;</span>We like the integration between Spring and Hibernate&hellip;We not only gain the advantages of Spring dependency injection, but we also get the benefits of using Hibernate to take care of mapping data to the database.&rdquo;</p>
+
+</div>
+
+
+</div>
+
+<div class="casestudy">
+
+<a name="TelecomItalia"></a>
+
+<h2>Telecom Italia Speeds Delivery of Innovative Prototypes with Spring</h2>
+
+<div class="left">
+
+<img class="img" alt="Telecom Italia Logo" src="/files/uploads/all/images/customer/telecom-italia.gif"/>
+
+</div>
+
+<div class="right">
+
+
+
+<p>Telecom Italia is Italy&rsquo;s premier telecommunications company, providing fixed-line and mobile telecommunications, Internet, media and news in Italy, as well as throughout Europe and in Brazil.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_TelecomItalia_USLET_EN.pdf">Read the Telecom Italia Case Study...</a></p>
+<p><span>&ldquo;</span>Using Spring, our development time, debugging and testing is reduced by 30%. This is a critical advantage because of our tight deadlines for prototype delivery.&rdquo;</p>
+<p><span>&ldquo;</span>With Spring, we write better code. Better written code means it is easier to understand an issue and fix it.&rdquo;</p>
+<p><span>&ldquo;</span>One of the advantages of SpringSource dm Server, thanks to OSGi, is the ability to deploy different versions of the same library and share them between applications&hellip;this results in a lower footprint.&rdquo;&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="TheLadders"></a>
+<h2>TheLadders.com Maintains Competitive Edge
+with Spring</h2>
+
+<div class="left">
+
+<img class="img" alt="TheLadders.com Logo" src="/files/uploads/all/images/customer/ladders.gif" />
+
+</div>
+
+<div class="right">
+
+<p>TheLadders.com is the world's largest community catering exclusively to the $100k+ job market.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_TheLadders_USLET_EN.pdf">Read the TheLadders Case Study...</a></p>
+<p><span>&ldquo;</span>Every two weeks we are producing new software. We can&rsquo;t afford to spend time on infrastructure maintenance. We need to be able to rapidly add features and applications and we rely on Spring to do that. Spring makes us more competitive by giving us this ability.&rdquo;</p>
+<p><span>&ldquo;</span>With SpringSource, I know our developers are going to get good training. The SpringSource trainers have been fantastic.&rdquo;</p>
+<p><span>&ldquo;</span>Spring lets us focus on the user experience instead of the framework, and allows us to meet our two-week release cycle.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="TomTom"></a>
+
+<h2>TomTom Accelerates Development and Reduces Risk with Spring Roo</h2>
+
+<div class="left">
+
+<img class="img" alt="TomTom Logo" src="/files/uploads/all/images/logos/TomTom_logo.png"/>
+
+</div>
+
+<div class="right">
+
+
+<p>TomTom, based in Amsterdam is a leading global provider of location and navigation solutions. More than 45 million people use TomTom solutions every day, in the form of dedicated portable navigation devices (PNDs), in-dash car systems or tracking and tracing solutions for fleet management. In addition, hundreds of millions of people use TomTom digital maps on the Internet or via mobile phones.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_TomTom.pdf">Read the TomTom Case Study...</a></p>
+<p><span>&ldquo;</span>Spring Roo helps us develop faster &hellip;With Spring Roo, we were able to develop a full-fledged Web portal application in just two weeks, It would have taken much more time to create the web application without such a tool.&rdquo;</p>
+<p><span>&ldquo;</span>The initial goal was to only use Spring Roo to develop the prototype as fast as possible&hellip;We decided it would be a good decision to keep using Spring Roo for our production application, so that we could benefit from the productivity it gave us to maintain the application in the future.&rdquo;</p>
+<p><span>&ldquo;</span>Many technologies that I would not have contemplated adding to the application, because of time constraints, are now possible&hellip;Spring Roo gives me more freedom to experiment with various technologies.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="Traficon"></a>
+<h2>Traficon Meets Growing Customer Demand with Spring</h2>
+
+<div class="left">
+<img class="img" alt="Traficon Logo" src="/files/uploads/all/images/logos/traficon.gif"/>
+</div>
+
+<div class="right">
+
+
+<p>Traficon, based in Belgium, is a world leader in traffic detection based on video image processing.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Traficon_USLET_EN.pdf">Read the  Traficon Case Study...</a></p>
+<p><span>&ldquo;</span>We now have unlimited scalability. Theoretically we can go up to hundreds of thousands of detectors with a single system. This capability makes our company more competitive.&rdquo;</p>
+<p><span>&ldquo;</span>Spring and Flex/Flash technology allowed us to develop a much more responsive system.&rdquo;</p>
+<p><span>&ldquo;</span>We can fix bugs much faster in Spring&hellip;It is a great advantage to have the unit testing in Spring to quickly narrow down the possible sources of error.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="Tybrin"></a>
+<h2>TYBRIN Delivers Enhanced Application Functionality and Reliability with Spring</h2>
+
+<div class="left">
+<img class="img" alt="Tybrin Logo" src="/files/uploads/all/images/logos/tybrin.gif"/>
+</div>
+
+<div class="right">
+
+
+<p>Founded in 1972, TYBRIN Corporation is a premier provider of process-based systems and software engineering products and services.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_TYBRIN_USLET_EN.pdf">Read the  TYBRIN Case Study...</a></p>
+<p><span>&ldquo;</span>I built the application in one weekend leveraging components built on the Spring framework&mdash;saving six months of work. I would never have been able to pull that off without Spring.&rdquo;</p>
+<p><span>&ldquo;</span>Spring allows us to focus on the customer needs&mdash;the business element&mdash;and not the underlying infrastructure.&rdquo;</p>
+<p><span>&ldquo;</span>Spring gives us a competitive advantage when it comes to bidding.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="Wired"></a>
+<h2>Wired.com Simplifies and Accelerates Development 
+with Grails</h2>
+
+<div class="left">
+<img class="img" alt="Wired Logo" src="/files/uploads/all/images/logos/wired.gif"/>
+</div>
+
+<div class="right">
+
+<p>Wired.com, the online arm of Wired Magazine, is a cutting edge guide covering how technology is changing the world. Not simply an online version of the print publication, however, Wired.com delivers a unique online experience to 12 million readers around the world.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_Wired_USLET_EN.pdf">Read the Wired Case Study...</a></p>
+<p><span>&ldquo;</span>The performance we have seen from Grails has been extremely encouraging, especially against other rapid development frameworks&hellip;In my experience Grails runs much faster.&rdquo;</p>
+<p><span>&ldquo;</span>Our developers are much happier developing in Grails because they can accomplish tasks so much faster.&rdquo;</p>
+<p><span>&ldquo;</span>Grails makes it easier to focus on what we are trying to accomplish.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+
+<a name="XebiaLabs"></a>
+<h2>Spring Saves Time While Driving Innovation and Creativity at XebiaLabs          </h2>
+
+<div class="left">
+
+<img class="img" alt="Xebia Labs" src="/files/uploads/all/images/logos/xebia_labs_logo.png"/>
+
+</div>
+
+<div class="right">
+
+
+<p>XebiaLabs, a subsidiary of Xebia based in the Netherlands, was established to develop deployment automation solutions for Java EE applications. Deployit, the company&rsquo;s fi rst product, is a complete deployment lifecycle management solution that enables users to manage their middleware environments and predictably execute and automate application deployments.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_XebiaLabs_USLET_EN.pdf">Read the XebiaLabs Case Study...</a></p>
+<p><span>&ldquo;</span>We don&rsquo;t have to do anything with Spring, it just works, so we can spend time on our own features rather than on framework issues &ndash; 98% of our energy goes into our business logic, rather than figuring out how to make everything work.&rdquo;</p>
+<p><span>&ldquo;</span>Developers experiment with innovative new ideas because they can do that in Spring. Usually within a day we can get a feel for whether something is going to work or not, and that is because Spring makes it so easy.&rdquo;</p>
+<p><span>&ldquo;</span>Spring allows us to be agile and quickly adapt our product to changing market needs.&rdquo;</p>
+
+</div>
+
+</div>
+
+<div class="casestudy">
+<a name="XWiki"></a>
+
+<h2>XWiki SAS Streamlines Web Development with Groovy Dynamic Language</h2>
+
+<div class="left">
+<img class="img" alt="XWiki Logo" src="/files/uploads/all/images/logos/xwikilogo.png"/>
+
+</div>
+
+<div class="right">
+
+
+<p>XWiki SAS is a start-up based in Paris, supported by more than 30 collaborators around the world. The goal of the company is to develop collaborative open source solutions that allow users to work together using wikis, applications that enable users to collaboratively create and edit web pages via Web browsers. Thousands of enterprises use XWiki products, including AFP (French News Agency), Curriki, EADS (aerospace and defence corporation), Illinois Casualty Company (insurance company) or IWA (International World Association) and a range of organizations across the globe.</p>
+<p><a class="moreAfter" target="_blank" href="/files/uploads/all/pdf_files/customer/S2_CaseStudy_XWiki.pdf">Read the XWiki Case Study...</a></p>
+<p><span>&ldquo;</span>The advantage XWiki gains from Groovy is that we can develop features and make changes quickly. We can create a proof of concept for an application in a day and have a working application in a week using Groovy &hellip; In Java, it would take much longer. It could take weeks or even months.&rdquo;</p>
+<p><span>&ldquo;</span>Groovy allows us to deliver a proof of concept to our customers very quickly, and complete the project much faster.&rdquo;</p>
+<p><span>&ldquo;</span>Groovy makes our company more competitive, because not every company has the capability to deliver functionality as quickly as we are able to. Groovy definitely provides value for us as a service provider.&rdquo;</p>
+
+</div>
+
+
+</div>  </div>
+
+  
+</div></div> <!-- /node-inner, /node -->
+
+
+            </div>
+    </div>
+        </td>
+
+        <td width="50px">&nbsp;</td>
+        <td width="310px" valign="top" align="left">
+
+              <!--[If IE 7]><br><![endif]-->
+      <div style="margin-top:-40px;">
+      <div align="right">
+
+	  <p style="line-height:26px;">&nbsp;</p>
+	  <p>
+
+      </p>
+      </div>
+
+	              
+      
+       
+        
+        
+        
+        </div>
+        </td>
+
+        </tr>
+        </table>
+
+
+        
+      </div></div><!-- /.section, /#content -->
+
+
+      
+      
+    </div></div><!-- /#main, /#main-wrapper -->
+
+<div style="background-color:#252525;margin-top:-14px;">
+         <div id="footer"><div class="section">
+
+
+        <div class="region region-footer">
+  <div id="block-block-23" class="block block-block first region-odd odd region-count-1 count-1"><div class="block-inner">
+
+  
+  <div class="content">
+    <style type="text/css">
+#communities{position:relative;}
+#communities li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#communities li, #communities a{height:69px;display:block;}
+
+#cf{left:0px;width:260px;}
+#cf{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat 0 0;}
+#cf a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat 0 0;}
+
+#grails{left:275px;width:120px;}
+#grails{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -275px 0;}
+#grails a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -275px 0;}
+
+#groovy{left:400px;width:100px;}
+#groovy{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -400px 0;}
+#groovy a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -400px 0;}
+
+#hyperic{left:500px;width:170px;}
+#hyperic{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -500px 0;}
+#hyperic a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -500px 0;}
+
+#rabbit{left:670px;width:140px;}
+#rabbit{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -670px 0;}
+#rabbit a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -670px 0;}
+
+#wm{left:810px;width:170px;}
+#wm{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -810px 0;}
+#wm a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -810px 0;}
+
+#communities_bg {background-color:#181818;height:69px;padding:1px 10px 15px 10px;border-radius:5px;margin:10px 0 27px 0}
+
+#communities_title {color: #CCC;font-size: 18px;font-weight: 300;padding-bottom: 15px;line-height: 24px;text-shadow: 0 1px 0 black;margin-left:10px}
+
+</style>
+
+<p>&nbsp;</p>
+<table style="margin: 0 10px 0 10px;">
+
+<tr valign="top">
+    <span id="communities_title">Other Communities</span>
+</tr>
+<tr valign="top">
+    <div id="communities_bg">
+        <ul id="communities">
+            <li id="cf" style="margin-left: 30px;"><a href="http://www.cloudfoundry.org" target="_blank"></a></li>
+            <li id="grails" style="margin-left: 65px;"><a href="http://www.grails.org" target="_blank"></a></li>
+            <li id="groovy" style="margin-left: 110px;"><a href="http://groovy.codehaus.org/" target="_blank"></a></li>
+            <!--<li id="hyperic"><a href="http://www.hyperic.com/community" target="_blank"></a></li>-->
+            <li id="rabbit" style="margin-left: -20px;"><a href="http://www.rabbitmq.com" target="_blank"></a></li>
+            <li id="wm"><a href="http://redis.io" target="_blank"></a></li>
+        </ul>
+    </div>
+</tr>
+
+<tr valign="top">
+<th class="footerth" style="padding-left:-10px;"><a href="http://www.springsource.org">SpringSource</a></th>
+
+<th class="footerth"><a href="/features">Features</a></th>
+
+<th class="footerth"><a href="/get-started">Get Started</a></th>
+
+<th class="footerth"><a href="/get-involved">Get Involved</a></th>
+
+<th class="footerth"><a href="/projects">Projects</a></th>
+
+
+</tr>
+<tr>
+<td valign="top" width="195px">
+
+<span class="footerlist">
+<a href="/about">About Us</a><br>
+<a href="http://blog.springsource.org">Our Blog</a><br>
+<a href="/case-studies">Case Studies</a><br>
+<a href="/news-events">Latest News & Events</a><br>
+<a href="http://www.vmware.com/jobs/" target="_blank">SpringSource Jobs</a>&nbsp;&nbsp;<a href="http://www.vmware.com/jobs/" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/consulting">Consulting</a><br>
+<!--<a href="http://www.springsource.com/contact" target="_blank">Contact Us</a><br>-->
+<a href="/newsletter-subscription">Subscribe to Newsletter</a><br>
+
+</span>
+
+<p style="margin-top:15px;"><a href="/newsletter-subscription">
+<img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_home_subscribe.png"></a></p>
+</td>
+
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/features/modern-web">Modern Web</a><br>
+<a href="/features/data-access">Data Access</a><br>
+<a href="/features/integration">Integration</a><br>
+<a href="/features/mobile">Mobile</a><br>
+<a href="/features/social">Social</a><br>
+<a href="/features/security">Security</a><br>
+<a href="/features/cloud-ready">Cloud Ready</a><br>
+</span>
+</td>
+
+
+<td valign="top" width="160px">
+
+<span class="footerlist">
+<a href="/sts">Get Tool Kit (STS)</a> <br>
+<a href="/tutorials">Tutorials</a> <br>
+<a href="/samples">Code Samples</a> <br>
+<a href="/documentation">Documentation</a> <br>
+<a href="http://forum.springsource.org">Forums</a> <br>
+<a href="http://www.springsource.com/training" target="_blank">Training</a><br>
+
+
+</span>
+</td>
+
+
+<td valign="top" width="156px">
+
+<span class="footerlist">
+
+
+<a href="http://forum.springsource.org">Discussions</a><br>
+<a href="https://jira.springsource.org" target="_blank">Issue Tracker</a><br>
+<a href="https://github.com/SpringSource" target="_blank">Source Repository</a>&nbsp;&nbsp;<a href="https://github.com/SpringSource" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br> 
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-amqp">Spring AMQP</a><br>
+<a href="/spring-android">Spring for Android</a><br>
+<a href="/spring-batch">Spring Batch</a><br>
+<a href="/spring-data">Spring Data</a><br>
+<a href="/spring-framework">Spring Framework</a><br>
+<a href="/spring-gemfire">Spring Gemfire</a><br>
+<a href="/spring-integration">Spring Integration</a><br>
+
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-mobile">Spring Mobile</a><br>
+<a href="http://www.springframework.net" target="_blank">Spring .NET</a>&nbsp;&nbsp;<a href="http://www.springframework.net" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/spring-roo">Spring Roo</a><br>
+<a href="/spring-security">Spring Security</a><br>
+<a href="/spring-social">Spring Social</a><br>
+<a href="/spring-web-flow">Spring Web Flow</a><br>
+<a href="/spring-web-services">Spring Web Services</a><br>
+
+</span>
+</td>
+
+
+
+</tr>
+</table>
+
+
+<div style="background-color:#1e1e1e;width:952;-moz-border-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 5px;">
+<center>
+<p class="copyright">
+<a style="color:#eee;" href="/user">&#169;</a>&nbsp;
+<script type="text/javascript">
+
+var d = new Date();
+document.write(d.getFullYear());
+
+</script>
+SpringSource.
+All Rights Reserved.
+<a href="http://www.vmware.com/help/legal.html" target="_blank">Terms of Use</a>, 
+<a href="http://www.vmware.com/help/privacy.html" target="_blank">Privacy</a> and 
+<a href="/trademark_standards">Trademark Standards</a>
+</p>
+</center>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-7" class="block block-block last region-even even region-count-2 count-2"><div class="block-inner">
+
+  
+  <div class="content">
+    <!-- Eloqua Img Code Code -->
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqImg.js"></script>
+<!-- Begin Google Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2728886-3");
+pageTracker._setDomainName("springsource.org");
+pageTracker._setAllowHash(false);
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+var OrgTracker = _gat._getTracker("UA-2728886-2");
+OrgTracker._setDomainName("springsource.org");
+OrgTracker._setAllowHash(false);
+OrgTracker._setAllowLinker(true);
+OrgTracker._trackPageview();
+</script>
+<!-- End Google Code -->  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div><!-- /.region -->
+
+      </div></div>   <!-- /.section, /#footer -->
+    <!--  -->
+</div>
+  </div></div><!-- /#page, /#page-wrapper -->
+
+  
+  <script type="text/javascript" src="/sites/all/modules/custom/google_cse/google_cse.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "googleCSE": { "language": "en" } });
+//--><!]]>
+</script>
+
+</body>
+</html>

@@ -1,0 +1,559 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>vFabric Cloud Application Platform Education</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="en-us" />
+<meta name="copyright" content="VMware, Inc. All rights reserved." />
+
+<link rel="alternate" type="application/rss+xml" href="//www.vmware.com/sitemap.xml" />
+<link rel="alternate" type="application/rss+xml" href="//www.vmware.com/ror.xml" />
+<link rel="alternate" type="application/rss+xml" href="http://vmware.simplefeed.net/rss" />
+<link rel="shortcut icon" type="image/x-icon" href="//www.vmware.com/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="/ui/styles/global_www.css?release=13.4" />
+<link rel="stylesheet" type="text/css" href="//www.vmware.com/files/templates/inc/template.css" />
+<link rel="stylesheet" type="text/css" href="//www.vmware.com/files/templates/inc/fce.css" />
+<link rel="stylesheet" type="text/css" media="print" href="//www.vmware.com/files/templates/inc/print.css" />
+
+
+<script type="text/javascript" src="//www.vmware.com/files/templates/inc/library.js"></script>
+
+			<script type="text/javascript">
+	
+				function changeCSSClasses(activeList,inactiveList,activeStyle,inactiveStyle){
+					var theActiveList = activeList.split(',');
+					var theInactiveList = inactiveList.split(',');
+					if(!activeStyle){var activeStyle='active'}
+					if(!inactiveStyle){var inactiveStyle='inactive'}
+					
+					for(var i = 0; i < theActiveList.length; i++){
+						$(theActiveList[i]).attr('class',activeStyle);
+					}
+					for(var i = 0; i < theInactiveList.length; i++){
+						$(theInactiveList[i]).attr('class',inactiveStyle);
+					}
+				}
+				
+				function showHideWidgetDivs(showList,hideList){
+					var theShowList = showList.split(',');
+					var theHideList = hideList.split(',');
+					
+					for(var i = 0; i < theShowList.length; i++){
+						$(theShowList[i]).show();
+					}
+					for(var i = 0; i < theHideList.length; i++){
+						$(theHideList[i]).hide();
+					}
+				}
+			
+			</script>
+			<script type="text/javascript" src="/ui/jslib/jquery.js?release=13.4"></script>
+<meta name="description" content="VMware is the global leader in virtualization software, providing desktop and server virtualization products for virtual infrastructure solutions." />
+<meta name="keywords" content="virtualization, virtualisation, virtualizing, server virtualization, desktop virtualization, storage virtualization, virtual machine, virtual infrastructure, virtual computing, community source, hypervisor, server consolidation, server containment, development and test, workstation, esx, esx server, gsx, virtualcenter, virtual server, vserver, vmserver, p2v, vmtn, virtual appliances, vm, vmwear, free virtualization" />
+<script>userIsLoggedIn = 0; userIsManager = 0;</script></head>
+
+
+<body>
+
+<div id="container">
+  <strong class="seo">VMware</strong>
+  <div id="content-container">
+    <div id="content-left">
+
+      <div id="header" class="firstlevelcusted">
+        <div class="overlay">
+          <h1>VMware Training</h1>
+			
+        </div>
+      </div>
+
+	  
+	  <div id="chatAdvisor">
+		<div class="chatLink">
+		  Course Advisor:
+		  <a href="http://mylearn.vmware.com/contact.cfm?ui=www_edu">Call</a>,
+		  <a href="http://mylearn.vmware.com/contact.cfm?ui=www_edu">Email</a>
+		  or
+		  <a href="http://mylearn.vmware.com/contact.cfm?ui=www_edu">Chat Online</a>
+		</div>
+	  </div>
+		
+      <div id="content">
+
+
+
+
+
+
+
+				<h1>vFabric Cloud Application Platform Education</h1>
+			<p>
+Our vFabric curriculum is designed to assist you in becoming an expert at building, running and managing Enterprise Java Applications. Whether you are looking at building modern applications or scaling and running data-intensive applications on-premise or in the cloud, VMware has a professional learning path for you.
+</p>
+<p>
+
+<b>Determine which training is right for you by selecting a learning path below based on your role or upcoming IT project.  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31808&ui=www_edu">Explore knowledge base, free training and other vFabric resources</a>.</b>
+</p>
+
+<h2>vFabric Developer Learning Paths</h2>
+
+
+<p>
+<table border="0" width="100%">
+<tr valign="top">
+<td rowspan="4" width="20%"><img src="http://www.springsource.org/files/Logo_Spring_258x151.png" width="80px"></td>
+<td colspan="2"><b>Spring Developer Path</b><br /><br />
+</td></tr>
+<tr valign="top"><td width="10%">
+Step 1</td>
+<td width="70%"><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17750">Core Spring</a></td></tr>
+<tr valign="top"><td>
+Step 2</td><td><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=33053">Spring Web</a><br><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17833">Enterprise Integration with Spring</a><br />
+<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18355">Hibernate with Spring</a></td></tr>
+<tr valign="top"><td>
+Step 3</td><td>
+<a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=31110&ui=www_cert">Get Certified</a></td></tr>
+
+
+</table>
+</p>
+
+
+<p>
+
+<table border="0" width="100%">
+
+<tr valign="top">
+<td rowspan="2" width="20%"><img src="http://www.springsource.org/files/Grails-Logo.png" width="80"></td>
+
+<td colspan="2"><b>Groovy & Grails Developer Path</b><br /><br />
+
+</td></tr>
+
+<tr valign="top"><td width="10%">
+Step 1</td>
+<td width="70%"><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=41320">Groovy & Grails</a></td></tr>
+
+</table>
+
+
+
+<p>
+<table border="0" width="100%">
+<tr valign="top">
+<td rowspan="3" width="20%"><img src="http://springsource.org/files/uploads/all/images/product/gemFireLogo2.gif
+" width="80px"></td>
+<td colspan="2"><b>vFabric Gemfire Developer Path</b><br /><br />
+</td></tr>
+<tr valign="top"><td width="10%">
+Step 1</td>
+<td width="70%"><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=151426">vFabric Gemfire Fundamentals</a></td></tr>
+<tr valign="top"><td>
+Step 2</td><td><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=30104">vFabric Gemfire for Developers</a></td></tr>
+</table>
+
+</p>
+
+
+
+
+
+
+<p>
+<table border="0" width="100%">
+<tr valign="top">
+<td rowspan="3" width="20%"><img src="http://www.jeffgrote.com/vmware/logos/rabbitmqlogonostrap.png" width="100px"></td>
+<td colspan="2"><b>vFabric RabbitMQ Developer Path</b><br /><br />
+</td></tr>
+<tr valign="top"><td width="10%">
+Step 1</td>
+<td width="70%"><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=32507">vFabric RabbitMQ Fundamentals</a></td></tr>
+<tr valign="top"><td>
+Step 2</td><td><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=31329">vFabric RabbitMQ</a></td></tr>
+</table>
+
+</p>
+
+<h2>vFabric System Administrator Learning Paths</h2>
+
+
+
+<p>
+<table border="0" width="100%">
+<tr valign="top">
+<td rowspan="3" width="20%"><img src="http://springsource.org/files/uploads/all/images/product/tomcat.gif" width="60px"></td>
+<td colspan="2"><b>tc Server/Tomcat Administrator Path</b><br /><br />
+</td></tr>
+<tr valign="top"><td width="10%">
+Step 1</td>
+<td width="70%"><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=151431
+">vFabric tc Server Fundamentals</a></td></tr>
+<tr valign="top"><td>
+Step 2</td><td><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=23470">Tomcat Administration</a> (4 day) <b>or</b><br />
+<a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=23470">tcServer Administration</a> (4 day Custom Onsite -- choose "Inquire About Onsite")
+<br>
+Alternate course -- for those with existing app server admin skills:<br>
+ <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=23728"> tc Server Administration</a> (2 day)</td></tr>
+</table>
+
+</p>
+
+
+
+
+
+<p>
+<table border="0" width="100%">
+<tr valign="top">
+<td rowspan="3" width="20%"><img src="http://blog.hyperic.com/wp-content/themes/ds/images/logo.gif" width="100px"></td>
+<td colspan="2"><b>vFabric Hyperic Adminstrator Path</b><br /><br />
+</td></tr>
+<tr valign="top"><td width="10%">
+Step 1</td>
+<td width="70%"><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=det&id_course=151428">vFabric Hyperic Fundamentals</a></td></tr>
+<tr valign="top"><td>
+Step 2</td><td><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18470
+">vFabric Hyperic Administration</a></td></tr>
+</table>
+
+</p>
+
+
+
+
+
+
+      </div>
+      <div id="breadcrumbs">
+	    <a href="http://www.vmware.com/">Home</a> &gt;
+		<a href="http://www.vmware.com/services/">Services</a> &gt;
+
+		<a href="http://mylearn.vmware.com/portals/www/">VMware Training</a>
+
+		&gt; vFabric Cloud Application Platform Education 
+	  </div>
+    </div>
+
+
+    <div id="content-right">
+
+
+
+<ul id="secondary-navigation">
+  <h3><a href="http://www.vmware.com/services/"><span class="bg"><span>Services</span></span></a></h3>
+  <ul>
+  <li ><a href="http://mylearn.vmware.com/portals/certification/"><span class="bg"><span>Certification</span></span></a></li>
+    
+    <li ><a href="http://mylearn.vmware.com/mgrreg/index.cfm?ui=www_edu&redirect=off"><span class="bg"><span>VMware Training</span></span></a>
+	
+	  <ul>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=17377&ui=www_edu">Why VMware Authorized Training</a>
+			
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/portals/vci/mL.cfm?menu=public&ui=www_vci">Be a VMware Authorized Instructor</a>
+			
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/portals/www/search/findcourse.cfm?ui=www_edu">Find a Class</a>
+			
+		  <ul>
+			
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/portals/www/mL.cfm?menu=newcourses">What's New</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=37062&ui=www_edu">Promotions</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/portals/www/search/findcourse2.cfm?ui=www_edu&category=schedule&menu=search&searchtype=advanced&keyword=">Power Search</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=36536&ui=www_edu">Top Classes by Time Zone</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/courseware/151680/VM_Q213_CourseCatalog-without SKUs.pdf">Course Catalog (PDF)</a>
+			
+		    </li>
+				
+		  </ul>
+				
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=32222&ui=www_edu">Delivery Options</a>
+			
+		  <ul>
+			
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/mgrReg/message.cfm?ui=www&subject=Onsite Training">Request Onsite Training</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://mylearn.vmware.com/mgrReg/plan.cfm?plan=33369&ui=www_edu">Free eLearning in Your Language</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://www.vmwarelearning.com">Free Instructional Videos</a>
+			
+		    </li>
+				
+		  <li >
+			
+		  <a href="http://www.vmwarepress.com">Books from VMware Press</a>
+			
+		    </li>
+				
+		  </ul>
+				
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/mgrreg/locations.cfm?ui=www_edu">Training Centers</a>
+			
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/ilearn/MgrReg/faq.cfm?ui=www_edu&category=Customer Education">FAQs</a>
+			
+	    </li>
+	
+
+		
+		<li >
+		
+		  <a href="http://mylearn.vmware.com/contact.cfm?ui=www_edu">Contact Us</a>
+			
+	    </li>
+	
+        <li><a href="https://mylearn.vmware.com/MgrReg/login.cfm?ui=www_edu">Login</a></li>
+	
+      </ul>
+	
+    </li>
+  
+  </ul>
+</ul>
+
+
+<a href="http://www.vmworld.com/registration.jspa?src=VMworld2013interimregcertbanner" target="_blank"><img src="/courseware/174693/vmw-web-vmworld13-US-reg-live-cert-221x91-101.jpg"></a>
+<br/><br/> <a href="http://vmwarelearningpaths.com/lists/viewpoint/subscribe" target="_blank"><img src="http://mylearn.vmware.com/courseware/172878/quarterly_newsletter.png"></a>
+<br/><br/> <center>
+<table border="0">
+<tr><td>
+<a href="http://www.facebook.com/pages/VMware-Education-Services/143592492341597">
+        <img src="http://mylearn.vmware.com/courseware/151448/fb_icon.png">
+      </a>
+      <a href="http://twitter.com/VMwareEducation" class="center">
+        <img src="http://mylearn.vmware.com/courseware/151451/twitter_icon.png">
+      </a>
+      <a href="http://blogs.vmware.com/education" class="last">
+        <img src="http://mylearn.vmware.com/courseware/160392/vmware_ed_blog.png">
+</td></tr></table>
+</center>
+<br/> 	
+<div id="popWidgetTL">
+  <div id="popWidgetHeading">Trending Now</div>
+  <div id="popWidgetTR"></div>
+</div>
+		
+		
+		
+<div id="popWidgetNav">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+			
+			
+			
+				
+      <td class="left" width="33%"><a id="multiList1id1" class="active" href="javascript:;" onClick="changeCSSClasses('#multiList1id1','#multiList1id2,#multiList1id3');showHideWidgetDivs('#contentmultiList1id1','#contentmultiList1id2,#contentmultiList1id3');">What's Hot</a></td>
+			
+				
+      <td class="left" width="33%"><a id="multiList1id2" class="inactive" href="javascript:;" onClick="changeCSSClasses('#multiList1id2','#multiList1id1,#multiList1id3');showHideWidgetDivs('#contentmultiList1id2','#contentmultiList1id1,#contentmultiList1id3');">Top Paid</a></td>
+			
+				
+      <td  width="33%"><a id="multiList1id3" class="inactive" href="javascript:;" onClick="changeCSSClasses('#multiList1id3','#multiList1id1,#multiList1id2');showHideWidgetDivs('#contentmultiList1id3','#contentmultiList1id1,#contentmultiList1id2');">Top Free</a></td>
+			
+	</tr>
+  </table>
+</div>
+		
+<div id="popWidgetContent">
+		
+  <div id="contentmultiList1id1" style="padding-top:5px;">
+    		
+	<ol>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=43354">VMware Horizon Mirage Fundamentals [V4.0]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=37587">VMware vSphere: Install, Configure, Manage [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=40085">VMware vSphere: Fast Track [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=39046">VMware vSphere: Optimize and Scale [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=38176">VMware vSphere: What’s New [V 5.1]</a></li>
+			
+	</ol>
+			
+	<div class="seeAll">
+	  <a href="http://mylearn.vmware.com/portals/www/mL.cfm?menu=hotcourses" title="See all hot courses">See all hot courses&nbsp;&gt;&gt;</a>
+	</div>
+			
+  </div>
+		
+  <div id="contentmultiList1id2" style="padding-top:5px; display:none;">
+    		
+	<ol>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=37587">VMware vSphere: Install, Configure, Manage [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=40085">VMware vSphere: Fast Track [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=39046">VMware vSphere: Optimize and Scale [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=38932">VMware vCloud Director: Install, Configure, Manage [V5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=31355">VMware View: Install, Configure, Manage [V5.1]</a></li>
+			
+	</ol>
+			
+	<div class="seeAll">
+	  <a href="http://mylearn.vmware.com/portals/www/mL.cfm?menu=toppaidcourses" title="See all top paid courses">See all top paid courses&nbsp;&gt;&gt;</a>
+	</div>
+			
+  </div>
+		
+  <div id="contentmultiList1id3" style="padding-top:5px; display:none;">
+    		
+	<ol>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=43354">VMware Horizon Mirage Fundamentals [V4.0]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=38176">VMware vSphere: What’s New [V 5.1]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=43307">vCloud Networking and Security Fundamentals [V5.X]</a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=42954">VMware vCenter Operations Manager Fundamentals [V5.6] </a></li>
+			
+	  <li><a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=27841">VMware View: Fundamentals [V5.0]</a></li>
+			
+	</ol>
+			
+	<div class="seeAll">
+	  <a href="http://mylearn.vmware.com/portals/www/mL.cfm?menu=topfreecourses" title="See all top free courses">See all top free courses&nbsp;&gt;&gt;</a>
+	</div>
+			
+  </div>
+		
+</div>
+<div id="popWidgetBL">
+  <div id="popWidgetBR"></div>
+</div>
+<div style="height:10px;"><!--.--></div>
+	
+	
+				    <div class="promo-style">
+				      <div>
+					
+					    <h3>Quick Links</h3>
+					<div style="margin-top:0;"><a class="more" href="http://mylearn.vmware.com/signin.cfm?ui=www_edu">Class Sign-In</a></div>
+<div><a class="more" href="http://mylearn.vmware.com/evaluate?ui=www_edu">Class Evaluation</a></div>
+<div><a class="more" href="http://mylearn.vmware.com/portals/credits/?ui=www_edu">Credits</a></div>
+<div><a class="more" href="http://mylearn.vmware.com/redeem.cfm">Redeem</a></div>
+<div><a class="more" href="http://mylearn.vmware.com/portals/vci/">VCI Portal</a></div>
+				      </div>
+				    </div>
+					
+    </div>
+  </div>
+
+  <div id="top-of-page">
+    <div id="iglobal-sites"></div>
+    <div id="iprimary-navigation"></div>
+    <div id="isite-tools"></div>
+    <div id="ilanguage"></div>
+    <div id="isearch-form"></div>
+  </div>
+
+  <div id="ifooter"></div>
+</div>
+
+<div id="custom-extras"></div>
+
+
+
+<script type="text/javascript" src="//www.vmware.com/app/template/?set=mylearnedu"></script>
+
+
+<script type="text/javascript" src="//www.vmware.com/files/templates/inc/baynote.js"></script>
+<script type="text/javascript" src="//www.vmware.com/files/elqNow/elqCfg.js"></script>
+<script type="text/javascript" src="//www.vmware.com/files/elqNow/elqImg.js"></script>
+<script type="text/javascript" src="//www.vmware.com/files/templates/inc/s_code_vmw.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+  <!--
+    /* You may give each page an identifying name, server, and channel on the next lines. */
+    s.pageName="vmware : mylearn : www : Plan Browse View : vFabric Cloud Application Platform Education"
+    s.prop23="mylearn : www"
+    s.events=""
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    s.hier1=""
+    if (s.prop1) s.channel=s.prop1
+    setProps1t5();
+    var s_code=s.t();if(s_code)document.write(s_code)
+  //-->
+</script>
+<script type="text/javascript" language="JavaScript">
+  <!--
+    if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+  //-->
+</script>
+
+
+</body>
+</html>
+
+

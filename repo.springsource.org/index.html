@@ -1,0 +1,495 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.sourceforge.net/">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="icon" type="image/x-icon" href="../favicon.ico"/>
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+<title>Artifactory Online :: Welcome</title>
+<meta name="revision" content="13183"/>
+
+<script type="text/javascript" >
+/*<![CDATA[*/
+var djConfig = {
+isDebug: false,
+parseOnLoad: false,
+debugAtAllCosts: false,
+excludeNamespace: ['wicket']
+};
+/*]]>*/
+</script>
+<script type="text/javascript" src="wicket/resource/org.artifactory.common.wicket.resources.dojo.DojoPackage/dojo/dojo.js.uncompressed-ver-8151DD2B85DADB90394E9241748EC492.js"></script>
+<script type="text/javascript" src="wicket/resource/org.artifactory.common.wicket.resources.dojo.DojoPackage/dojo/artifactory-dojo.js.uncompressed-ver-B6139D991A6B0C11C864B52994BF6AAE.js"></script>
+<link rel="stylesheet" type="text/css" href="wicket/resource/org.artifactory.common.wicket.resources.dojo.DojoPackage/dojo/resources/dojo-ver-A841AF419C5B778BF26C5388C63550CB.css" />
+<link rel="stylesheet" type="text/css" href="wicket/resource/org.artifactory.common.wicket.resources.dojo.DojoPackage/dijit/themes/tundra/tundra-ver-24C5910229022EACC03C80A3C99641AB.css" />
+<script type="text/javascript" src="wicket/resource/org.artifactory.common.wicket.resources.domutils.CommonJsPackage/DomUtils-ver-D0EA8FA524F03D4CF3D26E3C236A864C.js"></script>
+<script type="text/javascript" src="wicket/resource/org.artifactory.common.wicket.resources.domutils.CommonJsPackage/AjaxIndicator-ver-A33067A644DBAA12E23CF8FDDCF7284C.js"></script>
+<link rel="stylesheet" type="text/css" href="wicket/resource/org.artifactory.web.ui.skins.GreenSkin/GreenSkin-ver-1695FEE030DAD1B0F59A6B81551C7EC9.css" />
+<script type="text/javascript" src="wicket/resource/org.artifactory.common.wicket.component.panel.feedback.aggregated.AggregateFeedbackPanel/AggregateFeedbackPanel-ver-751220DE81502C60AC202491F761F8AE.js"></script>
+<script type="text/javascript" src="wicket/resource/org.artifactory.common.wicket.component.panel.feedback.FeedbackDistributer/FeedbackDistributer-ver-FA3E9092870128C325D5B33CD9A98DBE.js"></script>
+<script type="text/javascript" src="wicket/resource/org.apache.wicket.markup.html.WicketEventReference/wicket-event-ver-B0439F858745C84EA46792F9AC42B6CF.js"></script>
+<script type="text/javascript" src="wicket/resource/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax-ver-EB2892A02AF878AD9C6591A4C2A5DAD3.js"></script>
+<script type="text/javascript" id="wicket-ajax-base-url">
+/*<![CDATA[*/
+Wicket.Ajax.baseUrl="home.html?0";
+/*]]>*/
+</script>
+<script type="text/javascript" src="wicket/resource/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal-ver-BBB6B89E0E34F18F68C6E75CB87B9FA7.js"></script>
+<link rel="stylesheet" type="text/css" href="wicket/resource/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal-ver-2123B7EF99557C05DF0F17782FF111B8.css" />
+<script type="text/javascript" src="wicket/resource/org.artifactory.common.wicket.component.modal.ModalHandler/ModalHandler-ver-D8215FFFC72C3BBE8892ACB440D96104.js"></script>
+<script type="text/javascript" src="wicket/resource/org.artifactory.common.wicket.component.panel.sidemenu.SubMenuPanel/SubMenuPanel-ver-329B48013EAC7E6FC3DC627C5C129028.js"></script>
+<script type="text/javascript" src="wicket/resource/org.artifactory.webapp.wicket.page.home.news.ArtifactoryUpdatesPanel/ArtifactoryUpdatesPanel-ver-4EBC10E683777A3ECF8066DDA9436530.js"></script>
+<script type="text/javascript" >
+/*<![CDATA[*/
+Wicket.Event.add(window, "domready", function(event) { ArtifactoryUpdates.fadeIn('id1');;});
+/*]]>*/
+</script>
+</head>
+<body class="tundra">
+<table cellpadding="0" cellspacing="0" class="page">
+<tr>
+<td class="main">
+<div class="header">
+<div class="spacer">
+<div id="id2" class="app-logo">
+<a title="Artifactory" href="./transfertodashboardhome.html" class="company-logo">
+
+<span class="none">Artifactory</span>
+
+<img align="middle" id="id3" src="http://springsource.artifactoryonline.com/springsource/webapp/logo?1327850711000"/>
+</a>
+</div>
+<div class="top-menu">
+<ul>
+<li class="HomePage menu-group menu-group-opened">
+<a href="./transfertodashboardhome.html" class="opened">
+<span class="menu-center"></span>
+<span class="menu-left"></span>
+<span class="menu-right"></span>
+<span class="item-name">Home</span>
+</a>
+</li><li class="ArtifactsHomePage menu-group menu-group-enabled">
+<a href="./artifactshome.html" class="enabled">
+<span class="menu-center"></span>
+<span class="menu-left"></span>
+<span class="menu-right"></span>
+<span class="item-name">Artifacts</span>
+</a>
+</li><li class="DeployArtifactPage menu-group menu-group-disabled">
+<span class="disabled"><em>
+<span class="menu-center"></span>
+<span class="menu-left"></span>
+<span class="menu-right"></span>
+<span class="item-name">Deploy</span>
+</em></span>
+</li><li class="AdminPage menu-group menu-group-disabled">
+<span class="disabled"><em>
+<span class="menu-center"></span>
+<span class="menu-left"></span>
+<span class="menu-right"></span>
+<span class="item-name">Admin</span>
+</em></span>
+</li>
+</ul>
+</div>
+<div class="quick-search-box">
+<form id="id4" method="post" action="./home.html?0-1.IFormSubmitListener-searchForm"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden"><input type="hidden" name="id4_hf_0" id="id4_hf_0" /></div><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden"><input type="text" autocomplete="off"/><input type="submit" name="searchButton" onclick=" var b=document.getElementById('id5'); if (b!=null&amp;&amp;b.onclick!=null&amp;&amp;typeof(b.onclick) != 'undefined') {  var r = b.onclick.bind(b)(); if (r != false) b.click(); } else { b.click(); };  return false;"  /></div>
+<span class="search-box">
+<input type="text" value="" name="query"/>
+</span>
+<button type="submit" id="id5" class=" button" name="searchButton" onclick="var wcall=wicketSubmitFormById(&#039;id4&#039;, &#039;./home.html?0-1.IBehaviorListener.0-searchForm-searchButton&#039;, &#039;searchButton&#039; ,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$(&#039;id4&#039;)}.bind(this));return !wcall;;"><span class='button-center'><span class='button-left'><span class='button-right'>Search</span></span></span></button>
+</form>
+</div>
+<div class="user-info">
+<span>Not Logged In</span>
+
+<span>&nbsp;|&nbsp;</span>
+
+<a class=" button" href="./login.html">Log In</a>
+</div>
+</div>
+</div>
+<div id="id6" class="aggregate-feedback default-feedback" onclear="AggregateFeedbackPanel.onClear(&#039;id6&#039;)" onshow="AggregateFeedbackPanel.onShow(&#039;id6&#039;)"></div>
+<div class="main">
+
+<div class="side-menu" id="sideMenu">
+<div class="side-menu-top">
+<div class="side-menu-bottom">
+<div id="id7">
+<ul class="menu-items">
+<li class="menu-group menu-group-opened">
+<a href="#" onclick="return SubMenuPanel.toogleMenu(&#039;menu.0.0&#039;, this);" class="opened">
+<span class="menu-center"></span>
+<span class="menu-left"></span>
+<span class="menu-right"></span>
+<span class="item-name">Home</span>
+</a>
+</li><li id="id8" class="sub-menu-opened">
+<ul class="menu-items">
+<li class="HomePage menu-item menu-item-selected">
+<a href="./home.html" class="selected">
+<span class="menu-center"></span>
+<span class="menu-left"></span>
+<span class="menu-right"></span>
+<span class="item-name">Welcome</span>
+</a>
+</li><li class="menu-group menu-group-opened">
+<a href="#" onclick="return SubMenuPanel.toogleMenu(&#039;menu.0.0.1&#039;, this);" class="opened">
+<span class="menu-center"></span>
+<span class="menu-left"></span>
+<span class="menu-right"></span>
+<span class="item-name">Client Settings</span>
+</a>
+</li><li id="id9" class="sub-menu-opened">
+<ul class="menu-items">
+<li class="MavenSettingsPage menu-item menu-item-enabled">
+<a href="./mavensettings.html" class="enabled">
+<span class="menu-center"></span>
+<span class="menu-left"></span>
+<span class="menu-right"></span>
+<span class="item-name">Maven Settings</span>
+</a>
+</li><li class="GradleBuildScriptPage menu-item menu-item-enabled">
+<a href="./gradlebuildscript.html" class="enabled">
+<span class="menu-center"></span>
+<span class="menu-left"></span>
+<span class="menu-right"></span>
+<span class="item-name">Gradle Build Script</span>
+</a>
+</li><li class="IvySettingsPage menu-item menu-item-enabled">
+<a href="./ivysettings.html" class="enabled">
+<span class="menu-center"></span>
+<span class="menu-left"></span>
+<span class="menu-right"></span>
+<span class="item-name">Ivy Settings</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="page-content">
+<div class="outer-border-wrapper">
+<div class="outer-border-top">
+<div class="outer-border-bottom">
+<div class="outer-border-left">
+<div class="outer-border-right">
+<div class="outer-border-top-left">
+<div class="outer-border-top-right">
+<div class="outer-border-bottom-left">
+<div class="outer-border-bottom-right">
+<h1 class="outer-border-title">Welcome</h1>
+<div class="outer-border-content">
+
+<div class="welcome-border border-wrapper" id="ida">
+<div class="border-top">
+<div class="border-left">
+<div class="border-right">
+<div class="border-top-left">
+<div class="border-top-right">
+<div class="border-bottom">
+<div class="border-bottom-left">
+<div class="border-bottom-right">
+
+<div class="border-content">
+
+
+<div class="artifacts-count">
+<span>Artifactory is happily serving</span>
+<span class="value">554089</span>
+<span>artifacts.</span>
+</div>
+
+
+
+<div class="notice">
+You are currently not logged-in.<br/>
+You may <a class=" button" href="./browserepo.html">browse</a> Artifactory anonymously.<br/>
+Please <a class=" button" href="./login.html">log in</a> for more options.
+</div>
+
+
+
+<div id="idb">
+<div id="id1" class="news-close news-unread">
+<h6 class="news-title">
+<a href="#" onclick="return ArtifactoryUpdates.read(this, 'N60wN_NS1OfQV38i1XU8BQ');">Artifactory Updates...</a>
+</h6>
+<div class="news-body">
+<div><p><a onmousedown="this.href='http://service.jfrog.org/artifactory/artifactog-twitter';" target="_blank" href="http://www.twitter.com/artifrog">Follow Artifactory on Twitter</a> and get the latest news, tips and updates about Artifactory.</p>
+<a onmousedown="this.href='http://service.jfrog.org/artifactory/artifactog-twitter';" target="_blank" href="http://www.twitter.com/artifrog"><img style="border:none;" src="https://twitter-badges.s3.amazonaws.com/follow_me-c.png" alt="Follow artifrog on Twitter"/></a>
+</div>
+<a id="show" href="#" class="hide-link" onclick="return ArtifactoryUpdates.toogle(this, 'N60wN_NS1OfQV38i1XU8BQ');">
+Don't show this update again.
+</a>
+</div>
+</div>
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="idc" class="addons-table">
+<div class="border-wrapper">
+<div class="border-top">
+<div class="border-left">
+<div class="border-right">
+<div class="border-top-left">
+<div class="border-top-right">
+<div class="border-bottom">
+<div class="border-bottom-left">
+<div class="border-bottom-right">
+<h2 class="border-title">
+<span id="idd">Pro Add-ons</span>
+
+</h2>
+<div class="border-content">
+
+
+
+
+<table id="ide">
+<tbody>
+<tr class="item-name even">
+<td class="image">
+<div class="addon-build"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/build">Build Integration</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name">
+<td class="image">
+<div class="addon-license"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/license">3rd Party License Control</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name even">
+<td class="image">
+<div class="addon-rest"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/rest">Advanced REST</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name">
+<td class="image">
+<div class="addon-ldap"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/ldap">LDAP Groups</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name even">
+<td class="image">
+<div class="addon-replication"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/replication">Replication</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name">
+<td class="image">
+<div class="addon-properties"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/properties">Properties</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name even">
+<td class="image">
+<div class="addon-search"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/search">Smart Searches</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name">
+<td class="image">
+<div class="addon-plugins"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/plugins">Plugins</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name even">
+<td class="image">
+<div class="addon-yum"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/yum">YUM</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name">
+<td class="image">
+<div class="addon-p2"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/p2">P2</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name even">
+<td class="image">
+<div class="addon-nuget"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/nuget">NuGet</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name">
+<td class="image">
+<div class="addon-layouts"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/layouts">Repository Layouts</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name even">
+<td class="image">
+<div class="addon-filtered-resources"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/filtered-resources">Filtered Resources</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name">
+<td class="image">
+<div class="addon-sso"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/sso">Crowd &amp; SSO Integration</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name even">
+<td class="image">
+<div class="addon-watch"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/watch">Watches</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr><tr class="item-name">
+<td class="image">
+<div class="addon-webstart"></div>
+</td>
+<td class="name">
+<a target="_blank" class="addon-info-link" href="http://service.jfrog.org/artifactory/addons/info/webstart">WebStart &amp; Jar Signing</a>
+</td>
+<td class="status">
+<div>Activated</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</tr>
+<tr>
+<td class="footer">
+
+
+<div class="footer">
+<span class="copywrites">
+<span>© Copyright 2012</span><a target="_blank" href="http://www.jfrog.org">JFrog Ltd.</a>
+<span name="footer" id="idf"></span>
+</span>
+<span class="license">Artifactory Pro Power Pack - licensed to Artifactory Online.</span>
+<span class="version">Artifactory Online</span>
+</div>
+</td>
+</tr>
+</table>
+<div id="id10" style="display:none">
+
+</div>
+<div id="id11">
+<script type="text/javascript">(function(fd) {
+fd.init('id6');
+fd.showMessages();
+})(FeedbackDistributer);
+</script>
+</div>
+<div id="ajaxIndicatorContainer" class="ajax-indicator">
+
+<iframe src="javascript:;"></iframe>
+
+<div id="ajaxIndicator">
+<div class="ajax-indicator-bg"></div>
+<div id="ajaxIndicatorMessage" class="ajax-indicator-message">
+<span>Loading...</span>
+</div>
+</div>
+</div>
+</body>
+</html>

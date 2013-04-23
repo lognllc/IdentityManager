@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Individual Contributor Agreement | support.springsource.com</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/default/files/spring09_favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date_popup/themes/datepicker.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date_popup/themes/timeentry.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/spring09/html-elements.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/spring09/thickbox.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/spring09/style.css?E" />
+  <script type="text/javascript" src="/misc/jquery.js?E"></script>
+<script type="text/javascript" src="/misc/drupal.js?E"></script>
+<script type="text/javascript" src="/sites/all/modules/custom/spring_contributor_signup/js/form.js?1366754451"></script>
+<script type="text/javascript" src="/sites/all/themes/spring09/scripts/jquery.validate.pack.js?E"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+</head>
+
+<body class="not-front not-logged-in page-spring-committer-signup one-sidebar sidebar-left">
+  <div id="page-wrapper">
+    <div id="page">
+    
+    <div id="header">
+    
+      <div id="logo">
+                <a target="_blank" href="http://www.springsource.com" title="www.springsource.com" rel="home">
+          <img src="/sites/default/files/spring09_logo.png" alt="www.springsource.com" />
+        </a>
+              </div> <!-- /logo -->
+    
+      <!--
+      <div id="top-menu-wrapper">
+        <div id="top-menu">      
+          <div id="search-box">
+                      </div>
+        </div>
+      </div> --> <!-- /top-menu-wrapper -->
+    </div> <!-- /header -->
+    
+    <div id="container" class="clear-block">    
+              <div id="sidebar-left" class="column sidebar">
+        <div id="block-spring_client_myaccountmenu-0" class="block "><div class="block-inner">
+
+  
+  <div class="content">
+    <BR><BR><ul><li><span class="active"><b>Spring/ERS</b></span></li><ul><li><a href="/eol">EOL Announcements</a></li><li><a href="/software_updates">Software Updates</a></li><li><a href="http://kb.vmware.com">Knowledge Base</a></li><li><a href="/documentation">Documentation</a></li></ul><li><span class="active"><b>Hyperic</b></span></li><ul><li><a href="/eol">EOL Announcements</a></li><li><a href="http://kb.vmware.com">Knowledge Base</a></li><li><a target="_new" href="https://www.vmware.com/support/pubs/vfabric-hyperic.html">Documentation</a></li></ul><li><span class="active"><b>Gemstone</b></span></li><ul><li><a target="_new" href="https://www.vmware.com/support/pubs/vfabric-gemfire.html">Gemfire Docs</a></li><li><a target="_new" href="http://www.gemstone.com/documentation">Other Gemstone Docs</a></li></ul></ul><ul><li><span class="active"><b>Security Alerts</b></span></li><ul><li><a href="/security/">Overview</a></li><li><a href="/security/springsource-all">All vulnerabilities</a></li><li><a href="/security/spring-framework">Spring Framework</a></li><li><a href="/security/spring-insight">Spring Insight</a></li><li><a href="/security/spring-mvc">Spring MVC</a></li><li><a href="/security/spring-security">Spring Security</a></li><li><a href="/security/spring-web-flow">Spring Web Flow</a></li><li><a href="/security/spring-web-services">Spring Web Services</a></li><li><a href="/security/dm-server">dm Server</a></li><li><a href="/security/tc-server">tc Server</a></li><li><a href="/security/ers">ERS</a></li><li><a href="/security/hyperic-hq">Hyperic HQ</a></li><li><a href="/security/ams">AMS</a></li><li><a href="/security/grails">Grails</a></li><li><a href="/security_alerts">Archived Alerts</a></li></ul>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+        </div> <!-- /sidebar-left -->
+            
+      <div id="main" class="column"><div id="squeeze" class="clear-block">
+                        
+        <div id="content">
+                      <h1 class="title">Individual Contributor Agreement</h1>
+                                                  
+			<h3>Thank you for your interest in becoming a SpringSource community contributor. </h3>
+			<p>You may review and agree to the terms of the <b>SpringSource Individual Contributor License Agreement ("ICLA")</b> by submitting the form below.</p>
+			<p style="padding-left:35px">
+<b>Note:</b> The ICLA is designed for individual contributors. If you are employed, you should check with your employer regarding your ability to agree to the ICLA.  If you are interested in establishing a corporate level contributor agreement, please contact <a href="mailto:partners@springsource.com?Subject=Corp_Committer">partners@springsource.com</a> for more information.
+			</p>
+			<p>Please review the <a target="_new" href="http://service.springsource.com/download/committer_agreement/agreement.pdf">ICLA 010912
+</a> before completing this form and agreeing to the terms of the ICLA. Once you have reviewed ICLA, you can agree to the terms of the ICLA by filling out the information below and by clicking the "I agree to the terms of the ICLA" box below.  Once you submit this form, you will be taken to a completion screen and you will be able to print and save the confirmation.</p>
+			<p>
+			Alternatively, you may print, complete, and sign this <a target="_new" href="http://service.springsource.com/download/committer_agreement/agreement.pdf">ICLA 010912
+</a> and email it to the address listed in the ICLA.
+			</p>
+			
+			<form action="/spring_committer_signup" method="POST" id="committerForm">
+			<p><font color="red"> * </font>Project: <select id="project" name="project"><option value="">select...</option><option value="11">Grails</option><option value="24">Grails Flex Plugins</option><option value="16">Grails Inconsequential</option><option value="17">Grails Spring Security Plugin</option><option value="23">Hyperic HQ</option><option value="15">Hyperic SIGAR</option><option value="21">Inconsequential - NoSQL Integration for Grails</option><option value="6">Spring .Net</option><option value="22">Spring AMQP</option><option value="28">Spring Android</option><option value="2">Spring Batch</option><option value="13">Spring BlazeDS Integration</option><option value="18">Spring Data Access</option><option value="3">Spring Dynamic Modules</option><option value="4">Spring Extensions</option><option value="1">Spring Framework</option><option value="26">Spring Insight</option><option value="5">Spring Integration</option><option value="7">Spring LDAP</option><option value="29">Spring Mobile</option><option value="37">Spring Petclinic</option><option value="10">Spring Roo</option><option value="8">Spring Security</option><option value="30">Spring Social</option><option value="9">Spring Web Flow</option><option value="14">Spring Web Services</option><option value="27">vert.x</option></select><div id="project_error" class="field_error"><font color="red">Please choose a project</font></div>
+			<font color="red"> * </font>Project Lead: <input id="projlead" type="text" name="projlead"><div id="projlead_error" class="field_error"><font color="red">The full name of the project lead is required</font></div>
+			</p>
+			<p>Today 04/23/2013</p>
+			<p>
+			<table>
+			<tr><td><font color=red> * </font>First Name: </td><td><input type="text" id="firstname" name="firstname"></td></tr>
+			<tr><td><div id="firstname_error" class="field_error"><font color="red">First name is required</font></div></td></tr>
+			<tr><td><font color="red"> * </font>Last Name: </td><td><input type="text" id="lastname" name="lastname"></td></tr>
+			<tr><td><div id="lastname_error" class="field_error"><font color=red>Last name is required</font></div></td></tr>
+			<tr><td><font color="red"> * </font>Email address: </td><td><input type="text" id="email" name="email"></td></tr>
+			<tr><td><div id="email_error" class="field_error"><font color="red">Email address is required</font></div></td></tr>
+			</table>
+			<p><font color="red"> * </font><input type="checkbox" id="iagree" name="iagree" value="Yes"> I have read and I agree to the terms in the <a target="_new" href="http://service.springsource.com/download/committer_agreement/agreement.pdf">ICLA 010912
+</a></p><div id="iagree_error" class="field_error"><font color="red">You have to agree to the terms</font></div>
+			
+			<p>If you have any questions, please contact your project lead for more information regarding becoming a contributor.</p>
+			<p><input type="submit" id="theSubmit" name="submit" value="I agree to the terms of the ICLA"></p>
+			</form>
+	                      </div> <!-- /content -->
+        
+              </div></div> <!-- /squeeze /main -->
+      
+            
+      <div class="clear"></div>
+      
+    </div> <!-- /container -->
+    
+          <div id="footer-wrapper">
+        <div id="footer">
+          <div id="block-block-1" class="block "><div class="block-inner">
+
+  
+  <div class="content">
+    <p>&copy; Copyright 2010 SpringSource. All Rights Reserved. | <a target="_blank" href="http://www.springsource.com/terms_of_service">Terms of Service</a> | <a target="_blank" href="http://www.springsource.com/trademark_standards">Trademark Standards</a> | <a target="_blank" href="http://www.hyperic.com">Systems Monitoring</a></p>
+  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+        </div> <!-- /footer -->
+      </div> <!-- /footer-wrapper -->
+          
+    
+        
+    </div> <!-- /page -->
+  </div> <!-- /page-wrapper -->
+
+  
+</body>
+</html>

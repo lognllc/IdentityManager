@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub:Help" />
+  <title>Fork A Repo &middot; GitHub Help</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link href="/assets/help/application-8ccd9d2b0d3b484ed97bc77a2be7097c.css" media="screen" rel="stylesheet" type="text/css" />
+  <!--[if lt IE 8]>
+    <link href="/assets/help/ie-hacks-48d337e8a40494e5de0811cda84ab0c6.css" media="screen" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
+  <script src="/assets/help/application-c1f2eff3666b81a7aa1eaf50253eefca.js" type="text/javascript"></script>
+
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="ehEa/hRXQ+RV1OpA41VqOUa1ab5QD0OiJIvvDgB5rIY=" name="csrf-token" />
+</head>
+
+<body class=" platform-mac platform-windows platform-linux platform-all" id="com">
+<div id="not-footer">
+  <div id="header">
+    <div class="clearfix">
+        <h1 class="site-logo"><a href="/">GitHub Help</a></h1>
+
+      <ul class="top-nav">
+        <li>
+          <a href="/contact?article_slug=fork-a-repo">
+            Contact Support
+          </a>
+        </li>
+        <li><a href="http://www.github.com/">Back to GitHub</a></li>
+
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div id="content-wrapper">
+    <div class="site">
+
+      <div class="content-header small">
+  <h6 class="breadcrumbs">
+    <a href="/categories/54/articles">Bootcamp</a>
+    /
+    Fork A Repo
+  </h6>
+
+  <div class="search-form small">
+    <form accept-charset="UTF-8" action="/articles/search" id="articles-search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <div class="outer">
+    <div class="inner fade-label">
+      <input type="text" name="q" id="q" class="js-articles-quicksearch"
+        placeholder="How can we help?" data-url="/articles/quicksearch" />
+      <button><span class="mini-icon search-input"></span>Search</button>
+      <div class="autocomplete-results" style="display: none"></div>
+    </div>
+  </div>
+</form>
+  </div>
+</div>
+
+<div class="article">
+  <h2>Fork A Repo</h2>
+
+  <div id="article-platform-nav">
+    <ul>
+        <li class="platform-mac">
+          <a href="#platform-mac" data-platform=mac>
+            mac
+          </a>
+        </li>
+        <li class="platform-windows">
+          <a href="#platform-windows" data-platform=windows>
+            windows
+          </a>
+        </li>
+        <li class="platform-linux">
+          <a href="#platform-linux" data-platform=linux>
+            linux
+          </a>
+        </li>
+        <li class="platform-all">
+          <a href="#platform-all" data-platform=all>
+            all
+          </a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="article-body content-body wikistyle markdown-format">
+      <p class="intro">
+If you've found yourself on this page, we're assuming you're brand new to Git and GitHub. This guide will walk you through the basics and explain a little bit about how everything works along the way.
+</p>
+
+<h3>
+<a name="contributing-to-a-project" class="anchor" href="#contributing-to-a-project"><span class="mini-icon mini-icon-link"></span></a>Contributing to a project</h3>
+
+<p>At some point you may find yourself wanting to contribute to someone else's project, or would like to use someone's project as the starting point for your own. This is known as "forking." For this tutorial, we'll be using the <a href="https://github.com/octocat/Spoon-Knife">Spoon-Knife</a> project.</p>
+
+<h4>
+<a name="step-1-fork-the-spoon-knife-repository" class="anchor" href="#step-1-fork-the-spoon-knife-repository"><span class="mini-icon mini-icon-link"></span></a>Step 1: Fork the "Spoon-Knife" repository</h4>
+
+<p>To fork this project, click the "Fork" button.</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/Bootcamp-Fork.png" alt='Click "Fork"'></p>
+
+<h4>
+<a name="step-2-clone-your-fork" class="anchor" href="#step-2-clone-your-fork"><span class="mini-icon mini-icon-link"></span></a>Step 2: Clone your fork</h4>
+
+<p>You've successfully forked the Spoon-Knife repository, but so far it only exists on GitHub. To be able to work on the project, you will need to clone it to your local machine.</p>
+
+<p>Run the following code:</p>
+
+<pre class="command-line">
+<span class="tooltip">git clone https://github.com/<em>username</em>/Spoon-Knife.git<span># Clones your fork of the repository into the current directory in terminal</span></span>
+</pre>
+
+<h4>
+<a name="step-3-configure-remotes" class="anchor" href="#step-3-configure-remotes"><span class="mini-icon mini-icon-link"></span></a>Step 3: Configure remotes</h4>
+
+<p>When a repository is cloned, it has a default remote called <code>origin</code> that points to your fork on GitHub, not the original repository it was forked from. To keep track of the original repository, you need to add another remote named <code>upstream</code>:</p>
+
+<div class="helper">
+<h4 class="header">
+<a name="more-about-remotes" class="anchor" href="#more-about-remotes"><span class="mini-icon mini-icon-link"></span></a><a href="#">More about remotes</a>
+</h4>
+<div class="content">
+<p>A <em>remote</em> is a repository stored on another computer, in this case on GitHub's server. It is standard practice (and also the default when you clone a repository) to give the name <code>origin</code> to the remote that points to your main offsite repository (for example, your GitHub repository).</p>
+<p>Git supports multiple remotes. This is commonly used when forking a repository.</p>
+</div>
+</div>
+
+<pre class="command-line">
+<span class="tooltip">cd Spoon-Knife<span># Changes the active directory in the prompt to the newly cloned "Spoon-Knife" directory</span></span>
+<span class="tooltip">git remote add upstream https://github.com/octocat/Spoon-Knife.git<span># Assigns the original repository to a remote called "upstream"</span></span>
+<span class="tooltip">git fetch upstream<span># Pulls in changes not present in your local repository, without modifying your files</span></span>
+</pre>
+
+<h3>
+<a name="more-things-you-can-do" class="anchor" href="#more-things-you-can-do"><span class="mini-icon mini-icon-link"></span></a>More Things You Can Do</h3>
+
+<p>You've successfully forked a repository, but get a load of these other cool things you can do:</p>
+
+<h4>
+<a name="push-commits" class="anchor" href="#push-commits"><span class="mini-icon mini-icon-link"></span></a>Push commits</h4>
+
+<p>Once you've made some commits to a forked repository and want to push it to your forked project, you do it the same way you would with a regular repository:</p>
+
+<div class="helper">
+<h4 class="header">
+<a name="more-about-commits" class="anchor" href="#more-about-commits"><span class="mini-icon mini-icon-link"></span></a><a href="#">More about commits</a>
+</h4>
+<div class="content">
+<p>Think of a <em>commit</em> as a snapshot of your project — code, files, everything — at a particular point in time.  After your first commit git will only save the files that have changed, thus saving space.</p>
+
+<blockquote>
+<strong>Be warned:</strong> git will do its best to compress your files, but large files and binaries can cause a repository to become bloated and unwieldy.  Try to avoid committing things like compressed files (zips, rars, jars), compiled code (object files, libraries, executables), database backups, and media files (flv, psd, music, movies)</blockquote>
+</div>
+</div>
+
+<pre class="command-line">
+<span class="tooltip">git push origin master<span># Pushes commits to your remote repository stored on GitHub</span></span>
+</pre>
+
+<h4 id="pull-in-upstream-changes">
+<a name="pull-in-upstream-changes" class="anchor" href="#pull-in-upstream-changes"><span class="mini-icon mini-icon-link"></span></a>Pull in upstream changes</h4>
+
+<p>If the original repository you forked your project from gets updated, you can add those updates to your fork by running the following code:</p>
+
+<pre class="command-line">
+<span class="tooltip">git fetch upstream<span># Fetches any new changes from the original repository</span></span>
+<span class="tooltip">git merge upstream/master<span># Merges any changes fetched into your working files</span></span>
+</pre>
+
+<div class="helper">
+<h4 class="header">
+<a name="what-is-the-difference-between-fetch-and-pull" class="anchor" href="#what-is-the-difference-between-fetch-and-pull"><span class="mini-icon mini-icon-link"></span></a><a href="#">What is the difference between fetch and pull?</a>
+</h4>
+<div class="content">
+<p>There are two ways to get commits from a remote repository or branch: <code>git fetch</code> and <code>git pull</code>. While they might seem similar at first, there are distinct differences you should consider.</p>
+
+<h5>
+<a name="pull" class="anchor" href="#pull"><span class="mini-icon mini-icon-link"></span></a>Pull</h5>
+
+<pre class="command-line">
+<span class="tooltip">git pull upstream<span># Pulls commits from 'upstream' and stores them in the local repository</span></span>
+</pre>
+
+
+<p>When you use <code>git pull</code>, git tries to automatically do your work for you. It is context sensitive, so git will merge any pulled commits into the branch you are currently working in. One thing to keep in mind is that <code>git pull</code> automatically merges the commits without letting you review them first. If you don't closely manage your branches you may run into frequent conflicts.</p>
+
+<h5>
+<a name="fetch--merge" class="anchor" href="#fetch--merge"><span class="mini-icon mini-icon-link"></span></a>Fetch &amp; Merge</h5>
+
+<pre class="command-line">
+<span class="tooltip">git fetch upstream<span># Fetches any new commits from the original repository</span></span>
+<span class="tooltip">git merge upstream/master<span># Merges any fetched commits into your working files</span></span>
+</pre>
+
+
+<p>When you <code>git fetch</code>, git retrieves any commits from the target remote that you do not have and stores them in your local repository. However, it does not merge them with your current branch. This is particularly useful if you need to keep your repository up to date but are working on something that might break if you update your files. To integrate the commits into your local branch, you use <code>git merge</code>. This combines the specified branches and prompts you if there are any conflicts.</p>
+</div>
+</div>
+
+<h4>
+<a name="create-branches" class="anchor" href="#create-branches"><span class="mini-icon mini-icon-link"></span></a>Create branches</h4>
+
+<p>Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.</p>
+
+<div class="helper">
+<h4 class="header">
+<a name="how-do-i-use-branches" class="anchor" href="#how-do-i-use-branches"><span class="mini-icon mini-icon-link"></span></a><a href="#">How do I use branches?</a>
+</h4>
+<div class="content">
+<p>Branches are pretty easy to work with and will save you a lot of headaches, especially when working with multiple people. To create a branch and begin working in it, run these commands:</p>
+
+<pre class="command-line">
+<span class="tooltip">git branch <em>mybranch</em><span># Creates a new branch called "mybranch"</span></span>
+<span class="tooltip">git checkout <em>mybranch</em><span># Makes "mybranch" the active branch</span></span>
+</pre>
+
+
+<p>Alternatively, you can use the shortcut:</p>
+
+<pre class="command-line">
+<span class="tooltip">git checkout -b <em>mybranch</em><span># Creates a new branch called "mybranch" and makes it the active branch</span></span>
+</pre>
+
+
+<p>To switch between branches, use <code>git checkout</code>.</p>
+
+<pre class="command-line">
+<span class="tooltip">git checkout master<span># Makes "master" the active branch</span></span>
+<span class="tooltip">git checkout <em>mybranch</em><span># Makes "mybranch" the active branch</span></span>
+</pre>
+
+
+<p>Once you're finished working on your branch and are ready to combine it back into the <code>master</code> branch, use <code>merge</code>.</p>
+
+<pre class="command-line">
+<span class="tooltip">git checkout master<span># Makes "master" the active branch</span></span>
+<span class="tooltip">git merge <em>mybranch</em><span># Merges the commits from "mybranch" into "master"</span></span>
+<span class="tooltip">git branch -d <em>mybranch</em><span># Deletes the "mybranch" branch</span></span>
+</pre>
+
+
+<blockquote>
+<strong>Good to know:</strong> When you switch between branches the files that you work on (the "working copy") are updated to reflect the changes in the new branch. If you have changes you have not committed, git will ensure you do not lose them.  Git is also very careful during merges and pulls to ensure you don't lose any changes. <strong>When in doubt, commit early and commit often.</strong>
+</blockquote>
+</div>
+</div>
+
+<h4>
+<a name="pull-requests" class="anchor" href="#pull-requests"><span class="mini-icon mini-icon-link"></span></a>Pull requests</h4>
+
+<p>If you are hoping to contribute back to the original fork, you can send the original author a <a href="https://help.github.com/articles/using-pull-requests">pull request</a>.</p>
+
+<h4>
+<a name="unwatch-the-main-repository" class="anchor" href="#unwatch-the-main-repository"><span class="mini-icon mini-icon-link"></span></a>Unwatch the main repository</h4>
+
+<p>When you fork a particularly popular repository, you may find yourself with a lot of unwanted updates about it. To unsubscribe from updates to the main repository, click the "Unwatch" button on the <strong>main repository</strong> and select "Not Watching".</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/Bootcamp-Not-Watching.png" alt='Click "Unwatch"'></p>
+
+<h4>
+<a name="delete-your-fork" class="anchor" href="#delete-your-fork"><span class="mini-icon mini-icon-link"></span></a>Delete your fork</h4>
+
+<p>At some point you may decide that you want to delete your fork. To delete a fork, just follow the same steps as you would to <a href="https://help.github.com/articles/deleting-a-repository">delete a regular repository</a>.</p>
+
+<h3>
+<a name="celebrate" class="anchor" href="#celebrate"><span class="mini-icon mini-icon-link"></span></a>Celebrate</h3>
+
+<p>You have now forked a repository. What do you want to do next?</p>
+
+<ul>
+<li><a href="https://help.github.com/articles/set-up-git">Set Up Git</a></li>
+<li><a href="https://help.github.com/articles/create-a-repo">Create A Repository</a></li>
+<li><strong>Fork A Repository</strong></li>
+<li><a href="https://help.github.com/articles/be-social">Be Social</a></li>
+</ul>
+  </div>
+
+
+  <div class="footer">
+    <hr />
+    <ul class="article-footer button-nav">
+      <li>
+        <a href="/contact?article_slug=fork-a-repo" class="minibutton mini-icon discussion">contact a human</a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+  <div id="footer">
+    <div class="inner">
+      <a href="https://github.com" class="invertocat">
+        <img src="/assets/help/invertocat-5214d48b992946e30b3cd42e7904a389.png" width="24" height="24" />
+      </a>
+      <p class="left">
+        &copy; <span id="year">year</span> GitHub Inc. All rights reserved.
+      </p>
+        <ul class="links right">
+          <li><a href="/terms-of-service">Terms of Service</a></li>
+          <li><a href="/privacy-policy">Privacy</a></li>
+          <li><a href="/security">Security</a></li>
+        </ul>
+    </div>
+  </div> <!-- /#footer -->
+
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f4d4164f5a1f5651500026c');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "d1ros97qkrwjf5.cloudfront.net/42/eum/rum.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-1.newrelic.com","5d46706dc7","1956352","J1gNEhMKXgpXQktYBAhHTAcTEVsFXlUXHxIMWBQ=",0,98,new Date().getTime(),"","","","",""]);</script></body>
+</html>

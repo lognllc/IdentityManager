@@ -1,0 +1,135 @@
+body
+{
+font-family: Arial, Sans-serif;
+}
+
+#pagenav, #header
+{
+width: 100%;
+}
+
+#page, #footer
+{
+width:980px;
+}
+
+#wrapper
+{
+background: #eeeeee;
+}
+
+.linkbarbottom
+{
+background-image: url(skin/plain/column-diff.gif);
+background-repeat: repeat-y;
+background-position: 20px 0px;
+height: 1.1em;
+padding-bottom: 4px;
+}
+
+#footer
+{
+background: transparent;
+}
+
+#content .item
+{
+//padding-left: 3em;
+}
+
+#footer p { padding-left: 60px; }
+
+
+
+h2.narrowcorner
+{
+//background-image: url(skin/plain/header-top-corner.gif);
+//background-repeat: no-repeat;
+//background-position: top left;
+}
+
+#rightbar #wp-calendar caption, #rightbar h2
+{
+//background-image: url(skin/plain/right-top-corner.gif);
+//background-repeat: no-repeat;
+//background-position: top left;
+}
+
+#rightbar ul li
+{
+///background-image: url(skin/plain/right-bottom-corner.gif);
+///background-repeat: no-repeat;
+///background-position: bottom left;
+}
+
+
+#leftbar #wp-calendar caption, #leftbar h2
+{
+background-image: url(skin/plain/left-top-corner.gif);
+background-repeat: no-repeat;
+background-position: top right;
+}
+
+#leftbar ul li
+{
+background-image: url(skin/plain/left-bottom-corner.gif);
+background-repeat: no-repeat;
+background-position: bottom right;
+}
+
+#rightbar ul li ul li, #leftbar ul li ul li { background-image: none; }
+
+
+
+#inner { padding-left: 0px; }
+
+#main
+{
+float: left;
+width: 600px;
+}
+
+#rightbar
+{
+width: 320px;
+float: right;
+margin-top:35px;
+}
+
+
+
+
+#header
+{
+height: 100px;
+margin: 0 auto;
+border: none;
+}
+
+#headerimg_left
+{
+height: 89px; 
+width: 240px;
+background: transparent url(logo/SpringSourceV_logo.png) no-repeat left bottom;
+float: left;
+border: none;
+}
+
+
+#headerimg_right
+{
+height: 100px;
+width: 290px;
+background: transparent url(logo/teamBlog.png) no-repeat left bottom;
+float: right;
+border: none;
+}
+
+body
+{
+//background: transparent url(background/grassThin.jpg) repeat-x left top;
+background: #eeeeee;
+background-attachment: fixed;
+}
+
+

@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.springsource.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>SpringSource.org</title>
+ <link>http://www.springsource.org</link>
+ <description>Welcome to the home of Spring, the leading platform to build and run enterprise Java applications. Led and sustained by SpringSource, Spring delivers significant benefits for many projects, increasing development productivity and runtime performance while improving test coverage and application quality.</description>
+ <language>en</language>
+<item>
+ <title>This Week in Spring - April 23rd, 2013</title>
+ <link>http://www.springsource.org/node/22582</link>
+ <description>&lt;p&gt;Welcome back to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! 
+Here in San Francisco, we&amp;#39;re experiencing the first fits of life and beautiful weather typical of &lt;em&gt;spring&lt;/em&gt; time. Fitting, too, as things are  busy-as-can-be in the Pivotal open source communities - including &lt;a href=&quot;http://www.cloudfoundry.com&quot;&gt;Cloud Foundry&lt;/a&gt; and &lt;a href=&quot;http://springsource.org&quot;&gt;SpringSource&lt;/a&gt; - as we march towards &lt;a href=&quot;http://www.gopivotal.com/&quot;&gt;the Pivotal Initiative launch on April 24th&lt;/a&gt;. See you then! &lt;/p&gt;
+
+&lt;p&gt;Without further ado, let&amp;#39;s get into this week&amp;#39;s roundup:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Have you guys seen the amazing &lt;a href=&quot;https://gist.github.com/joshlong/5441496&quot;&gt;Java configuration support in Spring Batch 2.2.0.RC1&lt;/a&gt;? The code I&amp;#39;ve just linked you to demonstrates a complete working Spring Batch job that reads in a &lt;code&gt;.csv&lt;/code&gt; file and then writes the records to a data source, all of which are configured in the class, entirely in Java. This demonstrates the &lt;code&gt;@EnableBatchProcessing&lt;/code&gt; annotation in 2.2.0. &lt;a href=&quot;http://www.springsource.org/node/9666&quot;&gt;Check it out&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;New SpringOne2GX replays now available in HD on YouTube: &lt;a href=&quot;http://www.springsource.org/node/22581&quot;&gt;Implementing Domain Driven Design with Spring and vFabric&lt;/a&gt;, &lt;a href=&quot;http://www.springsource.org/node/22581&quot;&gt;Batch Processing and Integration on Cloud Foundry&lt;/a&gt; and a bonus session, &lt;a href=&quot;http://www.youtube.com/watch?v=we_enrM7TSY&quot;&gt;Understanding Java Garbage Collection and what you can do about it&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;https://twitter.com/fuzzydb/status/325188720510767104&quot;&gt;FuzzyDB open source project&lt;/a&gt; tweeted that they&amp;#39;d &lt;a href=&quot;http://fuzzydb.blogspot.com/2013/04/fuzzydb-110-released.html?utm_medium=twitter&amp;amp;utm_campaign=fuzzydb+blog&amp;amp;utm_source=twitterfeed&quot;&gt;released a new version&lt;/a&gt; of FuzzyDB with Spring Data bindings aligned with the Spring Data Arora release train. Congratulations, guys!&lt;/li&gt;
+&lt;li&gt;Have you had a chance to play with &lt;a href=&quot;http://www.thymeleaf.org/&quot;&gt;Thymeleaf, the HTML5 and Spring MVC-friendly templating engine&lt;/a&gt;? If you&amp;#39;d like to learn &lt;em&gt;even more&lt;/em&gt;, you&amp;#39;ll probably like this presentation called &lt;a href=&quot;http://www.slideshare.net/jasha1/thymeleaf-will-it-blend&quot;&gt;&lt;em&gt;Thymeleaf, Will it Blend?&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/dwelch2344/spring-data-mongo-demo&quot;&gt;David Welch put together a quick demo of Spring Data Mongo&lt;/a&gt; and made the work available. He tweets that &lt;a href=&quot;https://twitter.com/david_welch/status/324277624434200576&quot;&gt;he went from working demo in 8 minutes with 4 classes and a &lt;code&gt;pom.xml&lt;/code&gt;&lt;/a&gt;. Nice work man!&lt;/li&gt;
+&lt;li&gt;Check out &lt;a href=&quot;http://twitter.com/laddad&quot;&gt;Ramnivas Laddad&amp;#39;s&lt;/a&gt; awesome talk &lt;a href=&quot;http://www.springsource.org/node/22417&quot;&gt;CloudFoundry Architecture talk at SpringOne2GX&lt;/a&gt; up live on &lt;a href=&quot;http://www.youtube.com/SpringSourceDev&quot;&gt;the SpringSource YouTube channel SpringSourceDev&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://twitter.com/olivergierke&quot;&gt;Spring HATEOAS lead Oliver Gierke&lt;/a&gt; tweeted a link to this post, &lt;a href=&quot;http://www.eioba.com/a/1htn/how-i-explained-rest-to-my-wife&quot;&gt;&amp;quot;&lt;em&gt;How I Explained REST to my wife&lt;/em&gt;&amp;quot;&lt;/a&gt;, which would seem at first to be just one person&amp;#39;s attempt at explaining a fairly deep technology concept to a person who didn&amp;#39;t have the same technical background, but quickly turns into a (I think &lt;em&gt;really&lt;/em&gt; insightful) look at the applicability of REST. Check out &lt;a href=&quot;http://github.com/SpringSource/spring-hateoas&quot;&gt;Spring HATEOAS&lt;/a&gt; if you want to take your REST-fu to the next level.&lt;/li&gt;
+&lt;li&gt;I&amp;#39;m personally enamored of the new Java configuration APIs, both those recently released and those currently available in preview releases. I showed a &lt;em&gt;very&lt;/em&gt; simple example of the Spring Batch API above. I also took a moment last week to &lt;a href=&quot;http://www.joshlong.com/jl/blogPost/java_configuration_with_spring_social.html&quot;&gt;write about the powerful Spring Social Java configuration API&lt;/a&gt; soon to be available in the 1.1.0.M2 release. &lt;/li&gt;
+&lt;li&gt;You can have Spring perform a sort of pre-condition check by using the &lt;a href=&quot;http://static.springsource.org/spring/docs/3.0.2.RELEASE/spring-framework-reference/html/metadata.html&quot;&gt;@Required annotation&lt;/a&gt; to &lt;em&gt;insist&lt;/em&gt; at runtime that a property be satisfied with a non-&lt;code&gt;null&lt;/code&gt; value, or Spring will abort the construction of the object. This helps avoid any silent &lt;code&gt;NullPointerException&lt;/code&gt;s. This &lt;a href=&quot;http://www.javabeat.net/2013/04/required-annotation-spring/&quot;&gt;JavaBeat post&lt;/a&gt; does a nice job explaining how to use &lt;code&gt;@Required&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;em&gt;how to do in java&lt;/em&gt; blog has a nice posting on how to &lt;a href=&quot;http://howtodoinjava.com/2013/04/16/custom-userdetailsservice-example-for-spring-3-security/&quot;&gt;create a custom &lt;code&gt;UserDetailsService&lt;/code&gt; in Spring Security 3&lt;/a&gt;. &lt;/li&gt;
+&lt;li&gt;The &lt;em&gt;JavaCodeGeeks&lt;/em&gt; blog has a nice post on &lt;a href=&quot;http://www.javacodegeeks.com/2013/04/spring-mvc-easy-rest-based-json-services-with-responsebody.html&quot;&gt;how to create RESTful services with Spring MVC&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Brian&amp;#39;s Java Blog&lt;/em&gt; has a nice post on &lt;a href=&quot;http://briansjavablog.blogspot.co.uk/2013/04/spring-aop-tutorial.html&quot;&gt;using Spring AOP with both annotation and XML-centric configuration&lt;/a&gt; options.&lt;/li&gt;
+&lt;/ol&gt;</description>
+ <comments>http://www.springsource.org/node/22582#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/14">This Week in Spring</category>
+ <pubDate>Tue, 23 Apr 2013 14:29:50 +0000</pubDate>
+ <dc:creator>Josh Long</dc:creator>
+ <guid isPermaLink="false">22582 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>SpringOne 2GX 2012 Replays: Implementing DDD with Spring and vFabric, Batch Processing and Integration on Cloud Foundry</title>
+ <link>http://www.springsource.org/node/22581</link>
+ <description>&lt;H1&gt;Implementing Domain-Driven Design with Spring and vFabric&lt;/H1&gt;
+&lt;div&gt;
+  &lt;p&gt;Sponsored by EMC Consulting, this presentation highlights the use of   Domain-Driven Design in a cloud-based, distributed architecture. There   are several working examples of highly scalable DDD models featuring the   NYSE Nanotrader system.&lt;/p&gt;
+  &lt;p&gt;NanoTrader is a VMWare working reference implementation featuring   SpringSource best-practices throughout the application stack. The   functioning high-performance trading application includes Spring MVC   with both web and mobile UI&amp;rsquo;s, Spring Integration, RabbitMQ, GemFire,   Hibernate using SQLFire and/or Postgres. Domain-Driven Design (DDD) is a   set of software development tools and best practices for crafting a   business strategic initiative in a core domain model. How does   NanoTrader apply DDD? This powerful approach to modeling a trading   system will be showcased from the DDD strategic and tactical modeling   perspectives.&lt;/p&gt;
+  &lt;p&gt;
+    &lt;center&gt;
+      &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/gjhA-he3PVo&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/center&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;div&gt;&lt;br /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;div&gt;
+        &lt;h2&gt;About the speakers&lt;/h2&gt;
+        &lt;div&gt; &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/vaughn_vernon&quot;&gt;&lt;img src=&quot;http://www.springone2gx.com/s/images/bio/37095_Vernon_20120827_125223_medium_sq.jpg&quot; alt=&quot;Vaughn Vernon&quot; /&gt;&lt;/a&gt;
+          &lt;div&gt;
+            &lt;h3&gt;Vaughn Vernon&lt;/h3&gt;
+            &lt;p&gt;Vaughn Vernon is the author of the book &lt;em&gt;&lt;a href=&quot;http://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577&quot;&gt;Implementing Domain-Driven Design&lt;/a&gt;,&lt;/em&gt; published by Addison-Wesley. Vaughn is a veteran software craftsman   with more than 25 years of experience in software design, development,   and architecture. Vaughn is a thought leader in simplifying software   design and implementation using innovative methods. Vaughn has been   programming with object-oriented languages since the 1980s and applying   the tenets of Domain-Driven Design since his Smalltalk domain modeling   days in the early 1990s. His experience spans a wide range of business   domains. He has also succeeded in technical endeavors creating reusable   frameworks, libraries, and implementation acceleration tools.&lt;/p&gt;
+            &lt;p&gt;Vaughn consults and speaks internationally, and has taught his &lt;em&gt;&lt;a href=&quot;http://www.idddtour.com/workshop-details.html&quot;&gt;Implementing Domain-Driven Design Workshop&lt;/a&gt;&lt;/em&gt; on multiple continents. He teaches both public and private classes and   workshops, and has presented at conferences such as: SpringOne 2gx;   PulsoConf in Bogota, Colombia; QCon; UberConf; IASA ITARC. As an author,   Vaughn has contributed to industry literature and software patterns and   is a founder of the &lt;a href=&quot;http://www.meetup.com/ddd-denver/&quot;&gt;DDD Denver Meetup group&lt;/a&gt;.&lt;/p&gt;
+            &lt;p&gt;His &lt;a href=&quot;http://idddtour.com&quot;&gt;IDDD Tour&lt;/a&gt; commences in Europe in April 2013: &lt;a href=&quot;http://idddtour.com&quot;&gt;idddtour.com&lt;/a&gt; You can read more about his latest efforts at &lt;a href=&quot;http://VaughnVernon.co&quot;&gt;VaughnVernon.co&lt;/a&gt; and follow him on Twitter here: &lt;a href=&quot;http://twitter.com/vaughnvernon&quot;&gt;@VaughnVernon&lt;/a&gt;&lt;/p&gt;
+            &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/vaughn_vernon&quot;&gt;More About Vaughn »&lt;/a&gt; &lt;br /&gt;
+          &lt;/div&gt;
+          &lt;br /&gt;
+        &lt;/div&gt;
+        &lt;div&gt; &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/wesley_williams&quot;&gt;&lt;img src=&quot;http://www.springone2gx.com/s/images/bio/53889_Williams_20120918_202856_medium_sq.jpg&quot; alt=&quot;Wesley Williams&quot; /&gt;&lt;/a&gt;
+          &lt;div&gt;
+            &lt;h3&gt;Wesley Williams&lt;/h3&gt;
+            &lt;p&gt;Wes Williams is a Senior Consultant with EMC specializing in vFabric technologies and Domain-Driven Design. &lt;/p&gt;
+            &lt;p&gt;He has extensive experience (25+ years) as a hands-on software   developer, architect and designer supporting the creation of   enterprise-class information technology systems in a wide variety of   industries from small businesses to Fortune 10 companies using big, fast   data. He is certified with both Microsoft and Java technologies,   including certifications with Java architecture and enterprise   architecture. He was formerly a guest instructor for Architecture at Sun   Microsystems.&lt;/p&gt;
+            &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/wesley_williams&quot;&gt;More About Wesley »&lt;/a&gt; &lt;br /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;h2&gt;&lt;br /&gt;
+        &lt;/h2&gt;
+        &lt;div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;br /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h1&gt;Batch Processing and Integration on Cloud Foundry&lt;/h1&gt;
+&lt;div&gt;
+  &lt;p&gt;Spring Integration is a lightweight integration framework from the   makers of Spring. Integration of data and services between applications   is not easy – and often requires adaptation from one system to another.   Spring Integration also promotes loosely coupled, event-driven   applications. Spring Batch is a batch processing framework – providing a   simple, idiomatic way to crunch large amounts of data across in a   sustainable way. Spring Batch even allows you to distribute processing   across multiple machines in a cluster. Naturally, both of these   frameworks play very nicely on top of Cloud Foundry, which lets you   scale up and out as demand requires. &lt;/p&gt;
+  &lt;p&gt;In this talk, Josh Long introduces how to use Spring Batch and Spring   Integration on Cloud Foundry, the open source PaaS from VMware.&lt;/p&gt;
+  &lt;p&gt;
+    &lt;center&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/3QBrf3B6aA8&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/center&gt;
+  &lt;/p&gt;
+  &lt;br /&gt;
+&lt;/div&gt;
+&lt;DIV&gt;
+&lt;center&gt;
+&lt;/center&gt;
+&lt;div&gt;
+  &lt;div&gt;
+    &lt;div&gt;&lt;br /&gt;
+      &lt;h2&gt;About the speaker&lt;/h2&gt;
+      &lt;div&gt; &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/josh_long&quot;&gt;&lt;img src=&quot;http://www.springone2gx.com/s/images/bio/40784_Long_20110418_132926_medium_sq.jpg&quot; alt=&quot;Josh Long&quot; /&gt;&lt;/a&gt;
+        &lt;div&gt;
+          &lt;h3&gt;Josh Long&lt;/h3&gt;
+          &lt;p&gt;Josh Long is the Spring developer advocate. Josh is the lead   author on Apress&amp;rsquo; Spring Recipes, 2nd Edition, and a SpringSource  committer and contributor. When he&#039;s not hacking on code, he can be   found at the local Java User Group or at the local coffee shop. Josh likes solutions that push the boundaries of the technologies that enable them. His interests include scalability, BPM, grid processing, mobile   computing and so-called &amp;quot;smart&amp;quot; systems. He blogs at blog.springsource.org or joshlong.com.&lt;/p&gt;
+          &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/josh_long&quot;&gt;More About Josh »&lt;/a&gt;&lt;br /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;      &lt;/div&gt;
+      &lt;div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+ <comments>http://www.springsource.org/node/22581#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Tue, 23 Apr 2013 14:12:33 +0000</pubDate>
+ <dc:creator>Pieter Humphrey</dc:creator>
+ <guid isPermaLink="false">22581 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Spring Tool Suite and Groovy/Grails Tool Suite 3.3.0.M1 released</title>
+ <link>http://www.springsource.org/node/22576</link>
+ <description>&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am happy to announce the first milestone release 3.3.0.M1 of the Spring Tool Suite (STS) and the Groovy/Grails Tool Suite (GGTS).&lt;/p&gt;
+&lt;p&gt;Highlights from this milestone build include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spring IDE: improved support for JavaConfig-driven Spring projects&lt;/li&gt;
+&lt;li&gt;Groovy-Eclipse: now supports customizable editor templates&lt;/li&gt;
+&lt;li&gt;Groovy-Eclipse: navigation and hovers in binary (compiled) groovy files&lt;/li&gt;
+&lt;li&gt;Grails-IDE: preliminary support for current builds of Grails 2.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both tool suites ship on top of the latest Eclipse Juno SR2 release. For optimal performance and stability we still recommend the distribution that is&lt;br /&gt;
+based on Eclipse 3.8.2.&lt;/p&gt;
+&lt;p&gt;The second milestone 3.3.0.M2 build is scheduled for early June 2013, followed by the 3.3.0 release in early July 2013 - shortly after the Eclipse Kepler release.&lt;/p&gt;
+&lt;p&gt;To download the distributions, please go visit:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spring Tool Suite: &lt;a href=&quot;http://www.springsource.org/sts&quot;&gt;http://www.springsource.org/sts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Groovy/Grails Tool Suite: &lt;a href=&quot;http://grails.org/products/ggts&quot;&gt;http://grails.org/products/ggts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Detailed new and noteworthy notes can be found here: &lt;a href=&quot;http://static.springsource.org/sts/nan/v330/NewAndNoteworthy-M1.html&quot;&gt;STS/GGTS 3.3.0.M1 New &amp;amp; Noteworthy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</description>
+ <comments>http://www.springsource.org/node/22576#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Tue, 23 Apr 2013 10:43:14 +0000</pubDate>
+ <dc:creator>Martin Lippert</dc:creator>
+ <guid isPermaLink="false">22576 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>SpringSource Training Schedule: May 2013</title>
+ <link>http://www.springsource.org/training/may2013/spring</link>
+ <description>&lt;p&gt;If you are a Java developer looking to increase your Spring knowledge, vFabric Education by SpringSource is the place to start. We are providing several Spring trainings across the globe closely connected to your needs as a professional developer.&lt;/p&gt;&lt;p&gt;
+This month SpringSource offers a 15% discount code on all VMware trainings (partners not included). Please use the following referral code during the website registration process: &lt;strong&gt;springcustomerpromo&lt;/strong&gt;. The complete Spring training schedule for May, 2013 can be found below:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1: Core Spring&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Americas&lt;/i&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;May 07 - 10: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173649&quot;&gt;Core Spring in Boston, MA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 07 - 10: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173648&quot;&gt;Core Spring in Dallas, TX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 13 - 16: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173216&quot;&gt;Core Spring in Phoenix, AZ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 13 - 16: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173219&quot;&gt;Core Spring in Sacramento, CA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 13 - 16: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173220&quot;&gt;Core Spring in San Francisco, CA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 13 - 16: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173223&quot;&gt;Core Spring in San Jose, CA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 14 - 17: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173650&quot;&gt;Core Spring in Washington, DC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 14 - 17: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173650&quot;&gt;Core Spring in Washington, DC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 14 - 17: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173651&quot;&gt;Core Spring in Los Angeles, CA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 14 - 17: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173652&quot;&gt;Core Spring in Portland, OR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173654&quot;&gt;Core Spring in Salt Lake City, UT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173653&quot;&gt;Core Spring in Seattle, WA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 27 - 30: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=174548&quot;&gt;Core Spring in Bogota, Colombia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 28 - 31: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173656&quot;&gt;Core Spring in Stamford, CT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 28 - 31: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173655&quot;&gt;Core Spring in Charlotte, NC&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;&lt;i&gt;Asia Pacific&lt;/i&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;May 06 - 09: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=160795&quot;&gt;Core Spring in Canberra, Australia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 06 - 09: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=168065&quot;&gt;Core Spring in Hyderabad, India&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 06 - 09: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=158753&quot;&gt;Core Spring in Bangalore, India&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 14 - 17: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=154197&quot;&gt;Core Spring in Singapore, Singapore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 20 - 23: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=160793&quot;&gt;Core Spring in Sydney, Australia&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;&lt;i&gt;Europe, Middle East &amp; Africa&lt;/i&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;May 07 - 10: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=162023&quot;&gt;Core Spring in Rome, Italy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 07 - 10: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=155982&quot;&gt;Core Spring in Lisbon, Portugal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 07 - 10: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=167280&quot;&gt;Core Spring in Madrid, Spain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 13 - 16: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=171409&quot;&gt;Core Spring in London, UK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 14 - 17: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=157576&quot;&gt;Core Spring in Kontich, Belgium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 14 - 17: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=170766&quot;&gt;Core Spring in Paris, France&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 14 - 17: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=150313&quot;&gt;Core Spring in Stockholm, Sweden&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=174438&quot;&gt;Core Spring in Zagreb, Croatia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=140833&quot;&gt;Core Spring in Berlin, Germany&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 28 - 31: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=174429&quot;&gt;Core Spring in Prague, Czech Republic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 28 - 31: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=140841&quot;&gt;Core Spring in Hamburg, Germany&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2: Spring Web / Enterprise Integration with Spring / Hibernate with Spring&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Americas&lt;/i&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;May 06 - 09: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173504&quot;&gt;Spring Web in Edmonton, AB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 06 - 09: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173503&quot;&gt;Spring Web in Phoenix, AZ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 06 - 09: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173499&quot;&gt;Spring Web in Sacramento, CA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 06 - 09: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173500&quot;&gt;Spring Web in San Francisco, CA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 06 - 09: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173501&quot;&gt;Spring Web in San Jose, CA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 06 - 09: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173503&quot;&gt;Spring Web in Phoenix, AZ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173386&quot;&gt;Enterprise Integration with Spring in Ottawa, ON&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173387&quot;&gt;Enterprise Integration with Spring in Toronto, ON&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173385&quot;&gt;Enterprise Integration with Spring in Montreal, QC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173383&quot;&gt;Enterprise Integration with Spring in Edison, NJ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173657&quot;&gt;Spring Web in Chicago, IL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 28 - 31: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173658&quot;&gt;Enterprise Integration with Spring in Los Angeles, CA&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;&lt;i&gt;Europe, Middle East &amp; Africa&lt;/i&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;May 06 - 08: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=172350&quot;&gt;Hibernate with Spring in Wien, Austria&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 06 - 08: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=140872&quot;&gt;Hibernate with Spring in Berlin, Germany&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 06 - 08: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=172363&quot;&gt;Hibernate with Spring in Zurich, Switzerland&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 07 - 10: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=167938&quot;&gt;Enterprise Integration with Spring in Amsterdam, Netherlands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 14 - 17: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=140863&quot;&gt;Enterprise Integration with Spring in Munich, Germany&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 20 - 23: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=171421&quot;&gt;Enterprise Integration with Spring in London, UK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=167920&quot;&gt;Enterprise Integration with Spring in Dublin, Ireland&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 27 - 29: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=140876&quot;&gt;Hibernate with Spring in Munich, Germany&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 28 - 31: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=167930&quot;&gt;Enterprise Integration with Spring in Brussels, Belgium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=174431&quot;&gt;Spring Web in Prague, Czech Republic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=154282&quot;&gt;Spring Web in Rome, Italy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=167936&quot;&gt;Spring Web in Amsterdam, Netherlands&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;&lt;i&gt;Live Online&lt;/i&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;May 06 - 09: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173498&quot;&gt;Spring Web Online in Americas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 23: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173396&quot;&gt;Hibernate with Spring Online in Americas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;May 21 - 24: &lt;a href=&quot;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=det&amp;id_course=173384&quot;&gt;Enterprise Integration with Spring Online in Americas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you cannot find a professional training near you, you can always request an &lt;a href=http://mylearn.vmware.com/mgrReg/message.cfm?ui=www&amp;subject=Onsite%20Training&gt;onsite SpringSource training&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.springsource.org/training/may2013/spring#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Tue, 23 Apr 2013 08:39:22 +0000</pubDate>
+ <dc:creator>Mark Baars</dc:creator>
+ <guid isPermaLink="false">22573 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>This Week in Spring - April 16th, 2013</title>
+ <link>http://www.springsource.org/node/22419</link>
+ <description>Welcome to another installment of &lt;EM&gt;This Week in Spring&lt;/EM&gt;! 
+It&#039;s been an exciting week for Spring at Pivotal, which you can hear more about at the re-scheduled Pivotal &lt;a href=&quot;http://www.gopivotal.com&quot;&gt;launch event&lt;/a&gt; on April 24th.&lt;/P&gt; 
+&lt;OL&gt; 
+	&lt;LI&gt;In case you are reading too fast, Pivotal has re-scheduled the launch event to April 24th. &lt;a href=&quot;http://www.gopivotal.com&quot;&gt;Register here&lt;/a&gt;!&lt;/LI&gt;
+	&lt;LI&gt;Arjen Poutsma  has &lt;a href=&quot;http://forum.springsource.org/showthread.php?136351-Spring-Web-Services-2-1-3-RELEASE-released&quot;&gt;
+	announced Spring Web Services 2.1.3.RELEASE&lt;/a&gt;. The new release mainly consists of bug fixes, for the full details &lt;a href=&quot;http://static.springsource.org/spring-ws/docs/2.1.3.RELEASE/changelog.txt&quot;&gt;check out the changelog&lt;/a&gt;. &lt;/LI&gt; 
+		
+  &lt;LI&gt;Don&#039;t miss the upcoming Webinar with Donald Miner and Mark Pollack discussing &lt;a href=&quot;http://www.springsource.org/node/4306&quot;&gt;Pivotal HD and Spring Hadoop&lt;/a&gt;, a good introductory webinar for those that are Pivotal HD-curious.&lt;/LI&gt;
+  &lt;LI&gt;New SpringOne2GX replays now available in HD on YouTube: &lt;a href=&quot;http://www.springsource.org/node/22417&quot;&gt;Cloud Foundry Architecture&lt;/a&gt;,  &lt;a href=&quot;http://www.springsource.org/node/22417&quot;&gt;Effective Design Patterns in NewSQL&lt;/a&gt;&lt;/LI&gt;
+  &lt;LI&gt; 
+	  There was a great post on Reddit the other day that explains the difference between 
+	  	  &lt;A href=&quot;http://stackoverflow.com/questions/209905/rest-and-soap&quot;&gt;
+	  REST and SOAP in terms of Martin Lawrence&lt;/a&gt;. This has &lt;EM&gt;nothing&lt;/EM&gt; to do with Spring,  but was droll enough that it&#039;s worth sharing. 
+	  
+	  Spring, of course, has an amazing REST stack and I highly encourage people to check out how to build consolidated, streamlined REST services with Spring! Moving on... :) 
+  &lt;/LI&gt;
+  &lt;LI&gt; James Rossiter has a good post on how to use a Spring &lt;CODE&gt; InitBinder&lt;/CODE&gt; to Resolve Type Mismatch and bind Exceptions in &lt;CODE&gt;POST&lt;/code&gt; from Spring  MVC to Controller Actions.     &lt;/LI&gt;
+
+  &lt;LI&gt;   &lt;A href=&quot;http://twitter.com/olivergierke&quot;&gt;@olivergierke&lt;/a&gt; brings up a great point on Twitter: how much code does it take to add the JTA 1.2 JSR &lt;CODE&gt;javax.transaction.Transactional&lt;/code&gt; annotation to Spring? &lt;A href=&quot;https://github.com/SpringSource/spring-framework/commit/52fd84bb577296f78881388ff72b383a4e4808a3&quot;&gt;Almost nothing&lt;/a&gt;!  Most of the code here is just unit tests. Otherwise, this is just a dead simple mapping of the JTA annotation to Spring&#039;s already supported engine, which also currently supports the native Spring &lt;CODE&gt;@Transactional&lt;/code&gt; and &lt;CODE&gt;@javax.ejb.TransactionAttribute&lt;/CODE&gt; annotation. &lt;/LI&gt;
+   &lt;LI&gt;  Are you looking into Gradle and want to get started with Spring, quickly?  Giancarlo Frison has put together a nice post with a bootstrap &lt;a href=&quot;http://www.javacodegeeks.com/2012/05/gradle-archetype-for-spring.html&quot;&gt;Gradle build that can be used with Spring applications&lt;/a&gt;.  &lt;/LI&gt; 
+  &lt;LI&gt; 
+ Eugen Paraschiv has put together a nice post on how to use &lt;CODE&gt;RestTemplate&lt;/CODE&gt; to do &lt;a href=&quot;http://www.javacodegeeks.com/2012/05/how-to-use-resttemplate-with-basic.html&quot;&gt;HTTP BASIC authentication&lt;/a&gt;. &lt;/LI&gt;
+  &lt;LI&gt;  Spring has long supported a utility class, called the &lt;CODE&gt;org.springframework.util.StopWatch&lt;/CODE&gt;, which can be used to measure the execution of method invocations. 
+	  The Javarevisited blog has a  
+	  
+	  &lt;a href=&quot;http://www.stumbleupon.com/su/1rKtfP/javarevisited.blogspot.com.au/2012/04/how-to-measure-elapsed-execution-time.html&quot;&gt;nice post on how to use the &lt;CODE&gt;StopWatch&lt;/code&gt; class&lt;/a&gt;.
+    &lt;/LI&gt;
+  &lt;LI&gt;  This post is fairly old, but I just stumbled upon it and thought it was a well thought out 
+	  &lt;a href=&quot;http://www.slideshare.net/analizator/spring-framework-aop&quot;&gt;
+	  presentation introducing Aspect Oriented Programming (AOP) in Spring&lt;/a&gt;.   &lt;/LI&gt;
+ 
+&lt;/OL&gt;
+</description>
+ <comments>http://www.springsource.org/node/22419#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/14">This Week in Spring</category>
+ <pubDate>Tue, 16 Apr 2013 22:18:48 +0000</pubDate>
+ <dc:creator>Josh Long</dc:creator>
+ <guid isPermaLink="false">22419 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>SpringOne 2GX 2012 Replays: Cloud Foundry Architecture, Effective Design Patterns in NewSQL</title>
+ <link>http://www.springsource.org/node/22417</link>
+ <description>&lt;H1&gt;Cloud Foundry Architecture&lt;/H1&gt;
+&lt;div&gt;
+  &lt;p&gt;If you have deployed applications on Cloud Foundry, you know how easy it   is to push an app, bind services to it, and scale it. There are more   magical things behind the scenes. Did you know, for example, that   cloudfoundry.com is updated approximately twice a week? Each update   included small changes such as a bug fix or a new feature, but often   large changes such as updating the underlying operating system. Yet, we   can do all this without any downtime for user apps. Come to this talk to   understand what makes this possible. Even if you aren&#039;t going to ever   implement a PaaS on your own (and why should you? we already give you a   good one!), the architectural ideas apply to your distributed apps quite   well.&lt;/p&gt;
+  &lt;p&gt;
+    &lt;center&gt;
+      &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/Me2_-FIIYec&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/center&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;div&gt;&lt;br /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;div&gt;
+        &lt;div&gt;&lt;br /&gt;
+        &lt;/div&gt;
+        &lt;h2&gt;About the speaker&lt;/h2&gt;
+        &lt;div&gt; &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/ramnivas_laddad&quot;&gt;&lt;img src=&quot;http://www.springone2gx.com/s/images/bio/8_Laddad_20110912_122803_medium_sq.jpg&quot; alt=&quot;Ramnivas Laddad&quot; /&gt;&lt;/a&gt;
+          &lt;div&gt;
+            &lt;h3&gt;Ramnivas Laddad&lt;/h3&gt;
+            &lt;p&gt;Ramnivas Laddad is a &lt;a href=&quot;http://springsource.com&quot; target=&quot;new&quot;&gt;SpringSource&lt;/a&gt; Principal Enginner. He has over a decade of experience in applying his   enterprise Java and aspect-oriented programming (AOP) expertise to   middleware, design automation, networking, web application, user   interface, and security projects.&lt;/p&gt;
+            &lt;p&gt;Ramnivas Laddad is a well-known expert in enterprise Java, especially   in the area of AOP and Spring. He is the author of AspectJ in Action,   the best-selling book on AOP and AspectJ that has been lauded by   industry experts for its presentation of practical and innovative AOP   applications to solve real-world problems. Ramnivas, a Spring framework   committer, is also an active presenter at leading industry events such   as JavaOne, JavaPolis, No Fluff Just Stuff, SpringOne, Software   Development, and has been an active member of both the AspectJ and   Spring communities from their beginnings.&lt;/p&gt;
+            &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/ramnivas_laddad&quot;&gt;More About Ramnivas »&lt;/a&gt; &lt;br /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;br /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h1&gt;Effective design patterns with NewSQL&lt;/h1&gt;
+&lt;div&gt;
+  &lt;p&gt;NewSQL is a term that describes the next generation of highly   distributed, scalable, memory oriented SQL databases. In this session,   we will explore some basic concepts in NewSQL (VMWare SQLFire),   translate a traditional &amp;ldquo;Star&amp;rdquo; schema to a partitioned schema(scale out   design), walk through various SQL usage patterns – simple queries,   complex joins, aggregations, stored procedures and explain how they can   be more effectively realized in SQLFire through replicated tables,   partitioned tables, in-memory or disk resident tables, parallel   procedure execution, distributed transactions, etc. &lt;/p&gt;
+  &lt;p&gt;We will also compare and contrast various NewSQL features with traditional SQL.&lt;/p&gt;
+  &lt;p&gt;
+    &lt;center&gt;
+      &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/ESvWlYEC2g8&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;a
+    &lt;/center&gt;
+  &lt;/p&gt;
+  &lt;br /&gt;
+&lt;/div&gt;
+&lt;DIV&gt;
+&lt;center&gt;
+&lt;/center&gt;
+&lt;div&gt;
+  &lt;div&gt;
+    &lt;div&gt;&lt;br /&gt;
+      &lt;h2&gt;About the speakers&lt;/h2&gt;
+      &lt;div&gt;
+        &lt;div&gt;
+          &lt;h3&gt;Jags Ramnarayan&lt;/h3&gt;
+          &lt;p&gt;As the Chief Architect for GemFire product line, Jags is   responsible for the technology direction for its high performance   distributed data Grid and virtualization platform. Jags has represented   GemStone Systems in the EJB expert group and the J2EE platform   specification. In the past, Jags represented BEA in the W3C SOAP   protocol specification, JAXM and other standards. Jags has presented in   several conferences in the past on Data management, clustering and grid   computing(Javaone, W3C workshop, Java user groups, Open Grid Forum,   Platform Grid conference etc) . He has over 20 years of experience, a   bachelors degree in computer science and a masters degree in management   of science and technology.&lt;/p&gt;
+          &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/jags_ramnarayan&quot;&gt;More About Jags »&lt;/a&gt; &lt;br /&gt;
+        &lt;/div&gt;
+        &lt;br /&gt;
+      &lt;/div&gt;
+      &lt;div&gt; &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/guillermo_tantachuco&quot;&gt;&lt;img src=&quot;http://www.springone2gx.com/s/images/bio/47740_Tantachuco_20120811_103710_medium_sq.jpg&quot; alt=&quot;Guillermo Tantachuco&quot; /&gt;&lt;/a&gt;
+        &lt;div&gt;
+          &lt;h3&gt;Guillermo Tantachuco&lt;/h3&gt;
+          &lt;p&gt;Guillermo is an award-winning Enterprise Architecture   practitioner with 17+ years of progressive experience in different   industries. As a Regional Senior Systems Engineer for VMware&#039;s Cloud   Application Platform division, Guillermo works with customers to   understand their business needs and challenges and helps them seize new   opportunities by leveraging vFabric to modernize their IT architecture.   Guillermo is passionate about his family, business, technology and   soccer.&lt;/p&gt;
+          &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/guillermo_tantachuco&quot;&gt;More About Guillermo »&lt;/a&gt; &lt;br /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</description>
+ <comments>http://www.springsource.org/node/22417#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Tue, 16 Apr 2013 21:34:44 +0000</pubDate>
+ <dc:creator>Pieter Humphrey</dc:creator>
+ <guid isPermaLink="false">22417 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>This Week in Spring - April 9th, 2013</title>
+ <link>http://www.springsource.org/node/10380</link>
+ <description>Welcome to another installment of &lt;EM&gt;This Week in Spring&lt;/EM&gt;!  As usual, we&#039;ve got a &lt;EM&gt; lot &lt;/EM&gt; to cover, so let&#039;s get to it!
+&lt;/P&gt; 
+
+&lt;OL&gt;  
+	&lt;LI&gt;
+		 &lt;A href=&quot;https://twitter.com/adriancolyer&quot;&gt;SpringSource CTO Adrian Colyer&lt;/a&gt;  outlines the direction and momentum  of SpringSource and the Spring projects under the 
+			 &lt;A href=&quot;http://gopivotal.com&quot;&gt;Pivotal Initiative&lt;/a&gt;, a new company spun out of EMC comprised of - among other things - SpringSource, Cloud Foundry, and GreenPlum. 
+		This is &lt;EM&gt;definitely&lt;/EM&gt; worth a read if you want to understand Spring&#039;s - &lt;EM&gt;ahem&lt;/EM&gt; - &lt;EM&gt;Pivotal&lt;/EM&gt; role in this new initiative! 
+		
+	&lt;/LI&gt;  
+	&lt;LI&gt; Spring Batch lead Michael Minella has &lt;A href=&quot;http://www.springsource.org/node/9666&quot;&gt; announced that Spring Batch 2.2.0.RC1 is now available&lt;/a&gt;.
+		The new release includes preliminary support for Spring Data, Java configuration support, non-identifying job parameters 
+		and numerous fixes and polishes. This release is amazing, and definitely worth a look. I, personally, &lt;EM&gt;love&lt;/EM&gt; the Java configuration API that&#039;s
+		been surfaced. You don&#039;t need to write another Spring Batch XML file if you don&#039;t want to!
+	&lt;/LI&gt;
+	&lt;LI&gt; 
+Spring Mobile lead Roy Clarkson has announced that 	 
+&lt;a href=&quot;http://www.springsource.org/spring-mobile/news/1.1.0.m3-released&quot;&gt;Spring Mobile 1.1.0.M3 has been released&lt;/a&gt; featuring 
+ simpler configuration when using a custom domain strategy with &lt;CODE&gt;SiteSwitcherHandlerInterceptor&lt;/CODE&gt;, support for Kindle Fire device   detection (as tablet or mobile depending on which mode they are in),  several resolved issues and compatibility   with Spring Framework 3.2.2.  
+ 
+	&lt;/LI&gt;
+	
+	 	&lt;LI&gt;New SpringOne2GX replays now available in HD on YouTube: &lt;a href=&quot;http://www.springsource.org/node/10268&quot;&gt;Virtualizing and Tuning Large Scale Java Applications, From Spring and Java to Spring and Akka&lt;/a&gt;&lt;/LI&gt;
+	 	&lt;LI&gt;The HMK blog has a &lt;EM&gt;really&lt;/EM&gt; nice post on how to use the &lt;A href= &quot;http://github.com/CujoJS&quot;&gt;Cujo.js&lt;/A&gt;&#039;s
+	&lt;A href=&quot;http://hmkcode.com/spring-mvc-rest-js/&quot;&gt;
+	 &lt;CODE&gt;rest.js&lt;/CODE&gt; and Spring MVC&lt;/a&gt;. &lt;EM&gt;Very&lt;/EM&gt; cool! 
+	    &lt;/LI&gt;
+
+	&lt;LI&gt;  
+		The  &lt;EM&gt;JavaRevisited&lt;/EM&gt; blog has  put together a 
+		&lt;a href=&quot;http://javarevisited.blogspot.com/2013/04/spring-framework-tutorial-call-stored-procedures-from-java.html&quot;&gt;post on calling stored procedures from Spring&lt;/code&gt; using the &lt;CODE&gt;StoredProcedure&lt;/CODE&gt; template object. 
+		There are other ways to approach this same problem, including the &lt;CODE&gt;SimpleJdbcCall&lt;/CODE&gt; object and simply using the 
+		&lt;CODE&gt;update(String, Object ... params) &lt;/CODE&gt; method on &lt;CODE&gt;JdbcTemplate&lt;/CODE&gt;. Check it out! 
+ 		 &lt;/LI&gt; 
+		 &lt;LI&gt; 
+			 The &lt;EM&gt;Spring Java Tutorial&lt;/EM&gt; blog&lt;em&gt; &lt;/em&gt;has a nice post &lt;A href=&quot;http://springjavatutorial.blogspot.com/2013/04/call-stored-procedures-in-spring.html&quot;&gt;on using  
+			 stored procedures with Spring&lt;/A&gt;, and it &lt;EM&gt;also&lt;/EM&gt; uses the same domain example - an &lt;CODE&gt;EmployeeDAO&lt;/CODE&gt;. 
+			 They aren&#039;t exacty the same  - far from it - but it does seem like one heckuva coincadence! At any rate, more information&#039;s always good.
+		 		
+		 &lt;/LI&gt;
+		 &lt;LI&gt; 
+		Spring provides various lifecycle callback methods, &lt;A href=&quot;http://www.javabeat.net/2013/04/custom-spring-callback-methods/&quot;&gt;which this &lt;EM&gt;JavaBeat&lt;/EM&gt; blog looks at&lt;/a&gt;.		&lt;/LI&gt;
+	&lt;LI&gt; 
+		The &lt;EM&gt;Binary Beans&lt;/EM&gt; blog has a post that &lt;A href=&quot;http://www.binary-beans.com/2013/04/getting-started-with-spring-framework.html&quot;&gt; simply links to some interesting, introductory videos&lt;/a&gt; that we&#039;ve published on
+		 &lt;A href=&quot;http://youtube.com/SpringSourceDev&quot;&gt;the SpringSourceDev YouTube Channel&lt;/A&gt;.  If you&#039;re a regular reader of this round up then you&#039;ve seen these videos before.
+		 But, it&#039;s a good 3 hours of introductory content and worth a look if you want a good getting started experience.
+		&lt;/LI&gt;
+	&lt;LI&gt;
+		KH Yiu has put together a cool post &lt;A href=&quot;http://kh-yiu.blogspot.com/2013/04/spring-implementing-factory-pattern.html&quot;&gt; introducing the concept of a factory pattern&lt;/a&gt; (which you&#039;re no doubt already familiar with!) 
+		in application code, built with Spring. This is &lt;EM&gt;not&lt;/EM&gt; about how Spring uses the factory pattern, and was kind of an interesting approach.
+		Nicely done!
+		
+		&lt;/LI&gt;
+ 
+	&lt;LI&gt; Daniel Wong put together a really cool blog illustrating how to &lt;A href=&quot;http://blog.shinetech.com/2013/04/09/integrating-springmvc-with-opencms/&quot;&gt;tie together Spring MVC with OpenCMS&lt;/a&gt;! Definitely worth a look. &lt;/LI&gt;
+	&lt;LI&gt;
+		The &lt;EM&gt; 11th Hour&lt;/EM&gt; blog put together a nice post on &lt;a href=&quot;http://deepeshdarshan.wordpress.com/2013/04/05/learn-spring-by-example-spring-expression-language-spel&quot;&gt;how to use the Spring Expression Language with some examples&lt;/a&gt;.
+		 &lt;/LI&gt;
+	&lt;LI&gt;
+		Wang Xiang&#039;s  put together a blog.. more like a series of snippets..  demonstrating how &lt;A href=&quot;http://wangxiangblog.blogspot.com/2013/04/eclipse-jetty-maven-setup.html&quot;&gt;to setup Jetty, a  &lt;CODE&gt;DataSource&lt;/CODE&gt;, and Spring together&lt;/a&gt;. 
+		&lt;/LI&gt;
+	&lt;LI&gt;
+		The &lt;EM&gt;Java Code Geeks&lt;/EM&gt; blog has an introductory post &lt;A href=&quot;http://www.javacodegeeks.com/2013/04/spring-mvc-form-validation-with-annotations-2.html&quot;&gt;on using Spring MVC with JSR 303 bean validation&lt;/A&gt;. Check it out!
+		&lt;/LI&gt;
+ 	&lt;LI&gt; 
+Our pal 		Mark Serrano  is back, this time &lt;A href=&quot;http://krams915.blogspot.com/2013/04/book-review-spring-security-31.html&quot;&gt; with a review&lt;/a&gt; of &lt;A href=&quot;http://twitter.com/rob_winch&quot;&gt;Spring Security lead Rob Winch&#039;s&lt;/a&gt; book on Spring Security. 
+		&lt;/LI&gt;
+ 	&lt;LI&gt;
+		Hippoom Zhou has put together a nice post introducing how to use  
+		&lt;A href=&quot;http://java.dzone.com/articles/how-use-mockstub-spring&quot;&gt;
+		mocks and stubs in Spring Integration tests&lt;/a&gt;.   This is a &lt;EM&gt;very&lt;/EM&gt; nice post, and definitely worth a look!
+ &lt;/LI&gt;
+ 
+	 
+	&lt;LI&gt;
+		The awesomely named &lt;EM&gt;Raging Goblin&lt;/EM&gt; blog has a nice post on how to do &lt;A href=&quot;http://raginggoblin.wordpress.com/2013/04/06/spring-roo-5-role-based-views/&quot;&gt;role-based views using Spring Roo and Spring Security&lt;/a&gt;. 
+		&lt;/LI&gt;
+	&lt;LI&gt; 
+		Peter Chng describes a scheme that can be used to &lt;A href=&quot;http://unitstep.net/blog/2013/04/07/spring-mvc-request-parameter-conversion-with-minimal-configuration/&quot;&gt; auto-register custom converters used for data type conversion&lt;/A&gt; in core Spring, Spring MVC, and Spring Integration, among other places. Pretty smart! 
+		
+		&lt;/LI&gt;
+	 
+&lt;/OL&gt;</description>
+ <comments>http://www.springsource.org/node/10380#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/14">This Week in Spring</category>
+ <pubDate>Tue, 09 Apr 2013 23:16:56 +0000</pubDate>
+ <dc:creator>Josh Long</dc:creator>
+ <guid isPermaLink="false">10380 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>SpringOne 2GX 2012 Replays: Virtualizing and Tuning Large Scale Java Applications, From Spring and Java to Spring and Akka</title>
+ <link>http://www.springsource.org/node/10268</link>
+ <description>&lt;H1&gt;Virtualizing and Tuning Large Scale Java Applications&lt;/H1&gt;
+&lt;div&gt;
+  &lt;p&gt;This session shares many of the production proven methods of running   Java on vSphere. Covering how to size JVMs, and VMs for large scale   deployments. The session will have a special section on GC tuning and   show how a wide range of JVMs can be tuned using a GC recipe developed   over the past 15 years of actual field experience in tuning JVMs.&lt;/p&gt;
+  &lt;p&gt;Three key trends and associated tuning techniques are discussed in   this session. The key trends are: Consolidation, Elasticity and   Flexibility, and Performance&lt;/p&gt;
+  &lt;p&gt;Consolidation  Many of our customers find that their middleware deployments have   proliferated and are becoming an administrative challenge associated   with higher costs.  We see a trend across customers who look to   virtualization as a way of reducing the number of server instances.  At   the same time, customers are taking the consolidation opportunity to   rationalize the number of middleware components needed to service a   particular load.  Middleware components most commonly run within a Java   Virtual Machine (JVM) with an observed scale of 100 to 1000s of JVM   instances and provide many opportunities for JVM instance consolidation.    Hence, middleware virtualization provides an opportunity to   consolidate twice – once to consolidate server instances, and, secondly,   to consolidate JVM instances.  This trend is far-reaching, because   every IT shop on the planet is considering the cost savings of   consolidation.  One customer in the hospitality sector went through the process of   consolidating their server footprint and at the same time consolidated   many smaller JVMs that were less than 1GB heap.  They consolidated many   of these smaller 1GB JVMs into 2 categories, those that were 4GB, and   others that were 6GB.  They performed the consolidation in such manner   that the net total amount of RAM available to the application was equal   to the original amount of RAM, but with fewer JVM instances.  They did   all of this while improving performance and maintaining good SLAs.  They   also reduced the cost of administration considerably due to the reduced   number of JVM instances they had to manage, and refined environment   that helped easily achieve SLA. &lt;br /&gt;
+    Another customer, in the insurance industry, was able to achieve the   same as the above customer, but additionally was able to over-commit CPU   in development and QA environments in order to save on third party   software license costs.  On the other hand, sometimes we come across customers that have a   legitimate business requirement to maintain one JVM for an application,   and/or one JVM per a line of business.  In these cases, you cannot   really consolidate the JVM instances, as that would cause intermixing of   the lifecycle of one application from one line of business with   another.  However, while such customers don&amp;rsquo;t benefit from eliminating   additional JVM instances through JVM consolidation, they do benefit from   more fully utilizing the available compute resource on the server   hardware, that otherwise would have been underutilized in a non   virtualized environment&lt;/p&gt;
+  &lt;p&gt;Elasticity and Flexibility  It is increasingly common to find applications with seasonal demands.   For example, many of our customers run various marketing campaigns that   drive seasonal traffic towards their application.  With VMware, you can   handle this kind of traffic burst, by automatically provisioning new   virtual machines and middleware components when needed, and then   automatically tear down these VMs when the load subsides.   In addition, the ability to change updating/patching hardware without   causing outage is paramount for middleware that supports the cloud era   scale and uptime.  VMware VMotion gives you the ability to move VMs   around without needing to stop applicators and or the VM.  This   flexibility alone makes virtualization of middleware worthwhile when   managing large-scale middleware deployments. One customer in the   financial space, handling millions of transactions per day, used VMotion   quite often to schedule their hardware upgrades without any time   downtime.  What otherwise would be a costly scheduled downtime to their   business.&lt;/p&gt;
+  &lt;p&gt;Performance  Customers often report improved middleware platform performance when   virtualizing. Performance improvements are partly due to the updated   hardware that customers will typically refresh during a virtualization   project. There is also some performance improvement due to the robust   VMware hypervisor.  A recent customer that reported a great level of   performance provided the following testimony&lt;/p&gt;
+  &lt;p&gt;&amp;ldquo;With our OrderExpress project we upgraded our Middleware Services,   Commerce, Portal, WCM, Service Layer, DB2 Database; migrated from AIX to   Linux; virtualized on VMware; moved the application into a three-tier   DMZ; increased our transactions by over 150 percent; and added   significant new capabilities that greatly improved the customer   experience. Changing such a wide range of technology components at once   was a huge challenge. However using VMware vSphere and additional   architectural changes we were successful in improving performance by   over 300 percent; lowered costs in the millions; improved security,   availability, and scalability; and how we plan to continue evolving this   application to maintain greater than 30 percent yearly growth.&amp;rdquo; &lt;/p&gt;
+  &lt;p&gt;– Jeff Battisti, Senior Enterprise Architect at Cardinal Health&lt;/p&gt;
+  &lt;p&gt;In this session, I will show some actual JVM and VM sizes for   middleware components both small and large JVMs. Will also detail out GC   tuning recipe that I have developed over the years,that has been shown   to handle JVM heap sizes form 4GB to 88GB+, and higher. Of course the   introduction of in-memory databases has driven the trend to have these   larger JVMs and hence why we will discuss what is the best way to tune   the JVM, VM, and the hardware platform they are deployed on. &lt;/p&gt;
+  &lt;p&gt;I see the sizing question as the most commonly asked question with   our customer base,and as a result I plan to focus on it during the   session.&lt;/p&gt;
+  &lt;p&gt;
+    &lt;center&gt;
+      &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/zwBLgQ1_WuE&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/center&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;div&gt;&lt;br /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;div&gt;
+        &lt;div&gt;&lt;br /&gt;
+        &lt;/div&gt;
+        &lt;h2&gt;About the speaker&lt;/h2&gt;
+        &lt;div&gt; &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/emad_benjamin&quot;&gt;&lt;img src=&quot;http://www.springone2gx.com/s/images/bio/47524_Benjamin_20111013_174310_medium_sq.jpg&quot; alt=&quot;Emad Benjamin&quot; /&gt;&lt;/a&gt;
+          &lt;div&gt;
+            &lt;h3&gt;Emad Benjamin&lt;/h3&gt;
+            &lt;p&gt;Emad Benjamin has been in the IT industry for the past twenty   years. He graduated with a Bachelor of Electrical Engineering from the   University of Wollongong. Earlier in his career, he was a C++ software   engineer, then in 1997, he switched to programming with Java, and has   been focusing on Java ever since. For the past seven years, his focus   has been Java on VMware vSphere, vFabric GemFire and SQLFire. Emad has   been at VMware since 2005, and is the author of the Enterprise Java   Applications Architecture on VMware book. Emad has previously presented   at VMworld, SpringOne, and Open World on the subject of Java   virtualization.&lt;/p&gt;
+            &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/emad_benjamin&quot;&gt;More About Emad »&lt;/a&gt; &lt;br /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;h2&gt;&lt;br /&gt;
+        &lt;/h2&gt;
+        &lt;div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;br /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h1&gt;From Spring + Java to Spring + Akka - A Journey of Discovery&lt;/h1&gt;
+&lt;div&gt;
+  &lt;p&gt;Actor based concurrency model is a paradigm shift. What is paradigm shift?&lt;/p&gt;
+  &lt;p&gt;A change in the basic assumptions, or paradigms, within the ruling   theory of science. A paradigm shift makes simple ideas hard to grok.   Even though Actor model is a simple and revolutionary idea it becomes   hard for programmers to see practical benefits and usage. Similarly, the   Scala programming language brings a lot to the table in simplifying   actor-based design, but comes with a new style of coding.  One possible   solution to this problem is to evaluate the new paradigm in terms of old   paradigm. In this presentation we will take a working Spring based web   application and gradually implement it using actors and Scala. We will   be skeptical and suspicious of new ideas but at the same time we will be   open minded. We will learn about actor based concurrency model using   the knowledge of spring.  At the same time, we&#039;ll learn best practices   behind Actors, Scala and combining these with the Spring Framework.&lt;/p&gt;
+  &lt;p&gt;
+    &lt;center&gt;
+      &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/fALUf9BmqYE&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/center&gt;
+  &lt;/p&gt;
+  &lt;br /&gt;
+&lt;/div&gt;
+&lt;DIV&gt;
+&lt;center&gt;
+&lt;/center&gt;
+&lt;div&gt;
+  &lt;div&gt;
+    &lt;div&gt;&lt;br /&gt;
+      &lt;h2&gt;About the speakers&lt;/h2&gt;
+      &lt;div&gt; &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/nilanjan_raychaudhuri&quot;&gt;&lt;img src=&quot;http://www.springone2gx.com/s/images/bio/49957_Raychaudhuri_20120124_122625_medium_sq.jpg&quot; alt=&quot;Nilanjan Raychaudhuri&quot; /&gt;&lt;/a&gt;
+        &lt;div&gt;
+          &lt;h3&gt;Nilanjan Raychaudhuri&lt;/h3&gt;
+          &lt;p&gt;Nilanjan is a consultant and trainer for Typesafe. He started   his professional career as a software developer in 2000 using object   oriented programming languages. Nilanjan has previously worked with IBM,   ThoughtWorks and LivingSocial where he gained a lot of experience in   managing and developing software solutions in Java/JEE, Ruby, Groovy and   also in Scala. He is zealous about programming in Scala ever since he   got introduced to this beautiful language. Currently he spends his spare   time working on the scala-webmachine open source project (restful   resource framework). In the past Nilanjan worked on other open source   projects and libraries. At Typesafe he is mainly teaching and designing   Scala and Play courses and helping customers to adopt these   technologies. Nilanjan enjoys sharing his experience via talks at   various conferences. He is also the author of the &amp;quot;Scala in Action&amp;quot;   book.&lt;/p&gt;
+          &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/nilanjan_raychaudhuri&quot;&gt;More About Nilanjan »&lt;/a&gt; &lt;br /&gt;
+        &lt;/div&gt;
+        &lt;br /&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;div&gt;
+          &lt;h3&gt;Josh Suereth&lt;/h3&gt;
+          &lt;p&gt;Josh Suereth is a Senior Software Engineer at Typesafe and the   author of &amp;quot;Scala In Depth.&amp;rdquo; He has been a Scala enthusiast ever since he   came to know this beautiful language in 2007. He started his   professional career as a software developer in 2004, cutting his teeth   with C++, STL, and Boost. Around the same time, Java fever was spreading   and his interest was migrating to web-hosted distributed Java-delivered   solutions to aide health departments discover the outbreaks of disease -   everything from EJB to Hibernate/Spring and even some Applets. He   introduced Scala into his company code base first in 2007, and soon   after he was infected by Scala fever, contributing to the Scala IDE,   maven-Scala-plugin, and Scala itself. In 2009, he began writing the book   &amp;quot;Scala In Depth&amp;quot; which provides practical support for using Scala in   everyday applications. Today, Josh is the author of several open source   Scala projects, including the Scala automated resource management   library, the PGP sbt plugin, as well as contributing to key components   in the Scala ecosystem, like the maven-Scala-plugin. His current work at   Typesafe Inc. has him doing anything from building MSIs to profiling   performance issues. Josh regularly shares his expertise in articles and   talks.&lt;/p&gt;
+          &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/josh_suereth&quot;&gt;More About Josh »&lt;/a&gt; &lt;br /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;h2&gt;&lt;br /&gt;
+      &lt;/h2&gt;
+      &lt;div&gt;
+      &lt;/div&gt;
+      &lt;br /&gt;
+      &lt;/div&gt;&lt;div&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;&lt;br /&gt;
+    &lt;/h2&gt;
+    &lt;div&gt; &lt;br /&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+ <comments>http://www.springsource.org/node/10268#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Tue, 09 Apr 2013 22:41:48 +0000</pubDate>
+ <dc:creator>Pieter Humphrey</dc:creator>
+ <guid isPermaLink="false">10268 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Spring Batch 2.2.0 RC1 is now available</title>
+ <link>http://www.springsource.org/node/9666</link>
+ <description>We are pleased to announce that Spring Batch 2.2.0.RC1 is now available via the SpringSource Milestone repository.
+&lt;a href=&quot;http://www.springsource.org/spring-batch&quot;&gt;Spring Batch Home&lt;/a&gt; | &lt;a href=&quot;https://github.com/SpringSource/spring-batch&quot;&gt;Source on GitHub&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-batch/&quot;&gt;Reference Documentation&lt;/a&gt;
+&lt;h2&gt;Support for Spring Data&lt;/h2&gt;
+&lt;a href=&quot;http://www.springsource.org/spring-data&quot;&gt;Spring Data&lt;/a&gt; is a collection of projects intended to make it easier to develop Spring-powered applications that use new data access technologies such as non-relational databases. Based on a model of exposing &lt;a href=&quot;http://static.springsource.org/spring-data/commons/docs/current/api/org/springframework/data/repository/Repository.html&quot;&gt;Repository&lt;/a&gt; objects, Spring Data allows applications to access data in a simple and consistent way across many new platforms. Spring Batch 2.2.0.RC1 now provides &lt;code&gt;ItemReader&lt;/code&gt; and &lt;code&gt;ItemWriter&lt;/code&gt; implementations for a number of the data stores supported by Spring Data including MongoDB, Neo4j, and Gemfire (write only).  In addition, Spring Batch 2.2.0.RC1 now has a &lt;code&gt;RepositoryItemReader&lt;/code&gt; and &lt;code&gt;RepositoryItemWriter&lt;/code&gt; that will read and write items from custom Spring Data &lt;code&gt;Repository&lt;/code&gt; implementations.
+&lt;h2&gt;Java Configuration&lt;/h2&gt;
+With this release, Spring Batch 2.2.0.RC1 now supports Java based job definitions. Building a job definition with java configuration is now available via the new &lt;code&gt;@EnableBatchProcessing&lt;/code&gt; annotation and a collection of builders that allow you to construct jobs, steps, flows, splits, etc. By using the &lt;code&gt;@EnableBatchProcessing&lt;/code&gt; annotation the following features are enabled:
+&lt;ul&gt;
+&lt;li&gt;Creation of StepScope - Allowing the configuration of beans via &lt;code&gt;@Scope(&quot;step&quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;@Autowired&lt;/code&gt; - A &lt;code&gt;JobRepository&lt;/code&gt;, &lt;code&gt;JobLauncher&lt;/code&gt;, &lt;code&gt;JobRegistry&lt;/code&gt;, &lt;code&gt;PlatformTransactionManager&lt;/code&gt;, &lt;code&gt;JobBuilderFactory&lt;/code&gt; and &lt;code&gt;StepBuilderFactory&lt;/code&gt; are all available to be autowired into your context.
+&lt;/ul&gt;
+&lt;h2&gt;Non-identifying Job Parameters&lt;/h2&gt;
+Spring Batch 2.2.0.RC1 now supports the use of job parameters that do not contribute to the generation of a JobInstance&#039;s identity. As part of this update, the &lt;code&gt;JobParameters&lt;/code&gt; is no longer associated with a &lt;code&gt;JobInstance&lt;/code&gt; and is now associated with a &lt;code&gt;JobExecution&lt;/code&gt;. To support this change, the job repository schema has updated and a migration script has been provided. You can read the details about the migration script in the &lt;a href=&quot;http://static.springsource.org/spring-batch/getting-started.html&quot;&gt;Getting Started Guide&lt;/a&gt;.
+&lt;h2&gt;Other Improvements and Bug Fixes&lt;/h2&gt;
+With the release of Spring Batch 2.2.0.RC1, a host of other improvements and bug fixes have been added. The complete list of updates for this release can be found in the &lt;a href=&quot;http://static.springsource.org/spring-batch/migration/index.html&quot;&gt;changelog&lt;/a&gt; for this revision.
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;a href=&quot;http://www.springsource.org/spring-batch&quot;&gt;Spring Batch Home&lt;/a&gt; | &lt;a href=&quot;https://github.com/SpringSource/spring-batch&quot;&gt;Source on GitHub&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-batch/&quot;&gt;Reference Documentation&lt;/a&gt;
+</description>
+ <comments>http://www.springsource.org/node/9666#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Tue, 09 Apr 2013 19:18:22 +0000</pubDate>
+ <dc:creator>Michael Minella</dc:creator>
+ <guid isPermaLink="false">9666 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Spring Mobile 1.1.0.M3 Released</title>
+ <link>http://www.springsource.org/spring-mobile/news/1.1.0.m3-released</link>
+ <description>&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+
+&lt;p&gt;We are happy to announce the release of &lt;a href=&quot;http://www.springsource.org/spring-mobile&quot;&gt;Spring Mobile&lt;/a&gt; 1.1.0.M3!&lt;/p&gt;
+
+&lt;p&gt;Spring Mobile provides extensions to Spring MVC that aid in the development of cross-platform mobile web applications.&lt;/p&gt;
+
+&lt;p&gt;This release adds simpler configuration when using a custom domain strategy with SiteSwitcherHandlerInterceptor. Kindle Fire devices are now detected as tablet or mobile depending on which mode they are in. Additionally, several issues have been resolved in this release. This release is built and tested against Spring Framework 3.2.2. See the &lt;a href=&quot;http://static.springsource.org/spring-mobile/docs/1.1.0.M3/changelog.txt&quot;&gt;changelog&lt;/a&gt; and &lt;a href=&quot;http://static.springsource.org/spring-mobile/docs/1.1.0.M3/reference/html/&quot;&gt;reference manual&lt;/a&gt; for more information. Many thanks to the community for their continued feedback and support in improving Spring Mobile.&lt;/p&gt;
+
+&lt;p&gt;To retrieve the software, 
+&lt;a href=&quot;http://www.springsource.com/download/community?project=Spring%20Mobile&quot;&gt;download&lt;/a&gt; the release distribution, or add the &lt;a href=&quot;http://static.springsource.org/spring-mobile/docs/1.1.0.M3/reference/html/device.html#device-howtoget&quot;&gt;maven artifacts&lt;/a&gt; to your project. Sample apps are available at &lt;a href=&quot;https://github.com/SpringSource/spring-mobile-samples&quot;&gt;github.com/SpringSource/spring-mobile-samples&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are building a mobile web app, we encourage you try out Spring Mobile 1.1.0.M3 and &lt;a href=&quot;http://forum.springsource.org/forumdisplay.php?f=85&quot;&gt;collaborate&lt;/a&gt; with us on the next iteration of the project.&lt;/p&gt;</description>
+ <comments>http://www.springsource.org/spring-mobile/news/1.1.0.m3-released#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Fri, 05 Apr 2013 05:25:49 +0000</pubDate>
+ <dc:creator>Roy Clarkson</dc:creator>
+ <guid isPermaLink="false">4311 at http://www.springsource.org</guid>
+</item>
+</channel>
+</rss>

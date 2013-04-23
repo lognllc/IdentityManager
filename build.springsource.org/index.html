@@ -1,0 +1,1700 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard - Spring CI</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+
+    <link rel="shortcut icon" href="/s/en_US-418945332/3402/1/_/images/icons/favicon.ico" type="image/x-icon"/>
+
+    <script type="text/javascript">
+        (function (window) {
+            window.BAMBOO = (window.BAMBOO || {});
+            BAMBOO.contextPath = '';
+        })(window);
+    </script>
+
+        
+        
+    <!--[if IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/en_US-418945332/3402/1/d18fdf66be15e58e922289b5db26e4fb/_/download/contextbatch/css/atl.general,atl.dashboard/batch.css?conditionalComment=IE+9" media="all">
+<![endif]-->
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/en_US-418945332/3402/1/d18fdf66be15e58e922289b5db26e4fb/_/download/contextbatch/css/atl.general,atl.dashboard/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/en_US-418945332/3402/1/d18fdf66be15e58e922289b5db26e4fb/_/download/contextbatch/css/atl.general,atl.dashboard/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/en_US-418945332/3402/1/d18fdf66be15e58e922289b5db26e4fb/_/download/contextbatch/css/atl.general,atl.dashboard/batch.css" media="all">
+<script type="text/javascript" src="/s/en_US-418945332/3402/1/d18fdf66be15e58e922289b5db26e4fb/_/download/contextbatch/js/atl.general,atl.dashboard/batch.js" ></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="/s/en_US-418945332/3402/1/d18fdf66be15e58e922289b5db26e4fb/_/download/contextbatch/js/atl.general,atl.dashboard/batch.js?conditionalComment=lte+IE+8" ></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/s/en_US-418945332/3402/1/d18fdf66be15e58e922289b5db26e4fb/_/download/contextbatch/js/atl.general,atl.dashboard/batch.js?conditionalComment=lt+IE+9" ></script>
+<![endif]-->
+
+
+<meta name="decorator" content="atl.dashboard"/>
+    <meta name="tab" content="allPlansTab" />
+</head>
+<body class="aui-layout aui-theme-bamboo dec_atl_dashboard">
+    <ul id="assistive-skip-links" class="assistive">
+        <li><a href="#main-nav">Skip to navigation</a></li>
+        <li><a href="#content">Skip to content</a></li>
+    </ul>
+    <div id="page">
+<header id="header" role="banner">
+<section class="notifications">
+        <div id="system-state-banner" class="aui-message warning" style="display: none;">
+            
+        <span id="system-state-banner-info"></span>
+            <span class="aui-icon icon-warning"></span>
+    </div>
+    <script type="text/javascript">
+        if (BAMBOO && BAMBOO.ADMIN && BAMBOO.ADMIN.SERVERSTATE) {
+            BAMBOO.ADMIN.SERVERSTATE.serverState.init({
+                control: "#system-state-banner",
+                statusInfo: "#system-state-banner-info",
+                button: ".toolbar-trigger",
+                serverRunningCallback: function() {
+                    var $pause = AJS.$("#pause-server-button");
+
+                    if ($pause && $pause.length) {
+                        $pause.removeClass("disabled");
+                    }
+                }
+            });
+        }
+    </script>
+</section><nav class="global" role="navigation">
+    <div class="primary">
+        <h1 id="logo"><a href="/start.action" rel="nofollow">Atlassian Bamboo</a></h1>
+    </div>
+    <div class="secondary">
+        <ul>
+            <li id="loginLink">
+                <a id="login" href="/userlogin!default.action?os_destination=%2FallPlans.action">Log in</a>
+            </li>
+                <li id="signupLink">
+                    <a id="signup" href="/signupUser!default.action">Signup</a>
+                </li>
+        </ul>
+    </div>
+</nav> <!-- END nav.global -->
+        <nav class="local" role="navigation">
+            <div class="primary">
+                <ul id="main-nav">
+                    <li><a id="home" href="/start.action" accesskey="H">Dashboard</a></li>
+                        <li><a id="authors" href="/authors/gotoAuthorReport.action" accesskey="U">Authors</a></li>
+                        <li><a id="reports" href="/reports/viewReport.action" accesskey="R">Reports</a></li>
+                </ul>
+            </div>
+        </nav> <!-- END nav.local -->
+</header><!-- END #header -->
+
+
+<section id="content" role="main">
+
+    <header>
+        <h1 id="dashboard-instance-name">Spring CI</h1>
+    </header>
+    
+    <ul id="external-operations" class="dashboardExternal">
+        <li>
+<div class="aui-dd-parent" id="wallBoardDropdown">
+    <span class="aui-dd-trigger">    <span class="icon icon-wallboard"></span>Wallboard     <span class="icon icon-drop"></span></span>
+    <ul class="aui-dropdown aui-dropdown-right hidden">
+<li class="dropdown-item"><a href="/telemetry.action" class="item-link         iconless 
+">All Plans</a></li>    </ul>
+</div>
+<script type="text/javascript">
+    AJS.$(function() {
+        AJS.$("#wallBoardDropdown").dropDown();
+    });
+</script>
+        </li>
+    </ul>
+
+<div class="aui-tabs horizontal-tabs aui-tabs-disabled">
+    
+    <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+                <a  id="allPlansTab" href="/allPlans.action"><strong>All Plans</strong></a>
+            </li>
+            <li class="menu-item">
+                <a  id="currentTab" href="/currentActivity.action"><strong>Current Activity</strong></a>
+            </li>
+
+    </ul>
+    <div class="tabs-pane active-pane">
+        <div id="dashboard-controls" class="aui-toolbar inline">
+    <ul class="toolbar-group">
+        <li class="toolbar-item collapse-all">
+            <a class="toolbar-trigger">    <span class="icon icon-collapse-gh" title="Collapse All"><span>Collapse All</span></span></a>
+        </li>
+        <li class="toolbar-item expand-all">
+            <a class="toolbar-trigger">    <span class="icon icon-expand-gh" title="Expand All"><span>Expand All</span></span></a>
+        </li>
+    </ul>
+</div>
+<div id="ajaxErrorHolder" class="hidden">
+        <div  class="aui-message warning">
+            
+Background page refresh cannot contact server. Please ensure Bamboo server is available and <a href="">reload the page</a>.  The error was:            <span class="ajaxErrorMessage"></span>
+            <span class="aui-icon icon-warning"></span>
+    </div>
+</div><table class="aui aui-zebra" id="dashboard">
+<colgroup>
+<col width="16px"/>
+<col width="17%"/>
+<col width="20%" style="min-width: 200px;"/>
+<col width="10%"/>
+<col width=""/>
+<col width=""/>
+<col width=""/>
+<col width="70px"/>
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>Project</th>
+<th>Plan</th>
+<th>Build</th>
+<th>Completed</th>
+<th>Tests</th>
+<th>Reason</th>
+<th></th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="100" data-last-project-key="BATCH" class="show-more-plans">
+<div>
+<button class="show-more-trigger">Show more Plans</button>
+<p class="show-more-text">
+50 of 245 Plans shown </p>
+</div>
+</td>
+</tr>
+</tfoot>
+<tbody class="projectHeader hidden" data-project-id="97910785">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:GRADLEPLUGINS" href="/browse/GRADLEPLUGINS">Gradle Plugins</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-fail"></span> 1 of 3 Plans failed
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="97910785">
+<tr>
+<td class="twixie collapse" rowspan="3">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project" rowspan="3">
+<a id="viewProject:GRADLEPLUGINS" href="/browse/GRADLEPLUGINS">Gradle Plugins</a>
+</td>
+<td class="build">
+<a id="viewBuild:GRADLEPLUGINS-BUNDLOR" href="/browse/GRADLEPLUGINS-BUNDLOR" >bundlor-plugin</a>
+</td>
+<td class="planKeySection Failed">
+<a id="statusSectionGRADLEPLUGINS-BUNDLOR" class="statusIcon" href="/browse/GRADLEPLUGINS-BUNDLOR-60"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_failed_16.png" alt="The last build failed" title="The last build failed" /></a> <a id="latestBuildGRADLEPLUGINS-BUNDLOR" href="/browse/GRADLEPLUGINS-BUNDLOR/latest" title="Latest build">#60</a>
+</td>
+<td>
+<span id="lastBuiltSummaryGRADLEPLUGINS-BUNDLOR" title="02:13 PM, Fri, 1 Mar">1 month ago</span>
+</td>
+<td id="testSummaryGRADLEPLUGINS-BUNDLOR">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryGRADLEPLUGINS-BUNDLOR">Manual build by <a href="https://build.springsource.org/browse/user/pwebb">Phil Webb</a></span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:GRADLEPLUGINS-DOCBOOK" href="/browse/GRADLEPLUGINS-DOCBOOK" >docbook-reference-plugin</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionGRADLEPLUGINS-DOCBOOK" class="statusIcon" href="/browse/GRADLEPLUGINS-DOCBOOK-66"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildGRADLEPLUGINS-DOCBOOK" href="/browse/GRADLEPLUGINS-DOCBOOK/latest" title="Latest build">#66</a>
+</td>
+<td>
+<span id="lastBuiltSummaryGRADLEPLUGINS-DOCBOOK" title="05:36 PM, Thu, 28 Feb">1 month ago</span>
+</td>
+<td id="testSummaryGRADLEPLUGINS-DOCBOOK">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryGRADLEPLUGINS-DOCBOOK">Changes by <a href="https://build.springsource.org/browse/user/pwebb">Phil Webb</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryGRADLEPLUGINS-DOCBOOK", "GRADLEPLUGINS-DOCBOOK", "66"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:GRADLEPLUGINS-PROPDEPS" href="/browse/GRADLEPLUGINS-PROPDEPS" >propdeps-plugin</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionGRADLEPLUGINS-PROPDEPS" class="statusIcon" href="/browse/GRADLEPLUGINS-PROPDEPS-18"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildGRADLEPLUGINS-PROPDEPS" href="/browse/GRADLEPLUGINS-PROPDEPS/latest" title="Latest build">#18</a>
+</td>
+<td>
+<span id="lastBuiltSummaryGRADLEPLUGINS-PROPDEPS" title="05:35 PM, Thu, 28 Feb">1 month ago</span>
+</td>
+<td id="testSummaryGRADLEPLUGINS-PROPDEPS">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryGRADLEPLUGINS-PROPDEPS">Changes by <a href="https://build.springsource.org/browse/user/pwebb">Phil Webb</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryGRADLEPLUGINS-PROPDEPS", "GRADLEPLUGINS-PROPDEPS", "18"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+<tbody class="projectHeader hidden" data-project-id="112754690">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:GRECLIPSE" href="/browse/GRECLIPSE">Groovy-Eclipse</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-fail"></span> 3 of 6 Plans failed
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="112754690">
+<tr>
+<td class="twixie collapse" rowspan="6">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project" rowspan="6">
+<a id="viewProject:GRECLIPSE" href="/browse/GRECLIPSE">Groovy-Eclipse</a>
+</td>
+<td class="build">
+<a id="viewBuild:GRECLIPSE-E37" href="/browse/GRECLIPSE-E37" title="Builds Groovy-Eclipse on Eclipse 3.7">Groovy-Eclipse for E37</a>
+</td>
+<td class="planKeySection Failed">
+<a id="statusSectionGRECLIPSE-E37" class="statusIcon" href="/browse/GRECLIPSE-E37-139"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_failed_16.png" alt="The last build failed" title="The last build failed" /></a> <a id="latestBuildGRECLIPSE-E37" href="/browse/GRECLIPSE-E37/latest" title="Latest build">#139</a>
+</td>
+<td>
+<span id="lastBuiltSummaryGRECLIPSE-E37" title="03:09 PM, Sat, 20 Apr">2 days ago</span>
+</td>
+<td id="testSummaryGRECLIPSE-E37">
+727 of 2675 failed
+</td>
+<td>
+<span id="reasonSummaryGRECLIPSE-E37">Changes by <a href="https://build.springsource.org/browse/author/Andrew Eisenberg <aeisenberg@vmware.com>">Andrew Eisenberg &lt;aeisenberg@vmware.com&gt;</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryGRECLIPSE-E37", "GRECLIPSE-E37", "139"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:GRECLIPSE-E42" href="/browse/GRECLIPSE-E42" title="Builds Groovy-Eclipse on Eclipse 4.2">Groovy-Eclipse for E42</a>
+</td>
+<td class="planKeySection Failed">
+<a id="statusSectionGRECLIPSE-E42" class="statusIcon" href="/browse/GRECLIPSE-E42-203"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_failed_16.png" alt="The last build failed" title="The last build failed" /></a> <a id="latestBuildGRECLIPSE-E42" href="/browse/GRECLIPSE-E42/latest" title="Latest build">#203</a>
+</td>
+<td>
+<span id="lastBuiltSummaryGRECLIPSE-E42" title="02:06 PM, Sat, 20 Apr">3 days ago</span>
+</td>
+<td id="testSummaryGRECLIPSE-E42">
+726 of 2675 failed
+</td>
+<td>
+<span id="reasonSummaryGRECLIPSE-E42">Manual build by <a href="https://build.springsource.org/browse/user/aeisenberg">Andrew Eisenberg</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryGRECLIPSE-E42", "GRECLIPSE-E42", "203"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:GRECLIPSE-E43" href="/browse/GRECLIPSE-E43" >Groovy-Eclipse for E43</a>
+</td>
+<td class="planKeySection Failed">
+<a id="statusSectionGRECLIPSE-E43" class="statusIcon" href="/browse/GRECLIPSE-E43-68"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_failed_16.png" alt="The last build failed" title="The last build failed" /></a> <a id="latestBuildGRECLIPSE-E43" href="/browse/GRECLIPSE-E43/latest" title="Latest build">#68</a>
+</td>
+<td>
+<span id="lastBuiltSummaryGRECLIPSE-E43" title="02:04 PM, Sat, 20 Apr">3 days ago</span>
+</td>
+<td id="testSummaryGRECLIPSE-E43">
+727 of 2675 failed
+</td>
+<td>
+<span id="reasonSummaryGRECLIPSE-E43">Changes by <a href="https://build.springsource.org/browse/author/Andrew Eisenberg <aeisenberg@vmware.com>">Andrew Eisenberg &lt;aeisenberg@vmware.com&gt;</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryGRECLIPSE-E43", "GRECLIPSE-E43", "68"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:GRECLIPSE-PUBLISH37" href="/browse/GRECLIPSE-PUBLISH37" title="Publish Groovy-Eclipse on E37">Publish Groovy-Eclipse for E37</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionGRECLIPSE-PUBLISH37" class="statusIcon" href="/browse/GRECLIPSE-PUBLISH37-106"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildGRECLIPSE-PUBLISH37" href="/browse/GRECLIPSE-PUBLISH37/latest" title="Latest build">#106</a>
+</td>
+<td>
+<span id="lastBuiltSummaryGRECLIPSE-PUBLISH37" title="11:55 AM, Fri, 19 Apr">4 days ago</span>
+</td>
+<td id="testSummaryGRECLIPSE-PUBLISH37">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryGRECLIPSE-PUBLISH37">Manual build by <a href="https://build.springsource.org/browse/user/aeisenberg">Andrew Eisenberg</a></span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:GRECLIPSE-PUBLISH42" href="/browse/GRECLIPSE-PUBLISH42" title="Publish Groovy-Eclipse on E42">Publish Groovy-Eclipse for E42</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionGRECLIPSE-PUBLISH42" class="statusIcon" href="/browse/GRECLIPSE-PUBLISH42-156"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildGRECLIPSE-PUBLISH42" href="/browse/GRECLIPSE-PUBLISH42/latest" title="Latest build">#156</a>
+</td>
+<td>
+<span id="lastBuiltSummaryGRECLIPSE-PUBLISH42" title="11:55 AM, Fri, 19 Apr">4 days ago</span>
+</td>
+<td id="testSummaryGRECLIPSE-PUBLISH42">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryGRECLIPSE-PUBLISH42">Manual build by <a href="https://build.springsource.org/browse/user/aeisenberg">Andrew Eisenberg</a></span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:GRECLIPSE-PUBLISH43" href="/browse/GRECLIPSE-PUBLISH43" >Publish Groovy-Eclipse for E43</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionGRECLIPSE-PUBLISH43" class="statusIcon" href="/browse/GRECLIPSE-PUBLISH43-52"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildGRECLIPSE-PUBLISH43" href="/browse/GRECLIPSE-PUBLISH43/latest" title="Latest build">#52</a>
+</td>
+<td>
+<span id="lastBuiltSummaryGRECLIPSE-PUBLISH43" title="11:55 AM, Fri, 19 Apr">4 days ago</span>
+</td>
+<td id="testSummaryGRECLIPSE-PUBLISH43">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryGRECLIPSE-PUBLISH43">Manual build by <a href="https://build.springsource.org/browse/user/aeisenberg">Andrew Eisenberg</a></span>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+<tbody class="projectHeader hidden" data-project-id="112754689">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:IMPALA" href="/browse/IMPALA">Impala</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-success"></span> 1 successful Plan
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="112754689">
+<tr>
+<td class="twixie collapse" rowspan="2">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project" rowspan="2">
+<a id="viewProject:IMPALA" href="/browse/IMPALA">Impala</a>
+</td>
+<td class="build">
+<a id="viewBuild:IMPALA-IMPALA" href="/browse/IMPALA-IMPALA" title="Impala">Impala</a>
+</td>
+<td class="planKeySection Suspended">
+<a id="statusSectionIMPALA-IMPALA" class="statusIcon" href="/browse/IMPALA-IMPALA-79"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_disabled_16.png" title="Plan Disabled" /></a> <a id="latestBuildIMPALA-IMPALA" href="/browse/IMPALA-IMPALA/latest" title="Latest build">#79</a>
+</td>
+<td>
+<span id="lastBuiltSummaryIMPALA-IMPALA" title="10:01 AM, Sun, 14 Oct">6 months ago</span>
+</td>
+<td id="testSummaryIMPALA-IMPALA">
+32 passed
+</td>
+<td>
+<span id="reasonSummaryIMPALA-IMPALA">Changes by <a href="https://build.springsource.org/browse/user/costin">Costin Leau</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryIMPALA-IMPALA", "IMPALA-IMPALA", "79"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:IMPALA-IMPALANIGHTLY" href="/browse/IMPALA-IMPALANIGHTLY" title="Nightly Build">Impala Nightly</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionIMPALA-IMPALANIGHTLY" class="statusIcon" href="/browse/IMPALA-IMPALANIGHTLY-353"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildIMPALA-IMPALANIGHTLY" href="/browse/IMPALA-IMPALANIGHTLY/latest" title="Latest build">#353</a>
+</td>
+<td>
+<span id="lastBuiltSummaryIMPALA-IMPALANIGHTLY" title="12:05 AM, Tue, 23 Apr">14 hours ago</span>
+</td>
+<td id="testSummaryIMPALA-IMPALANIGHTLY">
+32 passed
+</td>
+<td>
+<span id="reasonSummaryIMPALA-IMPALANIGHTLY">Scheduled</span>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+<tbody class="projectHeader hidden" data-project-id="92307457">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:PROJECT" href="/browse/PROJECT">Model Project</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-success"></span> 3 successful Plans
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="92307457">
+<tr>
+<td class="twixie collapse" rowspan="3">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project" rowspan="3">
+<a id="viewProject:PROJECT" href="/browse/PROJECT">Model Project</a>
+</td>
+<td class="build">
+<a id="viewBuild:PROJECT-B30X" href="/browse/PROJECT-B30X" title="build Spring Security 3.0.x with Artifactory support">3.0.x</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionPROJECT-B30X" class="statusIcon" href="/browse/PROJECT-B30X-3"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildPROJECT-B30X" href="/browse/PROJECT-B30X/latest" title="Latest build">#3</a>
+</td>
+<td>
+<span id="lastBuiltSummaryPROJECT-B30X" title="07:23 AM, Wed, 26 Sep">6 months ago</span>
+</td>
+<td id="testSummaryPROJECT-B30X">
+1372 passed
+</td>
+<td>
+<span id="reasonSummaryPROJECT-B30X">Manual build by <a href="https://build.springsource.org/browse/user/rwinch">Robert Winch</a></span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:PROJECT-GRADLE" href="/browse/PROJECT-GRADLE" title="Demonstrates use of Gradle to build a Spring project. See http://github.com/cbeams/model-project-gradle">Gradle</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionPROJECT-GRADLE" class="statusIcon" href="/browse/PROJECT-GRADLE-40"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildPROJECT-GRADLE" href="/browse/PROJECT-GRADLE/latest" title="Latest build">#40</a>
+</td>
+<td>
+<span id="lastBuiltSummaryPROJECT-GRADLE" title="01:03 AM, Thu, 19 Apr">1 year ago</span>
+</td>
+<td id="testSummaryPROJECT-GRADLE">
+2 passed
+</td>
+<td>
+<span id="reasonSummaryPROJECT-GRADLE">Manual build by <a href="https://build.springsource.org/browse/user/cbeams">Chris Beams</a></span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:PROJECT-MAVEN" href="/browse/PROJECT-MAVEN" title="Demonstrates use of Maven to build a Spring project">Maven</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionPROJECT-MAVEN" class="statusIcon" href="/browse/PROJECT-MAVEN-7"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildPROJECT-MAVEN" href="/browse/PROJECT-MAVEN/latest" title="Latest build">#7</a>
+</td>
+<td>
+<span id="lastBuiltSummaryPROJECT-MAVEN" title="11:36 PM, Tue, 14 Feb">1 year ago</span>
+</td>
+<td id="testSummaryPROJECT-MAVEN">
+2 passed
+</td>
+<td>
+<span id="reasonSummaryPROJECT-MAVEN">Manual build by <a href="https://build.springsource.org/browse/user/cbeams">Chris Beams</a></span>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+<tbody class="projectHeader hidden" data-project-id="49283073">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:AJDT" href="/browse/AJDT">org.eclipse.ajdt</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-fail"></span> 2 of 5 Plans failed
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="49283073">
+<tr>
+<td class="twixie collapse" rowspan="5">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project" rowspan="5">
+<a id="viewProject:AJDT" href="/browse/AJDT">org.eclipse.ajdt</a>
+</td>
+<td class="build">
+<a id="viewBuild:AJDT-E35" href="/browse/AJDT-E35" >AJDT For Eclipse 3.5</a>
+</td>
+<td class="planKeySection Suspended">
+<a id="statusSectionAJDT-E35" class="statusIcon" href="/browse/AJDT-E35-134"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_disabled_16.png" title="Plan Disabled" /></a> <a id="latestBuildAJDT-E35" href="/browse/AJDT-E35/latest" title="Latest build">#134</a>
+</td>
+<td>
+<span id="lastBuiltSummaryAJDT-E35" title="08:14 PM, Wed, 19 Jan">2 years ago</span>
+</td>
+<td id="testSummaryAJDT-E35">
+534 passed
+</td>
+<td>
+<span id="reasonSummaryAJDT-E35">Changes by <a href="https://build.springsource.org/browse/user/aeisenberg">Andrew Eisenberg</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryAJDT-E35", "AJDT-E35", "134"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:AJDT-E36" href="/browse/AJDT-E36" >AJDT For Eclipse 3.6</a>
+</td>
+<td class="planKeySection Failed">
+<a id="statusSectionAJDT-E36" class="statusIcon" href="/browse/AJDT-E36-329"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_failed_16.png" alt="The last build failed" title="The last build failed" /></a> <a id="latestBuildAJDT-E36" href="/browse/AJDT-E36/latest" title="Latest build">#329</a>
+</td>
+<td>
+<span id="lastBuiltSummaryAJDT-E36" title="03:39 PM, Mon, 7 May">11 months ago</span>
+</td>
+<td id="testSummaryAJDT-E36">
+60 of 1079 failed
+</td>
+<td>
+<span id="reasonSummaryAJDT-E36">Manual build by <a href="https://build.springsource.org/browse/user/aeisenberg">Andrew Eisenberg</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryAJDT-E36", "AJDT-E36", "329"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:AJDT-E37" href="/browse/AJDT-E37" >AJDT For Eclipse 3.7</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionAJDT-E37" class="statusIcon" href="/browse/AJDT-E37-238"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildAJDT-E37" href="/browse/AJDT-E37/latest" title="Latest build">#238</a>
+</td>
+<td>
+<span id="lastBuiltSummaryAJDT-E37" title="10:27 PM, Mon, 25 Feb">1 month ago</span>
+</td>
+<td id="testSummaryAJDT-E37">
+1106 passed
+</td>
+<td>
+<span id="reasonSummaryAJDT-E37">Changes by <a href="https://build.springsource.org/browse/author/Andrew Eisenberg <andrew@eisenberg.as>">Andrew Eisenberg &lt;andrew@eisenberg.as&gt;</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryAJDT-E37", "AJDT-E37", "238"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:AJDT-E42" href="/browse/AJDT-E42" >AJDT For Eclipse 4.2</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionAJDT-E42" class="statusIcon" href="/browse/AJDT-E42-93"> <img src="/s/en_US-418945332/3402/1/_/images/jt/icn_building.gif" alt="Build in progress" title="Build in progress" /></a> <a id="latestBuildAJDT-E42" href="/browse/AJDT-E42/latest" title="Latest build">#92</a>
+</td>
+<td>
+<span id="lastBuiltSummaryAJDT-E42" title="04:09 PM, Sun, 21 Apr">1 day ago</span>
+</td>
+<td id="testSummaryAJDT-E42">
+1106 passed
+</td>
+<td>
+<span id="reasonSummaryAJDT-E42">Changes by <a href="https://build.springsource.org/browse/author/Andrew Eisenberg <andrew@eisenberg.as>">Andrew Eisenberg &lt;andrew@eisenberg.as&gt;</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryAJDT-E42", "AJDT-E42", "92"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:AJDT-E43" href="/browse/AJDT-E43" >AJDT For Eclipse 4.3</a>
+</td>
+<td class="planKeySection Failed">
+<a id="statusSectionAJDT-E43" class="statusIcon" href="/browse/AJDT-E43-26"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_failed_16.png" alt="The last build failed" title="The last build failed" /></a> <a id="latestBuildAJDT-E43" href="/browse/AJDT-E43/latest" title="Latest build">#26</a>
+</td>
+<td>
+<span id="lastBuiltSummaryAJDT-E43" title="11:08 AM, Tue, 19 Mar">1 month ago</span>
+</td>
+<td id="testSummaryAJDT-E43">
+3 of 1077 failed
+</td>
+<td>
+<span id="reasonSummaryAJDT-E43">Changes by <a href="https://build.springsource.org/browse/author/Andrew Eisenberg <andrew@eisenberg.as>">Andrew Eisenberg &lt;andrew@eisenberg.as&gt;</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryAJDT-E43", "AJDT-E43", "26"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+<tbody class="projectHeader hidden" data-project-id="27951106">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:FACES" href="/browse/FACES">org.springframework.faces</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-success"></span> 1 successful Plan
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="27951106">
+<tr>
+<td class="twixie collapse" rowspan="2">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project" rowspan="2">
+<a id="viewProject:FACES" href="/browse/FACES">org.springframework.faces</a>
+</td>
+<td class="build">
+<a id="viewBuild:FACES-TRUNKQUICK" href="/browse/FACES-TRUNKQUICK" >trunk - Quick</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionFACES-TRUNKQUICK" class="statusIcon" href="/browse/FACES-TRUNKQUICK-5"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildFACES-TRUNKQUICK" href="/browse/FACES-TRUNKQUICK/latest" title="Latest build">#5</a>
+</td>
+<td>
+<span id="lastBuiltSummaryFACES-TRUNKQUICK" title="02:58 PM, Wed, 10 Dec">4 years ago</span>
+</td>
+<td id="testSummaryFACES-TRUNKQUICK">
+46 passed
+</td>
+<td>
+<span id="reasonSummaryFACES-TRUNKQUICK">Changes by <a href="https://build.springsource.org/browse/user/jgrelle">Jeremy Grelle</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryFACES-TRUNKQUICK", "FACES-TRUNKQUICK", "5"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:FACES-TRUNKSNAPSHOT" href="/browse/FACES-TRUNKSNAPSHOT" >trunk - Snapshot</a>
+</td>
+<td class="planKeySection Suspended">
+<a id="statusSectionFACES-TRUNKSNAPSHOT" class="statusIcon" href="/browse/FACES-TRUNKSNAPSHOT-822"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_disabled_16.png" title="Plan Disabled" /></a> <a id="latestBuildFACES-TRUNKSNAPSHOT" href="/browse/FACES-TRUNKSNAPSHOT/latest" title="Latest build">#822</a>
+</td>
+<td>
+<span id="lastBuiltSummaryFACES-TRUNKSNAPSHOT" title="01:00 AM, Sun, 13 Mar">2 years ago</span>
+</td>
+<td id="testSummaryFACES-TRUNKSNAPSHOT">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryFACES-TRUNKSNAPSHOT">Scheduled</span>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+<tbody class="projectHeader hidden" data-project-id="27951107">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:FLEX" href="/browse/FLEX">org.springframework.flex</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-success"></span> 4 successful Plans
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="27951107">
+<tr>
+<td class="twixie collapse" rowspan="4">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project" rowspan="4">
+<a id="viewProject:FLEX" href="/browse/FLEX">org.springframework.flex</a>
+</td>
+<td class="build">
+<a id="viewBuild:FLEX-TRUNKQUICK" href="/browse/FLEX-TRUNKQUICK" >master - Quick</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionFLEX-TRUNKQUICK" class="statusIcon" href="/browse/FLEX-TRUNKQUICK-392"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildFLEX-TRUNKQUICK" href="/browse/FLEX-TRUNKQUICK/latest" title="Latest build">#392</a>
+</td>
+<td>
+<span id="lastBuiltSummaryFLEX-TRUNKQUICK" title="09:02 PM, Mon, 7 Nov">1 year ago</span>
+</td>
+<td id="testSummaryFLEX-TRUNKQUICK">
+266 passed
+</td>
+<td>
+<span id="reasonSummaryFLEX-TRUNKQUICK">Changes by <a href="https://build.springsource.org/browse/author/Jeremy Grelle">Jeremy Grelle</a> and <a href="https://build.springsource.org/browse/author/Rohit Kumar">Rohit Kumar</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryFLEX-TRUNKQUICK", "FLEX-TRUNKQUICK", "392"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:FLEX-TRUNKSNAPSHOT" href="/browse/FLEX-TRUNKSNAPSHOT" >master - Snapshot</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionFLEX-TRUNKSNAPSHOT" class="statusIcon" href="/browse/FLEX-TRUNKSNAPSHOT-1579"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildFLEX-TRUNKSNAPSHOT" href="/browse/FLEX-TRUNKSNAPSHOT/latest" title="Latest build">#1579</a>
+</td>
+<td>
+<span id="lastBuiltSummaryFLEX-TRUNKSNAPSHOT" title="02:04 AM, Tue, 23 Apr">12 hours ago</span>
+</td>
+<td id="testSummaryFLEX-TRUNKSNAPSHOT">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryFLEX-TRUNKSNAPSHOT">Scheduled</span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:FLEX-ROOQUICK" href="/browse/FLEX-ROOQUICK" >roo addon - Quick</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionFLEX-ROOQUICK" class="statusIcon" href="/browse/FLEX-ROOQUICK-6"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildFLEX-ROOQUICK" href="/browse/FLEX-ROOQUICK/latest" title="Latest build">#6</a>
+</td>
+<td>
+<span id="lastBuiltSummaryFLEX-ROOQUICK" title="01:30 PM, Tue, 16 Aug">1 year ago</span>
+</td>
+<td id="testSummaryFLEX-ROOQUICK">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryFLEX-ROOQUICK">Changes by <a href="https://build.springsource.org/browse/author/Jeremy Grelle">Jeremy Grelle</a> and <a href="https://build.springsource.org/browse/author/Marcello Teodori">Marcello Teodori</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryFLEX-ROOQUICK", "FLEX-ROOQUICK", "6"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:FLEX-ROOSNAPSHOT" href="/browse/FLEX-ROOSNAPSHOT" >roo addon - Snapshot</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionFLEX-ROOSNAPSHOT" class="statusIcon" href="/browse/FLEX-ROOSNAPSHOT-793"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildFLEX-ROOSNAPSHOT" href="/browse/FLEX-ROOSNAPSHOT/latest" title="Latest build">#793</a>
+</td>
+<td>
+<span id="lastBuiltSummaryFLEX-ROOSNAPSHOT" title="02:12 AM, Tue, 23 Apr">12 hours ago</span>
+</td>
+<td id="testSummaryFLEX-ROOSNAPSHOT">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryFLEX-ROOSNAPSHOT">Scheduled</span>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+<tbody class="projectHeader hidden" data-project-id="27951105">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:SJS" href="/browse/SJS">org.springframework.js</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-success"></span> 1 successful Plan
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="27951105">
+<tr>
+<td class="twixie collapse" rowspan="2">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project" rowspan="2">
+<a id="viewProject:SJS" href="/browse/SJS">org.springframework.js</a>
+</td>
+<td class="build">
+<a id="viewBuild:SJS-TRUNKQUICK" href="/browse/SJS-TRUNKQUICK" >trunk - Quick</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionSJS-TRUNKQUICK" class="statusIcon" href="/browse/SJS-TRUNKQUICK-32"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildSJS-TRUNKQUICK" href="/browse/SJS-TRUNKQUICK/latest" title="Latest build">#32</a>
+</td>
+<td>
+<span id="lastBuiltSummarySJS-TRUNKQUICK" title="10:47 PM, Thu, 24 Dec">3 years ago</span>
+</td>
+<td id="testSummarySJS-TRUNKQUICK">
+6 passed
+</td>
+<td>
+<span id="reasonSummarySJS-TRUNKQUICK">Changes by <a href="https://build.springsource.org/browse/user/jgrelle">Jeremy Grelle</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummarySJS-TRUNKQUICK", "SJS-TRUNKQUICK", "32"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:SJS-TRUNKSNAPSHOT" href="/browse/SJS-TRUNKSNAPSHOT" >trunk - Snapshot</a>
+</td>
+<td class="planKeySection Suspended">
+<a id="statusSectionSJS-TRUNKSNAPSHOT" class="statusIcon" href="/browse/SJS-TRUNKSNAPSHOT-825"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_disabled_16.png" title="Plan Disabled" /></a> <a id="latestBuildSJS-TRUNKSNAPSHOT" href="/browse/SJS-TRUNKSNAPSHOT/latest" title="Latest build">#825</a>
+</td>
+<td>
+<span id="lastBuiltSummarySJS-TRUNKSNAPSHOT" title="01:00 AM, Sun, 13 Mar">2 years ago</span>
+</td>
+<td id="testSummarySJS-TRUNKSNAPSHOT">
+No tests found
+</td>
+<td>
+<span id="reasonSummarySJS-TRUNKSNAPSHOT">Scheduled</span>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+<tbody class="projectHeader hidden" data-project-id="74809345">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:RETRY" href="/browse/RETRY">org.springframework.retry</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-success"></span> 1 successful Plan
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="74809345">
+<tr>
+<td class="twixie collapse">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:RETRY" href="/browse/RETRY">org.springframework.retry</a>
+</td>
+<td class="build">
+<a id="viewBuild:RETRY-NIGHTLY" href="/browse/RETRY-NIGHTLY" title="Spring Retry nightly snapshot build">Nightly Snapshot</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionRETRY-NIGHTLY" class="statusIcon" href="/browse/RETRY-NIGHTLY-795"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildRETRY-NIGHTLY" href="/browse/RETRY-NIGHTLY/latest" title="Latest build">#795</a>
+</td>
+<td>
+<span id="lastBuiltSummaryRETRY-NIGHTLY" title="01:30 AM, Tue, 23 Apr">13 hours ago</span>
+</td>
+<td id="testSummaryRETRY-NIGHTLY">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryRETRY-NIGHTLY">Scheduled</span>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+<tbody class="projectHeader hidden" data-project-id="93323266">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:REACTOR" href="/browse/REACTOR">Reactor</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-success"></span> 1 successful Plan
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="93323266">
+<tr>
+<td class="twixie collapse">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:REACTOR" href="/browse/REACTOR">Reactor</a>
+</td>
+<td class="build">
+<a id="viewBuild:REACTOR-CORE" href="/browse/REACTOR-CORE" title="Reactor Core">Core</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionREACTOR-CORE" class="statusIcon" href="/browse/REACTOR-CORE-217216"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildREACTOR-CORE" href="/browse/REACTOR-CORE/latest" title="Latest build">#217216</a>
+</td>
+<td>
+<span id="lastBuiltSummaryREACTOR-CORE" title="08:53 AM, Mon, 22 Apr">1 day ago</span>
+</td>
+<td id="testSummaryREACTOR-CORE">
+47 passed
+</td>
+<td>
+<span id="reasonSummaryREACTOR-CORE">Changes by <a href="https://build.springsource.org/browse/user/jbrisbin">Jon Brisbin</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryREACTOR-CORE", "REACTOR-CORE", "217216"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+<tbody class="projectHeader hidden" data-project-id="57835521">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:AMQP" href="/browse/AMQP">Spring AMQP</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-success"></span> 3 successful Plans
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="57835521">
+<tr>
+<td class="twixie collapse" rowspan="7">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project" rowspan="7">
+<a id="viewProject:AMQP" href="/browse/AMQP">Spring AMQP</a>
+</td>
+<td class="build">
+<a id="viewBuild:AMQP-B11X" href="/browse/AMQP-B11X" title="1.1.x Maintenance Releases">1.1.x</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionAMQP-B11X" class="statusIcon" href="/browse/AMQP-B11X-45"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildAMQP-B11X" href="/browse/AMQP-B11X/latest" title="Latest build">#45</a>
+</td>
+<td>
+<span id="lastBuiltSummaryAMQP-B11X" title="08:23 AM, Sat, 30 Mar">3 weeks ago</span>
+</td>
+<td id="testSummaryAMQP-B11X">
+382 passed
+</td>
+<td>
+<span id="reasonSummaryAMQP-B11X">Manual build by <a href="https://build.springsource.org/browse/user/grussell">Gary Russell</a></span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:AMQP-GRADLE" href="/browse/AMQP-GRADLE" >Gradle</a>
+</td>
+<td class="planKeySection Suspended">
+<a id="statusSectionAMQP-GRADLE" class="statusIcon" href="/browse/AMQP-GRADLE-19"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_disabled_16.png" title="Plan Disabled" /></a> <a id="latestBuildAMQP-GRADLE" href="/browse/AMQP-GRADLE/latest" title="Latest build">#19</a>
+</td>
+<td>
+<span id="lastBuiltSummaryAMQP-GRADLE" title="06:10 PM, Wed, 17 Nov">2 years ago</span>
+</td>
+<td id="testSummaryAMQP-GRADLE">
+37 passed
+</td>
+<td>
+<span id="reasonSummaryAMQP-GRADLE">Changes by <a href="https://build.springsource.org/browse/AMQP-GRADLE-19#changesSummary">6 people</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryAMQP-GRADLE", "AMQP-GRADLE", "19"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:AMQP-INTEGRATION" href="/browse/AMQP-INTEGRATION" title="Integration tests inclusing RabbitMQ broker">Integration</a>
+</td>
+<td class="planKeySection Suspended">
+<a id="statusSectionAMQP-INTEGRATION" class="statusIcon" href="/browse/AMQP-INTEGRATION-459"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_disabled_16.png" title="Plan Disabled" /></a> <a id="latestBuildAMQP-INTEGRATION" href="/browse/AMQP-INTEGRATION/latest" title="Latest build">#459</a>
+</td>
+<td>
+<span id="lastBuiltSummaryAMQP-INTEGRATION" title="02:37 AM, Tue, 19 Jun">10 months ago</span>
+</td>
+<td id="testSummaryAMQP-INTEGRATION">
+20 of 340 failed
+</td>
+<td>
+<span id="reasonSummaryAMQP-INTEGRATION">Scheduled</span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:AMQP-MASTER" href="/browse/AMQP-MASTER" title="Spring AMQP - Master Branch - https://github.com/SpringSource/spring-amqp">Master (1.2.x)</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionAMQP-MASTER" class="statusIcon" href="/browse/AMQP-MASTER-83"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildAMQP-MASTER" href="/browse/AMQP-MASTER/latest" title="Latest build">#83</a>
+</td>
+<td>
+<span id="lastBuiltSummaryAMQP-MASTER" title="08:10 AM, Mon, 1 Apr">3 weeks ago</span>
+</td>
+<td id="testSummaryAMQP-MASTER">
+413 passed
+</td>
+<td>
+<span id="reasonSummaryAMQP-MASTER">Changes by <a href="https://build.springsource.org/browse/user/buildmaster">Spring Buildmaster</a> and <a href="https://build.springsource.org/browse/author/Gary Russell <grussell@vmware.com>">Gary Russell &lt;grussell@vmware.com&gt;</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryAMQP-MASTER", "AMQP-MASTER", "83"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:AMQP-NIGHTLY" href="/browse/AMQP-NIGHTLY" >Nightly</a>
+</td>
+<td class="planKeySection Suspended">
+<a id="statusSectionAMQP-NIGHTLY" class="statusIcon" href="/browse/AMQP-NIGHTLY-710"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_disabled_16.png" title="Plan Disabled" /></a> <a id="latestBuildAMQP-NIGHTLY" href="/browse/AMQP-NIGHTLY/latest" title="Latest build">#710</a>
+</td>
+<td>
+<span id="lastBuiltSummaryAMQP-NIGHTLY" title="01:31 AM, Tue, 19 Jun">10 months ago</span>
+</td>
+<td id="testSummaryAMQP-NIGHTLY">
+145 passed
+</td>
+<td>
+<span id="reasonSummaryAMQP-NIGHTLY">Scheduled</span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:AMQP-SONAR" href="/browse/AMQP-SONAR" title="Sonar Build (Master) - https://sonar.springsource.org/dashboard/index/org.springframework.amqp:spring-amqp">Sonar</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionAMQP-SONAR" class="statusIcon" href="/browse/AMQP-SONAR-345"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildAMQP-SONAR" href="/browse/AMQP-SONAR/latest" title="Latest build">#345</a>
+</td>
+<td>
+<span id="lastBuiltSummaryAMQP-SONAR" title="02:39 AM, Tue, 23 Apr">12 hours ago</span>
+</td>
+<td id="testSummaryAMQP-SONAR">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryAMQP-SONAR">Scheduled</span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:AMQP-TRUNK" href="/browse/AMQP-TRUNK" >Trunk</a>
+</td>
+<td class="planKeySection Suspended">
+<a id="statusSectionAMQP-TRUNK" class="statusIcon" href="/browse/AMQP-TRUNK-164"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_disabled_16.png" title="Plan Disabled" /></a> <a id="latestBuildAMQP-TRUNK" href="/browse/AMQP-TRUNK/latest" title="Latest build">#164</a>
+</td>
+<td>
+<span id="lastBuiltSummaryAMQP-TRUNK" title="08:42 AM, Thu, 31 May">10 months ago</span>
+</td>
+<td id="testSummaryAMQP-TRUNK">
+145 passed
+</td>
+<td>
+<span id="reasonSummaryAMQP-TRUNK">Changes by <a href="https://build.springsource.org/browse/author/Dave Syer <dsyer@vmware.com>">Dave Syer &lt;dsyer@vmware.com&gt;</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryAMQP-TRUNK", "AMQP-TRUNK", "164"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+<tbody class="projectHeader hidden" data-project-id="55312385">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:SEAMQP" href="/browse/SEAMQP">Spring AMQP - svn</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-fail"></span> 1 failed Plan
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="55312385">
+<tr>
+<td class="twixie collapse">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:SEAMQP" href="/browse/SEAMQP">Spring AMQP - svn</a>
+</td>
+<td class="build">
+<a id="viewBuild:SEAMQP-TRUNK" href="/browse/SEAMQP-TRUNK" >Spring AMQP Trunk</a>
+</td>
+<td class="planKeySection Failed">
+<a id="statusSectionSEAMQP-TRUNK" class="statusIcon" href="/browse/SEAMQP-TRUNK-52"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_failed_16.png" alt="The last build failed" title="The last build failed" /></a> <a id="latestBuildSEAMQP-TRUNK" href="/browse/SEAMQP-TRUNK/latest" title="Latest build">#52</a>
+</td>
+<td>
+<span id="lastBuiltSummarySEAMQP-TRUNK" title="05:28 PM, Wed, 23 Jun">2 years ago</span>
+</td>
+<td id="testSummarySEAMQP-TRUNK">
+13 passed
+</td>
+<td>
+<span id="reasonSummarySEAMQP-TRUNK">Changes by <a href="https://build.springsource.org/browse/user/mark-fisher">Mark Fisher</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummarySEAMQP-TRUNK", "SEAMQP-TRUNK", "52"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+<tbody class="projectHeader hidden" data-project-id="57835522">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:AMQPNET" href="/browse/AMQPNET">Spring AMQP .NET</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-success"></span> 1 successful Plan
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="57835522">
+<tr>
+<td class="twixie collapse" rowspan="2">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project" rowspan="2">
+<a id="viewProject:AMQPNET" href="/browse/AMQPNET">Spring AMQP .NET</a>
+</td>
+<td class="build">
+<a id="viewBuild:AMQPNET-DAILY" href="/browse/AMQPNET-DAILY" title="DAILY build">daily</a>
+</td>
+<td class="planKeySection Suspended">
+<a id="statusSectionAMQPNET-DAILY" class="statusIcon" href="/browse/AMQPNET-DAILY-8"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_disabled_16.png" title="Plan Disabled" /></a> <a id="latestBuildAMQPNET-DAILY" href="/browse/AMQPNET-DAILY/latest" title="Latest build">#8</a>
+<a id="comment_AMQPNET-DAILY-8" href="/browse/AMQPNET-DAILY-8"><img src="/images/message.gif" alt="Commented" /></a>
+<script type="text/javascript">
+AJS.$(function() {
+initCommentTooltip("comment_AMQPNET-DAILY-8", "AMQPNET-DAILY", "8")
+});
+</script>
+</td>
+<td>
+<span id="lastBuiltSummaryAMQPNET-DAILY">N/A</span>
+</td>
+<td id="testSummaryAMQPNET-DAILY">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryAMQPNET-DAILY">Changes by <a href="https://build.springsource.org/browse/author/Steve Bohlen <sbohlen@gmail.com>">Steve Bohlen &lt;sbohlen@gmail.com&gt;</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryAMQPNET-DAILY", "AMQPNET-DAILY", "8"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:AMQPNET-HEAD" href="/browse/AMQPNET-HEAD" title="Commit-triggered Build for HEAD of repo">head</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionAMQPNET-HEAD" class="statusIcon" href="/browse/AMQPNET-HEAD-72"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildAMQPNET-HEAD" href="/browse/AMQPNET-HEAD/latest" title="Latest build">#72</a>
+</td>
+<td>
+<span id="lastBuiltSummaryAMQPNET-HEAD" title="02:16 PM, Tue, 27 Nov">4 months ago</span>
+</td>
+<td id="testSummaryAMQPNET-HEAD">
+145 passed
+</td>
+<td>
+<span id="reasonSummaryAMQPNET-HEAD">Changes by <a href="https://build.springsource.org/browse/author/Steve Bohlen <sbohlen@gmail.com>">Steve Bohlen &lt;sbohlen@gmail.com&gt;</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryAMQPNET-HEAD", "AMQPNET-HEAD", "72"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+<tbody class="projectHeader hidden" data-project-id="7405570">
+<tr>
+<td class="twixie expand">
+<a tabindex="0"> <span class="icon icon-expand" title="Expand"><span>Expand</span></span></a>
+</td>
+<td class="project">
+<a id="viewProject:BATCH" href="/browse/BATCH">Spring Batch</a>
+</td>
+<td></td>
+<td colspan="5">
+<div class="statusMessage">
+<span class="icon icon-project-fail"></span> 1 of 11 Plans failed
+</div>
+</td>
+</tr>
+</tbody>
+<tbody class="project" data-project-id="7405570">
+<tr>
+<td class="twixie collapse" rowspan="11">
+<a tabindex="0"> <span class="icon icon-collapse" title="Collapse"><span>Collapse</span></span></a>
+</td>
+<td class="project" rowspan="11">
+<a id="viewProject:BATCH" href="/browse/BATCH">Spring Batch</a>
+</td>
+<td class="build">
+<a id="viewBuild:BATCH-11MAINTENANCE" href="/browse/BATCH-11MAINTENANCE" >1.1-maintenance</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionBATCH-11MAINTENANCE" class="statusIcon" href="/browse/BATCH-11MAINTENANCE-70"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildBATCH-11MAINTENANCE" href="/browse/BATCH-11MAINTENANCE/latest" title="Latest build">#70</a>
+</td>
+<td>
+<span id="lastBuiltSummaryBATCH-11MAINTENANCE" title="01:08 PM, Mon, 22 Nov">2 years ago</span>
+</td>
+<td id="testSummaryBATCH-11MAINTENANCE">
+1366 passed
+</td>
+<td>
+<span id="reasonSummaryBATCH-11MAINTENANCE">Changes by <a href="https://build.springsource.org/browse/BATCH-11MAINTENANCE-70#changesSummary">9 people</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryBATCH-11MAINTENANCE", "BATCH-11MAINTENANCE", "70"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:BATCH-14SAMPLES" href="/browse/BATCH-14SAMPLES" >14-samples</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionBATCH-14SAMPLES" class="statusIcon" href="/browse/BATCH-14SAMPLES-157"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildBATCH-14SAMPLES" href="/browse/BATCH-14SAMPLES/latest" title="Latest build">#157</a>
+</td>
+<td>
+<span id="lastBuiltSummaryBATCH-14SAMPLES" title="01:10 PM, Mon, 22 Nov">2 years ago</span>
+</td>
+<td id="testSummaryBATCH-14SAMPLES">
+110 passed
+</td>
+<td>
+<span id="reasonSummaryBATCH-14SAMPLES">Child of <a href="https://build.springsource.org/browse/BATCH-11MAINTENANCE-70">BATCH-11MAINTENANCE-70</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryBATCH-14SAMPLES", "BATCH-14SAMPLES", "157"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:BATCH-20MAINTENANCE" href="/browse/BATCH-20MAINTENANCE" >2.0 maintenance</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionBATCH-20MAINTENANCE" class="statusIcon" href="/browse/BATCH-20MAINTENANCE-50"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildBATCH-20MAINTENANCE" href="/browse/BATCH-20MAINTENANCE/latest" title="Latest build">#50</a>
+</td>
+<td>
+<span id="lastBuiltSummaryBATCH-20MAINTENANCE" title="01:06 PM, Mon, 22 Nov">2 years ago</span>
+</td>
+<td id="testSummaryBATCH-20MAINTENANCE">
+2026 passed
+</td>
+<td>
+<span id="reasonSummaryBATCH-20MAINTENANCE">Changes by <a href="https://build.springsource.org/browse/BATCH-20MAINTENANCE-50#changesSummary">10 people</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryBATCH-20MAINTENANCE", "BATCH-20MAINTENANCE", "50"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:BATCH-ADMNIGHTLY" href="/browse/BATCH-ADMNIGHTLY" >Admin Nightly</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionBATCH-ADMNIGHTLY" class="statusIcon" href="/browse/BATCH-ADMNIGHTLY-1268"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildBATCH-ADMNIGHTLY" href="/browse/BATCH-ADMNIGHTLY/latest" title="Latest build">#1268</a>
+</td>
+<td>
+<span id="lastBuiltSummaryBATCH-ADMNIGHTLY" title="02:48 AM, Tue, 23 Apr">12 hours ago</span>
+</td>
+<td id="testSummaryBATCH-ADMNIGHTLY">
+380 passed
+</td>
+<td>
+<span id="reasonSummaryBATCH-ADMNIGHTLY">Scheduled</span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:BATCH-ADMTRUNK" href="/browse/BATCH-ADMTRUNK" >Admin Trunk</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionBATCH-ADMTRUNK" class="statusIcon" href="/browse/BATCH-ADMTRUNK-312"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildBATCH-ADMTRUNK" href="/browse/BATCH-ADMTRUNK/latest" title="Latest build">#312</a>
+</td>
+<td>
+<span id="lastBuiltSummaryBATCH-ADMTRUNK" title="02:45 PM, Fri, 19 Apr">4 days ago</span>
+</td>
+<td id="testSummaryBATCH-ADMTRUNK">
+380 passed
+</td>
+<td>
+<span id="reasonSummaryBATCH-ADMTRUNK">Changes by <a href="https://build.springsource.org/browse/user/mminella">Michael Minella</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryBATCH-ADMTRUNK", "BATCH-ADMTRUNK", "312"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:BATCH-INT" href="/browse/BATCH-INT" >integration-tests</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionBATCH-INT" class="statusIcon" href="/browse/BATCH-INT-1605"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildBATCH-INT" href="/browse/BATCH-INT/latest" title="Latest build">#1605</a>
+</td>
+<td>
+<span id="lastBuiltSummaryBATCH-INT" title="08:16 PM, Mon, 22 Apr">18 hours ago</span>
+</td>
+<td id="testSummaryBATCH-INT">
+2846 passed
+</td>
+<td>
+<span id="reasonSummaryBATCH-INT">Child of <a href="https://build.springsource.org/browse/BATCH-NIGHTLY-2223">BATCH-NIGHTLY-2223</a></span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:BATCH-NIGHTLY" href="/browse/BATCH-NIGHTLY" >nightly</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionBATCH-NIGHTLY" class="statusIcon" href="/browse/BATCH-NIGHTLY-2223"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildBATCH-NIGHTLY" href="/browse/BATCH-NIGHTLY/latest" title="Latest build">#2223</a>
+</td>
+<td>
+<span id="lastBuiltSummaryBATCH-NIGHTLY" title="08:10 PM, Mon, 22 Apr">18 hours ago</span>
+</td>
+<td id="testSummaryBATCH-NIGHTLY">
+2799 passed
+</td>
+<td>
+<span id="reasonSummaryBATCH-NIGHTLY">Scheduled</span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:BATCH-SPR3INT" href="/browse/BATCH-SPR3INT" >Nightly Spring 3.0 Integration</a>
+</td>
+<td class="planKeySection Suspended">
+<a id="statusSectionBATCH-SPR3INT" class="statusIcon" href="/browse/BATCH-SPR3INT-1108"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_disabled_16.png" title="Plan Disabled" /></a> <a id="latestBuildBATCH-SPR3INT" href="/browse/BATCH-SPR3INT/latest" title="Latest build">#1108</a>
+</td>
+<td>
+<span id="lastBuiltSummaryBATCH-SPR3INT" title="08:13 PM, Sun, 23 Sep">6 months ago</span>
+</td>
+<td id="testSummaryBATCH-SPR3INT">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryBATCH-SPR3INT">Child of <a href="https://build.springsource.org/browse/BATCH-NIGHTLY-2006">BATCH-NIGHTLY-2006</a></span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:BATCH-NIGHTLYSITE" href="/browse/BATCH-NIGHTLYSITE" >nightly-site</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionBATCH-NIGHTLYSITE" class="statusIcon" href="/browse/BATCH-NIGHTLYSITE-1544"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildBATCH-NIGHTLYSITE" href="/browse/BATCH-NIGHTLYSITE/latest" title="Latest build">#1544</a>
+</td>
+<td>
+<span id="lastBuiltSummaryBATCH-NIGHTLYSITE" title="08:17 PM, Mon, 22 Apr">18 hours ago</span>
+</td>
+<td id="testSummaryBATCH-NIGHTLYSITE">
+No tests found
+</td>
+<td>
+<span id="reasonSummaryBATCH-NIGHTLYSITE">Child of <a href="https://build.springsource.org/browse/BATCH-NIGHTLY-2223">BATCH-NIGHTLY-2223</a></span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:BATCH-SONAR" href="/browse/BATCH-SONAR" title="Executing Sonar tasks">Sonar</a>
+</td>
+<td class="planKeySection Failed">
+<a id="statusSectionBATCH-SONAR" class="statusIcon" href="/browse/BATCH-SONAR-177"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_failed_16.png" alt="The last build failed" title="The last build failed" /></a> <a id="latestBuildBATCH-SONAR" href="/browse/BATCH-SONAR/latest" title="Latest build">#177</a>
+</td>
+<td>
+<span id="lastBuiltSummaryBATCH-SONAR" title="08:12 PM, Mon, 22 Apr">18 hours ago</span>
+</td>
+<td id="testSummaryBATCH-SONAR">
+2663 passed
+</td>
+<td>
+<span id="reasonSummaryBATCH-SONAR">Scheduled</span>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="build">
+<a id="viewBuild:BATCH-TRUNK" href="/browse/BATCH-TRUNK" >trunk</a>
+</td>
+<td class="planKeySection Successful">
+<a id="statusSectionBATCH-TRUNK" class="statusIcon" href="/browse/BATCH-TRUNK-6434"> <img src="/s/en_US-418945332/3402/1/_/images/iconsv3/plan_successful_16.png" alt="Last build was successful" title="Last build was successful"/></a> <a id="latestBuildBATCH-TRUNK" href="/browse/BATCH-TRUNK/latest" title="Latest build">#6434</a>
+</td>
+<td>
+<span id="lastBuiltSummaryBATCH-TRUNK" title="09:51 PM, Sat, 20 Apr">2 days ago</span>
+</td>
+<td id="testSummaryBATCH-TRUNK">
+2799 passed
+</td>
+<td>
+<span id="reasonSummaryBATCH-TRUNK">Changes by <a href="https://build.springsource.org/browse/user/mminella">Michael Minella</a></span>
+<script type="text/javascript">
+AJS.$(initCommitsTooltip("reasonSummaryBATCH-TRUNK", "BATCH-TRUNK", "6434"));
+</script>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<script type="text/javascript">
+(function ($) {
+var collapseAllProjects = function () {
+var projects = $("tbody.project"),
+projectHeaders = $("tbody.projectHeader");
+projects.hide();
+projectHeaders.show();
+projectHeaders.each(function() {
+var projectId = $(this).data("projectId");
+saveToConglomerateCookie(BAMBOO_DASH_DISPLAY_TOGGLES, projectId, '0');
+});
+},
+expandAllProjects = function () {
+var projects = $("tbody.project"),
+projectHeaders = $("tbody.projectHeader");
+projectHeaders.hide();
+projects.show();
+projectHeaders.each(function() {
+var projectId = $(this).data("projectId");
+saveToConglomerateCookie(BAMBOO_DASH_DISPLAY_TOGGLES, projectId, null);
+});
+},
+collapseProject = function ($sectionToHide) {
+var projectId = $sectionToHide.data("projectId");
+$sectionToHide.hide();
+$sectionToHide.prev("tbody").show();
+saveToConglomerateCookie(BAMBOO_DASH_DISPLAY_TOGGLES, projectId, '0');
+},
+expandProject = function ($sectionToHide) {
+var projectId = $sectionToHide.data("projectId");
+$sectionToHide.hide();
+$sectionToHide.next("tbody").show();
+saveToConglomerateCookie(BAMBOO_DASH_DISPLAY_TOGGLES, projectId, null);
+};
+$(document).delegate("#dashboard > tbody > tr > .twixie > a", "click", function (e) {
+var $twixie = $(this).closest("tbody");
+if ($twixie.hasClass("project")) {
+collapseProject($twixie);
+} else {
+expandProject($twixie);
+}
+});
+$("#dashboard-controls").delegate(".collapse-all > a", "click", collapseAllProjects)
+.delegate(".expand-all > a", "click", expandAllProjects);
+})(AJS.$);
+AJS.$(function() {
+AsynchronousRequestManager.init(".asynchronous", null, function (json) {
+if (json != undefined && json.status != undefined && json.status == "ERROR") {
+var $message = AJS.$("<div/>").addClass("error-holder"),
+$messageContainer = AJS.$("#ajaxErrorHolder"); // main Bamboo dashboard
+AJS.messages["error"]($message, { closeable: true, body: json.errors.join(" ") });
+$message.delay(5000).fadeOut(function () {
+AJS.$(this).remove();
+});
+if ($messageContainer.length == 0) {
+$messageContainer = AJS.$("#external-operations"); // project dashboard
+$message.insertAfter($messageContainer);
+} else {
+$message.insertAfter($messageContainer);
+}
+}
+updatePlans();
+});
+});
+(function () {
+var timeout,
+panelId = 'dashboardUpdatePlans';
+if (typeof BAMBOO.panelTimeouts === "undefined") {
+BAMBOO.panelTimeouts = {};
+} else {
+timeout = BAMBOO.panelTimeouts[panelId];
+clearTimeout(timeout);
+}
+BAMBOO.panelTimeouts[panelId] = setTimeout(function () { updatePlans(0); }, BAMBOO.reloadDashboardTimeout * 1000);
+BAMBOO.reloadDashboard = true;
+})();
+AJS.$(function($) {
+$(".stopMultipleBuilds").each(function() {
+var $this = $(this),
+planKey = $this.data("planKey");
+simpleDialogForm( $this, "/ajax/viewRunningPlans.action?planKey="+planKey+"&returnUrl=/allPlans.action",
+800, 400,
+"Stop all builds", "", null,
+null,
+null);
+});
+});
+BAMBOO.PlanBranchSelector({
+trigger: '.view-branches',
+includeLatestResult: true,
+templates: {
+branchItem: 'branchItem-template',
+branchItemActiveBuild: 'branchItemActiveBuild-template'
+}
+}).init();
+BAMBOO.DASHBOARD.Expander({
+toggleFilterClass: 'toggleFilter',
+triggerRootSelector: ".show-more-plans",
+triggerSelector: ".show-more-trigger",
+tableSelector: "#dashboard",
+pageSize: 50
+}).init();
+</script>
+<script type="text/x-template" title="branchItem-template"><li><span class="latest-build {latestResult.suspendedClass}"> <a href="/browse/{latestResult.key}" class="{latestResult.state}"> <span class="icon icon-{latestResult.state}"></span>{latestResult.number}</a>
+</span><span class="branch {latestResult.suspendedClass}"><a href="/browse/{key}" title="{description}">{shortName}</a></span></li></script>
+<script type="text/x-template" title="branchItemActiveBuild-template"><li><span class="latest-build {latestCurrentlyActive.suspendedClass}"> <a href="/browse/{latestCurrentlyActive.key}" class="{latestCurrentlyActive.lifeCycleState}"> <span class="icon icon-{latestCurrentlyActive.lifeCycleState}"></span>{latestCurrentlyActive.number}</a>
+</span><span class="branch {latestCurrentlyActive.suspendedClass}"><a href="/browse/{key}" title="{description}">{shortName}</a></span></li></script>
+
+<script type="text/javascript">
+    saveCookie("atlassian.bamboo.dashboard.tab.selected", "allPlansTab");
+</script>
+    </div>
+</div>
+
+    <footer>
+        <p>
+            <a href="/rss/createAllBuildsRssFeed.action?feedType=rssAll">    <span class="icon icon-rss" title="Point your rss reader at this link"><span>Point your rss reader at this link</span></span></a>
+Feed for <a id="allBuildsRssFeed" href="/rss/createAllBuildsRssFeed.action?feedType=rssAll">all builds</a> or <a id="allFailedBuildsRssFeed" href="/rss/createAllBuildsRssFeed.action?feedType=rssFailed">all failed builds</a>.        </p>
+    </footer>
+</section>
+            <footer id="footer" role="contentinfo">
+                <section class="notifications">
+    <div id="license-message" class="aui-message warning">
+            <p class="title">
+                <span class="aui-icon icon-warning"></span>
+                <strong>Powered by a free Atlassian <a href="http://www.atlassian.com/software/bamboo/">Bamboo</a> open source license for SpringSource. Try Bamboo - The Zen of Continuous Integration.</strong>
+            </p>
+            
+    </div>
+                </section>
+            <div class="footer-body">
+                <p><a href="http://www.atlassian.com/software/bamboo/">Continuous integration</a> powered by <a href="http://www.atlassian.com/software/bamboo/">Atlassian Bamboo</a> version 4.3.2 build 3402 - <time datetime="2012-11-27T23:40:39">27 Nov 12</time>
+                </p>
+                <ul>
+                    <li><a href="https://support.atlassian.com/secure/CreateIssue.jspa?pid=10060&amp;issuetype=1">Report a problem</a></li><li><a href="http://jira.atlassian.com/secure/CreateIssue.jspa?pid=11011&amp;issuetype=4">Request a feature</a></li><li><a href="http://www.atlassian.com/about/contact.jsp">Contact Atlassian</a></li><li><a href="/viewAdministrators.action">Contact Administrators</a></li>
+                </ul>
+            </div> <!-- END .footer-body -->
+        </footer> <!-- END #footer -->
+    </div> <!-- END #page -->
+
+    </body>
+</html>

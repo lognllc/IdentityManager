@@ -1,0 +1,49 @@
+ function popitup(url) {
+
+  newwindow=window.open(url,'name','height=240,width=640');
+
+  if (window.focus) {newwindow.focus()}
+
+  return false;
+
+ }
+
+ function popitup2(url) {
+
+   newwindow=window.open(url,'name','height=250,width=640');
+
+   if (window.focus) {newwindow.focus()}
+
+   return false;
+
+ }
+
+ function popitup3(url) {
+
+    newwindow=window.open(url,'name','height=440,width=640');
+
+    if (window.focus) {newwindow.focus()}
+
+    return false;
+
+ }
+
+ function popitup4(url) {
+
+     newwindow=window.open(url,'name','height=265,width=640');
+
+     if (window.focus) {newwindow.focus()}
+
+     return false;
+
+ }
+
+ function popitup5(url) {
+
+      newwindow=window.open(url,'name','height=300,width=640');
+
+      if (window.focus) {newwindow.focus()}
+
+      return false;
+
+ }

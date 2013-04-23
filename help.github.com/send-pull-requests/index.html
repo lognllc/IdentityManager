@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub:Help" />
+  <title>Using Pull Requests &middot; GitHub Help</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link href="/assets/help/application-8ccd9d2b0d3b484ed97bc77a2be7097c.css" media="screen" rel="stylesheet" type="text/css" />
+  <!--[if lt IE 8]>
+    <link href="/assets/help/ie-hacks-48d337e8a40494e5de0811cda84ab0c6.css" media="screen" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
+  <script src="/assets/help/application-c1f2eff3666b81a7aa1eaf50253eefca.js" type="text/javascript"></script>
+
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="ehEa/hRXQ+RV1OpA41VqOUa1ab5QD0OiJIvvDgB5rIY=" name="csrf-token" />
+</head>
+
+<body class=" platform-mac platform-windows platform-linux platform-all" id="com">
+<div id="not-footer">
+  <div id="header">
+    <div class="clearfix">
+        <h1 class="site-logo"><a href="/">GitHub Help</a></h1>
+
+      <ul class="top-nav">
+        <li>
+          <a href="/contact?article_slug=using-pull-requests">
+            Contact Support
+          </a>
+        </li>
+        <li><a href="http://www.github.com/">Back to GitHub</a></li>
+
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div id="content-wrapper">
+    <div class="site">
+
+      <div class="content-header small">
+  <h6 class="breadcrumbs">
+    <a href="/categories/63/articles">Collaborating</a>
+    /
+    Using Pull Requests
+  </h6>
+
+  <div class="search-form small">
+    <form accept-charset="UTF-8" action="/articles/search" id="articles-search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <div class="outer">
+    <div class="inner fade-label">
+      <input type="text" name="q" id="q" class="js-articles-quicksearch"
+        placeholder="How can we help?" data-url="/articles/quicksearch" />
+      <button><span class="mini-icon search-input"></span>Search</button>
+      <div class="autocomplete-results" style="display: none"></div>
+    </div>
+  </div>
+</form>
+  </div>
+</div>
+
+<div class="article">
+  <h2>Using Pull Requests</h2>
+
+  <div id="article-platform-nav">
+    <ul>
+        <li class="platform-mac">
+          <a href="#platform-mac" data-platform=mac>
+            mac
+          </a>
+        </li>
+        <li class="platform-windows">
+          <a href="#platform-windows" data-platform=windows>
+            windows
+          </a>
+        </li>
+        <li class="platform-linux">
+          <a href="#platform-linux" data-platform=linux>
+            linux
+          </a>
+        </li>
+        <li class="platform-all">
+          <a href="#platform-all" data-platform=all>
+            all
+          </a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="article-body content-body wikistyle markdown-format">
+      <p class="intro">
+Pull requests let you tell others about changes you've pushed to a GitHub repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.
+</p>
+
+<p class="intro">
+This guide walks through the process of sending a hypothetical pull request and using the various code review and management tools to take the change to completion.
+</p>
+
+<h3>
+<a name="a-quick-note-on-collaborative-development-models" class="anchor" href="#a-quick-note-on-collaborative-development-models"><span class="mini-icon mini-icon-link"></span></a>A Quick Note on Collaborative Development Models</h3>
+
+<p>There are two popular models of collaborative development on GitHub:</p>
+
+<h4>
+<a name="fork--pull" class="anchor" href="#fork--pull"><span class="mini-icon mini-icon-link"></span></a>Fork &amp; Pull</h4>
+
+<p>The <em>Fork &amp; Pull Model</em> lets anyone fork an existing repository and push changes to their personal fork without requiring access be granted to the source repository. The changes must then be pulled into the source repository by the project maintainer. This model reduces the amount of friction for new contributors and is popular with open source projects because it allows people to work independently without upfront coordination.</p>
+
+<h4>
+<a name="shared-repository-model" class="anchor" href="#shared-repository-model"><span class="mini-icon mini-icon-link"></span></a>Shared Repository Model</h4>
+
+<p>The <em>Shared Repository Model</em> is more prevalent with small teams and organizations collaborating on private projects. Everyone is granted push access to a single shared repository and topic branches are used to isolate changes.</p>
+
+<p>Pull requests are especially useful in the <em>Fork &amp; Pull Model</em> because they provide a way to notify project maintainers about changes in your fork. However, they're also useful in the <em>Shared Repository Model</em> where they're used to initiate code review and general discussion about a set of changes before being merged into a mainline branch.</p>
+
+<h3>
+<a name="before-you-begin" class="anchor" href="#before-you-begin"><span class="mini-icon mini-icon-link"></span></a>Before You Begin</h3>
+
+<p>This guide assumes that <a href="https://github.com/signup">you have a GitHub account</a>, that you've forked an existing repository and pushed your changes. For help with forking and pushing changes, see the <a href="/articles/fork-a-repo">Forking a Repo</a> article.</p>
+
+<h3>
+<a name="initiating-the-pull-request" class="anchor" href="#initiating-the-pull-request"><span class="mini-icon mini-icon-link"></span></a>Initiating The Pull Request</h3>
+
+<p>In the following example, <strong>codercat</strong> has completed some work on a fork of the Octocat's Spoon-Knife repo, pushed a commit to a topic branch in his fork, and would like someone to review and merge.</p>
+
+<p>Navigate to your repository with the changes you want someone else to pull and press the <em>Pull Request</em> button.</p>
+
+<ol>
+<li>Switch to your branch
+<img src="https://github-images.s3.amazonaws.com/help/pick-your-branch.png" alt="">
+</li>
+<li>Click the Pull Request button
+<img src="https://github-images.s3.amazonaws.com/help/click-pull-request.png" alt="">
+</li>
+</ol><p>Pull requests can be sent from any branch or commit but it's recommended that a topic branch be used so that follow-up commits can be pushed to update the pull request if necessary.</p>
+
+<h3>
+<a name="previewing-the-pull-request" class="anchor" href="#previewing-the-pull-request"><span class="mini-icon mini-icon-link"></span></a>Previewing The Pull Request</h3>
+
+<p>After pressing the <em>Pull Request</em> button, you are presented with a preview page where you can enter a title and optional description, see exactly what commits will be included when the pull request is sent, and also see who the pull request will be sent to:</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/pull-request.png" alt=""></p>
+
+<p>If you're sending from a topic branch, the title is pre-filled based on the name of the branch. Markdown is supported in the description, so you can embed images or use preformatted text blocks.</p>
+
+<p>Switch to the <em>Commits</em> tab to ensure that the correct set of changes is being sent:</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/my-commits.png" alt=""></p>
+
+<p>Review the diff of all changes by switching to the <em>Files Changed</em> tab:</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/my-changes.png" alt=""></p>
+
+<h3>
+<a name="changing-the-branch-range-and-destination-repository" class="anchor" href="#changing-the-branch-range-and-destination-repository"><span class="mini-icon mini-icon-link"></span></a>Changing The Branch Range and Destination Repository</h3>
+
+<p>By default, pull requests are assumed to be based on the parent-most repository's integration branch. In this case, the <code>codercat/Spoon-Knife</code> repository was forked from <code>octocat/Spoon-Knife</code> so the pull request is assumed to be based on the <code>master</code> branch of the <code>octocat/Spoon-Knife</code> repository. In a great majority of cases, the defaults will be right; however, if any of this information is incorrect, you can change the parent repo and branch from the drop-down lists.</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/change-branches.png" alt=""></p>
+
+<p>The easiest way of thinking about the branch range is this: the <em>base branch</em> is <strong>where</strong> you think changes should be applied, the <em>head branch</em> is <strong>what</strong> you would like to be applied.</p>
+
+<p>Changing the base repository changes who is notified of the pull request. Everyone that can push to the base repository will receive an email notification and see the new pull request in their dashboard the next time they log in.</p>
+
+<p>When you change any of the info in the branch range, the commit and files changed preview areas will update to show your new range.</p>
+
+<h3>
+<a name="sending-the-pull-request" class="anchor" href="#sending-the-pull-request"><span class="mini-icon mini-icon-link"></span></a>Sending The Pull Request</h3>
+
+<p>Once you've entered the title and description, made any necessary customizations to the commit range, and reviewed the commits and file changes to be sent, press the <em>Send pull request</em> button.</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/send-pull-request.png" alt=""></p>
+
+<p>The pull request is sent immediately. You're taken to the main pull request discussion and review page.</p>
+
+<h3>
+<a name="managing-pull-requests" class="anchor" href="#managing-pull-requests"><span class="mini-icon mini-icon-link"></span></a>Managing Pull Requests</h3>
+
+<p>All pull requests sent or received by you are browsable through the pull request dashboard.</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/manage-my-pull-requests.png" alt=""></p>
+
+<p>Pull requests for a specific repository are also browsable by anyone with access by visiting the <em>Pull Requests</em> page.</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/repo-pull-requests.png" alt=""></p>
+
+<p>The pull request dashboard and the repository pull request list support a wide range of filtering and sorting controls. Use them to narrow down the list to the pull requests you're interested in.</p>
+
+<h3>
+<a name="reviewing-proposed-changes" class="anchor" href="#reviewing-proposed-changes"><span class="mini-icon mini-icon-link"></span></a>Reviewing Proposed Changes</h3>
+
+<p>When you receive a pull request, the first thing to do is review the set of proposed changes. Pull requests are tightly integrated with the underlying git repository, so you can see exactly what commits would be merged should the request be accepted:</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/review-commits.png" alt=""></p>
+
+<p>You can also review the cumulative diff of all file changes across all commits.</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/review-changes.png" alt=""></p>
+
+<h3>
+<a name="pull-request-discussion" class="anchor" href="#pull-request-discussion"><span class="mini-icon mini-icon-link"></span></a>Pull Request Discussion</h3>
+
+<p>After reviewing the basic description, commits, and cumulative diff, the person tasked with applying the changes may have questions or comments. Perhaps the coding style doesn't match project guideline, or the change is missing unit tests, or maybe everything looks great and some props are in order. The discussion view is designed to encourage and capture this type of discussion.</p>
+
+<p><img src="https://github-images.s3.amazonaws.com/help/conversation.png" alt=""></p>
+
+<p>The discussion view starts with the pull request's original title and description and then captures additional activity to display chronologically from there. Any of the following types of activity are captured as they happen:</p>
+
+<ul>
+<li>Comments left on the pull request itself.</li>
+<li>Additional commits pushed to the pull request's branch.</li>
+<li>File and line notes left on any of the commits included in the pull request's range.</li>
+</ul><p>Pull request comments are Markdown compatible, so you can embed images, use preformatted text blocks, and other formatting supported by Markdown.</p>
+
+<h3>
+<a name="viewing-long-running-pull-requests" class="anchor" href="#viewing-long-running-pull-requests"><span class="mini-icon mini-icon-link"></span></a>Viewing long-running Pull Requests</h3>
+
+<p>When a feature or a bugfix goes on for months but never ships nor dies, you often want to take a closer look to see what's preventing that Pull Request from being resolved. Making it possible to find old but still-active Pull Requests makes that easier.</p>
+
+<p>You can view and sort long-running Pull Requests from your repository's Pull Request page.</p>
+
+<p><img src="https://f.cloud.github.com/assets/597/55249/a8e84136-5abd-11e2-943e-b852a1b3f44a.png" alt=""></p>
+
+<p>A long-running Pull Request is one that has existed for more than a month and which has seen activity within the past month. This filter displays those long-running Pull Requests sorted by life span: the amount of time from creation to the most recent activity.</p>
+
+<h3>
+<a name="related-topics" class="anchor" href="#related-topics"><span class="mini-icon mini-icon-link"></span></a>Related Topics</h3>
+
+<p><a href="https://help.github.com/articles/merging-a-pull-request">Merging a Pull Request</a><br><a href="https://help.github.com/articles/closing-a-pull-request">Closing a Pull Request</a><br><a href="https://help.github.com/articles/tidying-up-pull-requests">Tidying up Pull Requests</a></p>
+  </div>
+
+
+  <div class="footer">
+    <hr />
+    <ul class="article-footer button-nav">
+      <li>
+        <a href="/contact?article_slug=using-pull-requests" class="minibutton mini-icon discussion">contact a human</a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+  <div id="footer">
+    <div class="inner">
+      <a href="https://github.com" class="invertocat">
+        <img src="/assets/help/invertocat-5214d48b992946e30b3cd42e7904a389.png" width="24" height="24" />
+      </a>
+      <p class="left">
+        &copy; <span id="year">year</span> GitHub Inc. All rights reserved.
+      </p>
+        <ul class="links right">
+          <li><a href="/terms-of-service">Terms of Service</a></li>
+          <li><a href="/privacy-policy">Privacy</a></li>
+          <li><a href="/security">Security</a></li>
+        </ul>
+    </div>
+  </div> <!-- /#footer -->
+
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f4d4164f5a1f5651500026c');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "d1ros97qkrwjf5.cloudfront.net/42/eum/rum.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-1.newrelic.com","5d46706dc7","1956352","J1gNEhMKXgpXQktYBAhHTAcTEVsFXlUXHxIMWBQ=",0,405,new Date().getTime(),"","","","",""]);</script></body>
+</html>
