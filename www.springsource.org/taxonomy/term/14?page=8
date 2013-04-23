@@ -1,0 +1,1416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>This Week in Spring | SpringSource.org</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - This Week in Spring" href="/taxonomy/term/14/0/feed" />
+<link rel="shortcut icon" href="/sites/all/themes/s2org11/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/aggregator/aggregator.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ctools/css/ctools.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/google_cse/google_cse.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/date/date.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/filefield/filefield.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/nice_menus/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/framework/nice_menus.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/prettify/styles/drupalorg.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/taxonomy/taxonomy.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/html-reset.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/wireframes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/layout-fixed.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/page-backgrounds.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/tabs.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/messages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/pages.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/block-editing.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/blocks.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/navigation.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/panels-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/views-styles.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/nodes.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/comments.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/forms.css?R" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/fields.css?R" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/s2org11/css/print.css?R" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie.css?R" />
+<![endif]-->
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/s2org11/css/ie6.css?R" />
+<![endif]-->
+  <script type="text/javascript" src="/misc/jquery.js?R"></script>
+<script type="text/javascript" src="/misc/drupal.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/superfish.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.bgiframe.min.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/superfish/js/jquery.hoverIntent.minified.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/nice_menus/nice_menus.js?R"></script>
+<script type="text/javascript" src="/sites/all/libraries/prettify/src/prettify.js?R"></script>
+<script type="text/javascript" src="/sites/all/modules/prettify/prettify.loader.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/navigation.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/popup.js?R"></script>
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqCfg.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay": 800, "speed": 1 }, "prettify": { "linenums": false, "match": ".content", "nocode": "no-code", "custom": [  ], "markup": { "code": true, "pre": true, "precode": false } } });
+//--><!]]>
+</script>
+</head>
+<body class="page not-front not-logged-in no-sidebars page-taxonomy-term-14 section-taxonomy">
+
+	  
+
+
+<!--begin custom navigation-->
+      	  
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+<div style="height:97px;margin-top:0px;background: #457228;">
+<![endif]-->
+
+<div style="height:97px;margin-top:0px; background: url('http://www.springsource.org/sites/all/themes/s2org11/images/BG_SiteHeader_Glow.png') no-repeat scroll center top, url('/files/homepage/BG_SiteBillboardAndHeader_50.png') repeat-x scroll 0 0 #367B09;">
+
+    <div id="top">
+  		<div style = "height:80px;margin-top:0px;background: url('/files/homepage/BG_SiteTopNav_new.png') repeat-x scroll 0 0 #F1F1F1;
+  	-moz-border-radius: 0 0 5px 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 0 0 5px 5px;
+-moz-box-shadow: 0 0 15px #333;
+-webkit-box-shadow: 0 0 15px#333;
+box-shadow: 0 0 15px #333;">
+<div style="margin-left:10px;margin-right:10px;">
+ 	          <table valign="top" height="80" style="font-size:14px;text-transform:uppercase;color:#666;margin:0;">
+	          <tr>
+	          
+	          <td>
+	           <a href="/"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/logo_springsource_community.png"></a>
+	           </td>
+	           <td width="5">&nbsp;</td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                  <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/features" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_features.png" id="b1"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-started" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getstarted.png" id="b2"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/get-involved" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_getinvolved.png" id="b3"></a></br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+	           <td align="center">
+                 <!--[If IE 7]><div style="margin-top:-3px;"><![endif]-->
+	           	           <a href="/news-events" onmouseover="mouseOver4()" onmouseout="mouseOut4()">
+	           <img src="http://www.springsource.org/sites/all/themes/s2org11/images/nav_newsevents.png" id="b4"></a><br>
+	                             <!--[If IE 7]></div><![endif]-->
+	           </td>
+	           <td width="7" align="center">
+	           <img src="/files/homepage/nav_sep_line_new.png">
+	           </td>
+
+	           <td align="center">
+
+	      	  
+        <div id="search-box" style="border-bottom: 1px solid #E2E2E2;">
+          <form action="/search/google" method="get" id="search-theme-form">
+            <div><div id="search" class="container-inline">
+
+              <input type="text" maxlength="128" size="16" name="query" value="Search" style="border: 1px solid #CCCCCC;margin-bottom:10px;margin-left: 2px;color:#999999" class="form-text" onblur="this.value = this.value || 'Search'; this.style.color = '#999999';" onfocus="if(this.value=='Search') {this.value='';} this.style.color = '#999999';" />
+                          
+              <input type="hidden" name="output" value="xml_no_dtd" />
+              <input type="hidden" name="client" value="google-csbe" />
+              <input type="hidden" name="cx" value="009687201310241541466:zerjfa_shxo" />
+              <input type="hidden" name="ie" value="utf-8" />
+              <input type="hidden" name="oe" value="utf-8" />
+              <input type="hidden" name="op" value="Search" />
+            </div></div>
+          </form>
+        </div>
+               <div id="subscribe" style="color: #7E7E7E;float: left;padding-top: 5px;padding-left: 10px;border-top: 1px solid whiteSmoke;">
+              <a href="/newsletter-subscription" style="color: #7e7e7e;background:url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat" onmouseover="this.style.background = 'url(/files/header/nav_subscription_on.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'" onmouseout="this.style.background = 'url(/files/header/nav_subscription_off.gif) 3px 2px no-repeat';this.style.textDecoration = 'none'">
+                  <span style="padding-left:23px">Subscribe</a>
+              </a>
+        </div>
+        
+
+		      </td>
+		      
+		      </tr>
+	      </table>
+</div>
+  		
+              </div></div></div>
+
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+ </div>
+<![endif]-->
+<!--end custom navigation-->
+
+
+
+  <div id="page-wrapper"><div id="page">
+
+  
+    <div id="header"><div class="section clearfix">
+
+      
+<div id="name-and-slogan">
+
+</div>
+
+      
+      
+
+
+    </div></div><!-- /.section, /#header -->
+
+    <div id="main-wrapper"><div id="main" class="clearfix">
+
+      <div id="content" style="margin-left:10px;margin-right:10px;" class="column"><div class="section">
+
+
+        
+        
+        <!-- <div class="breadcrumb"><a href="/">Home</a> › <a href="/taxonomy/term/4">News and Announcements</a> › </div> -->
+
+	  
+	  
+	  
+                        
+
+       <table width="100%" >
+       <tr>
+     <td width="100%" valign="top" align="left">
+       <div style="width:100%">
+       
+ <div id="content-area">
+
+	<div style="margin-top:-20px;">
+	<!--[If IE 7]><br><![endif]-->
+
+<table>
+<tr>
+<td width="95%">
+	  <h1 class="title" id="page-title">This Week in Spring</h1>
+</td>
+<td align="right">
+      <a class="a2a_dd" href="http://www.addtoany.com/share_save" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_share.png"></a>
+<script type="text/javascript">
+var a2a_config = a2a_config || {};
+a2a_config.color_main = "e5e6e6";
+a2a_config.color_border = "5c6c75";
+a2a_config.color_link_text = "333333";
+a2a_config.color_link_text_hover = "333333";
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+</script>
+<script type="text/javascript" src="http://www.wavemaker.com/_js/addtoany.js"></script>
+</td>
+</tr>
+</table>
+	  <p>
+	  	  </p>
+
+           <div id="node-3280" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3222" title="This week in Spring: August 30th, 2011">This week in Spring: August 30th, 2011</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Tue, 2011-08-30 23:22        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last active"><a href="/taxonomy/term/14" rel="tag" title="" class="active">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+     
+<P>  Welcome to another edition of <EM>
+"This Week in Spring" </EM>  There's a lot to get to, so we'll get to it. A quick note: if you're at VMworld 2011 in sunny Las Vegas, come on over to the Cloud Application Platform booth and say hi.  
+	 </P>
+<OL> 
+	<LI>What a week for <a HREF="http://www.cloudfoundry.org">CloudFoundry</A>! The week saw the release and availability of <a href="https://www.cloudfoundry.com/micro">Micro Cloud Foundry,</a> the freely downloadable <EM>"PaaS-on-a-stick."</EM>  
+		 Micro Cloud Foundry is a complete, local version of the popular, open source Platform as a Service that lets developers run a full featured cloud on their Mac or PC. Using Micro Cloud Foundry developers can build end-to-end cloud applications locally, without the hassles of configuring middleware while preserving the choice of where to deploy and the ability to scale their applications without changing a line of code.
+		
+  To learn more about the Micro Cloud Foundry, check out these three blog posts introducing Micro Cloud Foundry to <a href="http://blog.springsource.com/2011/08/24/micro-cloud-foundry-for-spring-developers/">Spring developers</a> and <a href="http://blog.springsource.com/2011/08/24/using-micro-cloud-foundry-from-grails/">Grails developers</a>, and introducing the <a href="http://www.springsource.org/node/3215">support for Micro CloudFoundry in SpringSource Tool Suite</a>.
+		
+		</li> 
+		
+		<LI>Thomas Risberg blogged today about <A HREF="http://blog.springsource.com/2011/08/30/using-postgres-on-cloud-foundry/">using PostgreSQL on Cloud Foundry</a>. The recently announced  PostgreSQL support   makes CloudFoundry the natural place to deploy your enterprise applications: between MySQL and PostgreSQL there's very likely few speed or feature that you can't match on CloudFoundry. <a href="http://www.cloudfoundry.com">Try it out today!</a>  
+			
+		 </LI><LI> Mark Thomas had an article on <a href="http://tomcatexpert.com">Tomcat Expert</a> last week about  <A href="http://www.tomcatexpert.com/blog/2011/08/25/apache-tomcat-8-and-java-7-will-they-work-together">Tomcat 8 and Java 7</a>, answering the  question: <EM>will they work together</EM>? 
+		 
+		</LI>
+		 <LI>Roy Clarkson, lead of the Spring Android project, <a href="http://blog.springsource.com/2011/08/26/clean-code-with-android/">recently blogged about the various dependency injection options for Android</A> and how to write cleaner code. Check it out for a look at the modern Android developers toolkit. 
+			
+			</LI>
+		<LI> Spring provides many ways to support configuration. Spring 2.5 enhanced the options available with <EM>stereotypes</EM>, which let you 
+				specify a marker annotation as a way to define an injection site.
+				This <a href="http://code-on.blogspot.com/2011/08/how-to-use-type-safe-dependency.html">very nice blog post</a> first introduces some of the earlier ways to make maximum use of the type system with <CODE>@Autowired</CODE>, then introduces the <EM>stereotype</EM> model, cleanly and consistently. 
+				I wholly recommend it for a great look at an easy way to achieve  
+				cleaner code.
+			</LI> 
+		<LI> 
+		   In addition to the MicroCloud, last week saw <A HREF="http://blog.cloudfoundry.com/post/9374366916/cloud-foundry-adds-php-and-python-through-community">the announcement</A> of the availability of <a href="http://www.appfog.com/">PHP</a> and <a href="http://www.activestate.com/">Python</a> support through    community CloudFoundry providers. 
+			 This is an ideal situation for developers on those platforms and if you've always wanted first-class support for Python and PHP on a cloud, this release is for you! And, of course, if you're a Python developer, you should no  doubt be looking at <a href="http://springpython.webfactional.com/">Spring Python</a>, the <EM>Pythonic</EM>		port of the Spring framework. 
+		</LI>
+		<LI> Last week, Alan Stewart, lead of the Spring Roo project, <a href="http://www.springsource.org/node/3217">announced the availability</a> of the O'REILLY book, <EM>Getting Started with Spring Roo</EM>, that my co-author Steve Mayzak and I put together. O'REILLY worked closely with us to help make the book concise, and useful. O'REILLY have graciously agreed to make the book  <a HREf= "http://spring-roo-repository.springsource.org/Getting_Started_with_Roo.pdf">available for free download here</a>, as a <CODE>.PDF</CODE>. 
+			 Readers who want an alternative e-reader-specific format or want to get a print copy of the book on-demand may of course pursue those options at the <a href="http://oreilly.com/catalog/0636920020981">O'Reilly page for the book</a>. 
+			The book features an introduction to Spring Roo as well as an introduction to two of the many powerful, new addons being developed for Spring Roo: the Spring Data Neo4j addon, and the Vaadin web framework addon. 			 
+			</li>
+			<LI>
+				<A href ="http://www.springsource.org/node/3218">Virgo 3.0 and Gemini Web 2.0</a> have been released. 
+					The theme of Virgo 3.0 is better integration with EclipseRT technologies. To that end, we have created a Jetty variant of the Virgo web server and have switched from Felix to Equinox implementations of some OSGi services. 
+					Gemini Web and the Tomcat variant of the Virgo web server have been upgraded to Tomcat 7 and Servlet 3.0.			 
+			</LI>
+			<LI> 
+			 <A href="http://www.springsource.org/node/3219">Spring AMQP 1.0 GA has been released!</A> 
+			 I don't know about you guys, but I've been waiting for this one for a <EM>looong</EM> time. RabbitMQ  is one of the  most powerful messaging options available to enterprise Java developers today in traditional Spring applications <A href="http://blog.springsource.com/2011/08/16/chatting-in-the-cloud-part-1/">as well as in the cloud.</a>  
+				 Spring AMQP provides the idiomatic Spring support for RabbitMQ, including support for a <CODE>PlatformTransactionManager</CODE> abstraction, 
+				and a message listener container abstraction similar to the support available for JMS.
+				The GA release of the Spring AMQP integration clears the way for the inclusion of the Spring Integration AMQP support in the imminent  Spring Integration 2.1. Powerful stuff! Developers looking to get started with messaging in Spring might take a look at <a href="http://blog.springsource.com/2011/01/25/green-beans-getting-started-with-enterprise-messaging-and-spring/">this GreenBeans post ("Getting Started with Enterprise Messaging with Spring")</a>, which may be a bit out of date but provides a clear, concise introduction to the relevant concepts and options for both AMQP and JMS integration with Spring. 
+			</LI>
+			
+			<LI><A href="http://www.springsource.org/node/3221">Spring GemFire 1.1.0.M2 has been released!</a>
+				
+				This new release includes dedicated support for continuous query (Message Driven POJOs for GemFire), extensive client cache support,
+				and namespace support for region expiration. Very cool release, and users are highly encouraged to check it out. The continuous query support underlies the new Spring Integration Gemfire adapter that's expected to be in Spring Integration 2.1, as well: very powerful stuff! </LI>
+				
+			
+ 	<li> <a href="http://www.springsource.org/spring-social/news/1.0.0.rc3-released">Spring Social 1.0.0.RC3 has just been released.</A> 
+		This release includes fixes for bugs reported since 1.0.0.RC2 and  tweaks to the API:  <CODE>ConnectInterceptor</CODE> implementations can now add parameters to the authorization URL, 		Twitter <CODE>TimelineOperations.updateStatus()</CODE>  can now post a photo, along with the status, returns a Tweet object, and can also be used to post a <EM>reply</EM> to an existing status. 
+		  
+		The set of sample applications has been updated, including two new examples: One to demonstrate a popup-based connection flow and another to demonstrate using Spring Social within a Facebook Canvas application.
+ 
+		</li>	<LI> 
+		Adobe Technical Evangelist Christophe Coenraets
+		<a href= "http://coenraets.org/blog/2011/08/flex-spring-mobile-test-drive-learn-the-best-way-to-build-java-backed-ios-android-and-playbook-apps/">
+		  has updated the Flex / Spring Mobile Test Drive. 
+		</a>   
+
+		The new code is available on <a href="https://github.com/ccoenraets/flex-spring-mobile-testdrive">GitHub.com</a>. 		</li>
+		<LI>
+		This <a href="http://java.dzone.com/articles/spring-data-mongodb">post, by Artur Mkrtchyan</a>, does a nice job providing an introduction to writing a MongoDB client using regular Java and then taking it a step further and using the Spring Data project to talk to MongoDB. Good stuff, Artur!
+		</LI>
+  <LI> 
+	Job scheduling support in Spring's always been pretty robust, historically supporting Quartz, and  - from Spring 3.0 and later - supporting  
+	the <CODE>@Scheduled</CODE> annotation. However, there is always room for improvement, <a href="http://techblog.bozho.net/?p=452">and this blog</a>	
+	explores this, even <a href="http://stackoverflow.com/questions/6788811/taskscheduler-scheduled-and-quartz/6840970#6840970">linking to code</a> that would allow you to build on core Spring, and get <CODE>@Scheduled</CODE>-like ease-of-use  
+	 while delegating to Quartz's power. 
+	Even if you're not interested in job scheduling, this post serves as a fine example of how anybody can build on the rich lifecycle hooks and component model to extend Spring's API for your own application using the same hooks as the framework itself uses.
+	Good stuff! 
+	</LI> 
+
+	<LI> <a href ="http://community.jboss.org/people/johnnyren/blog/2011/08/26/understanding-spring-web-service-and-jaxb-integration">
+	  This post on community.jboss.org</A> about using Spring Web Services with JAXB is both concise and useful. It introduces the data modeling approach for  
+	    contract-first web services using Spring Web Services and JAXB, the Java API for XML binding. 		 
+	</LI>
+
+
+<LI> 
+	 A blogger, Roger Hughes, has written up a string of blogs recently that are really insightful! 
+	 The <a href="http://www.captaindebug.com/2011/08/using-spring-3-numberformat-annotation.html">first post</A> introduces  Spring 3's <CODE>@NumberFormat</CODE>. The <a href="http://www.captaindebug.com/2011/08/using-spring-3-datetimeformat.html">second</A>  introduces Spring 3's <CODE>@DateTimeFormat</CODE></A> annotation.  The <a href="http://www.captaindebug.com/2011/08/is-convention-over-configuration-going.html">third post</A>  introduces Spring MVC's <CODE>Conventions</CODE> class, which is at the heart of some of the major convention-over-configuration centric changes seen in recent Spring MVC releases that let you, for example, add any object to the <CODE>Model</CODE> that is made available to the view and omit the name used to store that model attribute, deferring to the <CODe>Conventions</CODE> class to provide a sane name based on the <a href="http://www.scribd.com/doc/52811942/53/Capitalization-of-inferred-names">JavaBeans specification</A>.    
+		
+ In this latest post, he cautions that while using the conventions in some cases can be very helpful (such as with <CODE>&lt;mvc:annotation-driven/&gt;</CODE>),  using some defaults can cause confusion. This is a fair point, and it's nice to have the choice, either way. 
+		Nice work, Roger! 
+	</li>
+	<LI>
+		<a href="http://jee-bpel-soa.blogspot.com/2011/08/springnet-superiority-over-ms-unity-and.html">
+			This blog post highlights the fact that Spring.NET supports bi-direction injection</a>, a feature that distinguishes it from Ninject and MS Unity. 
+	</LI>
+	<LI>
+		Want to run multiple Tomcat instances on one machine? <a href="http://www.javacodegeeks.com/2011/08/multiple-tomcat-instances-on-single.html">This blog post explains the nitty gritty details. Good stuff.</a>
+	</li>
+</OL>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3213" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3213" title="This week in Spring: August 23rd, 2011">This week in Spring: August 23rd, 2011</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Tue, 2011-08-23 20:24        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last active"><a href="/taxonomy/term/14" rel="tag" title="" class="active">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+     
+
+<P>  Welcome to another edition of <EM>
+"This Week in Spring" </EM> 
+ Things are moving fast and furious as we near next week's <a href="http://www.vmworld.com">VMworld 2011</A>. I want to invite any attendees to visit your expert technologists at the VMWorld Spring booth. Let me know if you read this weekly roundup. 
+Lots to talk about this week, so let's get to it!	 </P>
+<OL> 
+
+    <li>The preliminary session schedule has been published for <a href="http://www.springone2gx.com">SpringOne 2GX 2011</a>. This year's show is going to be another fantastic mix of deep technical content, cutting edge development and the absolute best place to learn about everything in the Spring universe. Be sure to <a href="http://springone2gx.com/conference/chicago/2011/10/register">register now</a>!</li>
+    
+	<LI> <a href="http://static.springsource.org/spring/docs/3.0.6.RELEASE/changelog.txt">Spring 3.0.6's was just released!</a>   		 
+		 This release addresses over 50 minor issues and includes about a dozen small improvements. Be sure to read the <a href="http://static.springsource.org/spring/docs/3.0.6.RELEASE/changelog.txt">Change Log</a> for all the details and <a href="http://www.springsource.com/download/community?project=Spring%20Framework&version=3.0.6.RELEASE">download</a> the bits as soon as possible. 		
+		</LI>	
+        
+        
+		<LI> <a href="http://www.springsource.org/node/3208">Spring Data Graph 1.1.0 with Neo4j support</a> has just been released. The new version features improved support for the latest and greatest Neo4j iteration, (1.4.1), as well as improved support for queries. You can now build repositories using Spring Data Graph with much greater ease. Also, the project's been renamed to reflect its core focus, Neo4j, thus, this will be the <EM> Spring Data Neo4j</EM> project, going forward. This rename is already evident in the packages in the project. 
+			
+			  
+		</LI> 
+  <LI> Eclipse Gemini Blueprint lead Costin Leau chimes in to note that <a href="http://www.springsource.org/node/3211">Eclipse Gemini Blueprint 1.0.0.RELEASE has just been released</a>!
+ The 1.0.0.RELEASE completes the <a href="http://www.springsource.org/node/2178">migration</A> of Spring DM to the Eclipse Foundation (see this <a href="http://www.eclipse.org/gemini/blueprint/documentation/migration">guide</a> for more information).
+		  Nice job, guys! 
+		</LI>
+		
+
+<LI> 
+	
+	I like <a href="http://www.cloudfoundry.org">CloudFoundry.</a> Others may not be using CloudFoundry, as it is relatively new. Some might still be using Google App Engine, for example. And that's OK. Spring always has been, and will continue to be, about portability and choice. So it is great to see a post that demonstrates <a href="http://www.springsource.org/node/3207">it is easy to get Spring Roo applications running on Google App Engine</a>, too!  </LI>
+	
+<LI> The Spring Integration repository has changed addresses! Formerly, the repository was hosted on <a href="http://git.springsource.org">git.SpringSource.org</a>, but it is now hosted under the 	<a href="https://github.com/SpringSource/spring-integration">SpringSource Github.com presence</a>.
+	</LI>  
+	<LI>
+ Ken Rimple <a href="http://java.dzone.com/articles/now-you-can-choose">has another great post</a>, this time on the upcoming Spring Roo 1.2 release, which features support for both the <A HREF ="http://martinfowler.com/eaaCatalog/activeRecord.html">ActiveRecord</A>-style entities that Roo has traditionally generated as well as services, which many will no doubt be familiar with. While it's always been possible to use services in conjunction with Spring Roo, this new release makes it a natural part of the workflow.	 
+	</LI>
+	<LI> 
+	Agile developer Tarun Sapra, at Xebia India, has <a href="http://tarunsapra.wordpress.com/2011/08/21/spring-singleton-request-session-beans-and-thread-safety/">written a nice post</a> on the golden rule of when to use to Spring's <CODE>singleton</CODE> concept: only use singletons for beans that don't have to have <EM>client-specific</EM> state. While he poses the golden rule slightly differently, I think the distinction is important. Spring beans can themselves maintain state, but they must guard that state from mutations by multiple (and often concurrent) clients. 
+
+	A lot of times, too, Spring lets you work as though you have client-specific state, but are in fact using a singleton. An example of this is in the way Spring supports injection of the JPA <CODE>EntityManager</CODE>, which is <EM>not</EM> thread-safe. Spring intercepts calls to the EntityManager proxy that's injected and then, in a thread-local, creates an EntityManager so that each request <em>effectively</em> has client-specific state, but they can program in terms of single-threaded access. 
+  That said, this post is a very good read.
+	</LI>
+	<LI>
+		TomcatExpert.com comments on the <a href="http://www.tomcatexpert.com/blog/2011/08/17/new-closemethod-jndi-resources">support for explicit release of JNDI resources in Apache Tomcat</a>.
+		Apache Tomcat 7 contains a number of new features around database connection pooling, which help administrators keep their application available and serving content, collecting customer information, and supporting their applications. The main one that has garnered a lot of attention is the new JDBC Connection Pool feature introduced by Filip Hanik last year. Another connection pool attribute not yet discussed here on TomcatExpert.com is the new <CODE>closeMethod</CODE> for speeding up the closing of JNDI resources that would otherwise be closed during garbage collection.
+
+		 
+		</lI>
+		<LI> This <a href="http://www.ibm.com/developerworks/web/library/x-springandroid/index.html">post</A> by Deepak Vohra on IBM's DeveloperWorks has some great information on using Spring Android's <CODE>RestTemplate</CODE> support to consume RESTful web services (which, in this example, were developed using JAX-RS). Interoperability is king, and Spring's REST support makes it easy.
+</LI>
+
+	<LI><a href="http://www.dzone.com/links/r/spring_integration_with_mvc_freemarker_jsp_webser.html">This fantastic post covers using  FreeMarker</a> (via the <CODE>org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver</CODE> view resolver) for Spring MVC views</a>. I like FreeMarker, and it has a lot to offer compared to straight <CODE>JSP</CODE> (and even compared to straight <CODE>JSPX</CODE>!) The take away, for me, is that Spring MVC supports lots of options, and provides SPIs that make it very simple to integrate new technology for each of the core pieces of the integration.
+ Great stuff!	</lI> 
+	<LI> 
+	...which brings me to <a href="https://github.com/sps/mustache-spring-view">this implementation of a Spring MVC view</a> by a Sean Scanlon, supporting <a href="http://mustache.github.com/">Mustache.js templates</a>. 
+ Great stuff, too!
+	</LI>
+	
+             <LI>  Blogger Mkyong has posted a tutorial <a href="http://www.mkyong.com/spring-security/spring-security-hello-world-example">introducing how to use Spring Security 3.</a>
+         The tutorial covers the basics of setting up Spring Security 3 with Maven 3 for a simple web application login scenario.  
+
+         </LI>
+    
+	<LI> 
+		<a href="http://www.tomcatexpert.com/blog/2011/08/19/apache-tomcat-6033-released">Apache Tomcat 6.0.33 has been released!</a>
+		 
+		
+		 
+
+		Apache Tomcat 6.0.33 is primarily a security and bug fix release. All users of older versions of the Tomcat 6.0 family should upgrade to 6.0.33.
+
+		Note that is version has 4 zip binaries: a generic one and three bundled with Tomcat native binaries for different CPU architectures.
+
+		Apache Tomcat 6.0 includes new features over Apache Tomcat 5.5, including support for the new Servlet 2.5 and JSP 2.1 specifications, a refactored clustering implementation, advanced IO features, and improvements in memory usage.
+
+		 
+	</LI>
+	
+</OL>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3195" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3195" title="This week in Spring: August 2nd, 2011">This week in Spring: August 2nd, 2011</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Wed, 2011-08-03 00:13        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last active"><a href="/taxonomy/term/14" rel="tag" title="" class="active">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+     
+<P> Welcome to another edition of "This Week in Spring." August is well underway and soon, at the end of August, <A href="http://vmworld.com">VMworld 2011</a> will be upon us. Shortly thereafter, <a href = "http://www.springone2gx.com">SpringOne</a> will be here. It's going to get hot and heavy very quickly, so get ready!  
+	This week's "This Week in Spring" has a <EM>lot</EM> of interesting content from Gordon Dickens, of Chariot Solutions. Thanks Gordon for all the good reading!
+</P> 
+ 
+<OL> 
+	<LI> 
+		Rod Johnson - Spring's founder and thought leader - did a keynote at TheServerSide earlier this year. 
+<a href= "http://www.theserverside.com/feature/Cloud-Computing-vs-SOA-SOA-Was-Just-a-Fad-says-SpringSources-Rod-Johnson">This post relays</A> some of the content of that keynote, including his thoughts on 
+cloud computing, SOA, and more. Check it out.	</a> </LI> 
+ 
+	<LI> 
+		The video of the recent webinar, "<A href="http://www.springsource.org/node/3194">What's New in Apache Tomcat 7</a>," is now available on the <a href="http://www.youtube.com/SpringSourceDev">SpringSourceDev YouTube channel</a>.   
+	</LI> 
+	<LI>Luke Taylor has some great content on how to <a href="http://blog.springsource.com/2011/08/01/spring-security-configuration-with-scala/">configure Spring Security with the Scala DSL</a> he's been developing. Check it out! 
+    </LI> 
+	<LI> 
+		<a href= "http://www.springsource.org/node/3192">Spring Data JDBC Extensions with Oracle Database Support</a> 1.0.0.M2 has been released. The new features include QueryDSL SQL module support and a fixed leak in Streams AQ. 
+	 </li> 
+ 
+	<LI>  Oliver Gierke has a great post <a href= "http://blog.springsource.com/2011/07/27/fine-tuning-spring-data-repositories/">on how to fine tune Spring Data JPA repositories.</a>  </li> 
+	<LI>This is a great post on <a href="http://hsiliev.blogspot.com/2011/07/virgo-and-cloud.html">using CloudFoundry, and Eclipse Virgo</a> (formerly the SpringSource dm Server), together. Check it out!</LI> 
+	<LI>  
+		<a href= "http://www.springsource.org/spring-social/news/1.0.0.rc2-released">Spring Social 1.0.0.RC2,</a> has just been released. Spring Social continues its steady march to GA with this latest release, including lots of new features. Check it out!
+	 </LI> 
+	<LI>Gordon Dickens has put together a quick walkthrough on <A href="http://gordondickens.com/wordpress/2011/07/27/quick-install-for-tcserver-2-5-with-spring-insight-in-sts/">using tcServer with Spring Insight in SpringSource Tool Suite</a>. Very cool stuff, check it out! </LI> 
+	<LI>Gordon Dickens at it again, with a great <a href="http://gordondickens.com/wordpress/2011/08/01/simpler-jpa-with-spring-data-jpa/">look at using Spring Data JPA.</a>  He also has a post on using queries <a href="http://gordondickens.com/wordpress/2011/08/02/adding-queries-to-spring-data-jpa/">in Spring Data JPA.</a> Check it out! </LI> 
+ 
+	<LI>You just can't stop Gordon Dickens! This time he takes a look at the <a href="http://gordondickens.com/wordpress/2011/07/25/restful-mvc-features-in-spring-3-0-and-3-1/">REST support in Spring 3.0 and 3.1</a> Very concise, insightful look at the technology. Check it out! </LI> 
+     	
+	<LI> Speaking of Spring MVC 3.1, I pinged Rossen Stoyanchev  and Keith Donald on the Spring web team to see what's cooking. I was really happy to learn that   flash map support will be available in Spring MVC 3.1. The flash map support is simple: it allows you to persist a value beyond a single redirect, which then expires. This has historically been useful in implementing the redirect-after-post pattern, to avoid having somebody double submit a POST submission should they try to use the back button. Faithful readers and fellow code spelunkers will know that the <a href="https://github.com/SpringSource/greenhouse">GreenHouse</a> project has an implementation of this type of functionality already available. If you can't stand the (short) wait, you might consider using that until the more sophisticated, powerful offering is available, integrated into Spring MVC 3.1, directly.  </li> 
+ 
+		<LI>Are you looking at Groovy? Want to learn more? There are many great resources, and entirely by accident, I've just stumbled upon another.  
+			Check out <a href="http://groovycasts.org/">Groovy Casts.</a> 
+			</LI> 
+ 
+	<LI>  This is a post that's all too common these days: what could possibly compel me to use CDI and JavaEE6? In this post,  <a href="http://java.dzone.com/news/do-you-need-move-spring-java"><em>Do I need to move from Spring to Java EE 6?</em></a>,  the answer, of course, is an ebullient, "No!" 
+ This post explain's one architect's reasoning. Are you fleeing from CDI and JavaEE6, and moving your application to Spring? Or, simply want to reuse code from an existing CDI application, in particular CDI's decorators? Then check out this post for an <a href="http://niklasschlimm.blogspot.com/2011/08/jsr-299-cdi-decorators-for-spring-beans.html">approach to reuse CDI's decorator's inside of Spring.</a> 
+  This support is limited in scope, of course,  but it's one less thing you'd have to work on when moving to Spring. An ideal migration will take advantage of the far more robust AOP support available in Spring itself. 
+ </LI> 
+ 
+	<LI>  O'REILLY's just published a small getting started book for Spring, <a href="http://oreilly.com/catalog/9781449306403"><em>Just Spring</em>.</a> 
+		 I haven't had a chance to look at it, but the TOC seems promising -- it looks like a direct, 80%-centric look at using the Spring framework. Check it out.
+		 </LI> 
+ 
+</OL>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3190" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3190" title="This week in Spring: July 26th, 2011 ">This week in Spring: July 26th, 2011 </a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Tue, 2011-07-26 13:29        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last active"><a href="/taxonomy/term/14" rel="tag" title="" class="active">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+     
+  
+<p>  
+Welcome back to another installment of <EM>This Week in Spring</EM>! This week finds <a href= "http://www.twitter.com/SpringSource">@springsource</a> at OSCON (and OSCON Java and OSCON Data) in Portland, OR.  
+If you're here, come visit our booth in the exhibition hall or check the schedule for any of the numerous Spring-talks! 
+</p><p>
+If you missed us at OSCON, or if you're simply looking for an even better Spring experience, 
+ <a href="http://www.springone2gx.com/conference/chicago/2011/10/home">be sure to register for SpringOne 2GX 2011</a>, the premier event for Spring, Grails and CloudFoundry developers. SpringOne 2GX is a one-of-a-kind conference for application developers, solution architects, web operations and IT teams who develop business applications, create multi-device aware web applications, design cloud architectures, and manage high performance infrastructure. The sessions are specifically tailored for developers using the hugely popular open source Spring technologies, Groovy &amp; Grails, and Tomcat. Whether you're building and running mission-critical business applications or designing the next killer cloud application, SpringOne 2GX will keep you up to date with the latest enterprise technology.
+</p>
+<OL> 
+ 
+<LI>  OSCON's great, but I will be taking an hour to watch the webinar, <EM>Getting Started with Spring Data Redis</em> for  <a href= "http://www.springsource.org/node/3177">North America</a>, and 
+		<a href="http://www.springsource.org/node/3176">Europe</a>. 
+		
+	You should too: <a href="http://redis.io/">Redis</a> is an open source, advanced key-value store known for its excellent performance, its small footprint and embed-ability. <a href="http://www.springsource.org/spring-data/redis">The Spring Data</a> project makes it easier to build Spring-powered applications that use new data access technologies such as non-relational "NOSQL" databases and cloud based data services. Check it out!  </li>
+
+
+ <li>
+	
+	<a href= "http://www.springsource.org/node/3189">Spring Data Graph 1.1.0.RC1 with Neo4j support Released</a>
+	The key changes in the Spring Data Graph 1.1.0.RC1 release candidate include:
+ <UL> <LI>
+	Added Gremlin support (embedded &amp; REST) </li>
+	<LI>
+	QueryEngine.query method now takes a parameter map (for cypher and gremlin)
+	</li> <li>
+	documentation updates
+	</li> 
+	</UL>
+	</li>
+	<li><a href="http://www.springsource.org/spring-android/news/1.0.0.m4-released">Spring Android 1.0.0.M4</a> Released! 
+		Spring Android supports usage of the Spring Framework in a Android environment. The 1.0.0.M4 release focuses on updating support for the latest Spring Social release in native Android applications, as well as providing enhancements to <code>RestTemplate</code>. 
+		<UL>
+	 <LI>		Support for Spring Social 1.0.0.RC1, and Spring Security 3.1.0.RC2 through the Spring Android Auth module, which includes a SQLite datastore for persisting OAuth API connections.
+	</LI>
+	 <LI>		Updated RestTemplate (client) support, now at the level of Spring Framework 3.1.0.M2.
+	</li>	<LI>	Added gzip compression support in RestTemplate</LI>
+	 <LI> 		Added support for Google's Gson JSON parsing library. The Gson library is smaller than Jackson, however Jackson has faster performance.
+	 </li>		
+			</UL>
+
+		 </li>
+   <LI> <A href = "http://www.springsource.org/node/3186">Spring 		  GemFire 1.1.0.M1 Has Been  Released </a>. 
+	
+	The new milestone updates include:
+	<UL>
+		
+		<LI>Native support for the upcoming GemFire 6.6</LI>
+		<LI>CacheServer support</LI>
+		<LI>GemFire implementation for Spring 3.1 cache abstraction</LI>
+		<LI>Support for queries with variable parameters</LI>
+		</UL>
+	
+
+	<LI> 
+		
+		<A HREF ="http://www.springsource.org/node/3187">Spring Data JPA 1.0</a> GA's been released! This powerful framework makes it easy to build JPA-driven repository objects.
+ It's been a long road, but it's great to see this powerful framework reach 1.0 GA. 		
+		</li> 
+		
+		 <LI>
+			
+		Kal Wahner 
+				has written an overview of 	<a href= "http://java.dzone.com/articles/rapid-cloud-development-spring"> the deployment of Spring Roo applications to Google App Engine</a>, another cloud environment that Spring supports readily.  
+			 He indicates his intention to write up another post, next week, on CloudFoundry, which I would love to see! Good stuff, too. NB: this isn't very technical; e.g., it's more of a a discussion of the broad strokes than a recipe, but he links to a more technical post that might help, too.  
+		</LI>
+	  <LI>
+		
+		<DIV><A href="http://www.tomcatexpert.com/blog/2011/07/20/apache-tomcat-7019-released">Apache Tomcat 7.0.19 has been released!</a>  
+		Apache Tomcat 7.0.19 includes security fixes, bug fixes and the following new features compared to version 7.0.16:
+		 </DIV>
+<uL> <LI>
+		JSP recompilation is now triggered by any change (backwards as well as forwards) in the last modified time of the JSP or any of its dependencies </li>
+		<li>
+		Support for installing multiple instances with the Windows Installer </li>
+<LI>		Include <CODE> jdbc-pool</CODE> (an alternative database connection pool)
+		</li> </ul>
+		</LI>
+	<lI> 
+		 Oleg Zhurakousky's written a very interesting post <A href="http://olegzk.blogspot.com/2011/07/scala-function-as-spring-bean-spring.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+blogspot%2FZAFvF+%28Oleg%27s+Blog%29">on using Scala functions as Spring beans, complete with source code!</a> Very cool stuff! 
+	</LI> 	
+	<LI> Your humble editor was asked recently about Spring's <code>FactoryBean&lt;T&gt;</code> 
+		 interface: what's it for? and why? I've written a two part  post on the specifics of the <a href ="http://joshlong.com/jl/blogPost/spring_corner_whats_a_factory_bean.html">interface</a> as well as the often <a href="http://joshlong.com/jl/blogPost/spring_corner_beyond_the_factorybean.html">more suitable alternatives in Spring 3.0 and Spring 3.1.</a>		   
+	</LI>
+	 <LI>    Continuing with his Scala and Spring integration theme -   Oleg Zhurakousky  has written up a post on implementing a <CODE>FactoryBean</CODE> with Spring in Scala. 
+		This is absolutely great, as it opens up a powerful part of the Spring framework to Scala development. Check it out!
+		</LI>
+	 <li> Loiane Groner -  the ESJUG (Espirito Santo Java Users Group) and CampinasJUG (Campinas Java Users Group) leader and coordinator - has written this fantastic  post explaining how to use <a href= "http://java.dzone.com/articles/extjs-4-file-upload-spring-mvc">the ExtJS 4 upload component on the frontend with a Spring MVC 3</a> backend. Very pragmatic, cool stuff, and complete with lots of code! 
+		</LI>
+		
+		<LI> Marco Tedone has written up a wonderful post on using an 	<A  href="http://tedone.typepad.com/blog/2011/07/outofmemoryerror-warning-system-with-spring.html">OutOfMemoryError warning system  - as described in issue #92 of Dr. Heinz Kabutz's wonderful newsletter - 
+	 with Spring</a>
+			  This is fantastic, and useful!  
+		</LI> 
+		<LI> Spring MVC is very powerful and easily  employed in your application (in Spring 3.0, you need only specify <CODE>&lt;mvc:annotation-driven /&gt;</CODE> to enable it; alternatively in Spring 3.1, you need only specify  <CODE>@EnableWebMvc</CODE> to enable it). It's also very flexible, and can be configured in many ways. One of the pluggability planes is the view technology: there are common recipes for using JSP, Tiles, Velocity, FreeMarker, XML, JSON, PDFs, Excel spreadsheets and much more for Spring MVCs. If none of these meet your requirements, you can look to the open source community to leverage others, <a href="http://www.thymeleaf.org/"> including one called Thymeleaf.</a>  Here's <a href="http://www.thymeleaf.org/thvsjsp.html">a comparison of Thymeleaf to JSP<a> as a Spring MVC view technology.  Here's a tutorial on <a href=  "http://www.thymeleaf.org/thymeleafspring3.html">  setting up the view technology in Spring MVC.</a> Powerful, and simple!  
+ Check it out!		Users of Tapestry's templates as well as JSF's Facelets will see a lot to like in
+ this view template technology - check it out!	</li>
+
+<LI> 
+	<a href="http://www.tomcatexpert.com">
+TomcatExpert.com</a> has a great post on the  <a href= "http://www.tomcatexpert.com/blog/2011/07/20/security-lifecycle-listener"> Security Lifecycle listener.</a>
+ 
+		Apache Tomcat 7 includes several security updates that further harden the application server that came directly from the Bugzilla queue. One new feature, the Security Lifecycle Listener, helps ensure that Tomcat is started in a reasonably secure way.
+
+	
+	
+	
+	</LI>
+ </OL>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3184" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3184" title="This week in Spring: July 19th, 2011">This week in Spring: July 19th, 2011</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Tue, 2011-07-19 21:02        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last active"><a href="/taxonomy/term/14" rel="tag" title="" class="active">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+     
+<p>  
+ Welcome back to another installment of <EM>This Week in Spring</EM>. Lots of good stuff to get into, so let's get to it.
+</p>
+<OL> 
+	<LI> The video from  Grails Advocate Peter Ledbrook's webinar,  "Tuning Your Grails Applications," has been <a href="http://www.springsource.org/node/3182">made available here.</a> Lots of great tidbits for web developers in general, as well as Grails developers in specific. Be sure to check out the other great content on the <a href="http://www.youtube.com/SpringSourceDev">SpringSource YouTube channel.</a> 
+		</li> 
+			<LI>  
+	 <a href="http://www.oscon.com/oscon2011/">OSCON  is right around the corner</a>, and SpringSource is going to be there in full force!  
+				Come see yours truly (Josh Long), Steve Mayzak, Ezra Zygmuntowicz, Derek Collison, Bruce Snyder, David McCrory, James Watters and others talk about Spring, CloudFoundry, and much more at OSCON (as well as OSCON Java, and OSCON Data!).  Also, feel free to check out our booth where we'd be happy to  answer questions, introduce you to   new technologies and meet and greet. 
+				Going to be there? Let us know, send us a message on Twitter to <a href="http://www.twitter.com/SpringSource">@SpringSource</a>.
+				  </li>
+		<LI><a href="http://www.springsource.org/node/3180">Spring Data Redis 1.0.0.M4 has been released</a>  
+				The new release features several improvements. My favorite? A Spring 3.1 <CODE>CacheManager</CODE> implementation that uses Redis! Out of the box, <a href="http://blog.springsource.com/2011/02/23/spring-3-1-m1-caching/">Spring 3.1's cache abstraction</a> supports a <CODE>CacheManager</CODE> implementation based on the <CODE>java.util.Map&lt;K,V&gt;</code> interface, and an Ehcache implementation. The <A href="http://www.springsource.org/spring-gemfire">Spring Gemfire</a> project ships with a <CODE>CacheManager</CODE> implementation that delegates to GemFire, as well. This new Redis implementation adds to the raft of options available already, and Spring 3.1's not even GA!
+			 </li>
+			<LI>
+			Speaking of Redis, check out this upcoming webinar, <a href="http://www.springsource.org/node/3179">Getting Started with Spring Data Redis.</a> 
+			 From the description, "This webinar will introduce Redis, its data structures, the fundamental concepts behind it and the Redis support in Spring Data, and will showcase how easy it is to get started and scale out into a cloud environment such as Cloud Foundry." Be sure to tune in!			
+				</li>
+	 
+			  <LI> 	<a href="http://www.springsource.org/node/3183">Spring Integration 2.0.5 has just been released.</a>
+					This release addresses 48 issues of which roughly half were bugs and half were improvements. For details <A href="https://jira.springsource.org/secure/ReleaseNote.jspa?projectId=10121&version=12104">see the Release Notes</a>.  </li> 
+	<LI>Dr. David Syer, lead of the <a href="http://static.springsource.org/spring-batch/">Spring Batch project,</a> lead of the Spring Hadoop project, committer on just about everything else, and nice guy, all around, has just posted an amazingly clear, helpful post on navigating <a href="http://blog.springsource.com/2011/07/18/social-coding-pull-requests-what-to-do-when-things-get-complicated/">the rough waters of a complicated Git pull request</a>. A <em>must-read</em> if - like me - you know  that Git could solve all your workflow problems, if you only  really understood it!   
+		 Remember, the process starts on <a href="http://git.SpringSource.org/">git.SpringSource.org</a> and on <a href="http://www.github.com/SpringSource">github.com/SpringSource</a>. 
+		Check it ... err... <em>clone</em> it out!
+		 </li>   
+
+  <LI> Ken Rimple's at it again! This time, he's excerpted content from the upcoming book (which is available in Manning's Early Access Program, or MEAP), <EM>Spring Roo in Action</EM>, on <a href="http://www.rimple.com/tech/2011/7/17/testing-entity-validations-with-a-mock-entity-roo-in-action.html">testing entity validations 	with a mock entity.</a> Good stuff, check it out!
+   
+
+
+	</li>
+	
+ </OL>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3178" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3178" title="This week in Spring: July 12th, 2011 ">This week in Spring: July 12th, 2011 </a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Wed, 2011-07-13 00:18        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last active"><a href="/taxonomy/term/14" rel="tag" title="" class="active">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+     
+  
+<p>  
+	
+Welcome back to another installment of "This Week in Spring."  Today saw a new sunrise, and - more importantly - the release of vSphere 5, <a href="http://www.vmware.com/cloud-infrastructure/business-critical-applications.html">the next step in cloud infrastructure</a>! 
+
+   My head's still buzzing after the excitement that accompanied this morning's launch.   
+        This - and the <a href="http://blog.springsource.com/2011/06/14/announcing-vfabric-5/">recent release of vFabric 5</a> - represent the next stage in cloud innovation, and a huge part of taking your applications to production, and to the cloud, with Spring. 
+   
+</p>
+<OL>  
+
+	
+	<LI>O'Reilly has published a fantastic roundup on the <a href = "http://radar.oreilly.com/2011/07/7-java-projects.html">seven Java projects that <EM>changed the world</EM></a>!
+		The list includes  <B>JUnit</b>, <b>Eclipse</b>, <B>Solr</b>, <b>Hudson and Jenkins</b>, <b>Hadoop</b>, <b>Android,</b> and your favorite enterprise Java framework and mine, the <b style = "color: green;">Spring Framework</b>.
+	 </li> 
+	
+	<LI> 
+	  Martin Lippert has announced a <a href="http://www.springsource.org/node/3174">new release of SpringSource Tool Suite, version 2.7.1</a>, hot on the heels of the recent 2.7 release. 
+	 
+		The update provides:
+		support for Spring Roo 1.1.5,
+		ships with Spring Roo 1.1.5, and 
+		customizable Roo Shell colors. 
+		More details on new features and bug fixes can be found in the <A HREF="http://download.springsource.com/release/STS/doc/STS-new_and_noteworthy-2.7.1.RELEASE.pdf">New and Noteworthy</a> document. Detailed <A href="http://download.springsource.com/release/STS/doc/STS-installation_instructions-2.7.1.RELEASE.pdf">installation instructions</a> are also available. 
+
+		As always downloads are available from the <A href="http://www.springsource.com/landing/best-development-tool-enterprise-java">STS download page.</a>
+
+		
+		</lI>
+	
+	<LI>
+	 Gordon Dickens has <a href="http://gordondickens.com/wordpress/2011/07/06/springsource-tool-suite-eclipse-for-spring-developers/">a great look at some of the cool places</a> to start poking around in 	 <A HREF="http://www.springsource.com/developer/sts">
+		 SpringSource Tool Suite 2.7.x</a>  on your first flight. 
+	 
+	 Gordon, as you know if you read last week's column, is the author of 
+	 <a href="http://refcardz.dzone.com/refcardz/eclipse-tools-spring">the DZone RefCard for SpringSource Tool Suite</a>.
+ </li>
+
+<LI> 
+	The Spring Roo team has announced <a href= "http://forum.springsource.org/showthread.php?111904-Spring-Roo-1.1.5-Released">Spring Roo 1.1.5</a>. 
+ The new release features over 95 improvements and bug fixes since the 1.1.4 release. The next release of Roo will be 1.2.0.RC1 where new features such as application layering support and a new JSF UI option will be introduced.
+ </li>
+ 
+ 	<LI> Martin Lippert announced that the latest version of the  <a href="http://www.springsource.org/node/3175">SpringSource Tool Suite and CloudFoundry Integration</a>, version 2.7.0.M3, has been released.  This is the latest release of the integration initially announced and explained on <a href="http://blog.springsource.com/2011/04/13/using-cloud-foundry-from-sts/">this blog.</a> </li> 
+	
+    <li>
+    If you were unable to attend the recent <a href="http://www.springsource.org/s2gforum2011">S2G Forums</a> in London and Amsterdam, you can catch up on some of the session content because the presentations have now been <a href="http://www.springsource.org/S2GForum2011slides">posted on line</a>. In particular, you can review the slides presented in Rod Johnson's keynote: <a href="http://portal.sliderocket.com/ASXNF/S2GForum2011_Keynote_RodJohnson">What can the cloud do for me?</a> Of course there will be more fantastic content at <a href="http://springone2gx.com/conference/chicago/2011/10/home">SpringOne 2GX 2011</a>, October 25-28th in Chicago. Be sure to <a href="http://springone2gx.com/conference/chicago/2011/10/register">register early</a>. 
+    </li>
+    
+	<LI>
+		This blog post does a great job illustrating <A Href="http://java.dzone.com/articles/embedded-tomcat-minimal">how to embed Apache Tomcat 7</a>. Cool stuff! 
+		
+		</li>
+	 <LI> VMware's knowledge base has <EM>so much</eM> knowledge, so much wisdom, that scarcely the  largest, and most scalable Not-Only-SQL solution can contain it. One of the many gems contained in this knowledge base? A recently added post <em><a href="http://kb.vmware.com/selfservice/search.do?cmd=displayKC&docType=kc&externalId=2001172">on converting EJB applications to Spring</a></em>, which references the very <a href="http://www.tomcatexpert.com/presentation/case-study-slides-migrating-hyperic-ejb-spring-jboss-apache-tomcat">successful  Hyperic case-study.</a> Check it out if you're looking for insight from the professionals on how to forge from the bloated, boilerplate ridden code of a typical EJB application a clean, scalable Spring solution grounded in best practices. 
+		
+		</li>
+	
+	
+ </OL>  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3168" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3168" title="This week in Spring: July 5th, 2011">This week in Spring: July 5th, 2011</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Tue, 2011-07-05 21:00        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last active"><a href="/taxonomy/term/14" rel="tag" title="" class="active">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+     
+  
+<p>  
+	
+Welcome back to another installment of "This Week in Spring." If you're in the US, then you've just returned from a long weekend and are no doubt ready for some great content to read and reinvigorate your creativity. If you're not in the US, then you're probably already deep into a week of coding and keen on something to inspire you. Well, look no further, in any event. You've come to the right place.  
+	
+</p>
+<OL>
+	<LI> 
+    	<a href="http://www.springsource.org/node/3167">SpringSource Tool Suite, version 2.7.0, has just been released</a>!
+        
+        This release includes a lot of new functionality as well as enhancements.  
+        STS is the premiere environment for enterprise Java developers, and <a href="http://www.springsource.com/developer/sts">freely available</a>. 
+        
+         This release is the first to ship on top of the newly released Eclipse Indigo (3.7), it includes Mylyn 3.6 and EGit 1.0, updated template projects, support for Grails 1.4.M1, Grails-aware rename type refactoring, Groovy-Eclipse 2.5.1 (which includes support for Groovy 1.8 and DSL IDE support (DSLDs)), and support for Gradle. </LI>
+
+	<LI>
+		DZone has just published a <a href="http://refcardz.dzone.com/refcardz/eclipse-tools-spring">reference card ("refcard") on the SpringSource Tool Suite (STS)</a>. 
+		
+	</li>
+	
+		 <LI>Charles Lee blogs about the new <a href="http://blog.hyperic.com/hyperic-plugin-for-cloud-foundry/">Cloud Foundry plugin available for the Hyperic management and monitoring solution.</a> Good stuff, check it out!		 
+	Be sure to visit the <a href="http://www.cloudfoundry.com">CloudFoundry page</a> to get started. 
+			</li>
+
+	<LI> 
+		<a href="https://github.com/SpringSource/spring-social/wiki/Quick-Start">The Spring Social Quick Start</a> has been updated to reflect the latest and greatest standards, definitely a valuable resource to have! Spring Social is a framework designed to  connect your applications to the various social networks, including Twitter, Facebook, and more. 
+		</li>
+	
+<LI> 
+	<a href="http://twitter.com/#!/david_syer">Dave Syer</a> tweets about some of the <a href="http://twitter.com/#!/david_syer/status/84366432665731072">very interesting new features in Spring 3.1</a> supporting refreshable Groovy beans. Good stuff!
+</li> 
+
+<LI> <a href="http://dev.wavemaker.com/blog/2011/06/28/wavemaker-6-3-2-ga-available-now-all-apache-license/">WaveMaker 6.3.2 GA was released recently</a>. Beginning with this release all WaveMaker source code is licensed under the Apache license, version 2.0. This is the first GA release of WaveMaker since being acquired by VMware. Releasing WaveMaker as 100% open source demonstrates VMware's commitment to open source and to the WaveMaker user community. If you're looking for more information on WaveMaker, we would humbly recommend <a href="http://www.wavemaker.com/product/screencasts.html">these screencasts</a>.
+	 </li>
+	
+	<LI>We've got a couple of good posts  this week on setting up SSL in Tomcat. One of Tomcat's most powerful features is its  strong community, serving both the novices <em>and</em> the grizzled taking the last steps in the march towards production. 
+		<ul>
+		   <li>The first post is called <a href="http://java.dzone.com/articles/setting-ssl-tomcat-5-minutes">Setting Up SSL on Tomcat in 5 Minutes</a>.</li>
+		   <li>A second, more nuanced post, called <a href="http://java.dzone.com/articles/ssl-your-tomcat-7">SSL Your Tomcat 7</a>,  
+		expands on the options available in configuring the <code>keystore</code>.</li>
+		</ul>  
+		<a href="http://static.springsource.org/spring-security/site/index.html">Spring Security</a> can also help your application play well with SSL. It can automatically handle requiring SSL on access to certain pages, redirecting to it on login, etc.
+		</LI> 
+		
+		
+		<LI>Mark Thomas (on the ever-reliable <a href="http://www.tomcatexpert.com">TomcatExpert.com</a>) has a great post on <a href="http://www.tomcatexpert.com/blog/2011/06/30/top-3-apache-tomcat-7-features-now-available-apache-tomcat-6">some of the great features in Tomcat 7 that are now available in Tomcat 6</a>. 	</li>
+			
+		<LI> Bozho has put together an interesting discussion of <a href="http://techblog.bozho.net/?p=417">using 
+			Spring and <CODE>PersistenceContextType.EXTENDED</code> in JPA</a>.
+			 
+			</li> 
+		
+	<LI> Using the Play framework with Spring?  
+		 The Play framework has a  Spring module which makes accessing Spring beans very easy. However, some trickery - as  <a href="http://java.dzone.com/articles/workaround-using-spring-0">this post explains</a> - is required to access those <code>javax.sql.DataSource</code>s to drive the model classes in the Play framework. 
+      Interesting post. 
+		</li> 
+		 
+ 	<Li>
+	Alex Soto has <a href="http://alexsotob.blogspot.com/2011/07/umetxoak-ikusirik-lorea-ezin-bizirik.html">an interesting blog</a> on a <code>JdbcTemplate</code>-style object that can be used to interface EJP (<A href="http://www.easierjava.com/">Easy Java Persistence</a>). Mapping database records to Java objects can be painful, and it's good to see healthy, lightweight alternatives to support your Spring applications. 
+	</li>
+		
+	<li>Hiring Spring developers? Be sure to consult the <a href="http://www.springsource.com/files/core-spring-3.0-certification-study-guide.pdf">Core Spring 3.0 Certification study guide</a> to inform your interview questions <em>and</em>, if you have people you want to take the next step in their education, consider the <a href="http://www.springsource.com/training/certification">Spring certification program.</a> <br />
+Of course, if you have serious development skills there are <a href="http://jobs.vmware.com/search?q=springsource">openings to join the SpringSource team</a> at VMware. It's a great place to work.
+				  	
+				</li>
+	
+	
+</OL>
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3166" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3166" title="This week in Spring: June 28th, 2011">This week in Spring: June 28th, 2011</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Tue, 2011-06-28 20:58        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last active"><a href="/taxonomy/term/14" rel="tag" title="" class="active">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+     
+  
+  <p> 
+  Welcome back to another installment of "This Week in Spring." 
+
+  Lots of great stuff this week, as usual. When we compile this list, we trawl the internet looking for interesting stuff and try to bring it to you, digest style, in this weekly roundup. Some of the resources that we commonly check  are <a href="http://www.twitter.com/springsource">Twitter</a>, <a href="http://blog.springsource.org/">the SpringSource blogs</a>, 
+ <a href="http://www.cloudfoundry.org">CloudFoundry.org</a>, and 
+<a href="http://tomcatexpert.org">Tomcat Expert</a>, 
+
+
+ We try to not miss anything, but we might. If you know of something that we've missed or think should be included, don't hesitate to ping your humble editors   <a href="mailto:josh.long@springsource.com">with any suggestions</a>.
+ </p>
+
+<P> 
+ While SpringSource has a strong presence at numerous conferences and industry events, the premiere conference for Spring developers remains the SpringOne conference, held yearly in the United States. Work is well underway in planning the final program. Check out <a href="http://www.springone.com">the SpringOne 2GX page</a> to see news and activity, and to register, for the upcoming SpringOne2GX conference. 
+	 </p> 
+   
+<ol> 
+	
+	<LI><a href="http://www.springsource.org/spring-social/news/1.0.0.rc1-released">Spring Social 1.0.0.RC1</a> has just been released.  
+		This release includes additions to the Facebook API binding such as photo and video upload, Facebook page support, and Facebook search, expansion of the Twitter API binding to include mobile notifications, blocking, and geo location operations, implicit sign up support enabling automatic sign up of a user from a connection, a new quickstart showing how to get up and running quickly, and numerous bug fixes and other improvements based on user feedback. </li>
+		
+		</li>
+	<LI><a href="http://www.springsource.org/node/3164">Spring AMQP for Java RC1</a> 
+		 has been released. The new release adds many features, and marks the first step of the march towards GA. Developers are encouraged to try the bits out, and provide as much <a href="http://forum.springsource.org/forumdisplay.php?74-AMQP">feedback</a> as possible. 
+		</li>
+	
+	
+	<LI><a href="http://www.springsource.org/node/3165">The Spring BlazeDS Integration, 1.5 GA</a> has just been released! 
+		 This release has been in the works for a while, and includes lots of cool features. If you're a user depending on the Spring Flex integration that makes it easy to interact with Spring services from Flex-based RIA clients, then you should definitely upgrade. This release has enhanced AMF serialization support, better, more natural, and more exhaustive Spring Security support, easier customization and namespace-supported configuration of framework-provided services, support for reading and writing AMF content with RESTful Spring MVC <CODE>@Controllers</code>, upgraded minimum dependencies to Spring 3.0, BlazeDS 4.0, Spring Security 3.0, and Spring Integration 2.0 and a complete revision of the Maven-based Test Drive samples, including an update across the board to use Flex 4, and a new sample to demonstrate the RESTful programming model.  </li>
+
+		<LI>
+        Tomcat Expert has a very interesting post on using <a href="http://www.tomcatexpert.com/blog/2011/06/22/windows-authentication-apache-tomcat">Windows authentication in Tomcat 7</a>. Check it out! </li>
+
+	<LI> Did you know that you could import other Spring <CODE>@Configuration</CODE>-based configuration classes, just as you might import another XML-based configuration class? For details, <a href="http://www.mkyong.com/spring3/spring-3-javaconfig-import-example/">check out this blog.</a>  </LI>
+  
+	<LI>SpringSource has put up <a href="http://www.youtube.com/watch?v=Eh_9RlKjfkU">a video introducing the Spring Roo Vaadin addon</a> to help created Vaadin-based web applications quickly with Spring Roo. Be sure to <a href="">subscribe to the SpringSourceDev</a> channal for the all the latest videos.</li>   
+
+
+
+
+	<LI>Phil  Webb's started a series of blog posts around the idea of taking the Spring Webflow <code>JsfView</code> a step further. The <code>JsfView</code> already works, but it's stateless, and doesn't handle JSF postbacks correctly. The work described in this <a href="http://coderphil.wordpress.com/2011/06/18/">blog</a> expands upon the existing support, outlining the problem and parts of the solution.  He continuous, expanding upon the previous ideas, <a href="http://coderphil.wordpress.com/2011/06/20/">in this blog.</a>  
+		Very cool stuff! 
+		</li>
+		
+		<LI>This French-language  <a href="http://blog.zenika.com/index.php?post/2011/05/03/Spring-3.1-Profils-et-environments-(partie-1)&fg=50012">introduction to Spring 3.1's profiles and environments feature</a> is both comprehensive, and a testament to the power of the soon-to-be-released Spring 3.1 framework. Check it out!
+			</li>
+	<LI>This Spanish-language <a href="http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=introSpringSecurity">introduction to Spring Security 3.1</a> is an extension, and - in a way - an update - to a previous introductory tutorial that's also linked to in the article.  </lI>
+	
+		
+  		<LI>The Eclipse Virgo project has been picking up interest from the OSGi community and now they have even more reasons to try it out. There is a new first tool release of <a href="http://wiki.eclipse.org/Virgo/Tooling">Eclipse Virgo IDE 1.0.0.M01</a>.  </li>
+
+</ol> 
+		
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3158" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3158" title=" This week in Spring: June 21st, 2011"> This week in Spring: June 21st, 2011</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Tue, 2011-06-21 21:20        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last active"><a href="/taxonomy/term/14" rel="tag" title="" class="active">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+     
+  
+  <p> 
+ 
+ 
+ Welcome back to yet another This Week in Spring. SpringSource is out in full force at JAX San Jose this week and we will be at OSCON, in July. These events are  great avenues for us to connect with the userbase.   As usual, we've got a nice complement of stuff to cover this week, so let's get to it! 
+  </p> 
+   
+<ol>    
+
+          <LI>  There has been loads of interest and discussion surrounding last week's <a href="http://blog.springsource.com/2011/06/09/spring-framework-3-1-m2-released/">Spring 3.1 second milestone</a>.  Sam Brannen writes about the <a href="http://blog.springsource.com/2011/06/21/spring-3-1-m2-testing-with-configuration-classes-and-profiles"> new testing support</a> which is a great follow on to the previous posts about <a href="http://blog.springsource.com/2011/06/10/spring-3-1-m2-configuration-enhancements/">configuration enhancements</a> and <a href="http://blog.springsource.com/2011/06/13/spring-3-1-m2-spring-mvc-enhancements-2/">Spring MVC updates</a>.  
+          </LI>
+
+         <LI>
+            Alex (from the blog "javaaddicto") has also written about the new features in Spring 3.1, and particularly the new support in Spring 3.1 M2 for   <a href="http://alexsotob.blogspot.com/2011/06/its-strange-but-its-true-i-cant-get.html">XML-free web applications in Spring MVC. </a> This is very cool! Check it out.
+         </LI> 
+
+       <LI> 
+        Here is <EM>another</EM> more code centric look at <a href="http://www.dzone.com/links/r/spring_31_mvc_xmlfree_configuration_example.html">XML-free configuration in Spring 3.1 M2</a>, this time on dZone.  
+         </LI>
+
+ <LI> 
+        Rod Johnson sounds off on the state of the complexity in enterprise Java today. Check out this <a href="http://www.theserverside.com/video/Java-Developers-have-Loads-to-Learn-from-the-Rails-Community">interview with Rod on the TheServerSide.com</a>. Very cool!
+       </LI> 
+        
+        <LI> Hot on the heels of the vFabric 5 release, Chris Harris has written up a good look at how to use the new SQLFire to <a href="http://cjharris5.blogspot.com/2011/06/grails-sqlfire-quickstart.html">build a Grails CRUD application</a>.
+    </LI>
+
+  <li>Manning has just released the third edition of SpringSource's very own Craig Walls' <a href="http://www.manning.com/walls4/">Spring in Action</a>. Good stuff, check it out!
+       </li> 
+
+    <li>
+
+ <a href="http://www.springsource.org/spring-data/jpa">Spring Data JPA</a> (formerly, "Hades"), RC1 has just been released! It features, among other things, improved repository interface programming model (transactions at implementation, no need to extend JpaRepository anymore),  improved parameter binding for created queries, performance improvement in inspecting annotations,  improved detection of domain class from method return types,  and much more. <a href="http://www.springsource.org/node/3157">Check out the release announcement.</a> </li>
+ 
+    
+        <LI> Want to learn  about the Tomcat 7 classloader? <a href="http://dertompson.com/2011/06/19/tomcat-classloader/"> Get the skinny in this post!</a></LI>
+
+<li>
+ Using the   Vaadin web framework? 
+ Want to see how to rapidly build a Vaadin application on CloudFoundry? Who wouldn't?  <a href="http://vaadin.com/book/-/page/rapid.cloudfoundry.html">Check  out this doc</a> that explains how to setup the toolchain (including <A href="http://www.springsource.com/developer/sts">SpringSource Tool Suite</A>) and build a web application from code, all the way to the cloud.  </li>
+
+        
+        <LI>
+The AMIS blog has an interesting post on <a href="http://technology.amis.nl/blog/12306/leveraging-spring-beans-in-adf-faces-applications-and-using-the-spring-propertyplaceholderconfigurer-bean-to-dynamically-configure-bean-properties-from-external-files">how to access and leverage Spring beans from Oracle ADF Faces-based JSF applications</a>. The blog is a bit out of date - in that it covers Spring 2.5, but could prove useful to users of that framework and technology. Note that - while this approach outlines a tooling-centric approach to adding the libraries and so on, the crux of the Spring / JSF integration is bundled with the core Spring framework as an expression resolver delegate, <code>org.springframework.web.jsf.el.SpringBeanFacesELResolver</code>, which the article does introduce. Very cool, generally, and the setup in Spring 3.x is not generally different, to this is useful for users of newer (and older!) versions.
+        
+        </LI> 
+
+</ol> 
+		
+  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div id="node-3154" class="node node-type-story node-promoted node-teaser build-mode-teaser"><div class="node-inner">
+
+  
+      <h2 class="title">
+      <a href="/node/3154" title="This week in Spring: June 14th, 2011">This week in Spring: June 14th, 2011</a>
+    </h2>
+  
+  
+      <div class="meta">
+              <div class="submitted">
+          Submitted by Josh Long on Tue, 2011-06-14 17:49        </div>
+      
+              <div class="terms terms-inline"> in <ul class="links inline"><li class="taxonomy_term_14 first last active"><a href="/taxonomy/term/14" rel="tag" title="" class="active">This Week in Spring</a></li>
+</ul></div>
+          </div>
+  
+  <div class="content">
+      
+  <p>  Welcome back to another installment of "This Week in Spring," and what a week it's been! This last week saw the release of the  <b>Spring 3.1 M2</b> <EM>and</EM> <b>vFabric 5</b>! Lots of exciting stuff to talk about there,  as well as general community news, so let's get to it! 
+  </p> 
+   
+<ol>    
+   <li>  Today VMware <a href="http://www.marketwire.com/press-release/vmware-introduces-vfabric-5-integrated-application-platform-virtual-cloud-environments-nyse-vmw-1526312.htm">announced</a> the release of <a href="http://www.vmware.com/products/datacenter-virtualization/vfabric/overview.html">VMware vFabric 5</a>, the application platform that defines the future of enterprise Java for cloud and virtualized execution environments. vFabric 5 contains many of the technologies that the Spring community is already familiar with including <a href="http://www.vmware.com/products/data-center-virtualization/vfabric-tcserver/overview.html">tc Server</a>, <a href="http://www.vmware.com/products/datacenter-virtualization/vfabric-hyperic/overview.html">Hyperic</a>, <a href="http://www.vmware.com/products/datacenter-virtualization/vfabric-gemfire/overview.html">GemFire</a>, and <a href="http://www.vmware.com/products/datacenter-virtualization/vfabric-rabbitmq/overview.html">RabbitMQ</a>, but now adds some new technology. 
+
+<ul>
+<li><strong>Elastic Memory for Java</strong> (EM4J): a new capability for tc Server that provides a completely new level of coordination between the application server and the underlying virtual machine. EM4J uses the underlying vSphere virtualization to overcome some of the limitations of the Java's static memory heap.</li>
+<li><strong>Spring Insight Operations</strong>: leverages the same code-level tracing technology from the <a href="/insight">Spring Insight</a> project but pulls together information from multiple application servers into a single console with roll-up views, drill downs, and historical comparisons ready for production systems.</li>
+<li><strong>SQLFire</strong>: <a href="http://communities.vmware.com/community/vmtn/appplatform/vfabric_sqlfire">vFabric SQLFire</a> leverages the time-tested vFabric GemFire underpinnings providing data at memory speed and horizontal scale but vFabric SQLFire adds familiar and standard SQL and JDBC interfaces to the service. </li>
+
+</ul>
+<p><a href="http://blog.springsource.com/author/rodj/">Rod Johnson</a> discusses all the details of the release in his <a href="http://blog.springsource.com/2011/06/14/announcing-vfabric-5/">latest blog</a>. Be sure to check out the latest release and try it out.</p>
+   
+</li>
+   <li>
+     <a href="http://blog.springsource.com/2011/06/09/spring-framework-3-1-m2-released/">Spring core lead Juergen Hoeller has announced that Spring 3.1.0 M2 has been released</a>! At long last, the next step on the steady march to Spring 3.1 GA! The new release is as feature-packed as the last one, with a long list of major new features including (but definitely not limited to!) improved Java configuration support, XML-free and hassle-free Servlet 3.0-based Spring MVC application bootstrapping, new <CODE>Builder</CODE> APIs for JPA and Hibernate, and much, much more! Check out the   <a href="http://www.springsource.org/node/3149">release announcement here</a> and get the bits from your build dependency management tool of choice or <a href="http://www.springsource.com/download/community">the download page</a>
+    </li> 
+    
+    <LI> Hot on the heels of the Spring 3.1 release announcement, <a href="http://blog.springsource.com/2011/06/10/spring-3-1-m2-configuration-enhancements/">Chris Beams chimes in</a> on the much-improved Java-centric configuration model in Spring 3.1, M2, even as compared to M1! The features are really starting to come together to make this one of the smoothest, well arranged releases, yet! </LI> 
+    
+    <lI> 
+   <a href="http://blog.springsource.com/2011/06/13/spring-3-1-m2-spring-mvc-enhancements-2/">Spring 3.1 M2 represents a marked improvement in core Spring, as well as Spring MVC!</a>  Rossen Stoyanchev chimes in to introduce the numerous (truly, you'll need to read the detailed blog to get an idea - I won't even bother trying to enumerate them all here!) new features in Spring MVC 3.1 M2, including XML-free web applications on Servlet 3.0 containers. Check it out! 
+    </lI>
+  
+ <li><a href="http://www.springsource.org/node/3151">SpringSource Tool Suite 2.7.0.M2  has been released</a>! The new release boasts  improved CloudFoundry support and many Grails features, including Grails 1.4 support, Grails-aware Rename Type refactoring, improved content-assist for GSPs, and improved Gradle support. Check it out!</li>
+   
+     <LI>Using Spring Roo? Want to shape it's future? Now's a good time to provide input! The Spring Roo team wants you to fill out a <a href="http://www.springsource.org/node/3150">quick survey on the direction of Spring Roo.</a></LI>
+  
+   <LI><a href="http://forum.springsource.org/showthread.php?110163-Spring-Data-Document-with-MongoDB-Support-1.0.0.M3-Released">Spring Data Document with MongoDB Support, 1.0.0.M3, has been released!</a> From the announcement, <blockquote>The changes and new features in Spring Data Document 1.0.0.M3 includes much improved mapping and conversion support. The <CODE>MappingMongoConverter</CODE> is now the default converter used by the <Code>MongoTemplate </Code> and the <CODE>SimpleMongoConverter</CODE> has been deprecated and will be removed. The concept of a default collection name has also been removed and all operations of the <code>MongoTemplate</code> are based on the collection name used for the entity class that is the target of the operation. The collection name used for an entity class defaults to the class name starting with a lower-case letter but it can be customized using the <code>@Document</code> annotation.  
+</blockquote>  
+   
+   </LI>
+
+       
+        <LI>
+    <a href="http://www.springsource.org/node/3152">Spring Data Graph 1.1.0.M1 with Neo4j Support</a> has been released! As the announcement summarizes, <blockquote>The Graph Neo4j module provides integration with the Neo4j graph database. Back in 2010, Rod Johnson and Emil Eifrem started brainstorming about Spring and Neo4j integration including transparent persistence and cross-store support. After an initial prototype it has been further developed in close cooperation between the VMware and Neo Technology development teams.</blockquote> The new release includes dependency updates, support for the Neo4J query language called Cypher, self-relationships and much more! Check it out!
+   </LI>
+
+  
+   <li> Using Spring? Want to build Swing applications, or at least, to build Swing applications with some data-driven 
+ content and to manage those interactions with Spring? Check out <a href="http://www.jdal.org/">JDAL</a>, a library with utilities geared towards doing just that! 
+       According to the website, JDAL is  "is built on top of Hibernate ORM and Spring framework and provides you with a set of core database services and UI Components ready to be used via configuration on Spring context configuration files." Very interesting! Some of you will  no doubt know about the <a href="http://www.springsource.org/spring-rcp">Spring Rich project</a>, which hasn't been very active of late. It's great to see the community filling in the gaps! 
+       </li>      
+ 
+<LI>
+Securing an application using Spring Security and Active Directory is feasible, but the specifics stumped me until just recently when I did some quick Googling and found <a href="http://forum.springsource.org/showthread.php?110284-Error-using-LDAP-Authentication-with-Microsoft-ADAM">this post from the SpringSource forums.</a> The solution's spelled out in explicit detail in the response. Convenient! 
+ 
+</LI> 
+   
+  
+    
+    <li>Looking for a good matrix comparing Spring versus Java EE? One manager, a Bergisch Gladbach, <a href="http://niklasschlimm.blogspot.com/2011/06/spring-vs-java-ee-comparison-matrix.html">shares his</a>. Very interesting read, and one that reflects the norm for an increasingly large number of users today, I find. Check it out!  
+      
+    </li>
+  
+  <LI>
+   <a href="http://loianegroner.com/2011/06/jaxb-custom-binding-java-util-date-spring-3-serialization/">A blog, by Loiane Groner, describes how to use custom dates with JAXB</a>. Admittedly, this blog is not very Spring specific, but it's something that you might face when using Spring's JAXB2 <code>Marshaller</code> with a client that doesn't support the same data serialization.  One example of this? Spring Android's Simple XML <code>Marshaller</code> doesn't support JAXB2 dates, by default! This is also a good blog to read for the links to the other, more Spring-specific and useful content.
+    If only I'd known this sooner!  I can think of at least one code base that will benefit from this recipe... 
+   </LI>
+  
+   <lI>
+    <a href="http://javakata6425.appspot.com/#goToPageIIIarticleIIISpring%20MVC,%20GWT,%20Wicket,%20%20dynamic%20form%20comparison">Blog Java-Kata   takes a look at building a multi-row, dynamic form-based web application</a> using Spring MVC, Wicket, and GWT. This first installment introduces the code (which is useful in of itself) and then the Spring MVC iteration. Good stuff, with details for those who've wondered the same thing. Spring MVC is not a component-oriented web framework like Wicket and GWT, so it's nice to see it  still fares so well on this complex task.
+   </lI>
+  
+</ol> 
+		  </div>
+
+  <ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul>
+</div></div> <!-- /node-inner, /node -->
+<div class="item-list"><ul class="pager"><li class="pager-first first"><a href="/taxonomy/term/14" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="/taxonomy/term/14?page=7" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-item"><a href="/taxonomy/term/14?page=3" title="Go to page 4" class="active">4</a></li>
+<li class="pager-item"><a href="/taxonomy/term/14?page=4" title="Go to page 5" class="active">5</a></li>
+<li class="pager-item"><a href="/taxonomy/term/14?page=5" title="Go to page 6" class="active">6</a></li>
+<li class="pager-item"><a href="/taxonomy/term/14?page=6" title="Go to page 7" class="active">7</a></li>
+<li class="pager-item"><a href="/taxonomy/term/14?page=7" title="Go to page 8" class="active">8</a></li>
+<li class="pager-current">9</li>
+<li class="pager-item"><a href="/taxonomy/term/14?page=9" title="Go to page 10" class="active">10</a></li>
+<li class="pager-item"><a href="/taxonomy/term/14?page=10" title="Go to page 11" class="active">11</a></li>
+<li class="pager-item"><a href="/taxonomy/term/14?page=11" title="Go to page 12" class="active">12</a></li>
+<li class="pager-next"><a href="/taxonomy/term/14?page=9" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="/taxonomy/term/14?page=11" title="Go to last page" class="active">last »</a></li>
+</ul></div>
+
+            </div>
+    </div>
+        </td>
+
+        <td width="50px">&nbsp;</td>
+        <td width="310px" valign="top" align="left">
+
+              <!--[If IE 7]><br><![endif]-->
+      <div style="margin-top:-40px;">
+      <div align="right">
+
+	  <p style="line-height:26px;">&nbsp;</p>
+	  <p>
+
+      </p>
+      </div>
+
+	              
+      
+       
+        
+        
+        
+        </div>
+        </td>
+
+        </tr>
+        </table>
+
+
+                  <div class="feed-icons"><a href="/taxonomy/term/14/0/feed" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="RSS - This Week in Spring" width="16" height="16" /></a></div>
+        
+      </div></div><!-- /.section, /#content -->
+
+
+      
+      
+    </div></div><!-- /#main, /#main-wrapper -->
+
+<div style="background-color:#252525;margin-top:-14px;">
+         <div id="footer"><div class="section">
+
+
+        <div class="region region-footer">
+  <div id="block-block-23" class="block block-block first region-odd odd region-count-1 count-1"><div class="block-inner">
+
+  
+  <div class="content">
+    <style type="text/css">
+#communities{position:relative;}
+#communities li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#communities li, #communities a{height:69px;display:block;}
+
+#cf{left:0px;width:260px;}
+#cf{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat 0 0;}
+#cf a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat 0 0;}
+
+#grails{left:275px;width:120px;}
+#grails{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -275px 0;}
+#grails a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -275px 0;}
+
+#groovy{left:400px;width:100px;}
+#groovy{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -400px 0;}
+#groovy a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -400px 0;}
+
+#hyperic{left:500px;width:170px;}
+#hyperic{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -500px 0;}
+#hyperic a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -500px 0;}
+
+#rabbit{left:670px;width:140px;}
+#rabbit{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -670px 0;}
+#rabbit a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -670px 0;}
+
+#wm{left:810px;width:170px;}
+#wm{background:url('http://springsource.org/files/footer/communities_off.png') no-repeat -810px 0;}
+#wm a:hover{background: url('http://springsource.org/files/footer/communities_on.png') no-repeat -810px 0;}
+
+#communities_bg {background-color:#181818;height:69px;padding:1px 10px 15px 10px;border-radius:5px;margin:10px 0 27px 0}
+
+#communities_title {color: #CCC;font-size: 18px;font-weight: 300;padding-bottom: 15px;line-height: 24px;text-shadow: 0 1px 0 black;margin-left:10px}
+
+</style>
+
+<p>&nbsp;</p>
+<table style="margin: 0 10px 0 10px;">
+
+<tr valign="top">
+    <span id="communities_title">Other Communities</span>
+</tr>
+<tr valign="top">
+    <div id="communities_bg">
+        <ul id="communities">
+            <li id="cf" style="margin-left: 30px;"><a href="http://www.cloudfoundry.org" target="_blank"></a></li>
+            <li id="grails" style="margin-left: 65px;"><a href="http://www.grails.org" target="_blank"></a></li>
+            <li id="groovy" style="margin-left: 110px;"><a href="http://groovy.codehaus.org/" target="_blank"></a></li>
+            <!--<li id="hyperic"><a href="http://www.hyperic.com/community" target="_blank"></a></li>-->
+            <li id="rabbit" style="margin-left: -20px;"><a href="http://www.rabbitmq.com" target="_blank"></a></li>
+            <li id="wm"><a href="http://redis.io" target="_blank"></a></li>
+        </ul>
+    </div>
+</tr>
+
+<tr valign="top">
+<th class="footerth" style="padding-left:-10px;"><a href="http://www.springsource.org">SpringSource</a></th>
+
+<th class="footerth"><a href="/features">Features</a></th>
+
+<th class="footerth"><a href="/get-started">Get Started</a></th>
+
+<th class="footerth"><a href="/get-involved">Get Involved</a></th>
+
+<th class="footerth"><a href="/projects">Projects</a></th>
+
+
+</tr>
+<tr>
+<td valign="top" width="195px">
+
+<span class="footerlist">
+<a href="/about">About Us</a><br>
+<a href="http://blog.springsource.org">Our Blog</a><br>
+<a href="/case-studies">Case Studies</a><br>
+<a href="/news-events">Latest News & Events</a><br>
+<a href="http://www.vmware.com/jobs/" target="_blank">SpringSource Jobs</a>&nbsp;&nbsp;<a href="http://www.vmware.com/jobs/" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/consulting">Consulting</a><br>
+<!--<a href="http://www.springsource.com/contact" target="_blank">Contact Us</a><br>-->
+<a href="/newsletter-subscription">Subscribe to Newsletter</a><br>
+
+</span>
+
+<p style="margin-top:15px;"><a href="/newsletter-subscription">
+<img src="http://www.springsource.org/sites/all/themes/s2org11/images/button_home_subscribe.png"></a></p>
+</td>
+
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/features/modern-web">Modern Web</a><br>
+<a href="/features/data-access">Data Access</a><br>
+<a href="/features/integration">Integration</a><br>
+<a href="/features/mobile">Mobile</a><br>
+<a href="/features/social">Social</a><br>
+<a href="/features/security">Security</a><br>
+<a href="/features/cloud-ready">Cloud Ready</a><br>
+</span>
+</td>
+
+
+<td valign="top" width="160px">
+
+<span class="footerlist">
+<a href="/sts">Get Tool Kit (STS)</a> <br>
+<a href="/tutorials">Tutorials</a> <br>
+<a href="/samples">Code Samples</a> <br>
+<a href="/documentation">Documentation</a> <br>
+<a href="http://forum.springsource.org">Forums</a> <br>
+<a href="http://www.springsource.com/training" target="_blank">Training</a><br>
+
+
+</span>
+</td>
+
+
+<td valign="top" width="156px">
+
+<span class="footerlist">
+
+
+<a href="http://forum.springsource.org">Discussions</a><br>
+<a href="https://jira.springsource.org" target="_blank">Issue Tracker</a><br>
+<a href="https://github.com/SpringSource" target="_blank">Source Repository</a>&nbsp;&nbsp;<a href="https://github.com/SpringSource" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br> 
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-amqp">Spring AMQP</a><br>
+<a href="/spring-android">Spring for Android</a><br>
+<a href="/spring-batch">Spring Batch</a><br>
+<a href="/spring-data">Spring Data</a><br>
+<a href="/spring-framework">Spring Framework</a><br>
+<a href="/spring-gemfire">Spring Gemfire</a><br>
+<a href="/spring-integration">Spring Integration</a><br>
+
+
+</span>
+</td>
+
+<td valign="top" width="140px">
+
+<span class="footerlist">
+
+<a href="/spring-mobile">Spring Mobile</a><br>
+<a href="http://www.springframework.net" target="_blank">Spring .NET</a>&nbsp;&nbsp;<a href="http://www.springframework.net" target="_blank"><img src="http://www.springsource.org/sites/all/themes/s2org11/images/ICO_PopUp-NewWindow.png"></a><br>
+<a href="/spring-roo">Spring Roo</a><br>
+<a href="/spring-security">Spring Security</a><br>
+<a href="/spring-social">Spring Social</a><br>
+<a href="/spring-web-flow">Spring Web Flow</a><br>
+<a href="/spring-web-services">Spring Web Services</a><br>
+
+</span>
+</td>
+
+
+
+</tr>
+</table>
+
+
+<div style="background-color:#1e1e1e;width:952;-moz-border-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 5px;">
+<center>
+<p class="copyright">
+<a style="color:#eee;" href="/user">&#169;</a>&nbsp;
+<script type="text/javascript">
+
+var d = new Date();
+document.write(d.getFullYear());
+
+</script>
+SpringSource.
+All Rights Reserved.
+<a href="http://www.vmware.com/help/legal.html" target="_blank">Terms of Use</a>, 
+<a href="http://www.vmware.com/help/privacy.html" target="_blank">Privacy</a> and 
+<a href="/trademark_standards">Trademark Standards</a>
+</p>
+</center>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div id="block-block-7" class="block block-block last region-even even region-count-2 count-2"><div class="block-inner">
+
+  
+  <div class="content">
+    <!-- Eloqua Img Code Code -->
+<script type="text/javascript" src="/sites/all/themes/s2org11/js/elqNow/elqImg.js"></script>
+<!-- Begin Google Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2728886-3");
+pageTracker._setDomainName("springsource.org");
+pageTracker._setAllowHash(false);
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+var OrgTracker = _gat._getTracker("UA-2728886-2");
+OrgTracker._setDomainName("springsource.org");
+OrgTracker._setAllowHash(false);
+OrgTracker._setAllowLinker(true);
+OrgTracker._trackPageview();
+</script>
+<!-- End Google Code -->  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+</div><!-- /.region -->
+
+      </div></div>   <!-- /.section, /#footer -->
+    <!--  -->
+</div>
+  </div></div><!-- /#page, /#page-wrapper -->
+
+  
+  <script type="text/javascript" src="/sites/all/modules/custom/google_cse/google_cse.js?R"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "googleCSE": { "language": "en" } });
+//--><!]]>
+</script>
+
+</body>
+</html>
