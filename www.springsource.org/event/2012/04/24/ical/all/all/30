@@ -1,0 +1,85 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  April 24 2012- May 24 2012
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224237Z
+DTSTART;VALUE=DATE-TIME:20120424T150000Z
+DTEND;VALUE=DATE-TIME:20020203
+UID:http://www.springsource.org/node/3500
+URL;VALUE=URI:http://www.springsource.org/node/3500
+SUMMARY:SpringOne on the Road\, Kiev
+DESCRIPTION:n/a
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224237Z
+DTSTART;VALUE=DATE-TIME:20120426T151500Z
+DTEND;VALUE=DATE-TIME:20020203
+UID:http://www.springsource.org/node/3501
+URL;VALUE=URI:http://www.springsource.org/node/3501
+SUMMARY:SpringOne on the Road\, Moscow
+DESCRIPTION:n/a
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224237Z
+DTSTART;VALUE=DATE-TIME:20120501T201800Z
+DTEND;VALUE=DATE-TIME:20020203
+UID:http://www.springsource.org/node/3502
+URL;VALUE=URI:http://www.springsource.org/node/3502
+SUMMARY:SpringOne on the Road\, London
+DESCRIPTION:n/a
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224237Z
+DTSTART;VALUE=DATE-TIME:20120503T150000Z
+DTEND;VALUE=DATE-TIME:20120503T161500Z
+UID:http://www.springsource.org/node/3525
+URL;VALUE=URI:http://www.springsource.org/node/3525
+SUMMARY:Webinar\: More Practical Tips for Spring Integration - Europe
+DESCRIPTION:<p>This webinar will share some of the more interesting integration solutions that came out of the real customer engagements as well as the questions that are most frequently asked on <a href=\\"http\://forum.springsource.org/forumdisplay.php?42-Integration\\">Spring Integration forums</a>. It will showcase the Spring Integration framework and how it can help you to build\, manage and maintain powerful enterprise-grade integration solutions. Most importantly you will get an opportunity to ask questions which will be answered by the same engineers that develop the Spring Integration framework.</p>
+ <p>In this continuation of the earlier \\"Practical Tips-and-Tricks\\" session\, we will cover some of the more advanced topics of enterprise integration such as advanced aggregation and resequencing\, asynchronous message flows\, message ID customizations\, content enrichment and advanced message routing and more.  Attendees for this webinar are expected to already be familiar with Spring Integration - watching the <a href=\\"http\://www.youtube.com/watch?v=NAWpVS8t_Ug\\">Message Driven Architecture</a> is highly recommended for developers that want a basic conceptual introduction. </p>
+ <p>Europe\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=665094285\\">May 03\, 3\:00pm UK / 4\:00pm Europe</a></p>
+ <p>Future topics include\:<br />
+ Management and Monitoring Spring Integration with JMX and Spring Insight </p>
+ <p>Hosted by <a href=\\"https\://twitter.com/#!/z_oleg\\">Oleg Zhurakousky</a>\, Spring Integration Framework committer and VMware Senior Technical Staff</p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224237Z
+DTSTART;VALUE=DATE-TIME:20120503T170000Z
+DTEND;VALUE=DATE-TIME:20120503T181500Z
+UID:http://www.springsource.org/node/3526
+URL;VALUE=URI:http://www.springsource.org/node/3526
+SUMMARY:Webinar\: More Practical Tips for Spring Integration - North America
+DESCRIPTION:<p>This webinar will share some of the more interesting integration solutions that came out of the real customer engagements as well as the questions that are most frequently asked on <a href=\\"http\://forum.springsource.org/forumdisplay.php?42-Integration\\">Spring Integration forums</a>. It will showcase the Spring Integration framework and how it can help you to build\, manage and maintain powerful enterprise-grade integration solutions. Most importantly you will get an opportunity to ask questions which will be answered by the same engineers that develop the Spring Integration framework.</p>
+ <p>In this continuation of the earlier \\"Practical Tips-and-Tricks\\" session\, we will cover some of the more advanced topics of enterprise integration such as advanced aggregation and resequencing\, asynchronous message flows\, message ID customizations\, content enrichment and advanced message routing and more.  Attendees for this webinar are expected to already be familiar with Spring Integration - watching the <a href=\\"http\://www.youtube.com/watch?v=NAWpVS8t_Ug\\">Message Driven Architecture</a> is highly recommended for developers that want a basic conceptual introduction. </p>
+ <p>North America\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=664853478\\">May 03\, 1\:00pm EST / 10\:00am PST</a></p>
+ <p>Future topics include\:<br />
+ Management and Monitoring Spring Integration with JMX and Spring Insight </p>
+ <p>Hosted by <a href=\\"https\://twitter.com/#!/z_oleg\\">Oleg Zhurakousky</a>\, Spring Integration Framework committer and VMware Senior Technical Staff</p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224237Z
+DTSTART;VALUE=DATE-TIME:20120517T170000Z
+DTEND;VALUE=DATE-TIME:20120517T180000Z
+UID:http://www.springsource.org/node/3537
+URL;VALUE=URI:http://www.springsource.org/node/3537
+SUMMARY:Live Webinar\: Groovy and Grails applications with the SpringSource Tool Suite
+DESCRIPTION:n/a
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224237Z
+DTSTART;VALUE=DATE-TIME:20120522T160000Z
+DTEND;VALUE=DATE-TIME:20120522T171500Z
+UID:http://www.springsource.org/node/3545
+URL;VALUE=URI:http://www.springsource.org/node/3545
+SUMMARY:Webinar\: Elastic Scalability of Spring Applications with VMware vFabric Cloud Application Platform
+DESCRIPTION:<p>Today\, every business is a software business. Companies increasingly interact with customers\, suppliers and partners through custom mobile and Web applications. If those applications can’t scale\, revenue stops. Businesses need applications that scale instantly and cost-effectively\, without the long lead times and high overhead of legacy middleware platforms. <a href=\\"http\://www.vmware.com/products/application-platform/vfabric/overview.html\\">VMware® vFabric™ Cloud Application Platform</a> lets you rapidly scale out Spring Java applications through automated provisioning\, in-memory data grids\, and lightweight cloud-ready application containers.</p>
+ <p>Join this webinar to learn more about the best platform to run Spring applications.</p>
+ <p>Register Now\: <a href=\\"http\://event.on24.com/r.htm?e=455410&amp\;s=1&amp\;k=B7D575C21BD3096F07F847A856403F28&amp\;partnerref=S2ORG\\">Tuesday\, May 22\, 2012\, 9\:00 AM PDT<br />
+ </a></p>
+ 
+END:VEVENT
+END:VCALENDAR

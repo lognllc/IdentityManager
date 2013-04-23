@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  March 01 2011- April 01 2011
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223114Z
+DTSTART;VALUE=DATE-TIME:20110305T200000Z
+DTEND;VALUE=DATE-TIME:20110305T210000Z
+UID:http://www.springsource.org/node/3038
+URL;VALUE=URI:http://www.springsource.org/node/3038
+SUMMARY:Germany\: Spring Python presentation at CeBIT conference
+DESCRIPTION:<p>Spring Python committer Sven Wilhelm will talk about <a href=\\"http\://springpython.webfactional.com\\">Spring Python</a> on Saturday\, March 5th at 1pm (1300). He will discuss <a href=\\"http\://static.springsource.org/spring-python/1.2.x/sphinx/html/objects.html\\">inversion of control</a>\, switching database types\, and other topics while demonstrating code.</p>
+ <p>There will be some door prizes to be given away to attendees of Sven's talk including copies of <a href=\\"https\://www.packtpub.com/create-powerful-versatile-spring-python-1-1-applications/book?mid=310510qhzlon&amp\;utm_source=springpythonbook.com&amp\;utm_medium=affiliate&amp\;utm_content=authorsite&amp\;utm_campaign=mdb_003537\\">Spring Python 1.1</a> and other surprises. See <a href=\\"http\://www.linuxhotel.de/cebit/\\">http\://www.linuxhotel.de/cebit/</a> for entire conference schedule.</p>
+ <p><a href=\\"http\://balder.messe.de/werbung/www/delivery/ck.php?oaparams=2__bannerid=482__zoneid=346__cb=437c80263c__oadest=https%3A%2F%2Fcongress.messe.de%2Fosc%2Fgo%3Fshop%3Dvg027734gb\\">Register today!</a> Times listed are local to conference site\, not US/Pacific!!</p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223114Z
+DTSTART;VALUE=DATE-TIME:20110317T130000Z
+DTEND;VALUE=DATE-TIME:20110317T141500Z
+UID:http://www.springsource.org/node/3042
+URL;VALUE=URI:http://www.springsource.org/node/3042
+SUMMARY:Webinar\: Getting Started with Spring and SpringSource Tool Suite - Europe
+DESCRIPTION:<p>Spring is a comprehensive framework that has helped countless developers build better applications and <a href=\\"http\://www.springsource.com/developer/sts\\">SpringSource Tool Suite</a> (STS) is the best development tool available for building Spring-based solutions.</p>
+ <p>This webinar is designed for enterprise developers that are just starting with Spring and need to learn the basics about project set-up\, bean configuration and application testing and analysis.</p>
+ <p>The session will cover the fundamental concepts behind Spring and make extensive use of STS\, to show how to easily and practically start creating Spring-based applications.</p>
+ <p>Europe\: March 17\, 2\:00pm UK / 3\:00pm Europe - <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=935926293\\">Register Here</a></p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223114Z
+DTSTART;VALUE=DATE-TIME:20110317T170000Z
+DTEND;VALUE=DATE-TIME:20110317T181500Z
+UID:http://www.springsource.org/node/3043
+URL;VALUE=URI:http://www.springsource.org/node/3043
+SUMMARY:Webinar\: Getting Started with Spring and SpringSource Tool Suite - North America
+DESCRIPTION:<p>Spring is a comprehensive framework that has helped countless developers build better applications and <a href=\\"http\://www.springsource.com/developer/sts\\">SpringSource Tool Suite</a> (STS) is the best development tool available for building Spring-based solutions.</p>
+ <p>This webinar is designed for enterprise developers that are just starting with Spring and need to learn the basics about project set-up\, bean configuration and application testing and analysis.</p>
+ <p>The session will cover the fundamental concepts behind Spring and make extensive use of STS\, to show how to easily and practically start creating Spring-based applications.</p>
+ <p>North America\: March 17\, 1\:00pm EST / 10\:00am PST - <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=939689169\\">Register Here</a></p>
+ 
+END:VEVENT
+END:VCALENDAR

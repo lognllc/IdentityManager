@@ -1,0 +1,64 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  February 01 2012- March 02 2012
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224331Z
+DTSTART;VALUE=DATE-TIME:20120201T170000Z
+DTEND;VALUE=DATE-TIME:20120201T180000Z
+UID:http://www.springsource.org/node/3385
+URL;VALUE=URI:http://www.springsource.org/node/3385
+SUMMARY:Webinar\: Spring Your Application to Cloud Foundry
+DESCRIPTION:<p>Do you have a Spring app and want to deploy it to the cloud in a matter of minutes? </p>
+ <p>In this webinar\, Ramnivas Laddad\, Senior Staff Engineer\, will show you how to take a typical Spring web application that uses a single data source and deploy it directly to Cloud Foundry without having to make any code modifications. He will show you how to use the command-line tool as well as IDE integration (SpringSource Tools Suite). No matter what your development style is\, you will find deploying apps to Cloud Foundry a simple process. We will also show a few goodies that help you interact with your deployed app.</p>
+ <p>Register today\: <a href=\\"http\://webinars.cloudfoundry.com/\\" target=\\"_blank\\">http\://webinars.cloudfoundry.com/</a></p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224331Z
+DTSTART;VALUE=DATE-TIME:20120209T140000Z
+DTEND;VALUE=DATE-TIME:20120209T151500Z
+UID:http://www.springsource.org/node/3374
+URL;VALUE=URI:http://www.springsource.org/node/3374
+SUMMARY:Webinar\: Messaging for Modern Applications - Europe
+DESCRIPTION:<p>Deploying modern applications in the cloud can introduce new challenges like distributing and integrating application components across private and public networks\, using heterogeneous messaging systems\, driving heavier workloads and horizontally scaling the messaging tier. Join Tom McCuch to learn how to overcome these challenges using proven enterprise integration patterns with <a href=\\"/spring-amqp\\">AMQP based messaging</a>\, <a href=\\"/spring-integration\\">Spring Integration</a>\, and <a href=\\"http\://www.rabbitmq.com\\">RabbitMQ</a>.</p>
+ <p>Europe\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=669267795\\">February 09\, 3\:00pm UK / 4\:00pm Europe</a></p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224331Z
+DTSTART;VALUE=DATE-TIME:20120209T170000Z
+DTEND;VALUE=DATE-TIME:20120209T181500Z
+UID:http://www.springsource.org/node/3375
+URL;VALUE=URI:http://www.springsource.org/node/3375
+SUMMARY:Webinar\: Messaging for Modern Applications - North America
+DESCRIPTION:<p>Deploying modern applications in the cloud can introduce new challenges like distributing and integrating application components across private and public networks\, using heterogeneous messaging systems\, driving heavier workloads and horizontally scaling the messaging tier. Join Tom McCuch to learn how to overcome these challenges using proven enterprise integration patterns with <a href=\\"/spring-amqp\\">AMQP based messaging</a>\, <a href=\\"/spring-integration\\">Spring Integration</a>\, and <a href=\\"http\://www.rabbitmq.com\\">RabbitMQ</a>.</p>
+ <p>North America\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=668918092\\">February 09\, 1\:00pm EST / 10\:00am PST</a></p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224331Z
+DTSTART;VALUE=DATE-TIME:20120216T140000Z
+DTEND;VALUE=DATE-TIME:20120216T151500Z
+UID:http://www.springsource.org/node/3427
+URL;VALUE=URI:http://www.springsource.org/node/3427
+SUMMARY:Webinar\: Creating Spring Insight Plugins - Europe
+DESCRIPTION:<p><a href=\\"/insight\\">Spring Insight</a> is a developer tool that provides visibility into your application's runtime performance and behavior by tracing how low level SQL queries\, transaction times and application pages are performing. Optimized out of the box for standard Spring-developed applications\, Insight also provides a pluggable architecture for enhancing trace capabilities to provide further visibility into your application performance. In this session you will understand capabilities of Spring Insight's plugin framework and best practices in development of plug-ins.</p>
+ <p>Europe\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=660356280\\">February 16\, 3\:00pm UK / 4\:00pm Europe</a> </p>
+ <p>Hosted by John Kew\, Staff Engineer for Application Management</p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224331Z
+DTSTART;VALUE=DATE-TIME:20120216T170000Z
+DTEND;VALUE=DATE-TIME:20120216T181500Z
+UID:http://www.springsource.org/node/3430
+URL;VALUE=URI:http://www.springsource.org/node/3430
+SUMMARY:Webinar\: Creating Spring Insight Plugins - North America
+DESCRIPTION:<p><a href=\\"/insight\\">Spring Insight</a> is a developer tool that provides visibility into your application's runtime performance and behavior by tracing how low level SQL queries\, transaction times and application pages are performing. Optimized out of the box for standard Spring-developed applications\, Insight also provides a pluggable architecture for enhancing trace capabilities to provide further visibility into your application performance. In this session you will understand capabilities of Spring Insight's plugin framework and best practices in development of plug-ins.</p>
+ <p>North America\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=662439243\\">February 16\, 1\:00pm EST / 10\:00am PST</a></p>
+ <p>Hosted by John Kew\, Staff Engineer for Application Management</p>
+ 
+END:VEVENT
+END:VCALENDAR

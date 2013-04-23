@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  December 10 2011- January 09 2012
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223245Z
+DTSTART;VALUE=DATE-TIME:20111215T190000Z
+DTEND;VALUE=DATE-TIME:20111215T201500Z
+UID:http://www.springsource.org/node/3314
+URL;VALUE=URI:http://www.springsource.org/node/3314
+SUMMARY:Webinar\: What's new in Spring Roo 1.2? 
+DESCRIPTION:<p><a href=\\"/roo\\">Spring Roo</a> is a next-generation rapid application development tool for Java developers. The 1.2 release is packed with new features that the Roo community have asked for including\:</p>
+ <p>* Multi-module Maven project support<br />
+ * Services and repository/DAO layering<br />
+ * JSF 2.0/PrimeFaces add-on<br />
+ * Database reverse engineering multi-schema support<br />
+ * Performance enhancements</p>
+ <p>Attend this webinar to learn about these new features and others in this exciting new release..</p>
+ <p>Hosted by Alan Stewart\, Senior MTS</p>
+ <p>North America\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=669017293\\">December 15\, 3\:00pm EST / 12\:00pm PST</a></p>
+ 
+END:VEVENT
+END:VCALENDAR

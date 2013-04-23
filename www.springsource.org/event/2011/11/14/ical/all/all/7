@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  November 14 2011- November 21 2011
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223306Z
+DTSTART;VALUE=DATE-TIME:20111114T150000Z
+DTEND;VALUE=DATE-TIME:20111118T230000Z
+UID:http://www.springsource.org/node/3304
+URL;VALUE=URI:http://www.springsource.org/node/3304
+SUMMARY:SpringSource at Devoxx
+DESCRIPTION:<p>SpringSource will be at the Devoxx Java Conference in Antwerp\, Belgium the week of November 14th.  If you'll be in Antwerp\, stop by our booth!</p>
+ 
+END:VEVENT
+END:VCALENDAR

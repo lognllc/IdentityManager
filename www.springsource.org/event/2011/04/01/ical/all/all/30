@@ -1,0 +1,79 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  April 01 2011- May 01 2011
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223110Z
+DTSTART;VALUE=DATE-TIME:20110412T160000Z
+DTEND;VALUE=DATE-TIME:20110412T173000Z
+UID:http://www.springsource.org/node/3082
+URL;VALUE=URI:http://www.springsource.org/node/3082
+SUMMARY:Spring into the Cloud Web Event
+DESCRIPTION:<p>Join <a href=\\"http\://blog.springsource.com/author/rodj/\\">Rod Johnson</a> and other industry leaders for an exciting announcement for cloud developers. On April 12th\, you are invited to attend a special live webcast. Spring has already simplified enterprise Java development. Next up is cloud development.</p>
+ <p><a href=\\"http\://www.vmware.com/go/apr12\\">Sign up to attend this webcast</a> and learn how you can take the next step in cloud application development.</p>
+ <p>North American Audiences<br />
+ 9\:00 a.m. Pacific Daylight (San Francisco\, GMT-07\:00)<br />
+ 12\:00 p.m. Eastern Daylight (New York\, GMT-04\:00) </p>
+ <p>European Audiences<br />
+ 5\:00 p.m. Western European Summer (London\, GMT+1\:00)<br />
+ 6\:00 p.m. Europe Summer (Paris\, GMT+02\:00)</p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223110Z
+DTSTART;VALUE=DATE-TIME:20110419T230000Z
+DTEND;VALUE=DATE-TIME:20110420T003000Z
+UID:http://www.springsource.org/node/3110
+URL;VALUE=URI:http://www.springsource.org/node/3110
+SUMMARY:Philadelphia JUG\: Building cloud-ready systems using Spring Technologies
+DESCRIPTION:<p>Join <a href=\\"http\://blog.springsource.com/author/ozhurakousky/\\">Oleg Zhurakovsky</a> at the <a href=\\"http\://phillyjug.jsync.com/\\">Philadelphia Java User Group</a> meeting for an evening to discuss \\"Building Cloud-Ready Systems Using Spring Technologies\\". </p>
+ <p>AGENDA<br />
+ 6\:30 – 7\:00  Find a seat\, eat some food<br />
+ 7\:00 – 7\:15  Introductions\, raffles\, announcements<br />
+ 7\:15 – 8\:30  Oleg Z’s “Building Cloud-Ready Systems Using Spring Technologies”</p>
+ <p><strong>Location</strong>\:<br />
+ <a href=\\"http\://maps.google.com/maps?hl=en&amp\;client=firefox-a&amp\;q=935+First+Ave\,+King+of+Prussia\,+PA+19406&amp\;ie=UTF8&amp\;hq=&amp\;hnear=935+1st+Ave\,+King+of+Prussia\,+Pennsylvania+19406&amp\;gl=us&amp\;z=16\\">935 First Ave<br />
+ King of Prussia<br />
+ PA 19406</a></p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223110Z
+DTSTART;VALUE=DATE-TIME:20110420T010000Z
+DTEND;VALUE=DATE-TIME:20110420T010000Z
+UID:http://www.springsource.org/node/3111
+URL;VALUE=URI:http://www.springsource.org/node/3111
+SUMMARY:Maine JUG\: Spring Data and Spring Integration on Cloud Foundry
+DESCRIPTION:<p>The TechMaine Java User Group Meeting\:</p>
+ <p>April 19\, 2011\, 6\:00 PM</p>
+ <p>Mark Fisher and Thomas Risberg present\, on the Spring Data Project.</p>
+ <p>In addition to Spring Data\, the presenters will provide a quick overview of Cloud Foundry (now that it's public\, they want to talk about it!). The Spring Data samples can run on Cloud Foundry\; and at the end the presenters will also show a messaging/integration application that runs on Cloud Foundry.</p>
+ <p><a href=\\"http\://www.techmaine.com/civicrm/event/info?reset=1&amp\;id=313\\">TechMaine Java USer Group meeting page</a></p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223110Z
+DTSTART;VALUE=DATE-TIME:20110420T140000Z
+DTEND;VALUE=DATE-TIME:20110420T151500Z
+UID:http://www.springsource.org/node/3071
+URL;VALUE=URI:http://www.springsource.org/node/3071
+SUMMARY:Webinar\: Getting Started with Spring Data Graph - Europe
+DESCRIPTION:<p>The Spring Data project makes it easier to build Spring-powered applications that use new data access technologies such as non-relational \\"NOSQL\\" databases\, cloud based data services\, and graph databases. This webinar is designed for enterprise developers that are working with Spring and need to understand if they can benefit from a graph database.</p>
+ <p>The session will introduce the different types of data management offered in Spring Data and including graph databases\, and show how easy it is to get started with the Spring Data Graph project.</p>
+ <p>Europe\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=931308698\\">April 20\, 3\:00pm UK / 4\:00pm Europe - Register Here</a></p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223110Z
+DTSTART;VALUE=DATE-TIME:20110420T170000Z
+DTEND;VALUE=DATE-TIME:20110420T171500Z
+UID:http://www.springsource.org/node/3072
+URL;VALUE=URI:http://www.springsource.org/node/3072
+SUMMARY:Webinar\: Getting Started with Spring Data Graph - North America
+DESCRIPTION:<p>The Spring Data project makes it easier to build Spring-powered applications that use new data access technologies such as non-relational \\"NOSQL\\" databases\, cloud based data services\, and graph databases. This webinar is designed for enterprise developers that are working with Spring and need to understand if they can benefit from a graph database.</p>
+ <p>The session will introduce the different types of data management offered in Spring Data and including graph databases\, and show how easy it is to get started with the Spring Data Graph project.</p>
+ <p>North America\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=939437675\\">April 20\, 1\:00pm EST / 10\:00am PST - Register Here</a></p>
+ 
+END:VEVENT
+END:VCALENDAR

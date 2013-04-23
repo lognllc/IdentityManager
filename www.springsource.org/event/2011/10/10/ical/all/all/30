@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  October 10 2011- November 09 2011
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223236Z
+DTSTART;VALUE=DATE-TIME:20111020T224000Z
+DTEND;VALUE=DATE-TIME:20020203
+UID:http://www.springsource.org/vforum-sydney
+URL;VALUE=URI:http://www.springsource.org/vforum-sydney
+SUMMARY:Cloud Developer Forum - 20 October\, 2011
+DESCRIPTION:n/a
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223236Z
+DTSTART;VALUE=DATE-TIME:20111026T010000Z
+DTEND;VALUE=DATE-TIME:20111028T220000Z
+UID:http://www.springsource.org/SpringOne2GX2011
+URL;VALUE=URI:http://www.springsource.org/SpringOne2GX2011
+SUMMARY:SpringOne 2GX 2011
+DESCRIPTION:<p><a href=\\"http\://www.springsource.com\\">SpringSource</a> in conjunction with the <a href=\\"http\://www.nofluffjuststuff.com/\\">No Fluff Just Stuff</a> Symposium Series are pleased to present <a href=\\"http\://springone2gx.com\\">SpringOne 2GX</a>\, the premier Java event of 2011. SpringOne 2GX is a collocated event covering the entire Spring ecosystem and Groovy/Grails technologies.</p>
+ <p>SpringOne 2GX is a one-of-a-kind conference for application developers\, solution architects\, web operations and IT teams who develop business applications\, create multi-device aware web applications\, design cloud architectures\, and manage high performance infrastructure. The sessions are specifically tailored for developers using the hugely popular open source Spring technologies\, Groovy &amp\; Grails\, and Tomcat. Whether you're building and running mission-critical business applications or designing the next killer cloud application\, SpringOne 2GX will keep you up to date with the latest enterprise technology.</p>
+ <p>Featuring over 100 presentations delivered by development leads and published authors on the Spring\, Groovy/Grails\, Tomcat and Cloud technology today\, it's the ideal place to obtain critical skills to help you build\, run and manage tomorrow's software solutions. Plus you'll meet and learn from open source leaders who drive innovation for these technologies. </p>
+ <p>SpringOne 2GX will be held in Chicago\, IL\, on October 25-28th\, 2011. <a href=\\"http\://springone2gx.com/conference/chicago/2011/10/register\\">Register Now!</a></p>
+ <p><a href=\\"http\://www.marriott.com/hotels/travel/chidt-chicago-marriott-downtown-magnificent-mile/\\">Magnificent Mile Marriott</a><br />
+ Downtown Chicago<br />
+ 540 North Michigan Ave.<br />
+ Chicago\, Illinois   60611<br />
+ 1 (800) 228-9290</p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223236Z
+DTSTART;VALUE=DATE-TIME:20111103T150000Z
+DTEND;VALUE=DATE-TIME:20111103T161500Z
+UID:http://www.springsource.org/node/3290
+URL;VALUE=URI:http://www.springsource.org/node/3290
+SUMMARY:Webinar\: Better productivity\: Grails 2 - Europe
+DESCRIPTION:<p>With the imminent release of Grails 2\, it's time to find out just why we think you should upgrade. Or if you're not using it\, why you should give it a second look.</p>
+ <p>This webinar will introduce you to the new usability features that are targeted at improving your productivity\, such as the new interactive command line\, improved class reloading\, and much better unit testing support. You'll also discover powerful new features such as 'where' queries\, database migrations\, and static resource (CSS\, JS\, etc.) handling.</p>
+ <p>Europe\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=663861610\\">November 03\, 3\:00pm UK / 4\:00pm Europe</a></p>
+ <p>Hosted by Peter Ledbrook\, Grails Advocate</p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223236Z
+DTSTART;VALUE=DATE-TIME:20111103T170000Z
+DTEND;VALUE=DATE-TIME:20111103T181500Z
+UID:http://www.springsource.org/node/3291
+URL;VALUE=URI:http://www.springsource.org/node/3291
+SUMMARY:Webinar\: Better productivity\: Grails 2 - North America
+DESCRIPTION:<p>With the imminent release of Grails 2\, it's time to find out just why we think you should upgrade. Or if you're not using it\, why you should give it a second look.</p>
+ <p>This webinar will introduce you to the new usability features that are targeted at improving your productivity\, such as the new interactive command line\, improved class reloading\, and much better unit testing support. You'll also discover powerful new features such as 'where' queries\, database migrations\, and static resource (CSS\, JS\, etc.) handling.</p>
+ <p>North America\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=663861610\\">November 03\, 1\:00pm EST / 10\:00am PST</a></p>
+ <p>Hosted by Peter Ledbrook\, Grails Advocate</p>
+ 
+END:VEVENT
+END:VCALENDAR

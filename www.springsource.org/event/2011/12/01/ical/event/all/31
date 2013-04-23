@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  December 01 2011- January 01 2012 | Filter\: 
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223249Z
+DTSTART;VALUE=DATE-TIME:20111201T140000Z
+DTEND;VALUE=DATE-TIME:20111201T151500Z
+UID:http://www.springsource.org/node/3312
+URL;VALUE=URI:http://www.springsource.org/node/3312
+SUMMARY:Webinar\: Introduction to using MongoDB and Spring Data on Cloud Foundry - Europe
+DESCRIPTION:<p><a href=\\"http\://www.mongodb.org/\\">MongoDB</a> is a popular non-relational database that uses JSON documents as the data model. It was developed for cloud environments and as one of the original data services supported on Cloud Foundry it's a good choice for your cloud data service needs.</p>
+ <p><a href=\\"http\://cloudfoundry.com/signup?utm_source=springsource_web&amp\;utm_medium=banner&amp\;utm_campaign=cloudfoundry-signup\\">Cloud Foundry</a> is an open source project sponsored by VMware. It's a multi-language\, multi-framework\, and multi-deployment cloud. It lets developers focus on what is really important -- their applications. Spring based applications are perfectly suited for Cloud Foundry which provides a set of tools to make developing and deploying these applications a simple task.</p>
+ <p>The <a href=\\"/spring-data\\">Spring Data</a> project makes it easier to build Spring-powered applications that use new data access technologies such as non-relational NOSQL databases. One of the supported databases is the MongoDB document database.</p>
+ <p>In this webinar\, we show what the combination of MongoDB and Cloud Foundry has to offer to Spring developers. We develop a sample applications\, show how to build and deploy it to the cloud. We also show how to connect to the MongoDB service bound to the application in the cloud. This provides the ability to import and export data and to run ad-hoc queries from a command line tool.</p>
+ <p>After 60 minutes\, you will be ready to develop and deploy your own Spring applications using MongoDB to the cloud.</p>
+ <p>Hosted by Thomas Risberg\, Senior MTS</p>
+ <p>Europe\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=667160177\\">December 01\, 3\:00pm UK / 4\:00pm Europe</a></p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223249Z
+DTSTART;VALUE=DATE-TIME:20111201T170000Z
+DTEND;VALUE=DATE-TIME:20111201T181500Z
+UID:http://www.springsource.org/node/3313
+URL;VALUE=URI:http://www.springsource.org/node/3313
+SUMMARY:Webinar\: Introduction to using MongoDB and Spring Data on Cloud Foundry - North America
+DESCRIPTION:<p><a href=\\"http\://www.mongodb.org/\\">MongoDB</a> is a popular non-relational database that uses JSON documents as the data model. It was developed for cloud environments and as one of the original data services supported on Cloud Foundry it's a good choice for your cloud data service needs.</p>
+ <p><a href=\\"http\://cloudfoundry.com/signup?utm_source=springsource_web&amp\;utm_medium=banner&amp\;utm_campaign=cloudfoundry-signup\\">Cloud Foundry</a> is an open source project sponsored by VMware. It's a multi-language\, multi-framework\, and multi-deployment cloud. It lets developers focus on what is really important -- their applications. Spring based applications are perfectly suited for Cloud Foundry which provides a set of tools to make developing and deploying these applications a simple task.</p>
+ <p>The <a href=\\"/spring-data\\">Spring Data</a> project makes it easier to build Spring-powered applications that use new data access technologies such as non-relational NOSQL databases. One of the supported databases is the MongoDB document database.</p>
+ <p>In this webinar\, we show what the combination of MongoDB and Cloud Foundry has to offer to Spring developers. We develop a sample applications\, show how to build and deploy it to the cloud. We also show how to connect to the MongoDB service bound to the application in the cloud. This provides the ability to import and export data and to run ad-hoc queries from a command line tool.</p>
+ <p>After 60 minutes\, you will be ready to develop and deploy your own Spring applications using MongoDB to the cloud.</p>
+ <p>Hosted by Thomas Risberg\, Senior MTS</p>
+ <p>North America\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=665092666\\">December 01\, 1\:00pm EST / 10\:00am PST</a></p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T223249Z
+DTSTART;VALUE=DATE-TIME:20111215T190000Z
+DTEND;VALUE=DATE-TIME:20111215T201500Z
+UID:http://www.springsource.org/node/3314
+URL;VALUE=URI:http://www.springsource.org/node/3314
+SUMMARY:Webinar\: What's new in Spring Roo 1.2? 
+DESCRIPTION:<p><a href=\\"/roo\\">Spring Roo</a> is a next-generation rapid application development tool for Java developers. The 1.2 release is packed with new features that the Roo community have asked for including\:</p>
+ <p>* Multi-module Maven project support<br />
+ * Services and repository/DAO layering<br />
+ * JSF 2.0/PrimeFaces add-on<br />
+ * Database reverse engineering multi-schema support<br />
+ * Performance enhancements</p>
+ <p>Attend this webinar to learn about these new features and others in this exciting new release..</p>
+ <p>Hosted by Alan Stewart\, Senior MTS</p>
+ <p>North America\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=669017293\\">December 15\, 3\:00pm EST / 12\:00pm PST</a></p>
+ 
+END:VEVENT
+END:VCALENDAR

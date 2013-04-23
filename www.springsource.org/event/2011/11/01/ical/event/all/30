@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  November 01 2011- December 01 2011 | Filter\: 
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T222520Z
+DTSTART;VALUE=DATE-TIME:20111103T150000Z
+DTEND;VALUE=DATE-TIME:20111103T161500Z
+UID:http://www.springsource.org/node/3290
+URL;VALUE=URI:http://www.springsource.org/node/3290
+SUMMARY:Webinar\: Better productivity\: Grails 2 - Europe
+DESCRIPTION:<p>With the imminent release of Grails 2\, it's time to find out just why we think you should upgrade. Or if you're not using it\, why you should give it a second look.</p>
+ <p>This webinar will introduce you to the new usability features that are targeted at improving your productivity\, such as the new interactive command line\, improved class reloading\, and much better unit testing support. You'll also discover powerful new features such as 'where' queries\, database migrations\, and static resource (CSS\, JS\, etc.) handling.</p>
+ <p>Europe\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=663861610\\">November 03\, 3\:00pm UK / 4\:00pm Europe</a></p>
+ <p>Hosted by Peter Ledbrook\, Grails Advocate</p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T222520Z
+DTSTART;VALUE=DATE-TIME:20111103T170000Z
+DTEND;VALUE=DATE-TIME:20111103T181500Z
+UID:http://www.springsource.org/node/3291
+URL;VALUE=URI:http://www.springsource.org/node/3291
+SUMMARY:Webinar\: Better productivity\: Grails 2 - North America
+DESCRIPTION:<p>With the imminent release of Grails 2\, it's time to find out just why we think you should upgrade. Or if you're not using it\, why you should give it a second look.</p>
+ <p>This webinar will introduce you to the new usability features that are targeted at improving your productivity\, such as the new interactive command line\, improved class reloading\, and much better unit testing support. You'll also discover powerful new features such as 'where' queries\, database migrations\, and static resource (CSS\, JS\, etc.) handling.</p>
+ <p>North America\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=663861610\\">November 03\, 1\:00pm EST / 10\:00am PST</a></p>
+ <p>Hosted by Peter Ledbrook\, Grails Advocate</p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T222520Z
+DTSTART;VALUE=DATE-TIME:20111110T140000Z
+DTEND;VALUE=DATE-TIME:20111110T151500Z
+UID:http://www.springsource.org/node/3292
+URL;VALUE=URI:http://www.springsource.org/node/3292
+SUMMARY:Webinar\: Introduction to Spring Data Neo4j - Europe
+DESCRIPTION:<p>The <a href=\\"/spring-data\\">Spring Data</a> project makes it easier to build Spring-powered applications that use new data access technologies such as non-relational NOSQL databases\, cloud based data services\, for instance graph databases. This webinar is designed for enterprise developers that are working with Spring and need to understand how they would integrate a NOSQL graph database.</p>
+ <p><a href=\\"/spring-data/neo4j\\">Spring Data Neo4j</a> is an integration library for the open source NOSQL graph database <a href=\\"http\://neo4j.org/\\">Neo4j</a> and has been around for over a year\, evolving from its infancy as brainchild of Rod Johnson and Emil Eifrem. It supports multiple\, annotation based POJO to Graph Mapping strategies\, a Neo4j Template API and extensive support for Spring Data Repositories. It can work with an embedded graph database or with the standalone Neo4j Server.</p>
+ <p>Europe\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=669348553\\">November 10\, 3\:00pm UK / 4\:00pm Europe</a></p>
+ <p>Hosted by Adam Frankl\, Neo Technology</p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T222520Z
+DTSTART;VALUE=DATE-TIME:20111110T170000Z
+DTEND;VALUE=DATE-TIME:20111110T181500Z
+UID:http://www.springsource.org/node/3293
+URL;VALUE=URI:http://www.springsource.org/node/3293
+SUMMARY:Webinar\: Introduction to Spring Data Neo4j - North America
+DESCRIPTION:<p>The <a href=\\"/spring-data\\">Spring Data</a> project makes it easier to build Spring-powered applications that use new data access technologies such as non-relational NOSQL databases\, cloud based data services\, for instance graph databases. This webinar is designed for enterprise developers that are working with Spring and need to understand how they would integrate a NOSQL graph database.</p>
+ <p><a href=\\"/spring-data/neo4j\\">Spring Data Neo4j</a> is an integration library for the open source NOSQL graph database <a href=\\"http\://neo4j.org/\\">Neo4j</a> and has been around for over a year\, evolving from its infancy as brainchild of Rod Johnson and Emil Eifrem. It supports multiple\, annotation based POJO to Graph Mapping strategies\, a Neo4j Template API and extensive support for Spring Data Repositories. It can work with an embedded graph database or with the standalone Neo4j Server.</p>
+ <p>North America\: <a href=\\"https\://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp\;d=662803044\\">November 10\, 1\:00pm EST / 10\:00am PST</a></p>
+ <p>Hosted by Adam Frankl\, Neo Technology</p>
+ 
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T222520Z
+DTSTART;VALUE=DATE-TIME:20111114T150000Z
+DTEND;VALUE=DATE-TIME:20111118T230000Z
+UID:http://www.springsource.org/node/3304
+URL;VALUE=URI:http://www.springsource.org/node/3304
+SUMMARY:SpringSource at Devoxx
+DESCRIPTION:<p>SpringSource will be at the Devoxx Java Conference in Antwerp\, Belgium the week of November 14th.  If you'll be in Antwerp\, stop by our booth!</p>
+ 
+END:VEVENT
+END:VCALENDAR

@@ -223,7 +223,7 @@ box-shadow: 0 0 15px #333;">
  <select name="event_term_select" onchange="this.form.submit()" class="form-select" id="edit-event-term-select" ><option value="all">(all)</option><option value="5">Events - Event</option></select>
  <div class="description">Select event terms to filter by</div>
 </div>
-<input type="hidden" name="form_build_id" id="form-51f4069bfd11d7acc7b1ff6bb4f6c884" value="form-51f4069bfd11d7acc7b1ff6bb4f6c884"  />
+<input type="hidden" name="form_build_id" id="form-b2008928e660f59b6e7d7c0db02cf0e2" value="form-b2008928e660f59b6e7d7c0db02cf0e2"  />
 <input type="hidden" name="form_id" id="edit-event-taxonomy-filter-form" value="event_taxonomy_filter_form"  />
 
 </div></form>
@@ -232,7 +232,7 @@ box-shadow: 0 0 15px #333;">
  <select name="event_type_select" onchange="this.form.submit()" class="form-select" id="edit-event-type-select" ><option value="all">(all)</option><option value="event">Event</option></select>
  <div class="description">Select event type to filter by</div>
 </div>
-<input type="hidden" name="form_build_id" id="form-f1a61f74de74aafc53fb72506c0c8037" value="form-f1a61f74de74aafc53fb72506c0c8037"  />
+<input type="hidden" name="form_build_id" id="form-98f93d5107887379995a834a920e9cf9" value="form-98f93d5107887379995a834a920e9cf9"  />
 <input type="hidden" name="form_id" id="edit-event-type-filter-form" value="event_type_filter_form"  />
 
 </div></form>

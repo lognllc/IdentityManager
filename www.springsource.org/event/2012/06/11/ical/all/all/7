@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+X-WR-CALNAME:SpringSource.org |  June 11 2012- June 18 2012
+PRODID:-//strange bird labs//Drupal iCal API//EN
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224059Z
+DTSTART;VALUE=DATE-TIME:20120614T140000Z
+DTEND;VALUE=DATE-TIME:20120614T151500Z
+UID:http://www.springsource.org/node/3564
+URL;VALUE=URI:http://www.springsource.org/node/3564
+SUMMARY:Webinar\: Managing and Monitoring Spring Integration Applications - Europe
+DESCRIPTION:n/a
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP;VALUE=DATE-TIME:20130423T224059Z
+DTSTART;VALUE=DATE-TIME:20120614T170000Z
+DTEND;VALUE=DATE-TIME:20120614T181500Z
+UID:http://www.springsource.org/node/3565
+URL;VALUE=URI:http://www.springsource.org/node/3565
+SUMMARY:Webinar\: Managing and Monitoring Spring Integration Applications - North America
+DESCRIPTION:n/a
+END:VEVENT
+END:VCALENDAR
