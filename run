@@ -86,7 +86,7 @@
 <div class='navbar'>
 <ul class='nav'>
 <li>
-<a href='/use' id='use'>Using Cloud Foundry</a>
+<a href='/IdentityManager/use' id='use'>Using Cloud Foundry</a>
 </li>
 <li>
 <a href='/run' id='run'>Running Cloud Foundry</a>
@@ -182,7 +182,7 @@ Configure, control, monitor and update your dedicated cloud platform.
 <area coords='281,12,365,295' href='http://docs.cloudfoundry.com/docs/using/services.html' id='services-off' shape='rect'>
 <area coords='372,12,551,296' href='https://github.com/cloudfoundry/bosh' shape='rect'>
 <area coords='557,11,646,65' href='#' shape='rect'>
-<area coords='576,118,670,168' href='/use' shape='rect'>
+<area coords='576,118,670,168' href='/IdentityManager/use' shape='rect'>
 <area coords='554,226,647,276' href='/getinvolved' shape='rect'>
 </area>
 </area>
@@ -382,7 +382,7 @@ Find out more about active BOSH development.
 </ul>
 <div id='container-footerth'>
 <div class='footerth'>
-<a href='/use'>Using Cloud Foundry</a>
+<a href='/IdentityManager/use'>Using Cloud Foundry</a>
 <span class='footerlist'>
 <a href='http://docs.cloudfoundry.com/docs/using/app-arch/'>Application Architecture</a>
 <br>

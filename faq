@@ -60,7 +60,7 @@
 <div class='navbar'>
 <ul class='nav'>
 <li>
-<a href='/use' id='use'>Using Cloud Foundry</a>
+<a href='/IdentityManager/use' id='use'>Using Cloud Foundry</a>
 </li>
 <li>
 <a href='/run' id='run'>Running Cloud Foundry</a>
@@ -532,7 +532,7 @@ page.
 </ul>
 <div id='container-footerth'>
 <div class='footerth'>
-<a href='/use'>Using Cloud Foundry</a>
+<a href='/IdentityManager/use'>Using Cloud Foundry</a>
 <span class='footerlist'>
 <a href='http://docs.cloudfoundry.com/docs/using/app-arch/'>Application Architecture</a>
 <br>
